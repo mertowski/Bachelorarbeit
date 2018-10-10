@@ -1,0 +1,147 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{anyt/global//global/global}
+    \entry{ApacheODE}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=591fd05c2b7efba60bf8751a931f7c94}{%
+           family={{The Apache Software Foundation}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{591fd05c2b7efba60bf8751a931f7c94}
+      \strng{fullhash}{591fd05c2b7efba60bf8751a931f7c94}
+      \strng{bibnamehash}{591fd05c2b7efba60bf8751a931f7c94}
+      \strng{authorbibnamehash}{591fd05c2b7efba60bf8751a931f7c94}
+      \strng{authornamehash}{591fd05c2b7efba60bf8751a931f7c94}
+      \strng{authorfullhash}{591fd05c2b7efba60bf8751a931f7c94}
+      \field{labelalpha}{ASF16}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{label}{ASF}
+      \field{title}{Apache ODE\texttrademark{} -- The Orchestration Director Engine}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb http://ode.apache.org
+      \endverb
+      \verb{url}
+      \verb http://ode.apache.org
+      \endverb
+    \endentry
+    \entry{RVvdA2016}{article}{}
+      \name{author}{3}{}{%
+        {{hash=4a4d0c1d5cdb451c8e1f551bdda98b45}{%
+           family={Reijers},
+           familyi={R\bibinitperiod},
+           given={H.A.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=96fd7b473b4cf3127e3190304804959c}{%
+           family={Vanderfeesten},
+           familyi={V\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=a109c59c095b7eb11b80e046fc668e04}{%
+           family={Aalst},
+           familyi={A\bibinitperiod},
+           given={W.M.P.},
+           giveni={W\bibinitperiod},
+           prefix={van\bibnamedelima der},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier {BV}}%
+      }
+      \strng{namehash}{edb9d7bece590d5293dac6e591980554}
+      \strng{fullhash}{edb9d7bece590d5293dac6e591980554}
+      \strng{bibnamehash}{edb9d7bece590d5293dac6e591980554}
+      \strng{authorbibnamehash}{edb9d7bece590d5293dac6e591980554}
+      \strng{authornamehash}{edb9d7bece590d5293dac6e591980554}
+      \strng{authorfullhash}{edb9d7bece590d5293dac6e591980554}
+      \field{labelalpha}{RVA16}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Information Management}
+      \field{month}{2}
+      \field{number}{1}
+      \field{title}{The effectiveness of workflow management systems: A longitudinal study}
+      \field{volume}{36}
+      \field{year}{2016}
+      \field{pages}{126\bibrangedash 141}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1016/j.ijinfomgt.2015.08.003
+      \endverb
+    \endentry
+    \entry{WSPA}{book}{}
+      \name{author}{5}{}{%
+        {{hash=ad25b96bff24b15f8bc4c35beab635c7}{%
+           family={Weerawarana},
+           familyi={W\bibinitperiod},
+           given={Sanjiva},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d242b74b900a6acca71998585077d35e}{%
+           family={Curbera},
+           familyi={C\bibinitperiod},
+           given={Francisco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=415e2bec5763afbeeeadd2e0c4bd0696}{%
+           family={Leymann},
+           familyi={L\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=929c53a1430bccde73afa95a7bac173b}{%
+           family={Storey},
+           familyi={S\bibinitperiod},
+           given={Tony},
+           giveni={T\bibinitperiod}}}%
+        {{hash=52d31e9179697b0951f920958a22363f}{%
+           family={Ferguson},
+           familyi={F\bibinitperiod},
+           given={Donald\bibnamedelima F.},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall PTR}%
+      }
+      \strng{namehash}{b4cf1e15ca3f80d94dc0773a36835c02}
+      \strng{fullhash}{19ede3d6d5b4aea71d7da96fa7543283}
+      \strng{bibnamehash}{19ede3d6d5b4aea71d7da96fa7543283}
+      \strng{authorbibnamehash}{19ede3d6d5b4aea71d7da96fa7543283}
+      \strng{authornamehash}{b4cf1e15ca3f80d94dc0773a36835c02}
+      \strng{authorfullhash}{19ede3d6d5b4aea71d7da96fa7543283}
+      \field{labelalpha}{WCL+05}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0131488740}
+      \field{title}{Web Services Platform Architecture : SOAP, WSDL, WS-Policy, WS-Addressing, WS-BPEL, WS-Reliable Messaging, and More}
+      \field{year}{2005}
+      \verb{doi}
+      \verb 10.1.1/jpb001
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

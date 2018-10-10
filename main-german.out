@@ -1,0 +1,48 @@
+\BOOKMARK [0][]{chapter.1}{1 Einleitung}{}% 1
+\BOOKMARK [1][-]{section.1.1}{1.1 Motivation}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{1.2 Zielsetzung}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{1.3 Aufbau der Arbeit}{chapter.1}% 4
+\BOOKMARK [0][]{chapter.2}{2 Grundlagen}{}% 5
+\BOOKMARK [1][-]{section.2.1}{2.1 Informationssicherheit}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.2}{2.2 Technologien des Projektes}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.3}{2.3 Penetrationstest}{chapter.2}% 8
+\BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 Kriterien f\374r Penetrationstests}{section.2.3}% 9
+\BOOKMARK [2][-]{subsection.2.3.2}{2.3.2 Ablauf eines Penetrationstest}{section.2.3}% 10
+\BOOKMARK [2][-]{subsection.2.3.3}{2.3.3 Rechtliche Aspekte}{section.2.3}% 11
+\BOOKMARK [2][-]{subsection.2.3.4}{2.3.4 Sicherheitstest-Tools}{section.2.3}% 12
+\BOOKMARK [2][-]{subsection.2.3.5}{2.3.5 Automatisierte Sicherheitstest-Tools}{section.2.3}% 13
+\BOOKMARK [1][-]{section.2.4}{2.4 Sicherheitsrisiken von Webanwendungen}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.5}{2.5 Schwachstellen}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.5.1}{2.5.1 OWASP Top 10 Risiken}{section.2.5}% 16
+\BOOKMARK [2][-]{subsection.2.5.2}{2.5.2 Weitere Risiken}{section.2.5}% 17
+\BOOKMARK [2][-]{subsection.2.5.3}{2.5.3 Common Vulnerability Scoring System}{section.2.5}% 18
+\BOOKMARK [2][-]{subsection.2.5.4}{2.5.4 Common Vulnerability Exposures \(CVE\)}{section.2.5}% 19
+\BOOKMARK [1][-]{section.2.6}{2.6 Technische Schwachstellen}{chapter.2}% 20
+\BOOKMARK [2][-]{subsection.2.6.1}{2.6.1 Programmierfehler}{section.2.6}% 21
+\BOOKMARK [2][-]{subsection.2.6.2}{2.6.2 Konfigurationsfehler}{section.2.6}% 22
+\BOOKMARK [2][-]{subsection.2.6.3}{2.6.3 Konzeptionsfehler}{section.2.6}% 23
+\BOOKMARK [2][-]{subsection.2.6.4}{2.6.4 Fehler resultierend aus menschlichem Verhalten}{section.2.6}% 24
+\BOOKMARK [0][]{chapter.3}{3 Kapitel drei}{}% 25
+\BOOKMARK [0][]{chapter.4}{4 Kapitel vier}{}% 26
+\BOOKMARK [0][]{chapter.5}{5 Kapitel f\374nf}{}% 27
+\BOOKMARK [0][]{chapter.6}{6 Kapitel sechs}{}% 28
+\BOOKMARK [0][]{chapter.7}{7 Kapitel sieben}{}% 29
+\BOOKMARK [0][]{chapter.8}{8 Prototypische Anwendung der Software}{}% 30
+\BOOKMARK [0][]{chapter.9}{9 Fazit}{}% 31
+\BOOKMARK [0][]{appendix.A}{A Benutzerhandbuch f\374r das OWASP-Zap RAML Plug-in}{}% 32
+\BOOKMARK [1][-]{section.A.1}{A.1 File-Encoding und Unterst\374tzung von Umlauten}{appendix.A}% 33
+\BOOKMARK [1][-]{section.A.2}{A.2 Zitate}{appendix.A}% 34
+\BOOKMARK [1][-]{section.A.3}{A.3 Mathematische Formeln}{appendix.A}% 35
+\BOOKMARK [1][-]{section.A.4}{A.4 Quellcode}{appendix.A}% 36
+\BOOKMARK [1][-]{section.A.5}{A.5 Abbildungen}{appendix.A}% 37
+\BOOKMARK [1][-]{section.A.6}{A.6 Tabellen}{appendix.A}% 38
+\BOOKMARK [1][-]{section.A.7}{A.7 Pseudocode}{appendix.A}% 39
+\BOOKMARK [1][-]{section.A.8}{A.8 Abk\374rzungen}{appendix.A}% 40
+\BOOKMARK [1][-]{section.A.9}{A.9 Verweise}{appendix.A}% 41
+\BOOKMARK [1][-]{section.A.10}{A.10 Definitionen}{appendix.A}% 42
+\BOOKMARK [1][-]{section.A.11}{A.11 Fu\337noten}{appendix.A}% 43
+\BOOKMARK [1][-]{section.A.12}{A.12 Verschiedenes}{appendix.A}% 44
+\BOOKMARK [1][-]{section.A.13}{A.13 Weitere Illustrationen}{appendix.A}% 45
+\BOOKMARK [1][-]{section.A.14}{A.14 Plots with pgfplots}{appendix.A}% 46
+\BOOKMARK [1][-]{section.A.15}{A.15 Figures with tikz}{appendix.A}% 47
+\BOOKMARK [0][]{appendix*.18}{Literaturverzeichnis}{}% 48

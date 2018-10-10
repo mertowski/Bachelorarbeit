@@ -1,0 +1,252 @@
+% !TeX spellcheck = de-DE
+% !TeX encoding = utf8
+% !TeX program = pdflatex
+% !BIB program = biber
+
+
+% vv  scroll down to line 200 for content  vv
+
+
+\let\ifdeutsch\iftrue
+\let\ifenglisch\iffalse
+\input{pre-documentclass}
+\documentclass[
+               % fontsize=11pt is the standard
+               paper=a4,
+               twoside,  % we are optimizing for both screen and two-side printing. So the page numbers will jump, but the content is configured to stay in the middle (by using the geometry package)
+               bibliography=totoc,
+%               idxtotoc,   %Index ins Inhaltsverzeichnis
+%               liststotoc, %List of X ins Inhaltsverzeichnis, mit liststotocnumbered werden die Abbildungsverzeichnisse nummeriert
+               headsepline,
+               cleardoublepage=empty,
+               parskip=half,
+%               draft    % um zu sehen, wo noch nachgebessert werden muss - wichtig, da Bindungskorrektur mit drin
+               final
+               ]{scrbook}
+\input{config}
+
+
+\usepackage[
+    title={API Security Testing mit OWASP Zap und RAML},
+    author={Mert Yücel},
+    type=\textbf{Bachelorarbeit}\\ 
+    zur Erlangung des akademischen Grades\\
+    Bachelor of Science (B.SC.)\\
+    in Kooperation mit Novatec GmbH\\
+    \vspace{4ex},
+    institute=Fakultät Informatik\\
+    \vspace{3ex}
+    Hochschule Reutlingen\\
+    Alteburgstraße 150\\
+    72762 Reutlingen, % or other institute names - or just a plain string using {Demo\\Demo...}
+    course={Wirtschaftsinformatik},
+    examiner={Prof.\ Dr.\ Martin Schmollinger,\\
+    Prof.\ Dr.\ Muster Mustermann},
+    supervisor={Anreas Falk,\\Jan Horak},
+    startdate={1.\ September 2018}, % English: July 5, 2013;    ISO: 2013-07-05
+    enddate={15.\ Januar 2019}  % English: January 5, 2014; ISO: 2014-01-05
+    ]{uni-stuttgart-cs-cover}
+
+\input{acronyms}
+
+\makeindex
+
+\begin{document}
+
+%tex4ht-Konvertierung verschönern
+\iftex4ht
+% tell tex4ht to create picures also for formulas starting with '$'
+% WARNING: a tex4ht run now takes forever!
+\Configure{$}{\PicMath}{\EndPicMath}{} 
+%$ % <- syntax highlighting fix for emacs
+\Css{body {text-align:justify;}}
+
+%conversion of .pdf to .png
+\Configure{graphics*}  
+         {pdf}  
+         {\Needs{"convert \csname Gin@base\endcsname.pdf  
+                               \csname Gin@base\endcsname.png"}%  
+          \Picture[pict]{\csname Gin@base\endcsname.png}%  
+         }  
+\fi
+
+%Tipp von http://goemonx.blogspot.de/2012/01/pdflatex-ligaturen-und-copynpaste.html
+%siehe auch http://tex.stackexchange.com/questions/4397/make-ligatures-in-linux-libertine-copyable-and-searchable
+%
+%ONLY WORKS ON MiKTeX
+%On other systems, download glyphtounicode.tex from http://pdftex.sarovar.org/misc/
+%
+\input glyphtounicode.tex
+\pdfgentounicode=1
+
+%\VerbatimFootnotes %verbatim text in Fußnoten erlauben. Geht normalerweise nicht.
+
+\input{commands}
+\pagenumbering{roman}
+\Titelblatt
+
+%Eigener Seitenstil fuer die Kurzfassung und das Inhaltsverzeichnis
+\deftripstyle{preamble}{}{}{}{}{}{\pagemark}
+%Doku zu deftripstyle: scrguide.pdf
+\pagestyle{preamble}
+\renewcommand*{\chapterpagestyle}{preamble}
+
+
+
+%Kurzfassung / abstract
+%auch im Stil vom Inhaltsverzeichnis
+\ifdeutsch
+\section*{Kurzfassung}
+REST-APIs sind heutzutage weit verbreitet und dank ihrer Einfachheit, Skalierbarkeit und Flexibilität werden sie weitgehend als Standardprotokoll für die Web-APIs angesehen. Es scheint plausibel anzunehmen, dass die Ära der Desktop-basierten Anwendungen kontinuierlich zurückgeht und im Zuge dessen, die Benutzer von Desktop- zu Web- und weiteren mobilen Anwendungen wechseln. 
+
+Bei der Entwicklung von REST-basierten Web-Anwendungen wird ein REST-basierter Web Service benötigt, um die Funktionalitäten der Web-Anwendung richtig testen zu können, da die gängigen Penetrationstest-Werkzeuge für REST-APIs nicht direkt einsatzfähig sind, wird die Sicherheit solcher APIs jedoch immer noch zu selten überprüft und das Testen dieser Arten von Anwendungen ist eine sehr große Herausforderung. Hauptsächlich für das erstmalige Testen ist es für den Betreiber von Webanwendungen sehr unüberschaubar. Verschiedene Werkzeuge, Frameworks und Bibliotheken sind dazu da, die Testaktivität automatisieren zu können. Die Nutzer wählen diese Dienstprogramme basierend auf ihrem Kontext, ihrer Umgebung, ihrem Budget und ihrem Qualifikationsniveau. Einige Eigenschaften von REST-APIs machen es jedoch für automatisierte Web-Sicherheitsscanner schwierig, geeignete REST-API-Sicherheitstests für die Schwachstellen durchzuführen.
+
+Diese Bachelorarbeit untersucht wie die Sicherheitstests heutzutage realisiert werden und versucht qualitativ-deskriptiv aufzudecken, ob auf solche Sicherheitstests verlässlich sind. Es werden verschiedene existierende Tools verglichen, die das Testen von RESTful APIs unterstützen. Dann wird ihre Vor- und Nachteile herausgefunden und gegeneinander abgewägt. Es wird auch Gewißheit verschaffen, wie die technische Schwachstellen(wie z.B. Konzeptionsfehlern, Programmierfehlern und Konfigurationsfehlern) von Webanwendungen dargelegt. Parallel zu den Schwachstellen werden die jeweiligen Gefahren und Angriffspunkte für eine Webanwendung anhand von ''OWASP Top 10 - Risiken'' erörtert.
+
+Im Rahmen dieser Bachelorarbeit wird ein Plugin für das Open Source Werkzeug OWASP Zap entwickelt, um Schwachstellen automatisch zu untersuchen, um ein gewisses Maß an Sicherheit gewährleisten zu können. Dieses Plugin muss so implementiert werden, so dass die RAML-Dokumentationen importiert werden können, um automatisierte Penetrationstests ausführen zu können. Es wird auch eine Möglichkeit geschaffen, dass das Plugin in OWASP Zap sowohl über die UI, aber auch über Kommandozeile ansprechbar ist, um dies auch in CI-Umgebungen einbinden zu können.
+
+\else
+\section*{Abstract}
+\fi
+
+\cleardoublepage
+
+
+% BEGIN: Verzeichnisse
+
+\iftex4ht
+\else
+\microtypesetup{protrusion=false}
+\fi
+
+%%%
+% Literaturverzeichnis ins TOC mit aufnehmen, aber nur wenn nichts anderes mehr hilft!
+% \addcontentsline{toc}{chapter}{Literaturverzeichnis}
+%
+% oder zB
+%\addcontentsline{toc}{section}{Abkürzungsverzeichnis}
+%
+%%%
+
+%Produce table of contents
+%
+%In case you have trouble with headings reaching into the page numbers, enable the following three lines.
+%Hint by http://golatex.de/inhaltsverzeichnis-schreibt-ueber-rand-t3106.html
+%
+%\makeatletter
+%\renewcommand{\@pnumwidth}{2em}
+%\makeatother
+%
+\setcounter{tocdepth}{4}
+\tableofcontents
+
+% Bei einem ungünstigen Seitenumbruch im Inhaltsverzeichnis, kann dieser mit
+% \addtocontents{toc}{\protect\newpage}
+% an der passenden Stelle im Fließtext erzwungen werden.
+
+\listoffigures
+\listoftables
+
+%Wird nur bei Verwendung von der lstlisting-Umgebung mit dem "caption"-Parameter benoetigt
+%\lstlistoflistings 
+%ansonsten:
+\ifdeutsch
+\listof{Listing}{Verzeichnis der Listings}
+\else
+\listof{Listing}{List of Listings}
+\fi
+
+%mittels \newfloat wurde die Algorithmus-Gleitumgebung definiert.
+%Mit folgendem Befehl werden alle floats dieses Typs ausgegeben
+\ifdeutsch
+\listof{Algorithmus}{Verzeichnis der Algorithmen}
+\else
+\listof{Algorithmus}{List of Algorithms}
+\fi
+%\listofalgorithms %Ist nur für Algorithmen, die mittels \begin{algorithm} umschlossen werden, nötig
+
+% Abkürzungsverzeichnis
+\printnoidxglossaries
+
+\iftex4ht
+\else
+%Optischen Randausgleich und Grauwertkorrektur wieder aktivieren
+\microtypesetup{protrusion=true}
+\fi
+
+% END: Verzeichnisse
+
+
+% Headline and footline
+\renewcommand*{\chapterpagestyle}{scrplain}
+\pagestyle{scrheadings}
+\pagestyle{scrheadings}
+\ihead[]{}
+\chead[]{}
+\ohead[]{\headmark}
+\cfoot[]{}
+\ofoot[\usekomafont{pagenumber}\thepage]{\usekomafont{pagenumber}\thepage}
+\ifoot[]{}
+
+
+%% vv  scroll down for content  vv %%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Main content starts here
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{chapters/Einleitung}
+\pagenumbering{arabic}
+\input{chapters/chapter2}
+\input{chapters/chapter3}
+\input{chapters/chapter4}
+\input{chapters/chapter5}
+\input{chapters/chapter6}
+\input{chapters/chapter7}
+\input{chapters/chapter8}
+\input{chapters/Fazit}
+
+
+
+%\renewcommand{\appendixtocname}{Anhang}
+%\renewcommand{\appendixname}{Anhang}
+%\renewcommand{\appendixpagename}{Anhang}
+\appendix
+\input{latex-hints-de}
+
+\clearpage
+
+%\printindex
+
+\printbibliography
+
+Alle URLs wurden zuletzt am 17.\,03.\,2018 geprüft.
+
+\pagestyle{empty}
+\renewcommand*{\chapterpagestyle}{empty}
+\Versicherung
+\end{document}

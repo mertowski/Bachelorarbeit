@@ -1,0 +1,23 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax A.1}{\ignorespaces Beispiel-Choreographie\relax }}{21}{figure.caption.9}
+\contentsline {figure}{\numberline {\relax A.2}{\ignorespaces Beispiel-Choreographie}}{21}{figure.caption.10}
+\contentsline {figure}{\numberline {\relax A.3}{\ignorespaces Beispiel um 3 Abbildung nebeneinader zu stellen nur jedes einzeln referenzieren zu k\IeC {\"o}nnen. Abbildung~\ref {fig:subfigB} ist die mittlere Abbildung.\relax }}{22}{figure.caption.11}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{22}{subfigure.3.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{22}{subfigure.3.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Subcaption if needed}}}{22}{subfigure.3.3}
+\contentsline {figure}{\numberline {\relax A.4}{\ignorespaces Beispiel-Choreographie I\relax }}{26}{figure.caption.14}
+\contentsline {figure}{\numberline {\relax A.5}{\ignorespaces Beispiel-Choreographie II\relax }}{27}{figure.caption.15}
+\contentsline {figure}{\numberline {\relax A.6}{\ignorespaces $\qopname \relax o{sin}(x)$ mit pgfplots.\relax }}{28}{figure.caption.16}
+\contentsline {figure}{\numberline {\relax A.7}{\ignorespaces Eine tikz-Graphik.\relax }}{28}{figure.caption.17}
+\addvspace {10\p@ }
