@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2018.10.10)  10 OCT 2018 12:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2018.10.10)  10 OCT 2018 14:22
 entering extended mode
 **./main-german.tex
 (main-german.tex
@@ -3269,15 +3269,9 @@ Process extension: `alg'
 (main-german.wrt)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 252.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 252.
+Package rerunfilecheck Info: File `main-german.out' has not changed.
+(rerunfilecheck)             Checksum: 4445517A1AFE7B28C5ED76F5FCF9E4F4;4626.
 
-
-Package rerunfilecheck Warning: File `main-german.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main-german.out':
-(rerunfilecheck)             Before: 697862EC8D8FF7E18E6587DA2AE36948;4623
-(rerunfilecheck)             After:  4445517A1AFE7B28C5ED76F5FCF9E4F4;4626.
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -3316,7 +3310,7 @@ y8.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/symbols/msbm1
 0.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/
 local/share/miktex-texmf/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/share/
 miktex-texmf/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main-german.pdf (45 pages, 514992 bytes).
+Output written on main-german.pdf (45 pages, 514998 bytes).
 PDF statistics:
  757 PDF objects out of 1000 (max. 8388607)
  152 named destinations out of 1000 (max. 500000)
