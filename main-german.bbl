@@ -46,6 +46,122 @@
       \verb http://ode.apache.org
       \endverb
     \endentry
+    \entry{blieberger2013informatik}{book}{}
+      \name{author}{4}{}{%
+        {{hash=fe7316bacb9d2ea312d9e000a435ad54}{%
+           family={Blieberger},
+           familyi={B\bibinitperiod},
+           given={Johann},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9ee8a4cb4ca15a66bd6129d584a54be0}{%
+           family={Klasek},
+           familyi={K\bibinitperiod},
+           given={Johann},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1c47bf19de73e3e0cd5e7e5ac27b67a5}{%
+           family={Redlein},
+           familyi={R\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9c0c4ccdbfaa43b3f29538c55ec5bbc3}{%
+           family={Schildt},
+           familyi={S\bibinitperiod},
+           given={Gerhard-Helge},
+           giveni={G\bibinithyphendelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag}%
+      }
+      \strng{namehash}{88962da95012d496f0d94d6d19b526b6}
+      \strng{fullhash}{01b3f561a45f62298fd7bdd12dc2e9ef}
+      \strng{bibnamehash}{01b3f561a45f62298fd7bdd12dc2e9ef}
+      \strng{authorbibnamehash}{01b3f561a45f62298fd7bdd12dc2e9ef}
+      \strng{authornamehash}{88962da95012d496f0d94d6d19b526b6}
+      \strng{authorfullhash}{01b3f561a45f62298fd7bdd12dc2e9ef}
+      \field{labelalpha}{BKRS13}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Informatik}
+      \field{year}{2013}
+    \endentry
+    \entry{broy2013informatik}{book}{}
+      \name{author}{1}{}{%
+        {{hash=74476573aa159749eafc4a3c16c957b4}{%
+           family={Broy},
+           familyi={B\bibinitperiod},
+           given={Manfred},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag}%
+      }
+      \strng{namehash}{74476573aa159749eafc4a3c16c957b4}
+      \strng{fullhash}{74476573aa159749eafc4a3c16c957b4}
+      \strng{bibnamehash}{74476573aa159749eafc4a3c16c957b4}
+      \strng{authorbibnamehash}{74476573aa159749eafc4a3c16c957b4}
+      \strng{authornamehash}{74476573aa159749eafc4a3c16c957b4}
+      \strng{authorfullhash}{74476573aa159749eafc4a3c16c957b4}
+      \field{labelalpha}{Bro13}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Informatik Eine grundlegende Einf{ü}hrung: Band 1: Programmierung und Rechnerstrukturen}
+      \field{volume}{1}
+      \field{year}{2013}
+    \endentry
+    \entry{eckert2013sicherheit}{book}{}
+      \name{author}{1}{}{%
+        {{hash=cd9b8b6ad8b07ad6c0e7ff77e3340a14}{%
+           family={Eckert},
+           familyi={E\bibinitperiod},
+           given={Claudia},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Walter de Gruyter}%
+      }
+      \strng{namehash}{cd9b8b6ad8b07ad6c0e7ff77e3340a14}
+      \strng{fullhash}{cd9b8b6ad8b07ad6c0e7ff77e3340a14}
+      \strng{bibnamehash}{cd9b8b6ad8b07ad6c0e7ff77e3340a14}
+      \strng{authorbibnamehash}{cd9b8b6ad8b07ad6c0e7ff77e3340a14}
+      \strng{authornamehash}{cd9b8b6ad8b07ad6c0e7ff77e3340a14}
+      \strng{authorfullhash}{cd9b8b6ad8b07ad6c0e7ff77e3340a14}
+      \field{labelalpha}{Eck13}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{IT-Sicherheit: Konzepte-Verfahren-Protokolle}
+      \field{year}{2013}
+    \endentry
+    \entry{furnell2008securing}{book}{}
+      \name{author}{1}{}{%
+        {{hash=936dc9189a688321a4690bdcf047e883}{%
+           family={Furnell},
+           familyi={F\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Artech House}%
+      }
+      \strng{namehash}{936dc9189a688321a4690bdcf047e883}
+      \strng{fullhash}{936dc9189a688321a4690bdcf047e883}
+      \strng{bibnamehash}{936dc9189a688321a4690bdcf047e883}
+      \strng{authorbibnamehash}{936dc9189a688321a4690bdcf047e883}
+      \strng{authornamehash}{936dc9189a688321a4690bdcf047e883}
+      \strng{authorfullhash}{936dc9189a688321a4690bdcf047e883}
+      \field{labelalpha}{Fur08}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Securing information and communications systems: Principles, technologies, and applications}
+      \field{year}{2008}
+    \endentry
     \entry{RVvdA2016}{article}{}
       \name{author}{3}{}{%
         {{hash=4a4d0c1d5cdb451c8e1f551bdda98b45}{%
@@ -140,6 +256,31 @@
       \verb{doi}
       \verb 10.1.1/jpb001
       \endverb
+    \endentry
+    \entry{wheeler2013offene}{book}{}
+      \name{author}{1}{}{%
+        {{hash=d61984682703ed1d6b6ab6e6b970ca94}{%
+           family={Wheeler},
+           familyi={W\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag}%
+      }
+      \strng{namehash}{d61984682703ed1d6b6ab6e6b970ca94}
+      \strng{fullhash}{d61984682703ed1d6b6ab6e6b970ca94}
+      \strng{bibnamehash}{d61984682703ed1d6b6ab6e6b970ca94}
+      \strng{authorbibnamehash}{d61984682703ed1d6b6ab6e6b970ca94}
+      \strng{authornamehash}{d61984682703ed1d6b6ab6e6b970ca94}
+      \strng{authorfullhash}{d61984682703ed1d6b6ab6e6b970ca94}
+      \field{labelalpha}{Whe13}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Offene Systeme: ein grundlegendes Handbuch für das praktische DV-Management}
+      \field{year}{2013}
     \endentry
   \enddatalist
 \endrefsection

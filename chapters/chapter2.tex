@@ -1,11 +1,88 @@
+% !TeX spellcheck = <none>
 \chapter{Grundlagen}
 \label{chap:k2}
 
-Hier wird der Hauptteil stehen. Falls mehrere Kapitel gewünscht, entweder mehrmals \texttt{\textbackslash{}chapter} benutzen oder pro Kapitel eine eigene Datei anlegen und \texttt{ausarbeitung.tex} anpassen.
-
-LaTeX-Hinweise stehen in \cref{chap:latextipps}.
+Im folgenden Kapitel werden auf die mehrere Grundlagen eingegangen. Zu Beginn wird ein Überblick über das Informationssicherheit geschaffen und Grundlegende Begriffe, Schutzziele, Schwachstellen, Bedrohungen und Angriffe aufgezeigt. Anschlißend werden die Sicherheitsrichtlinie und Sicherheitsinfrastruktur vorgestellt. Zuletzt wird ein Überblick über die Technologien des Projektes gegeben.
 
 \section{Informationssicherheit}
+
+\begin{quote}
+	\emph{''Meine Nachricht für Unternehmen, die sie denken, nicht angegriffen worden ist: Sie suchen nicht hart genug.''}
+	\hfill James Snook
+\end{quote}
+
+Informationssicherheit ist eine wichtige Herausforderung im Bereich der neuen Informationstechnologien. Sie ist heutzutage in nahezu allen Bereichen von zentraler Bedeutung.  Die Sicherheit von Informationen, Daten, Geschäft und Investitionen gehören zu den Schlüsselprioritäten und die Verfügbarkeit von Informationen in der richtigen Zeit und Form ist heutzutage in jeder Organisation ein Muss. IT-Sicherheit hat die Aufgabe, Unternehmen und deren Werte zu schützen, indem sie böswillige Angriffe zu identifizieren, zu reduzieren und zu verhindern.
+
+Das schnelle Wachstum von Webanwendungen hängt zweifellos von der Sicherheit, dem Datenschutz und der Zuverlässigkeit der Anwendungen, Systeme und unterstützenden Infrastrukturen ab. Obwohl IT-Sicherheit heutzutage sehr große Rolle in unserem Leben spielt, liegt das durchschnittliche Sicherheitswissen von IT-Fachkräften und Ingenieuren weit hinter. Das Internet ist jedoch für seine mangelnde Sicherheit bekannt, wenn sie nicht genau und streng spezifiziert, entworfen und getestet werden. In den letzten Jahren war es offensichtlich, dass der Bereich der IT-Sicherheit leistungsfähige Werkzeuge und Einrichtungen mit überprüfbaren Systemen und Anwendungen umfassen muss, die die Vertraulichkeit und Privatsphäre in Webanwendungen wahren, die die Probleme definieren\cite[1]{furnell2008securing}.
+
+Wegen der Realisierung eine lückenlose Abwehr von Angriffen in der Wirklichkeit nicht möglich ist, inkludieren das Gebiet der IT-Sicherheit hauptsächlich auch Maßnahmen und Vorgehensweise, um die potenziellen Schäden zu vermindern, um die Risiken beim Einsatz von \gls{ikt}-Systemen zu verringern. Die Angriffsversuche müssen rechtzeitig und mit möglichst hoher Genauigkeit erkannt werden. Dazu muss auf eingetretene Schadensfälle mit geeigneten technischen Maßnahmen reagiert werden. Es sollte klargestellt werden, dass Techniken der Angriffserkennung und Reaktion ebenso zur IT-Sicherheit gehören, wie methodische Grundlagen, um IKT-Systeme so zu entwickeln, dass sie mittels Design ein hohes Maß an Sicherheit bieten. Durch IT-Sicherheit können eine Möglichkeit geschaffen werden, um die Entwicklung vertrauenswürdiger Anwendungen und Dienstleistungen mit innovativen Geschäftsmodellen beispielsweise im Gesundheitsbereich, bei Automotive-Anwendungen oder in zukünftigen, intelligenten Umgebungen zu verbinden\cite[20--21]{eckert2013sicherheit}.
+
+\subsection{Grundlegende Begriffe}
+
+\subsubsection{IT System}
+
+Ein IT-System besteht aus ein geschlossenes und ein offenes System mit der Begabung zur Speicherung und Verarbeitung von Informationen. 
+
+\paragraph{Offene Systeme:}
+
+Die offene Systemen sind vernetzte, physisch verteilte Systeme mit der Möglichkeit zum Informationsaustausch mit anderen Systemen\cite[22--23]{eckert2013sicherheit}. Tom Wheeler definiert offene Systeme als \emph{''jene Hard- und Software-Implementierungen, die der Sammlung von Standards entsprechen, die den freien und leichten Zugang zu Lösungen verschiedener Hersteller erlauben. Die Sammlung von Standards kann formal definiert sein oder einfach aus De-facto-Definitionen bestehen, an die sich die großen Hersteller und Anwender in einem technologischen Bereich halten.''}\cite[4]{wheeler2013offene}
+
+\paragraph{Geschlossene Systeme:}
+
+Ein geschlossenes System (z. B. Datev) baut auf der Technologie eines Herstellers auf und ist zu Konkurrenzprodukten nicht kompatibel.  Es dehnt sich auf einen bestimmten Teilnehmerkreis aus und beschränkt ein bestimmtes räumliches Gebiet\cite[22--23]{eckert2013sicherheit}.
+
+\paragraph{Information und Datenobjekte}
+
+\subparagraph{Objekt:}
+
+IT-Systeme haben die Begabung Informationen zu speichern und zu verarbeiten. Die Information wird in Form von Daten bzw. Datenobjekten repräsentiert. \textbf{Passiven Objekten} (z.B. Datei, Datenbankeintrag) haben die Fähigkeit, Informationen zu speichern. \textbf{Aktive Objekten} (z.B. Prozesse) haben die Fähigkeit, sowohl Informationen zu speichern als auch zu verarbeiten\cite[23]{eckert2013sicherheit}.
+
+\subparagraph{Subjekt:}
+
+Subjekte sind die Benutzer eines Systems und alle Objekte, die im Auftrag von Benutzern im System aktiv sein können\cite[24]{eckert2013sicherheit}.
+
+\subparagraph{Information:}
+
+
+
+
+
+  
+
+\subparagraph{Legitimer Kanal:}
+
+\subparagraph{Verdeckter Kanal:}
+
+\subsubsection{Sicherheit}
+bla
+\paragraph{Funktionssicher:}
+
+\paragraph{Informationssicher:}
+
+\paragraph{Datensicherheit:}
+
+\paragraph{Datenschutz:}
+
+\paragraph{Verlässligkeit:}
+
+\paragraph{Safety:}
+
+
+\subsection{Schutzziele}
+
+bla bla..
+
+\subsection{Schwachstellen, Bedrohungen, Angriffe}
+
+\subsubsection{Bedrohungen}
+
+\subsubsection{Angriffs- und Angreifer-Typen}
+
+\subsubsection{Rechtliche Rahmenbedingungen}
+
+\subsection{Sicherheitsrichtlinie}
+
+\subsection{Sicherheitsinfrastruktur}
 
 \section{Technologien des Projektes}
 

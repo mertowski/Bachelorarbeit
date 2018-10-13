@@ -15,11 +15,6 @@ In LaTeX werden Absätze durch eine Leerzeile getrennt.
 Folglich werden neue Abstäze insbesondere \emph{nicht} durch Doppelbackslashes erzeugt.
 Der letzte Satz kam in einem neuen Absatz.
 
-\section{File-Encoding und Unterstützung von Umlauten}
-\label{sec:firstsectioninlatexhints}
-Die Vorlage wurde 2010 auf UTF-8 umgestellt.
-Alle neueren Editoren sollten damit keine Schwierigkeiten haben.
-
 \section{Zitate}
 Referenzen werden mittels \texttt{\textbackslash cite[key]} gesetzt.
 Beispiel: \cite{WSPA} oder mit Autorenangabe: \citet{WSPA}.
@@ -38,25 +33,6 @@ Die Apache ODE Engine \cite{ApacheODE} ist eine Workflow-Maschine, die BPEL-Proz
 Wörter am besten mittels \texttt{\textbackslash enquote\{...\}} \enquote{einschließen}, dann werden die richtigen Anführungszeichen verwendet.
 
 Beim Erstellen der Bibtex-Datei wird empfohlen darauf zu achten, dass die DOI aufgeführt wird.
-
-\section{Mathematische Formeln}
-\label{sec:mf}
-Mathematische Formeln kann man $so$ setzen. \texttt{symbols-a4.pdf} (zu finden auf \url{http://www.ctan.org/tex-archive/info/symbols/comprehensive/symbols-a4.pdf}) enthält eine Liste der unter LaTeX direkt verfügbaren Symbole.
-Z.\,B.\ $\mathbb{N}$ für die Menge der natürlichen Zahlen.
-Für eine vollständige Dokumentation für mathematischen Formelsatz sollte die Dokumentation zu \texttt{amsmath}, \url{ftp://ftp.ams.org/pub/tex/doc/amsmath/} gelesen werden.
-
-Folgende Gleichung erhält keine Nummer, da \texttt{\textbackslash equation*} verwendet wurde.
-\begin{equation*}
-x = y
-\end{equation*}
-
-Die Gleichung~\ref{eq:test} erhält eine Nummer:
-\begin{equation}
-\label{eq:test}
-x = y
-\end{equation}
-
-Eine ausführliche Anleitung zum Mathematikmodus von LaTeX findet sich in \url{http://www.ctan.org/tex-archive/help/Catalogue/entries/voss-mathmode.html}.
 
 \section{Quellcode}
 \Cref{lst:ListingANDlstlisting} zeigt, wie man Programmlistings einbindet.
