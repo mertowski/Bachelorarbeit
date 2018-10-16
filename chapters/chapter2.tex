@@ -17,56 +17,42 @@ Das schnelle Wachstum von Webanwendungen hängt zweifellos von der Sicherheit, d
 
 Wegen der Realisierung eine lückenlose Abwehr von Angriffen in der Wirklichkeit nicht möglich ist, inkludieren das Gebiet der IT-Sicherheit hauptsächlich auch Maßnahmen und Vorgehensweise, um die potenziellen Schäden zu vermindern, um die Risiken beim Einsatz von \gls{ikt}-Systemen zu verringern. Die Angriffsversuche müssen rechtzeitig und mit möglichst hoher Genauigkeit erkannt werden. Dazu muss auf eingetretene Schadensfälle mit geeigneten technischen Maßnahmen reagiert werden. Es sollte klargestellt werden, dass Techniken der Angriffserkennung und Reaktion ebenso zur IT-Sicherheit gehören, wie methodische Grundlagen, um IKT-Systeme so zu entwickeln, dass sie mittels Design ein hohes Maß an Sicherheit bieten. Durch IT-Sicherheit können eine Möglichkeit geschaffen werden, um die Entwicklung vertrauenswürdiger Anwendungen und Dienstleistungen mit innovativen Geschäftsmodellen beispielsweise im Gesundheitsbereich, bei Automotive-Anwendungen oder in zukünftigen, intelligenten Umgebungen zu verbinden\cite[20--21]{eckert2013sicherheit}.
 
-\subsection{Grundlegende Begriffe}
-
-\subsubsection{IT System}
-
-Ein IT-System besteht aus ein geschlossenes und ein offenes System mit der Begabung zur Speicherung und Verarbeitung von Informationen. 
-
-\paragraph{Offene Systeme:}
-
-Die offene Systemen sind vernetzte, physisch verteilte Systeme mit der Möglichkeit zum Informationsaustausch mit anderen Systemen\cite[22--23]{eckert2013sicherheit}. Tom Wheeler definiert offene Systeme als \emph{''jene Hard- und Software-Implementierungen, die der Sammlung von Standards entsprechen, die den freien und leichten Zugang zu Lösungen verschiedener Hersteller erlauben. Die Sammlung von Standards kann formal definiert sein oder einfach aus De-facto-Definitionen bestehen, an die sich die großen Hersteller und Anwender in einem technologischen Bereich halten.''}\cite[4]{wheeler2013offene}
-
-\paragraph{Geschlossene Systeme:}
-
-Ein geschlossenes System (z. B. Datev) baut auf der Technologie eines Herstellers auf und ist zu Konkurrenzprodukten nicht kompatibel.  Es dehnt sich auf einen bestimmten Teilnehmerkreis aus und beschränkt ein bestimmtes räumliches Gebiet\cite[22--23]{eckert2013sicherheit}.
-
-\paragraph{Information und Datenobjekte}
-
-\subparagraph{Objekt:}
-
-IT-Systeme haben die Begabung Informationen zu speichern und zu verarbeiten. Die Information wird in Form von Daten bzw. Datenobjekten repräsentiert. \textbf{Passiven Objekten} (z.B. Datei, Datenbankeintrag) haben die Fähigkeit, Informationen zu speichern. \textbf{Aktive Objekten} (z.B. Prozesse) haben die Fähigkeit, sowohl Informationen zu speichern als auch zu verarbeiten\cite[23]{eckert2013sicherheit}.
-
-\subparagraph{Subjekt:}
-
-Subjekte sind die Benutzer eines Systems und alle Objekte, die im Auftrag von Benutzern im System aktiv sein können\cite[24]{eckert2013sicherheit}.
-
-\subparagraph{Information:}
+\subsection{Grundlagen der IT-Sicherheit}
 
 
 
+\subsubsection{Offene- und geschlossene Systeme}
 
+Ein IT-System besteht aus ein geschlossenes und ein offenes System mit der Begabung zur Speicherung und Verarbeitung von Informationen. Die offene Systemen (z. B. Windows) sind vernetzte, physisch verteilte Systeme mit der Möglichkeit zum Informationsaustausch mit anderen Systemen\cite[22--23]{eckert2013sicherheit}. Tom Wheeler definiert offene Systeme als \emph{''jene Hard- und Software-Implementierungen, die der Sammlung von Standards entsprechen, die den freien und leichten Zugang zu Lösungen verschiedener Hersteller erlauben. Die Sammlung von Standards kann formal definiert sein oder einfach aus De-facto-Definitionen bestehen, an die sich die großen Hersteller und Anwender in einem technologischen Bereich halten.''}\cite[4]{wheeler2013offene} Ein geschlossenes System (z. B. Datev) baut auf der Technologie eines Herstellers auf und ist zu Konkurrenzprodukten nicht kompatibel.  Es dehnt sich auf einen bestimmten Teilnehmerkreis aus und beschränkt ein bestimmtes räumliches Gebiet\cite[22--23]{eckert2013sicherheit}.
 
-  
+\subsubsection{Soziotechnische Systeme}
 
-\subparagraph{Legitimer Kanal:}
+IT-Systeme werden in unterschiedliche Strukturen (gesellschaftliche, unternehmerische und politische Strukturen) mit verschiedenem technischen Know-how und für sehr verschiedene Ziele in Betrach gezogen\cite[23]{eckert2013sicherheit}. IT-Sicherheit wird den Schutz eines soziotechnischen Systems gewährleistet. Darausfolgend ergibt sich dann auch das Ziel der IT Sicherheit. Die Unternehmen bzw. Institutionen und deren Daten sollen gegen Schaden und Bedrohungen geschützt werden. Insbesondere soll auf den Schutz von IT-Systemen angewiesen sein\cite{so18tech}. 
+\subsubsection{Information und Datenobjekte}
 
-\subparagraph{Verdeckter Kanal:}
+IT-Systeme haben die Begabung Informationen zu speichern und zu verarbeiten. Die Information wird in Form von Daten bzw. Datenobjekten repräsentiert. \textbf{Passiven Objekten} (z.B. Datei, Datenbankeintrag) haben die Fähigkeit, Informationen zu speichern. \textbf{Aktive Objekten} (z.B. Prozesse) haben die Fähigkeit, sowohl Informationen zu speichern als auch zu verarbeiten\cite[23]{eckert2013sicherheit}. \textbf{Subjekte} sind die Benutzer eines Systems und alle Objekte, die im Auftrag von Benutzern im System aktiv sein können\cite[24]{eckert2013sicherheit}. 
+
+Informatik wird als die Wissenschaft, Technik und Anwendung der maschinellen Verarbeitung, Speicherung, Ubertragung und Darstellung von Information identifiziert. \textbf{Informationen} sind einen abstrakten Gehalt (''Bedeutungsinhalt'', ''Semantik'') eines Dokuments, einer Aussage, Beschreibung, Anweisung oder Mitteilung\cite[5]{broy2013informatik} und sie werden durch die Nachrichten übermittelt\cite[18]{blieberger2013informatik}. Information wird umgangssprachlich sehr oft für Daten verwendet aber es gibt Untershied zwischen Daten und Information. Der Mensch bildet die Informationen in Daten ab, indem er die Nachrichten übertragen oder verarbeiten. Die Daten, die maschinell verarbeitbare Zeichen sind, werden durch in einer Nachricht enthaltene Information die Bedeutung der Nachricht darstellen. Auf der Ebene der Daten geschiet die Übertragung oder Verarbeitung und die Resultat wird vom Mensch als Information interpretiert\cite{infstd}.
 
 \subsubsection{Sicherheit}
-bla
-\paragraph{Funktionssicher:}
 
-\paragraph{Informationssicher:}
+\paragraph{Funktionssicher}\mbox{}
 
-\paragraph{Datensicherheit:}
+In den Sicheren Systeme sollen alle korrekten Spezifikationen korrekt funktioniert werden und eine hohe Zuverlässigkeit und Fehlersicherheit gewährleistet werden. Die Isolierung von der Außenwelt weicht konstant durch die stetig zunehmende Vernetzung jeglicher Systeme mit Informationstechnik auf. Die Zweck von Funktionssicherheit (engl. safety) ist, dass die Umgebung vor dem Fehlverhalten des Systems schützen.  Bei der Entwicklungsphase müssen systematische Fehler vermieden werden. Durch die Überwachung im laufenden Betrieb müssen die Fehlern erkannt werden und solche Fehlern müssen dominiert werden, um ein funktionsichere Zustand zu erreichen\cite{hoepner2014trends}.
 
-\paragraph{Datenschutz:}
+\paragraph{Informationssicher}\mbox{}
 
-\paragraph{Verlässligkeit:}
+Das Hauptziel von Informationssicherheit (engl. security) ist, dass die Informationen zu schützen, die sowohl auf Papier, in Rechnern oder auch in Köpfen gespeichert sein. IT-Sicherheit kümmert sich ersten um den Schutz digitalen Informationen und deren Verarbeitung\cite[81]{int11sicher}, um unautorisierte Informationsveränderung oder -gewinnung zu verhindern\cite[26]{eckert2013sicherheit}.
 
-\paragraph{Safety:}
+\paragraph{Datensicherheit und Datenschutz}\mbox{}
 
+Datensicherheit bedeutet, dass der Zustand eines Systems der Informationstechnik, in dem die Risiken, die im laufenden Betrieb dieses Systems bezüglich von Gefährdungen anwesend sind, durch Maßnnahmen auf ein bestimmtes Menge eingeschrankt sind\cite[14--15]{eberspacher1994sichere}.
+
+
+
+\paragraph{Verlässligkeit}\mbox{}
+
+asdasd
 
 \subsection{Schutzziele}
 

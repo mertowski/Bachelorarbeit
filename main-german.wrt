@@ -26,24 +26,15 @@
 \@writefile{code}{\addvspace {10\p@ }}
 \@writefile{alg}{\addvspace {10\p@ }}
 \@writefile{toc}{\contentsline {section}{\numberline {2.1}Informationssicherheit}{3}{section.2.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}Grundlegende Begriffe}{4}{subsection.2.1.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1.1}IT System}{4}{subsubsection.2.1.1.1}}
-\@writefile{toc}{\contentsline {paragraph}{\nonumberline Offene Systeme:}{4}{section*.10}}
-\@writefile{toc}{\contentsline {paragraph}{\nonumberline Geschlossene Systeme:}{4}{section*.11}}
-\@writefile{toc}{\contentsline {paragraph}{\nonumberline Information und Datenobjekte}{4}{section*.12}}
-\@writefile{toc}{\contentsline {subparagraph}{\nonumberline Objekt:}{4}{section*.13}}
-\@writefile{toc}{\contentsline {subparagraph}{\nonumberline Subjekt:}{4}{section*.14}}
-\@writefile{toc}{\contentsline {subparagraph}{\nonumberline Information:}{4}{section*.15}}
-\@writefile{toc}{\contentsline {paragraph}{\nonumberline Informationskan\IeC {\"a}le}{4}{section*.16}}
-\@writefile{toc}{\contentsline {subparagraph}{\nonumberline Legitimer Kanal:}{4}{section*.17}}
-\@writefile{toc}{\contentsline {subparagraph}{\nonumberline Verdeckter Kanal:}{5}{section*.18}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1.2}Sicherheit}{5}{subsubsection.2.1.1.2}}
-\@writefile{toc}{\contentsline {paragraph}{\nonumberline Funktionssicher:}{5}{section*.19}}
-\@writefile{toc}{\contentsline {paragraph}{\nonumberline Informationssicher:}{5}{section*.20}}
-\@writefile{toc}{\contentsline {paragraph}{\nonumberline Datensicherheit:}{5}{section*.21}}
-\@writefile{toc}{\contentsline {paragraph}{\nonumberline Datenschutz:}{5}{section*.22}}
-\@writefile{toc}{\contentsline {paragraph}{\nonumberline Verl\IeC {\"a}ssligkeit:}{5}{section*.23}}
-\@writefile{toc}{\contentsline {paragraph}{\nonumberline Safety:}{5}{section*.24}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}Grundlagen der IT-Sicherheit}{4}{subsection.2.1.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1.1}Offene- und geschlossene Systeme}{4}{subsubsection.2.1.1.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1.2}Soziotechnische Systeme}{4}{subsubsection.2.1.1.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1.3}Information und Datenobjekte}{4}{subsubsection.2.1.1.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1.4}Sicherheit}{5}{subsubsection.2.1.1.4}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {2.1.1.4.1}Funktionssicher}{5}{paragraph.2.1.1.4.1}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {2.1.1.4.2}Informationssicher}{5}{paragraph.2.1.1.4.2}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {2.1.1.4.3}Datensicherheit und Datenschutz}{5}{paragraph.2.1.1.4.3}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {2.1.1.4.4}Verl\IeC {\"a}ssligkeit}{5}{paragraph.2.1.1.4.4}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}Schutzziele}{5}{subsection.2.1.2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}Schwachstellen, Bedrohungen, Angriffe}{6}{subsection.2.1.3}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.3.1}Bedrohungen}{6}{subsubsection.2.1.3.1}}
@@ -132,36 +123,34 @@
 \@writefile{loa}{\addvspace {10\p@ }}
 \@writefile{code}{\addvspace {10\p@ }}
 \@writefile{alg}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {A.1}Zitate}{19}{section.A.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.2}Quellcode}{19}{section.A.2}}
-\@writefile{code}{\contentsline {Listing}{\numberline {A.1}{\ignorespaces lstlisting in einer Listings-Umgebung, damit das Listing durch Balken abgetrennt ist\relax }}{20}{Listing.A.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {\relax A.1}{\ignorespaces Beispiel-Choreographie\relax }}{20}{figure.caption.25}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.3}Abbildungen}{20}{section.A.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.4}Tabellen}{20}{section.A.4}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.5}Pseudocode}{20}{section.A.5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {\relax A.2}{\ignorespaces Beispiel-Choreographie}}{21}{figure.caption.26}}
-\@writefile{lof}{\contentsline {figure}{\numberline {\relax A.3}{\ignorespaces Beispiel um 3 Abbildung nebeneinader zu stellen nur jedes einzeln referenzieren zu k\IeC {\"o}nnen. Abbildung~\ref {fig:subfigB} ist die mittlere Abbildung.\relax }}{21}{figure.caption.27}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.1}Quellcode}{19}{section.A.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.2}Abbildungen}{19}{section.A.2}}
+\@writefile{code}{\contentsline {Listing}{\numberline {A.1}{\ignorespaces lstlisting in einer Listings-Umgebung, damit das Listing durch Balken abgetrennt ist\relax }}{19}{Listing.A.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax A.1}{\ignorespaces Beispiel-Choreographie\relax }}{20}{figure.caption.10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax A.2}{\ignorespaces Beispiel-Choreographie}}{20}{figure.caption.11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax A.3}{\ignorespaces Beispiel um 3 Abbildung nebeneinader zu stellen nur jedes einzeln referenzieren zu k\IeC {\"o}nnen. Abbildung~\ref {fig:subfigB} ist die mittlere Abbildung.\relax }}{21}{figure.caption.12}}
 \@writefile{lof}{\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{21}{subfigure.3.1}}
 \@writefile{lof}{\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{21}{subfigure.3.2}}
 \@writefile{lof}{\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Subcaption if needed}}}{21}{subfigure.3.3}}
-\@writefile{lot}{\contentsline {table}{\numberline {\relax A.1}{\ignorespaces Beispieltabelle}}{21}{table.caption.28}}
-\@writefile{lot}{\contentsline {table}{\numberline {\relax A.2}{\ignorespaces Beispieltabelle f\"{u}r 4 Bedingungen (W-Z) mit jeweils 4 Parameters mit (M und SD). Hinwei\IeC {\ss }: immer die selbe anzahl an Nachkommastellen angeben.\relax }}{22}{table.caption.29}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax A.1}{\ignorespaces Beispieltabelle}}{21}{table.caption.13}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.3}Tabellen}{21}{section.A.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.4}Pseudocode}{21}{section.A.4}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax A.2}{\ignorespaces Beispieltabelle f\"{u}r 4 Bedingungen (W-Z) mit jeweils 4 Parameters mit (M und SD). Hinwei\IeC {\ss }: immer die selbe anzahl an Nachkommastellen angeben.\relax }}{21}{table.caption.14}}
 \@writefile{alg}{\contentsline {Algorithmus}{\numberline {A.1}{\ignorespaces Sample algorithm\relax }}{22}{Algorithmus.A.1}}
 \@writefile{alg}{\contentsline {Algorithmus}{\numberline {A.2}{\ignorespaces Description \relax }}{23}{Algorithmus.A.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.6}Abk\IeC {\"u}rzungen}{23}{section.A.6}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.7}Verweise}{23}{section.A.7}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.8}Definitionen}{23}{section.A.8}}
-\@writefile{thm}{\contentsline {definition}{{Definition}{A.8.{1}}{Title}}{23}{definition.A.8.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.9}Fu\IeC {\ss }noten}{24}{section.A.9}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.10}Verschiedenes}{24}{section.A.10}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.11}Weitere Illustrationen}{24}{section.A.11}}
-\@writefile{lof}{\contentsline {figure}{\numberline {\relax A.4}{\ignorespaces Beispiel-Choreographie I\relax }}{25}{figure.caption.30}}
-\@writefile{lof}{\contentsline {figure}{\numberline {\relax A.5}{\ignorespaces Beispiel-Choreographie II\relax }}{26}{figure.caption.31}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.12}Plots with pgfplots}{27}{section.A.12}}
-\@writefile{lof}{\contentsline {figure}{\numberline {\relax A.6}{\ignorespaces $\qopname \relax o{sin}(x)$ mit pgfplots.\relax }}{27}{figure.caption.32}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.13}Figures with tikz}{27}{section.A.13}}
-\@writefile{lof}{\contentsline {figure}{\numberline {\relax A.7}{\ignorespaces Eine tikz-Graphik.\relax }}{27}{figure.caption.33}}
-\@writefile{toc}{\contentsline {chapter}{\nonumberline Literaturverzeichnis}{29}{appendix*.34}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.5}Abk\IeC {\"u}rzungen}{23}{section.A.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.6}Definitionen}{23}{section.A.6}}
+\@writefile{thm}{\contentsline {definition}{{Definition}{A.6.{1}}{Title}}{23}{definition.A.6.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.7}Fu\IeC {\ss }noten}{23}{section.A.7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax A.4}{\ignorespaces Beispiel-Choreographie I\relax }}{24}{figure.caption.15}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.8}Verschiedenes}{24}{section.A.8}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.9}Weitere Illustrationen}{24}{section.A.9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax A.5}{\ignorespaces Beispiel-Choreographie II\relax }}{25}{figure.caption.16}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.10}Plots with pgfplots}{26}{section.A.10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax A.6}{\ignorespaces $\qopname \relax o{sin}(x)$ mit pgfplots.\relax }}{26}{figure.caption.17}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.11}Figures with tikz}{26}{section.A.11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax A.7}{\ignorespaces Eine tikz-Graphik.\relax }}{26}{figure.caption.18}}
+\@writefile{toc}{\contentsline {chapter}{\nonumberline Literaturverzeichnis}{27}{appendix*.19}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{lol}{\addvspace {10\p@ }}

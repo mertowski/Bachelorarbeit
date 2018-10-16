@@ -1980,15 +1980,16 @@
     <bcf:citekey order="4">wheeler2013offene</bcf:citekey>
     <bcf:citekey order="5">eckert2013sicherheit</bcf:citekey>
     <bcf:citekey order="6">eckert2013sicherheit</bcf:citekey>
-    <bcf:citekey order="7">eckert2013sicherheit</bcf:citekey>
-    <bcf:citekey order="8">broy2013informatik</bcf:citekey>
-    <bcf:citekey order="9">blieberger2013informatik</bcf:citekey>
-    <bcf:citekey order="10">WSPA</bcf:citekey>
-    <bcf:citekey order="11">WSPA</bcf:citekey>
-    <bcf:citekey order="12">WSPA</bcf:citekey>
-    <bcf:citekey order="13">RVvdA2016</bcf:citekey>
-    <bcf:citekey order="14">RVvdA2016</bcf:citekey>
-    <bcf:citekey order="15">ApacheODE</bcf:citekey>
+    <bcf:citekey order="7">so18tech</bcf:citekey>
+    <bcf:citekey order="8">eckert2013sicherheit</bcf:citekey>
+    <bcf:citekey order="9">eckert2013sicherheit</bcf:citekey>
+    <bcf:citekey order="10">broy2013informatik</bcf:citekey>
+    <bcf:citekey order="11">blieberger2013informatik</bcf:citekey>
+    <bcf:citekey order="12">infstd</bcf:citekey>
+    <bcf:citekey order="13">hoepner2014trends</bcf:citekey>
+    <bcf:citekey order="14">int11sicher</bcf:citekey>
+    <bcf:citekey order="15">eckert2013sicherheit</bcf:citekey>
+    <bcf:citekey order="16">eberspacher1994sichere</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">
