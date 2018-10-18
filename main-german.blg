@@ -1,15 +1,15 @@
 [0] Config.pm:302> INFO - This is Biber 2.11
 [0] Config.pm:305> INFO - Logfile is 'main-german.blg'
-[43] biber-darwin:313> INFO - === Thu Oct 18, 2018, 11:15:58
-[74] Biber.pm:371> INFO - Reading 'main-german.bcf'
-[222] Biber.pm:857> INFO - Found 15 citekeys in bib section 0
-[237] Biber.pm:3976> INFO - Processing section 0
-[257] Biber.pm:4136> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
-[259] bibtex.pm:1500> INFO - LaTeX decoding ...
-[280] bibtex.pm:1316> INFO - Found BibTeX data source 'bibliography.bib'
-[366] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[366] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[366] Biber.pm:3804> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'de-DE'
-[366] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
-[384] bbl.pm:617> INFO - Writing 'main-german.bbl' with encoding 'UTF-8'
-[389] bbl.pm:720> INFO - Output to main-german.bbl
+[48] biber-darwin:313> INFO - === Thu Oct 18, 2018, 15:49:23
+[87] Biber.pm:371> INFO - Reading 'main-german.bcf'
+[173] Biber.pm:857> INFO - Found 16 citekeys in bib section 0
+[186] Biber.pm:3976> INFO - Processing section 0
+[201] Biber.pm:4136> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[203] bibtex.pm:1500> INFO - LaTeX decoding ...
+[219] bibtex.pm:1316> INFO - Found BibTeX data source 'bibliography.bib'
+[299] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[299] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[299] Biber.pm:3804> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'de-DE'
+[299] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
+[321] bbl.pm:617> INFO - Writing 'main-german.bbl' with encoding 'UTF-8'
+[326] bbl.pm:720> INFO - Output to main-german.bbl

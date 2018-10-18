@@ -318,6 +318,32 @@
       \field{title}{Safety und Security aus dem Blickwinkel der öffentlichen IT}
       \field{year}{2015}
     \endentry
+    \entry{nowey2011einleitung}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=b0e63f1de3b26e7964a50b26fec4b21d}{%
+           family={Nowey},
+           familyi={N\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{b0e63f1de3b26e7964a50b26fec4b21d}
+      \strng{fullhash}{b0e63f1de3b26e7964a50b26fec4b21d}
+      \strng{bibnamehash}{b0e63f1de3b26e7964a50b26fec4b21d}
+      \strng{authorbibnamehash}{b0e63f1de3b26e7964a50b26fec4b21d}
+      \strng{authornamehash}{b0e63f1de3b26e7964a50b26fec4b21d}
+      \strng{authorfullhash}{b0e63f1de3b26e7964a50b26fec4b21d}
+      \field{labelalpha}{Now11}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Konzeption eines Systems zur {ü}berbetrieblichen Sammlung und Nutzung von quantitativen Daten {ü}ber Informationssicherheitsvorf{ä}lle}
+      \field{title}{Einleitung}
+      \field{year}{2011}
+    \endentry
     \entry{secupedia11}{misc}{}
       \name{author}{1}{}{%
         {{hash=11db4251f0d4e293fc7055aeaea2681a}{%
