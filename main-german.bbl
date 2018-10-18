@@ -19,6 +19,33 @@
 
 \refsection{0}
   \datalist[entry]{anyt/global//global/global}
+    \entry{dtint2007}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=bfec45b41bf8722c0beb62b92638fe0c}{%
+           family={{Bundesamt für Sicherheit in der Informationstechnik}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{bfec45b41bf8722c0beb62b92638fe0c}
+      \strng{fullhash}{bfec45b41bf8722c0beb62b92638fe0c}
+      \strng{bibnamehash}{bfec45b41bf8722c0beb62b92638fe0c}
+      \strng{authorbibnamehash}{bfec45b41bf8722c0beb62b92638fe0c}
+      \strng{authornamehash}{bfec45b41bf8722c0beb62b92638fe0c}
+      \strng{authorfullhash}{bfec45b41bf8722c0beb62b92638fe0c}
+      \field{labelalpha}{BFSI07}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{label}{BFSI}
+      \field{title}{Glossar und Begriffsdefinitionen}
+      \field{year}{2007}
+      \verb{urlraw}
+      \verb https://www.bsi.bund.de/DE/Themen/ITGrundschutz/ITGrundschutzKataloge/Inhalt/Glossar/glossar_node.html
+      \endverb
+      \verb{url}
+      \verb https://www.bsi.bund.de/DE/Themen/ITGrundschutz/ITGrundschutzKataloge/Inhalt/Glossar/glossar_node.html
+      \endverb
+    \endentry
     \entry{blieberger2013informatik}{book}{}
       \name{author}{4}{}{%
         {{hash=fe7316bacb9d2ea312d9e000a435ad54}{%
@@ -125,6 +152,33 @@
       \field{title}{Internet-Sicherheit: Einführung, Grundlagen, Vorgehensweise}
       \field{year}{2011}
     \endentry
+    \entry{dsba2018}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=6743a1dd61da631cf0f50ed116adef39}{%
+           family={{Datenschutzbeauftragter}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{6743a1dd61da631cf0f50ed116adef39}
+      \strng{fullhash}{6743a1dd61da631cf0f50ed116adef39}
+      \strng{bibnamehash}{6743a1dd61da631cf0f50ed116adef39}
+      \strng{authorbibnamehash}{6743a1dd61da631cf0f50ed116adef39}
+      \strng{authornamehash}{6743a1dd61da631cf0f50ed116adef39}
+      \strng{authorfullhash}{6743a1dd61da631cf0f50ed116adef39}
+      \field{labelalpha}{DsBa18}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{label}{DsBa}
+      \field{title}{Pseudonymisierung – was ist das eigentlich?}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://www.datenschutzbeauftragter-info.de/pseudonymisierung-was-ist-das-eigentlich/
+      \endverb
+      \verb{url}
+      \verb https://www.datenschutzbeauftragter-info.de/pseudonymisierung-was-ist-das-eigentlich/
+      \endverb
+    \endentry
     \entry{eberspacher1994sichere}{article}{}
       \name{author}{1}{}{%
         {{hash=9daa81f996792f535db6c2404d0f8eb6}{%
@@ -198,6 +252,31 @@
       \field{title}{Securing information and communications systems: Principles, technologies, and applications}
       \field{year}{2008}
     \endentry
+    \entry{gora2003handbuch}{book}{}
+      \name{author}{1}{}{%
+        {{hash=0a068e25352bf5b3a4b0f34138b02cfc}{%
+           family={Gora},
+           familyi={G\bibinitperiod},
+           given={Walter},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{0a068e25352bf5b3a4b0f34138b02cfc}
+      \strng{fullhash}{0a068e25352bf5b3a4b0f34138b02cfc}
+      \strng{bibnamehash}{0a068e25352bf5b3a4b0f34138b02cfc}
+      \strng{authorbibnamehash}{0a068e25352bf5b3a4b0f34138b02cfc}
+      \strng{authornamehash}{0a068e25352bf5b3a4b0f34138b02cfc}
+      \strng{authorfullhash}{0a068e25352bf5b3a4b0f34138b02cfc}
+      \field{labelalpha}{Gor03}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Handbuch IT-Sicherheit: Strategien, Grundlagen und Projekte}
+      \field{year}{2003}
+    \endentry
     \entry{hoepner2014trends}{article}{}
       \name{author}{4}{}{%
         {{hash=3212cc219e9e1932b66c6ac997ea83fe}{%
@@ -238,6 +317,59 @@
       \field{journaltitle}{Kompetenzzentrum Öffentliche IT}
       \field{title}{Safety und Security aus dem Blickwinkel der öffentlichen IT}
       \field{year}{2015}
+    \endentry
+    \entry{secupedia11}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=11db4251f0d4e293fc7055aeaea2681a}{%
+           family={{Oliver Wege}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{11db4251f0d4e293fc7055aeaea2681a}
+      \strng{fullhash}{11db4251f0d4e293fc7055aeaea2681a}
+      \strng{bibnamehash}{11db4251f0d4e293fc7055aeaea2681a}
+      \strng{authorbibnamehash}{11db4251f0d4e293fc7055aeaea2681a}
+      \strng{authornamehash}{11db4251f0d4e293fc7055aeaea2681a}
+      \strng{authorfullhash}{11db4251f0d4e293fc7055aeaea2681a}
+      \field{labelalpha}{SePe11}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{label}{SePe}
+      \field{title}{Verbindlichkeit}
+      \field{year}{2011}
+      \verb{urlraw}
+      \verb https://www.secupedia.info/wiki/Verbindlichkeit
+      \endverb
+      \verb{url}
+      \verb https://www.secupedia.info/wiki/Verbindlichkeit
+      \endverb
+    \endentry
+    \entry{spies1985datenschutz}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=26292e39104a8f35f7f536202f4c2fe5}{%
+           family={Spies},
+           familyi={S\bibinitperiod},
+           given={Peter\bibnamedelima Paul},
+           giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{26292e39104a8f35f7f536202f4c2fe5}
+      \strng{fullhash}{26292e39104a8f35f7f536202f4c2fe5}
+      \strng{bibnamehash}{26292e39104a8f35f7f536202f4c2fe5}
+      \strng{authorbibnamehash}{26292e39104a8f35f7f536202f4c2fe5}
+      \strng{authornamehash}{26292e39104a8f35f7f536202f4c2fe5}
+      \strng{authorfullhash}{26292e39104a8f35f7f536202f4c2fe5}
+      \field{labelalpha}{Spi85}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Datenschutz und Datensicherung im Wandel der Informationstechnologien}
+      \field{title}{Datenschutz und Datensicherung im Wandel der Informationstechnologien}
+      \field{year}{1985}
     \endentry
     \entry{so18tech}{misc}{}
       \name{author}{1}{}{%

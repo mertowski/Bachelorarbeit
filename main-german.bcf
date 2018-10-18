@@ -1990,6 +1990,15 @@
     <bcf:citekey order="14">int11sicher</bcf:citekey>
     <bcf:citekey order="15">eckert2013sicherheit</bcf:citekey>
     <bcf:citekey order="16">eberspacher1994sichere</bcf:citekey>
+    <bcf:citekey order="17">eckert2013sicherheit</bcf:citekey>
+    <bcf:citekey order="18">eckert2013sicherheit</bcf:citekey>
+    <bcf:citekey order="19">spies1985datenschutz</bcf:citekey>
+    <bcf:citekey order="20">eckert2013sicherheit</bcf:citekey>
+    <bcf:citekey order="21">gora2003handbuch</bcf:citekey>
+    <bcf:citekey order="22">dtint2007</bcf:citekey>
+    <bcf:citekey order="23">eckert2013sicherheit</bcf:citekey>
+    <bcf:citekey order="24">secupedia11</bcf:citekey>
+    <bcf:citekey order="25">dsba2018</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">

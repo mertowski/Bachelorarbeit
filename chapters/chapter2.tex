@@ -11,7 +11,7 @@ Im folgenden Kapitel werden auf die mehrere Grundlagen eingegangen. Zu Beginn wi
 	\hfill James Snook
 \end{quote}
 
-Informationssicherheit ist eine wichtige Herausforderung im Bereich der neuen Informationstechnologien. Sie ist heutzutage in nahezu allen Bereichen von zentraler Bedeutung.  Die Sicherheit von Informationen, Daten, Geschäft und Investitionen gehören zu den Schlüsselprioritäten und die Verfügbarkeit von Informationen in der richtigen Zeit und Form ist heutzutage in jeder Organisation ein Muss. IT-Sicherheit hat die Aufgabe, Unternehmen und deren Werte zu schützen, indem sie böswillige Angriffe zu identifizieren, zu reduzieren und zu verhindern.
+Informationssicherheit ist eine wichtige Herausforderung im Bereich der neuen Informationstechnologien. Sie ist heutzutage in nahezu allen Bereichen von zentraler Bedeutung.  Die Sicherheit von Informationen, Daten, Geschäft und Investitionen gehören zu den Schlüsselprioritäten und die Verfügbarkeit von Informationen in der richtigen Zeit und Form ist heutzutage in jeder Organisation ein Muss. IT-Sicherheit hat das Zweck, Unternehmen und deren Werte zu schützen, indem sie böswillige Angriffe zu identifizieren, zu reduzieren und zu verhindern.
 
 Das schnelle Wachstum von Webanwendungen hängt zweifellos von der Sicherheit, dem Datenschutz und der Zuverlässigkeit der Anwendungen, Systeme und unterstützenden Infrastrukturen ab. Obwohl IT-Sicherheit heutzutage sehr große Rolle in unserem Leben spielt, liegt das durchschnittliche Sicherheitswissen von IT-Fachkräften und Ingenieuren weit hinter. Das Internet ist jedoch für seine mangelnde Sicherheit bekannt, wenn sie nicht genau und streng spezifiziert, entworfen und getestet werden. In den letzten Jahren war es offensichtlich, dass der Bereich der IT-Sicherheit leistungsfähige Werkzeuge und Einrichtungen mit überprüfbaren Systemen und Anwendungen umfassen muss, die die Vertraulichkeit und Privatsphäre in Webanwendungen wahren, die die Probleme definieren\cite[1]{furnell2008securing}.
 
@@ -19,44 +19,64 @@ Wegen der Realisierung eine lückenlose Abwehr von Angriffen in der Wirklichkeit
 
 \subsection{Grundlagen der IT-Sicherheit}
 
-
-
 \subsubsection{Offene- und geschlossene Systeme}
 
-Ein IT-System besteht aus ein geschlossenes und ein offenes System mit der Begabung zur Speicherung und Verarbeitung von Informationen. Die offene Systemen (z. B. Windows) sind vernetzte, physisch verteilte Systeme mit der Möglichkeit zum Informationsaustausch mit anderen Systemen\cite[22--23]{eckert2013sicherheit}. Tom Wheeler definiert offene Systeme als \emph{''jene Hard- und Software-Implementierungen, die der Sammlung von Standards entsprechen, die den freien und leichten Zugang zu Lösungen verschiedener Hersteller erlauben. Die Sammlung von Standards kann formal definiert sein oder einfach aus De-facto-Definitionen bestehen, an die sich die großen Hersteller und Anwender in einem technologischen Bereich halten.''}\cite[4]{wheeler2013offene} Ein geschlossenes System (z. B. Datev) baut auf der Technologie eines Herstellers auf und ist zu Konkurrenzprodukten nicht kompatibel.  Es dehnt sich auf einen bestimmten Teilnehmerkreis aus und beschränkt ein bestimmtes räumliches Gebiet\cite[22--23]{eckert2013sicherheit}.
+Ein IT-System besteht aus ein geschlossenes und ein offenes System mit der Begabung zur Speicherung und Verarbeitung von Informationen. Die offene Systemen (z. B. Windows) sind vernetzte, physisch verteilte Systeme mit der Möglichkeit zum Informationsaustausch mit anderen Systemen\cite[22--23]{eckert2013sicherheit}. Tom Wheeler definiert offene Systeme als \emph{''jene Hard- und Software-Implementierungen, die der Sammlung von Standards entsprechen, die den freien und leichten Zugang zu Lösungen verschiedener Hersteller erlauben. Die Sammlung von Standards kann formal definiert sein oder einfach aus De-facto-Definitionen bestehen, an die sich die großen Hersteller und Anwender in einem technologischen Bereich halten.''}\cite[4]{wheeler2013offene} 
+
+Ein geschlossenes System (z. B. Datev) baut auf der Technologie eines Herstellers auf und ist zu Konkurrenzprodukten nicht kompatibel.  Es dehnt sich auf einen bestimmten Teilnehmerkreis aus und beschränkt ein bestimmtes räumliches Gebiet\cite[22--23]{eckert2013sicherheit}.
 
 \subsubsection{Soziotechnische Systeme}
 
 IT-Systeme werden in unterschiedliche Strukturen (gesellschaftliche, unternehmerische und politische Strukturen) mit verschiedenem technischen Know-how und für sehr verschiedene Ziele in Betrach gezogen\cite[23]{eckert2013sicherheit}. IT-Sicherheit wird den Schutz eines soziotechnischen Systems gewährleistet. Darausfolgend ergibt sich dann auch das Ziel der IT Sicherheit. Die Unternehmen bzw. Institutionen und deren Daten sollen gegen Schaden und Bedrohungen geschützt werden. Insbesondere soll auf den Schutz von IT-Systemen angewiesen sein\cite{so18tech}. 
+
 \subsubsection{Information und Datenobjekte}
 
-IT-Systeme haben die Begabung Informationen zu speichern und zu verarbeiten. Die Information wird in Form von Daten bzw. Datenobjekten repräsentiert. \textbf{Passiven Objekten} (z.B. Datei, Datenbankeintrag) haben die Fähigkeit, Informationen zu speichern. \textbf{Aktive Objekten} (z.B. Prozesse) haben die Fähigkeit, sowohl Informationen zu speichern als auch zu verarbeiten\cite[23]{eckert2013sicherheit}. \textbf{Subjekte} sind die Benutzer eines Systems und alle Objekte, die im Auftrag von Benutzern im System aktiv sein können\cite[24]{eckert2013sicherheit}. 
+IT-Systeme haben die Begabung Informationen zu speichern und zu verarbeiten. Die Information wird in Form von Daten bzw. Datenobjekten repräsentiert. \textbf{Passiven Objekten} (z.B. Datei, Datenbankeintrag) haben die Fähigkeit, Informationen zu speichern. \textbf{Aktive Objekten} (z.B. Prozesse) haben die Fähigkeit, sowohl Informationen zu speichern als auch zu verarbeiten\cite[23]{eckert2013sicherheit}.  \textbf{Subjekte} sind die Benutzer eines Systems und alle Objekte, die im Auftrag von Benutzern im System aktiv sein können\cite[24]{eckert2013sicherheit}. 
 
 Informatik wird als die Wissenschaft, Technik und Anwendung der maschinellen Verarbeitung, Speicherung, Ubertragung und Darstellung von Information identifiziert. \textbf{Informationen} sind einen abstrakten Gehalt (''Bedeutungsinhalt'', ''Semantik'') eines Dokuments, einer Aussage, Beschreibung, Anweisung oder Mitteilung\cite[5]{broy2013informatik} und sie werden durch die Nachrichten übermittelt\cite[18]{blieberger2013informatik}. Information wird umgangssprachlich sehr oft für Daten verwendet aber es gibt Untershied zwischen Daten und Information. Der Mensch bildet die Informationen in Daten ab, indem er die Nachrichten übertragen oder verarbeiten. Die Daten, die maschinell verarbeitbare Zeichen sind, werden durch in einer Nachricht enthaltene Information die Bedeutung der Nachricht darstellen. Auf der Ebene der Daten geschiet die Übertragung oder Verarbeitung und die Resultat wird vom Mensch als Information interpretiert\cite{infstd}.
 
-\subsubsection{Sicherheit}
+\subsubsection{Funktionssicher}
 
-\paragraph{Funktionssicher}\mbox{}
+In den Sicheren Systeme sollen alle korrekten Spezifikationen korrekt funktioniert werden und eine hohe Zuverlässigkeit und Fehlersicherheit gewährleistet werden. Die Isolierung von der Außenwelt weicht konstant durch die stetig zunehmende Vernetzung jeglicher Systeme mit Informationstechnik auf. Die Zweck von Funktionssicherheit (engl. safety) ist, dass die Umgebung vor dem Fehlverhalten des Systems schützen.  Bei der Entwicklungsphase müssen systematische Fehler vermieden werden. Durch die Überwachung im laufenden Betrieb müssen die Störungen erkannt werden und solche Störungen müssen dominiert werden, um ein funktionsichere Zustand zu erreichen\cite{hoepner2014trends}.
 
-In den Sicheren Systeme sollen alle korrekten Spezifikationen korrekt funktioniert werden und eine hohe Zuverlässigkeit und Fehlersicherheit gewährleistet werden. Die Isolierung von der Außenwelt weicht konstant durch die stetig zunehmende Vernetzung jeglicher Systeme mit Informationstechnik auf. Die Zweck von Funktionssicherheit (engl. safety) ist, dass die Umgebung vor dem Fehlverhalten des Systems schützen.  Bei der Entwicklungsphase müssen systematische Fehler vermieden werden. Durch die Überwachung im laufenden Betrieb müssen die Fehlern erkannt werden und solche Fehlern müssen dominiert werden, um ein funktionsichere Zustand zu erreichen\cite{hoepner2014trends}.
+\subsubsection{Informationssicher}
 
-\paragraph{Informationssicher}\mbox{}
+Das Hauptziel von Informationssicherheit (engl. security) ist, dass die Informationen zu schützen, die sowohl auf Papier, in Rechnern oder auch in Köpfen gespeichert sein. IT-Sicherheit kümmert sich ersten um den Schutz von Werten u. Resourcen und deren Verarbeitung\cite[81]{int11sicher}, um unautorisierte Informationsveränderung oder -gewinnung zu verhindern\cite[26]{eckert2013sicherheit}.
 
-Das Hauptziel von Informationssicherheit (engl. security) ist, dass die Informationen zu schützen, die sowohl auf Papier, in Rechnern oder auch in Köpfen gespeichert sein. IT-Sicherheit kümmert sich ersten um den Schutz digitalen Informationen und deren Verarbeitung\cite[81]{int11sicher}, um unautorisierte Informationsveränderung oder -gewinnung zu verhindern\cite[26]{eckert2013sicherheit}.
+\subsubsection{Datensicherheit und Datenschutz}
 
-\paragraph{Datensicherheit und Datenschutz}\mbox{}
+Datensicherheit bedeutet, dass der Zustand eines Systems der Informationstechnik, in dem die Risiken, die im laufenden Betrieb dieses Systems bezüglich von Gefährdungen anwesend sind, durch Maßnnahmen auf ein bestimmtes Menge eingeschrankt sind. Datenschutz (engl. privacy) hat die Aufgabe, durch Schutz der Daten vor Missbrauch in ihren Verarbeitungsphasen der Beeintrachtigung fremder und eigener schutzwurdiger Belange zu begegnen.\cite[14--15]{eberspacher1994sichere}.
 
-Datensicherheit bedeutet, dass der Zustand eines Systems der Informationstechnik, in dem die Risiken, die im laufenden Betrieb dieses Systems bezüglich von Gefährdungen anwesend sind, durch Maßnnahmen auf ein bestimmtes Menge eingeschrankt sind\cite[14--15]{eberspacher1994sichere}.
+\subsubsection{Verlässligkeit}
 
-
-
-\paragraph{Verlässligkeit}\mbox{}
-
-asdasd
+Verlässlichkeit (engl. dependability)eines Systems bedeutet, dass es keine betrügerische Zustände akzeptieren und es soll gewährleistet werden, indem spezifizierte Funktion verlässlich funktioniert\cite[27]{eckert2013sicherheit}.
 
 \subsection{Schutzziele}
 
-bla bla..
+\subsubsection{Authentizität}
+
+Bei dem Begriff ''Authentizität'' handelt es sich um die Authentizität eines Objekts bzw. Subjekts (engl. authenticity), die die Echtheit und Glaubwürdigkeit des Objekts oder Subjekts, die anhand einer eindeutigen Identität und charakteristischen Eigenschaften umfasst\cite[28]{eckert2013sicherheit}.
+
+Erkennung von Angriffen können gewährleistet werden, indem innere Maßnahmen zu vollständigt wird, die der Authentizität von Subjekten und Objekten überprüft\cite[13]{spies1985datenschutz}, diesbezüglich muss Beweis erbracht werden, dass eine behauptete Identität eines Objekts oder Subjekts mit dessen charakterisierenden Eigenschaften übereinstimmt\cite[28]{eckert2013sicherheit}.
+
+\subsubsection{Informationsvertraulichkeit}
+Unter Informationsvertraulichkeit versteht man, dass zu bearbeitende Daten nur den Personen zugänglich sind, die Berechtigung haben. Wenn die Gemeimhaltung vernünftig ist, können Schaden entstehen. In jedem einzelnen Unternehmensbereich muss durch die vollständige Maßnahmen den unauthorisierte Zugriff in interne Datenbestände verhindert werden\cite[205]{gora2003handbuch}.
+
+\subsubsection{Datenintegrität}
+
+Durch die Integrität wird die Korrektheit von Daten und der korrekten Funktionsweise von Systemen sichergestellt. Wenn der Begriff Integrität auf Daten benutzt wird, bedeutet er, dass die Daten vollständig und unverändert sind. Er wird in der Informationstechnik weiter gefasst und auf ''Informationen'' angewendet. Der Begriff ''Information'' wird für Daten angewendet, die nach bestimmten Attribute, wie z. B. Author oder Zeitpunkt der Erstellung zugeordnet können. Wenn die Daten ohne Erlaubnis verändert werden, bedeuten dass die Angaben zum Autor verfälscht oder Zeitangaben zur Erstellung manipuliert wurden\cite{dtint2007}.
+
+\subsubsection{Verfügbarkeit}
+
+Ein System versichert die Verfügbarkeit (eng. availability), indem authentifizierte und autorisierte Subjekte in der Wahrnehmung ihrer Berechtigungen nicht unautorisiert beeinträchtigt werden können. Wenn in einem System unterschiedliche Prozesse eines Benutzers oder verschiedene Benutzern um gemeinsame Ressourcen zugreifen, kann Ausführungsverzögerungen vorkommen. Durch normalen Verwaltungsmaßnahmen resultierende Verzögerungen werden als keine Verletzung der Verfügbarkeit dargestellt, aber wenn CPU mit einem hoch prioren Prozess monopolisiert, diesbezüglich kann absichtlich einen Angriff auf die Verfügbarkeit hervorrufen. Somit kann ein hohes Maß von Daten plötzlich entstehen, das zu Stausituationen in einem Netz führt\cite[33]{eckert2013sicherheit}.
+
+\subsubsection{Verbindlichkeit}
+
+Verbindlichkeit ist eine Möglichkeit, die eine IT-Transaktion während und nach der Durchführung unzweifelhaft gewährleisten. Durch die Nutzung von qualifizierten digitalen Signaturen kann die Verbindlichkeit erreicht werden. Die Dauer der Zuordenbarkeit ist abhängig von der Aufbewahrung der Logdateien und wird durch das Datenschutz angeordnet\cite{secupedia11}.
+
+\subsubsection{Anonymisierung}
+
+Nach § 3 Abs. 6 Bundesdatenschutzgesetz bedeutet Anonymisierung, dass \emph{''das Verändern personenbezogener Daten derart, dass die Einzelangaben über persönliche oder sachliche Verhältnisse nicht mehr oder nur mit einem unverhältnismäßig großen Aufwand an Zeit, Kosten und Arbeitskraft einer bestimmten oder bestimmbaren natürlichen Person zugeordnet werden können.''}\cite{dsba2018} 
 
 \subsection{Schwachstellen, Bedrohungen, Angriffe}
 
@@ -76,13 +96,13 @@ bla bla..
 
 \subsection{Microservice Architekturen}
 
-\subsection{Spring Boot}
+\subsubsection{Spring Boot}
 
-\subsubsection{Spring MVC Komponente}
+\paragraph{Spring MVC Komponente}
 
-\subsubsection{Spring Rest Docs}
+\paragraph{Spring Rest Docs}
 
-\subsection{RESTful Web Services}
+\paragraph{RESTful Web Services}
 
 \subsection{RAML}
 
