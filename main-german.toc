@@ -24,58 +24,62 @@
 \contentsline {subsection}{\numberline {2.1.3}Schwachstellen, Bedrohungen, Angriffe}{7}{subsection.2.1.3}
 \contentsline {subsubsection}{\numberline {2.1.3.1}Schwachstellen und Verwundbarkeit}{7}{subsubsection.2.1.3.1}
 \contentsline {subsubsection}{\numberline {2.1.3.2}Bedrohungen und Risiko}{7}{subsubsection.2.1.3.2}
-\contentsline {subsubsection}{\numberline {2.1.3.3}Angriff}{7}{subsubsection.2.1.3.3}
-\contentsline {subsubsection}{\numberline {2.1.3.4}Rechtliche Rahmenbedingungen}{8}{subsubsection.2.1.3.4}
-\contentsline {subsection}{\numberline {2.1.4}Sicherheitsrichtlinie}{8}{subsection.2.1.4}
-\contentsline {subsection}{\numberline {2.1.5}Sicherheitsinfrastruktur}{8}{subsection.2.1.5}
-\contentsline {section}{\numberline {2.2}Technologien des Projektes}{8}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Java}{8}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Microservice Architekturen}{8}{subsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.2.1}Spring Boot}{8}{subsubsection.2.2.2.1}
-\contentsline {paragraph}{\numberline {2.2.2.1.1}Spring MVC Komponente}{8}{paragraph.2.2.2.1.1}
-\contentsline {paragraph}{\numberline {2.2.2.1.2}Spring Rest Docs}{8}{paragraph.2.2.2.1.2}
-\contentsline {paragraph}{\numberline {2.2.2.1.3}RESTful Web Services}{8}{paragraph.2.2.2.1.3}
-\contentsline {subsection}{\numberline {2.2.3}RAML}{8}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Open Source Werkzeug OWASP Zap}{8}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5}RAML-Parser f\IeC {\"u}r Java}{8}{subsection.2.2.5}
-\contentsline {subsection}{\numberline {2.2.6}Test-Driven mit automatisierten Tests}{8}{subsection.2.2.6}
-\contentsline {chapter}{\numberline {3}Sicherheitsrisiken von Webanwendungen}{9}{chapter.3}
-\contentsline {section}{\numberline {3.1}Schwachstellen}{9}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}OWASP Top 10 Risiken}{9}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Weitere Risiken}{9}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Common Vulnerability Scoring System}{9}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Common Vulnerability Exposures (CVE)}{9}{subsection.3.1.4}
-\contentsline {section}{\numberline {3.2}Technische Schwachstellen}{9}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Programmierfehler}{9}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Konfigurationsfehler}{9}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Konzeptionsfehler}{9}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Fehler resultierend aus menschlichem Verhalten}{9}{subsection.3.2.4}
-\contentsline {chapter}{\numberline {4}Penetrationstest}{11}{chapter.4}
-\contentsline {section}{\numberline {4.1}Grundlegendes Konzept}{11}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Black-Box}{11}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}White-Box}{11}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Gray-Box}{11}{subsection.4.1.3}
-\contentsline {section}{\numberline {4.2}Kriterien f\IeC {\"u}r Penetrationstests}{11}{section.4.2}
-\contentsline {section}{\numberline {4.3}Ablauf eines Penetrationstest}{11}{section.4.3}
-\contentsline {section}{\numberline {4.4}Penetrationstest-Tools}{11}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}ABC}{11}{subsection.4.4.1}
-\contentsline {section}{\numberline {4.5}Automatisierte Penetrationstest-Tools}{11}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}ABC}{11}{subsection.4.5.1}
-\contentsline {section}{\numberline {4.6}Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest-Tools}{11}{section.4.6}
-\contentsline {chapter}{\numberline {5}Entwicklung einer Spring-Boot-Webanwendung mit Sicherheitsl\IeC {\"u}cken}{13}{chapter.5}
-\contentsline {chapter}{\numberline {6}Entwicklung von Plug-in f\IeC {\"u}r das OWASP-ZAP}{15}{chapter.6}
-\contentsline {chapter}{\numberline {7}Was ist die Vorteile von diesem Plug-in gegen\IeC {\"u}ber anderen Plug-ins?}{17}{chapter.7}
-\contentsline {chapter}{\numberline {8}Fazit}{19}{chapter.8}
-\contentsline {chapter}{\numberline {A}Benutzerhandbuch f\IeC {\"u}r das OWASP-Zap RAML Plug-in}{21}{appendix.A}
-\contentsline {section}{\numberline {A.1}Quellcode}{21}{section.A.1}
-\contentsline {section}{\numberline {A.2}Abbildungen}{21}{section.A.2}
-\contentsline {section}{\numberline {A.3}Tabellen}{23}{section.A.3}
-\contentsline {section}{\numberline {A.4}Pseudocode}{23}{section.A.4}
-\contentsline {section}{\numberline {A.5}Abk\IeC {\"u}rzungen}{25}{section.A.5}
-\contentsline {section}{\numberline {A.6}Definitionen}{25}{section.A.6}
-\contentsline {section}{\numberline {A.7}Fu\IeC {\ss }noten}{25}{section.A.7}
-\contentsline {section}{\numberline {A.8}Verschiedenes}{26}{section.A.8}
-\contentsline {section}{\numberline {A.9}Weitere Illustrationen}{26}{section.A.9}
-\contentsline {section}{\numberline {A.10}Plots with pgfplots}{28}{section.A.10}
-\contentsline {section}{\numberline {A.11}Figures with tikz}{28}{section.A.11}
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{29}{appendix*.19}
+\contentsline {subsubsection}{\numberline {2.1.3.3}Angriff und Typen von (externe) Angriffen}{7}{subsubsection.2.1.3.3}
+\contentsline {paragraph}{\numberline {2.1.3.3.1}Hacker und Cracker}{7}{paragraph.2.1.3.3.1}
+\contentsline {paragraph}{\numberline {2.1.3.3.2}Skript Kiddie}{8}{paragraph.2.1.3.3.2}
+\contentsline {paragraph}{\numberline {2.1.3.3.3}Geheimdienste}{8}{paragraph.2.1.3.3.3}
+\contentsline {paragraph}{\numberline {2.1.3.3.4}Allgemeine Krimanilit\IeC {\"a}t}{8}{paragraph.2.1.3.3.4}
+\contentsline {subparagraph}{\nonumberline Spyware:}{8}{section*.10}
+\contentsline {subparagraph}{\nonumberline Phishing:}{8}{section*.11}
+\contentsline {subparagraph}{\nonumberline Erpressung:}{9}{section*.12}
+\contentsline {subparagraph}{\nonumberline Bot-Netze:}{9}{section*.13}
+\contentsline {section}{\numberline {2.2}Technologien des Projektes}{9}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Objektorientierte Programmierung}{9}{subsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.1.1}Java}{9}{subsubsection.2.2.1.1}
+\contentsline {subsection}{\numberline {2.2.2}RESTful Web Services}{9}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Microservice Architekturen}{10}{subsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.3.1}Spring Boot}{10}{subsubsection.2.2.3.1}
+\contentsline {paragraph}{\numberline {2.2.3.1.1}Spring MVC Komponente}{11}{paragraph.2.2.3.1.1}
+\contentsline {paragraph}{\numberline {2.2.3.1.2}Spring Rest Docs}{11}{paragraph.2.2.3.1.2}
+\contentsline {subsection}{\numberline {2.2.4}RAML}{11}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Open Source Werkzeug OWASP Zap}{12}{subsection.2.2.5}
+\contentsline {chapter}{\numberline {3}Sicherheitsrisiken von Webanwendungen}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Schwachstellen}{13}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}OWASP Top 10 Risiken}{13}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Weitere Risiken}{13}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Common Vulnerability Scoring System}{13}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Common Vulnerability Exposures (CVE)}{13}{subsection.3.1.4}
+\contentsline {section}{\numberline {3.2}Technische Schwachstellen}{13}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Programmierfehler}{13}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Konfigurationsfehler}{13}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Konzeptionsfehler}{13}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Fehler resultierend aus menschlichem Verhalten}{13}{subsection.3.2.4}
+\contentsline {chapter}{\numberline {4}Penetrationstest}{15}{chapter.4}
+\contentsline {section}{\numberline {4.1}Grundlegendes Konzept}{15}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Black-Box}{15}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}White-Box}{15}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Gray-Box}{15}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}Kriterien f\IeC {\"u}r Penetrationstests}{15}{section.4.2}
+\contentsline {section}{\numberline {4.3}Ablauf eines Penetrationstest}{15}{section.4.3}
+\contentsline {section}{\numberline {4.4}Penetrationstest-Tools}{15}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}ABC}{15}{subsection.4.4.1}
+\contentsline {section}{\numberline {4.5}Automatisierte Penetrationstest-Tools}{15}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}ABC}{15}{subsection.4.5.1}
+\contentsline {section}{\numberline {4.6}Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest-Tools}{15}{section.4.6}
+\contentsline {chapter}{\numberline {5}Entwicklung einer Spring-Boot-Webanwendung mit Sicherheitsl\IeC {\"u}cken}{17}{chapter.5}
+\contentsline {chapter}{\numberline {6}Entwicklung von Plug-in f\IeC {\"u}r das OWASP-ZAP}{19}{chapter.6}
+\contentsline {chapter}{\numberline {7}Was ist die Vorteile von diesem Plug-in gegen\IeC {\"u}ber anderen Plug-ins?}{21}{chapter.7}
+\contentsline {chapter}{\numberline {8}Fazit}{23}{chapter.8}
+\contentsline {chapter}{\numberline {A}Benutzerhandbuch f\IeC {\"u}r das OWASP-Zap RAML Plug-in}{25}{appendix.A}
+\contentsline {section}{\numberline {A.1}Quellcode}{25}{section.A.1}
+\contentsline {section}{\numberline {A.2}Abbildungen}{25}{section.A.2}
+\contentsline {section}{\numberline {A.3}Tabellen}{25}{section.A.3}
+\contentsline {section}{\numberline {A.4}Pseudocode}{27}{section.A.4}
+\contentsline {section}{\numberline {A.5}Abk\IeC {\"u}rzungen}{29}{section.A.5}
+\contentsline {section}{\numberline {A.6}Definitionen}{29}{section.A.6}
+\contentsline {section}{\numberline {A.7}Fu\IeC {\ss }noten}{29}{section.A.7}
+\contentsline {section}{\numberline {A.8}Verschiedenes}{29}{section.A.8}
+\contentsline {section}{\numberline {A.9}Weitere Illustrationen}{30}{section.A.9}
+\contentsline {section}{\numberline {A.10}Plots with pgfplots}{32}{section.A.10}
+\contentsline {section}{\numberline {A.11}Figures with tikz}{32}{section.A.11}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{33}{appendix*.23}

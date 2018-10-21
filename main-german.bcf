@@ -2004,6 +2004,23 @@
     <bcf:citekey order="28">eckert2013sicherheit</bcf:citekey>
     <bcf:citekey order="29">nowey2011einleitung</bcf:citekey>
     <bcf:citekey order="30">nowey2011einleitung</bcf:citekey>
+    <bcf:citekey order="31">hack17</bcf:citekey>
+    <bcf:citekey order="32">hack11</bcf:citekey>
+    <bcf:citekey order="33">eckert2013sicherheit</bcf:citekey>
+    <bcf:citekey order="34">scriptkiddie11</bcf:citekey>
+    <bcf:citekey order="35">nsa14</bcf:citekey>
+    <bcf:citekey order="36">spy12</bcf:citekey>
+    <bcf:citekey order="37">phishing17ph</bcf:citekey>
+    <bcf:citekey order="38">eckert2013sicherheit</bcf:citekey>
+    <bcf:citekey order="39">botnetz17symantec</bcf:citekey>
+    <bcf:citekey order="40">oop15beal</bcf:citekey>
+    <bcf:citekey order="41">java18beal</bcf:citekey>
+    <bcf:citekey order="42">rws13od</bcf:citekey>
+    <bcf:citekey order="43">wolff2016microservices</bcf:citekey>
+    <bcf:citekey order="44">tp12mvc</bcf:citekey>
+    <bcf:citekey order="45">srd18wilkinson</bcf:citekey>
+    <bcf:citekey order="46">raml13def</bcf:citekey>
+    <bcf:citekey order="47">owasp18def</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">

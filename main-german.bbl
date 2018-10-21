@@ -86,6 +86,37 @@
       \field{title}{Informatik}
       \field{year}{2013}
     \endentry
+    \entry{botnetz17symantec}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=63b9cb44c7160e45e46b9332b0d08160}{%
+           family={Symantec},
+           familyi={S\bibinitperiod},
+           given={Mitarbeiter},
+           giveni={M\bibinitperiod},
+           prefix={von},
+           prefixi={v\bibinitperiod}}}%
+      }
+      \strng{namehash}{63b9cb44c7160e45e46b9332b0d08160}
+      \strng{fullhash}{63b9cb44c7160e45e46b9332b0d08160}
+      \strng{bibnamehash}{63b9cb44c7160e45e46b9332b0d08160}
+      \strng{authorbibnamehash}{63b9cb44c7160e45e46b9332b0d08160}
+      \strng{authornamehash}{63b9cb44c7160e45e46b9332b0d08160}
+      \strng{authorfullhash}{63b9cb44c7160e45e46b9332b0d08160}
+      \field{labelalpha}{BN17}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{label}{BN}
+      \field{title}{{Was ist ein Botnet?}}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://de.norton.com/internetsecurity-malware-what-is-a-botnet.html
+      \endverb
+      \verb{url}
+      \verb https://de.norton.com/internetsecurity-malware-what-is-a-botnet.html
+      \endverb
+    \endentry
     \entry{broy2013informatik}{book}{}
       \name{author}{1}{}{%
         {{hash=74476573aa159749eafc4a3c16c957b4}{%
@@ -151,6 +182,33 @@
       \field{label}{BSIDI}
       \field{title}{Internet-Sicherheit: Einführung, Grundlagen, Vorgehensweise}
       \field{year}{2011}
+    \endentry
+    \entry{spy12}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=1fd85ed4a1e12e1ad81706738204f202}{%
+           family={Cyberpedia},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{1fd85ed4a1e12e1ad81706738204f202}
+      \strng{fullhash}{1fd85ed4a1e12e1ad81706738204f202}
+      \strng{bibnamehash}{1fd85ed4a1e12e1ad81706738204f202}
+      \strng{authorbibnamehash}{1fd85ed4a1e12e1ad81706738204f202}
+      \strng{authornamehash}{1fd85ed4a1e12e1ad81706738204f202}
+      \strng{authorfullhash}{1fd85ed4a1e12e1ad81706738204f202}
+      \field{labelalpha}{CPSW12}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{label}{CPSW}
+      \field{title}{{What is Spyware?}}
+      \field{year}{2012}
+      \verb{urlraw}
+      \verb https://www.paloaltonetworks.com/cyberpedia/what-is-spyware
+      \endverb
+      \verb{url}
+      \verb https://www.paloaltonetworks.com/cyberpedia/what-is-spyware
+      \endverb
     \endentry
     \entry{dsba2018}{misc}{}
       \name{author}{1}{}{%
@@ -277,6 +335,35 @@
       \field{title}{Handbuch IT-Sicherheit: Strategien, Grundlagen und Projekte}
       \field{year}{2003}
     \endentry
+    \entry{java18beal}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=1ccb9ca8df0a0c6c8b3be84b0293ace4}{%
+           family={Beal},
+           familyi={B\bibinitperiod},
+           given={Vangie},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{1ccb9ca8df0a0c6c8b3be84b0293ace4}
+      \strng{fullhash}{1ccb9ca8df0a0c6c8b3be84b0293ace4}
+      \strng{bibnamehash}{1ccb9ca8df0a0c6c8b3be84b0293ace4}
+      \strng{authorbibnamehash}{1ccb9ca8df0a0c6c8b3be84b0293ace4}
+      \strng{authornamehash}{1ccb9ca8df0a0c6c8b3be84b0293ace4}
+      \strng{authorfullhash}{1ccb9ca8df0a0c6c8b3be84b0293ace4}
+      \field{labelalpha}{J18}
+      \field{sortinit}{J}
+      \field{sortinithash}{fce5f8d0bd05e8d93f3dbe21c78897ca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{label}{J}
+      \field{title}{{Java}}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://www.webopedia.com/TERM/J/Java.html
+      \endverb
+      \verb{url}
+      \verb https://www.webopedia.com/TERM/J/Java.html
+      \endverb
+    \endentry
     \entry{hoepner2014trends}{article}{}
       \name{author}{4}{}{%
         {{hash=3212cc219e9e1932b66c6ac997ea83fe}{%
@@ -318,6 +405,35 @@
       \field{title}{Safety und Security aus dem Blickwinkel der öffentlichen IT}
       \field{year}{2015}
     \endentry
+    \entry{tp12mvc}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=17c630bba78b078e4e4b5966c913d7a6}{%
+           family={Point},
+           familyi={P\bibinitperiod},
+           given={Tutorials},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{17c630bba78b078e4e4b5966c913d7a6}
+      \strng{fullhash}{17c630bba78b078e4e4b5966c913d7a6}
+      \strng{bibnamehash}{17c630bba78b078e4e4b5966c913d7a6}
+      \strng{authorbibnamehash}{17c630bba78b078e4e4b5966c913d7a6}
+      \strng{authornamehash}{17c630bba78b078e4e4b5966c913d7a6}
+      \strng{authorfullhash}{17c630bba78b078e4e4b5966c913d7a6}
+      \field{labelalpha}{MVC12}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{label}{MVC}
+      \field{title}{{Spring - MVC Framework}}
+      \field{year}{2012}
+      \verb{urlraw}
+      \verb https://www.tutorialspoint.com/spring/spring_web_mvc_framework.htm
+      \endverb
+      \verb{url}
+      \verb https://www.tutorialspoint.com/spring/spring_web_mvc_framework.htm
+      \endverb
+    \endentry
     \entry{nowey2011einleitung}{incollection}{}
       \name{author}{1}{}{%
         {{hash=b0e63f1de3b26e7964a50b26fec4b21d}{%
@@ -344,6 +460,174 @@
       \field{title}{Einleitung}
       \field{year}{2011}
     \endentry
+    \entry{oop15beal}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=1ccb9ca8df0a0c6c8b3be84b0293ace4}{%
+           family={Beal},
+           familyi={B\bibinitperiod},
+           given={Vangie},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{1ccb9ca8df0a0c6c8b3be84b0293ace4}
+      \strng{fullhash}{1ccb9ca8df0a0c6c8b3be84b0293ace4}
+      \strng{bibnamehash}{1ccb9ca8df0a0c6c8b3be84b0293ace4}
+      \strng{authorbibnamehash}{1ccb9ca8df0a0c6c8b3be84b0293ace4}
+      \strng{authornamehash}{1ccb9ca8df0a0c6c8b3be84b0293ace4}
+      \strng{authorfullhash}{1ccb9ca8df0a0c6c8b3be84b0293ace4}
+      \field{labelalpha}{OOP15}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{label}{OOP}
+      \field{title}{{OOP – Object Oriented Programming}}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://www.webopedia.com/TERM/O/object_oriented_programming_OOP.html
+      \endverb
+      \verb{url}
+      \verb https://www.webopedia.com/TERM/O/object_oriented_programming_OOP.html
+      \endverb
+    \endentry
+    \entry{owasp18def}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=24b95a7fdad5a850196cd87546dcc70b}{%
+           family={OWASP},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{24b95a7fdad5a850196cd87546dcc70b}
+      \strng{fullhash}{24b95a7fdad5a850196cd87546dcc70b}
+      \strng{bibnamehash}{24b95a7fdad5a850196cd87546dcc70b}
+      \strng{authorbibnamehash}{24b95a7fdad5a850196cd87546dcc70b}
+      \strng{authornamehash}{24b95a7fdad5a850196cd87546dcc70b}
+      \strng{authorfullhash}{24b95a7fdad5a850196cd87546dcc70b}
+      \field{labelalpha}{OZ18}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{label}{OZ}
+      \field{title}{{OWASP Zed Attack Proxy Project}}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project
+      \endverb
+      \verb{url}
+      \verb https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project
+      \endverb
+    \endentry
+    \entry{phishing17ph}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=081ca98439cceb0f91017ccbadf51948}{%
+           family={Phishing.org},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{081ca98439cceb0f91017ccbadf51948}
+      \strng{fullhash}{081ca98439cceb0f91017ccbadf51948}
+      \strng{bibnamehash}{081ca98439cceb0f91017ccbadf51948}
+      \strng{authorbibnamehash}{081ca98439cceb0f91017ccbadf51948}
+      \strng{authornamehash}{081ca98439cceb0f91017ccbadf51948}
+      \strng{authorfullhash}{081ca98439cceb0f91017ccbadf51948}
+      \field{labelalpha}{PHS17}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{label}{PHS}
+      \field{title}{{What is Phishing?}}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb http://www.phishing.org/what-is-phishing
+      \endverb
+      \verb{url}
+      \verb http://www.phishing.org/what-is-phishing
+      \endverb
+    \endentry
+    \entry{raml13def}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=51546bb736b0f9021b167202e967a6cb}{%
+           family={RAML},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{51546bb736b0f9021b167202e967a6cb}
+      \strng{fullhash}{51546bb736b0f9021b167202e967a6cb}
+      \strng{bibnamehash}{51546bb736b0f9021b167202e967a6cb}
+      \strng{authorbibnamehash}{51546bb736b0f9021b167202e967a6cb}
+      \strng{authornamehash}{51546bb736b0f9021b167202e967a6cb}
+      \strng{authorfullhash}{51546bb736b0f9021b167202e967a6cb}
+      \field{labelalpha}{RAML13}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{label}{RAML}
+      \field{title}{{About RAML}}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://raml.org/about-raml
+      \endverb
+      \verb{url}
+      \verb https://raml.org/about-raml
+      \endverb
+    \endentry
+    \entry{rws13od}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=bc40a767320b1d46d1289c0035ddde4c}{%
+           family={Docs},
+           familyi={D\bibinitperiod},
+           given={Oracle},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{bc40a767320b1d46d1289c0035ddde4c}
+      \strng{fullhash}{bc40a767320b1d46d1289c0035ddde4c}
+      \strng{bibnamehash}{bc40a767320b1d46d1289c0035ddde4c}
+      \strng{authorbibnamehash}{bc40a767320b1d46d1289c0035ddde4c}
+      \strng{authornamehash}{bc40a767320b1d46d1289c0035ddde4c}
+      \strng{authorfullhash}{bc40a767320b1d46d1289c0035ddde4c}
+      \field{labelalpha}{RWS13}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{label}{RWS}
+      \field{title}{{What Are RESTful Web Services?}}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://docs.oracle.com/javaee/6/tutorial/doc/gijqy.html
+      \endverb
+      \verb{url}
+      \verb https://docs.oracle.com/javaee/6/tutorial/doc/gijqy.html
+      \endverb
+    \endentry
+    \entry{hack17}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=98996264fdc77eda4ab19d7db553b204}{%
+           family={Schmitz},
+           familyi={S\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{98996264fdc77eda4ab19d7db553b204}
+      \strng{fullhash}{98996264fdc77eda4ab19d7db553b204}
+      \strng{bibnamehash}{98996264fdc77eda4ab19d7db553b204}
+      \strng{authorbibnamehash}{98996264fdc77eda4ab19d7db553b204}
+      \strng{authornamehash}{98996264fdc77eda4ab19d7db553b204}
+      \strng{authorfullhash}{98996264fdc77eda4ab19d7db553b204}
+      \field{labelalpha}{Sch17}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{label}{Sch}
+      \field{title}{Was ist ein Hacker?}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://www.security-insider.de/was-ist-ein-hacker-a-596399/
+      \endverb
+      \verb{url}
+      \verb https://www.security-insider.de/was-ist-ein-hacker-a-596399/
+      \endverb
+    \endentry
     \entry{secupedia11}{misc}{}
       \name{author}{1}{}{%
         {{hash=11db4251f0d4e293fc7055aeaea2681a}{%
@@ -369,6 +653,35 @@
       \endverb
       \verb{url}
       \verb https://www.secupedia.info/wiki/Verbindlichkeit
+      \endverb
+    \endentry
+    \entry{hack11}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=286bf0ca0eddf3336e2589fb713c14e5}{%
+           family={Siller},
+           familyi={S\bibinitperiod},
+           given={Prof.\bibnamedelimi Mag.\bibnamedelimi Dr.\bibnamedelimi Helmut},
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{286bf0ca0eddf3336e2589fb713c14e5}
+      \strng{fullhash}{286bf0ca0eddf3336e2589fb713c14e5}
+      \strng{bibnamehash}{286bf0ca0eddf3336e2589fb713c14e5}
+      \strng{authorbibnamehash}{286bf0ca0eddf3336e2589fb713c14e5}
+      \strng{authornamehash}{286bf0ca0eddf3336e2589fb713c14e5}
+      \strng{authorfullhash}{286bf0ca0eddf3336e2589fb713c14e5}
+      \field{labelalpha}{Sill11}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{label}{Sill}
+      \field{title}{Hacker – Definition}
+      \field{year}{2011}
+      \verb{urlraw}
+      \verb https://wirtschaftslexikon.gabler.de/definition/hacker-53395
+      \endverb
+      \verb{url}
+      \verb https://wirtschaftslexikon.gabler.de/definition/hacker-53395
       \endverb
     \endentry
     \entry{spies1985datenschutz}{incollection}{}
@@ -424,6 +737,60 @@
       \verb https://www.brandmauer.de/blog/it-security/unterschied-it-sicherheit-und-informationssicherheit
       \endverb
     \endentry
+    \entry{nsa14}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=2d0ed76dc2bb8ec0ba5cf4473f5c4c74}{%
+           family={Techopedia},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{2d0ed76dc2bb8ec0ba5cf4473f5c4c74}
+      \strng{fullhash}{2d0ed76dc2bb8ec0ba5cf4473f5c4c74}
+      \strng{bibnamehash}{2d0ed76dc2bb8ec0ba5cf4473f5c4c74}
+      \strng{authorbibnamehash}{2d0ed76dc2bb8ec0ba5cf4473f5c4c74}
+      \strng{authornamehash}{2d0ed76dc2bb8ec0ba5cf4473f5c4c74}
+      \strng{authorfullhash}{2d0ed76dc2bb8ec0ba5cf4473f5c4c74}
+      \field{labelalpha}{TNSA14}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{label}{TNSA}
+      \field{title}{{National Security Agency (NSA)}}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb https://www.techopedia.com/definition/15146/national-security-agency-nsa
+      \endverb
+      \verb{url}
+      \verb https://www.techopedia.com/definition/15146/national-security-agency-nsa
+      \endverb
+    \endentry
+    \entry{scriptkiddie11}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=2d0ed76dc2bb8ec0ba5cf4473f5c4c74}{%
+           family={Techopedia},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{2d0ed76dc2bb8ec0ba5cf4473f5c4c74}
+      \strng{fullhash}{2d0ed76dc2bb8ec0ba5cf4473f5c4c74}
+      \strng{bibnamehash}{2d0ed76dc2bb8ec0ba5cf4473f5c4c74}
+      \strng{authorbibnamehash}{2d0ed76dc2bb8ec0ba5cf4473f5c4c74}
+      \strng{authornamehash}{2d0ed76dc2bb8ec0ba5cf4473f5c4c74}
+      \strng{authorfullhash}{2d0ed76dc2bb8ec0ba5cf4473f5c4c74}
+      \field{labelalpha}{TSC11}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{label}{TSC}
+      \field{title}{Script Kiddie}
+      \field{year}{2011}
+      \verb{urlraw}
+      \verb https://www.techopedia.com/definition/4090/script-kiddie
+      \endverb
+      \verb{url}
+      \verb https://www.techopedia.com/definition/4090/script-kiddie
+      \endverb
+    \endentry
     \entry{wheeler2013offene}{book}{}
       \name{author}{1}{}{%
         {{hash=d61984682703ed1d6b6ab6e6b970ca94}{%
@@ -448,6 +815,59 @@
       \field{labeltitlesource}{title}
       \field{title}{Offene Systeme: ein grundlegendes Handbuch für das praktische DV-Management}
       \field{year}{2013}
+    \endentry
+    \entry{srd18wilkinson}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=d4a41a1f7eac98862fa2a917bdea0a4a}{%
+           family={Wilkinson},
+           familyi={W\bibinitperiod},
+           given={Andy},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{d4a41a1f7eac98862fa2a917bdea0a4a}
+      \strng{fullhash}{d4a41a1f7eac98862fa2a917bdea0a4a}
+      \strng{bibnamehash}{d4a41a1f7eac98862fa2a917bdea0a4a}
+      \strng{authorbibnamehash}{d4a41a1f7eac98862fa2a917bdea0a4a}
+      \strng{authornamehash}{d4a41a1f7eac98862fa2a917bdea0a4a}
+      \strng{authorfullhash}{d4a41a1f7eac98862fa2a917bdea0a4a}
+      \field{labelalpha}{Wil18}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Spring REST Docs}}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://docs.spring.io/spring-restdocs/docs/2.0.2.RELEASE/reference/html5/
+      \endverb
+      \verb{url}
+      \verb https://docs.spring.io/spring-restdocs/docs/2.0.2.RELEASE/reference/html5/
+      \endverb
+    \endentry
+    \entry{wolff2016microservices}{book}{}
+      \name{author}{1}{}{%
+        {{hash=42b48b91ec04dc8b258db592d08ee9e9}{%
+           family={Wolff},
+           familyi={W\bibinitperiod},
+           given={Eberhard},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley Professional}%
+      }
+      \strng{namehash}{42b48b91ec04dc8b258db592d08ee9e9}
+      \strng{fullhash}{42b48b91ec04dc8b258db592d08ee9e9}
+      \strng{bibnamehash}{42b48b91ec04dc8b258db592d08ee9e9}
+      \strng{authorbibnamehash}{42b48b91ec04dc8b258db592d08ee9e9}
+      \strng{authornamehash}{42b48b91ec04dc8b258db592d08ee9e9}
+      \strng{authorfullhash}{42b48b91ec04dc8b258db592d08ee9e9}
+      \field{labelalpha}{Wol16}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Microservices: flexible software architecture}
+      \field{year}{2016}
     \endentry
   \enddatalist
 \endrefsection
