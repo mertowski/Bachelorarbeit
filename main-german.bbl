@@ -489,6 +489,30 @@
       \verb https://www.webopedia.com/TERM/O/object_oriented_programming_OOP.html
       \endverb
     \endentry
+    \entry{owasp17top10}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=24b95a7fdad5a850196cd87546dcc70b}{%
+           family={OWASP},
+           familyi={O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Creative Commons}%
+      }
+      \strng{namehash}{24b95a7fdad5a850196cd87546dcc70b}
+      \strng{fullhash}{24b95a7fdad5a850196cd87546dcc70b}
+      \strng{bibnamehash}{24b95a7fdad5a850196cd87546dcc70b}
+      \strng{authorbibnamehash}{24b95a7fdad5a850196cd87546dcc70b}
+      \strng{authornamehash}{24b95a7fdad5a850196cd87546dcc70b}
+      \strng{authorfullhash}{24b95a7fdad5a850196cd87546dcc70b}
+      \field{labelalpha}{OWA17}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{The Ten Most Critical Web Application Security Risks}
+      \field{title}{OWASP Top 10}
+      \field{year}{2017}
+    \endentry
     \entry{owasp18def}{misc}{}
       \name{author}{1}{}{%
         {{hash=24b95a7fdad5a850196cd87546dcc70b}{%

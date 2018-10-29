@@ -73,14 +73,24 @@
 \@writefile{alg}{\addvspace {10\p@ }}
 \@writefile{toc}{\contentsline {section}{\numberline {3.1}Schwachstellen}{13}{section.3.1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}OWASP Top 10 Risiken}{13}{subsection.3.1.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Weitere Risiken}{13}{subsection.3.1.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Common Vulnerability Scoring System}{13}{subsection.3.1.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.4}Common Vulnerability Exposures (CVE)}{13}{subsection.3.1.4}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Technische Schwachstellen}{13}{section.3.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Programmierfehler}{13}{subsection.3.2.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Konfigurationsfehler}{13}{subsection.3.2.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Konzeptionsfehler}{13}{subsection.3.2.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.4}Fehler resultierend aus menschlichem Verhalten}{13}{subsection.3.2.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1.1}Injection}{13}{subsubsection.3.1.1.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1.2}Fehler in Authentifizierung und Session-Management}{13}{subsubsection.3.1.1.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1.3}Cross-Site Scripting (XSS)}{14}{subsubsection.3.1.1.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1.4}Unsichere direkte Objektreferenzen}{14}{subsubsection.3.1.1.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1.5}Sicherheitsrelevante Fehlkonfiguration}{14}{subsubsection.3.1.1.5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1.6}Verlust der Vertraulichkeit sensibler Daten}{14}{subsubsection.3.1.1.6}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1.7}Fehlerhafte Autorisierung auf Anwendungsebene}{14}{subsubsection.3.1.1.7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1.8}Cross-Site Request Forgery (CSRF)}{14}{subsubsection.3.1.1.8}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1.9}Nutzung von Komponenten mit bekannten Schwachstellen}{14}{subsubsection.3.1.1.9}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1.10}Ungepr\IeC {\"u}fte Um- und Weiterleitungen}{14}{subsubsection.3.1.1.10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Weitere Risiken}{14}{subsection.3.1.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Common Vulnerability Scoring System}{14}{subsection.3.1.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.4}Common Vulnerability Exposures (CVE)}{14}{subsection.3.1.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Technische Schwachstellen}{14}{section.3.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Programmierfehler}{14}{subsection.3.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Konfigurationsfehler}{14}{subsection.3.2.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Konzeptionsfehler}{14}{subsection.3.2.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.4}Fehler resultierend aus menschlichem Verhalten}{14}{subsection.3.2.4}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {4}Penetrationstest}{15}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
