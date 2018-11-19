@@ -170,7 +170,29 @@ Das Spring Web MVC-Framework stellt eine Model-View-Controller (MVC) -Architektu
 
 Spring REST Docs verwendet Snippets, die von Tests erstellt wurden, die mit Spring MVCs Testframework, Spring WebTestClient von WebFlux oder REST Assured 3 geschrieben wurden. Dieser Test-Driven-Ansatz hilft dabei, um die Genauigkeit der Service-Dokumentation zu gewährleisten. Das Ziel von Spring REST Docs ist es, Dokumentationen für RESTful Services zu erstellen, die genau und lesbar sind. Bei der Dokumentation eines RESTful Services geht es hauptsächlich um die Beschreibung seiner Ressourcen. Zwei wichtige Teile der Beschreibung jeder Ressource sind die Details der HTTP-Anforderungen, die sie verbraucht, und die HTTP-Antworten, die sie erzeugt\cite{srd18wilkinson}.
 
-\subsection{RAML}
+\subsection{Modellbasierte Ansätze für REST-Schnittstellen}
+
+Für viele verschiedene Einsatzgebiete gibt es verschiedenen Modellierungssprachen für die Erstellung und Beschreibung von REST-Schnittstellen. In diesem Abschnitt werden auf die Sprachen OPenAPI und RAML eingehen.
+
+\subsubsection{Open API}
+
+
+
+OpenAPI (früher Swagger) ist ein API-Beschreibungsformat für REST-APIs. Mit einer OpenAPI-Datei kann das gesamte API beschrieben werden\cite{openapi13def};
+
+\begin{itemize}
+	
+	\item Verfügbare Endpunkte \texttt{(/user)} und Vorgänge für jeden Endpunkt \texttt{(GET /user, POST /user)},
+	
+	\item Ein- und Ausgabe für jede Operation,
+	
+	\item Authentifizierungsmethoden,
+	
+	\item Kontaktinformationen, Lizenzen, Nutzungsbedingungen und andere Informationen.
+	
+\end{itemize}
+
+\subsubsection{RAML}
 
 RAML steht für RESTful API Modeling Language und ist eine Möglichkeit, praktisch RESTful APIs so zu beschreiben, dass sie sowohl für Menschen als auch für Computer gut lesbar sind. RAML konzentriert sich auf sauber zu beschreibende Ressourcen, Methoden, Parameter, Antworten, Medientypen und andere HTTP-Konstrukte, die die Basis für viele moderne APIs bilden. Das Ziel ist es, dass dem aktuellen API-Ökosystem zu helfen und unmittelbare Probleme zu lösen und dann immer bessere API-Muster zu fördern. Mittels RAML wird einen klar definierten Format in einem für Menschen lesbaren Format erhalten, um tatsächlich als Quellcode zu existieren\cite{raml13def}.
 

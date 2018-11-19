@@ -41,55 +41,57 @@
 \contentsline {subsubsection}{\numberline {2.2.3.1}Spring Boot}{10}{subsubsection.2.2.3.1}
 \contentsline {paragraph}{\numberline {2.2.3.1.1}Spring MVC Komponente}{11}{paragraph.2.2.3.1.1}
 \contentsline {paragraph}{\numberline {2.2.3.1.2}Spring Rest Docs}{11}{paragraph.2.2.3.1.2}
-\contentsline {subsection}{\numberline {2.2.4}RAML}{11}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.4}Modellbasierte Ans\IeC {\"a}tze f\IeC {\"u}r REST-Schnittstellen}{11}{subsection.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.4.1}Open API}{11}{subsubsection.2.2.4.1}
+\contentsline {subsubsection}{\numberline {2.2.4.2}RAML}{12}{subsubsection.2.2.4.2}
 \contentsline {subsection}{\numberline {2.2.5}Open Source Werkzeug OWASP Zap}{12}{subsection.2.2.5}
-\contentsline {chapter}{\numberline {3}Sicherheitsrisiken von Webanwendungen}{13}{chapter.3}
-\contentsline {section}{\numberline {3.1}Schwachstellen}{13}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}OWASP Top 10 Risiken}{13}{subsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.1.1}Injection}{13}{subsubsection.3.1.1.1}
-\contentsline {subsubsection}{\numberline {3.1.1.2}Fehler in Authentifizierung und Session-Management}{13}{subsubsection.3.1.1.2}
-\contentsline {subsubsection}{\numberline {3.1.1.3}Cross-Site Scripting (XSS)}{14}{subsubsection.3.1.1.3}
-\contentsline {subsubsection}{\numberline {3.1.1.4}Unsichere direkte Objektreferenzen}{14}{subsubsection.3.1.1.4}
-\contentsline {subsubsection}{\numberline {3.1.1.5}Sicherheitsrelevante Fehlkonfiguration}{14}{subsubsection.3.1.1.5}
-\contentsline {subsubsection}{\numberline {3.1.1.6}Verlust der Vertraulichkeit sensibler Daten}{14}{subsubsection.3.1.1.6}
-\contentsline {subsubsection}{\numberline {3.1.1.7}Fehlerhafte Autorisierung auf Anwendungsebene}{14}{subsubsection.3.1.1.7}
-\contentsline {subsubsection}{\numberline {3.1.1.8}Cross-Site Request Forgery (CSRF)}{14}{subsubsection.3.1.1.8}
-\contentsline {subsubsection}{\numberline {3.1.1.9}Nutzung von Komponenten mit bekannten Schwachstellen}{14}{subsubsection.3.1.1.9}
-\contentsline {subsubsection}{\numberline {3.1.1.10}Ungepr\IeC {\"u}fte Um- und Weiterleitungen}{14}{subsubsection.3.1.1.10}
-\contentsline {subsection}{\numberline {3.1.2}Weitere Risiken}{14}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Common Vulnerability Scoring System}{14}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Common Vulnerability Exposures (CVE)}{14}{subsection.3.1.4}
-\contentsline {section}{\numberline {3.2}Technische Schwachstellen}{14}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Programmierfehler}{14}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Konfigurationsfehler}{14}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Konzeptionsfehler}{14}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Fehler resultierend aus menschlichem Verhalten}{14}{subsection.3.2.4}
-\contentsline {chapter}{\numberline {4}Penetrationstest}{15}{chapter.4}
-\contentsline {section}{\numberline {4.1}Grundlegendes Konzept}{15}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Black-Box}{15}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}White-Box}{15}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Gray-Box}{15}{subsection.4.1.3}
-\contentsline {section}{\numberline {4.2}Kriterien f\IeC {\"u}r Penetrationstests}{15}{section.4.2}
-\contentsline {section}{\numberline {4.3}Ablauf eines Penetrationstest}{15}{section.4.3}
-\contentsline {section}{\numberline {4.4}Penetrationstest-Tools}{15}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}ABC}{15}{subsection.4.4.1}
-\contentsline {section}{\numberline {4.5}Automatisierte Penetrationstest-Tools}{15}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}ABC}{15}{subsection.4.5.1}
-\contentsline {section}{\numberline {4.6}Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest-Tools}{15}{section.4.6}
-\contentsline {chapter}{\numberline {5}Entwicklung einer Spring-Boot-Webanwendung mit Sicherheitsl\IeC {\"u}cken}{17}{chapter.5}
-\contentsline {chapter}{\numberline {6}Entwicklung von Plug-in f\IeC {\"u}r das OWASP-ZAP}{19}{chapter.6}
-\contentsline {chapter}{\numberline {7}Was ist die Vorteile von diesem Plug-in gegen\IeC {\"u}ber anderen Plug-ins?}{21}{chapter.7}
-\contentsline {chapter}{\numberline {8}Fazit}{23}{chapter.8}
-\contentsline {chapter}{\numberline {A}Benutzerhandbuch f\IeC {\"u}r das OWASP-Zap RAML Plug-in}{25}{appendix.A}
-\contentsline {section}{\numberline {A.1}Quellcode}{25}{section.A.1}
-\contentsline {section}{\numberline {A.2}Abbildungen}{25}{section.A.2}
-\contentsline {section}{\numberline {A.3}Tabellen}{25}{section.A.3}
-\contentsline {section}{\numberline {A.4}Pseudocode}{27}{section.A.4}
-\contentsline {section}{\numberline {A.5}Abk\IeC {\"u}rzungen}{29}{section.A.5}
-\contentsline {section}{\numberline {A.6}Definitionen}{29}{section.A.6}
-\contentsline {section}{\numberline {A.7}Fu\IeC {\ss }noten}{29}{section.A.7}
-\contentsline {section}{\numberline {A.8}Verschiedenes}{29}{section.A.8}
-\contentsline {section}{\numberline {A.9}Weitere Illustrationen}{30}{section.A.9}
-\contentsline {section}{\numberline {A.10}Plots with pgfplots}{32}{section.A.10}
-\contentsline {section}{\numberline {A.11}Figures with tikz}{32}{section.A.11}
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{33}{appendix*.23}
+\contentsline {chapter}{\numberline {3}Sicherheitsrisiken von Webanwendungen}{15}{chapter.3}
+\contentsline {section}{\numberline {3.1}Schwachstellen}{15}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}OWASP Top 10 Risiken}{15}{subsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1.1}Injection}{15}{subsubsection.3.1.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1.2}Fehler in Authentifizierung und Session-Management}{16}{subsubsection.3.1.1.2}
+\contentsline {subsubsection}{\numberline {3.1.1.3}Verlust der Vertraulichkeit sensibler Daten}{16}{subsubsection.3.1.1.3}
+\contentsline {subsubsection}{\numberline {3.1.1.4}XML External Entities (XXE)}{17}{subsubsection.3.1.1.4}
+\contentsline {subsubsection}{\numberline {3.1.1.5}Broken Access Control}{18}{subsubsection.3.1.1.5}
+\contentsline {subsubsection}{\numberline {3.1.1.6}Sicherheitsrelevante Fehlkonfiguration}{18}{subsubsection.3.1.1.6}
+\contentsline {subsubsection}{\numberline {3.1.1.7}Cross-Site Scripting (XSS)}{19}{subsubsection.3.1.1.7}
+\contentsline {subsubsection}{\numberline {3.1.1.8}Unsichere Deserialisierung}{20}{subsubsection.3.1.1.8}
+\contentsline {subsubsection}{\numberline {3.1.1.9}Nutzung von Komponenten mit bekannten Schwachstellen}{20}{subsubsection.3.1.1.9}
+\contentsline {subsubsection}{\numberline {3.1.1.10}Insufficient Logging \& Monitoring}{21}{subsubsection.3.1.1.10}
+\contentsline {subsection}{\numberline {3.1.2}Weitere Risiken}{21}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Common Vulnerability Scoring System}{21}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Common Vulnerability Exposures}{21}{subsection.3.1.4}
+\contentsline {section}{\numberline {3.2}Technische Schwachstellen}{21}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Programmierfehler}{21}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Konfigurationsfehler}{21}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Konzeptionsfehler}{21}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Fehler resultierend aus menschlichem Verhalten}{21}{subsection.3.2.4}
+\contentsline {chapter}{\numberline {4}Penetrationstest}{23}{chapter.4}
+\contentsline {section}{\numberline {4.1}Grundlegendes Konzept}{23}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Black-Box}{23}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}White-Box}{23}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Gray-Box}{23}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}Kriterien f\IeC {\"u}r Penetrationstests}{23}{section.4.2}
+\contentsline {section}{\numberline {4.3}Ablauf eines Penetrationstest}{23}{section.4.3}
+\contentsline {section}{\numberline {4.4}Penetrationstest-Tools}{23}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}ABC}{23}{subsection.4.4.1}
+\contentsline {section}{\numberline {4.5}Automatisierte Penetrationstest-Tools}{23}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}ABC}{23}{subsection.4.5.1}
+\contentsline {section}{\numberline {4.6}Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest-Tools}{23}{section.4.6}
+\contentsline {chapter}{\numberline {5}Entwicklung einer Spring-Boot-Webanwendung mit Sicherheitsl\IeC {\"u}cken}{25}{chapter.5}
+\contentsline {chapter}{\numberline {6}Entwicklung von Plug-in f\IeC {\"u}r das OWASP-ZAP}{27}{chapter.6}
+\contentsline {chapter}{\numberline {7}Was ist die Vorteile von diesem Plug-in gegen\IeC {\"u}ber anderen Plug-ins?}{29}{chapter.7}
+\contentsline {chapter}{\numberline {8}Fazit}{31}{chapter.8}
+\contentsline {chapter}{\numberline {A}Benutzerhandbuch f\IeC {\"u}r das OWASP-Zap RAML Plug-in}{33}{appendix.A}
+\contentsline {section}{\numberline {A.1}Quellcode}{33}{section.A.1}
+\contentsline {section}{\numberline {A.2}Abbildungen}{33}{section.A.2}
+\contentsline {section}{\numberline {A.3}Tabellen}{33}{section.A.3}
+\contentsline {section}{\numberline {A.4}Pseudocode}{35}{section.A.4}
+\contentsline {section}{\numberline {A.5}Abk\IeC {\"u}rzungen}{37}{section.A.5}
+\contentsline {section}{\numberline {A.6}Definitionen}{37}{section.A.6}
+\contentsline {section}{\numberline {A.7}Fu\IeC {\ss }noten}{37}{section.A.7}
+\contentsline {section}{\numberline {A.8}Verschiedenes}{37}{section.A.8}
+\contentsline {section}{\numberline {A.9}Weitere Illustrationen}{38}{section.A.9}
+\contentsline {section}{\numberline {A.10}Plots with pgfplots}{40}{section.A.10}
+\contentsline {section}{\numberline {A.11}Figures with tikz}{40}{section.A.11}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{41}{appendix*.23}

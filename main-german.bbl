@@ -761,6 +761,32 @@
       \verb https://www.brandmauer.de/blog/it-security/unterschied-it-sicherheit-und-informationssicherheit
       \endverb
     \endentry
+    \entry{openapi13def}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=336ff1e9aa6177ea7a71984fa8c241b9}{%
+           family={Swagger},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{336ff1e9aa6177ea7a71984fa8c241b9}
+      \strng{fullhash}{336ff1e9aa6177ea7a71984fa8c241b9}
+      \strng{bibnamehash}{336ff1e9aa6177ea7a71984fa8c241b9}
+      \strng{authorbibnamehash}{336ff1e9aa6177ea7a71984fa8c241b9}
+      \strng{authornamehash}{336ff1e9aa6177ea7a71984fa8c241b9}
+      \strng{authorfullhash}{336ff1e9aa6177ea7a71984fa8c241b9}
+      \field{labelalpha}{Swa17}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{What Is OpenAPI?}}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://swagger.io/docs/specification/about/
+      \endverb
+      \verb{url}
+      \verb https://swagger.io/docs/specification/about/
+      \endverb
+    \endentry
     \entry{nsa14}{misc}{}
       \name{author}{1}{}{%
         {{hash=2d0ed76dc2bb8ec0ba5cf4473f5c4c74}{%
