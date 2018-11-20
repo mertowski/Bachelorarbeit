@@ -5,6 +5,8 @@ In diesem Kapitel wird die Sicherheit von Webanwendungen anhand von Bedrohungen,
 
 \section{Schwachstellen}
 
+Eine lückenlose Sicherheit ist in der IT nicht machbar, weil jedes verwendete Anwendung manche Schwachstellen beinhalten kann, die bis jetzt noch keiner gefunden hat.
+
 \subsection{OWASP Top 10 Risiken}
 
 \subsubsection{Injection}
@@ -15,26 +17,32 @@ Injektion-Schwachstellen wie SQL-, NoSQL-, OS- und LDAP-Injection treten auf, we
 
 \textbf{Schwachstellen:} Injection-Schwachstellen tauchen auf, wenn eine Anwendung nicht vertrauenswürdige Daten an einen Interpreter weiterleitet. Sie sind weit verbreitet, besonders in veraltetem Code. Sie finden sich in SQL-, LDAP-, XPath und NoSQL-Anfragen, in Betriebssystembefehlen sowie in XML, SMTP-Headern, Parametern, etc. Injection-Schwachstellen lassen sich durch Code-Prüfungen einfach, durch externe Tests aber in der Regel nur schwer entdecken. Angreifer setzen dazu Scanner und Fuzzer ein\cite[7]{owasp17top10}.
 
-\textbf{Technische Auswirkungen:} Injection kann zu Datenverlust oder -verfälschung, Fehlen von Zurechenbarkeit oder Zugangssperre führen. Unter Umständen kann es zu einer vollständigen Systemübernahme kommen\cite[7]{owasp17top10}.
+\textbf{Technische Auswirkungen:} Injection kann zu Datenverlust oder -verfälschung, Fehlen von Zurechenbarkeit oder Zugangssperre führen. Unter Umständen kann es zu einer vollständigen Systemübernahme kommen\cite[7]{owasp17top10}.\\
 
 \textbf{Mögliche Angriffsszenarien:}\\
-\\
-\textbf{\textit{Szenario 1:}}\\
-Die Anwendung nutzt ungeprüfte Eingabedaten bei der Konstruktion der verwundbaren SQL-Abfrage:
 
-\texttt{String query = "SELECT * FROM accounts WHERE}\\
-\texttt{custID='" + request.getParameter("id") + "'";}
+\textbf{\textit{Szenario 1:}}
+
+Die Anwendung nutzt ungeprüfte Eingabedaten bei der Konstruktion der verwundbaren SQL-Abfrage:\\
+
+\begin{lstlisting}
+String query = "SELECT * FROM accounts WHERE
+custID='" + request.getParameter(''id'') + "'";}
+\end{lstlisting}
 
 \textbf{\textit{Szenario 2:}}\\
 Blindes Vertrauen in den Einsatz eines Frameworks:
 
 \texttt{Query HQLQuery = session.createQuery(“FROM accounts}\\
 \texttt{WHERE custID='“ + request.getParameter("id") + "'");}\\
+
 Der Angreifer verändert in beiden Fällen den 'id'-Parameter im Browser und sendet: ' or '1'='1. 
 
 Zum Beispiel: http://example.com/app/accountView?id=' or '1'='1
 
 Das ändert die Logik der Anfrage so, dass in diesem Fall alle Datensätze der Tabelle ‚accounts‘ zurückgegeben werden. Schlimmstenfalls werden durch Injections Daten verändert oder sogar Stored Procedures gestartet\cite[7]{owasp17top10}.
+
+
 
 \subsubsection{Fehler in Authentifizierung und Session-Management}
 
@@ -141,7 +149,7 @@ Einschränkungen, was authentifizierte Benutzer tun dürfen, werden häufig nich
 \textbf{Schwachstellen:} Schwachstellen der Zugriffskontrolle treten häufig auf, da keine automatisierte Erkennung und keine effektiven Funktionstests durch Anwendungsentwickler vorhanden sind. Die Erkennung der Zugriffskontrolle ist normalerweise nicht für automatisierte statische oder dynamische Tests geeignet\cite[11]{owasp17top10}.
 
 \textbf{Technische Auswirkungen:} Die technische Auswirkung besteht darin, dass Angreifer als Benutzer oder Administrator fungieren, indem sie jeden Datensatz erstellen, darauf zugreifen, aktualisieren oder löschen\cite[11]{owasp17top10}.
- 
+
 \textbf{Mögliche Angriffsszenarien:}\\
 \\
 \textbf{\textit{Szenario 1:}}\\
@@ -258,7 +266,7 @@ auf\cite[13]{owasp17top10}:
 Ein Angreifer ändert das serialisierte Objekt, um sich Administratorrechte zu gewähren:
 
 \texttt{a:4:{i:0;i:1;i:1;s:5:"Alice";i:2;s:5:"admin";\\
-	i:3;s:32:"b6a8b3bea87fe0e05022f8f3c88bc960";}}
+		i:3;s:32:"b6a8b3bea87fe0e05022f8f3c88bc960";}}
 
 \subsubsection{Nutzung von Komponenten mit bekannten Schwachstellen}
 
@@ -308,16 +316,88 @@ Ein Angreifer verwendet Scans für Benutzer, die ein allgemeines Kennwort verwen
 
 \subsection{Weitere Risiken}
 
-\subsection{Common Vulnerability Scoring System}
+Die OWASP Top 10 zeigt die zehn wichtigsten Risiken für Webanwendungen, aber es gibt noch weiteren Risiken, die bei der Entwicklung und dem Betrieb von Webanwendungen beachtet werden sollten. Im dem folgenden Abschnitt werden weitere Risiken erläutert.
 
-\subsection{Common Vulnerability Exposures}
+\subsubsection{Zugriff auf entfernte Dateien}
 
-\section{Technische Schwachstellen}
+Wenn \texttt{allow\_url\_fopen} in der \texttt{php.ini} aktiviert ist, können HTTP- und FTP-URLs bei den meisten Funktionen benutzt werden, die einen Dateinamen als Parameter benötigen. Hinzukommend können URLs in \texttt{include}-, \texttt{include\_once}- und \texttt{require}-Anweisungen verwendet werden. Exemplarisch kann damit eine Datei auf einem anderen Webserver erreicht und benötigten Daten analysiert werden. Diese Daten können zur Abfrage einer Datenbank benutzt werden\cite{zaed08}.
 
-\subsection{Programmierfehler}
+\textbf{\textit{Szenario 1: Den Titel einer entfernten Seite auslesen}}\\ 
 
-\subsection{Konfigurationsfehler}
+\begin{lstlisting}
+<?php
+$datei = fopen ("http://www.example.com/", "r");
+if (!$datei) {
+	echo "<p>Datei konnte nicht geoeffnet werden.\n";
+	exit;
+}
+while (!feof ($datei)) {
+	$zeile = fgets ($datei, 1024);
+	/* Funktioniert nur, wenn Titel und title-Tags in einer Zeile stehen */
+	if (preg_match ("@\<title\>(.*)\</title\>@i", $zeile, $treffer)) {
+		$title = $treffer[1];
+		break;
+	}
+}
+fclose($datei);
+?>
+\end{lstlisting}
 
-\subsection{Konzeptionsfehler}
+Eine Datei auf einem FTP-Server kann geschrieben werden, wenn man als Benutzer mit entsprechenden Zugriffsrechten angemeldet. Auf diesem Weg können nur neue Dateien angelegt werden. Um sich statt als 'anonymous' als anderer Benutzer anzumelden, muss ein Benutzername (und möglicherweise ein Passwort) innerhalb der URL angegeben werden, wie z.B. \texttt{'ftp://benutzer:passwort@ftp.example.com/pfad/zur/datei'}. Die selbe Syntax kann verwendet werden, um auf Dateien via HTTP zuzugreifen, wenn diese eine Basic-Authentifizierung benötigen\cite{zaed08}.
 
-\subsection{Fehler resultierend aus menschlichem Verhalten}
+\subsubsection{Clickjacking}
+
+Clickjacking ist der Versuch, den Nutzer dazu zu bringen, auf schädliche Links zu klicken, die sich in scheinbar harmlosen Videos, Bildern oder Artikeln verstecken. Nutzer können über einen ''überlagerten'' Link auf eine infizierte Webseite oder Spams weitergeleitet werden. Beim Clickjacking kann ein Nutzer auch dazu gebracht werden, unwissentlich Werbung oder schädliche Inhalte auf seiner Social Media-Seite zu posten\cite{cj16}.
+
+\textbf{\textit{Szenario 1:}}
+
+Bei diesem HTML-Code gibt es nur ein Formular mit einem Absenden-Button. Wenn man auf diesen Button drückt, wird die Aktion \texttt{''dotransfer''} ausgeführt, indem der Benutzer zur Anschauung weitergeleitet wird\cite{cjd13}.\\
+
+\begin{lstlisting}
+<html>
+	<head>
+		<title>Opferseite</title>
+	</head>
+	<body>
+		<form action="/dotransfer" method="post" />
+			<input type="hidden" value="1000" name="amount" />
+			<input type="hidden" value="[RND-ID]" name="csrftoken" />
+			<input type="submit" value="submit" />
+		</form>
+	</body>
+</html>
+\end{lstlisting}
+
+
+Durch unten geschriebene HTML-Code wird eine zweite Seite erstellt, welche die erste Seite einbindet\cite{cjd13}.;\\
+
+\begin{lstlisting}
+<html>
+	<head>
+		<title>Hack</title>
+	</head>
+	<body>
+		<button id="clickme"/>Gewinne ein Smartphone</button>
+		<iframe src="http://opferseite.de/inittransfer.html" id="frame"/><iframe>
+	</body>
+</html>
+\end{lstlisting}
+
+Es wird jetzt noch ein wenig CSS gebraucht, um das Iframe halbdurchsichtig zu machen, und den \texttt{clickme} Button über den Absenden-Button des Iframes zu legen\cite{cjd13}.\\
+
+\begin{lstlisting}
+#clickme {
+	position:absolute;
+	top:0px;
+	left:0px;
+	color: #ff0000;
+}
+
+#frame {
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+}
+\end{lstlisting}
+
+Im Endeffekt sieht der Benutzer nur noch den Button mit der Aufschrift „Gewinn ein Smartphone“. Darüber liegt jedoch das unsichtbare Iframe. Möchte der Benutzer den Gewinn ergattern betätigt er nicht den Gewinnbutton, sondern den Absenden-Button im Iframe, da dieser über dem Gewinn-Button liegt. Damit wird die Aktion im Hintergrund ausgeführt, und der Hacker hat seiner Ziel erreicht\cite{cjd13}.

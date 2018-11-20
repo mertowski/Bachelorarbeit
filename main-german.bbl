@@ -19,6 +19,32 @@
 
 \refsection{0}
   \datalist[entry]{anyt/global//global/global}
+    \entry{cj16}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=77cdaaf243483a8985f23fd7c5fb4e7f}{%
+           family={Avira},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{77cdaaf243483a8985f23fd7c5fb4e7f}
+      \strng{fullhash}{77cdaaf243483a8985f23fd7c5fb4e7f}
+      \strng{bibnamehash}{77cdaaf243483a8985f23fd7c5fb4e7f}
+      \strng{authorbibnamehash}{77cdaaf243483a8985f23fd7c5fb4e7f}
+      \strng{authornamehash}{77cdaaf243483a8985f23fd7c5fb4e7f}
+      \strng{authorfullhash}{77cdaaf243483a8985f23fd7c5fb4e7f}
+      \field{labelalpha}{Avi16}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Clickjacking}}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://www.avira.com/de/security-term/t/clickjacking/id/11
+      \endverb
+      \verb{url}
+      \verb https://www.avira.com/de/security-term/t/clickjacking/id/11
+      \endverb
+    \endentry
     \entry{dtint2007}{misc}{}
       \name{author}{1}{}{%
         {{hash=bfec45b41bf8722c0beb62b92638fe0c}{%
@@ -182,6 +208,21 @@
       \field{label}{BSIDI}
       \field{title}{Internet-Sicherheit: Einführung, Grundlagen, Vorgehensweise}
       \field{year}{2011}
+    \endentry
+    \entry{cjd13}{misc}{}
+      \field{labelalpha}{CJ13}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labeltitlesource}{title}
+      \field{label}{CJ}
+      \field{title}{{Was ist Clickjacking?}}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://technik.blogbasis.net/was-ist-clickjacking-06-04-2013
+      \endverb
+      \verb{url}
+      \verb https://technik.blogbasis.net/was-ist-clickjacking-06-04-2013
+      \endverb
     \endentry
     \entry{spy12}{misc}{}
       \name{author}{1}{}{%
@@ -918,6 +959,33 @@
       \field{labeltitlesource}{title}
       \field{title}{Microservices: flexible software architecture}
       \field{year}{2016}
+    \endentry
+    \entry{zaed08}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=d3127a695fb277ef63f3f65292cb721f}{%
+           family={PHP.NET},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{d3127a695fb277ef63f3f65292cb721f}
+      \strng{fullhash}{d3127a695fb277ef63f3f65292cb721f}
+      \strng{bibnamehash}{d3127a695fb277ef63f3f65292cb721f}
+      \strng{authorbibnamehash}{d3127a695fb277ef63f3f65292cb721f}
+      \strng{authornamehash}{d3127a695fb277ef63f3f65292cb721f}
+      \strng{authorfullhash}{d3127a695fb277ef63f3f65292cb721f}
+      \field{labelalpha}{ZED08}
+      \field{sortinit}{Z}
+      \field{sortinithash}{156173bd08b075d7295bc3e0f4735a04}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{label}{ZED}
+      \field{title}{{Zugriff auf entfernte Dateien}}
+      \field{year}{2008}
+      \verb{urlraw}
+      \verb http://php.net/manual/de/features.remote-files.php
+      \endverb
+      \verb{url}
+      \verb http://php.net/manual/de/features.remote-files.php
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

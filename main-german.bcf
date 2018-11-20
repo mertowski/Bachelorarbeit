@@ -2033,6 +2033,13 @@
     <bcf:citekey order="108">owasp17top10</bcf:citekey>
     <bcf:citekey order="109">owasp17top10</bcf:citekey>
     <bcf:citekey order="110">owasp17top10</bcf:citekey>
+    <bcf:citekey order="111">zaed08</bcf:citekey>
+    <bcf:citekey order="112">zaed08</bcf:citekey>
+    <bcf:citekey order="113">cj16</bcf:citekey>
+    <bcf:citekey order="114">cjd13</bcf:citekey>
+    <bcf:citekey order="115">cjd13</bcf:citekey>
+    <bcf:citekey order="116">cjd13</bcf:citekey>
+    <bcf:citekey order="117">cjd13</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">

@@ -86,94 +86,89 @@
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1.9}Nutzung von Komponenten mit bekannten Schwachstellen}{20}{subsubsection.3.1.1.9}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1.10}Insufficient Logging \& Monitoring}{21}{subsubsection.3.1.1.10}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Weitere Risiken}{21}{subsection.3.1.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Common Vulnerability Scoring System}{21}{subsection.3.1.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.4}Common Vulnerability Exposures}{21}{subsection.3.1.4}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Technische Schwachstellen}{21}{section.3.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Programmierfehler}{21}{subsection.3.2.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Konfigurationsfehler}{21}{subsection.3.2.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Konzeptionsfehler}{21}{subsection.3.2.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.4}Fehler resultierend aus menschlichem Verhalten}{21}{subsection.3.2.4}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Penetrationstest}{23}{chapter.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2.1}Zugriff auf entfernte Dateien}{21}{subsubsection.3.1.2.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2.2}Clickjacking}{22}{subsubsection.3.1.2.2}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Penetrationstest}{25}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{lol}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
 \@writefile{code}{\addvspace {10\p@ }}
 \@writefile{alg}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Grundlegendes Konzept}{23}{section.4.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Black-Box}{23}{subsection.4.1.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}White-Box}{23}{subsection.4.1.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.3}Gray-Box}{23}{subsection.4.1.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Kriterien f\IeC {\"u}r Penetrationstests}{23}{section.4.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}Ablauf eines Penetrationstest}{23}{section.4.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}Penetrationstest-Tools}{23}{section.4.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}ABC}{23}{subsection.4.4.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.5}Automatisierte Penetrationstest-Tools}{23}{section.4.5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.1}ABC}{23}{subsection.4.5.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.6}Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest-Tools}{23}{section.4.6}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Entwicklung einer Spring-Boot-Webanwendung mit Sicherheitsl\IeC {\"u}cken}{25}{chapter.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Grundlegendes Konzept}{25}{section.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Black-Box}{25}{subsection.4.1.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}White-Box}{25}{subsection.4.1.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.3}Gray-Box}{25}{subsection.4.1.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Kriterien f\IeC {\"u}r Penetrationstests}{25}{section.4.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Ablauf eines Penetrationstest}{25}{section.4.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Penetrationstest-Tools}{25}{section.4.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}ABC}{25}{subsection.4.4.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}Automatisierte Penetrationstest-Tools}{25}{section.4.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.1}ABC}{25}{subsection.4.5.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.6}Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest-Tools}{25}{section.4.6}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Entwicklung einer Spring-Boot-Webanwendung mit Sicherheitsl\IeC {\"u}cken}{27}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{lol}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
 \@writefile{code}{\addvspace {10\p@ }}
 \@writefile{alg}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Entwicklung von Plug-in f\IeC {\"u}r das OWASP-ZAP}{27}{chapter.6}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Entwicklung von Plug-in f\IeC {\"u}r das OWASP-ZAP}{29}{chapter.6}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{lol}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
 \@writefile{code}{\addvspace {10\p@ }}
 \@writefile{alg}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {7}Was ist die Vorteile von diesem Plug-in gegen\IeC {\"u}ber anderen Plug-ins?}{29}{chapter.7}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}Was ist die Vorteile von diesem Plug-in gegen\IeC {\"u}ber anderen Plug-ins?}{31}{chapter.7}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{lol}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
 \@writefile{code}{\addvspace {10\p@ }}
 \@writefile{alg}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {8}Fazit}{31}{chapter.8}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {8}Fazit}{33}{chapter.8}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{lol}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
 \@writefile{code}{\addvspace {10\p@ }}
 \@writefile{alg}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}Benutzerhandbuch f\IeC {\"u}r das OWASP-Zap RAML Plug-in}{33}{appendix.A}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}Benutzerhandbuch f\IeC {\"u}r das OWASP-Zap RAML Plug-in}{35}{appendix.A}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{lol}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
 \@writefile{code}{\addvspace {10\p@ }}
 \@writefile{alg}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {A.1}Quellcode}{33}{section.A.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.2}Abbildungen}{33}{section.A.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.3}Tabellen}{33}{section.A.3}}
-\@writefile{code}{\contentsline {Listing}{\numberline {A.1}{\ignorespaces lstlisting in einer Listings-Umgebung, damit das Listing durch Balken abgetrennt ist\relax }}{33}{Listing.A.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {\relax A.1}{\ignorespaces Beispiel-Choreographie\relax }}{34}{figure.caption.14}}
-\@writefile{lof}{\contentsline {figure}{\numberline {\relax A.2}{\ignorespaces Beispiel-Choreographie}}{34}{figure.caption.15}}
-\@writefile{lof}{\contentsline {figure}{\numberline {\relax A.3}{\ignorespaces Beispiel um 3 Abbildung nebeneinader zu stellen nur jedes einzeln referenzieren zu k\IeC {\"o}nnen. Abbildung~\ref {fig:subfigB} ist die mittlere Abbildung.\relax }}{35}{figure.caption.16}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{35}{subfigure.3.1}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{35}{subfigure.3.2}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Subcaption if needed}}}{35}{subfigure.3.3}}
-\@writefile{lot}{\contentsline {table}{\numberline {\relax A.1}{\ignorespaces Beispieltabelle}}{35}{table.caption.17}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.4}Pseudocode}{35}{section.A.4}}
-\@writefile{lot}{\contentsline {table}{\numberline {\relax A.2}{\ignorespaces Beispieltabelle f\"{u}r 4 Bedingungen (W-Z) mit jeweils 4 Parameters mit (M und SD). Hinwei\IeC {\ss }: immer die selbe anzahl an Nachkommastellen angeben.\relax }}{35}{table.caption.18}}
-\@writefile{alg}{\contentsline {Algorithmus}{\numberline {A.1}{\ignorespaces Sample algorithm\relax }}{36}{Algorithmus.A.1}}
-\@writefile{alg}{\contentsline {Algorithmus}{\numberline {A.2}{\ignorespaces Description \relax }}{37}{Algorithmus.A.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.5}Abk\IeC {\"u}rzungen}{37}{section.A.5}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.6}Definitionen}{37}{section.A.6}}
-\@writefile{thm}{\contentsline {definition}{{Definition}{A.6.{1}}{Title}}{37}{definition.A.6.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.7}Fu\IeC {\ss }noten}{37}{section.A.7}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.8}Verschiedenes}{37}{section.A.8}}
-\@writefile{lof}{\contentsline {figure}{\numberline {\relax A.4}{\ignorespaces Beispiel-Choreographie I\relax }}{38}{figure.caption.19}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.9}Weitere Illustrationen}{38}{section.A.9}}
-\@writefile{lof}{\contentsline {figure}{\numberline {\relax A.5}{\ignorespaces Beispiel-Choreographie II\relax }}{39}{figure.caption.20}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.10}Plots with pgfplots}{40}{section.A.10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {\relax A.6}{\ignorespaces $\qopname \relax o{sin}(x)$ mit pgfplots.\relax }}{40}{figure.caption.21}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.11}Figures with tikz}{40}{section.A.11}}
-\@writefile{lof}{\contentsline {figure}{\numberline {\relax A.7}{\ignorespaces Eine tikz-Graphik.\relax }}{40}{figure.caption.22}}
-\@writefile{toc}{\contentsline {chapter}{\nonumberline Literaturverzeichnis}{41}{appendix*.23}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.1}Quellcode}{35}{section.A.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.2}Abbildungen}{35}{section.A.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.3}Tabellen}{35}{section.A.3}}
+\@writefile{code}{\contentsline {Listing}{\numberline {A.1}{\ignorespaces lstlisting in einer Listings-Umgebung, damit das Listing durch Balken abgetrennt ist\relax }}{35}{Listing.A.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax A.1}{\ignorespaces Beispiel-Choreographie\relax }}{36}{figure.caption.14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax A.2}{\ignorespaces Beispiel-Choreographie}}{36}{figure.caption.15}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax A.3}{\ignorespaces Beispiel um 3 Abbildung nebeneinader zu stellen nur jedes einzeln referenzieren zu k\IeC {\"o}nnen. Abbildung~\ref {fig:subfigB} ist die mittlere Abbildung.\relax }}{37}{figure.caption.16}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{37}{subfigure.3.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{37}{subfigure.3.2}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Subcaption if needed}}}{37}{subfigure.3.3}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax A.1}{\ignorespaces Beispieltabelle}}{37}{table.caption.17}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.4}Pseudocode}{37}{section.A.4}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax A.2}{\ignorespaces Beispieltabelle f\"{u}r 4 Bedingungen (W-Z) mit jeweils 4 Parameters mit (M und SD). Hinwei\IeC {\ss }: immer die selbe anzahl an Nachkommastellen angeben.\relax }}{37}{table.caption.18}}
+\@writefile{alg}{\contentsline {Algorithmus}{\numberline {A.1}{\ignorespaces Sample algorithm\relax }}{38}{Algorithmus.A.1}}
+\@writefile{alg}{\contentsline {Algorithmus}{\numberline {A.2}{\ignorespaces Description \relax }}{39}{Algorithmus.A.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.5}Abk\IeC {\"u}rzungen}{39}{section.A.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.6}Definitionen}{39}{section.A.6}}
+\@writefile{thm}{\contentsline {definition}{{Definition}{A.6.{1}}{Title}}{39}{definition.A.6.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.7}Fu\IeC {\ss }noten}{39}{section.A.7}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.8}Verschiedenes}{39}{section.A.8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax A.4}{\ignorespaces Beispiel-Choreographie I\relax }}{40}{figure.caption.19}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.9}Weitere Illustrationen}{40}{section.A.9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax A.5}{\ignorespaces Beispiel-Choreographie II\relax }}{41}{figure.caption.20}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.10}Plots with pgfplots}{42}{section.A.10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax A.6}{\ignorespaces $\qopname \relax o{sin}(x)$ mit pgfplots.\relax }}{42}{figure.caption.21}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.11}Figures with tikz}{42}{section.A.11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax A.7}{\ignorespaces Eine tikz-Graphik.\relax }}{42}{figure.caption.22}}
+\@writefile{toc}{\contentsline {chapter}{\nonumberline Literaturverzeichnis}{43}{appendix*.23}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{lol}{\addvspace {10\p@ }}

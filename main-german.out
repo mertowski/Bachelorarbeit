@@ -17,39 +17,32 @@
 \BOOKMARK [1][-]{section.3.1}{3.1 Schwachstellen}{chapter.3}% 17
 \BOOKMARK [2][-]{subsection.3.1.1}{3.1.1 OWASP Top 10 Risiken}{section.3.1}% 18
 \BOOKMARK [2][-]{subsection.3.1.2}{3.1.2 Weitere Risiken}{section.3.1}% 19
-\BOOKMARK [2][-]{subsection.3.1.3}{3.1.3 Common Vulnerability Scoring System}{section.3.1}% 20
-\BOOKMARK [2][-]{subsection.3.1.4}{3.1.4 Common Vulnerability Exposures}{section.3.1}% 21
-\BOOKMARK [1][-]{section.3.2}{3.2 Technische Schwachstellen}{chapter.3}% 22
-\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Programmierfehler}{section.3.2}% 23
-\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 Konfigurationsfehler}{section.3.2}% 24
-\BOOKMARK [2][-]{subsection.3.2.3}{3.2.3 Konzeptionsfehler}{section.3.2}% 25
-\BOOKMARK [2][-]{subsection.3.2.4}{3.2.4 Fehler resultierend aus menschlichem Verhalten}{section.3.2}% 26
-\BOOKMARK [0][]{chapter.4}{4 Penetrationstest}{}% 27
-\BOOKMARK [1][-]{section.4.1}{4.1 Grundlegendes Konzept}{chapter.4}% 28
-\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Black-Box}{section.4.1}% 29
-\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 White-Box}{section.4.1}% 30
-\BOOKMARK [2][-]{subsection.4.1.3}{4.1.3 Gray-Box}{section.4.1}% 31
-\BOOKMARK [1][-]{section.4.2}{4.2 Kriterien f\374r Penetrationstests}{chapter.4}% 32
-\BOOKMARK [1][-]{section.4.3}{4.3 Ablauf eines Penetrationstest}{chapter.4}% 33
-\BOOKMARK [1][-]{section.4.4}{4.4 Penetrationstest-Tools}{chapter.4}% 34
-\BOOKMARK [2][-]{subsection.4.4.1}{4.4.1 ABC}{section.4.4}% 35
-\BOOKMARK [1][-]{section.4.5}{4.5 Automatisierte Penetrationstest-Tools}{chapter.4}% 36
-\BOOKMARK [2][-]{subsection.4.5.1}{4.5.1 ABC}{section.4.5}% 37
-\BOOKMARK [1][-]{section.4.6}{4.6 Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest-Tools}{chapter.4}% 38
-\BOOKMARK [0][]{chapter.5}{5 Entwicklung einer Spring-Boot-Webanwendung mit Sicherheitsl\374cken}{}% 39
-\BOOKMARK [0][]{chapter.6}{6 Entwicklung von Plug-in f\374r das OWASP-ZAP}{}% 40
-\BOOKMARK [0][]{chapter.7}{7 Was ist die Vorteile von diesem Plug-in gegen\374ber anderen Plug-ins?}{}% 41
-\BOOKMARK [0][]{chapter.8}{8 Fazit}{}% 42
-\BOOKMARK [0][]{appendix.A}{A Benutzerhandbuch f\374r das OWASP-Zap RAML Plug-in}{}% 43
-\BOOKMARK [1][-]{section.A.1}{A.1 Quellcode}{appendix.A}% 44
-\BOOKMARK [1][-]{section.A.2}{A.2 Abbildungen}{appendix.A}% 45
-\BOOKMARK [1][-]{section.A.3}{A.3 Tabellen}{appendix.A}% 46
-\BOOKMARK [1][-]{section.A.4}{A.4 Pseudocode}{appendix.A}% 47
-\BOOKMARK [1][-]{section.A.5}{A.5 Abk\374rzungen}{appendix.A}% 48
-\BOOKMARK [1][-]{section.A.6}{A.6 Definitionen}{appendix.A}% 49
-\BOOKMARK [1][-]{section.A.7}{A.7 Fu\337noten}{appendix.A}% 50
-\BOOKMARK [1][-]{section.A.8}{A.8 Verschiedenes}{appendix.A}% 51
-\BOOKMARK [1][-]{section.A.9}{A.9 Weitere Illustrationen}{appendix.A}% 52
-\BOOKMARK [1][-]{section.A.10}{A.10 Plots with pgfplots}{appendix.A}% 53
-\BOOKMARK [1][-]{section.A.11}{A.11 Figures with tikz}{appendix.A}% 54
-\BOOKMARK [0][]{appendix*.23}{Literaturverzeichnis}{}% 55
+\BOOKMARK [0][]{chapter.4}{4 Penetrationstest}{}% 20
+\BOOKMARK [1][-]{section.4.1}{4.1 Grundlegendes Konzept}{chapter.4}% 21
+\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Black-Box}{section.4.1}% 22
+\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 White-Box}{section.4.1}% 23
+\BOOKMARK [2][-]{subsection.4.1.3}{4.1.3 Gray-Box}{section.4.1}% 24
+\BOOKMARK [1][-]{section.4.2}{4.2 Kriterien f\374r Penetrationstests}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.3}{4.3 Ablauf eines Penetrationstest}{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.4}{4.4 Penetrationstest-Tools}{chapter.4}% 27
+\BOOKMARK [2][-]{subsection.4.4.1}{4.4.1 ABC}{section.4.4}% 28
+\BOOKMARK [1][-]{section.4.5}{4.5 Automatisierte Penetrationstest-Tools}{chapter.4}% 29
+\BOOKMARK [2][-]{subsection.4.5.1}{4.5.1 ABC}{section.4.5}% 30
+\BOOKMARK [1][-]{section.4.6}{4.6 Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest-Tools}{chapter.4}% 31
+\BOOKMARK [0][]{chapter.5}{5 Entwicklung einer Spring-Boot-Webanwendung mit Sicherheitsl\374cken}{}% 32
+\BOOKMARK [0][]{chapter.6}{6 Entwicklung von Plug-in f\374r das OWASP-ZAP}{}% 33
+\BOOKMARK [0][]{chapter.7}{7 Was ist die Vorteile von diesem Plug-in gegen\374ber anderen Plug-ins?}{}% 34
+\BOOKMARK [0][]{chapter.8}{8 Fazit}{}% 35
+\BOOKMARK [0][]{appendix.A}{A Benutzerhandbuch f\374r das OWASP-Zap RAML Plug-in}{}% 36
+\BOOKMARK [1][-]{section.A.1}{A.1 Quellcode}{appendix.A}% 37
+\BOOKMARK [1][-]{section.A.2}{A.2 Abbildungen}{appendix.A}% 38
+\BOOKMARK [1][-]{section.A.3}{A.3 Tabellen}{appendix.A}% 39
+\BOOKMARK [1][-]{section.A.4}{A.4 Pseudocode}{appendix.A}% 40
+\BOOKMARK [1][-]{section.A.5}{A.5 Abk\374rzungen}{appendix.A}% 41
+\BOOKMARK [1][-]{section.A.6}{A.6 Definitionen}{appendix.A}% 42
+\BOOKMARK [1][-]{section.A.7}{A.7 Fu\337noten}{appendix.A}% 43
+\BOOKMARK [1][-]{section.A.8}{A.8 Verschiedenes}{appendix.A}% 44
+\BOOKMARK [1][-]{section.A.9}{A.9 Weitere Illustrationen}{appendix.A}% 45
+\BOOKMARK [1][-]{section.A.10}{A.10 Plots with pgfplots}{appendix.A}% 46
+\BOOKMARK [1][-]{section.A.11}{A.11 Figures with tikz}{appendix.A}% 47
+\BOOKMARK [0][]{appendix*.23}{Literaturverzeichnis}{}% 48
