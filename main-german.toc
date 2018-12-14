@@ -9,84 +9,84 @@
 \contentsline {subsection}{\numberline {2.1.1}Grundlagen der IT-Sicherheit}{4}{subsection.2.1.1}
 \contentsline {subsubsection}{\numberline {2.1.1.1}Offene- und geschlossene Systeme}{4}{subsubsection.2.1.1.1}
 \contentsline {subsubsection}{\numberline {2.1.1.2}Soziotechnische Systeme}{4}{subsubsection.2.1.1.2}
-\contentsline {subsubsection}{\numberline {2.1.1.3}Information und Datenobjekte}{4}{subsubsection.2.1.1.3}
+\contentsline {subsubsection}{\numberline {2.1.1.3}Information und Datenobjekte}{5}{subsubsection.2.1.1.3}
 \contentsline {subsubsection}{\numberline {2.1.1.4}Funktionssicher}{5}{subsubsection.2.1.1.4}
 \contentsline {subsubsection}{\numberline {2.1.1.5}Informationssicher}{5}{subsubsection.2.1.1.5}
-\contentsline {subsubsection}{\numberline {2.1.1.6}Datensicherheit und Datenschutz}{5}{subsubsection.2.1.1.6}
-\contentsline {subsubsection}{\numberline {2.1.1.7}Verl\IeC {\"a}ssligkeit}{5}{subsubsection.2.1.1.7}
-\contentsline {subsection}{\numberline {2.1.2}Schutzziele}{5}{subsection.2.1.2}
-\contentsline {subsubsection}{\numberline {2.1.2.1}Authentizit\IeC {\"a}t}{5}{subsubsection.2.1.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1.6}Datensicherheit und Datenschutz}{6}{subsubsection.2.1.1.6}
+\contentsline {subsubsection}{\numberline {2.1.1.7}Verl\IeC {\"a}ssligkeit}{6}{subsubsection.2.1.1.7}
+\contentsline {subsection}{\numberline {2.1.2}Schutzziele}{6}{subsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.2.1}Authentizit\IeC {\"a}t}{6}{subsubsection.2.1.2.1}
 \contentsline {subsubsection}{\numberline {2.1.2.2}Informationsvertraulichkeit}{6}{subsubsection.2.1.2.2}
-\contentsline {subsubsection}{\numberline {2.1.2.3}Datenintegrit\IeC {\"a}t}{6}{subsubsection.2.1.2.3}
-\contentsline {subsubsection}{\numberline {2.1.2.4}Verf\IeC {\"u}gbarkeit}{6}{subsubsection.2.1.2.4}
-\contentsline {subsubsection}{\numberline {2.1.2.5}Verbindlichkeit}{6}{subsubsection.2.1.2.5}
+\contentsline {subsubsection}{\numberline {2.1.2.3}Datenintegrit\IeC {\"a}t}{7}{subsubsection.2.1.2.3}
+\contentsline {subsubsection}{\numberline {2.1.2.4}Verf\IeC {\"u}gbarkeit}{7}{subsubsection.2.1.2.4}
+\contentsline {subsubsection}{\numberline {2.1.2.5}Verbindlichkeit}{7}{subsubsection.2.1.2.5}
 \contentsline {subsubsection}{\numberline {2.1.2.6}Anonymisierung}{7}{subsubsection.2.1.2.6}
-\contentsline {subsection}{\numberline {2.1.3}Schwachstellen, Bedrohungen, Angriffe}{7}{subsection.2.1.3}
-\contentsline {subsubsection}{\numberline {2.1.3.1}Schwachstellen und Verwundbarkeit}{7}{subsubsection.2.1.3.1}
-\contentsline {subsubsection}{\numberline {2.1.3.2}Bedrohungen und Risiko}{7}{subsubsection.2.1.3.2}
-\contentsline {subsubsection}{\numberline {2.1.3.3}Angriff und Typen von (externe) Angriffen}{7}{subsubsection.2.1.3.3}
-\contentsline {paragraph}{\numberline {2.1.3.3.1}Hacker und Cracker}{7}{paragraph.2.1.3.3.1}
-\contentsline {paragraph}{\numberline {2.1.3.3.2}Skript Kiddie}{8}{paragraph.2.1.3.3.2}
-\contentsline {paragraph}{\numberline {2.1.3.3.3}Geheimdienste}{8}{paragraph.2.1.3.3.3}
-\contentsline {paragraph}{\numberline {2.1.3.3.4}Allgemeine Krimanilit\IeC {\"a}t}{8}{paragraph.2.1.3.3.4}
-\contentsline {subparagraph}{\nonumberline Spyware:}{8}{section*.10}
-\contentsline {subparagraph}{\nonumberline Phishing:}{8}{section*.11}
-\contentsline {subparagraph}{\nonumberline Erpressung:}{9}{section*.12}
-\contentsline {subparagraph}{\nonumberline Bot-Netze:}{9}{section*.13}
-\contentsline {section}{\numberline {2.2}Technologien des Projektes}{9}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Objektorientierte Programmierung}{9}{subsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.1.1}Java}{9}{subsubsection.2.2.1.1}
-\contentsline {subsection}{\numberline {2.2.2}RESTful Web Services}{9}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Microservice Architekturen}{10}{subsection.2.2.3}
-\contentsline {subsubsection}{\numberline {2.2.3.1}Spring Boot}{10}{subsubsection.2.2.3.1}
-\contentsline {paragraph}{\numberline {2.2.3.1.1}Spring MVC Komponente}{11}{paragraph.2.2.3.1.1}
-\contentsline {paragraph}{\numberline {2.2.3.1.2}Spring Rest Docs}{11}{paragraph.2.2.3.1.2}
-\contentsline {subsection}{\numberline {2.2.4}Modellbasierte Ans\IeC {\"a}tze f\IeC {\"u}r REST-Schnittstellen}{11}{subsection.2.2.4}
-\contentsline {subsubsection}{\numberline {2.2.4.1}Open API}{11}{subsubsection.2.2.4.1}
-\contentsline {subsubsection}{\numberline {2.2.4.2}RAML}{12}{subsubsection.2.2.4.2}
-\contentsline {subsection}{\numberline {2.2.5}Open Source Werkzeug OWASP Zap}{12}{subsection.2.2.5}
-\contentsline {chapter}{\numberline {3}Sicherheitsrisiken von Webanwendungen}{15}{chapter.3}
-\contentsline {section}{\numberline {3.1}Schwachstellen}{15}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}OWASP Top 10 Risiken}{15}{subsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.1.1}Injection}{15}{subsubsection.3.1.1.1}
-\contentsline {subsubsection}{\numberline {3.1.1.2}Fehler in Authentifizierung und Session-Management}{16}{subsubsection.3.1.1.2}
-\contentsline {subsubsection}{\numberline {3.1.1.3}Verlust der Vertraulichkeit sensibler Daten}{17}{subsubsection.3.1.1.3}
-\contentsline {subsubsection}{\numberline {3.1.1.4}XML External Entities (XXE)}{17}{subsubsection.3.1.1.4}
-\contentsline {subsubsection}{\numberline {3.1.1.5}Broken Access Control}{18}{subsubsection.3.1.1.5}
-\contentsline {subsubsection}{\numberline {3.1.1.6}Sicherheitsrelevante Fehlkonfiguration}{18}{subsubsection.3.1.1.6}
-\contentsline {subsubsection}{\numberline {3.1.1.7}Cross-Site Scripting (XSS)}{19}{subsubsection.3.1.1.7}
-\contentsline {subsubsection}{\numberline {3.1.1.8}Unsichere Deserialisierung}{20}{subsubsection.3.1.1.8}
-\contentsline {subsubsection}{\numberline {3.1.1.9}Nutzung von Komponenten mit bekannten Schwachstellen}{21}{subsubsection.3.1.1.9}
-\contentsline {subsubsection}{\numberline {3.1.1.10}Insufficient Logging \& Monitoring}{21}{subsubsection.3.1.1.10}
-\contentsline {subsection}{\numberline {3.1.2}Weitere Risiken}{22}{subsection.3.1.2}
-\contentsline {subsubsection}{\numberline {3.1.2.1}Zugriff auf entfernte Dateien}{22}{subsubsection.3.1.2.1}
-\contentsline {subsubsection}{\numberline {3.1.2.2}Clickjacking}{22}{subsubsection.3.1.2.2}
-\contentsline {chapter}{\numberline {4}Penetrationstest}{25}{chapter.4}
-\contentsline {section}{\numberline {4.1}\IeC {\"U}berblick}{25}{section.4.1}
-\contentsline {section}{\numberline {4.2}Definitionen}{25}{section.4.2}
-\contentsline {section}{\numberline {4.3}Ziele der Penetrationstests}{25}{section.4.3}
-\contentsline {section}{\numberline {4.4}Grundlegendes Konzept}{26}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Black-Box}{27}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}White-Box}{27}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Gray-Box}{27}{subsection.4.4.3}
-\contentsline {section}{\numberline {4.5}Kriterien f\IeC {\"u}r Penetrationstests}{27}{section.4.5}
-\contentsline {section}{\numberline {4.6}Ablauf eines Penetrationstest}{27}{section.4.6}
-\contentsline {section}{\numberline {4.7}Ablauf eines OWASP-Testmethodik}{27}{section.4.7}
-\contentsline {section}{\numberline {4.8}Manuelle Penetrationstest}{27}{section.4.8}
-\contentsline {subsection}{\numberline {4.8.1}ABC}{27}{subsection.4.8.1}
-\contentsline {section}{\numberline {4.9}Automatisierte Penetrationstest}{27}{section.4.9}
-\contentsline {subsection}{\numberline {4.9.1}ABC}{27}{subsection.4.9.1}
-\contentsline {section}{\numberline {4.10}Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest}{27}{section.4.10}
-\contentsline {chapter}{\numberline {5}Entwicklung einer Spring-Boot-Webanwendung mit Sicherheitsl\IeC {\"u}cken}{29}{chapter.5}
-\contentsline {chapter}{\numberline {6}Entwicklung von Plug-in f\IeC {\"u}r das OWASP-ZAP}{31}{chapter.6}
-\contentsline {chapter}{\numberline {7}Was ist die Vorteile von diesem Plug-in gegen\IeC {\"u}ber anderen Plug-ins?}{33}{chapter.7}
-\contentsline {chapter}{\numberline {8}Fazit}{35}{chapter.8}
-\contentsline {chapter}{\numberline {A}Benutzerhandbuch f\IeC {\"u}r das OWASP-Zap RAML Plug-in}{37}{appendix.A}
-\contentsline {section}{\numberline {A.1}Quellcode}{37}{section.A.1}
-\contentsline {section}{\numberline {A.2}Abbildungen}{37}{section.A.2}
-\contentsline {section}{\numberline {A.3}Tabellen}{37}{section.A.3}
-\contentsline {section}{\numberline {A.4}Abk\IeC {\"u}rzungen}{39}{section.A.4}
-\contentsline {section}{\numberline {A.5}Definitionen}{40}{section.A.5}
-\contentsline {section}{\numberline {A.6}Fu\IeC {\ss }noten}{40}{section.A.6}
-\contentsline {section}{\numberline {A.7}Verschiedenes}{40}{section.A.7}
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{i}{appendix*.20}
+\contentsline {subsection}{\numberline {2.1.3}Schwachstellen, Bedrohungen, Angriffe}{8}{subsection.2.1.3}
+\contentsline {subsubsection}{\numberline {2.1.3.1}Schwachstellen und Verwundbarkeit}{8}{subsubsection.2.1.3.1}
+\contentsline {subsubsection}{\numberline {2.1.3.2}Bedrohungen und Risiko}{8}{subsubsection.2.1.3.2}
+\contentsline {subsubsection}{\numberline {2.1.3.3}Angriff und Typen von (externen) Angriffen}{8}{subsubsection.2.1.3.3}
+\contentsline {paragraph}{\numberline {2.1.3.3.1}Hacker und Cracker}{8}{paragraph.2.1.3.3.1}
+\contentsline {paragraph}{\numberline {2.1.3.3.2}Skript Kiddie}{9}{paragraph.2.1.3.3.2}
+\contentsline {paragraph}{\numberline {2.1.3.3.3}Geheimdienste}{9}{paragraph.2.1.3.3.3}
+\contentsline {paragraph}{\numberline {2.1.3.3.4}Allgemeine Krimanilit\IeC {\"a}t}{9}{paragraph.2.1.3.3.4}
+\contentsline {subparagraph}{\nonumberline Spyware:}{9}{section*.9}
+\contentsline {subparagraph}{\nonumberline Phishing:}{9}{section*.10}
+\contentsline {subparagraph}{\nonumberline Erpressung:}{10}{section*.11}
+\contentsline {subparagraph}{\nonumberline Bot-Netze:}{10}{section*.12}
+\contentsline {section}{\numberline {2.2}Technologien des Projektes}{10}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Objektorientierte Programmierung}{10}{subsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.1.1}Java}{10}{subsubsection.2.2.1.1}
+\contentsline {subsection}{\numberline {2.2.2}RESTful Web Services}{11}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Microservice Architekturen}{11}{subsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.3.1}Spring Boot}{12}{subsubsection.2.2.3.1}
+\contentsline {paragraph}{\numberline {2.2.3.1.1}Spring MVC Komponente}{12}{paragraph.2.2.3.1.1}
+\contentsline {paragraph}{\numberline {2.2.3.1.2}Spring Rest Docs}{12}{paragraph.2.2.3.1.2}
+\contentsline {subsection}{\numberline {2.2.4}Modellbasierte Ans\IeC {\"a}tze f\IeC {\"u}r REST-Schnittstellen}{13}{subsection.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.4.1}Open API}{13}{subsubsection.2.2.4.1}
+\contentsline {subsubsection}{\numberline {2.2.4.2}RAML}{13}{subsubsection.2.2.4.2}
+\contentsline {subsection}{\numberline {2.2.5}Open Source Werkzeug OWASP Zap}{14}{subsection.2.2.5}
+\contentsline {chapter}{\numberline {3}Sicherheitsrisiken von Webanwendungen}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}Schwachstellen}{17}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}OWASP Top 10 Risiken}{17}{subsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1.1}Injection}{17}{subsubsection.3.1.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1.2}Fehler in Authentifizierung und Session-Management}{18}{subsubsection.3.1.1.2}
+\contentsline {subsubsection}{\numberline {3.1.1.3}Verlust der Vertraulichkeit sensibler Daten}{19}{subsubsection.3.1.1.3}
+\contentsline {subsubsection}{\numberline {3.1.1.4}XML External Entities (XXE)}{20}{subsubsection.3.1.1.4}
+\contentsline {subsubsection}{\numberline {3.1.1.5}Broken Access Control}{20}{subsubsection.3.1.1.5}
+\contentsline {subsubsection}{\numberline {3.1.1.6}Sicherheitsrelevante Fehlkonfiguration}{21}{subsubsection.3.1.1.6}
+\contentsline {subsubsection}{\numberline {3.1.1.7}Cross-Site Scripting (XSS)}{22}{subsubsection.3.1.1.7}
+\contentsline {subsubsection}{\numberline {3.1.1.8}Unsichere Deserialisierung}{23}{subsubsection.3.1.1.8}
+\contentsline {subsubsection}{\numberline {3.1.1.9}Nutzung von Komponenten mit bekannten Schwachstellen}{24}{subsubsection.3.1.1.9}
+\contentsline {subsubsection}{\numberline {3.1.1.10}Insufficient Logging \& Monitoring}{24}{subsubsection.3.1.1.10}
+\contentsline {subsection}{\numberline {3.1.2}Weitere Risiken}{25}{subsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.2.1}Zugriff auf entfernte Dateien}{25}{subsubsection.3.1.2.1}
+\contentsline {subsubsection}{\numberline {3.1.2.2}Clickjacking}{26}{subsubsection.3.1.2.2}
+\contentsline {chapter}{\numberline {4}Penetrationstest}{29}{chapter.4}
+\contentsline {section}{\numberline {4.1}\IeC {\"U}berblick}{29}{section.4.1}
+\contentsline {section}{\numberline {4.2}Definitionen}{29}{section.4.2}
+\contentsline {section}{\numberline {4.3}Ziele der Penetrationstests}{29}{section.4.3}
+\contentsline {section}{\numberline {4.4}Grundlegendes Konzept}{30}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Black-Box}{32}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}White-Box}{32}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Gray-Box}{32}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.5}Kriterien f\IeC {\"u}r Penetrationstests}{32}{section.4.5}
+\contentsline {section}{\numberline {4.6}Ablauf eines Penetrationstest}{32}{section.4.6}
+\contentsline {section}{\numberline {4.7}Ablauf eines OWASP-Testmethodik}{32}{section.4.7}
+\contentsline {section}{\numberline {4.8}Manuelle Penetrationstest}{32}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}ABC}{32}{subsection.4.8.1}
+\contentsline {section}{\numberline {4.9}Automatisierte Penetrationstest}{32}{section.4.9}
+\contentsline {subsection}{\numberline {4.9.1}ABC}{32}{subsection.4.9.1}
+\contentsline {section}{\numberline {4.10}Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest}{32}{section.4.10}
+\contentsline {chapter}{\numberline {5}Entwicklung einer Spring-Boot-Webanwendung mit Sicherheitsl\IeC {\"u}cken}{33}{chapter.5}
+\contentsline {chapter}{\numberline {6}Entwicklung von Plug-in f\IeC {\"u}r das OWASP-ZAP}{35}{chapter.6}
+\contentsline {chapter}{\numberline {7}Was ist die Vorteile von diesem Plug-in gegen\IeC {\"u}ber anderen Plug-ins?}{37}{chapter.7}
+\contentsline {chapter}{\numberline {8}Fazit}{39}{chapter.8}
+\contentsline {chapter}{\numberline {A}Benutzerhandbuch f\IeC {\"u}r das OWASP-Zap RAML Plug-in}{41}{appendix.A}
+\contentsline {section}{\numberline {A.1}Quellcode}{41}{section.A.1}
+\contentsline {section}{\numberline {A.2}Abbildungen}{41}{section.A.2}
+\contentsline {section}{\numberline {A.3}Tabellen}{43}{section.A.3}
+\contentsline {section}{\numberline {A.4}Abk\IeC {\"u}rzungen}{43}{section.A.4}
+\contentsline {section}{\numberline {A.5}Definitionen}{44}{section.A.5}
+\contentsline {section}{\numberline {A.6}Fu\IeC {\ss }noten}{44}{section.A.6}
+\contentsline {section}{\numberline {A.7}Verschiedenes}{44}{section.A.7}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{i}{appendix*.19}
