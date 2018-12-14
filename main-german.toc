@@ -50,43 +50,43 @@
 \contentsline {subsection}{\numberline {3.1.1}OWASP Top 10 Risiken}{15}{subsection.3.1.1}
 \contentsline {subsubsection}{\numberline {3.1.1.1}Injection}{15}{subsubsection.3.1.1.1}
 \contentsline {subsubsection}{\numberline {3.1.1.2}Fehler in Authentifizierung und Session-Management}{16}{subsubsection.3.1.1.2}
-\contentsline {subsubsection}{\numberline {3.1.1.3}Verlust der Vertraulichkeit sensibler Daten}{16}{subsubsection.3.1.1.3}
+\contentsline {subsubsection}{\numberline {3.1.1.3}Verlust der Vertraulichkeit sensibler Daten}{17}{subsubsection.3.1.1.3}
 \contentsline {subsubsection}{\numberline {3.1.1.4}XML External Entities (XXE)}{17}{subsubsection.3.1.1.4}
 \contentsline {subsubsection}{\numberline {3.1.1.5}Broken Access Control}{18}{subsubsection.3.1.1.5}
 \contentsline {subsubsection}{\numberline {3.1.1.6}Sicherheitsrelevante Fehlkonfiguration}{18}{subsubsection.3.1.1.6}
 \contentsline {subsubsection}{\numberline {3.1.1.7}Cross-Site Scripting (XSS)}{19}{subsubsection.3.1.1.7}
 \contentsline {subsubsection}{\numberline {3.1.1.8}Unsichere Deserialisierung}{20}{subsubsection.3.1.1.8}
-\contentsline {subsubsection}{\numberline {3.1.1.9}Nutzung von Komponenten mit bekannten Schwachstellen}{20}{subsubsection.3.1.1.9}
+\contentsline {subsubsection}{\numberline {3.1.1.9}Nutzung von Komponenten mit bekannten Schwachstellen}{21}{subsubsection.3.1.1.9}
 \contentsline {subsubsection}{\numberline {3.1.1.10}Insufficient Logging \& Monitoring}{21}{subsubsection.3.1.1.10}
-\contentsline {subsection}{\numberline {3.1.2}Weitere Risiken}{21}{subsection.3.1.2}
-\contentsline {subsubsection}{\numberline {3.1.2.1}Zugriff auf entfernte Dateien}{21}{subsubsection.3.1.2.1}
+\contentsline {subsection}{\numberline {3.1.2}Weitere Risiken}{22}{subsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.2.1}Zugriff auf entfernte Dateien}{22}{subsubsection.3.1.2.1}
 \contentsline {subsubsection}{\numberline {3.1.2.2}Clickjacking}{22}{subsubsection.3.1.2.2}
 \contentsline {chapter}{\numberline {4}Penetrationstest}{25}{chapter.4}
-\contentsline {section}{\numberline {4.1}Grundlegendes Konzept}{25}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Black-Box}{25}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}White-Box}{25}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Gray-Box}{25}{subsection.4.1.3}
-\contentsline {section}{\numberline {4.2}Kriterien f\IeC {\"u}r Penetrationstests}{25}{section.4.2}
-\contentsline {section}{\numberline {4.3}Ablauf eines Penetrationstest}{25}{section.4.3}
-\contentsline {section}{\numberline {4.4}Penetrationstest-Tools}{25}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}ABC}{25}{subsection.4.4.1}
-\contentsline {section}{\numberline {4.5}Automatisierte Penetrationstest-Tools}{25}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}ABC}{25}{subsection.4.5.1}
-\contentsline {section}{\numberline {4.6}Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest-Tools}{25}{section.4.6}
-\contentsline {chapter}{\numberline {5}Entwicklung einer Spring-Boot-Webanwendung mit Sicherheitsl\IeC {\"u}cken}{27}{chapter.5}
-\contentsline {chapter}{\numberline {6}Entwicklung von Plug-in f\IeC {\"u}r das OWASP-ZAP}{29}{chapter.6}
-\contentsline {chapter}{\numberline {7}Was ist die Vorteile von diesem Plug-in gegen\IeC {\"u}ber anderen Plug-ins?}{31}{chapter.7}
-\contentsline {chapter}{\numberline {8}Fazit}{33}{chapter.8}
-\contentsline {chapter}{\numberline {A}Benutzerhandbuch f\IeC {\"u}r das OWASP-Zap RAML Plug-in}{35}{appendix.A}
-\contentsline {section}{\numberline {A.1}Quellcode}{35}{section.A.1}
-\contentsline {section}{\numberline {A.2}Abbildungen}{35}{section.A.2}
-\contentsline {section}{\numberline {A.3}Tabellen}{35}{section.A.3}
-\contentsline {section}{\numberline {A.4}Pseudocode}{37}{section.A.4}
-\contentsline {section}{\numberline {A.5}Abk\IeC {\"u}rzungen}{39}{section.A.5}
-\contentsline {section}{\numberline {A.6}Definitionen}{39}{section.A.6}
-\contentsline {section}{\numberline {A.7}Fu\IeC {\ss }noten}{39}{section.A.7}
-\contentsline {section}{\numberline {A.8}Verschiedenes}{39}{section.A.8}
-\contentsline {section}{\numberline {A.9}Weitere Illustrationen}{40}{section.A.9}
-\contentsline {section}{\numberline {A.10}Plots with pgfplots}{42}{section.A.10}
-\contentsline {section}{\numberline {A.11}Figures with tikz}{42}{section.A.11}
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{43}{appendix*.23}
+\contentsline {section}{\numberline {4.1}\IeC {\"U}berblick}{25}{section.4.1}
+\contentsline {section}{\numberline {4.2}Definitionen}{25}{section.4.2}
+\contentsline {section}{\numberline {4.3}Ziele der Penetrationstests}{25}{section.4.3}
+\contentsline {section}{\numberline {4.4}Grundlegendes Konzept}{26}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Black-Box}{27}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}White-Box}{27}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Gray-Box}{27}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.5}Kriterien f\IeC {\"u}r Penetrationstests}{27}{section.4.5}
+\contentsline {section}{\numberline {4.6}Ablauf eines Penetrationstest}{27}{section.4.6}
+\contentsline {section}{\numberline {4.7}Ablauf eines OWASP-Testmethodik}{27}{section.4.7}
+\contentsline {section}{\numberline {4.8}Manuelle Penetrationstest}{27}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}ABC}{27}{subsection.4.8.1}
+\contentsline {section}{\numberline {4.9}Automatisierte Penetrationstest}{27}{section.4.9}
+\contentsline {subsection}{\numberline {4.9.1}ABC}{27}{subsection.4.9.1}
+\contentsline {section}{\numberline {4.10}Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest}{27}{section.4.10}
+\contentsline {chapter}{\numberline {5}Entwicklung einer Spring-Boot-Webanwendung mit Sicherheitsl\IeC {\"u}cken}{29}{chapter.5}
+\contentsline {chapter}{\numberline {6}Entwicklung von Plug-in f\IeC {\"u}r das OWASP-ZAP}{31}{chapter.6}
+\contentsline {chapter}{\numberline {7}Was ist die Vorteile von diesem Plug-in gegen\IeC {\"u}ber anderen Plug-ins?}{33}{chapter.7}
+\contentsline {chapter}{\numberline {8}Fazit}{35}{chapter.8}
+\contentsline {chapter}{\numberline {A}Benutzerhandbuch f\IeC {\"u}r das OWASP-Zap RAML Plug-in}{37}{appendix.A}
+\contentsline {section}{\numberline {A.1}Quellcode}{37}{section.A.1}
+\contentsline {section}{\numberline {A.2}Abbildungen}{37}{section.A.2}
+\contentsline {section}{\numberline {A.3}Tabellen}{37}{section.A.3}
+\contentsline {section}{\numberline {A.4}Abk\IeC {\"u}rzungen}{39}{section.A.4}
+\contentsline {section}{\numberline {A.5}Definitionen}{40}{section.A.5}
+\contentsline {section}{\numberline {A.6}Fu\IeC {\ss }noten}{40}{section.A.6}
+\contentsline {section}{\numberline {A.7}Verschiedenes}{40}{section.A.7}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{i}{appendix*.20}

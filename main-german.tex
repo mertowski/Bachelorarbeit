@@ -43,7 +43,7 @@
     course={Wirtschaftsinformatik},
     examiner={Prof.\ Dr.\ Martin Schmollinger,\\
     Prof.\ Dr.\ Muster Mustermann},
-    supervisor={Anreas Falk,\\Jan Horak},
+    supervisor={Andreas Falk,\\Jan Horak},
     startdate={1.\ September 2018}, % English: July 5, 2013;    ISO: 2013-07-05
     enddate={15.\ Januar 2019}  % English: January 5, 2014; ISO: 2014-01-05
     ]{uni-stuttgart-cs-cover}
@@ -97,15 +97,15 @@
 %Kurzfassung / abstract
 %auch im Stil vom Inhaltsverzeichnis
 \ifdeutsch
-\section*{Kurzfassung}                                                                                       
+\section*{Kurzfassung}
 
-REST-APIs sind heutzutage weit verbreitet und dank ihrer Einfachheit, Skalierbarkeit und Flexibilität werden sie weitgehend als Standardprotokoll für die Web-APIs angesehen. Es scheint plausibel anzunehmen, dass die Ära der Desktop-basierten Anwendungen kontinuierlich zurückgeht und im Zuge dessen, die Benutzer von Desktop- zu Web- und weiteren mobilen Anwendungen wechseln.
+REST-APIs sind heutzutage weit verbreitet und dank ihrer Einfachheit, Skalierbarkeit und Flexibilität werden sie weitgehend als Standardprotokoll für die Web-APIs angesehen. Es scheint plausibel zu sein anzunehmen, dass die Ära der Desktop-basierten Anwendungen kontinuierlich zurückgeht und im Zuge dessen, die Benutzer von Desktop- zu Web- und weiteren mobilen Anwendungen wechseln.
 
-Bei der Entwicklung von REST-basierten Web-Anwendungen wird ein REST-basierter Web Service benötigt, um die Funktionalitäten der Web-Anwendung richtig testen zu können, da die gängigen Penetrationstest-Werkzeuge für REST-APIs nicht direkt einsatzfähig sind, wird die Sicherheit solcher APIs jedoch immer noch zu selten überprüft und das Testen dieser Arten von Anwendungen ist eine sehr große Herausforderung. Hauptsächlich für das erstmalige Testen ist es für den Betreiber von Webanwendungen sehr unüberschaubar. Verschiedene Werkzeuge, Frameworks und Bibliotheken sind dazu da, die Testaktivität automatisieren zu können. Die Nutzer wählen diese Dienstprogramme basierend auf ihrem Kontext, ihrer Umgebung, ihrem Budget und ihrem Qualifikationsniveau. Einige Eigenschaften von REST-APIs machen es jedoch für automatisierte Web-Sicherheitsscanner schwierig, geeignete REST-API-Sicherheitstests für die Schwachstellen durchzuführen.
+Bei der Entwicklung von REST-basierten Web-Anwendungen wird ein REST-basierter Web Service benötigt, um die Funktionalitäten der Web-Anwendung richtig testen zu können. Da die gängigen Penetrationstest-Werkzeuge für REST-APIs nicht direkt einsatzfähig sind, wird die Sicherheit solcher APIs jedoch immer noch zu selten überprüft und das Testen dieser Arten von Anwendungen ist eine sehr große Herausforderung. Grundsätzlich ist das erstmalige Testen für den Betreiber von Webanwendungen sehr unüberschaubar. Verschiedene Werkzeuge, Frameworks und Bibliotheken sind dazu da, die Testaktivität automatisieren zu können. Die Nutzer wählen diese Dienstprogramme basierend auf ihrem Kontext, ihrer Umgebung, ihrem Budget und ihrem Qualifikationsniveau. Einige Eigenschaften von REST-APIs machen es jedoch für automatisierte Web-Sicherheitsscanner schwierig, geeignete REST-API-Sicherheitstests für die Schwachstellen durchzuführen.
 
-Diese Bachelorarbeit untersucht wie die Sicherheitstests heutzutage realisiert werden und versucht qualitativ-deskriptiv aufzudecken, ob auf solche Sicherheitstests verlässlich sind. Es werden verschiedene existierende Tools verglichen, die das Testen von RESTful APIs unterstützen. Dann wird ihre Vor- und Nachteile herausgefunden und gegeneinander abgewägt. Es wird auch Gewißheit verschaffen, wie die technische Schwachstellen(wie z.B. Konzeptionsfehlern, Programmierfehlern und Konfigurationsfehlern) von Webanwendungen dargelegt. Parallel zu den Schwachstellen werden die jeweiligen Gefahren und Angriffspunkte für eine Webanwendung anhand von ''OWASP Top 10 - Risiken'' erörtert.
+Diese Bachelorarbeit untersucht wie die Sicherheitstests heutzutage realisiert werden und versucht qualitativ-deskriptiv aufzudecken, ob auf solche Sicherheitstests Verlass ist. Es werden verschiedene existierende Tools verglichen, die das Testen von RESTful APIs unterstützen. Dann wird ihre Vor- und Nachteile herausgefunden und gegeneinander abgewägt. Es wird auch Gewißheit verschaffen, wie die technische Schwachstellen(wie z.B. Konzeptionsfehlern, Programmierfehlern und Konfigurationsfehlern) von Webanwendungen dargelegt. Parallel zu den Schwachstellen werden die jeweiligen Gefahren und Angriffspunkte für eine Webanwendung anhand von ''OWASP Top 10 - Risiken'' erörtert.
 
-Im Rahmen dieser Bachelorarbeit wird ein Plugin für das Open Source Werkzeug OWASP Zap entwickelt, um Schwachstellen automatisch zu untersuchen, um ein gewisses Maß an Sicherheit gewährleisten zu können. Dieses Plugin muss so implementiert werden, so dass die RAML-Dokumentationen importiert werden können, um automatisierte Penetrationstests ausführen zu können. Es wird auch eine Möglichkeit geschaffen, dass das Plugin in OWASP Zap sowohl über die UI, aber auch über Kommandozeile ansprechbar ist, um dies auch in CI-Umgebungen einbinden zu können.
+Im Rahmen dieser Bachelorarbeit wird ein Plugin für das Open Source Werkzeug OWASP Zap entwickelt, um Schwachstellen automatisch zu untersuchen und ein gewisses Maß an Sicherheit gewährleisten zu können. Dieses Plugin muss so implementiert werden, dass die für die automasierten Penetrationstest notwendigen RAML-Dokumentationen implementiert werden können, um automatisierte Penetrationstests ausführen zu können. Außerdem wird eine Möglichkeit geschaffen, das Plugin in OWASP Zap sowohl über die UI, als auch über die Kommandozeile ansprechbar zu machen, um dies auch in CI-Umgebungen einbinden zu können.
 
 \else
 \section*{Abstract}
@@ -251,11 +251,13 @@ Bla bla..
 
 \clearpage
 
+\pagenumbering{roman}
 %\printindex
-
 \printbibliography
 
 Alle URLs wurden zuletzt am 10.01.2019 geprüft.
+
+\newpage
 
 \pagestyle{empty}
 

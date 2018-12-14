@@ -169,6 +169,19 @@
       \field{volume}{1}
       \field{year}{2013}
     \endentry
+    \entry{pt03bsi}{article}{}
+      \list{publisher}{1}{%
+        {BSI}%
+      }
+      \field{labelalpha}{BSI03}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bundesamt für Sicherheit in der Informationstechnik}
+      \field{label}{BSI}
+      \field{title}{{Studie - Durchführungskonzept für Penetrationstests}}
+      \field{year}{2003}
+    \endentry
     \entry{infstd}{misc}{}
       \name{author}{1}{}{%
         {{hash=7be0e7056b824988311b3ad62e6f9412}{%
@@ -207,6 +220,48 @@
       \field{journaltitle}{Bundesamt für Sicherheit in der Informationstechnik}
       \field{label}{BSIDI}
       \field{title}{Internet-Sicherheit: Einführung, Grundlagen, Vorgehensweise}
+      \field{year}{2011}
+    \endentry
+    \entry{bacudio2011overview}{article}{}
+      \name{author}{4}{}{%
+        {{hash=37562f4807bb7b3d1d97b8f2d97d7acc}{%
+           family={Bacudio},
+           familyi={B\bibinitperiod},
+           given={Aileen\bibnamedelima G},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=4ba779a4ec95597994e9f75ef841ef2a}{%
+           family={Yuan},
+           familyi={Y\bibinitperiod},
+           given={Xiaohong},
+           giveni={X\bibinitperiod}}}%
+        {{hash=69cbf4289e355c4528863e1aafbd81b4}{%
+           family={Chu},
+           familyi={C\bibinitperiod},
+           given={Bei-Tseng\bibnamedelima Bill},
+           giveni={B\bibinithyphendelim T\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=caf35bd021b9da4c6ff7b41eb3b7af73}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Monique},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Academy \& Industry Research Collaboration Center (AIRCC)}%
+      }
+      \strng{namehash}{76396e5bd524cccdb78f57763fe3e157}
+      \strng{fullhash}{52c111ac3d87e23c1aac78c1dce5d0c1}
+      \strng{bibnamehash}{52c111ac3d87e23c1aac78c1dce5d0c1}
+      \strng{authorbibnamehash}{52c111ac3d87e23c1aac78c1dce5d0c1}
+      \strng{authornamehash}{76396e5bd524cccdb78f57763fe3e157}
+      \strng{authorfullhash}{52c111ac3d87e23c1aac78c1dce5d0c1}
+      \field{labelalpha}{BYCJ11}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Network Security \& Its Applications}
+      \field{title}{An overview of penetration testing}
+      \field{volume}{3}
       \field{year}{2011}
     \endentry
     \entry{cjd13}{misc}{}
@@ -405,6 +460,44 @@
       \verb https://www.webopedia.com/TERM/J/Java.html
       \endverb
     \endentry
+    \entry{ke2009using}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=9f4e3d189fa0bb0b1e241e2d1f60d9ad}{%
+           family={Ke},
+           familyi={K\bibinitperiod},
+           given={Jiun-Kai},
+           giveni={J\bibinithyphendelim K\bibinitperiod}}}%
+        {{hash=e9089626d3c83d3595155b3220cb9486}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Chung-Huang},
+           giveni={C\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=74efef11b451f91bd40cea09a8feb467}{%
+           family={Ahn},
+           familyi={A\bibinitperiod},
+           given={Tae-Nam},
+           giveni={T\bibinithyphendelim N\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{66288aacf13c5a672e735141fc51c49b}
+      \strng{fullhash}{66288aacf13c5a672e735141fc51c49b}
+      \strng{bibnamehash}{66288aacf13c5a672e735141fc51c49b}
+      \strng{authorbibnamehash}{66288aacf13c5a672e735141fc51c49b}
+      \strng{authornamehash}{66288aacf13c5a672e735141fc51c49b}
+      \strng{authorfullhash}{66288aacf13c5a672e735141fc51c49b}
+      \field{labelalpha}{KYA09}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2009 International Conference on Hybrid Information Technology}
+      \field{title}{Using w3af to achieve automated penetration testing by live DVD/live USB}
+      \field{year}{2009}
+      \field{pages}{460\bibrangedash 464}
+      \range{pages}{5}
+    \endentry
     \entry{hoepner2014trends}{article}{}
       \name{author}{4}{}{%
         {{hash=3212cc219e9e1932b66c6ac997ea83fe}{%
@@ -445,6 +538,42 @@
       \field{journaltitle}{Kompetenzzentrum Öffentliche IT}
       \field{title}{Safety und Security aus dem Blickwinkel der öffentlichen IT}
       \field{year}{2015}
+    \endentry
+    \entry{meucci2008owasp}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=98b0d9752dd4b72fafac1639448a10ca}{%
+           family={Meucci},
+           familyi={M\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7002b2f19c1e61ec2b10336075dc6c50}{%
+           family={Keary},
+           familyi={K\bibinitperiod},
+           given={Eoin},
+           giveni={E\bibinitperiod}}}%
+        {{hash=599ad6b43cd952a5167844672dd18f17}{%
+           family={Cuthbert},
+           familyi={C\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{e7760a7bec1e27d94b189114b69904fd}
+      \strng{fullhash}{e7760a7bec1e27d94b189114b69904fd}
+      \strng{bibnamehash}{e7760a7bec1e27d94b189114b69904fd}
+      \strng{authorbibnamehash}{e7760a7bec1e27d94b189114b69904fd}
+      \strng{authornamehash}{e7760a7bec1e27d94b189114b69904fd}
+      \strng{authorfullhash}{e7760a7bec1e27d94b189114b69904fd}
+      \field{labelalpha}{MKC+08}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{OWASP Foundation}
+      \field{title}{OWASP Testing Guide, v3}
+      \field{volume}{16}
+      \field{year}{2008}
     \endentry
     \entry{tp12mvc}{misc}{}
       \name{author}{1}{}{%
@@ -501,6 +630,56 @@
       \field{title}{Einleitung}
       \field{year}{2011}
     \endentry
+    \entry{northcutt2006}{book}{}
+      \name{author}{6}{}{%
+        {{hash=4d5ba76b8ba1311e45f229f7b7634475}{%
+           family={Northcutt},
+           familyi={N\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6a0bf2b6baca1269523b2ca90f8d6081}{%
+           family={Shenk},
+           familyi={S\bibinitperiod},
+           given={Jerry},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8064d7e6f61de7e65c5f71f55b0a7f1e}{%
+           family={Shackleford},
+           familyi={S\bibinitperiod},
+           given={Dave},
+           giveni={D\bibinitperiod}}}%
+        {{hash=0dc37ae8fdbd6c15afffa7155c6feb64}{%
+           family={Rosenberg},
+           familyi={R\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+        {{hash=14cadc29e6d4f923cf6e5d4d120572bc}{%
+           family={Siles},
+           familyi={S\bibinitperiod},
+           given={Raul},
+           giveni={R\bibinitperiod}}}%
+        {{hash=053ead544493bc23e5499e06bca36b5c}{%
+           family={Mancini},
+           familyi={M\bibinitperiod},
+           given={Steve},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SANS Institute Reading Room}%
+      }
+      \strng{namehash}{de27630466b6c72ba897c37a44a1aef8}
+      \strng{fullhash}{b9251fc5421fbcc07fa8e7611d04d46a}
+      \strng{bibnamehash}{b9251fc5421fbcc07fa8e7611d04d46a}
+      \strng{authorbibnamehash}{b9251fc5421fbcc07fa8e7611d04d46a}
+      \strng{authornamehash}{de27630466b6c72ba897c37a44a1aef8}
+      \strng{authorfullhash}{b9251fc5421fbcc07fa8e7611d04d46a}
+      \field{labelalpha}{NSS+06}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Penetration testing: Assessing your overall security before attackers do.}
+      \field{year}{2006}
+    \endentry
     \entry{oop15beal}{misc}{}
       \name{author}{1}{}{%
         {{hash=1ccb9ca8df0a0c6c8b3be84b0293ace4}{%
@@ -529,6 +708,31 @@
       \verb{url}
       \verb https://www.webopedia.com/TERM/O/object_oriented_programming_OOP.html
       \endverb
+    \endentry
+    \entry{osborne2006cheat}{book}{}
+      \name{author}{1}{}{%
+        {{hash=ffd0721f1d098945928a4d4153c547fd}{%
+           family={Osborne},
+           familyi={O\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{ffd0721f1d098945928a4d4153c547fd}
+      \strng{fullhash}{ffd0721f1d098945928a4d4153c547fd}
+      \strng{bibnamehash}{ffd0721f1d098945928a4d4153c547fd}
+      \strng{authorbibnamehash}{ffd0721f1d098945928a4d4153c547fd}
+      \strng{authornamehash}{ffd0721f1d098945928a4d4153c547fd}
+      \strng{authorfullhash}{ffd0721f1d098945928a4d4153c547fd}
+      \field{labelalpha}{Osb06}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{How to cheat at managing information security}
+      \field{year}{2006}
     \endentry
     \entry{owasp17top10}{incollection}{}
       \name{author}{1}{}{%
@@ -664,6 +868,34 @@
       \verb https://docs.oracle.com/javaee/6/tutorial/doc/gijqy.html
       \endverb
     \endentry
+    \entry{bwgtesting16}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=fbbbbfabf375300f22b06dbef11d58cb}{%
+           family={Saunois},
+           familyi={S\bibinitperiod},
+           given={Lucie},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{fbbbbfabf375300f22b06dbef11d58cb}
+      \strng{fullhash}{fbbbbfabf375300f22b06dbef11d58cb}
+      \strng{bibnamehash}{fbbbbfabf375300f22b06dbef11d58cb}
+      \strng{authorbibnamehash}{fbbbbfabf375300f22b06dbef11d58cb}
+      \strng{authornamehash}{fbbbbfabf375300f22b06dbef11d58cb}
+      \strng{authorfullhash}{fbbbbfabf375300f22b06dbef11d58cb}
+      \field{labelalpha}{Sau16}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Black box, grey box, white box testing: what differences?}}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://www.nbs-system.com/en/blog/black-box-grey-box-white-box-testing-what-differences/
+      \endverb
+      \verb{url}
+      \verb https://www.nbs-system.com/en/blog/black-box-grey-box-white-box-testing-what-differences/
+      \endverb
+    \endentry
     \entry{hack17}{misc}{}
       \name{author}{1}{}{%
         {{hash=98996264fdc77eda4ab19d7db553b204}{%
@@ -775,6 +1007,48 @@
       \field{title}{Datenschutz und Datensicherung im Wandel der Informationstechnologien}
       \field{year}{1985}
     \endentry
+    \entry{scarfone2008technical}{article}{}
+      \name{author}{4}{}{%
+        {{hash=6ea98e3682d33480471e822adaacdc41}{%
+           family={Scarfone},
+           familyi={S\bibinitperiod},
+           given={Karen},
+           giveni={K\bibinitperiod}}}%
+        {{hash=ffbf3d2da7973bafe66533b2afd05546}{%
+           family={Souppaya},
+           familyi={S\bibinitperiod},
+           given={Murugiah},
+           giveni={M\bibinitperiod}}}%
+        {{hash=bfca12c4b2ee6dc23317175ba6adfb13}{%
+           family={Cody},
+           familyi={C\bibinitperiod},
+           given={Amanda},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7dcd0ff078f088ae18dc4ce37d978718}{%
+           family={Orebaugh},
+           familyi={O\bibinitperiod},
+           given={Angela},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{e78c6af0c60d5232f50e342025fca0b5}
+      \strng{fullhash}{3551b727355953e42e86918b39f6fd66}
+      \strng{bibnamehash}{3551b727355953e42e86918b39f6fd66}
+      \strng{authorbibnamehash}{3551b727355953e42e86918b39f6fd66}
+      \strng{authornamehash}{e78c6af0c60d5232f50e342025fca0b5}
+      \strng{authorfullhash}{3551b727355953e42e86918b39f6fd66}
+      \field{labelalpha}{SSCO08}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{NIST Special Publication}
+      \field{number}{115}
+      \field{title}{Technical guide to information security testing and assessment}
+      \field{volume}{800}
+      \field{year}{2008}
+      \field{pages}{2\bibrangedash 25}
+      \range{pages}{24}
+    \endentry
     \entry{so18tech}{misc}{}
       \name{author}{1}{}{%
         {{hash=c579dcd30870d171edefaa9b2ef6b4fd}{%
@@ -827,6 +1101,31 @@
       \verb{url}
       \verb https://swagger.io/docs/specification/about/
       \endverb
+    \endentry
+    \entry{tiller2004ethical}{book}{}
+      \name{author}{1}{}{%
+        {{hash=6f02d86b26d488182f30a68b5274a02f}{%
+           family={Tiller},
+           familyi={T\bibinitperiod},
+           given={James\bibnamedelima S},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {CRC Press}%
+      }
+      \strng{namehash}{6f02d86b26d488182f30a68b5274a02f}
+      \strng{fullhash}{6f02d86b26d488182f30a68b5274a02f}
+      \strng{bibnamehash}{6f02d86b26d488182f30a68b5274a02f}
+      \strng{authorbibnamehash}{6f02d86b26d488182f30a68b5274a02f}
+      \strng{authornamehash}{6f02d86b26d488182f30a68b5274a02f}
+      \strng{authorfullhash}{6f02d86b26d488182f30a68b5274a02f}
+      \field{labelalpha}{Til04}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The ethical hack: a framework for business value penetration testing}
+      \field{year}{2004}
     \endentry
     \entry{nsa14}{misc}{}
       \name{author}{1}{}{%
@@ -882,6 +1181,32 @@
       \verb https://www.techopedia.com/definition/4090/script-kiddie
       \endverb
     \endentry
+    \entry{vcinj16}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=e95ac1880fb0c0035e090a3f83576a98}{%
+           family={Veracode},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{e95ac1880fb0c0035e090a3f83576a98}
+      \strng{fullhash}{e95ac1880fb0c0035e090a3f83576a98}
+      \strng{bibnamehash}{e95ac1880fb0c0035e090a3f83576a98}
+      \strng{authorbibnamehash}{e95ac1880fb0c0035e090a3f83576a98}
+      \strng{authornamehash}{e95ac1880fb0c0035e090a3f83576a98}
+      \strng{authorfullhash}{e95ac1880fb0c0035e090a3f83576a98}
+      \field{labelalpha}{Ver16}
+      \field{sortinit}{V}
+      \field{sortinithash}{75dd7385c90b2252c3ae853a80ca853b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Sql Injection Cheat Sheet and Tutorial}}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://www.veracode.com/security/sql-injection
+      \endverb
+      \verb{url}
+      \verb https://www.veracode.com/security/sql-injection
+      \endverb
+    \endentry
     \entry{wheeler2013offene}{book}{}
       \name{author}{1}{}{%
         {{hash=d61984682703ed1d6b6ab6e6b970ca94}{%
@@ -935,6 +1260,36 @@
       \verb https://docs.spring.io/spring-restdocs/docs/2.0.2.RELEASE/reference/html5/
       \endverb
     \endentry
+    \entry{whitaker2005penetration}{book}{}
+      \name{author}{2}{}{%
+        {{hash=4a4ce63e8f68baa231cecef99e920d3a}{%
+           family={Whitaker},
+           familyi={W\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=74267ac37b42639988b85e29cd920aa4}{%
+           family={Newman},
+           familyi={N\bibinitperiod},
+           given={Daniel\bibnamedelima P},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cisco Press}%
+      }
+      \strng{namehash}{a6eac49e6847e1a96e56236c5f5b2e6d}
+      \strng{fullhash}{a6eac49e6847e1a96e56236c5f5b2e6d}
+      \strng{bibnamehash}{a6eac49e6847e1a96e56236c5f5b2e6d}
+      \strng{authorbibnamehash}{a6eac49e6847e1a96e56236c5f5b2e6d}
+      \strng{authornamehash}{a6eac49e6847e1a96e56236c5f5b2e6d}
+      \strng{authorfullhash}{a6eac49e6847e1a96e56236c5f5b2e6d}
+      \field{labelalpha}{WN05}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Penetration testing and network defense}
+      \field{year}{2005}
+    \endentry
     \entry{wolff2016microservices}{book}{}
       \name{author}{1}{}{%
         {{hash=42b48b91ec04dc8b258db592d08ee9e9}{%
@@ -959,6 +1314,69 @@
       \field{labeltitlesource}{title}
       \field{title}{Microservices: flexible software architecture}
       \field{year}{2016}
+    \endentry
+    \entry{wack2003guideline}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=dd48e3e8b449c2c910c7b63405af3953}{%
+           family={Wack},
+           familyi={W\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7928347a9a86dc4fe03734e05423d262}{%
+           family={Tracy},
+           familyi={T\bibinitperiod},
+           given={Miles},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ffbf3d2da7973bafe66533b2afd05546}{%
+           family={Souppaya},
+           familyi={S\bibinitperiod},
+           given={Murugiah},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {October}%
+      }
+      \strng{namehash}{dcca58d492ef3f6a8216fe0e1c3d3e13}
+      \strng{fullhash}{dcca58d492ef3f6a8216fe0e1c3d3e13}
+      \strng{bibnamehash}{dcca58d492ef3f6a8216fe0e1c3d3e13}
+      \strng{authorbibnamehash}{dcca58d492ef3f6a8216fe0e1c3d3e13}
+      \strng{authornamehash}{dcca58d492ef3f6a8216fe0e1c3d3e13}
+      \strng{authorfullhash}{dcca58d492ef3f6a8216fe0e1c3d3e13}
+      \field{labelalpha}{WTS03}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Guideline on Network Security Testing (NIST Special Publication 800-42)}
+      \field{year}{2003}
+    \endentry
+    \entry{yeo2013using}{article}{}
+      \name{author}{1}{}{%
+        {{hash=9b20f991104ea079bb1babf477b561e1}{%
+           family={Yeo},
+           familyi={Y\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{9b20f991104ea079bb1babf477b561e1}
+      \strng{fullhash}{9b20f991104ea079bb1babf477b561e1}
+      \strng{bibnamehash}{9b20f991104ea079bb1babf477b561e1}
+      \strng{authorbibnamehash}{9b20f991104ea079bb1babf477b561e1}
+      \strng{authornamehash}{9b20f991104ea079bb1babf477b561e1}
+      \strng{authorfullhash}{9b20f991104ea079bb1babf477b561e1}
+      \field{labelalpha}{Yeo13}
+      \field{sortinit}{Y}
+      \field{sortinithash}{b8d711a035f7be9840c721c82920477e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computer Fraud \& Security}
+      \field{number}{4}
+      \field{title}{Using penetration testing to enhance your company's security}
+      \field{volume}{2013}
+      \field{year}{2013}
     \endentry
     \entry{zaed08}{misc}{}
       \name{author}{1}{}{%

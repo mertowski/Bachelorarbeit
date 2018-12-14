@@ -6,7 +6,7 @@
 \dictum[Albert Einstein]{Probleme kann man niemals mit derselben Denkweise lösen, durch die sie entstanden sind.}
 }
 \chapter{Benutzerhandbuch für das OWASP-Zap RAML Plug-in}
-\label{chap:latextipps}
+\label{chap:guide}
 
 Pro Satz eine neue Zeile.
 Das ist wichtig, um sauber versionieren zu können.
@@ -14,10 +14,6 @@ In LaTeX werden Absätze durch eine Leerzeile getrennt.
 
 Folglich werden neue Abstäze insbesondere \emph{nicht} durch Doppelbackslashes erzeugt.
 Der letzte Satz kam in einem neuen Absatz.
-
-Wörter am besten mittels \texttt{\textbackslash enquote\{...\}} \enquote{einschließen}, dann werden die rihtigen Anführungszeichen verwendet.
-
-Beim Erstellen der Bibtex-Datei wird empfohlen darauf zu achten, dass die DOI aufgeführt wird.
 
 \section{Quellcode}
 \Cref{lst:ListingANDlstlisting} zeigt, wie man Programmlistings einbindet.
@@ -133,68 +129,6 @@ Falls man die Graphiken sehen möchte, muss inkscape im PATH sein und im Tex-Que
 	\label{tab:Werte}
 \end{table}
 
-\section{Pseudocode}
-\Cref{alg:sample} zeigt einen Beispielalgorithmus.
-\begin{Algorithmus} %Die Umgebung nur benutzen, wenn man den Algorithmus ähnlich wie Graphiken von TeX platzieren lassen möchte
-\caption{Sample algorithm}
-\label{alg:sample}
-\begin{algorithmic}
-\Procedure{Sample}{$a$,$v_e$}
-\State $\mathsf{parentHandled} \gets (a = \mathsf{process}) \lor \mathsf{visited}(a'), (a',c,a) \in \mathsf{HR}$
-\State \Comment $(a',c'a) \in \mathsf{HR}$ denotes that $a'$ is the parent of $a$
-\If{$\mathsf{parentHandled}\,\land(\mathcal{L}_\mathit{in}(a)=\emptyset\,\lor\,\forall l \in \mathcal{L}_\mathit{in}(a): \mathsf{visited}(l))$}
-\State $\mathsf{visited}(a) \gets \text{true}$
-\State $\mathsf{writes}_\circ(a,v_e) \gets
-\begin{cases}
-\mathsf{joinLinks}(a,v_e) & \abs{\mathcal{L}_\mathit{in}(a)} > 0\\
-\mathsf{writes}_\circ(p,v_e)
-& \exists p: (p,c,a) \in \mathsf{HR}\\
-(\emptyset, \emptyset, \emptyset, false) & \text{otherwise}
-\end{cases}
-$
-\If{$a\in\mathcal{A}_\mathit{basic}$}
-  \State \Call{HandleBasicActivity}{$a$,$v_e$}
-\ElsIf{$a\in\mathcal{A}_\mathit{flow}$}
-  \State \Call{HandleFlow}{$a$,$v_e$}
-\ElsIf{$a = \mathsf{process}$} \Comment Directly handle the contained activity
-  \State \Call{HandleActivity}{$a'$,$v_e$}, $(a,\bot,a') \in \mathsf{HR}$
-  \State $\mathsf{writes}_\bullet(a) \gets \mathsf{writes}_\bullet(a')$
-\EndIf
-\ForAll{$l \in \mathcal{L}_\mathit{out}(a)$}
-  \State \Call{HandleLink}{$l$,$v_e$}
-\EndFor
-\EndIf
-\EndProcedure
-\end{algorithmic}
-\end{Algorithmus}
-
-\clearpage
-Und wer einen Algorithmus schreiben möchte, der über mehrere Seiten geht, der kann das nur mit folgendem \textbf{üblen} Hack tun:
-
-{
-\begin{minipage}{\textwidth}
-\hrule height .8pt width\textwidth
-\vskip.3em%\vskip\abovecaptionskip\relax
-\stepcounter{Algorithmus}
-\addcontentsline{alg}{Algorithmus}{\protect\numberline{\theAlgorithmus}{\ignorespaces Description \relax}}
-\noindent\textbf{Algorithmus \theAlgorithmus} Description
-%\stepcounter{algorithm}
-%\addcontentsline{alg}{Algorithmus}{\thealgorithm{}\hskip0em Description}
-%\textbf{Algorithmus \thealgorithm} Description
-\vskip.3em%\vskip\belowcaptionskip\relax
-\hrule height .5pt width\textwidth
-\end{minipage}
-%without the following line, the text is nerer at the rule
-\vskip-.3em
-%
-code goes here\\
-test2\\
-%
-\vskip-.7em
-\hrule height .5pt width\textwidth
-}
-
-
 \section{Abkürzungen}
 
 Beim ersten Durchlauf betrug die \gls{fr} 5.
@@ -211,21 +145,6 @@ Das Gegenteil erreicht man mit \verb+\glsreset{...}+.
 Definiert werden Abkürzungen in der Datei \textit{content\\ausarbeitung.tex} mithilfe von \verb+\newacronym{...}{...}{...}+.
 
 Mehr Infos unter: \url{http://tug.ctan.org/macros/latex/contrib/glossaries/glossariesbegin.pdf}
-
-
-
-%Mit MiKTeX Installation ab dem 2012-01-16 nicht mehr nötig
-%Falls ein Abschnitt länger als eine Seite wird und man mittels \texttt{\textbackslash{}vref} auf eine konkrete Stelle in der Section
-%verweisen möchte, dann sollte man \texttt{\textbackslash{}phantomsection} verwenden und dann wird
-%auch bei \texttt{vref} die richtige Seite angeben.
-
-%%The link location will be placed on the line below.
-%%Tipp von http://en.wikibooks.org/wiki/LaTeX/Labels_and_Cross-referencing#The_hyperref_package_and_.5Cphantomsection
-%\phantomsection
-%\label{alabel}
-%Das Beispiel für \texttt{\textbackslash{}phantomsection} bitte im \LaTeX{}-Quellcode anschauen.
-
-%Hier das Beispiel: Siehe Abschnitt \vref{hack1} und Abschnitt \vref{hack2}.
 
 \section{Definitionen}
 \begin{definition}[Title]
@@ -253,90 +172,3 @@ Letzteres erreicht man durch den Parameter \texttt{osf} bei dem Paket \texttt{li
 \item und auf eine andere Nummerierung umstellen
 \end{compactenum}
 
-\section{Weitere Illustrationen}
-\Cref{fig:AnhangsChor,fig:AnhangsChor2} zeigen zwei Choreographien, die den Sachverhalt weiter erläutern sollen.
-Die zweite Abbildung ist um 90 Grad gedreht, um das Paket \texttt{pdflscape} zu demonstrieren.
-
-\begin{figure}
-  \centering
-  \includegraphics[width=\textwidth]{choreography.pdf}
-  \caption{Beispiel-Choreographie I}
-  \label{fig:AnhangsChor}
-\end{figure}
-
-\begin{landscape}
-  \begin{figure}
-    \centering
-    \includegraphics[width=\textwidth]{choreography.pdf}
-    \caption{Beispiel-Choreographie II}
-    \label{fig:AnhangsChor2}
-  \end{figure}
-\end{landscape}
-
-
-\iffalse
-
-\clearpage
-
-FIXME - This does not work with MiKTeX as of 2016-12-30
-
-TODO- demonstrate rotating package
-
-%hint by http://tex.stackexchange.com/a/3265/9075
-%other option is to use changepage according to http://tex.stackexchange.com/a/2639/9075. This, however, has issues with landscape
-\thispagestyle{empty}
-
-\savegeometry{koma}
-
-%If you only have height problems, this is not needed at all
-\addtolength{\textwidth}{2cm}
-\addtolength{\evensidemargin}{-1cm}
-
-\begin{landscape}
-  %sidewaysfigure
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.9\paperheight]{choreography.pdf}
-    \caption{Beispiel-Choreographie, auf einer weißen Seite gezeigt wird und über die definierten Seitenränder herausragt}
-  \end{figure}
-\end{landscape}
-
-%the original layout is restored.
-%%\restoregeometry cannot be used as we use \addtolength
-\loadgeometry{koma}
-
-\fi
-
-
-\IfFileExists{pgfplots.sty}{
-\section{Plots with pgfplots}
-Pgfplot ist ein Paket um Graphen zu plotten ohne den Umweg über gnuplot oder matplotlib zu gehen.
-\begin{figure}[h]
-\begin{center}
-\begin{tikzpicture}
-  \begin{axis}[xlabel=$x$,
-               ylabel=$\sin(x)$]
-    \addplot {sin(deg(x))};  % Sinus-Funktion zeichnen
-  \end{axis}
-\end{tikzpicture}
-\end{center}
-\caption{$\sin(x)$ mit pgfplots.}
-\end{figure}
-}{}
-
-\IfFileExists{tikz.sty}{
-\section{Figures with tikz}
-TikZ ist ein Paket um Zeichnungen mittels Programmierung zu erstellen.
-Dieses Paket eignet sich um Gitter zu erstellen oder andere regelmäßige Strukturen zu erstellen.
-\begin{figure}[ht]
-\begin{center}
-\begin{tikzpicture}
-  \draw(0,0) rectangle (4,4);
-  \foreach \x in {0.5,1,1.5,2,2.5,3,3.5}
-    \foreach \y in {0.5,1,1.5,2,2.5,3,3.5}
-      \draw(\x,\y) circle (1pt);
-\end{tikzpicture}
-\end{center}
-\caption{Eine tikz-Graphik.}\label{fig:tikz_example}
-\end{figure}
-}{}

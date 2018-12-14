@@ -1,9 +1,88 @@
 \chapter{Penetrationstest}
 \label{chap:k4}
 
-Durch der Penetrationstests kann geprüft werden, inwiefern die Sicherheit der IT-Systeme durch Bedrohungen von Hackern, Crackern, etc. gefährdet ist bzw. ob die IT-Sicherheit durch die eingesetzten Sicherheitsmaßnahmen aktuell gewährleistet ist. 
+\section{Überblick}
+
+Sicherheit ist eines der größten Probleme von Informationssystemen. Penetrationstests sind eine wichtige Sicherheitsbewertungsmethode und eine effektive Methode zur Beurteilung der Sicherheitslage eines bestimmten Informationssystems. In vielen Webanwendungen verbergen sich verschiedene Sicherheitslücken, die dem Betreiber nicht wahrnehmbar sind. Mittels dieser Sicherheitslücken entsteht ein großes Sicherheitsrisiko, weil ein Angreifer unter Umständen eine Lücke findet, die ihm unautorisierten Zugriff auf das System gewährt. Um dieses Risiko zu vermindern, werden Penetrationstests durchgeführt.
+
+Der Umfang eines Penetrationstests kann von einzelnen Anwendungen bis zu unternehmensweiten Angriffen stark variieren. Ein Penetrationstest, der häufig mit einem Schwachstellenscan oder einer Schwachstellenanalyse verwechselt wird, versucht nicht nur, Schwachstellen zu finden, sondern sie auch in vollem Umfang auszunutzen. Dies bedeutet, dass ein Penetrationstester zwar mit der Suche nach einer Schwachstelle beauftragt werden kann, dass er jedoch alle entdeckten Schwachstellen verwendet und weiterhin ein System angreift, um mögliche zusätzliche Schwachstellen zu ermitteln\cite{northcutt2006}.
+
+
+\section{Definitionen}
+
+Bei einem Penetrationstest handelt es sich um die Sicherheit der IT-Systeme durch Bedrohungen von Angreifern inwiefern gefährdet ist bzw. ob die IT-Sicherheit durch die Sicherheitsmaßnahmen gewährleistet ist. Es werden unterschiedliche Methoden bei einem Penetrationstest verwendet, die auch von einem Angreifer durchgeführt würde. \cite[5--6]{pt03bsi}. Ein Penetrationstest für Webanwendungen konzentriert sich nur auf die Bewertung der Sicherheit einer Webanwendung. Der Prozess beinhaltet eine aktive Analyse der Anwendung auf Schwachstellen, technische Fehler oder Verwundbarkeit. Alle gefundenen Sicherheitsprobleme werden dem Systembetreiber zusammen mit einer Bewertung der Auswirkungen und häufig mit einem Vorschlag zur Milderung oder einer technischen Lösung vorgelegt\cite[46]{meucci2008owasp}.
+
+In Bezug auf Penetrationstests gibt es eine Vielzahl von Definitionen. Nach dem von Bacudio\cite{bacudio2011overview} und Ke\cite{ke2009using} definierten Penetrationstest handelt es sich um eine Reihe von Aktivitäten zur Ermittlung und Ausnutzung von Sicherheitsschwächen. Es ist ein Sicherheitstest, bei dem versucht wird, Sicherheitsmerkmale eines Systems zu umgehen\cite{wack2003guideline}. Osborne definiert einen Penetrationstest als einen Test, mit dem sichergestellt wird, dass Gateways, Firewalls und Systeme entsprechend konzipiert und konfiguriert sind, um vor unberechtigtem Zugriff oder dem Versuch zu schützen, Dienste zu stören\cite{osborne2006cheat}.
+
+\section{Ziele der Penetrationstests}
+
+Da es kein System gibt, das weder jetzt noch in der Zukunft zu \%100 sicher ist, besteht eines der Hauptziele der Penetrationstests darin, zu prüfen, wie sicher ein System ist, dh wie unsicher es aus der Sicht eines Hackers ist. Um detaillierter zu erklären, werden Penetrationstests verwendet, um Lücken in der Sicherheitslage zu identifizieren, Exploits zu verwenden, um in das Zielnetzwerk zu gelangen, und dann Zugriff auf vertrauliche Daten zu erhalten\cite{yeo2013using}.
+
+National Institute of Standards and Technology legt nahe, dass Penetrationstests auch zur Bestimmung von Folgendem nützlich sein können\cite{scarfone2008technical}: 
+
+\begin{itemize}
+	\item Wie gut das System reale Angriffsmuster toleriert.{\color{red}(How well the system tolerates real world attack patterns.)}
+	\item Die wahrscheinliche Komplexität, die ein Angreifer benötigt, um das System erfolgreich zu beeinträchtigen.
+	\item Zusätzliche Gegenmaßnahmen, die Bedrohungen gegen das System abschwächen könnten.
+	\item Fähigkeit der Verteidiger, Angriffe zu erkennen und angemessen zu reagieren.
+\end{itemize}
 
 \section{Grundlegendes Konzept}
+
+Penetrationstests können auf verschiedene Arten durchgeführt werden. Der häufigste Unterschied ist das Wissen über die Implementierungsdetails der getesteten Systeme, die dem Tester zur Verfügung gestellt wurden. Die weithin akzeptierten Ansätze sind Black-Box-, White-Box- und Gray-Box-Tests.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{blackwhitegray.jpg}
+	\caption{Die akzeptierte Ansätze\cite{bwgtesting16}}
+\end{figure}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Black-box test: The penetration tester has no prior knowledge of a company network. For example, if it is an external black-box test, the tester might be given a website address or IP address and told to attempt to crack the website as if he were an outside malicious hacker.
+
+White-box test: The tester has complete knowledge of the internal network. The tester might be given network diagrams or a list of operating systems and applications prior to performing tests. Although not the most representative of outside attacks, this is the most accurate because it presents a worst-case scenario where the attacker has complete knowledge of the network.
+
+Gray-box or crystal-box test: The tester simulates an inside employee. The tester is given an account on the internal network and standard access to the network. This test assesses internal threats from employees within the company.
+
+\cite{whitaker2005penetration}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Zero Knowledge. Zero knowledge is just that: the tester is provided nothing
+about the target’s network or environment. The tester is simply left
+to his ability to discover information about the client and use it to gain
+some form of access. This is also called blackbox or closed depending
+on who is scoping the test.
+
+Limited Knowledge. Something growing in popularity with companies
+seeking penetration testing is providing just enough information to get
+started. In some cases information may include phone numbers to be
+tested, IP addresses, domain information, applications, and other data that
+would take some time to collect and do not represent any difficulty to a
+hacker, but are rather time consuming for the tester. The interesting aspect
+of getting some information and not all is the assumption of scope.
+Organizations tend to use limited information to define the boundaries of
+the test as opposed to providing initial data to support the engagement.
+For example, there is a difference in providing whether a customer has
+IDS as opposed to providing a list of phone numbers. The former is an
+obvious attempt to limit the information provided to the tester, whereas
+the latter is influencing the scope of the engagement.
+
+Total Exposure. Total exposure is when every possible piece of information
+about the environment is provided to the tester. Prior to the start of
+the engagement, a list of questions and required items is sent to the
+customer in preparation for the meeting. At the meeting, reams of documents
+are provided to help the tester gain as much knowledge about the
+network as possible. This is also known as crystal box, full knowledge,
+or open, again depending on who is planning the engagement.
+
+\cite{tiller2004ethical}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 \subsection{Black-Box}
 
@@ -15,12 +94,14 @@ Durch der Penetrationstests kann geprüft werden, inwiefern die Sicherheit der I
 
 \section{Ablauf eines Penetrationstest}
 
-\section{Penetrationstest-Tools}
+\section{Ablauf eines OWASP-Testmethodik}
+
+\section{Manuelle Penetrationstest}
 
 \subsection{ABC}
 
-\section{Automatisierte Penetrationstest-Tools}
+\section{Automatisierte Penetrationstest}
 
 \subsection{ABC}
 
-\section{Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest-Tools}
+\section{Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest}
