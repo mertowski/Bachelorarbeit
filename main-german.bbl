@@ -19,6 +19,36 @@
 
 \refsection{0}
   \datalist[entry]{anyt/global//global/global}
+    \entry{ali2011pt}{book}{}
+      \name{author}{2}{}{%
+        {{hash=b9bfc7ff66e038b513a2b63b78052cb1}{%
+           family={Ali},
+           familyi={A\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f9b3cc986e2776265f2df22bd1ce089f}{%
+           family={Herivato},
+           familyi={H\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Packt Publishing}%
+      }
+      \strng{namehash}{8bcfa3d984772317569096c06d101a65}
+      \strng{fullhash}{8bcfa3d984772317569096c06d101a65}
+      \strng{bibnamehash}{8bcfa3d984772317569096c06d101a65}
+      \strng{authorbibnamehash}{8bcfa3d984772317569096c06d101a65}
+      \strng{authornamehash}{8bcfa3d984772317569096c06d101a65}
+      \strng{authorfullhash}{8bcfa3d984772317569096c06d101a65}
+      \field{labelalpha}{AH11}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{BackTrack 4: Assuring Security by Penetration Testing}
+      \field{year}{2011}
+    \endentry
     \entry{cj16}{misc}{}
       \name{author}{1}{}{%
         {{hash=77cdaaf243483a8985f23fd7c5fb4e7f}{%
@@ -277,6 +307,34 @@
       \endverb
       \verb{url}
       \verb https://technik.blogbasis.net/was-ist-clickjacking-06-04-2013
+      \endverb
+    \endentry
+    \entry{bwgwebtesting07}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=a8492b2f83a3790795ba9476825dcac0}{%
+           family={Cornell},
+           familyi={C\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{a8492b2f83a3790795ba9476825dcac0}
+      \strng{fullhash}{a8492b2f83a3790795ba9476825dcac0}
+      \strng{bibnamehash}{a8492b2f83a3790795ba9476825dcac0}
+      \strng{authorbibnamehash}{a8492b2f83a3790795ba9476825dcac0}
+      \strng{authornamehash}{a8492b2f83a3790795ba9476825dcac0}
+      \strng{authorfullhash}{a8492b2f83a3790795ba9476825dcac0}
+      \field{labelalpha}{Cor07}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Web application testing: The difference between black, gray and white box testing}}
+      \field{year}{2007}
+      \verb{urlraw}
+      \verb https://searchsoftwarequality.techtarget.com/tip/Web-application-testing-The-difference-between-black-gray-and-white-box-testing
+      \endverb
+      \verb{url}
+      \verb https://searchsoftwarequality.techtarget.com/tip/Web-application-testing-The-difference-between-black-gray-and-white-box-testing
       \endverb
     \endentry
     \entry{spy12}{misc}{}
@@ -812,31 +870,32 @@
       \verb http://www.phishing.org/what-is-phishing
       \endverb
     \endentry
-    \entry{raml13def}{misc}{}
+    \entry{bwgprole18}{misc}{}
       \name{author}{1}{}{%
-        {{hash=51546bb736b0f9021b167202e967a6cb}{%
-           family={RAML},
-           familyi={R\bibinitperiod}}}%
+        {{hash=9d42a4e347ad43d495da6f382e82791f}{%
+           family={Prole},
+           familyi={P\bibinitperiod},
+           given={Ken},
+           giveni={K\bibinitperiod}}}%
       }
-      \strng{namehash}{51546bb736b0f9021b167202e967a6cb}
-      \strng{fullhash}{51546bb736b0f9021b167202e967a6cb}
-      \strng{bibnamehash}{51546bb736b0f9021b167202e967a6cb}
-      \strng{authorbibnamehash}{51546bb736b0f9021b167202e967a6cb}
-      \strng{authornamehash}{51546bb736b0f9021b167202e967a6cb}
-      \strng{authorfullhash}{51546bb736b0f9021b167202e967a6cb}
-      \field{labelalpha}{RAML13}
-      \field{sortinit}{R}
-      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \strng{namehash}{9d42a4e347ad43d495da6f382e82791f}
+      \strng{fullhash}{9d42a4e347ad43d495da6f382e82791f}
+      \strng{bibnamehash}{9d42a4e347ad43d495da6f382e82791f}
+      \strng{authorbibnamehash}{9d42a4e347ad43d495da6f382e82791f}
+      \strng{authornamehash}{9d42a4e347ad43d495da6f382e82791f}
+      \strng{authorfullhash}{9d42a4e347ad43d495da6f382e82791f}
+      \field{labelalpha}{Pro18}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{label}{RAML}
-      \field{title}{{About RAML}}
-      \field{year}{2013}
+      \field{title}{{White Box, Black Box, and Gray Box Vulnerability Testing: What’s the Difference and Why Does It Matter?}}
+      \field{year}{2018}
       \verb{urlraw}
-      \verb https://raml.org/about-raml
+      \verb https://codedx.com/2018/01/black-white-and-gray-box-vulnerability-testing-code-dx-blog/
       \endverb
       \verb{url}
-      \verb https://raml.org/about-raml
+      \verb https://codedx.com/2018/01/black-white-and-gray-box-vulnerability-testing-code-dx-blog/
       \endverb
     \endentry
     \entry{rws13od}{misc}{}

@@ -37,64 +37,115 @@ Penetrationstests können auf verschiedene Arten durchgeführt werden. Der häuf
 	\caption{Die akzeptierte Ansätze\cite{bwgtesting16}}
 \end{figure}
 
-----------------------------------------------------------------------------------------------------------------------------------------------------
-
-Black-box test: The penetration tester has no prior knowledge of a company network. For example, if it is an external black-box test, the tester might be given a website address or IP address and told to attempt to crack the website as if he were an outside malicious hacker.
-
-White-box test: The tester has complete knowledge of the internal network. The tester might be given network diagrams or a list of operating systems and applications prior to performing tests. Although not the most representative of outside attacks, this is the most accurate because it presents a worst-case scenario where the attacker has complete knowledge of the network.
-
-Gray-box or crystal-box test: The tester simulates an inside employee. The tester is given an account on the internal network and standard access to the network. This test assesses internal threats from employees within the company.
-
-\cite{whitaker2005penetration}
-
-----------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-----------------------------------------------------------------------------------------------------------------------------------------------------
-
-Zero Knowledge. Zero knowledge is just that: the tester is provided nothing
-about the target’s network or environment. The tester is simply left
-to his ability to discover information about the client and use it to gain
-some form of access. This is also called blackbox or closed depending
-on who is scoping the test.
-
-Limited Knowledge. Something growing in popularity with companies
-seeking penetration testing is providing just enough information to get
-started. In some cases information may include phone numbers to be
-tested, IP addresses, domain information, applications, and other data that
-would take some time to collect and do not represent any difficulty to a
-hacker, but are rather time consuming for the tester. The interesting aspect
-of getting some information and not all is the assumption of scope.
-Organizations tend to use limited information to define the boundaries of
-the test as opposed to providing initial data to support the engagement.
-For example, there is a difference in providing whether a customer has
-IDS as opposed to providing a list of phone numbers. The former is an
-obvious attempt to limit the information provided to the tester, whereas
-the latter is influencing the scope of the engagement.
-
-Total Exposure. Total exposure is when every possible piece of information
-about the environment is provided to the tester. Prior to the start of
-the engagement, a list of questions and required items is sent to the
-customer in preparation for the meeting. At the meeting, reams of documents
-are provided to help the tester gain as much knowledge about the
-network as possible. This is also known as crystal box, full knowledge,
-or open, again depending on who is planning the engagement.
-
-\cite{tiller2004ethical}
-
-----------------------------------------------------------------------------------------------------------------------------------------------------
-
 \subsection{Black-Box}
+
+Black-Box-Tests beziehen sich auf das Testen eines Systems ohne spezifische Kenntnisse der internen Abläufe des Systems, keinen Zugriff auf den Quellcode und keine Kenntnisse der Architektur\cite{bwgwebtesting07}. Dem Tester wird nichts über das Netzwerk oder die Umgebung des Ziels mitgeteilt\cite{tiller2004ethical}. Wenn es sich um einen Black-Box-Test handelt, kann dem Tester eine Webseite oder IP-Adresse zugewiesen werden, und er soll die Website so knacken, als wäre er ein böswilliger Hacker von außen\cite{whitaker2005penetration}. Aufgrund des Mangels an internem Anwendungswissen kann das Aufdecken von Fehlern und / oder Schwachstellen jedoch erheblich länger dauern. Black-Box-Tests müssen gegen laufende Instanzen von Anwendungen ausgeführt werden. Daher ist Black-Box-Tests normalerweise auf dynamische Analysen wie das Ausführen von automatisierten Scan-Tools und manuelle Penetrationstests beschränkt\cite{bwgwebtesting07}. In Black-Box-Sicherheitstests können Hacker verschiedener Fertigkeitsstufen wie z. B. Skript-Kiddies, Mid-Level-Hacker oder Elite-Hacker\cite{bwgprole18}.
 
 \subsection{White-Box}
 
-\subsection{Gray-Box}
+Die White-Box-Tests werden auch als "interne Tests" bezeichnet. Bei diesem Ansatz simulieren Tester einen Angriff als eine Person, die über vollständige Kenntnisse der zu testenden Infrastruktur verfügt, häufig Betriebssystemdetails, IP-Adressschema und Netzwerklayouts, Quellcode und möglicherweise sogar einige Kennwörter\cite{ali2011pt}. Durch den vollständigen Zugriff auf diese Informationen können Fehler und Schwachstellen schneller entdeckt werden als mit der Test- und Fehlermethode des Black-Box-Tests. Darüber hinaus können Sie sicher sein, eine umfassendere Testabdeckung zu erhalten, indem Sie genau wissen, was Sie testen müssen. Aufgrund der Komplexität der Architekturen und des Umfangs des Quellcodes führt das White-Box-Testen jedoch zu Herausforderungen, wie die Test- und Analysebemühungen am besten ausgerichtet werden können. Zur Unterstützung von White-Box-Tests sind normalerweise Fachwissen und Tools erforderlich, z. B. Pentesting-Tool, Debugger und Quellcode-Analysatoren\cite{bwgwebtesting07}.
 
 \section{Kriterien für Penetrationstests}
 
+Bei einem Penetrationstest gibt es eine Vielzahl von verschiedenen Zielsetzungen, die vor dem Test festgelegt
+werden müssen. Somit kann bei einem Penetrationstest ein realistischer Angriff simuliert werden, aber auch
+ein Angriff von Insidern, die das Firmennetzwerk von ihrer täglichen Arbeit sehr gut kennen. Hierfür gibt es
+verschiedene Kriterien, die vor einem Test berücksichtigt werden müssen. Im Nachfolgenden werden diese
+Kriterien nach der Studie für Penetrationstests des BSI\cite{pt03bsi} beschrieben.
+
+\subsection{Informationsbasis}
+
+Bei der Informationsbasis muss entschieden werden, wie viel Information der Tester über das anzugreifende
+Ziel erhalten soll. Hier unterscheidet man zwischen Black-Box- und White-Box-Test. Bei einem Black-Box-Test bekommt der Tester nur sehr wenig bis zu keiner Information über das Angriffsziel. Dieser Test simuliert einen realistischen Angriff, da der Tester sich erst mit dem zu testenden System auseinandersetzen muss, um Details zu recherchieren, wie zum Beispiel welche Dienste mit welchen Versionsnummern
+dort laufen. Dies ist für den Tester sehr aufwendig und zeitintensiv. Im Gegensatz zu einem Black-Box-Test bekommt der Tester bei einem White-Box-Test mehr Informationen
+zu dem Angriffsziel. Ein solcher Test soll zeigen, wie weit ein Insider mit sehr viel Wissen über die IT-Infrastruktur
+des Unternehmens in das Ziel eindringen kann. Hierfür bekommt der Tester den vollen Umfang
+an Informationen wie IP-Adressen, verwendete Netzwerkprotokolle und den Source Code von Anwendungen,
+die auf dem Zielsystem laufen\cite[13-14]{pt03bsi}.
+
+\subsection{Aggressivität}
+
+Die Aggressivität eines Penetrationstests wird in passiv, vorsichtig, abwägend und aggressiv unterteilt. Bei
+einer passiven Aggressivitätsstufe werden die gefundenen Schwachstellen nur dokumentiert, aber nicht weiter
+ausgenutzt. Wird jedoch der vorsichtige Ansatz gewählt, werden Schwachstellen nur dann ausgenutzt, wenn ein
+Systemausfall aufgrund des Angriffs ausgeschlossen werden kann. Bei diesem Ansatz werden auch nur Angriffsmethoden
+gewählt, die sehr ressourcenschonend sind. Bei einem Test mit Aggressivitätsgrad ”abwägend”
+wird versucht, das Zielsystem nur so zu testen, dass eine Beeinträchtigung des Systems unwahrscheinlich ist,
+jedoch aber vorkommen kann. Schon vor dem Test wird abgewägt wie wahrscheinlich es ist, erfolgreich zu sein
+und welche Konsequenzen entstehen können. Die letzte Aggressivitätsstufe ist aggressiv. Hierbei werden alle
+möglichen Schwachstellen ohne Rücksicht auf die Verfügbarkeit der Systeme getestet. Bei einem solchen Test
+kann es passieren, dass auch andere Systeme bis hin zur ganzen IT-Infrastruktur ausfallen können\cite[14]{pt03bsi}.
+
+\subsection{Umfang}
+
+Bei einem Penetrationstest sollten immer alle Systeme auf Schwachstellen untersucht werden. Liegt der Fokus
+nur auf bestimmten Komponenten, besteht weiterhin die Gefahr, dass es ein Einfalltor in das interne Netz gibt.
+Bekommt ein Angreifer einmal unerlaubten Zugriff in das innere Netz, bieten sich noch mehr Möglichkeiten,
+weitere Systeme zu befallen. Jedoch ist ein vollständiger Penetrationstest bei sehr großen Netzen nicht in kurzer
+Zeit machbar. Daher liegt der Fokus oft auf besonders gefährdeten Komponenten wie Systeme, die direkt an das
+Internet angebunden sind oder sehr sensible Daten enthalten. Daher existieren somit neben dem vollständigen
+Test auch der fokussierte- und der begrenzte Penetrationstest. Der fokussierte Test wird oft angewandt, wenn
+neue Systeme oder Anwendungen betrieben werden, um ein gleichmäßiges Sicherheitsniveau zu schaffen. Bei
+einem begrenzten Test liegt der Fokus auf einem bestimmten Teil der Infrastruktur\cite[14-15]{pt03bsi}.
+
+\subsection{Vorgehensweise}
+Die Vorgehensweise unterscheidet sich hauptsächlich in einem verdeckten und einem offensichtlichen Test.
+Das Ziel eines verdeckten Penetrationstests ist es, Sicherheitsanwendungen wie ein Intrusion Detection System
+(IDS) auf die Wirksamkeit zu prüfen oder auch die Mitarbeiter einer Organisation mittels Social Engineering zu
+testen. Bei einem verdeckten Test wird nur auf Methoden gesetzt, welche vom System nicht als Angriff gewertet
+werden. Fällt die Entscheidung jedoch auf einen offensichtlichen Test, so können je nach dem anzugreifenden
+System offensichtliche Sicherheitstests wie SQL-Injection oder Portscans durchgeführt werden\cite[15]{pt03bsi}.
+
+\subsection{Technik}
+Ein weiteres wichtiges Kriterium bei einem Penetrationstest ist die Technik. Soll ein realer Angriff von einem
+Cyberkriminellen simuliert werden, wird der Penetrationstest meist über das Netzwerk durchgeführt. Jedoch
+gibt es auch andere Einfallstore, die getestet werden sollten. Hat ein Angreifer zum Beispiel physischen Zugriff
+auf ein System, könnte es leichter fallen, bestimmte Schwachstellen auszunutzen, die über das Netzwerk wegen einer existierenden Firewall nicht ausnutzbar sind. Des Weiteren besteht auch die Möglichkeit, Mitarbeiter des
+Unternehmens mit einem Social Engineering Angriff zur Herausgabe von Zugangsdaten zu bringen\cite[15-16]{pt03bsi}.
+
+\subsection{Ausgangspunkt}
+Der Ausgangspunkt bei einem Penetrationstest beschreibt, von wo der Angriff gestartet wird. Die meisten
+Organisationen betreiben eine Firewall, um den Zugriff nur auf gewisse Dienste zu unterbinden. Daher ist es oft
+schwer, das dahinterliegende System anzugreifen. Aus diesem Grund konzentriert sich ein Penetrationstest von
+außen auf die Konfiguration der eingesetzten Firewall, um zu testen, ob diese Konfigurationsfehler enthält, die
+es einem externen Angreifer ermöglicht, in das Innere eines Netzes einzudringen. Es ist aber auch wichtig, den
+Penetrationstest von innen durchzuführen, da hier in vielen Fällen keine Firewall übergangen werden muss, um
+die laufenden Dienste und Anwendungen auf ihre Sicherheit zu überprüfen. Ein Test von innen kann zeigen,
+wie gefährlich eine Schwachstelle in der Firewall wäre oder welche Möglichkeiten sich für einen Innentäter
+bieten würden\cite[16-17]{pt03bsi}.
+
 \section{Ablauf eines Penetrationstest}
 
-\section{Ablauf eines OWASP-Testmethodik}
+\subsection{Vorbereitung}
+
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{vorbereitungpt.png}
+	\caption{Phase 1 – Vorbereitung des Penetrationstests}
+\end{figure}
+
+
+\cite[100-101]{pt03bsi}.
+
+\subsection{Informationsbeschaffung}
+
+\cite[102-103]{pt03bsi}.
+
+\subsection{Bewertung der Informationen / Risikoanalyse}
+
+\cite[103-104]{pt03bsi}.
+
+\subsection{Aktive Eindringversuche}
+
+\cite[104-105]{pt03bsi}.
+
+\subsection{Abschlussanalyse / Nacharbeiten / Clean-up}
+
+\cite[105-106]{pt03bsi}.
+
+\section{Ablauf eines OWASP-Testmethodiks}
 
 \section{Manuelle Penetrationstest}
 

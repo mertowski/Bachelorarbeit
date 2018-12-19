@@ -5,15 +5,16 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Die akzeptierte Ans\IeC {\"a}tze\cite {bwgtesting16}\relax }}{30}{figure.caption.13}
+\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Phase 1 \IeC {\textendash } Vorbereitung des Penetrationstests\relax }}{33}{figure.caption.14}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax A.1}{\ignorespaces Beispiel-Choreographie\relax }}{42}{figure.caption.14}
-\contentsline {figure}{\numberline {\relax A.2}{\ignorespaces Beispiel-Choreographie}}{42}{figure.caption.15}
-\contentsline {figure}{\numberline {\relax A.3}{\ignorespaces Beispiel um 3 Abbildung nebeneinader zu stellen nur jedes einzeln referenzieren zu k\IeC {\"o}nnen. Abbildung~\ref {fig:subfigB} ist die mittlere Abbildung.\relax }}{43}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{43}{subfigure.3.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{43}{subfigure.3.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Subcaption if needed}}}{43}{subfigure.3.3}
+\contentsline {figure}{\numberline {\relax A.1}{\ignorespaces Beispiel-Choreographie\relax }}{44}{figure.caption.15}
+\contentsline {figure}{\numberline {\relax A.2}{\ignorespaces Beispiel-Choreographie}}{44}{figure.caption.16}
+\contentsline {figure}{\numberline {\relax A.3}{\ignorespaces Beispiel um 3 Abbildung nebeneinader zu stellen nur jedes einzeln referenzieren zu k\IeC {\"o}nnen. Abbildung~\ref {fig:subfigB} ist die mittlere Abbildung.\relax }}{45}{figure.caption.17}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{45}{subfigure.3.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{45}{subfigure.3.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Subcaption if needed}}}{45}{subfigure.3.3}
 \addvspace {10\p@ }

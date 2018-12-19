@@ -24,25 +24,35 @@
 \BOOKMARK [1][-]{section.4.4}{4.4 Grundlegendes Konzept}{chapter.4}% 24
 \BOOKMARK [2][-]{subsection.4.4.1}{4.4.1 Black-Box}{section.4.4}% 25
 \BOOKMARK [2][-]{subsection.4.4.2}{4.4.2 White-Box}{section.4.4}% 26
-\BOOKMARK [2][-]{subsection.4.4.3}{4.4.3 Gray-Box}{section.4.4}% 27
-\BOOKMARK [1][-]{section.4.5}{4.5 Kriterien f\374r Penetrationstests}{chapter.4}% 28
-\BOOKMARK [1][-]{section.4.6}{4.6 Ablauf eines Penetrationstest}{chapter.4}% 29
-\BOOKMARK [1][-]{section.4.7}{4.7 Ablauf eines OWASP-Testmethodik}{chapter.4}% 30
-\BOOKMARK [1][-]{section.4.8}{4.8 Manuelle Penetrationstest}{chapter.4}% 31
-\BOOKMARK [2][-]{subsection.4.8.1}{4.8.1 ABC}{section.4.8}% 32
-\BOOKMARK [1][-]{section.4.9}{4.9 Automatisierte Penetrationstest}{chapter.4}% 33
-\BOOKMARK [2][-]{subsection.4.9.1}{4.9.1 ABC}{section.4.9}% 34
-\BOOKMARK [1][-]{section.4.10}{4.10 Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest}{chapter.4}% 35
-\BOOKMARK [0][]{chapter.5}{5 Entwicklung einer Spring-Boot-Webanwendung mit Sicherheitsl\374cken}{}% 36
-\BOOKMARK [0][]{chapter.6}{6 Evaluierung von Open API 2.0 Plugin von OWASP ZAP}{}% 37
-\BOOKMARK [0][]{chapter.7}{7 Vergleich und Bewertung zwischen Open API 2.0 und Open API 3.0}{}% 38
-\BOOKMARK [0][]{chapter.8}{8 Fazit}{}% 39
-\BOOKMARK [0][]{appendix.A}{A Benutzerhandbuch f\374r das OWASP-Zap RAML Plug-in}{}% 40
-\BOOKMARK [1][-]{section.A.1}{A.1 Quellcode}{appendix.A}% 41
-\BOOKMARK [1][-]{section.A.2}{A.2 Abbildungen}{appendix.A}% 42
-\BOOKMARK [1][-]{section.A.3}{A.3 Tabellen}{appendix.A}% 43
-\BOOKMARK [1][-]{section.A.4}{A.4 Abk\374rzungen}{appendix.A}% 44
-\BOOKMARK [1][-]{section.A.5}{A.5 Definitionen}{appendix.A}% 45
-\BOOKMARK [1][-]{section.A.6}{A.6 Fu\337noten}{appendix.A}% 46
-\BOOKMARK [1][-]{section.A.7}{A.7 Verschiedenes}{appendix.A}% 47
-\BOOKMARK [0][]{appendix*.19}{Literaturverzeichnis}{}% 48
+\BOOKMARK [1][-]{section.4.5}{4.5 Kriterien f\374r Penetrationstests}{chapter.4}% 27
+\BOOKMARK [2][-]{subsection.4.5.1}{4.5.1 Informationsbasis}{section.4.5}% 28
+\BOOKMARK [2][-]{subsection.4.5.2}{4.5.2 Aggressivit\344t}{section.4.5}% 29
+\BOOKMARK [2][-]{subsection.4.5.3}{4.5.3 Umfang}{section.4.5}% 30
+\BOOKMARK [2][-]{subsection.4.5.4}{4.5.4 Vorgehensweise}{section.4.5}% 31
+\BOOKMARK [2][-]{subsection.4.5.5}{4.5.5 Technik}{section.4.5}% 32
+\BOOKMARK [2][-]{subsection.4.5.6}{4.5.6 Ausgangspunkt}{section.4.5}% 33
+\BOOKMARK [1][-]{section.4.6}{4.6 Ablauf eines Penetrationstest}{chapter.4}% 34
+\BOOKMARK [2][-]{subsection.4.6.1}{4.6.1 Vorbereitung}{section.4.6}% 35
+\BOOKMARK [2][-]{subsection.4.6.2}{4.6.2 Informationsbeschaffung}{section.4.6}% 36
+\BOOKMARK [2][-]{subsection.4.6.3}{4.6.3 Bewertung der Informationen / Risikoanalyse}{section.4.6}% 37
+\BOOKMARK [2][-]{subsection.4.6.4}{4.6.4 Aktive Eindringversuche}{section.4.6}% 38
+\BOOKMARK [2][-]{subsection.4.6.5}{4.6.5 Abschlussanalyse / Nacharbeiten / Clean-up}{section.4.6}% 39
+\BOOKMARK [1][-]{section.4.7}{4.7 Ablauf eines OWASP-Testmethodiks}{chapter.4}% 40
+\BOOKMARK [1][-]{section.4.8}{4.8 Manuelle Penetrationstest}{chapter.4}% 41
+\BOOKMARK [2][-]{subsection.4.8.1}{4.8.1 ABC}{section.4.8}% 42
+\BOOKMARK [1][-]{section.4.9}{4.9 Automatisierte Penetrationstest}{chapter.4}% 43
+\BOOKMARK [2][-]{subsection.4.9.1}{4.9.1 ABC}{section.4.9}% 44
+\BOOKMARK [1][-]{section.4.10}{4.10 Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest}{chapter.4}% 45
+\BOOKMARK [0][]{chapter.5}{5 Entwicklung einer Spring-Boot-Webanwendung mit Sicherheitsl\374cken}{}% 46
+\BOOKMARK [0][]{chapter.6}{6 Evaluierung von Open API 2.0 Plugin von OWASP ZAP}{}% 47
+\BOOKMARK [0][]{chapter.7}{7 Vergleich und Bewertung zwischen Open API 2.0 und Open API 3.0}{}% 48
+\BOOKMARK [0][]{chapter.8}{8 Fazit}{}% 49
+\BOOKMARK [0][]{appendix.A}{A Benutzerhandbuch f\374r das OWASP-Zap RAML Plug-in}{}% 50
+\BOOKMARK [1][-]{section.A.1}{A.1 Quellcode}{appendix.A}% 51
+\BOOKMARK [1][-]{section.A.2}{A.2 Abbildungen}{appendix.A}% 52
+\BOOKMARK [1][-]{section.A.3}{A.3 Tabellen}{appendix.A}% 53
+\BOOKMARK [1][-]{section.A.4}{A.4 Abk\374rzungen}{appendix.A}% 54
+\BOOKMARK [1][-]{section.A.5}{A.5 Definitionen}{appendix.A}% 55
+\BOOKMARK [1][-]{section.A.6}{A.6 Fu\337noten}{appendix.A}% 56
+\BOOKMARK [1][-]{section.A.7}{A.7 Verschiedenes}{appendix.A}% 57
+\BOOKMARK [0][]{appendix*.20}{Literaturverzeichnis}{}% 58
