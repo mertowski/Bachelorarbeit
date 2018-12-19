@@ -34,8 +34,8 @@
 \BOOKMARK [2][-]{subsection.4.9.1}{4.9.1 ABC}{section.4.9}% 34
 \BOOKMARK [1][-]{section.4.10}{4.10 Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest}{chapter.4}% 35
 \BOOKMARK [0][]{chapter.5}{5 Entwicklung einer Spring-Boot-Webanwendung mit Sicherheitsl\374cken}{}% 36
-\BOOKMARK [0][]{chapter.6}{6 Entwicklung von Plug-in f\374r das OWASP-ZAP}{}% 37
-\BOOKMARK [0][]{chapter.7}{7 Was ist die Vorteile von diesem Plug-in gegen\374ber anderen Plug-ins?}{}% 38
+\BOOKMARK [0][]{chapter.6}{6 Evaluierung von Open API 2.0 Plugin von OWASP ZAP}{}% 37
+\BOOKMARK [0][]{chapter.7}{7 Vergleich und Bewertung zwischen Open API 2.0 und Open API 3.0}{}% 38
 \BOOKMARK [0][]{chapter.8}{8 Fazit}{}% 39
 \BOOKMARK [0][]{appendix.A}{A Benutzerhandbuch f\374r das OWASP-Zap RAML Plug-in}{}% 40
 \BOOKMARK [1][-]{section.A.1}{A.1 Quellcode}{appendix.A}% 41

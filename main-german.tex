@@ -12,7 +12,7 @@
 \let\ifenglisch\iffalse
 \input{pre-documentclass}
 \documentclass[
-               fontsize=12pt,
+               fontsize=13pt,
                paper=a4,
                twoside,  % we are optimizing for both screen and two-side printing. So the page numbers will jump, but the content is configured to stay in the middle (by using the geometry package)
                bibliography=totoc,
@@ -26,9 +26,8 @@
                ]{scrbook}
 \input{config}
 
-
 \usepackage[
-    title={API Security Testing mit OWASP Zap und RAML},
+    title={API Security Testing mit OWASP Zap und Open API},
     author={Mert Yücel},
     type=\textbf{Bachelorarbeit}\\ 
     zur Erlangung des akademischen Grades\\
@@ -42,7 +41,7 @@
     72762 Reutlingen, % or other institute names - or just a plain string using {Demo\\Demo...}
     course={Wirtschaftsinformatik},
     examiner={Prof.\ Dr.\ Martin Schmollinger,\\
-    Prof.\ Dr.\ Muster Mustermann},
+    Prof.\ Dr.\ Wolfgang Blochinger},
     supervisor={Andreas Falk,\\Jan Horak},
     startdate={1.\ September 2018}, % English: July 5, 2013;    ISO: 2013-07-05
     enddate={15.\ Januar 2019}  % English: January 5, 2014; ISO: 2014-01-05
@@ -103,9 +102,9 @@ REST-APIs sind heutzutage weit verbreitet und dank ihrer Einfachheit, Skalierbar
 
 Bei der Entwicklung von REST-basierten Web-Anwendungen wird ein REST-basierter Web Service benötigt, um die Funktionalitäten der Web-Anwendung richtig testen zu können. Da die gängigen Penetrationstest-Werkzeuge für REST-APIs nicht direkt einsatzfähig sind, wird die Sicherheit solcher APIs jedoch immer noch zu selten überprüft und das Testen dieser Arten von Anwendungen ist eine sehr große Herausforderung. Grundsätzlich ist das erstmalige Testen für den Betreiber von Webanwendungen sehr unüberschaubar. Verschiedene Werkzeuge, Frameworks und Bibliotheken sind dazu da, die Testaktivität automatisieren zu können. Die Nutzer wählen diese Dienstprogramme basierend auf ihrem Kontext, ihrer Umgebung, ihrem Budget und ihrem Qualifikationsniveau. Einige Eigenschaften von REST-APIs machen es jedoch für automatisierte Web-Sicherheitsscanner schwierig, geeignete REST-API-Sicherheitstests für die Schwachstellen durchzuführen.
 
-Diese Bachelorarbeit untersucht wie die Sicherheitstests heutzutage realisiert werden und versucht qualitativ-deskriptiv aufzudecken, ob auf solche Sicherheitstests Verlass ist. Es werden verschiedene existierende Tools verglichen, die das Testen von RESTful APIs unterstützen. Dann wird ihre Vor- und Nachteile herausgefunden und gegeneinander abgewägt. Es wird auch Gewißheit verschaffen, wie die technische Schwachstellen(wie z.B. Konzeptionsfehlern, Programmierfehlern und Konfigurationsfehlern) von Webanwendungen dargelegt. Parallel zu den Schwachstellen werden die jeweiligen Gefahren und Angriffspunkte für eine Webanwendung anhand von ''OWASP Top 10 - Risiken'' erörtert.
+Diese Bachelorarbeit untersucht wie die Sicherheitstests heutzutage realisiert werden und versucht qualitativ-deskriptiv aufzudecken, ob auf solche Sicherheitstests Verlass ist. Es werden verschiedene existierende Tools verglichen, die das Testen von RESTful APIs unterstützen. Dann wird ihre Vor- und Nachteile herausgefunden und gegeneinander abgewägt. Es wird auch Gewissheit verschaffen, wie die technische Schwachstellen(wie z.B. Konzeptionsfehlern, Programmierfehlern und Konfigurationsfehlern) von Webanwendungen dargelegt. Parallel zu den Schwachstellen werden die jeweiligen Gefahren und Angriffspunkte für eine Webanwendung anhand von ''OWASP Top 10 - Risiken'' erörtert. Es wird noch eine Spring Boot- Anwendung mit Sicherheitslücken entwickelt und wird eine Penetrationstest mit dem Open API 2.0 Plugin von OWASP Zap evaluiert.
 
-Im Rahmen dieser Bachelorarbeit wird ein Plugin für das Open Source Werkzeug OWASP Zap entwickelt, um Schwachstellen automatisch zu untersuchen und ein gewisses Maß an Sicherheit gewährleisten zu können. Dieses Plugin muss so implementiert werden, dass die für die automasierten Penetrationstest notwendigen RAML-Dokumentationen implementiert werden können, um automatisierte Penetrationstests ausführen zu können. Außerdem wird eine Möglichkeit geschaffen, das Plugin in OWASP Zap sowohl über die UI, als auch über die Kommandozeile ansprechbar zu machen, um dies auch in CI-Umgebungen einbinden zu können.
+Im Rahmen dieser Bachelorarbeit wird noch eine Wegbeschreibung für die Entwicklung von Open API 3.0 Plugin für das Open Source Werkzeug OWASP Zap erstellt, indem die Unterschiede zwischen Open API 2.0 und Open API 3.0 zu zeigen und wird versucht die Fragen zu beantworten, was in Open API 2.0 fehlt, was neu an Open API 3.0 ist und warum soll dieses Plugin entwickelt werden. Am Ende wird versucht raus zu finden, warum REST-Dokumente bei dem Penetrationstest eine sehr große Rolle spielen.
 
 \else
 \section*{Abstract}
