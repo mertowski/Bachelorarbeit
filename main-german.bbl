@@ -898,6 +898,34 @@
       \verb https://codedx.com/2018/01/black-white-and-gray-box-vulnerability-testing-code-dx-blog/
       \endverb
     \endentry
+    \entry{ramadhan17sqlinj}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=cf738d3a11a3a0a477f389f2e52fe031}{%
+           family={Ramadhan},
+           familyi={R\bibinitperiod},
+           given={Bima\bibnamedelima Fajar},
+           giveni={B\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{cf738d3a11a3a0a477f389f2e52fe031}
+      \strng{fullhash}{cf738d3a11a3a0a477f389f2e52fe031}
+      \strng{bibnamehash}{cf738d3a11a3a0a477f389f2e52fe031}
+      \strng{authorbibnamehash}{cf738d3a11a3a0a477f389f2e52fe031}
+      \strng{authornamehash}{cf738d3a11a3a0a477f389f2e52fe031}
+      \strng{authorfullhash}{cf738d3a11a3a0a477f389f2e52fe031}
+      \field{labelalpha}{Ram17}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Kali Linux - Linux Security: SQL Injection with Kali Linux}}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://linuxhint.com/sql-injection-kali-linux/
+      \endverb
+      \verb{url}
+      \verb https://linuxhint.com/sql-injection-kali-linux/
+      \endverb
+    \endentry
     \entry{rws13od}{misc}{}
       \name{author}{1}{}{%
         {{hash=bc40a767320b1d46d1289c0035ddde4c}{%

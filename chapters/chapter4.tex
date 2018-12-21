@@ -118,39 +118,256 @@ bieten würden\cite[16-17]{pt03bsi}.
 
 \subsection{Vorbereitung}
 
-
-
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{vorbereitungpt.png}
 	\caption{Phase 1 – Vorbereitung des Penetrationstests}
 \end{figure}
-
-
-\cite[100-101]{pt03bsi}.
+Um den Anforderungen des Auftraggebers gerecht zu werden, bedarf es einer gründlichen Vorbereitung. In
+dieser Phase muss geklärt werden, welche Komponenten getestet werden sollen und wie weit ein Penetrationstest
+gehen darf. Hier kann der Auftraggeber den Tester auf einen bestimmten Bereich begrenzen, der für einen
+Sicherheitstest besonders wichtig ist. Des Weiteren muss auch geklärt werden, welche Informationen der Tester
+über die IT-Infrastruktur des Unternehmens bekommt. Bei diesem Schritt wird entschieden, ob es sich um einen
+Black-Box-Test, Grey-Box-Test oder einen White-Box-Test handelt. Da es auch gesetzliche Bestimmungen
+gibt, die das Angreifen von Computersystemen und Netzwerken verbieten, müssen bei einem Penetrationstest
+alle durchzuführenden Tests und deren Risiken vertraglich vereinbart und dokumentiert werden, um spätere
+Schadenersatzansprüche zu vermeiden\cite[100-101]{pt03bsi}.
 
 \subsection{Informationsbeschaffung}
 
-\cite[102-103]{pt03bsi}.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{informationsbeschaffung.png}
+	\caption{Phase 2 – Informationsbeschaffung}
+\end{figure}
 
-\subsection{Bewertung der Informationen / Risikoanalyse}
+Nachdem die Vorbereitungen abgeschlossen sind und alle wichtigen Eckpunkte vereinbart wurden, kann mit
+der Beschaffung von Information über die Zielsysteme begonnen werden. Um einen Überblick zu bekommen,
+welche Dienste erreichbar sind, wird ein Portscan gegen das Zielsystem durchgeführt. Des Weiteren benötigt der
+Tester Informationen über die eingesetzten Systeme und installierten Anwendungen, um einen detailreichen
+Überblick über die möglichen Angriffspunkte zu erlangen. Je nach Größe des Netzes oder der Menge zu
+testender Komponenten sollte in dieser Phase genug Zeit eingeplant werden. Beinhaltet der Test eine große
+Menge an Rechnern, kann die Informationsbeschaffung einige Wochen andauern\cite[102-103]{pt03bsi}.
 
-\cite[103-104]{pt03bsi}.
+\subsection{Bewertung der Informationen und Risikoanalyse}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{bewertungderinf.png}
+	\caption{Phase 3 – Bewertung der Informationen und Risikoanalyse}
+\end{figure}
+
+In dieser Phase werden die erlangten Informationen aus Phase 2 ausführlich zusammengetragen und das
+jeweilige Risiko bewertet. Um den Penetrationstest effizient durchführen zu können, werden anhand einer
+Risikobewertung der gesammelten Informationen entschieden, welche Komponenten in der nächsten Phase
+genauer betrachtet werden. Diese Reduktion der zu testenden Komponenten bedeutet natürlich auch eine Einschränkung
+des resultierenden Ergebnisses. Daher muss dies ausführlich dokumentiert und an den Auftraggeber
+weitergegeben werden\cite[103-104]{pt03bsi}.
 
 \subsection{Aktive Eindringversuche}
 
-\cite[104-105]{pt03bsi}.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{aktiveEindringversuche.png}
+	\caption{Phase 4 – Aktive Eindringversuche durchführen}
+\end{figure}
 
-\subsection{Abschlussanalyse / Nacharbeiten / Clean-up}
+In dieser Phase wird geprüft, wie sicherheitskritisch die ausgewählten Sicherheitsmängel von Phase 3 wirklich
+sind. Dies geschieht durch den Versuch, so weit wie möglich in ein System vorzudringen. Hier ist wichtig,
+jeden Schritt genau zu bedenken, da durch Eindringversuche die Zielsysteme auch beschädigt werden könnten.
+Wird dabei ein System getestet, das eine hohe Verfügbarkeit haben soll, so muss bedacht werden, wie der Test
+aufgebaut wird, um die Verfügbarkeit weiterhin zu gewähren. Eine weitere Möglichkeit, um die Verfügbarkeit
+der zu testenden Systeme sicherzustellen, ist das Verwenden von Schattensystemen. Dabei handelt es sich um
+eine exakte Kopie des zu testenden Systems. Der Vorteil bei der Verwendung von Schattensystemen ist, dass
+während des Penetrationstests sichergestellt ist, dass es zu keinen Ausfällen des originalen Systems kommt\cite[104-105]{pt03bsi}.
 
-\cite[105-106]{pt03bsi}.
+\subsection{Abschlussanalyse und Nacharbeiten}
 
-\section{Ablauf eines OWASP-Testmethodiks}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{abschluss.png}
+	\caption{Phase 5 – Abschlussanalyse und Nacharbeiten durchführen}
+\end{figure}
+
+In der letzten Phase werden alle gefundenen Schwachstellen in einem Abschlussbericht zusammengefasst
+und deren Risiken genau erläutert. Ein solcher Bericht muss neben den Resultaten des Penetrationstests auch
+Möglichkeiten zur Behebung ausführen. Es ist wichtig, dass jede durchgeführte Aktion so beschrieben wird,
+dass sie für den Auftraggeber nachvollziehbar ist und gegebenenfalls wiederholt werden kann. Nach der
+Fertigstellung des Berichts sollte mit dem Auftraggeber ein Abschlussgespräch geführt werden, in dem noch
+einmal alle gefundenen Sicherheitsprobleme ausführlich besprochen werden\cite[105-106]{pt03bsi}.
 
 \section{Manuelle Penetrationstest}
 
-\subsection{ABC}
+\subsection{SQL Injektion mit SQLiv und SQLMAP}
 
+Im Nachfolgenden werden Sql Injektion mit Kali Linux nach dem Tutorial von \cite{ramadhan17sqlinj} beschrieben.
+
+Vor dem Injektionsangriff müssen wir natürlich sicherstellen, dass der Server oder das Ziel eine Sicherheitslücke in der Datenbank hat. Um Sicherheitslücken in Datenbanken zu finden, können wir verschiedene Methoden verwenden. Unter ihnen wird Google Dorking hauptsächlich von Hackern und Penetrationstestern verwendet. Glücklicherweise gibt es ein Werkzeug, das dies automatisch erledigt. Das Tool muss jedoch erst installiert werden. Das Tool heißt SQLiv (SQL Injection Vulnerability Scanner).
+
+\textbf{Schritt 1: Finden von SQL-Injection'-Schwachstelle}
+
+Es wird Google Dorking verwendet, um die SQL-Injektionslücke in Zielen zu suchen und zu finden. SQLiv durchsucht jedes einzelne Ziel und sucht nach einer E-Commerce-Sicherheitsschwachstelle unter dem folgenden URL-Muster \texttt{'item.php?id='}.
+
+\begin{Listing}[h]
+	\begin{lstlisting}
+~# sqliv -d inurl:item.php?id= -e google -p 100
+	\end{lstlisting}
+	\caption{Google Dorking mit SQLiv}
+	\label{lst:gdsqliv}
+\end{Listing}
+
+Standardmäßig durchsucht SQLiv die erste Seite in der Suchmaschine, die bei Google 10 Websites pro Seite anzeigt. Daher wird hier das Argument -p 100 definiert, um 10 Seiten (100 Sites) zu durchsuchen. Basierend auf dem oben angegebenen Dork wird ein Ergebnis von verwundbaren URLs erhaltet, das wie folgt aussieht:
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{sqllive.png}
+	\caption{Durchsuchung mit SQLiv}
+\end{figure}
+
+\newpage
+
+\textbf{Schritt 2: SQL-Injektion mit SQLMAP}
+
+Der Angriff wird mit SQLMap ausgeführt. Zuerst muss den Datenbankname zum Vorschein gebracht werden, der in der Datenbank Tabellen und Spalten enthält, die die Daten enthalten.
+
+Ziel-URL: \texttt{http://www.acfurniture.com/item.php?id=25}\\
+
+\textbf{A. Datenbankname aufdecken}
+
+\begin{Listing}[h]
+	\begin{lstlisting}
+~# sqlmap -u "http://www.acfurniture.com/item.php?id=25" --dbs
+	\end{lstlisting}
+	\caption{Aufdeckung vom Datenbankname}
+\end{Listing}
+
+Mit dem oben gegebenen Befehl wurde der Datenbankname erhalten:
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{ac.png}
+	\caption{Ergebnis: Datenbankname}
+\end{figure}
+
+Der Datenbankname wurde jetzt erhalten.\\
+
+\textbf{B. Tabellenname aufdecken}
+
+\begin{Listing}[h]
+	\begin{lstlisting}
+~# sqlmap -u "http://www.acfurniture.com/item.php?id=25" -D acfurniture --tables
+	\end{lstlisting}
+	\caption{Aufdeckung vom Tabellenname}
+\end{Listing}
+
+Das Ergebnis sollte so aussehen:
+\newpage
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=7cm]{resulttabellenname.png}
+	\caption{Ergebnis: Tabellenname}
+\end{figure}
+
+Bisher wurde festgestellt, dass die Website \texttt{acfurniture.com} hat zwei Datenbanken, acfurniture und information\_schema. Die Datenbank \texttt{"acfurniture"} enthält vier Tabellen: \texttt{category}, \texttt{product}, \texttt{product\_hacked} und settings.\\
+
+\textbf{C. Spalten aufdecken}
+
+\begin{Listing}[h]
+	\begin{lstlisting}
+~# sqlmap -u "http://www.acfurniture.com/item.php?id=25" -D acfurniture -T settings --columns
+	\end{lstlisting}
+	\caption{Aufdeckung von Spalten}
+\end{Listing}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=7cm]{aufdeckungvonspalten.png}
+	\caption{Ergebnis: Spalten}
+\end{figure}
+
+Die \texttt{settings} Tabelle besteht aus 6 Spalten, und dies ist eigentlich ein Konto mit Anmeldeinformationen. Jetzt wird versucht diese Informationen auszugeben.\\
+
+\newpage
+\textbf{D. Informationen aufdecken}
+
+Man kann auch alle Daten in der Tabelle mit folgendem Befehl ausgeben:
+
+\begin{Listing}[h]
+	\begin{lstlisting}
+~# sqlmap -u "http://www.acfurniture.com/item.php?id=25" -D acfurniture -T settings --dump
+	\end{lstlisting}
+	\caption{Aufdeckung von alle Daten in der Tabelle}
+\end{Listing}
+
+Das Ergebnis sollte so aussehen:
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{aufdeckungalledatenindertabelle.png}
+	\caption{Ergebnis: Alle Daten in der Tabelle}
+\end{figure}
+
+
+\subsection{Cross-Site-Scripting mit Burp}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=10cm]{xssburp.png}
+	\caption{Adresse eingeben}
+\end{figure}
+
+Man muss eine entsprechende Eingabe in die Webanwendung eingeben und die Anfrage senden.
+
+\newpage
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=11cm]{xssburp2.png}
+	\caption{Erfassung der Anfrage durch Burp}
+\end{figure}
+
+Die Anfrage wird von Burp erfasst. Die HTTP-Anforderung wird auf der Intercept-Tab angezeigt. Es wird mit der rechten Maustaste auf die Anforderung geklickt, um das Kontextmenü aufzurufen und dann wird auf "An Repeater senden" geklickt.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=11cm]{xssburp3.png}
+	\caption{Bearbeiten dem Wert}
+\end{figure}
+
+Hier können verschiedene XSS-Payloads in das Eingabefeld eingegeben werden. Verschiedene Eingaben getestet werden, indem der Tester das "Value" des entsprechenden Parameters in den Tabs "Raw" oder "Params" bearbeiten. In diesem Beispiel wird versucht, dass ein Pop-up in unserem Browser ausgeführt wird.
+
+\newpage
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=11cm]{xssburp4.png}
+	\caption{Suche nach dem Angriff in dem Quellcode}
+\end{figure}
+
+Es kann eingeschätzt werden, ob die Angriff in der Antwort unverändert bleibt. In diesem Fall ist die Anwendung für XSS-Angriffen anfällig. Die Antwort wird schnell über die Suchleiste unten im Antwortfenster gefunden. Der hervorgehobene Text ist das Ergebnis der Suche.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=11cm]{xssburp5.png}
+	\caption{Kopieren von URL für Browser}
+\end{figure}
+
+Hier wird auf "Antwort im Browser anzeigen" geklickt, um die URL zu kopieren. Danach wird im Pop-up Fenster auf "Kopieren" geklickt.
+
+\newpage
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=11cm]{xssburp6.png}
+	\caption{Pop-up im Browser anzeigen}
+\end{figure}
+
+Die kopierte URL wird in Adressleiste eingegeben, um die Realisierung des XSS-Angriffs durh das Senden einer kurzen und relativ harmlosen Nachricht oder Warnung an den Client.
+
+
+
+\newpage
 \section{Automatisierte Penetrationstest}
 
 \subsection{ABC}

@@ -6,15 +6,29 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Die akzeptierte Ans\IeC {\"a}tze\cite {bwgtesting16}\relax }}{30}{figure.caption.13}
 \contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Phase 1 \IeC {\textendash } Vorbereitung des Penetrationstests\relax }}{33}{figure.caption.14}
+\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Phase 2 \IeC {\textendash } Informationsbeschaffung\relax }}{34}{figure.caption.15}
+\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces Phase 3 \IeC {\textendash } Bewertung der Informationen und Risikoanalyse\relax }}{34}{figure.caption.16}
+\contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces Phase 4 \IeC {\textendash } Aktive Eindringversuche durchf\IeC {\"u}hren\relax }}{35}{figure.caption.17}
+\contentsline {figure}{\numberline {\relax 4.6}{\ignorespaces Phase 5 \IeC {\textendash } Abschlussanalyse und Nacharbeiten durchf\IeC {\"u}hren\relax }}{35}{figure.caption.18}
+\contentsline {figure}{\numberline {\relax 4.7}{\ignorespaces Durchsuchung mit SQLiv\relax }}{36}{figure.caption.19}
+\contentsline {figure}{\numberline {\relax 4.8}{\ignorespaces Ergebnis: Datenbankname\relax }}{37}{figure.caption.20}
+\contentsline {figure}{\numberline {\relax 4.9}{\ignorespaces Ergebnis: Tabellenname\relax }}{38}{figure.caption.21}
+\contentsline {figure}{\numberline {\relax 4.10}{\ignorespaces Ergebnis: Spalten\relax }}{38}{figure.caption.22}
+\contentsline {figure}{\numberline {\relax 4.11}{\ignorespaces Ergebnis: Alle Daten in der Tabelle\relax }}{39}{figure.caption.23}
+\contentsline {figure}{\numberline {\relax 4.12}{\ignorespaces Adresse eingeben\relax }}{39}{figure.caption.24}
+\contentsline {figure}{\numberline {\relax 4.13}{\ignorespaces Erfassung der Anfrage durch Burp\relax }}{40}{figure.caption.25}
+\contentsline {figure}{\numberline {\relax 4.14}{\ignorespaces Bearbeiten dem Wert\relax }}{40}{figure.caption.26}
+\contentsline {figure}{\numberline {\relax 4.15}{\ignorespaces Suche nach dem Angriff in dem Quellcode\relax }}{41}{figure.caption.27}
+\contentsline {figure}{\numberline {\relax 4.16}{\ignorespaces Kopieren von URL f\IeC {\"u}r Browser\relax }}{41}{figure.caption.28}
+\contentsline {figure}{\numberline {\relax 4.17}{\ignorespaces Pop-up im Browser anzeigen\relax }}{42}{figure.caption.29}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax A.1}{\ignorespaces Beispiel-Choreographie\relax }}{44}{figure.caption.15}
-\contentsline {figure}{\numberline {\relax A.2}{\ignorespaces Beispiel-Choreographie}}{44}{figure.caption.16}
-\contentsline {figure}{\numberline {\relax A.3}{\ignorespaces Beispiel um 3 Abbildung nebeneinader zu stellen nur jedes einzeln referenzieren zu k\IeC {\"o}nnen. Abbildung~\ref {fig:subfigB} ist die mittlere Abbildung.\relax }}{45}{figure.caption.17}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{45}{subfigure.3.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{45}{subfigure.3.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Subcaption if needed}}}{45}{subfigure.3.3}
+\contentsline {figure}{\numberline {\relax A.1}{\ignorespaces Beispiel-Choreographie\relax }}{52}{figure.caption.30}
+\contentsline {figure}{\numberline {\relax A.2}{\ignorespaces Beispiel-Choreographie}}{52}{figure.caption.31}
+\contentsline {figure}{\numberline {\relax A.3}{\ignorespaces Beispiel um 3 Abbildung nebeneinader zu stellen nur jedes einzeln referenzieren zu k\IeC {\"o}nnen. Abbildung~\ref {fig:subfigB} ist die mittlere Abbildung.\relax }}{53}{figure.caption.32}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{53}{subfigure.3.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{53}{subfigure.3.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Subcaption if needed}}}{53}{subfigure.3.3}
 \addvspace {10\p@ }

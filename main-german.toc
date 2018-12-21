@@ -77,25 +77,24 @@
 \contentsline {section}{\numberline {4.6}Ablauf eines Penetrationstest}{33}{section.4.6}
 \contentsline {subsection}{\numberline {4.6.1}Vorbereitung}{33}{subsection.4.6.1}
 \contentsline {subsection}{\numberline {4.6.2}Informationsbeschaffung}{34}{subsection.4.6.2}
-\contentsline {subsection}{\numberline {4.6.3}Bewertung der Informationen / Risikoanalyse}{34}{subsection.4.6.3}
-\contentsline {subsection}{\numberline {4.6.4}Aktive Eindringversuche}{34}{subsection.4.6.4}
-\contentsline {subsection}{\numberline {4.6.5}Abschlussanalyse / Nacharbeiten / Clean-up}{34}{subsection.4.6.5}
-\contentsline {section}{\numberline {4.7}Ablauf eines OWASP-Testmethodiks}{34}{section.4.7}
-\contentsline {section}{\numberline {4.8}Manuelle Penetrationstest}{34}{section.4.8}
-\contentsline {subsection}{\numberline {4.8.1}ABC}{34}{subsection.4.8.1}
-\contentsline {section}{\numberline {4.9}Automatisierte Penetrationstest}{34}{section.4.9}
-\contentsline {subsection}{\numberline {4.9.1}ABC}{34}{subsection.4.9.1}
-\contentsline {section}{\numberline {4.10}Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest}{34}{section.4.10}
-\contentsline {chapter}{\numberline {5}Entwicklung einer Spring-Boot-Webanwendung mit Sicherheitsl\IeC {\"u}cken}{35}{chapter.5}
-\contentsline {chapter}{\numberline {6}Evaluierung von Open API 2.0 Plugin von OWASP ZAP}{37}{chapter.6}
-\contentsline {chapter}{\numberline {7}Vergleich und Bewertung zwischen Open API 2.0 und Open API 3.0}{39}{chapter.7}
-\contentsline {chapter}{\numberline {8}Fazit}{41}{chapter.8}
-\contentsline {chapter}{\numberline {A}Benutzerhandbuch f\IeC {\"u}r das OWASP-Zap RAML Plug-in}{43}{appendix.A}
-\contentsline {section}{\numberline {A.1}Quellcode}{43}{section.A.1}
-\contentsline {section}{\numberline {A.2}Abbildungen}{43}{section.A.2}
-\contentsline {section}{\numberline {A.3}Tabellen}{45}{section.A.3}
-\contentsline {section}{\numberline {A.4}Abk\IeC {\"u}rzungen}{46}{section.A.4}
-\contentsline {section}{\numberline {A.5}Definitionen}{46}{section.A.5}
-\contentsline {section}{\numberline {A.6}Fu\IeC {\ss }noten}{46}{section.A.6}
-\contentsline {section}{\numberline {A.7}Verschiedenes}{46}{section.A.7}
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{i}{appendix*.20}
+\contentsline {subsection}{\numberline {4.6.3}Bewertung der Informationen und Risikoanalyse}{34}{subsection.4.6.3}
+\contentsline {subsection}{\numberline {4.6.4}Aktive Eindringversuche}{35}{subsection.4.6.4}
+\contentsline {subsection}{\numberline {4.6.5}Abschlussanalyse und Nacharbeiten}{35}{subsection.4.6.5}
+\contentsline {section}{\numberline {4.7}Manuelle Penetrationstest}{36}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}SQL Injektion mit SQLiv und SQLMAP}{36}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Cross-Site-Scripting mit Burp}{39}{subsection.4.7.2}
+\contentsline {section}{\numberline {4.8}Automatisierte Penetrationstest}{43}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}ABC}{43}{subsection.4.8.1}
+\contentsline {section}{\numberline {4.9}Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest}{43}{section.4.9}
+\contentsline {chapter}{\numberline {5}Evaluierung von Open API 2.0 Plugin von OWASP ZAP}{45}{chapter.5}
+\contentsline {chapter}{\numberline {6}Vergleich und Bewertung zwischen Open API 2.0 und Open API 3.0}{47}{chapter.6}
+\contentsline {chapter}{\numberline {7}Fazit}{49}{chapter.7}
+\contentsline {chapter}{\numberline {A}Benutzerhandbuch f\IeC {\"u}r das OWASP-Zap RAML Plug-in}{51}{appendix.A}
+\contentsline {section}{\numberline {A.1}Quellcode}{51}{section.A.1}
+\contentsline {section}{\numberline {A.2}Abbildungen}{51}{section.A.2}
+\contentsline {section}{\numberline {A.3}Tabellen}{53}{section.A.3}
+\contentsline {section}{\numberline {A.4}Abk\IeC {\"u}rzungen}{54}{section.A.4}
+\contentsline {section}{\numberline {A.5}Definitionen}{54}{section.A.5}
+\contentsline {section}{\numberline {A.6}Fu\IeC {\ss }noten}{54}{section.A.6}
+\contentsline {section}{\numberline {A.7}Verschiedenes}{54}{section.A.7}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{i}{appendix*.35}
