@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.30)  21 DEC 2018 17:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.30)  21 DEC 2018 20:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4165,87 +4165,83 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 312.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 312.
-<graphics/xssburp.png, id=998, 501.875pt x 301.125pt>
+<graphics/xssburp.png, id=999, 501.875pt x 301.125pt>
 File: graphics/xssburp.png Graphic file (type png)
 <use graphics/xssburp.png>
-Package pdftex.def Info: graphics/xssburp.png  used on input line 316.
+Package pdftex.def Info: graphics/xssburp.png  used on input line 318.
 (pdftex.def)             Requested size: 284.52756pt x 170.72406pt.
-Package cleveref Info: loaded `ngerman' language definitions on input line 322.
+Package cleveref Info: loaded `ngerman' language definitions on input line 324.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 322.
+(babel)             in language  on input line 324.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 322.
+(babel)             in language  on input line 324.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 322.
+(babel)             in language  on input line 324.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 322.
+(babel)             in language  on input line 324.
 
 [39 <./graphics/aufdeckungalledatenindertabelle.png> <./graphics/xssburp.png>]
-<graphics/xssburp2.png, id=1009, 501.875pt x 301.125pt>
+<graphics/xssburp2.png, id=1011, 501.875pt x 301.125pt>
 File: graphics/xssburp2.png Graphic file (type png)
 <use graphics/xssburp2.png>
-Package pdftex.def Info: graphics/xssburp2.png  used on input line 326.
+Package pdftex.def Info: graphics/xssburp2.png  used on input line 328.
 (pdftex.def)             Requested size: 312.9803pt x 187.79831pt.
-<graphics/xssburp3.png, id=1010, 501.875pt x 301.125pt>
+<graphics/xssburp3.png, id=1012, 501.875pt x 301.125pt>
 File: graphics/xssburp3.png Graphic file (type png)
 <use graphics/xssburp3.png>
-Package pdftex.def Info: graphics/xssburp3.png  used on input line 334.
+Package pdftex.def Info: graphics/xssburp3.png  used on input line 336.
 (pdftex.def)             Requested size: 312.9803pt x 187.79831pt.
-Package cleveref Info: loaded `ngerman' language definitions on input line 340.
+Package cleveref Info: loaded `ngerman' language definitions on input line 342.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 340.
+(babel)             in language  on input line 342.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 340.
+(babel)             in language  on input line 342.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 340.
+(babel)             in language  on input line 342.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 340.
+(babel)             in language  on input line 342.
 
 [40 <./graphics/xssburp2.png> <./graphics/xssburp3.png>]
-<graphics/xssburp4.png, id=1017, 501.875pt x 301.125pt>
+<graphics/xssburp4.png, id=1019, 501.875pt x 301.125pt>
 File: graphics/xssburp4.png Graphic file (type png)
 <use graphics/xssburp4.png>
-Package pdftex.def Info: graphics/xssburp4.png  used on input line 344.
+Package pdftex.def Info: graphics/xssburp4.png  used on input line 346.
 (pdftex.def)             Requested size: 312.9803pt x 187.79831pt.
-<graphics/xssburp5.png, id=1018, 501.875pt x 301.125pt>
+<graphics/xssburp5.png, id=1020, 501.875pt x 301.125pt>
 File: graphics/xssburp5.png Graphic file (type png)
 <use graphics/xssburp5.png>
-Package pdftex.def Info: graphics/xssburp5.png  used on input line 352.
+Package pdftex.def Info: graphics/xssburp5.png  used on input line 354.
 (pdftex.def)             Requested size: 312.9803pt x 187.79831pt.
-Package cleveref Info: loaded `ngerman' language definitions on input line 358.
+Package cleveref Info: loaded `ngerman' language definitions on input line 360.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 358.
+(babel)             in language  on input line 360.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 358.
+(babel)             in language  on input line 360.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 358.
+(babel)             in language  on input line 360.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 358.
+(babel)             in language  on input line 360.
  [41 <./graphics/xssburp4.png> <./graphics/xssburp5.png>]
-<graphics/xssburp6.png, id=1025, 501.875pt x 301.125pt>
+<graphics/xssburp6.png, id=1027, 501.875pt x 301.125pt>
 File: graphics/xssburp6.png Graphic file (type png)
 <use graphics/xssburp6.png>
-Package pdftex.def Info: graphics/xssburp6.png  used on input line 362.
+Package pdftex.def Info: graphics/xssburp6.png  used on input line 364.
 (pdftex.def)             Requested size: 312.9803pt x 187.79831pt.
-Package cleveref Info: loaded `ngerman' language definitions on input line 370.
+Package cleveref Info: loaded `ngerman' language definitions on input line 372.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 370.
+(babel)             in language  on input line 372.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 370.
+(babel)             in language  on input line 372.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 370.
+(babel)             in language  on input line 372.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 370.
+(babel)             in language  on input line 372.
  [42 <./graphics/xssburp6.png>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 371.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 371.
-Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 373.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 373.
@@ -4253,6 +4249,10 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 375.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 375.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 377.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 377.
 )
 (./chapters/chapter6.tex
 Package cleveref Info: loaded `ngerman' language definitions on input line 1.
@@ -4398,7 +4398,7 @@ LaTeX Warning: Reference `fig:AnhangsChor' on page 1 undefined on input line 38
 
 Package hyperref Warning: Suppressing link with empty target on input line 38.
 
-<graphics/choreography.pdf, id=1068, 588.1442pt x 377.82657pt>
+<graphics/choreography.pdf, id=1070, 588.1442pt x 377.82657pt>
 File: graphics/choreography.pdf Graphic file (type pdf)
 <use graphics/choreography.pdf>
 Package pdftex.def Info: graphics/choreography.pdf  used on input line 45.
@@ -4569,6 +4569,22 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has
                    \relax 
 l.246 
        [2]
+Package cleveref Info: loaded `ngerman' language definitions on input line 245.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 245.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 245.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 245.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 245.
+pdfTeX warning (ext4): destination with the same identifier (name{page.iii}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.246 
+       [3]
 Overfull \hbox (19.54547pt too wide) in paragraph at lines 246--246
 []\T1/LinuxLibertineT-TLF/m/n/13 (-20) P.M.D.H. Sil-ler. \T1/LinuxLibertineT-TL
 F/m/it/13 (-20) Ha-cker ^^U De-fi-ni-ti-on\T1/LinuxLibertineT-TLF/m/n/13 (-20) 
@@ -4586,28 +4602,12 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 245.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 245.
-pdfTeX warning (ext4): destination with the same identifier (name{page.iii}) ha
-s been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.246 
-       [3]
-Package cleveref Info: loaded `ngerman' language definitions on input line 249.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 249.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 249.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 249.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 249.
 pdfTeX warning (ext4): destination with the same identifier (name{page.iv}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.249 \newpage
-               [4]
+l.246 
+       [4]
 Package cleveref Info: loaded `ngerman' language definitions on input line 249.
 
 Package babel Info: Redefining ngerman shorthand "|
@@ -4915,12 +4915,12 @@ Package logreq Info: Writing requests to 'main-german.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  65132 strings out of 492982
- 1416671 string characters out of 6134895
- 2104239 words of memory out of 5000000
- 66791 multiletter control sequences out of 15000+600000
+ 1416747 string characters out of 6134895
+ 2104303 words of memory out of 5000000
+ 66790 multiletter control sequences out of 15000+600000
  723071 words of font info for 377 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
- 71i,21n,116p,10450b,3633s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,21n,116p,10450b,3629s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_ncsllp.enc}{/us
 r/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvip
 s/lm/lm-rm.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr
@@ -4939,10 +4939,10 @@ e/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helv
 etic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a
 .pfb>
-Output written on main-german.pdf (78 pages, 997556 bytes).
+Output written on main-german.pdf (78 pages, 998929 bytes).
 PDF statistics:
- 1413 PDF objects out of 1440 (max. 8388607)
- 1263 compressed objects within 13 object streams
- 404 named destinations out of 1000 (max. 500000)
+ 1419 PDF objects out of 1440 (max. 8388607)
+ 1269 compressed objects within 13 object streams
+ 405 named destinations out of 1000 (max. 500000)
  59439 words of extra memory for PDF output out of 61914 (max. 10000000)
 

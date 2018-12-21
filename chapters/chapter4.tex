@@ -200,7 +200,7 @@ einmal alle gefundenen Sicherheitsprobleme ausführlich besprochen werden\cite[1
 
 \subsection{SQL Injektion mit SQLiv und SQLMAP}
 
-Im Nachfolgenden werden Sql Injektion mit Kali Linux nach dem Tutorial von \cite{ramadhan17sqlinj} beschrieben.
+Im Nachfolgenden werden Sql Injektion mit SQLiv und SQLMAP nach dem Tutorial von \cite{ramadhan17sqlinj} beschrieben.
 
 Vor dem Injektionsangriff müssen wir natürlich sicherstellen, dass der Server oder das Ziel eine Sicherheitslücke in der Datenbank hat. Um Sicherheitslücken in Datenbanken zu finden, können wir verschiedene Methoden verwenden. Unter ihnen wird Google Dorking hauptsächlich von Hackern und Penetrationstestern verwendet. Glücklicherweise gibt es ein Werkzeug, das dies automatisch erledigt. Das Tool muss jedoch erst installiert werden. Das Tool heißt SQLiv (SQL Injection Vulnerability Scanner).
 
@@ -311,6 +311,8 @@ Das Ergebnis sollte so aussehen:
 
 \subsection{Cross-Site-Scripting mit Burp}
 
+Das folgende Cross-Site-Scripting-Beispiel stammt aus dem Tutorial von Web-Sicherheitsseite Portswigger\cite{portswigger12}.
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=10cm]{xssburp.png}
@@ -327,7 +329,7 @@ Man muss eine entsprechende Eingabe in die Webanwendung eingeben und die Anfrage
 	\caption{Erfassung der Anfrage durch Burp}
 \end{figure}
 
-Die Anfrage wird von Burp erfasst. Die HTTP-Anforderung wird auf der Intercept-Tab angezeigt. Es wird mit der rechten Maustaste auf die Anforderung geklickt, um das Kontextmenü aufzurufen und dann wird auf "An Repeater senden" geklickt.
+Die Anfrage wird von Burp erfasst. Die HTTP-Anforderung wird auf der Intercept-Tab angezeigt. Es wird mit der rechten Maustaste auf die Anforderung geklickt, um das Kontextmenü aufzurufen und dann wird auf ''An Repeater senden'' geklickt.
 
 \begin{figure}[h]
 	\centering
@@ -335,7 +337,7 @@ Die Anfrage wird von Burp erfasst. Die HTTP-Anforderung wird auf der Intercept-T
 	\caption{Bearbeiten dem Wert}
 \end{figure}
 
-Hier können verschiedene XSS-Payloads in das Eingabefeld eingegeben werden. Verschiedene Eingaben getestet werden, indem der Tester das "Value" des entsprechenden Parameters in den Tabs "Raw" oder "Params" bearbeiten. In diesem Beispiel wird versucht, dass ein Pop-up in unserem Browser ausgeführt wird.
+Hier können verschiedene XSS-Payloads in das Eingabefeld eingegeben werden. Verschiedene Eingaben getestet werden, indem der Tester das ''Value'' des entsprechenden Parameters in den Tabs ''Raw'' oder ''Params'' bearbeiten. In diesem Beispiel wird versucht, dass ein Pop-up in unserem Browser ausgeführt wird.
 
 \newpage
 
@@ -363,7 +365,7 @@ Hier wird auf "Antwort im Browser anzeigen" geklickt, um die URL zu kopieren. Da
 	\caption{Pop-up im Browser anzeigen}
 \end{figure}
 
-Die kopierte URL wird in Adressleiste eingegeben, um die Realisierung des XSS-Angriffs durh das Senden einer kurzen und relativ harmlosen Nachricht oder Warnung an den Client.
+Die kopierte URL wird in Adressleiste eingegeben, um die Realisierung des XSS-Angriffs durch das Senden einer kurzen und relativ harmlosen Nachricht oder Warnung an den Client ermöglichen.
 
 
 

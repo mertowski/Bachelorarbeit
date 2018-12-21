@@ -870,6 +870,32 @@
       \verb http://www.phishing.org/what-is-phishing
       \endverb
     \endentry
+    \entry{portswigger12}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=78ab6fa883bb8c239503b909b2e7b916}{%
+           family={Portswigger},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{78ab6fa883bb8c239503b909b2e7b916}
+      \strng{fullhash}{78ab6fa883bb8c239503b909b2e7b916}
+      \strng{bibnamehash}{78ab6fa883bb8c239503b909b2e7b916}
+      \strng{authorbibnamehash}{78ab6fa883bb8c239503b909b2e7b916}
+      \strng{authornamehash}{78ab6fa883bb8c239503b909b2e7b916}
+      \strng{authorfullhash}{78ab6fa883bb8c239503b909b2e7b916}
+      \field{labelalpha}{Por12}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Using Burp to Manually Test for Reflected XSS}}
+      \field{year}{2012}
+      \verb{urlraw}
+      \verb https://support.portswigger.net/customer/portal/articles/2325939-Methodology_Attacking%20Users_XSS_Using%20Burp%20to%20Manually%20Test%20For%20Reflected%20XSS.html
+      \endverb
+      \verb{url}
+      \verb https://support.portswigger.net/customer/portal/articles/2325939-Methodology_Attacking%20Users_XSS_Using%20Burp%20to%20Manually%20Test%20For%20Reflected%20XSS.html
+      \endverb
+    \endentry
     \entry{bwgprole18}{misc}{}
       \name{author}{1}{}{%
         {{hash=9d42a4e347ad43d495da6f382e82791f}{%

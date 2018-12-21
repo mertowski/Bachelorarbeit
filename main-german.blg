@@ -1,17 +1,17 @@
 [0] Config.pm:302> INFO - This is Biber 2.9
 [0] Config.pm:305> INFO - Logfile is 'main-german.blg'
-[19] biber:313> INFO - === Fri Dec 21, 2018, 14:51:36
+[18] biber:313> INFO - === Fri Dec 21, 2018, 20:30:39
 [34] Biber.pm:371> INFO - Reading 'main-german.bcf'
-[87] Biber.pm:857> INFO - Found 52 citekeys in bib section 0
-[97] Biber.pm:3981> INFO - Processing section 0
-[105] Biber.pm:4154> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
-[106] bibtex.pm:1468> INFO - LaTeX decoding ...
+[84] Biber.pm:857> INFO - Found 53 citekeys in bib section 0
+[94] Biber.pm:3981> INFO - Processing section 0
+[103] Biber.pm:4154> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[104] bibtex.pm:1468> INFO - LaTeX decoding ...
 [140] bibtex.pm:1294> INFO - Found BibTeX data source 'bibliography.bib'
 [142] Utils.pm:169> WARN - Duplicate entry key: 'nowey2011einleitung' in file 'bibliography.bib', skipping ...
-[345] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[345] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[346] Biber.pm:3809> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'de-DE'
-[346] Biber.pm:3815> INFO - No sort tailoring available for locale 'de-DE'
-[386] bbl.pm:617> INFO - Writing 'main-german.bbl' with encoding 'UTF-8'
-[399] bbl.pm:720> INFO - Output to main-german.bbl
-[399] Biber.pm:110> INFO - WARNINGS: 1
+[383] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[384] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[384] Biber.pm:3809> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'de-DE'
+[384] Biber.pm:3815> INFO - No sort tailoring available for locale 'de-DE'
+[424] bbl.pm:617> INFO - Writing 'main-german.bbl' with encoding 'UTF-8'
+[438] bbl.pm:720> INFO - Output to main-german.bbl
+[438] Biber.pm:110> INFO - WARNINGS: 1
