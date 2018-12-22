@@ -411,19 +411,56 @@ R^&password=^PASS^&Login=Login:login.php" -L users.txt -e ns -u -t 2 -w 30 -o hy
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{bfa3.png}
-	\caption{Aufdeckung den Passwärtern}
+	\caption{Aufdeckung den Passwörtern}
 \end{figure}
 
 Mittels diesem Befehl wird nur zwei Kombinationen pro Benutzer ausprobiert: password = username und leere Passwörter und es werden zwei gültige Passwörter von diesem Angriff erhalten, die von Hydra grün markiert sind\cite[145]{najera2016kali}.
 
-\subsection{Brute-Forcing-Passwörter mit THC-Hydra}
+\subsection{XML External Entities (XXE) - Attacke}
 
+Wenn eine Anwendung XML-Daten parst und das Ergebnis von geparstem XML in einer HTTP-Antwort anzeigt, würde ein grundlegender Testfall zum Testen der XXE-Sicherheitsanfälligkeit eine XXE-Payload senden, die eine interne Entität verwendet, nur um sicherzustellen, dass die Anwendung Entitäten enthält oder nicht. Dieses Tutorial stammt aus Infosec Institute\cite{infosec18}.
 
+Es wird den folgenden PHP-Code als xxe.php im Webserver-Stammordner gespeichert:
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=10cm]{xxeattacke.jpg}
+	\caption{xxe.php}
+\end{figure}
 
+Eine POST-Anforderung an die xxe.php-Datei mit XML-Daten gesendet, die im folgenden Screenshot gezeigt werden:
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=12cm]{xxeattacke2.jpg}
+	\caption{POST Anfrage zu xxe.php}
+\end{figure}
 
+Hier soll beachtet werden, dass die Anwendung in der HTTP-Antwort einen Benutzernamen anzeigt, der bestätigt, dass die XML-Daten geparst werden.
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=10cm]{xxeattacke4.png}
+	\caption{Geparste XML-Daten}
+\end{figure}
+
+Nun wird den XML-Daten eine interne Entität hinzugefügt und im <username> -Element mit \&u  verweist und die Anfrage erneut gesendet.
+
+\newpage
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{xxeattacke5.jpg}
+	\caption{Manipulierte Anfrage}
+\end{figure}
+
+Hier soll beachtet nochmal werden, dass die Anwendung der interne Einheit auflöst und die XXE-Sicherheitsanfälligkeit erfolgreich bestätigt.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{xxeattacke6.jpg}
+	\caption{Bestätigung der XXE-Schwachstelle}
+\end{figure}
 
 
 

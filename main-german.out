@@ -41,11 +41,11 @@
 \BOOKMARK [2][-]{subsection.4.7.1}{4.7.1 SQL Injektion mit SQLiv und SQLMAP}{section.4.7}% 41
 \BOOKMARK [2][-]{subsection.4.7.2}{4.7.2 Cross-Site-Scripting mit Burp}{section.4.7}% 42
 \BOOKMARK [2][-]{subsection.4.7.3}{4.7.3 Brute-Forcing-Passw\366rter mit THC-Hydra}{section.4.7}% 43
-\BOOKMARK [2][-]{subsection.4.7.4}{4.7.4 Brute-Forcing-Passw\366rter mit THC-Hydra}{section.4.7}% 44
+\BOOKMARK [2][-]{subsection.4.7.4}{4.7.4 XML External Entities \(XXE\) - Attacke}{section.4.7}% 44
 \BOOKMARK [1][-]{section.4.8}{4.8 Automatisierte Penetrationstest}{chapter.4}% 45
 \BOOKMARK [2][-]{subsection.4.8.1}{4.8.1 ABC}{section.4.8}% 46
 \BOOKMARK [1][-]{section.4.9}{4.9 Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest}{chapter.4}% 47
 \BOOKMARK [0][]{chapter.5}{5 Evaluierung von Open API 2.0 Plugin von OWASP ZAP}{}% 48
 \BOOKMARK [0][]{chapter.6}{6 Vergleich und Bewertung zwischen Open API 2.0 und Open API 3.0}{}% 49
 \BOOKMARK [0][]{chapter.7}{7 Fazit}{}% 50
-\BOOKMARK [0][]{appendix*.33}{Literaturverzeichnis}{}% 51
+\BOOKMARK [0][]{appendix*.38}{Literaturverzeichnis}{}% 51

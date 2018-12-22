@@ -489,6 +489,34 @@
       \field{title}{Handbuch IT-Sicherheit: Strategien, Grundlagen und Projekte}
       \field{year}{2003}
     \endentry
+    \entry{infosec18}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=2bffe9086637636442cddc70616be5b8}{%
+           family={Institute},
+           familyi={I\bibinitperiod},
+           given={Infosec},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{2bffe9086637636442cddc70616be5b8}
+      \strng{fullhash}{2bffe9086637636442cddc70616be5b8}
+      \strng{bibnamehash}{2bffe9086637636442cddc70616be5b8}
+      \strng{authorbibnamehash}{2bffe9086637636442cddc70616be5b8}
+      \strng{authornamehash}{2bffe9086637636442cddc70616be5b8}
+      \strng{authorfullhash}{2bffe9086637636442cddc70616be5b8}
+      \field{labelalpha}{Ins18}
+      \field{sortinit}{I}
+      \field{sortinithash}{320bc8fe8101b9376f9f21cd507de0e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Finding and Exploiting XXE – XML External Entities Injection}}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://resources.infosecinstitute.com/finding-and-exploiting-xxe-xml-external-entities-injection/#gref
+      \endverb
+      \verb{url}
+      \verb https://resources.infosecinstitute.com/finding-and-exploiting-xxe-xml-external-entities-injection/#gref
+      \endverb
+    \endentry
     \entry{java18beal}{misc}{}
       \name{author}{1}{}{%
         {{hash=1ccb9ca8df0a0c6c8b3be84b0293ace4}{%

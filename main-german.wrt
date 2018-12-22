@@ -159,33 +159,38 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.18}{\ignorespaces Anfrage an den Server und Antwort von dem Server\relax }}{43}{figure.caption.30}}
 \@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.19}{\ignorespaces Die Weiterleitung zur Anmeldeseite\relax }}{43}{figure.caption.31}}
 \@writefile{code}{\contentsline {Listing}{\numberline {4.6}{\ignorespaces Befehl durch Terminal\relax }}{44}{Listing.4.6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.20}{\ignorespaces Aufdeckung den Passw\IeC {\"a}rtern\relax }}{44}{figure.caption.32}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.7.4}Brute-Forcing-Passw\IeC {\"o}rter mit THC-Hydra}{44}{subsection.4.7.4}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.8}Automatisierte Penetrationstest}{45}{section.4.8}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.8.1}ABC}{45}{subsection.4.8.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.9}Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest}{45}{section.4.9}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Evaluierung von Open API 2.0 Plugin von OWASP ZAP}{47}{chapter.5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.20}{\ignorespaces Aufdeckung den Passw\IeC {\"o}rtern\relax }}{44}{figure.caption.32}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7.4}XML External Entities (XXE) - Attacke}{44}{subsection.4.7.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.21}{\ignorespaces xxe.php\relax }}{44}{figure.caption.33}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.22}{\ignorespaces POST Anfrage zu xxe.php\relax }}{45}{figure.caption.34}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.23}{\ignorespaces Geparste XML-Daten\relax }}{45}{figure.caption.35}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.24}{\ignorespaces Manipulierte Anfrage\relax }}{46}{figure.caption.36}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.25}{\ignorespaces Best\IeC {\"a}tigung der XXE-Schwachstelle\relax }}{46}{figure.caption.37}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.8}Automatisierte Penetrationstest}{47}{section.4.8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.8.1}ABC}{47}{subsection.4.8.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.9}Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest}{47}{section.4.9}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Evaluierung von Open API 2.0 Plugin von OWASP ZAP}{49}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{lol}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
 \@writefile{code}{\addvspace {10\p@ }}
 \@writefile{alg}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Vergleich und Bewertung zwischen Open API 2.0 und Open API 3.0}{49}{chapter.6}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Vergleich und Bewertung zwischen Open API 2.0 und Open API 3.0}{51}{chapter.6}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{lol}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
 \@writefile{code}{\addvspace {10\p@ }}
 \@writefile{alg}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {7}Fazit}{51}{chapter.7}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}Fazit}{53}{chapter.7}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{lol}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
 \@writefile{code}{\addvspace {10\p@ }}
 \@writefile{alg}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\nonumberline Literaturverzeichnis}{i}{appendix*.33}}
+\@writefile{toc}{\contentsline {chapter}{\nonumberline Literaturverzeichnis}{i}{appendix*.38}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{lol}{\addvspace {10\p@ }}
