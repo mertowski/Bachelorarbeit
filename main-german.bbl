@@ -1347,6 +1347,32 @@
       \verb https://www.techopedia.com/definition/4090/script-kiddie
       \endverb
     \endentry
+    \entry{tpfa15}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=da653faa9f00528be9a57f3474f0e437}{%
+           family={Tutorialspoint},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{da653faa9f00528be9a57f3474f0e437}
+      \strng{fullhash}{da653faa9f00528be9a57f3474f0e437}
+      \strng{bibnamehash}{da653faa9f00528be9a57f3474f0e437}
+      \strng{authorbibnamehash}{da653faa9f00528be9a57f3474f0e437}
+      \strng{authornamehash}{da653faa9f00528be9a57f3474f0e437}
+      \strng{authorfullhash}{da653faa9f00528be9a57f3474f0e437}
+      \field{labelalpha}{Tut15}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Testing Broken Authentication}}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://www.tutorialspoint.com/security_testing/testing_broken_authentication.htm
+      \endverb
+      \verb{url}
+      \verb https://www.tutorialspoint.com/security_testing/testing_broken_authentication.htm
+      \endverb
+    \endentry
     \entry{vcinj16}{misc}{}
       \name{author}{1}{}{%
         {{hash=e95ac1880fb0c0035e090a3f83576a98}{%

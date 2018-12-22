@@ -198,7 +198,7 @@ einmal alle gefundenen Sicherheitsprobleme ausführlich besprochen werden\cite[1
 
 \section{Manuelle Penetrationstest}
 
-\subsection{SQL Injektion mit SQLiv und SQLMAP}
+\subsection{Testen von SQL Injektion mit SQLiv und SQLMAP}
 
 Im Nachfolgenden werden Sql Injektion mit SQLiv und SQLMAP nach dem Tutorial von \cite{ramadhan17sqlinj} beschrieben.
 
@@ -309,7 +309,7 @@ Das Ergebnis sollte so aussehen:
 \end{figure}
 
 
-\subsection{Cross-Site-Scripting mit Burp}
+\subsection{Testen von Cross-Site-Scripting mit Burp}
 
 Das folgende Cross-Site-Scripting-Beispiel stammt aus dem Tutorial von Web-Sicherheitsseite Portswigger\cite{portswigger12}.
 
@@ -367,7 +367,7 @@ Hier wird auf "Antwort im Browser anzeigen" geklickt, um die URL zu kopieren. Da
 
 Die kopierte URL wird in Adressleiste eingegeben, um die Realisierung des XSS-Angriffs durch das Senden einer kurzen und relativ harmlosen Nachricht oder Warnung an den Client ermöglichen.
 
-\subsection{Brute-Forcing-Passwörter mit THC-Hydra}
+\subsection{Testen Brute-Forcing-Passwörter mit THC-Hydra}
 
 In diesem Beispiel wird Hydra verwendet, um in eine Anmeldeseite zu gelangen, indem ein Brute-Force-Angriff auf einige bekannte Benutzer ausgeführt wird\cite[143]{najera2016kali}.
 
@@ -416,7 +416,7 @@ R^&password=^PASS^&Login=Login:login.php" -L users.txt -e ns -u -t 2 -w 30 -o hy
 
 Mittels diesem Befehl wird nur zwei Kombinationen pro Benutzer ausprobiert: password = username und leere Passwörter und es werden zwei gültige Passwörter von diesem Angriff erhalten, die von Hydra grün markiert sind\cite[145]{najera2016kali}.
 
-\subsection{XML External Entities (XXE) - Attacke}
+\subsection{Testen von XML External Entities (XXE)}
 
 Wenn eine Anwendung XML-Daten parst und das Ergebnis von geparstem XML in einer HTTP-Antwort anzeigt, würde ein grundlegender Testfall zum Testen der XXE-Sicherheitsanfälligkeit eine XXE-Payload senden, die eine interne Entität verwendet, nur um sicherzustellen, dass die Anwendung Entitäten enthält oder nicht. Dieses Tutorial stammt aus Infosec Institute\cite{infosec18}.
 
@@ -462,12 +462,75 @@ Hier soll beachtet nochmal werden, dass die Anwendung der interne Einheit auflö
 	\caption{Bestätigung der XXE-Schwachstelle}
 \end{figure}
 
+\newpage
+
+\subsection{Testen von Fehlerhafte Authentifizierung mit Webgoat und Burp Suite}
+Dieses Tutorial stammt aus Tutorialspoint\cite{tpfa15}.
+Eine Webanwendung unterstützt das Umschreiben von URLs, indem Sitzungs-IDs in die URL eingefügt werden. 
+
+\texttt{http://example.com/sale/saleitems/jsessionid=2P0OC2JSNDLPSKHCJUN2JV/?item=laptop}
+
+Ein authentifizierter Benutzer der Website leitet die URL an seine Freunde weiter, um Informationen zu den reduzierten Verkäufen zu erhalten. Er sendet den obigen Link per E-Mail, ohne zu wissen, dass der Benutzer auch die Sitzungs-IDs verschenkt. Wenn seine Freunde den Link verwenden, verwenden sie seine Sitzung und seine Kreditkarte.
+
+Man muss sich bei Webgoat anmelden und zum Abschnitt \texttt{''Session Management Flaws''} navigiert wird.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{fa1.jpg}
+	\caption{Anmeldung bei Webgoat}
+\end{figure}
+
+Wenn mit den Anmeldeinformationen webgoat/webgoat angemeldet wird, wird in Burp Suite festgestellt, dass die \texttt{JSESSION-ID C8F3177CCAFF380441ABF71090748F2E} lautet, während \texttt{AuthCookie = 65432ubphcfx} nach erfolgreicher Authentifizierung ist.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=10cm]{fa2.jpg}
+	\caption{Anmeldung bei Webgoat}
+\end{figure}
+
+\newpage
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=10cm]{fa3.jpg}
+	\caption{Burp Suite: AuthCookie Kontrolle 1}
+\end{figure}
+
+Wenn mit den Anmeldeinformationen aspect/aspect angemeldet wird, wird in Burp Suite festgestellt, dass die \texttt{JSESSION-ID C8F3177CCAFF380441ABF71090748F2E} lautet, während \texttt{AuthCookie = 65432udfqtb} nach erfolgreicher Authentifizierung ist.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=10cm]{fa4.jpg}
+	\caption{Burp Suite: AuthCookie Kontrolle 2}
+\end{figure}
+
+Nun muss die AuthCookie Patterns analysiert werden. Die erste Hälfte \texttt{65432} ist für beide Authentifizierungen üblich. Daher sind wir jetzt daran interessiert, den letzten Teil der Authcookie-Werte zu analysieren, wie - \texttt{ubphcfx} für den Benutzer \texttt{webgoat} und \texttt{udfqtb} für den jeweiligen Aspektbenutzer.
+
+Wenn die AuthCookie-Werte genauer angesehen werden, hat der letzte Teil dieselbe Länge wie der Benutzername. Es ist daher offensichtlich, dass der Benutzername bei einer Verschlüsselungsmethode verwendet wird. Bei Versuchen und Fehlern / Brute-Force-Mechanismen wird festgestellt, dass nach der Umkehrung des Benutzernamens \texttt{webgoat}; es wird jetzt rausgefunden, dass es \texttt{taogbew} ist und dann wird das Zeichen vor dem Alphabet als AuthCookie d. h. \texttt{ubphcfx} verwendet. 
+
+\newpage
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=10cm]{fa5.jpg}
+	\caption{Burp Suite: AuthCookie Kontrolle 3}
+\end{figure}
+
+Nach der Authentifizierung als Benutzer-Webgoat den AuthCookie-Wert geändert wird, um den Benutzer Alice zu verspotten, indem den AuthCookie gesucht wird.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=10cm]{fa6.jpg}
+	\caption{Authentifizierung mit dem Cookie}
+\end{figure}
 
 
 
 
 \newpage
+
 \section{Automatisierte Penetrationstest}
+
+
 
 \subsection{ABC}
 

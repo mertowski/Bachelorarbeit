@@ -81,14 +81,15 @@
 \contentsline {subsection}{\numberline {4.6.4}Aktive Eindringversuche}{35}{subsection.4.6.4}
 \contentsline {subsection}{\numberline {4.6.5}Abschlussanalyse und Nacharbeiten}{35}{subsection.4.6.5}
 \contentsline {section}{\numberline {4.7}Manuelle Penetrationstest}{36}{section.4.7}
-\contentsline {subsection}{\numberline {4.7.1}SQL Injektion mit SQLiv und SQLMAP}{36}{subsection.4.7.1}
-\contentsline {subsection}{\numberline {4.7.2}Cross-Site-Scripting mit Burp}{39}{subsection.4.7.2}
-\contentsline {subsection}{\numberline {4.7.3}Brute-Forcing-Passw\IeC {\"o}rter mit THC-Hydra}{42}{subsection.4.7.3}
-\contentsline {subsection}{\numberline {4.7.4}XML External Entities (XXE) - Attacke}{44}{subsection.4.7.4}
-\contentsline {section}{\numberline {4.8}Automatisierte Penetrationstest}{47}{section.4.8}
-\contentsline {subsection}{\numberline {4.8.1}ABC}{47}{subsection.4.8.1}
-\contentsline {section}{\numberline {4.9}Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest}{47}{section.4.9}
-\contentsline {chapter}{\numberline {5}Evaluierung von Open API 2.0 Plugin von OWASP ZAP}{49}{chapter.5}
-\contentsline {chapter}{\numberline {6}Vergleich und Bewertung zwischen Open API 2.0 und Open API 3.0}{51}{chapter.6}
-\contentsline {chapter}{\numberline {7}Fazit}{53}{chapter.7}
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{i}{appendix*.38}
+\contentsline {subsection}{\numberline {4.7.1}Testen von SQL Injektion mit SQLiv und SQLMAP}{36}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Testen von Cross-Site-Scripting mit Burp}{39}{subsection.4.7.2}
+\contentsline {subsection}{\numberline {4.7.3}Testen Brute-Forcing-Passw\IeC {\"o}rter mit THC-Hydra}{42}{subsection.4.7.3}
+\contentsline {subsection}{\numberline {4.7.4}Testen von XML External Entities (XXE)}{44}{subsection.4.7.4}
+\contentsline {subsection}{\numberline {4.7.5}Testen von Fehlerhafte Authentifizierung mit Webgoat und Burp Suite}{47}{subsection.4.7.5}
+\contentsline {section}{\numberline {4.8}Automatisierte Penetrationstest}{50}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}ABC}{50}{subsection.4.8.1}
+\contentsline {section}{\numberline {4.9}Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest}{50}{section.4.9}
+\contentsline {chapter}{\numberline {5}Evaluierung von Open API 2.0 Plugin von OWASP ZAP}{51}{chapter.5}
+\contentsline {chapter}{\numberline {6}Vergleich und Bewertung zwischen Open API 2.0 und Open API 3.0}{53}{chapter.6}
+\contentsline {chapter}{\numberline {7}Fazit}{55}{chapter.7}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{i}{appendix*.44}
