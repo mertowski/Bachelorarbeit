@@ -75,7 +75,7 @@ SELECT accountNumber, balance FROM accounts WHERE account_owner_id = 0 OR 1=1
 	\label{lst:inj4}
 \end{Listing}
 
-Wenn diese Abfrage (\Cref{lst:inj4}) an die Datenbank übergeben wird, werden alle von ihr gespeicherten Kontonummern und Salden zurückgegeben und auf die Seite werden alle Zeilen hinzugefügt, um sie anzuzeigen. Der Angreifer kennt nun die Kontonummern und Salden aller Benutzer.
+Wenn diese Abfrage (\Cref{lst:inj4}) an die Datenbank übergeben wird, werden alle von dem Benutzer gespeicherten Kontonummern und Salden zurückgegeben und auf die Seite werden alle Zeilen hinzugefügt, um sie anzuzeigen. Der Angreifer kennt nun die Kontonummern und Salden aller Benutzer.
 
 \subsubsection{Fehler in Authentifizierung und Session-Management}
 

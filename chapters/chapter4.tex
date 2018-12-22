@@ -367,6 +367,66 @@ Hier wird auf "Antwort im Browser anzeigen" geklickt, um die URL zu kopieren. Da
 
 Die kopierte URL wird in Adressleiste eingegeben, um die Realisierung des XSS-Angriffs durch das Senden einer kurzen und relativ harmlosen Nachricht oder Warnung an den Client ermöglichen.
 
+\subsection{Brute-Forcing-Passwörter mit THC-Hydra}
+
+In diesem Beispiel wird Hydra verwendet, um in eine Anmeldeseite zu gelangen, indem ein Brute-Force-Angriff auf einige bekannte Benutzer ausgeführt wird\cite[143]{najera2016kali}.
+
+Es wird eine Textdatei namens \texttt{benutzers.txt} erstellt\cite[143]{najera2016kali}:
+
+\begin{center}
+	admin\\test\\user\\user1\\john
+\end{center}
+
+In einem ersten Schritt wird analysiert, wie die Anmeldeanforderung gesendet wird und wie der Server darauf reagiert. Es wird Burp Suite verwendet, um eine Anmeldeanforderung in der Webanwendung zu erfassen\cite[144]{najera2016kali}:
+
+\newpage
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{bfa.png}
+	\caption{Anfrage an den Server und Antwort von dem Server}
+\end{figure}
+
+Wir können sehen, dass sich die Anfrage in /dvwa/login.php befindet und drei Variablen hat: username, password, and login.
+
+Wenn die Erfassung von Anforderungen beendet wird und das Ergebnis im Browser überprüft wird, kann festgestellt werden, dass die Antwort eine Weiterleitung zur Anmeldeseite ist\cite[144]{najera2016kali}:
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{bfa2.png}
+	\caption{Die Weiterleitung zur Anmeldeseite}
+\end{figure}
+
+Eine gültige Kombination aus Benutzername und Kennwort sollte nicht zu demselben Login, sondern zu einer anderen Seite, z. B. index.php, weitergeleitet werden. Wir gehen also davon aus, dass ein gültiges Login auf die andere Seite umgeleitet wird, und wir verwenden "login.php" als Zeichenfolge, um zu unterscheiden, wenn ein Versuch fehlschlägt\cite[145]{najera2016kali}.
+
+Es wird den folgenden Befehl in ein Terminal eingeführt\cite[145]{najera2016kali}:
+
+\begin{Listing}[h]
+	\begin{lstlisting}
+hydra 192.168.56.102 http-form-post "/dvwa/login.php:username=^USE
+R^&password=^PASS^&Login=Login:login.php" -L users.txt -e ns -u -t 2 -w 30 -o hydra-result.txt
+	\end{lstlisting}
+	\caption{Befehl durch Terminal}
+\end{Listing}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{bfa3.png}
+	\caption{Aufdeckung den Passwärtern}
+\end{figure}
+
+Mittels diesem Befehl wird nur zwei Kombinationen pro Benutzer ausprobiert: password = username und leere Passwörter und es werden zwei gültige Passwörter von diesem Angriff erhalten, die von Hydra grün markiert sind\cite[145]{najera2016kali}.
+
+\subsection{Brute-Forcing-Passwörter mit THC-Hydra}
+
+
+
+
+
+
+
+
+
+
 
 
 \newpage
