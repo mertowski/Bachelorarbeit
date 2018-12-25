@@ -1,0 +1,104 @@
+%%% !TeX document-id = {bf8c9387-2d6c-468c-8b5b-9c52bb0394b7}
+%%% !TeX document-id = {632addfe-9ed5-4eef-8b45-3b6852dd7c90}
+%%% File encoding: UTF-8
+%%% äöüÄÖÜß  <-- keine deutschen Umlaute hier? UTF-faehigen Editor verwenden!
+
+%%% Magic Comments zum Setzen der korrekten Parameter in kompatiblen IDEs
+% !TeX encoding = utf8
+% !TeX program = pdflatex 
+% !TeX spellcheck = de_DE
+% !BIB program = biber
+
+\documentclass[fontsize=12pt,bachelor,german]{hgbthesis}
+% Zulässige Optionen in [..]: 
+%   Typ der Arbeit: diploma, master (default), bachelor, internship 
+%   Hauptsprache: german (default), english
+%%%----------------------------------------------------------
+
+\RequirePackage[utf8]{inputenc}		% bei der Verw. von lualatex oder xelatex entfernen!
+\usepackage{anyfontsize}
+\usepackage[onehalfspacing]{setspace}
+
+\newcommand*\NewPage{\newpage\null\thispagestyle{empty}\newpage}
+
+\graphicspath{{images/}}    % Verzeichnis mit Bildern und Grafiken
+\logofile{logo}				% Logo-Datei = images/logo.pdf (\logofile{}, wenn kein Logo gewünscht)
+\bibliography{references}  	% Biblatex-Literaturdatei (references.bib)
+
+%%%----------------------------------------------------------
+% Angaben für die Titelei (Titelseite, Erklärung etc.)
+%%%----------------------------------------------------------
+
+%%% Einträge für ALLE Arbeiten: -----------------------------
+\title{API Security Testing mit OWASP Zap und Open API}
+\author{Mert Yücel}
+\programname{Universal Computing}
+\placeofstudy{Reutlingen}
+\dateofsubmission{2019}{01}{15}	% {YYYY}{MM}{DD}
+
+%%% Zusätzlich für eine Bachelorarbeit: ---------------------
+\thesisnumber{761310}   % Stud-ID, z.B. 1310238045-A  
+% (A = 1. Bachelorarbeit)
+\semester{Wintersemester 2018} 
+\coursetitle{API Security Testing mit OWASP Zap und Open API} 
+\advisor{Alois B.~Treuer, Päd.\ Phil.}
+
+%%% Restriktive Lizenformel anstatt CC (nur für Typ master) -
+%\strictlicense
+
+%%%----------------------------------------------------------
+\begin{document}
+%%%----------------------------------------------------------
+
+%%%----------------------------------------------------------
+\frontmatter                    % Titelei (röm. Seitenzahlen)
+%%%----------------------------------------------------------
+
+%%%Start table of contents from page 1-----------------------
+\newpage\null\thispagestyle{empty}\newpage
+%%%Start table of contents from page 1-----------------------
+
+%%%Empty page after Titel page-------------------------------
+\setcounter{page}{1}
+%%%Empty page after Titel page-------------------------------
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{2}
+\tableofcontents
+\listoffigures
+\listoftables
+%%%Change the Listing name-----------------------------------
+\renewcommand{\lstlistlistingname}{Verzeichnis der Quellcodes}
+\renewcommand{\lstlistingname}{Quellcode}
+%%%Change the Listing name-----------------------------------
+\lstlistoflistings
+\include{front/kurzfassung}		
+\include{front/vorwort} % Optional. Ggf. weglassen			
+
+%%%----------------------------------------------------------
+\mainmatter          % Hauptteil (ab hier arab. Seitenzahlen)
+%%%----------------------------------------------------------
+
+\include{chapters/einleitung}
+\include{chapters/chapter2}
+\include{chapters/chapter3}
+\include{chapters/chapter4}
+\include{chapters/chapter5}
+\include{chapters/chapter6}
+\include{chapters/chapter7}
+\include{chapters/literatur}
+
+%%%----------------------------------------------------------
+\appendix                                            % Anhang 
+%%%----------------------------------------------------------
+
+%%%----------------------------------------------------------
+\MakeBibliography                        % Quellenverzeichnis
+%%%----------------------------------------------------------
+
+%%% Messbox zur Druckkontrolle ------------------------------
+\include{back/messbox}
+
+%%%----------------------------------------------------------
+\end{document}
+%%%----------------------------------------------------------

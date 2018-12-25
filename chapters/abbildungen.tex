@@ -1,0 +1,39 @@
+\chapter{Abbildungen, Tabellen, Quellcode}
+\label{cha:Abbildungen}
+
+\section{Allgemeines}
+
+\begin{program}
+% place caption consistently either at the top or bottom:
+\caption{Beispiel für die Auflistung von Programmcode als Float-Element.}
+\label{prog:CodeExample}
+\begin{JavaCode}
+import ij.ImagePlus;
+import ij.plugin.filter.PlugInFilter;
+import ij.process.ImageProcessor;
+
+public class My_Inverter implements PlugInFilter {
+	int agent_velocity;
+  String title = ""; // just to test printing of double quotes
+
+	public int setup (String arg, ImagePlus im) {
+		return DOES_8G;	// this plugin accepts 8-bit grayscale images /+\label{pr:IjSamplePlugin10}+/
+	}
+
+	public void run (ImageProcessor ip) {
+		int w = ip.getWidth();	/+\label{ExampleCodeLabel}+/
+		int h = ip.getHeight(); 
+		
+		/* iterate over all image coordinates */
+		for (int u = 0; u < w; u++) { 
+			for (int v = 0; v < h; v++) {
+				int p = ip.getPixel(u, v); 
+				ip.putPixel(u, v, 255-p); // invert: /+$I'(u,v) \leftarrow 255 - I(u,v)$\label{MathInCode}+/
+			}
+		}
+	}		
+} // end of class My_Inverter
+\end{JavaCode}
+%
+\end{program}
+

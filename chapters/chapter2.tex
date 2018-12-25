@@ -1,0 +1,249 @@
+\chapter{Grundlagen}
+\label{cha:k2}
+
+Im folgenden Kapitel wird auf die verschiedenen Grundlagen eingegangen. Zu Beginn wird ein Überblick über die Informationssicherheit geschaffen und grundlegende Begriffe, Schutzziele, Schwachstellen, Bedrohungen und Angriffe aufgezeigt. Anschließend wird die Sicherheitsrichtlinie und Sicherheitsinfrastruktur vorgestellt. Zuletzt wird ein Überblick über die Technologien des Projektes gegeben.
+
+\section{Informationssicherheit}
+
+\begin{quote}
+	\emph{"`Meine Nachricht für Unternehmen, die sie denken, nicht angegriffen worden ist: Sie suchen nicht hart genug."'}
+	\begin{flushright}
+		James Snook
+	\end{flushright}
+\end{quote}
+
+Informationssicherheit ist eine wichtige Herausforderung im Bereich der neuen Informationstechnologien. Sie ist heutzutage in nahezu allen Bereichen von zentraler Bedeutung.  Die Sicherheit von Informationen, Daten, Geschäften und Investitionen gehören zu den Schlüsselprioritäten und die Verfügbarkeit von Informationen in der richtigen Zeit und Form ist heutzutage in jeder Organisation ein Muss. IT-Sicherheit hat den Zweck, Unternehmen und deren Werte zu schützen, indem sie böswillige Angriffe zu identifizieren, zu reduzieren und zu verhindern.
+
+Das schnelle Wachstum von Webanwendungen hängt zweifellos von der Sicherheit, dem Datenschutz und der Zuverlässigkeit der Anwendungen, Systeme und unterstützenden Infrastrukturen ab. Obwohl IT-Sicherheit heutzutage eine sehr große Rolle in unserem Leben spielt, liegt das durchschnittliche Sicherheitswissen von IT-Fachkräften und Ingenieuren weit hinterher. Das Internet ist jedoch für seine mangelnde Sicherheit bekannt, wenn es nicht genau und streng spezifiziert, entworfen und getestet wird. In den letzten Jahren war es offensichtlich, dass der Bereich der IT-Sicherheit leistungsfähige Werkzeuge und Einrichtungen mit überprüfbaren Systemen und Anwendungen umfassen muss, die die Vertraulichkeit und Privatsphäre in Webanwendungen wahren, welche die Probleme definieren\cite[1]{furnell2008securing}.
+
+Weil die Realisierung einer lückenlosen Abwehr von Angriffen in der Wirklichkeit nicht möglich ist, inkludieren das Gebiet der IT-Sicherheit hauptsächlich auch Maßnahmen und Vorgehensweise, um die potenziellen Schäden zu vermindern und die Risiken beim Einsatz von Informations- und Kommunikationstechnik-Systemen zu verringern. Die Angriffsversuche müssen rechtzeitig und mit möglichst hoher Genauigkeit erkannt werden. Dazu muss auf eingetretene Schadensfälle mit geeigneten technischen Maßnahmen reagiert werden. Es sollte klargestellt werden, dass Techniken der Angriffserkennung und Reaktion ebenso zur IT-Sicherheit gehören, wie methodische Grundlagen, um IKT-Systeme so zu entwickeln, dass sie mittels Design ein hohes Maß an Sicherheit bieten. Durch IT-Sicherheit kann eine Möglichkeit geschaffen werden, um die Entwicklung vertrauenswürdiger Anwendungen und Dienstleistungen mit innovativen Geschäftsmodellen, beispielsweise im Gesundheitsbereich, bei Automotive-Anwendungen oder in zukünftigen, intelligenten Umgebungen zu verbinden\cite[20--21]{eckert2013sicherheit}.
+
+\subsection{Grundlagen der IT-Sicherheit}
+
+\subsubsection{Offene- und geschlossene Systeme}
+
+Ein IT-System besteht aus einem geschlossenen und einem offenen System mit der Fähigkeit zur Speicherung und Verarbeitung von Informationen. Die offenen Systeme (z. B. Windows) sind vernetzte, physisch verteilte Systeme mit der Möglichkeit zum Informationsaustausch mit anderen Systemen\cite[22--23]{eckert2013sicherheit}. Tom Wheeler definiert offene Systeme als \emph{"`jene Hard- und Software-Implementierungen, die der Sammlung von Standards entsprechen, die den freien und leichten Zugang zu Lösungen verschiedener Hersteller erlauben. Die Sammlung von Standards kann formal definiert sein oder einfach aus De-facto-Definitionen bestehen, an die sich die großen Hersteller und Anwender in einem technologischen Bereich halten"'}\cite[4]{wheeler2013offene}. 
+
+Ein geschlossenes System (z. B. Datev) baut auf der Technologie eines Herstellers auf und ist mit Konkurrenzprodukten nicht kompatibel.  Es dehnt sich auf einen bestimmten Teilnehmerkreis aus und beschränkt ein bestimmtes räumliches Gebiet\cite[22--23]{eckert2013sicherheit}.
+
+\subsubsection{Soziotechnische Systeme}
+
+IT-Systeme werden in unterschiedliche Strukturen (gesellschaftliche, unternehmerische und politische Strukturen) mit verschiedenem technischen Know-how und für sehr verschiedene Ziele in Betrach gezogen\cite[23]{eckert2013sicherheit}. IT-Sicherheit gewährleistet den Schutz eines soziotechnischen Systems. Darauffolgend ergibt sich dann auch das Ziel der IT Sicherheit. Die Unternehmen bzw. Institutionen und deren Daten sollen gegen Schaden und Bedrohungen geschützt werden\cite{so18tech}. 
+
+\subsubsection{Information und Datenobjekte}
+
+IT-Systeme haben die Funktion Informationen zu speichern und zu verarbeiten. Die Information wird in Form von Daten bzw. Datenobjekten repräsentiert. \textbf{Passive Objekte} (z.B. Datei, Datenbankeintrag) haben die Fähigkeit, Informationen zu speichern. \textbf{Aktive Objekte} (z.B. Prozesse) haben die Fähigkeit, sowohl Informationen zu speichern als auch zu verarbeiten\cite[23]{eckert2013sicherheit}.  \textbf{Subjekte} sind die Benutzer eines Systems und alle Objekte, die im Auftrag von Benutzern im System aktiv sein können\cite[24]{eckert2013sicherheit}.  
+
+Informatik wird als die Wissenschaft, Technik und Anwendung der maschinellen Verarbeitung, Speicherung, Übertragung und Darstellung von Information identifiziert. \textbf{Informationen} sind der abstrakte Gehalt ("`Bedeutungsinhalt"', "`Semantik"') eines Dokuments, einer Aussage, Beschreibung, Anweisung oder Mitteilung\cite[5]{broy2013informatik} und sie werden durch die Nachrichten übermittelt\cite[18]{blieberger2013informatik}. Information wird umgangssprachlich sehr oft für Daten verwendet aber es gibt Unterschiede zwischen Daten und Information. Der Mensch bildet die Informationen in Daten ab, indem er die Nachrichten überträgt oder verarbeitet. Die Daten, die maschinell bearbeitbare Zeichen sind, stellen durch die in einer Nachricht enthaltene Information die Bedeutung der Nachricht dar. Auf der Ebene der Daten geschieht die Übertragung oder Verarbeitung, das Resultat wird vom Mensch als Information interpretiert\cite{infstd}.
+
+\subsubsection{Funktionssicher}
+
+In den Sicheren Systemen sollen alle korrekten Spezifikationen korrekt funktioniert werden und eine hohe Zuverlässigkeit und Fehlersicherheit gewährleistet werden. Die Isolierung von der Außenwelt weicht konstant durch die stetig zunehmende Vernetzung jeglicher Systeme mit Informationstechnik auf. Der Zweck von Funktionssicherheit (engl. safety) ist, dass die Umgebung vor dem Fehlverhalten des Systems zu schützen.  Bei der Entwicklungsphase müssen systematische Fehler vermieden werden. Durch die Überwachung im laufenden Betrieb müssen die Störungen erkannt werden und solche Störungen müssen eleminiert werden, um einen funktionssicheren Zustand zu erreichen\cite{hoepner2014trends}.
+
+\subsubsection{Informationssicher}
+
+Das Hauptziel von Informationssicherheit (engl. security) ist, Informationen zu schützen, die sowohl auf Papier, in Rechnern oder auch in Köpfen gespeichert sind. IT-Sicherheit ist verantwortlich für den Schutz von Werten und Ressourcen und deren Verarbeitung\cite[81]{int11sicher}, sowie die Verhinderung von unautorisierter Informationsveränderung- oder gewinnung\cite[26]{eckert2013sicherheit}.
+
+\subsubsection{Datensicherheit und Datenschutz}
+
+Datensicherheit bedeutet, dass der Zustand eines Systems der Informationstechnik, in dem die Risiken, die im laufenden Betrieb dieses Systems bezüglich von Gefährdungen anwesend sind, durch Maßnahmen auf eine bestimmte Menge eingeschränkt wird. Datenschutz (engl. privacy) hat die Aufgabe, durch den Schutz der Daten, vor Missbrauch in ihren Verarbeitungsphasen der Beeinträchtigung fremder und eigener schutzwürdiger Belange zu begegnen.\cite[14--15]{eberspacher1994sichere}.
+
+\subsubsection{Verlässligkeit}
+
+Verlässlichkeit (engl. dependability) eines Systems bedeutet, dass es keine betrügerischen Zustände akzeptieren und spezifische Funktionen verlässlich funktionieren sollen\cite[27]{eckert2013sicherheit}.
+
+\subsection{Schutzziele}
+
+\subsubsection{Authentizität}
+
+Bei dem Begriff "`Authentizität"' handelt es sich um die Authentizität eines Objekts bzw. Subjekts (engl. authenticity), die die Echtheit und Glaubwürdigkeit des Objekts oder Subjekts, die anhand einer eindeutigen Identität und charakteristischen Eigenschaften bestimmt werden kann, umfasst\cite[28]{eckert2013sicherheit}.
+
+Erkennung von Angriffen können gewährleistet werden, indem innere Maßnahmen zu vollständigt wird, die der Authentizität von Subjekten und Objekten überprüft\cite[13]{spies1985datenschutz}, diesbezüglich muss der Beweis erbracht werden, dass eine behauptete Identität eines Objekts oder Subjekts mit dessen Charakteristika übereinstimmt\cite[28]{eckert2013sicherheit}.
+
+\subsubsection{Informationsvertraulichkeit}
+Unter Informationsvertraulichkeit versteht man, dass die zu bearbeitenden Daten nur den Personen zugänglich sind, die auch die Berechtigung hierfür haben. Wenn die Geheimhaltung vernünftig ist, können Schaden entstehen. In jedem einzelnen Unternehmensbereich muss durch vollständige Maßmahmen der unautorisierte Zugriff in interne Datenbestände verhindert werden\cite[205]{gora2003handbuch}.
+
+\subsubsection{Datenintegrität}
+
+Durch die Integrität wird die Korrektheit von Daten und die korrekten Funktionsweise von Systemen sichergestellt. Wenn der Begriff Integrität auf Daten benutzt wird, bedeutet er, dass die Daten vollständig und unverändert sind. Er wird in der Informationstechnik weiter gefasst und auf "`Informationen"' angewendet. Der Begriff "`Information"' wird für Daten angewendet, die nach bestimmten Attributen, wie z. B. Autor oder Zeitpunkt der Erstellung zugeordnet können. Wenn die Daten ohne Erlaubnis verändert werden, bedeuten, dass die Angaben zum Autor verfälscht oder Zeitangaben zur Erstellung manipuliert wurden\cite{dtint2007}.
+
+\subsubsection{Verfügbarkeit}
+
+Ein System versichert die Verfügbarkeit (eng. availability), indem authentifizierte und autorisierte Subjekte in der Wahrnehmung ihrer Berechtigungen nicht unautorisiert beeinträchtigt werden können. Wenn in einem System unterschiedliche Prozesse eines Benutzers oder verschiedenen Benutzern gemeinsame Ressourcen zugreifen, kann es zu Ausführungsverzögerungen kommen. Durch normale Verwaltungsmaßnahmen entstehende Verzögerungen werden als keine Verletzung der Verfügbarkeit dargestellt, aber wenn CPU mit einem hoch prioren Prozess monopolisiert, diesbezüglich kann absichtlich einen Angriff auf die Verfügbarkeit hervorrufen. Somit kann es plötzlich zu einem hohen Maß an Daten kommen, das zu Stausituationen im Netz führen\cite[33]{eckert2013sicherheit}.
+
+\subsubsection{Verbindlichkeit}
+
+Verbindlichkeit ist eine Möglichkeit, die eine IT-Transaktion während und nach der Durchführung unzweifelhaft gewährleisten. Durch die Nutzung von qualifizierten digitalen Signaturen kann die Verbindlichkeit gewährleistet werden. Die Dauer der Zuordenbarkeit ist abhängig von der Aufbewahrung der Logdateien und wird durch den Datenschutz angeordnet\cite{secupedia11}.
+
+\subsubsection{Anonymisierung}
+
+Nach § 3 Abs. 6 Bundesdatenschutzgesetz bedeutet Anonymisierung, dass \emph{"`das Verändern personenbezogener Daten derart, dass die Einzelangaben über persönliche oder sachliche Verhältnisse nicht mehr oder nur mit einem unverhältnismäßig großen Aufwand an Zeit, Kosten und Arbeitskraft einer bestimmten oder bestimmbaren natürlichen Person zugeordnet werden können"'}\cite{dsba2018}. 
+
+\subsection{Schwachstellen, Bedrohungen, Angriffe}
+
+\subsubsection{Schwachstellen und Verwundbarkeit}
+
+Hauptgrund für die Gefährdung der Erreichung der Schutzziele sind \textbf{Schwachstellen}. Wenn die Schwachstellen ausgenutzt werden, werden die Interaktionen mit einem IT-System autorisiert, nicht dem definierten Soll-Verhalten. Mittels der Ausnutzung von Schwachstellen kann das IT-System angegriffen werden. Somit kann unberechtigt auf eine Ressource zugegriffen werden\cite[19--20]{nowey2011einleitung}. Unter dem Begriff "`Verwundbarkeit"' (engl. vulnerability) versteht man, dass eine Schwachstelle existiert, über welche Sicherheitsdienste des Systems unautorisiert modifiziert werden können\cite[38]{eckert2013sicherheit}.
+
+\subsubsection{Bedrohungen und Risiko}
+
+Unter einer Bedrohung (engl. threat) versteht man die Ausnutzung einer oder mehrerer Schwachstellen oder Verwundbarkeiten, die zu einem Verlust der Datenintegrität, der Informationsvertrauchlichkeit oder der Verfügbarkeit führen oder die Authentizität von Subjekten gefährden\cite[39]{eckert2013sicherheit}. Im Kontext der Informationssicherheit versteht man unter einem Risiko die Wahrscheinlichkeit des Eintritts eines Schadenereignisses und die Höhe des potentiellen Schadens ist\cite[15]{nowey2011einleitung}.
+
+\subsubsection{Angriff und Typen von (externen) Angriffen}
+
+Personen oder Systeme, die versuchen eine Schwachstelle auszunutzen, werden \textbf{Angreifer} genannt. Ein \textbf{Angriff} ist dabei der Versuch, ein IT-System unautorisiert zu verändern oder zu nutzen. Dabei wird zwischen aktiven und passiven Angriffen unterschieden. Wenn die Vertraulichkeit durch unberechtigte Informationsgewinnung verletzt wird, wird dies als \textbf{passive Angriffe} bezeichnet. \textbf{Aktive Angriffe} manipulieren die Daten oder schleusen sie in das System ein, um die Verfügbarkeit und Integrität zu gefährden\cite[20]{nowey2011einleitung}.
+
+\paragraph{Hacker und Cracker}\mbox{}\\
+
+\textbf{Hacker} sind technisch erfahrene Personen im Hard- und Softwareumfeld. Sie können Schwachstellen finden, um unbefugt einzudringen oder Funktionen zu verändern\cite{hack17}. Dieser Begriff wird für kriminelle Personen verwendet, die die Lücken im IT-System finden und dies unerlaubt für kriminelle Zwecke, wie z. B. Diebstahl von Informationen, nutzen\cite{hack11}. 
+Der sogennante \textbf{Cracker} ist ebenfalls ein technisch sehr erfahrener Angreifer, unterscheidet sich jedoch vom Hacker in der Hinsicht, dass er ausschließlich an seinen eigenen Vorteil denkt oder daran interessiert ist, einer dritten Person zu schaden. Aus diesem Grund geht ein größeres Schadenrisiko für Unternehmen von ihm aus, als von Hackern\cite[45]{eckert2013sicherheit}.
+
+\paragraph{Skript Kiddie}\mbox{}\\
+
+Unter dem Begriff "`Script-Kiddie"' versteht man einen nicht ernsthaften Hacker, der die ethischen Prinzipien professioneller Hacker ablehnt, die das Streben nach Wissen, Respekt vor Fähigkeiten und ein Motiv der Selbstbildung beinhalten. Script Kiddies verkürzen die meisten Hacking-Methoden, um schnell ihre Hacking-Fähigkeiten zu erlangen. Sie machen sich nicht viel Gedanken oder nehmen sich nicht viel Zeit, um Computerkenntnisse zu erwerben, sondern bilden sich schnell aus, um nur das Nötigste zu lernen. Skript-Kiddies können Hacking-Programme verwenden, die von anderen Hackern geschrieben wurden, weil ihnen oft die Fähigkeiten fehlen, eigene zu schreiben. Script Kiddies versuchen, Computersysteme und Netzwerke anzugreifen und Websites zu zerstören. Obwohl sie als unerfahren und unreif angesehen werden, können Skript-Kiddies so viel Computerschaden verursachen wie professionelle Hacker\cite{scriptkiddie11}.
+
+\paragraph{Geheimdienste}\mbox{}\\
+
+Die National Security Agency (NSA) ist ein US-Geheimdienst, der für die Erstellung und Verwaltung von Informationssicherung und Signalintelligenz (SIGINT) für die US-Regierung verantwortlich ist. Die Aufgabe der NSA besteht in der globalen Überwachung, Sammlung, Entschlüsselung und anschließenden Analyse und Übersetzung von Informationen und Daten für ausländische Nachrichtendienste und nachrichtendienstliche Zwecke\cite{nsa14}.
+
+\paragraph{Allgemeine Krimanilität}\mbox{}\\
+
+\subparagraph{Spyware: }
+
+Spyware ist eine Art von Malware (oder "`bösartige Software"'), die Informationen über einen Computer oder ein Netzwerk ohne die Zustimmung des Benutzers sammelt und weitergibt. Es kann als versteckte Komponente echter Softwarepakete oder über herkömmliche Malware-Vektoren wie betrügerische Werbung, Websites, E-Mail, Instant-Messages sowie direkte File-Sharing-Verbindungen installiert werden. Im Gegensatz zu anderen Arten von Malware wird Spyware nicht nur von kriminellen Organisationen, sondern auch von skrupellosen Werbern und Unternehmen, genutzt, um Marktdaten von Nutzern ohne deren Zustimmung zu sammeln. Unabhängig von der Quelle wird Spyware vor dem Benutzer verborgen und ist oft schwer zu erkennen, kann jedoch zu Symptomen wie einer verschlechterten Systemleistung und einer hohen Häufigkeit unerwünschter Verhaltensweisen führen\cite{spy12}.
+
+\subparagraph{Phishing: }
+
+Phishing ist eine Art von Cyberkriminalität, bei der ein Ziel oder Ziele per E-Mail, Telefon oder SMS von jemandem kontaktiert werden, der sich als legitime Institution ausgibt, um Personen dazu zu bringen, sensible Daten wie persönlich identifizierbare Informationen, Bank- und Kreditkartendetails und Passwörter bereitzustellen. Die Informationen werden dann für den Zugriff auf wichtige Konten verwendet und können zu Identitätsdiebstahl und finanziellen Verlusten führen\cite{phishing17ph}.
+
+\subparagraph{Erpressung: }
+
+Bei der Erpressung geht es sich um Schadsoftware, die in fremde Rechner eindringt, somit wird die Daten auf der Festplatte des fremden Rechners so verschlüsselt, dass diese Daten für den Benutzer nicht mehr verfügbar sind Danach fordert der Angreifer für die Entschlüsselung der Daten fordert einen Geldbetrag, der über ein Online-Zahlungssystem entrichten ist\cite[48]{eckert2013sicherheit}.
+
+\subparagraph{Bot-Netze: }
+
+Unter der Begriff "`Bot-Netz"' versteht man, dass es eine Reihe verbundener Computer, die gemeinsam auf einer Aufgabe (wie z. B. Massenhafte Versand von E-Mails) abgezielt wurden\cite{botnetz17symantec}.
+
+\section{Technologien des Projektes}
+
+Für die Evaluierung des OWASP Zap Open API Plug-In sind verschiedene Technologien erforderlich. Die benötigten Technologien werden in diesem Abschnitt näher erläutert.
+
+\subsection{Objektorientierte Programmierung}
+
+Die objektorientierte Programmierung (OOP) bezieht sich auf eine Art von Computerprogrammierung (Softwaredesign), bei der Programmierer nicht nur den Datentyp einer Datenstruktur definieren, sondern auch die Arten von Operationen (Funktionen), die auf die Datenstruktur angewendet werden können. Auf diese Weise wird die Datenstruktur zu einem Objekt, das sowohl Daten als auch Funktionen enthält. Darüber hinaus können Programmierer Beziehungen zwischen einem Objekt und einem anderen erstellen. Zum Beispiel können Objekte Eigenschaften von anderen Objekten erben\cite{oop15beal}.
+
+\subsubsection{Java}
+
+Java ist eine universelle Programmiersprache, die von Sun Microsystems entwickelt wurde. Java definiert als objektorientierte Sprache ähnlich wie C ++, wird jedoch vereinfacht, um Sprachfunktionen zu eliminieren, die häufige Programmierfehler verursachen. Die Quellcodedateien (Dateien mit der Erweiterung \texttt{.java}) werden in ein Format namens Bytecode (Dateien mit der Erweiterung \texttt{.class}) kompiliert, das dann von einem Java-Interpreter ausgeführt werden kann. Ein kompilierter Java-Code kann auf den meisten Computern ausgeführt werden, da Java-Interpreter und Laufzeitumgebungen, die als Java Virtual Machines (VMs) bezeichnet werden, für die meisten Betriebssysteme vorhanden sind, einschließlich UNIX, Macintosh OS und Windows\cite{java18beal}.
+
+\subsection{RESTful Web Services}
+
+Representational State Transfer (REST) ist ein Architekturstil, der Einschränkungen wie die einheitliche Schnittstelle angibt, die bei Anwendung auf einen Webdienst wünschenswerte Eigenschaften wie Leistung, Skalierbarkeit und Änderbarkeit hervorbringen, mit denen Services im Web am besten funktionieren. Im REST-Architekturstil werden Daten und Funktionen als Ressourcen betrachtet und und der Zugriff erfolgt über URIs. Der REST-Architekturstil beschränkt die Architektur auf eine Client/Server-Architektur und ist so ausgelegt, dass ein zustandsloses Kommunikationsprotokoll (wie z. B. HTTP) verwendet wird. Im REST-Architektur-Stil tauschen Clients und Server Repräsentationen von Ressourcen unter Verwendung einer standardisierten Schnittstelle und eines standardisierten Protokolls aus. Die folgenden Prinzipien sorgen dafür, dass RESTful-Anwendungen einfach, leicht und schnell sind\cite{rws13od}.\\
+
+\textbf{Ressourcenidentifikation durch URI:} Ein RESTful Webservice macht eine Reihe von Ressourcen verfügbar, die die Ziele der Interaktion mit ihren Clients identifizieren. Ressourcen werden durch URIs identifiziert, die einen globalen Adressierungsraum für die Ressourcen- und Serviceerkennung bereitstellen.\\
+
+\textbf{Einheitliche Schnittstelle:} Ressourcen werden mit einem festen Satz von vier Operationen zum Erstellen, Lesen, Aktualisieren und Löschen bearbeitet: PUT, GET, POST und DELETE. \textbf{PUT} erstellt eine neue Ressource, die mit \textbf{DELETE} gelöscht werden kann. \textbf{GET} ruft den aktuellen Status einer Ressource in einer Darstellung ab. \textbf{POST} überträgt einen neuen Status auf eine Ressource.\\
+
+\textbf{Selbstbeschreibende Nachrichten:} Ressourcen sind von ihrer Darstellung entkoppelt, sodass auf ihren Inhalt in verschiedenen Formaten wie HTML, XML, Nur-Text, PDF, JPEG, JSON und anderen zugegriffen werden kann. Metadaten über die Ressource sind verfügbar und werden beispielsweise verwendet, um das Zwischenspeichern zu steuern, Übertragungsfehler zu erkennen, das geeignete Repräsentationsformat auszuhandeln und eine Authentifizierung oder Zugriffssteuerung durchzuführen.\\
+
+\textbf{Stateful Interaktionen durch Hyperlinks:} Jede Interaktion mit einer Ressource ist; Das heißt, Anforderungsnachrichten sind in sich geschlossen. Stateful Interaktionen basieren auf dem Konzept der expliziten Zustandsübertragung. Es gibt verschiedene Techniken, um den Status auszutauschen, z. B. URI-Umschreiben, Cookies und versteckte Formularfelder. Der Zustand kann in Antwortnachrichten eingebettet sein, um auf gültige zukünftige Zustände der Interaktion zu zeigen.
+
+\subsection{Microservice Architekturen}
+
+Microservices sind ein Modularisierungskonzept und dienen dazu, große Softwaresysteme in kleinere Teile zu unterteilen. Sie beeinflussen somit die Organisation und Entwicklung von Softwaresystemen. Microservices können unabhängig voneinander eingesetzt werden. Das heißt, dass Änderungen an einem Microservice unabhängig von Änderungen anderer Microservices in Produktion genommen werden können. Sie können in verschiedenen Technologien implementiert werden und es gibt keine Einschränkung für die Programmiersprache oder die Plattform\cite[45--46]{wolff2016microservices}.
+
+\subsubsection{Spring Boot}
+
+Das Spring Framework, das bereits seit über einem Jahrzehnt besteht, hat sich als Standardframework für die Entwicklung von Java-Anwendungen etabliert.
+
+\paragraph{Spring MVC Komponente}\mbox{}\\
+
+Das Spring Web MVC-Framework stellt eine Model-View-Controller - Architektur und fertige Komponenten bereit, mit denen flexible und lose gekoppelte Webanwendungen entwickelt werden können. Das MVC-Muster führt zu einer Trennung der verschiedenen Aspekte der Anwendung (Eingangslogik, Geschäftslogik und UI-Logik), während eine lose Kopplung zwischen diesen Elementen bereitgestellt wird\cite{tp12mvc}.
+
+\begin{itemize}
+	\item Das Modell kapselt die Anwendungsdaten und besteht im Allgemeinen aus POJO (Plain Old Java Object).
+	\item Die Ansicht ist verantwortlich für das Rendern der Modelldaten und generiert im Allgemeinen HTML-Ausgabe, die der Browser des Clients interpretieren kann.
+	\item Der Controller ist verantwortlich für die Verarbeitung von Benutzeranforderungen und das Erstellen eines geeigneten Modells und übergibt es an die Ansicht zum Rendern.
+\end{itemize}
+
+\paragraph{Spring Rest Docs}\mbox{}\\
+
+Spring REST Docs verwendet Snippets, die von Tests erstellt wurden, die mit Spring MVCs Testframework, Spring WebTestClient von WebFlux oder REST Assured 3 geschrieben wurden. Dieser Test-Driven-Ansatz hilft dabei, um die Genauigkeit der Service-Dokumentation zu gewährleisten. Das Ziel von Spring REST Docs ist es, Dokumentationen für RESTful Services zu erstellen, die genau und lesbar sind. Bei der Dokumentation eines RESTful Services geht es hauptsächlich um die Beschreibung seiner Ressourcen. Zwei wichtige Teile der Beschreibung jeder Ressource sind die Details der HTTP-Anforderungen, die sie verbraucht, und die HTTP-Antworten, die sie erzeugt\cite{srd18wilkinson}.
+
+\subsection{Modellbasierter Ansatz für REST-Schnittstellen}
+
+Für viele verschiedene Einsatzgebiete gibt es verschiedenen Modellierungssprachen für die Erstellung und Beschreibung von REST-Schnittstellen. In diesem Abschnitt wird auf den modellbasierten Ansatz OpenAPI eingehen.
+
+\subsubsection{Open API (Swagger)}
+
+OpenAPI (früher Swagger) ist ein API-Beschreibungsformat für REST-APIs. Mit einer OpenAPI-Datei kann das gesamte API beschrieben werden\cite{openapi13def};
+
+\begin{itemize}
+	
+	\item Verfügbare Endpunkte \texttt{(/user)} und Vorgänge für jeden Endpunkt \texttt{(GET /user, POST /user)},
+	
+	\item Ein- und Ausgabe für jede Operation,
+	
+	\item Authentifizierungsmethoden,
+	
+	\item Kontaktinformationen, Lizenzen, Nutzungsbedingungen und andere Informationen.
+	
+\end{itemize}
+
+\subsection{Open Source Werkzeug OWASP Zap}
+
+Der OWASP Zed Attack Proxy (ZAP) ist eines der beliebtesten kostenlosen Sicherheitstools der Welt und wird von Hunderten von internationalen Freiwilligen aktiv gepflegt. Es hilft automatisch bei der Entwicklung und beim Testen von Anwendungen Sicherheitslücken in Webanwendungen zu finden. Es ist auch ein großartiges Werkzeug für erfahrene Pentester für manuelle Sicherheitstests\cite{owasp18def}. Die wichtigsten Funktionen von ZAP sind\cite{owaspfunktionen18}:
+
+\subparagraph{Intercepting Proxy:}
+
+ZAP ermöglicht alle Anforderungen, die an eine Web-App gestellt werden und alle Antworten abzufangen und zu prüfen. Unter anderem können dadurch auch AJAX calls abgefangen werden.
+
+\subparagraph{Spider:}
+
+Spider können neue URLs auf Webseiten entdecken und aufrufen. Der Spider in ZAP überprüft alle gefundenen Links auf Sicherheitsprobleme.
+
+\subparagraph{Automatischer, aktiver Scan:}
+
+ZAP kann automatisiert Web-Apps auf Sicherheitslücken überprüfen und Angriffe durchführen. Diese Funktion dürfen nur für eigene Webanwendungen genutzt werden.
+
+\subparagraph{Passiver Scan:}
+
+Mit passiven Scans werden Webanwendungen überprüft, aber nicht angegriffen.
+
+\subparagraph{Forced Browse:}
+
+ZAP kann testen, ob bestimmte Verzeichnisse oder Dateien auf dem Webserver geöffnet werden können.
+
+\subparagraph{Fuzzing:}
+
+Mit dieser Technik werden ungültige und unerwartete Anfragen an den Webserver gesendet
+
+\subparagraph{Dynamic SSL Certificates:}
+
+ZAP kann SSL-Anfragen entschlüsseln. Dazu verwendet das Tool den Man-in-the-Middle-Ansatz.
+
+\subparagraph{Smartcard und Client Digital Certificates Support:}
+
+ZAP kann Smartcard-gestützte Webanwendungen testen, sowie TLS-Handshakes prüfen, zum Beispiel zwischen Mail-Servern
+
+\subparagraph{WebSockets:}
+
+Mit WebSockets lassen sich auch Anwendungen testen, die eine einzige TCP-Verbindung für die bidirektionale Kommunikation nutzen.
+
+\subparagraph{Skript-Unterstützung:}
+
+ZAP unterstützt verschiedene Skripte, zum Beispiel ECMAScript, Javascript, Zest, Groovy,  Python, Ruby und weitere.
+
+\subparagraph{Plug-n-Hack:}
+
+Diese Technologie wurde von Mozilla entwickelt, um festzulegen, wie Sicherheitstools wie ZAP mit Browsern zusammenarbeiten können, um optimale Sicherheitstests durchzuführen.
+
+\subparagraph{Powerful REST based API:}
+
+Webentwickler können eine eigene grafische Oberfläche für ZAP entwickeln, um das Tool dem eigenen Unternehmen anzupassen.
+
+\subparagraph{Add-Ons und Erweiterungen:}
+
+In ZAP lassen sich Erweiterungen integrieren, sowie Vorlagen für bestimmte Tests. Dazu steht ein eigener Shop zur Verfügung.
+
+\newpage\null\thispagestyle{empty}\newpage
