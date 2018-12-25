@@ -1,9 +1,9 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Kurzfassung}{viii}{chapter*.5}
+\contentsline {chapter}{Kurzfassung}{vii}{chapter*.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Danksagung}{x}{chapter*.6}
+\contentsline {chapter}{Danksagung}{ix}{chapter*.6}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}
 \defcounter {refsection}{0}\relax 
@@ -209,116 +209,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.9}Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest}{52}{section.4.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Einleitung}{53}{chapter.5}
+\contentsline {chapter}{\numberline {5}Evaluierung von Open API 2.0 Plug-In von OWASP ZAP}{53}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Einleitung}{54}{chapter.6}
+\contentsline {chapter}{\numberline {6}Vergleich und Bewertung zwischen Open API 2.0 und Open API 3.0}{54}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Einleitung}{55}{chapter.7}
+\contentsline {chapter}{\numberline {7}Fazit}{55}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Umgang mit Literatur}{56}{chapter.8}
+\contentsline {chapter}{Quellenverzeichnis}{56}{appendix*.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {8.0.0.0.1}Anmerkung:}{56}{paragraph.8.0.0.0.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}Allgemeines}{56}{section.8.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}Quellenverweise}{57}{section.8.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2.1}Das \texttt {\textbackslash cite} Makro}{57}{subsection.8.2.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2.2}Mehrfache Quellenangaben mit Zusatztexten}{57}{subsection.8.2.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2.3}Unterdr\IeC {\"u}ckung der R\IeC {\"u}ckverweise mit \texttt {\textbackslash citenobr}}{58}{subsection.8.2.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2.4}H\IeC {\"a}ufige Fehler}{58}{subsection.8.2.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.2.4.1}Verweise au\IeC {\ss }erhalb des Satzes}{58}{subsubsection.8.2.4.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.2.4.2}Verweise ohne vorangehendes Leerzeichen}{58}{subsubsection.8.2.4.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.2.4.3}Zitate}{58}{subsubsection.8.2.4.3}
-\babel@toc {english}{}
-\babel@toc {ngerman}{}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2.5}Umgang mit Sekund\IeC {\"a}rquellen}{59}{subsection.8.2.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.3}Quellenverzeichnis}{60}{section.8.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.3.1}Literaturdaten in BibTeX}{60}{subsection.8.3.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.3.1.1}Verwendung von \texttt {biblatex} und \texttt {biber}}{60}{subsubsection.8.3.1.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.3.2}Kategorien von Quellenangaben}{61}{subsection.8.3.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.3.3}Gedruckte Quellen (\textsf {literature})}{61}{subsection.8.3.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.3.3.1}\texttt {@book}}{63}{subsubsection.8.3.3.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.3.3.2}\texttt {@incollection}}{63}{subsubsection.8.3.3.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.3.3.3}\texttt {@inproceedings}}{64}{subsubsection.8.3.3.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.3.3.4}\texttt {@article}}{64}{subsubsection.8.3.3.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.3.3.5}\texttt {@thesis}}{65}{subsubsection.8.3.3.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {8.3.3.5.1}Dissertation (Doktorarbeit):}{65}{paragraph.8.3.3.5.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {8.3.3.5.2}Magister- oder Masterarbeit:}{65}{paragraph.8.3.3.5.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {8.3.3.5.3}Diplomarbeit:}{65}{paragraph.8.3.3.5.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {8.3.3.5.4}Bachelorarbeit:}{66}{paragraph.8.3.3.5.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.3.3.6}\texttt {@techreport}}{66}{subsubsection.8.3.3.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.3.3.7}\texttt {@manual}}{67}{subsubsection.8.3.3.7}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.3.3.8}\texttt {@standard}}{68}{subsubsection.8.3.3.8}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.3.3.9}\texttt {@patent}}{68}{subsubsection.8.3.3.9}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.3.3.10}\texttt {@misc}}{68}{subsubsection.8.3.3.10}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.3.4}Filme und audio-visuelle Medien (\textsf {avmedia})}{69}{subsection.8.3.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.3.4.1}\texttt {@audio}}{70}{subsubsection.8.3.4.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.3.4.2}\texttt {@image}}{70}{subsubsection.8.3.4.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.3.4.3}\texttt {@video}}{70}{subsubsection.8.3.4.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.3.4.4}\texttt {@movie}}{71}{subsubsection.8.3.4.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.3.4.5}Zeitangaben zu Musikaufnahmen und Filmen}{72}{subsubsection.8.3.4.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.3.5}Software (\textsf {software})}{72}{subsection.8.3.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.3.6}Online-Quellen (\textsf {online})}{72}{subsection.8.3.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.3.6.1}Beispiel: Wiki-Eintrag}{73}{subsubsection.8.3.6.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.3.7}Tipps zur Erstellung von BibTeX-Dateien}{73}{subsection.8.3.7}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.3.7.1}\texttt {month}-Attribut}{74}{subsubsection.8.3.7.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.3.7.2}\texttt {hyphenation}-Attribut}{74}{subsubsection.8.3.7.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.3.7.3}\texttt {edition}-Attribut}{74}{subsubsection.8.3.7.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.3.7.4}Vorsicht bei der \IeC {\"U}bernahme von fertigen BibTeX-Eintr\IeC {\"a}gen}{74}{subsubsection.8.3.7.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.3.7.5}H\IeC {\"a}ufige Fehler bei Quellenangaben}{75}{subsubsection.8.3.7.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.3.7.6}Listing aller Quellen}{75}{subsubsection.8.3.7.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.4}Plagiat und Paraphrase}{75}{section.8.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Quellenverzeichnis}{77}{appendix*.40}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{Literatur}{77}{section*.41}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{Audiovisuelle Medien}{83}{section*.42}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{Software}{83}{section*.43}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{Online-Quellen}{83}{section*.44}
+\contentsline {section}{Literatur}{56}{section*.39}
