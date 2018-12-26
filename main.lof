@@ -31,49 +31,51 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Ergebnis: Tabellenname\relax }}{39}{figure.caption.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Ergebnis: Spalten\relax }}{40}{figure.caption.16}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Ergebnis: Spalten\relax }}{39}{figure.caption.16}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.11}{\ignorespaces Ergebnis: Alle Daten in der Tabelle\relax }}{40}{figure.caption.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Adresse eingeben\relax }}{41}{figure.caption.18}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Adresse eingeben\relax }}{40}{figure.caption.18}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.13}{\ignorespaces Erfassung der Anfrage durch Burp\relax }}{41}{figure.caption.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Bearbeiten dem Wert\relax }}{42}{figure.caption.20}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Bearbeiten dem Wert\relax }}{41}{figure.caption.20}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.15}{\ignorespaces Suche nach dem Angriff in dem Quellcode\relax }}{42}{figure.caption.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Kopieren von URL f\IeC {\"u}r Browser\relax }}{43}{figure.caption.22}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Kopieren von URL f\IeC {\"u}r Browser\relax }}{42}{figure.caption.22}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.17}{\ignorespaces Pop-up im Browser anzeigen\relax }}{43}{figure.caption.23}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.18}{\ignorespaces Anfrage an den Server und Antwort von dem Server\relax }}{44}{figure.caption.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Die Weiterleitung zur Anmeldeseite\relax }}{45}{figure.caption.25}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Die Weiterleitung zur Anmeldeseite\relax }}{44}{figure.caption.25}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.20}{\ignorespaces Aufdeckung den Passw\IeC {\"o}rtern\relax }}{45}{figure.caption.26}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.21}{\ignorespaces xxe.php\relax }}{46}{figure.caption.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.22}{\ignorespaces POST Anfrage zu xxe.php\relax }}{47}{figure.caption.28}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces POST Anfrage zu xxe.php\relax }}{46}{figure.caption.28}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.23}{\ignorespaces Geparste XML-Daten\relax }}{47}{figure.caption.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Manipulierte Anfrage\relax }}{48}{figure.caption.30}
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Manipulierte Anfrage\relax }}{47}{figure.caption.30}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.25}{\ignorespaces Best\IeC {\"a}tigung der XXE-Schwachstelle\relax }}{48}{figure.caption.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.26}{\ignorespaces Anmeldung bei Webgoat\relax }}{49}{figure.caption.32}
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Anmeldung bei Webgoat\relax }}{48}{figure.caption.32}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.27}{\ignorespaces Anmeldung bei Webgoat\relax }}{49}{figure.caption.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.28}{\ignorespaces Burp Suite: AuthCookie Kontrolle 1\relax }}{50}{figure.caption.34}
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Burp Suite: AuthCookie Kontrolle 1\relax }}{49}{figure.caption.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.29}{\ignorespaces Burp Suite: AuthCookie Kontrolle 2\relax }}{50}{figure.caption.35}
+\contentsline {figure}{\numberline {4.29}{\ignorespaces Burp Suite: AuthCookie Kontrolle 2\relax }}{49}{figure.caption.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.30}{\ignorespaces Burp Suite: AuthCookie Kontrolle 3\relax }}{51}{figure.caption.36}
+\contentsline {figure}{\numberline {4.30}{\ignorespaces Burp Suite: AuthCookie Kontrolle 3\relax }}{50}{figure.caption.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.31}{\ignorespaces Authentifizierung mit dem Cookie\relax }}{51}{figure.caption.37}
+\contentsline {figure}{\numberline {4.31}{\ignorespaces Authentifizierung mit dem Cookie\relax }}{50}{figure.caption.37}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.32}{\ignorespaces OWASP ZAP GUI \IeC {\"U}berblick\relax }}{51}{figure.caption.38}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

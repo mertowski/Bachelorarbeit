@@ -199,22 +199,22 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.7.3}Testen Brute-Forcing-Passw\IeC {\"o}rter mit THC-Hydra}{43}{subsection.4.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.7.4}Testen von XML External Entities (XXE)}{46}{subsection.4.7.4}
+\contentsline {subsection}{\numberline {4.7.4}Testen von XML External Entities (XXE)}{45}{subsection.4.7.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.7.5}Testen von Fehlerhafte Authentifizierung mit Webgoat und Burp Suite}{48}{subsection.4.7.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.8}Automatisierte Penetrationstest}{51}{section.4.8}
+\contentsline {section}{\numberline {4.8}Automatisierte Penetrationstest}{50}{section.4.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.8.1}ZAP Penetration Testing: A simple Tutorial to Detect Vulnerabilities}{51}{subsection.4.8.1}
+\contentsline {subsection}{\numberline {4.8.1}ZAP Penetration Testing: Ein einfaches Tutorial zum Erkennen von Sicherheitsanf\IeC {\"a}lligkeiten}{51}{subsection.4.8.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.9}Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest}{52}{section.4.9}
+\contentsline {section}{\numberline {4.9}Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest}{51}{section.4.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Evaluierung von Open API 2.0 Plug-In von OWASP ZAP}{53}{chapter.5}
+\contentsline {chapter}{\numberline {5}Evaluierung von Open API 2.0 Plug-In von OWASP ZAP}{52}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Vergleich und Bewertung zwischen Open API 2.0 und Open API 3.0}{54}{chapter.6}
+\contentsline {chapter}{\numberline {6}Vergleich und Bewertung zwischen Open API 2.0 und Open API 3.0}{53}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Fazit}{55}{chapter.7}
+\contentsline {chapter}{\numberline {7}Fazit}{54}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Quellenverzeichnis}{56}{appendix*.38}
+\contentsline {chapter}{Quellenverzeichnis}{55}{appendix*.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Literatur}{56}{section*.39}
+\contentsline {section}{Literatur}{55}{section*.40}

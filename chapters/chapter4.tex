@@ -313,8 +313,6 @@ Man muss eine entsprechende Eingabe in die Webanwendung eingeben und die Anfrage
 
 Die Anfrage wird von Burp erfasst. Die HTTP-Anforderung wird auf der Intercept-Tab angezeigt. Es wird mit der rechten Maustaste auf die Anforderung geklickt, um das Kontextmenü aufzurufen und dann wird auf "`An Repeater senden"' geklickt.
 
-\newpage
-
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=11cm]{xssburp3.png}
@@ -331,8 +329,6 @@ Hier können verschiedene XSS-Payloads in das Eingabefeld eingegeben werden. Ver
 
 Es kann eingeschätzt werden, ob die Angriff in der Antwort unverändert bleibt. In diesem Fall ist die Anwendung für XSS-Angriffen anfällig. Die Antwort wird schnell über die Suchleiste unten im Antwortfenster gefunden. Der hervorgehobene Text ist das Ergebnis der Suche.
 
-\newpage
-
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=11cm]{xssburp5.png}
@@ -340,6 +336,8 @@ Es kann eingeschätzt werden, ob die Angriff in der Antwort unverändert bleibt.
 \end{figure}
 
 Hier wird auf "`Antwort im Browser anzeigen"' geklickt, um die URL zu kopieren. Danach wird im Pop-up Fenster auf "`Kopieren"' geklickt.
+
+\newpage
 
 \begin{figure}[h]
 	\centering
@@ -361,6 +359,8 @@ Es wird eine Textdatei namens \texttt{benutzers.txt} erstellt{najera2016kali}:
 
 In einem ersten Schritt wird analysiert, wie die Anmeldeanforderung gesendet wird und wie der Server darauf reagiert. Es wird Burp Suite verwendet, um eine Anmeldeanforderung in der Webanwendung zu erfassen\cite[144]{najera2016kali}:
 
+\newpage
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{bfa.png}
@@ -370,8 +370,6 @@ In einem ersten Schritt wird analysiert, wie die Anmeldeanforderung gesendet wir
 Wir können sehen, dass sich die Anfrage in \texttt{/dvwa/login.php} befindet und drei Variablen hat: \texttt{username}, \texttt{password}, and \texttt{login}.
 
 Wenn die Erfassung von Anforderungen beendet wird und das Ergebnis im Browser überprüft wird, kann festgestellt werden, dass die Antwort eine Weiterleitung zur Anmeldeseite ist\cite[144]{najera2016kali}:
-
-\newpage
 
 \begin{figure}[h]
 	\centering
@@ -402,6 +400,8 @@ Wenn eine Anwendung XML-Daten parst und das Ergebnis von geparstem XML in einer 
 
 Es wird den folgenden PHP-Code als xxe.php im Webserver-Stammordner gespeichert:
 
+\newpage
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=10cm]{xxeattacke.jpg}
@@ -409,8 +409,6 @@ Es wird den folgenden PHP-Code als xxe.php im Webserver-Stammordner gespeichert:
 \end{figure}
 
 Eine POST-Anforderung an die xxe.php-Datei mit XML-Daten gesendet, die im folgenden Screenshot gezeigt werden:
-
-\newpage
 
 \begin{figure}[h]
 	\centering
@@ -420,6 +418,8 @@ Eine POST-Anforderung an die xxe.php-Datei mit XML-Daten gesendet, die im folgen
 
 Hier soll beachtet werden, dass die Anwendung in der HTTP-Antwort einen Benutzernamen anzeigt, der bestätigt, dass die XML-Daten geparst werden.
 
+\newpage
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=10cm]{xxeattacke4.png}
@@ -427,8 +427,6 @@ Hier soll beachtet werden, dass die Anwendung in der HTTP-Antwort einen Benutzer
 \end{figure}
 
 Nun wird den XML-Daten eine interne Entität hinzugefügt und im \texttt{username} Element mit \&u verweist und die Anfrage erneut gesendet.
-
-\newpage
 
 \begin{figure}[h]
 	\centering
@@ -443,6 +441,8 @@ Hier soll beachtet nochmal werden, dass die Anwendung der interne Einheit auflö
 	\includegraphics[width=10cm]{xxeattacke6.jpg}
 	\caption{Bestätigung der XXE-Schwachstelle}
 \end{figure}
+
+\newpage
 
 \subsection{Testen von Fehlerhafte Authentifizierung mit Webgoat und Burp Suite}
 Dieses Tutorial stammt aus der Webseite Tutorialspoint\cite{tpfa15}.
@@ -470,8 +470,6 @@ Wenn mit den Anmeldeinformationen webgoat/webgoat angemeldet wird, wird in Burp 
 	\caption{Anmeldung bei Webgoat}
 \end{figure}
 
-\newpage
-
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=10cm]{fa3.jpg}
@@ -486,11 +484,12 @@ Wenn mit den Anmeldeinformationen aspect/aspect angemeldet wird, wird in Burp Su
 	\caption{Burp Suite: AuthCookie Kontrolle 2}
 \end{figure}
 
+\newpage
+
 Nun muss die AuthCookie Patterns analysiert werden. Die erste Hälfte \texttt{65432} ist für beide Authentifizierungen üblich. Daher sind wir jetzt daran interessiert, den letzten Teil der Authcookie-Werte zu analysieren, wie - \texttt{ubphcfx} für den Benutzer \texttt{webgoat} und \texttt{udfqtb} für den jeweiligen Aspektbenutzer.
 
 Wenn die AuthCookie-Werte genauer angesehen werden, hat der letzte Teil dieselbe Länge wie der Benutzername. Es ist daher offensichtlich, dass der Benutzername bei einer Verschlüsselungsmethode verwendet wird. Bei Versuchen und Fehlern / Brute-Force-Mechanismen wird festgestellt, dass nach der Umkehrung des Benutzernamens \texttt{webgoat}; es wird jetzt rausgefunden, dass es \texttt{taogbew} ist und dann wird das Zeichen vor dem Alphabet als AuthCookie d. h. \texttt{ubphcfx} verwendet.
 
-\newpage
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=10cm]{fa5.jpg}
@@ -507,11 +506,82 @@ Nach der Authentifizierung als Benutzer-Webgoat den AuthCookie-Wert geändert wi
 
 \section{Automatisierte Penetrationstest}
 
-Wie in der Abschnitt \ref{owaspzap-def} erwähnt, dass OWASP ZAP ein benutzerfreundliches integriertes Penetrationstest-Tool zum Auffinden von Schwachstellen in Webanwendungen ist. ZAP bietet automatisierte Scanner sowie eine Reihe von Tools, mit denen die Sicherheitslücken manuell gesucht werden können. In diesem Abschnitt wird gesehen, wie automatische Penetrationstests mit dem Sicherheitstools OWASP Zap durchgeführt werden.
+Wie in der Abschnitt \ref{owaspzap-def} erwähnt, dass OWASP ZAP ein benutzerfreundliches integriertes Penetrationstest-Tool zum Auffinden von Schwachstellen in Webanwendungen ist. ZAP bietet automatisierte Scanner sowie eine Reihe von Tools, mit denen die Sicherheitslücken manuell gesucht werden können. In diesem Abschnitt wird die OWASP ZAP-GUI vorgestellt und wird erfährt, wie automatische Penetrationstests mit dem Sicherheitstools OWASP Zap durchgeführt werden.
 
-\subsection{ZAP Penetration Testing: A simple Tutorial to Detect Vulnerabilities}
+\subsection{ZAP Penetration Testing: Ein einfaches Tutorial zum Erkennen von Sicherheitsanfälligkeiten}
 
-Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla blabla bla bla bla bla bla bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla. bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=12cm]{owaspzapgui.png}
+	\caption{OWASP ZAP GUI Überblick}
+\end{figure}
+
+Wie oben zu sehen, ist das GUI-Fenster in drei Hauptabschnitte unterteilt:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \section{Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest}
 
