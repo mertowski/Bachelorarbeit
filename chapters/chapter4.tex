@@ -506,9 +506,11 @@ Nach der Authentifizierung als Benutzer-Webgoat den AuthCookie-Wert geändert wi
 
 \section{Automatisierte Penetrationstest}
 
-Wie in der Abschnitt \ref{owaspzap-def} erwähnt, dass OWASP ZAP ein benutzerfreundliches integriertes Penetrationstest-Tool zum Auffinden von Schwachstellen in Webanwendungen ist. ZAP bietet automatisierte Scanner sowie eine Reihe von Tools, mit denen die Sicherheitslücken manuell gesucht werden können. In diesem Abschnitt wird die OWASP ZAP-GUI vorgestellt und wird erfährt, wie automatische Penetrationstests mit dem Sicherheitstools OWASP Zap durchgeführt werden.
+Wie in der Abschnitt \ref{owaspzap-def} erwähnt, dass OWASP ZAP ein benutzerfreundliches integriertes Penetrationstest-Tool zum Auffinden von Schwachstellen in Webanwendungen ist. ZAP bietet automatisierte Scanner sowie eine Reihe von Tools, mit denen die Sicherheitslücken automatisch gesucht werden können. In diesem Abschnitt wird die OWASP ZAP-GUI vorgestellt und wird erfährt, wie automatische Penetrationstests mit dem Sicherheitstools OWASP Zap durchgeführt werden. Außerdem bilden die in diesem Kapitel erläuterten Informationen die Basis für die in Kapitel \ref{cha:k5} vorgenommene Evaluierung des Open API 2.0 Plugins von OWASP ZAP und sind demzufolge für das Verständnis der Verwendung erforderlich.
 
-\subsection{ZAP Penetration Testing: Ein einfaches Tutorial zum Erkennen von Sicherheitsanfälligkeiten}
+\subsection{OWASP-ZAP Webanwendung Penetrationstest}
+
+\subsubsection{Die Vorstellung von OWASP ZAP Oberfläche}
 
 \begin{figure}[h]
 	\centering
@@ -516,76 +518,69 @@ Wie in der Abschnitt \ref{owaspzap-def} erwähnt, dass OWASP ZAP ein benutzerfre
 	\caption{OWASP ZAP GUI Überblick}
 \end{figure}
 
-Wie oben zu sehen, ist das GUI-Fenster in drei Hauptabschnitte unterteilt:
+Wie oben zu sehen, ist das GUI-Fenster in drei Hauptabschnitte unterteilt:\\
 
+\begin{flushleft}
+	\textbf{Linker Bereich:}\\
+\end{flushleft}
+Im linken Bereich des ZAP-Fensters werden die Dropdown-Schaltflächen "`Context"' und "`Sites"' angezeigt. Es kann vorkommen, dass mehrere Websites zum Scannen ausgewählt werden können. Diese Websites werden unter "`Sites"' angezeigt.
 
+\begin{flushleft}
+	\textbf{Rechter Bereich:}\\
+\end{flushleft}
+Hier gibt es einen URL-Abschnitt, in dem das Ziel für das Scannen angegeben werden müssen. Die Schaltfläche "`Attack"' startet den Angriff auf das Ziel und die Schaltfläche "`Stop"' stoppt den Angriff.
 
+\begin{flushleft}
+	\textbf{Unterer Bereich:}\\
+\end{flushleft}
+Dieser Abschnitt enthält sechs Tabs, die für die Darstellung der Aktivitäten während der Schwachstellensuche wichtig sind. Unter den Tabs befindet sich eine Fortschrittsleiste, in der der Scanfortschritt, die Anzahl der gesendeten Anforderungen und der Export der Details im CSV-Format angezeigt werden.\\
 
+Das Tab \textbf{"`History"'} zeigt die getesteten Websites an. In diesem Fall testen wir nur ein einzelnes Ziel, sodass im Verlaufsdatensatz ein einzelner Eintrag angezeigt wird.\\
 
+Auf das Tab \textbf{"`Search"'} kann der Tester Suche nach Mustern durchführen. Zum Beispiel wird alle GET-Anfragen abgefragt und wird dazu gehörende Informationen angezeigt.\\
 
+Auf das Tab \textbf{"`Alerts"'} können weitere Informationen zu den erkannten Sicherheitslücken des gescannten Ziels gefunden werden und die Ausgaben werden nach Schweregrad eingestuft.\\
 
+Auf das Tab \textbf{"`Spider"'} werden die Dateien angezeigt, die in der Webanwendung gecrawlt (erkannt) wurden. Durch das Spider wird die auf der Website residenten Verzeichnisse und Dateien ermittelt und für eine spätere Überprüfung auf Schwachstellen protokolliert werden.\\
 
+Das letzte Tab ist der \textbf{"`Active Scan"'}. Dies ist wichtig, um den Fortschritt des laufenden Scans in Echtzeit anzuzeigen, wobei jede verarbeitete Datei angezeigt wird.\\
 
+\subsubsection{Schneller Scan \& Angriff}
 
+Um den Schnellscan zu starten, wird die Adresse des Ziels in das Eingabefeld "`URL to attack"' eingegeben und wird auf die Schaltfläche "`Attack"' geklickt.
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=12cm]{owaspzapgui2.png}
+	\caption{URL zum Spider}
+	\label{quickscan2}
+\end{figure}
 
+Dadurch wird die gesamte Zielwebsite gesichtet und anschließend nach Schwachstellen durchsucht. Der Scan-Fortschritt und die gefundenen Seiten werden wie bei der Abbildung \ref{quickscan3} im unteren Fenster angezeigt.
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=12cm]{owaspzapgui3.png}
+	\caption{Spider Ergebnis}
+	\label{quickscan3}
+\end{figure}
 
+Wenn es fertig ist, wird auf "`Alerts"' geklickt, um Sicherheitsprobleme der Website wie folgendes anzuzeigen:
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=12cm]{owaspzapgui4.png}
+	\caption{Spider Ergebnis}
+	\label{quickscan4}
+\end{figure}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Jeder Ordner enthält verschiedene Arten von Sicherheitsproblemen, die für den Schweregrad farbcodiert sind. Durch Klicken auf den Ordner werden einzelne Probleme angezeigt, die für zusätzliche Informationen ausgewählt werden können. Es enthält nicht nur eine detaillierte Erklärung des Problems, sondern auch Empfehlungen zur Lösung des Problems enthält.
 
 \section{Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest}
 
+Der umfassende Test der manuellen Penetrationstests macht es zu einem sehr komplexen Prozess. Dieser Prozess erfordert während der gesamten Testdauer Teams von erfahrenen Testern, was es zu einer sehr teuren Option macht. Diese Tester müssen sehr erfahren sein, da sie alle Aufgaben manuell steuern müssen.
 
+Automatisiertes Testen ist eine sichere und einfache Methode, um alle Aufgaben im Zusammenhang mit dem Durchdringungstest durchzuführen. Da die meisten Aufgaben automatisiert sind, können Tests weniger zeitaufwändig sein als manuelle Tests. Die einfache Reproduzierbarkeit der Tests ist auch ein großer Vorteil gegenüber dem individuellen Ansatz beim manuellen Testen.
 
 
 
