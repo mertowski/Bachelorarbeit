@@ -44,3 +44,9 @@
 \contentsline {lstlisting}{\numberline {4.5}Aufdeckung von alle Daten in der Tabelle}{40}{lstlisting.4.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {lstlisting}{\numberline {4.6}Befehl durch Terminal}{45}{lstlisting.4.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {lstlisting}{\numberline {6.1}Version von Swagger}{57}{lstlisting.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {lstlisting}{\numberline {6.2}Version von Open API}{57}{lstlisting.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {lstlisting}{\numberline {6.3}Komponenten: securitySchemes - Beispiel}{57}{lstlisting.6.3}

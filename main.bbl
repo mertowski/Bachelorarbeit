@@ -73,6 +73,33 @@
       \verb https://www.avira.com/de/security-term/t/clickjacking/id/11
       \endverb
     \endentry
+    \entry{autovorteil99}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=c5c583fdbeb3d6fbcfb018cc7889f740}{%
+           family={Bach},
+           familyi={B\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{c5c583fdbeb3d6fbcfb018cc7889f740}
+      \strng{fullhash}{c5c583fdbeb3d6fbcfb018cc7889f740}
+      \strng{bibnamehash}{c5c583fdbeb3d6fbcfb018cc7889f740}
+      \strng{authorbibnamehash}{c5c583fdbeb3d6fbcfb018cc7889f740}
+      \strng{authornamehash}{c5c583fdbeb3d6fbcfb018cc7889f740}
+      \strng{authorfullhash}{c5c583fdbeb3d6fbcfb018cc7889f740}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Test Automation Snake Oil}}
+      \field{year}{1999}
+      \verb{urlraw}
+      \verb http://www.satisfice. com/articles/test_automation_snake_oil.pdf
+      \endverb
+      \verb{url}
+      \verb http://www.satisfice.%20com/articles/test_automation_snake_oil.pdf
+      \endverb
+    \endentry
     \entry{bacudio2011overview}{article}{}
       \name{author}{4}{}{%
         {{hash=37562f4807bb7b3d1d97b8f2d97d7acc}{%
@@ -513,6 +540,60 @@
       \field{title}{Handbuch IT-Sicherheit: Strategien, Grundlagen und Projekte}
       \field{year}{2003}
     \endentry
+    \entry{swagger20Github}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=f4b67075a2ba05b28136a77668794fb0}{%
+           family={Initiative},
+           familyi={I\bibinitperiod},
+           given={OpenAPI},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{f4b67075a2ba05b28136a77668794fb0}
+      \strng{fullhash}{f4b67075a2ba05b28136a77668794fb0}
+      \strng{bibnamehash}{f4b67075a2ba05b28136a77668794fb0}
+      \strng{authorbibnamehash}{f4b67075a2ba05b28136a77668794fb0}
+      \strng{authornamehash}{f4b67075a2ba05b28136a77668794fb0}
+      \strng{authorfullhash}{f4b67075a2ba05b28136a77668794fb0}
+      \field{sortinit}{I}
+      \field{sortinithash}{320bc8fe8101b9376f9f21cd507de0e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{OpenAPI Specification: Version 2.0}}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md
+      \endverb
+      \verb{url}
+      \verb https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md
+      \endverb
+    \endentry
+    \entry{openapi20Github}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=f4b67075a2ba05b28136a77668794fb0}{%
+           family={Initiative},
+           familyi={I\bibinitperiod},
+           given={OpenAPI},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{f4b67075a2ba05b28136a77668794fb0}
+      \strng{fullhash}{f4b67075a2ba05b28136a77668794fb0}
+      \strng{bibnamehash}{f4b67075a2ba05b28136a77668794fb0}
+      \strng{authorbibnamehash}{f4b67075a2ba05b28136a77668794fb0}
+      \strng{authornamehash}{f4b67075a2ba05b28136a77668794fb0}
+      \strng{authorfullhash}{f4b67075a2ba05b28136a77668794fb0}
+      \field{sortinit}{I}
+      \field{sortinithash}{320bc8fe8101b9376f9f21cd507de0e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{OpenAPI Specification: Version 3.0}}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md
+      \endverb
+      \verb{url}
+      \verb https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md
+      \endverb
+    \endentry
     \entry{infosec18}{misc}{}
       \name{author}{1}{}{%
         {{hash=2bffe9086637636442cddc70616be5b8}{%
@@ -538,33 +619,6 @@
       \endverb
       \verb{url}
       \verb https://resources.infosecinstitute.com/finding-and-exploiting-xxe-xml-external-entities-injection/#gref
-      \endverb
-    \endentry
-    \entry{owaspwasa18}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=2bffe9086637636442cddc70616be5b8}{%
-           family={Institute},
-           familyi={I\bibinitperiod},
-           given={Infosec},
-           giveni={I\bibinitperiod}}}%
-      }
-      \strng{namehash}{2bffe9086637636442cddc70616be5b8}
-      \strng{fullhash}{2bffe9086637636442cddc70616be5b8}
-      \strng{bibnamehash}{2bffe9086637636442cddc70616be5b8}
-      \strng{authorbibnamehash}{2bffe9086637636442cddc70616be5b8}
-      \strng{authornamehash}{2bffe9086637636442cddc70616be5b8}
-      \strng{authorfullhash}{2bffe9086637636442cddc70616be5b8}
-      \field{sortinit}{I}
-      \field{sortinithash}{320bc8fe8101b9376f9f21cd507de0e8}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{{Introduction to OWASP ZAP for Web Application Security Assessments}}
-      \field{year}{2018}
-      \verb{urlraw}
-      \verb https://resources.infosecinstitute.com/introduction-owasp-zap-web-application-security-assessments/#gref
-      \endverb
-      \verb{url}
-      \verb https://resources.infosecinstitute.com/introduction-owasp-zap-web-application-security-assessments/#gref
       \endverb
     \endentry
     \entry{int11sicher}{article}{}
@@ -647,6 +701,33 @@
       \field{year}{2009}
       \field{pages}{460\bibrangedash 464}
       \range{pages}{5}
+    \endentry
+    \entry{openapi2u317}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=df074bfbdadd7929d740a836c8d0bc90}{%
+           family={Koberger},
+           familyi={K\bibinitperiod},
+           given={Gregory},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{df074bfbdadd7929d740a836c8d0bc90}
+      \strng{fullhash}{df074bfbdadd7929d740a836c8d0bc90}
+      \strng{bibnamehash}{df074bfbdadd7929d740a836c8d0bc90}
+      \strng{authorbibnamehash}{df074bfbdadd7929d740a836c8d0bc90}
+      \strng{authornamehash}{df074bfbdadd7929d740a836c8d0bc90}
+      \strng{authorfullhash}{df074bfbdadd7929d740a836c8d0bc90}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{A Visual Guide to What's New in Swagger 3.0}}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://blog.readme.io/an-example-filled-guide-to-swagger-3-2/
+      \endverb
+      \verb{url}
+      \verb https://blog.readme.io/an-example-filled-guide-to-swagger-3-2/
+      \endverb
     \endentry
     \entry{hoepner2014trends}{article}{}
       \name{author}{4}{}{%

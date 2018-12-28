@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bcf:controlfile version="3.4" bltxversion="3.10" xmlns:bcf="https://sourceforge.net/projects/biblatex">
+<bcf:controlfile version="3.4" bltxversion="3.11" xmlns:bcf="https://sourceforge.net/projects/biblatex">
   <!-- BIBER OPTIONS -->
   <bcf:options component="biber" type="global">
     <bcf:option type="singlevalued">
@@ -360,6 +360,7 @@
     <bcf:option datatype="boolean">uniquework</bcf:option>
     <bcf:option datatype="boolean">uniqueprimaryauthor</bcf:option>
     <bcf:option datatype="boolean">defernumbers</bcf:option>
+    <bcf:option datatype="boolean">locallabelwidth</bcf:option>
     <bcf:option datatype="boolean">bibwarn</bcf:option>
     <bcf:option datatype="boolean">useprefix</bcf:option>
     <bcf:option datatype="boolean">defernums</bcf:option>
@@ -1561,9 +1562,19 @@
       <bcf:field>eprinttype</bcf:field>
       <bcf:field>eventday</bcf:field>
       <bcf:field>eventendday</bcf:field>
+      <bcf:field>eventendhour</bcf:field>
+      <bcf:field>eventendminute</bcf:field>
       <bcf:field>eventendmonth</bcf:field>
+      <bcf:field>eventendseason</bcf:field>
+      <bcf:field>eventendsecond</bcf:field>
+      <bcf:field>eventendtimezone</bcf:field>
       <bcf:field>eventendyear</bcf:field>
+      <bcf:field>eventhour</bcf:field>
+      <bcf:field>eventminute</bcf:field>
       <bcf:field>eventmonth</bcf:field>
+      <bcf:field>eventseason</bcf:field>
+      <bcf:field>eventsecond</bcf:field>
+      <bcf:field>eventtimezone</bcf:field>
       <bcf:field>eventyear</bcf:field>
       <bcf:field>eventtitle</bcf:field>
       <bcf:field>eventtitleaddon</bcf:field>
@@ -1595,9 +1606,19 @@
       <bcf:field>eprinttype</bcf:field>
       <bcf:field>eventday</bcf:field>
       <bcf:field>eventendday</bcf:field>
+      <bcf:field>eventendhour</bcf:field>
+      <bcf:field>eventendminute</bcf:field>
       <bcf:field>eventendmonth</bcf:field>
+      <bcf:field>eventendseason</bcf:field>
+      <bcf:field>eventendsecond</bcf:field>
+      <bcf:field>eventendtimezone</bcf:field>
       <bcf:field>eventendyear</bcf:field>
+      <bcf:field>eventhour</bcf:field>
+      <bcf:field>eventminute</bcf:field>
       <bcf:field>eventmonth</bcf:field>
+      <bcf:field>eventseason</bcf:field>
+      <bcf:field>eventsecond</bcf:field>
+      <bcf:field>eventtimezone</bcf:field>
       <bcf:field>eventyear</bcf:field>
       <bcf:field>eventtitle</bcf:field>
       <bcf:field>eventtitleaddon</bcf:field>
@@ -1639,9 +1660,19 @@
       <bcf:field>eprinttype</bcf:field>
       <bcf:field>eventday</bcf:field>
       <bcf:field>eventendday</bcf:field>
+      <bcf:field>eventendhour</bcf:field>
+      <bcf:field>eventendminute</bcf:field>
       <bcf:field>eventendmonth</bcf:field>
+      <bcf:field>eventendseason</bcf:field>
+      <bcf:field>eventendsecond</bcf:field>
+      <bcf:field>eventendtimezone</bcf:field>
       <bcf:field>eventendyear</bcf:field>
+      <bcf:field>eventhour</bcf:field>
+      <bcf:field>eventminute</bcf:field>
       <bcf:field>eventmonth</bcf:field>
+      <bcf:field>eventseason</bcf:field>
+      <bcf:field>eventsecond</bcf:field>
+      <bcf:field>eventtimezone</bcf:field>
       <bcf:field>eventyear</bcf:field>
       <bcf:field>eventtitle</bcf:field>
       <bcf:field>eventtitleaddon</bcf:field>
@@ -1715,6 +1746,24 @@
       <bcf:entrytype>unpublished</bcf:entrytype>
       <bcf:field>addendum</bcf:field>
       <bcf:field>author</bcf:field>
+      <bcf:field>eventday</bcf:field>
+      <bcf:field>eventendday</bcf:field>
+      <bcf:field>eventendhour</bcf:field>
+      <bcf:field>eventendminute</bcf:field>
+      <bcf:field>eventendmonth</bcf:field>
+      <bcf:field>eventendseason</bcf:field>
+      <bcf:field>eventendsecond</bcf:field>
+      <bcf:field>eventendtimezone</bcf:field>
+      <bcf:field>eventendyear</bcf:field>
+      <bcf:field>eventhour</bcf:field>
+      <bcf:field>eventminute</bcf:field>
+      <bcf:field>eventmonth</bcf:field>
+      <bcf:field>eventseason</bcf:field>
+      <bcf:field>eventsecond</bcf:field>
+      <bcf:field>eventtimezone</bcf:field>
+      <bcf:field>eventyear</bcf:field>
+      <bcf:field>eventtitle</bcf:field>
+      <bcf:field>eventtitleaddon</bcf:field>
       <bcf:field>howpublished</bcf:field>
       <bcf:field>language</bcf:field>
       <bcf:field>location</bcf:field>
@@ -1723,6 +1772,8 @@
       <bcf:field>subtitle</bcf:field>
       <bcf:field>title</bcf:field>
       <bcf:field>titleaddon</bcf:field>
+      <bcf:field>type</bcf:field>
+      <bcf:field>venue</bcf:field>
     </bcf:entryfields>
     <bcf:constraints>
       <bcf:entrytype>article</bcf:entrytype>
@@ -1923,58 +1974,57 @@
     <bcf:datasource type="file" datatype="bibtex">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="2">furnell2008securing</bcf:citekey>
-    <bcf:citekey order="3">eckert2013sicherheit</bcf:citekey>
+    <bcf:citekey order="3">furnell2008securing</bcf:citekey>
     <bcf:citekey order="4">eckert2013sicherheit</bcf:citekey>
-    <bcf:citekey order="5">wheeler2013offene</bcf:citekey>
-    <bcf:citekey order="6">eckert2013sicherheit</bcf:citekey>
+    <bcf:citekey order="5">eckert2013sicherheit</bcf:citekey>
+    <bcf:citekey order="6">wheeler2013offene</bcf:citekey>
     <bcf:citekey order="7">eckert2013sicherheit</bcf:citekey>
-    <bcf:citekey order="8">so18tech</bcf:citekey>
-    <bcf:citekey order="9">eckert2013sicherheit</bcf:citekey>
+    <bcf:citekey order="8">eckert2013sicherheit</bcf:citekey>
+    <bcf:citekey order="9">so18tech</bcf:citekey>
     <bcf:citekey order="10">eckert2013sicherheit</bcf:citekey>
-    <bcf:citekey order="11">broy2013informatik</bcf:citekey>
-    <bcf:citekey order="12">blieberger2013informatik</bcf:citekey>
-    <bcf:citekey order="13">infstd</bcf:citekey>
-    <bcf:citekey order="14">hoepner2014trends</bcf:citekey>
-    <bcf:citekey order="15">int11sicher</bcf:citekey>
-    <bcf:citekey order="16">eckert2013sicherheit</bcf:citekey>
-    <bcf:citekey order="17">eberspacher1994sichere</bcf:citekey>
-    <bcf:citekey order="18">eckert2013sicherheit</bcf:citekey>
+    <bcf:citekey order="11">eckert2013sicherheit</bcf:citekey>
+    <bcf:citekey order="12">broy2013informatik</bcf:citekey>
+    <bcf:citekey order="13">blieberger2013informatik</bcf:citekey>
+    <bcf:citekey order="14">infstd</bcf:citekey>
+    <bcf:citekey order="15">hoepner2014trends</bcf:citekey>
+    <bcf:citekey order="16">int11sicher</bcf:citekey>
+    <bcf:citekey order="17">eckert2013sicherheit</bcf:citekey>
+    <bcf:citekey order="18">eberspacher1994sichere</bcf:citekey>
     <bcf:citekey order="19">eckert2013sicherheit</bcf:citekey>
-    <bcf:citekey order="20">spies1985datenschutz</bcf:citekey>
-    <bcf:citekey order="21">eckert2013sicherheit</bcf:citekey>
-    <bcf:citekey order="22">gora2003handbuch</bcf:citekey>
-    <bcf:citekey order="23">dtint2007</bcf:citekey>
-    <bcf:citekey order="24">eckert2013sicherheit</bcf:citekey>
-    <bcf:citekey order="25">secupedia11</bcf:citekey>
-    <bcf:citekey order="26">dsba2018</bcf:citekey>
-    <bcf:citekey order="27">nowey2011einleitung</bcf:citekey>
-    <bcf:citekey order="28">eckert2013sicherheit</bcf:citekey>
+    <bcf:citekey order="20">eckert2013sicherheit</bcf:citekey>
+    <bcf:citekey order="21">spies1985datenschutz</bcf:citekey>
+    <bcf:citekey order="22">eckert2013sicherheit</bcf:citekey>
+    <bcf:citekey order="23">gora2003handbuch</bcf:citekey>
+    <bcf:citekey order="24">dtint2007</bcf:citekey>
+    <bcf:citekey order="25">eckert2013sicherheit</bcf:citekey>
+    <bcf:citekey order="26">secupedia11</bcf:citekey>
+    <bcf:citekey order="27">dsba2018</bcf:citekey>
+    <bcf:citekey order="28">nowey2011einleitung</bcf:citekey>
     <bcf:citekey order="29">eckert2013sicherheit</bcf:citekey>
-    <bcf:citekey order="30">nowey2011einleitung</bcf:citekey>
+    <bcf:citekey order="30">eckert2013sicherheit</bcf:citekey>
     <bcf:citekey order="31">nowey2011einleitung</bcf:citekey>
-    <bcf:citekey order="32">hack17</bcf:citekey>
-    <bcf:citekey order="33">hack11</bcf:citekey>
-    <bcf:citekey order="34">eckert2013sicherheit</bcf:citekey>
-    <bcf:citekey order="35">scriptkiddie11</bcf:citekey>
-    <bcf:citekey order="36">nsa14</bcf:citekey>
-    <bcf:citekey order="37">spy12</bcf:citekey>
-    <bcf:citekey order="38">phishing17ph</bcf:citekey>
-    <bcf:citekey order="39">eckert2013sicherheit</bcf:citekey>
-    <bcf:citekey order="40">botnetz17symantec</bcf:citekey>
-    <bcf:citekey order="41">oop15beal</bcf:citekey>
-    <bcf:citekey order="42">java18beal</bcf:citekey>
-    <bcf:citekey order="43">rws13od</bcf:citekey>
-    <bcf:citekey order="44">wolff2016microservices</bcf:citekey>
-    <bcf:citekey order="45">tp12mvc</bcf:citekey>
-    <bcf:citekey order="46">srd18wilkinson</bcf:citekey>
-    <bcf:citekey order="47">openapi13def</bcf:citekey>
-    <bcf:citekey order="48">owasp18def</bcf:citekey>
-    <bcf:citekey order="49">owaspfunktionen18</bcf:citekey>
-    <bcf:citekey order="50">owasp17top10</bcf:citekey>
+    <bcf:citekey order="32">nowey2011einleitung</bcf:citekey>
+    <bcf:citekey order="33">hack17</bcf:citekey>
+    <bcf:citekey order="34">hack11</bcf:citekey>
+    <bcf:citekey order="35">eckert2013sicherheit</bcf:citekey>
+    <bcf:citekey order="36">scriptkiddie11</bcf:citekey>
+    <bcf:citekey order="37">nsa14</bcf:citekey>
+    <bcf:citekey order="38">spy12</bcf:citekey>
+    <bcf:citekey order="39">phishing17ph</bcf:citekey>
+    <bcf:citekey order="40">eckert2013sicherheit</bcf:citekey>
+    <bcf:citekey order="41">botnetz17symantec</bcf:citekey>
+    <bcf:citekey order="42">oop15beal</bcf:citekey>
+    <bcf:citekey order="43">java18beal</bcf:citekey>
+    <bcf:citekey order="44">rws13od</bcf:citekey>
+    <bcf:citekey order="45">wolff2016microservices</bcf:citekey>
+    <bcf:citekey order="46">tp12mvc</bcf:citekey>
+    <bcf:citekey order="47">srd18wilkinson</bcf:citekey>
+    <bcf:citekey order="48">openapi13def</bcf:citekey>
+    <bcf:citekey order="49">owasp18def</bcf:citekey>
+    <bcf:citekey order="50">owaspfunktionen18</bcf:citekey>
     <bcf:citekey order="51">owasp17top10</bcf:citekey>
-    <bcf:citekey order="52">vcinj16</bcf:citekey>
-    <bcf:citekey order="53">owasp17top10</bcf:citekey>
+    <bcf:citekey order="52">owasp17top10</bcf:citekey>
+    <bcf:citekey order="53">vcinj16</bcf:citekey>
     <bcf:citekey order="54">owasp17top10</bcf:citekey>
     <bcf:citekey order="55">owasp17top10</bcf:citekey>
     <bcf:citekey order="56">owasp17top10</bcf:citekey>
@@ -2011,43 +2061,49 @@
     <bcf:citekey order="87">owasp17top10</bcf:citekey>
     <bcf:citekey order="88">owasp17top10</bcf:citekey>
     <bcf:citekey order="89">owasp17top10</bcf:citekey>
-    <bcf:citekey order="90">zaed08</bcf:citekey>
+    <bcf:citekey order="90">owasp17top10</bcf:citekey>
     <bcf:citekey order="91">zaed08</bcf:citekey>
-    <bcf:citekey order="92">cj16</bcf:citekey>
-    <bcf:citekey order="93">cjd13</bcf:citekey>
+    <bcf:citekey order="92">zaed08</bcf:citekey>
+    <bcf:citekey order="93">cj16</bcf:citekey>
     <bcf:citekey order="94">cjd13</bcf:citekey>
     <bcf:citekey order="95">cjd13</bcf:citekey>
     <bcf:citekey order="96">cjd13</bcf:citekey>
-    <bcf:citekey order="97">northcutt2006</bcf:citekey>
-    <bcf:citekey order="98">pt03bsi</bcf:citekey>
-    <bcf:citekey order="99">meucci2008owasp</bcf:citekey>
-    <bcf:citekey order="100">bacudio2011overview</bcf:citekey>
-    <bcf:citekey order="101">ke2009using</bcf:citekey>
-    <bcf:citekey order="102">wack2003guideline</bcf:citekey>
-    <bcf:citekey order="103">osborne2006cheat</bcf:citekey>
-    <bcf:citekey order="104">yeo2013using</bcf:citekey>
-    <bcf:citekey order="105">scarfone2008technical</bcf:citekey>
-    <bcf:citekey order="106">bwgtesting16</bcf:citekey>
+    <bcf:citekey order="97">cjd13</bcf:citekey>
+    <bcf:citekey order="98">northcutt2006</bcf:citekey>
+    <bcf:citekey order="99">pt03bsi</bcf:citekey>
+    <bcf:citekey order="100">meucci2008owasp</bcf:citekey>
+    <bcf:citekey order="101">bacudio2011overview</bcf:citekey>
+    <bcf:citekey order="102">ke2009using</bcf:citekey>
+    <bcf:citekey order="103">wack2003guideline</bcf:citekey>
+    <bcf:citekey order="104">osborne2006cheat</bcf:citekey>
+    <bcf:citekey order="105">yeo2013using</bcf:citekey>
+    <bcf:citekey order="106">scarfone2008technical</bcf:citekey>
     <bcf:citekey order="107">bwgtesting16</bcf:citekey>
-    <bcf:citekey order="108">bwgwebtesting07</bcf:citekey>
-    <bcf:citekey order="109">tiller2004ethical</bcf:citekey>
-    <bcf:citekey order="110">whitaker2005penetration</bcf:citekey>
-    <bcf:citekey order="111">bwgwebtesting07</bcf:citekey>
-    <bcf:citekey order="112">bwgprole18</bcf:citekey>
-    <bcf:citekey order="113">ali2011pt</bcf:citekey>
-    <bcf:citekey order="114">bwgwebtesting07</bcf:citekey>
-    <bcf:citekey order="115">pt03bsi</bcf:citekey>
+    <bcf:citekey order="108">bwgtesting16</bcf:citekey>
+    <bcf:citekey order="109">bwgwebtesting07</bcf:citekey>
+    <bcf:citekey order="110">tiller2004ethical</bcf:citekey>
+    <bcf:citekey order="111">whitaker2005penetration</bcf:citekey>
+    <bcf:citekey order="112">bwgwebtesting07</bcf:citekey>
+    <bcf:citekey order="113">bwgprole18</bcf:citekey>
+    <bcf:citekey order="114">ali2011pt</bcf:citekey>
+    <bcf:citekey order="115">bwgwebtesting07</bcf:citekey>
     <bcf:citekey order="116">pt03bsi</bcf:citekey>
-    <bcf:citekey order="117">ramadhan17sqlinj</bcf:citekey>
-    <bcf:citekey order="118">portswigger12</bcf:citekey>
-    <bcf:citekey order="119">najera2016kali</bcf:citekey>
+    <bcf:citekey order="117">pt03bsi</bcf:citekey>
+    <bcf:citekey order="118">ramadhan17sqlinj</bcf:citekey>
+    <bcf:citekey order="119">portswigger12</bcf:citekey>
     <bcf:citekey order="120">najera2016kali</bcf:citekey>
     <bcf:citekey order="121">najera2016kali</bcf:citekey>
     <bcf:citekey order="122">najera2016kali</bcf:citekey>
     <bcf:citekey order="123">najera2016kali</bcf:citekey>
     <bcf:citekey order="124">najera2016kali</bcf:citekey>
-    <bcf:citekey order="125">infosec18</bcf:citekey>
-    <bcf:citekey order="126">tpfa15</bcf:citekey>
+    <bcf:citekey order="125">najera2016kali</bcf:citekey>
+    <bcf:citekey order="126">infosec18</bcf:citekey>
+    <bcf:citekey order="127">tpfa15</bcf:citekey>
+    <bcf:citekey order="128">autovorteil99</bcf:citekey>
+    <bcf:citekey order="129">swagger20Github</bcf:citekey>
+    <bcf:citekey order="129">openapi20Github</bcf:citekey>
+    <bcf:citekey order="130">openapi2u317</bcf:citekey>
+    <bcf:citekey order="131">openapi2u317</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

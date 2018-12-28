@@ -205,7 +205,7 @@ Im Nachfolgenden werden Sql Injektion mit SQLiv und SQLMAP nach dem Tutorial von
 
 Vor dem Injektionsangriff müssen wir natürlich sicherstellen, dass der Server oder das Ziel eine Sicherheitslücke in der Datenbank hat. Um Sicherheitslücken in Datenbanken zu finden, können wir verschiedene Methoden verwenden. Unter ihnen wird Google Dorking hauptsächlich von Hackern und Penetrationstestern verwendet. Glücklicherweise gibt es ein Werkzeug, das dies automatisch erledigt. Das Tool muss jedoch erst installiert werden. Das Tool heißt SQLiv (SQL Injection Vulnerability Scanner).\\
 
-\textbf{Schritt 1: Finden von SQL-Injection'-Schwachstelle}
+\textbf{Schritt 1: Finden von SQL-Injection-Schwachstelle}
 
 Es wird Google Dorking verwendet, um die SQL-Injektionslücke in Zielen zu suchen und zu finden. SQLiv durchsucht jedes einzelne Ziel und sucht nach einer E-Commerce-Sicherheitsschwachstelle unter dem folgenden URL-Muster \texttt{''item.php?id=''}.\\
 
@@ -578,11 +578,41 @@ Jeder Ordner enthält verschiedene Arten von Sicherheitsproblemen, die für den 
 
 \section{Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest}
 
-Beim Penetrationstest kann der Tester entweder manuelle oder automatisierte oder beide Methoden anwenden, um die Schwachstellen in der Webanwendung zu ermitteln. Die Methoden der Tester basieren auf ihren Fähigkeiten und Kenntnissen. Es gibt jedoch einige Faktoren, z. B. welche Methode wirksam ist, weniger Zeitverwirrung und Zuverlässigkeit in Betracht gezogen werden sollten, bevor sie angewendet werden.
+Beim Penetrationstest kann der Tester entweder manuelle oder automatisierte oder beide Methoden anwenden, um die Schwachstellen in der Webanwendung zu ermitteln. Die Methoden der Tester basieren auf ihren Fähigkeiten und Kenntnissen. Es gibt jedoch einige Faktoren, z. B. welche Methode wirksam ist, weniger Zeitverwirrung und Zuverlässigkeit in Betracht gezogen werden sollten, bevor sie angewendet werden. Sowohl manuelle als auch automatisierte Testansätze haben Vor- und Nachteile. Ein Anwendungskontext sollte bei der Entscheidung helfen, welcher der geeignetere ist. Der Kontext umfasst Folgendes: Wie groß ist die Anwendung, wie hoch ist das Budget des Projekts oder wann soll es freigegeben werden? 
 
-Der umfassende Test der manuellen Penetrationstests macht es zu einem sehr komplexen Prozess. Dieser Prozess erfordert während der gesamten Testdauer Teams von erfahrenen Testern, was es zu einer sehr teuren Option macht. Diese Tester müssen sehr erfahren sein, da sie alle Aufgaben manuell steuern müssen.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% positives - manual
+Die Einrichtzeit bei dem manuellen Testen ist im Vergleich zum automatisierten Testen kürzer. Darüber hinaus ist es möglich, während aller Entwicklungsphasen problemlos manuell zu testen, da es keine Einschränkungen gibt, was für einen manuellen Test geeignet ist. 
 
-Automatisiertes Testen ist eine sichere und einfache Methode, um alle Aufgaben im Zusammenhang mit dem Durchdringungstest durchzuführen. Da die meisten Aufgaben automatisiert sind, können Tests weniger zeitaufwändig sein als manuelle Tests. Die einfache Reproduzierbarkeit der Tests ist auch ein großer Vorteil gegenüber dem individuellen Ansatz beim manuellen Testen.
+%%negativ - manual
+Der umfassende Test der manuellen Penetrationstests macht es zu einem sehr komplexen Prozess. Die wiederholte Aufgaben, die während des manuellen Tests ausgeführt werden, können zu ungenauen oder falschen Ergebnissen führen.  Dieser Prozess erfordert während der gesamten Testdauer ein Team von erfahrenen Testern, was es zu einer sehr teuren Option macht. Diese Tester müssen sehr erfahren sein, da sie alle Aufgaben manuell steuern müssen. Bei automatisierten Anwendungssicherheitstests wird weniger Personal benötigt, um das Scannen und die Analyse durchzuführen.
+
+%%positives - auto
+Automatisiertes Testen bietet Vorteile für größere Projekte, da die anfänglichen Kosten für die Automatisierung und die Testwartung sehr hoch sein können. Automatisierung hilft dabei, menschliche Fehler zu vermeiden - einige Fehler, die bei manuellen Tests gemacht werden, können reduziert werden. Dies betrifft Fehler, die durch die Durchführung einer langen Liste alltäglicher Aktivitäten entstanden sind. Automatisiertes Testen ist eine sichere und einfache Methode, um alle Aufgaben im Zusammenhang mit dem Durchdringungstest durchzuführen. Da die meisten Aufgaben automatisiert sind, können Tests weniger zeitaufwändig sein als manuelle Tests. Die einfache Reproduzierbarkeit der Tests ist auch ein großer Vorteil gegenüber dem individuellen Ansatz beim manuellen Testen.
+
+Automatisierte Tests sind schneller als manuelle Tests. Da die Automatisierte Test schneller ist, werden die Ergebnisse auch schneller akkumuliert. Sicherheitsberichte werden automatisch generiert und können zur Offline-Prüfung als XML-, PDF- oder HTML-Dateien exportiert werden.
+
+Automatisierung kann zu den folgenden Kostensenkungen führen. Die Kosten für: 
+
+\begin{itemize} 
+	\item die Entwicklung automatisierter Tests.
+	\item die Verbesserung der Tests, wenn sich das Produkt ändert.
+	\item die Überprüfung der Testergebnisse.
+\end{itemize} 
+
+\cite{autovorteil99}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+
+
+
 
 
 
