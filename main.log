@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2018.10.10)  28 DEC 2018 01:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2018.10.10)  29 DEC 2018 03:41
 entering extended mode
 **./main.tex
 (main.tex
@@ -36,8 +36,8 @@ Class hgbthesis Warning: Unknown document option 'fontsize=12pt'. on input line
 
 (/usr/local/share/miktex-texmf/tex/latex/base/book.cls
 Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/share/miktex-texmf/tex/latex/base/bk11.clo
-File: bk11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(/usr/local/share/miktex-texmf/tex/latex/base/bk12.clo
+File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count83
 \c@chapter=\count84
@@ -1213,11 +1213,7 @@ File: english.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
 ) (main.aux (front/kurzfassung.aux) (front/vorwort.aux) (chapters/einleitung.au
 x)
 (chapters/chapter2.aux) (chapters/chapter3.aux) (chapters/chapter4.aux)
-(chapters/chapter5.aux) (chapters/chapter6.aux
-
-LaTeX Warning: Label `LaTeXCode:openapi3.0-1' multiply defined.
-
-) (chapters/chapter7.aux) (back/messbox.aux))
+(chapters/chapter5.aux) (chapters/chapter6.aux) (chapters/chapter7.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
@@ -1265,14 +1261,14 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 * \oddsidemargin=18.77882pt
 * \evensidemargin=18.77882pt
 * \topmargin=-1.71387pt
-* \headheight=25.6pt
+* \headheight=26.5pt
 * \headsep=19.8738pt
-* \topskip=11.0pt
-* \footskip=27.46295pt
-* \marginparwidth=53.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=38.0pt
 * \marginparsep=7.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -1383,53 +1379,49 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.164 ...e {4.4.1}Black-Box}{31}{subsection.4.4.1}
+l.160 ...e der Penetrationstests}{34}{section.4.3}
                                                    [1
 
 {/home/myu/.miktex/texmfs/data/pdftex/config/pdftex.map}]
 Package tocbasic Info: Using my definition of `\numberline' on input line 216.
 Package tocbasic Info: Using my definition of `\numberline' on input line 218.
-Package tocbasic Info: Using my definition of `\numberline' on input line 226.
-Package tocbasic Info: Using my definition of `\numberline' on input line 228.
+ [2]
+Package tocbasic Info: Using my definition of `\numberline' on input line 230.
+Package tocbasic Info: Using my definition of `\numberline' on input line 232.
 )
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [2] (main.lof [3
-
-])
+ [3] (main.lof)
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
- [4] (main.lot)
+ [4
+
+] [5] (main.lot)
 \tf@lot=\write8
 \openout8 = `main.lot'.
-
- [5
-
-]
-(main.lol)
-\tf@lol=\write9
-\openout9 = `main.lol'.
 
  [6
 
 ]
+(main.lol [7
+
+])
+\tf@lol=\write9
+\openout9 = `main.lol'.
+
+ [8]
 \openout2 = `front/kurzfassung.aux'.
 
- (front/kurzfassung.tex
-Overfull \hbox (6.7071pt too wide) in paragraph at lines 5--6
-[]\T1/lmr/m/n/10.95 Bei der Ent-wick-lung von REST-basierten Web-Anwendungen wi
-rd ein REST-basierter
- []
-
-) [7
+ (front/kurzfassung.tex) [9
 
 
-] [8]
+] [10]
 \openout2 = `front/vorwort.aux'.
 
- (front/vorwort.tex) [9
+ (front/vorwort.tex)
+[11
 
 
 
@@ -1438,31 +1430,31 @@ rd ein REST-basierter
 
  (chapters/einleitung.tex
 Kapitel 1.
-) [1
+[1
 
 
 
 
-]
+]) [2]
 \openout2 = `chapters/chapter2.aux'.
 
  (chapters/chapter2.tex
 Kapitel 2.
-[2
+[3
 
 
 
-] [3] [4] [5] [6]
+] [4] [5] [6] [7] [8]
 Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
-[7]
+
 Underfull \hbox (badness 10000) in paragraph at lines 101--102
 
  []
 
-
+[9]
 Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
@@ -1472,12 +1464,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
-[8]
+[10]
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 137.
 
  (/usr/local/share/miktex-texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [9]
+) [11]
 Underfull \hbox (badness 10000) in paragraph at lines 141--142
 
  []
@@ -1492,26 +1484,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
-
+[12]
 Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
 
-[10]
+
+Overfull \hbox (6.27798pt too wide) in paragraph at lines 149--150
+\T1/lmr/m/n/12 gibt ver-schie-de-ne Tech-ni-ken, um den Sta-tus aus-zut-au-sche
+n, z. B. URI-Umschreiben,
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 159--160
 
  []
 
+[13]
 LaTeX Font Info:    Try loading font information for TS1+lmr on input line 164.
 
-(/usr/local/share/miktex-texmf/tex/latex/lm/ts1lmr.fd
+ (/usr/local/share/miktex-texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
  []
 
-[11] [12] [13] [14])
+[14] [15]
+Overfull \hbox (11.01248pt too wide) in paragraph at lines 228--229
+[] [] \T1/lmss/m/n/12 Smart-card und Cli-ent Di-gi-tal Cer-ti-fi-ca-tes Sup-por
+t:[] \T1/lmr/m/n/12 ZAP kann Smartcard-gestützte
+ []
+
+
+Overfull \hbox (2.27948pt too wide) in paragraph at lines 236--237
+[] [] \T1/lmss/m/n/12 Skrip-t-Un-ter-stüt-zung:[] \T1/lmr/m/n/12 ZAP un-ter-stü
+tzt ver-schie-de-ne Skrip-te, zum Bei-spiel EC-
+ []
+
+[16] [17])
 \openout2 = `chapters/chapter3.aux'.
 
  (chapters/chapter3.tex
@@ -1521,7 +1532,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
-[15
+[18
 
 
 
@@ -1574,11 +1585,11 @@ Package Listings Warning: Text dropped after begin of listing on input line 22.
 Package Listings Warning: Text dropped after begin of listing on input line 43.
 
 
+[19]
 
 Package Listings Warning: Text dropped after begin of listing on input line 51.
 
 
-[16]
 
 Package Listings Warning: Text dropped after begin of listing on input line 57.
 
@@ -1598,6 +1609,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--71
 
  []
 
+[20]
+Overfull \hbox (22.11478pt too wide) in paragraph at lines 73--74
+[]\T1/lmtt/m/n/12 http://example.com/sale/saleitems;jsessionid=2P0OC2JSNDLPSKHC
+JUN2JV? 
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
@@ -1608,12 +1625,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
-[17]
+
 Underfull \hbox (badness 10000) in paragraph at lines 89--92
 
  []
 
-
+[21]
 Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
@@ -1628,12 +1645,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--112
 
  []
 
-[18]
+
 Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
-
+[22]
 Underfull \hbox (badness 10000) in paragraph at lines 117--121
 
  []
@@ -1651,12 +1668,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--133
 Package Listings Warning: Text dropped after begin of listing on input line 133
 .
 
-[19]
 
 Package Listings Warning: Text dropped after begin of listing on input line 140
 .
 
-
+[23]
 Underfull \hbox (badness 10000) in paragraph at lines 148--152
 
  []
@@ -1684,7 +1700,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 167--171
 
  []
 
-[20]
+[24]
 Underfull \hbox (badness 10000) in paragraph at lines 173--180
 
  []
@@ -1704,7 +1720,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 188--193
 
  []
 
-[21]
+[25]
 Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
@@ -1727,7 +1743,13 @@ Package Listings Warning: Text dropped after begin of listing on input line 220
 Package Listings Warning: Text dropped after begin of listing on input line 227
 .
 
-[22]
+[26]
+Overfull \hbox (0.73074pt too wide) in paragraph at lines 237--238
+\T1/lmr/m/n/12 Unsichere De-se-ria-li-sie-rung führt häu-fig zur Remote-Code-Au
+sführung. Selbst wenn
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 237--238
 
  []
@@ -1743,14 +1765,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 239--242
  []
 
 
+Overfull \hbox (20.757pt too wide) in paragraph at lines 243--244
+[]\T1/lmr/m/n/12 Ein PHP-Forum ver-wen-det die PHP-Objektserialisierung, um ein
+ SSuper-Cookieÿu
+ []
+
+
 Package Listings Warning: Text dropped after begin of listing on input line 245
 .
 
+[27]
 
 Package Listings Warning: Text dropped after begin of listing on input line 252
 .
 
-[23]
 
 Package Listings Warning: Text dropped after begin of listing on input line 259
 .
@@ -1765,29 +1793,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 269--274
 
  []
 
-
+[28]
 Underfull \hbox (badness 10000) in paragraph at lines 277--278
 
  []
 
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 279--283
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 279--283
 
  []
 
 
-Overfull \hbox (12.88092pt too wide) in paragraph at lines 293--294
-\T1/lmr/m/n/10.95 gen. Hin-zu-kom-mend kön-nen URLs in \T1/lmtt/m/n/10.95 inclu
-de\T1/lmr/m/n/10.95 -, \T1/lmtt/m/n/10.95 include_once\T1/lmr/m/n/10.95 - und \
-T1/lmtt/m/n/10.95 require\T1/lmr/m/n/10.95 -Anweisungen
+Underfull \hbox (badness 10000) in paragraph at lines 279--283
+
  []
 
-
+[29]
 Underfull \hbox (badness 10000) in paragraph at lines 293--294
 
  []
@@ -1802,18 +1823,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 295--298
 
  []
 
-[25]
 
 Package Listings Warning: Text dropped after begin of listing on input line 299
 .
 
 
-Overfull \hbox (7.98901pt too wide) in paragraph at lines 318--319
-\T1/lmr/m/n/10.95 ben wer-den, wie z.B. \T1/lmtt/m/n/10.95 'ftp://benutzer:pass
-wort@ftp.example.com/pfad/zur/datei'\T1/lmr/m/n/10.95 .
+Overfull \hbox (161.2985pt too wide) in paragraph at lines 318--319
+\T1/lmr/m/n/12 ner-halb der URL an-ge-ge-ben wer-den, wie z.B. \T1/lmtt/m/n/12 
+'ftp://benutzer:passwort@ftp.example.com/pfad/zur/datei'\T1/lmr/m/n/12 .
  []
 
-
+[30]
 Underfull \hbox (badness 10000) in paragraph at lines 322--323
 
  []
@@ -1828,11 +1848,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 324--327
 
  []
 
-[26]
 
 Package Listings Warning: Text dropped after begin of listing on input line 330
 .
 
+[31]
 
 Package Listings Warning: Text dropped after begin of listing on input line 347
 .
@@ -1841,343 +1861,384 @@ Package Listings Warning: Text dropped after begin of listing on input line 347
 Package Listings Warning: Text dropped after begin of listing on input line 361
 .
 
-[27]) [28]
+) [32]
 \openout2 = `chapters/chapter4.aux'.
 
  (chapters/chapter4.tex
 Kapitel 4.
-[29
+[33
 
 
 
-]
-<images/blackwhitegray.jpg, id=879, 471.7625pt x 232.87pt>
+] [34]
+<images/blackwhitegray.jpg, id=933, 471.7625pt x 232.87pt>
 File: images/blackwhitegray.jpg Graphic file (type jpg)
 <use images/blackwhitegray.jpg>
 Package pdftex.def Info: images/blackwhitegray.jpg  used on input line 35.
 (pdftex.def)             Requested size: 398.33858pt x 196.62924pt.
- [30] [31 <./images/blackwhitegray.jpg>]
-Overfull \hbox (0.27118pt too wide) in paragraph at lines 65--75
-\T1/lmr/m/n/10.95 gres-siv un-ter-teilt. Bei ei-ner pas-si-ven Ag-gres-si-vi-tä
-ts-stu-fe wer-den die ge-fun-de-nen Schwach-
+
+Overfull \hbox (3.01108pt too wide) in paragraph at lines 41--42
+\T1/lmr/m/n/12 Black-Box-Tests be-zie-hen sich auf das Tes-ten ei-nes Sys-tems 
+oh-ne spe-zi-fi-sche Kennt-
  []
 
-[32] [33]
-<images/vorbereitungpt.png, id=920, 600.2425pt x 141.52875pt>
+[35 <./images/blackwhitegray.jpg>] [36] [37] [38]
+<images/vorbereitungpt.png, id=967, 600.2425pt x 141.52875pt>
 File: images/vorbereitungpt.png Graphic file (type png)
 <use images/vorbereitungpt.png>
 Package pdftex.def Info: images/vorbereitungpt.png  used on input line 122.
 (pdftex.def)             Requested size: 415.41025pt x 97.95079pt.
- [34 <./images/vorbereitungpt.png>]
-<images/informationsbeschaffung.png, id=925, 607.26875pt x 107.40125pt>
+ [39 <./images/vorbereitungpt.png>]
+<images/informationsbeschaffung.png, id=972, 607.26875pt x 107.40125pt>
 File: images/informationsbeschaffung.png Graphic file (type png)
 <use images/informationsbeschaffung.png>
 Package pdftex.def Info: images/informationsbeschaffung.png  used on input line
  139.
 (pdftex.def)             Requested size: 415.41025pt x 73.47107pt.
-<images/bewertungderinf.png, id=926, 612.2875pt x 88.33pt>
+ [40 <./images/informationsbeschaffung.png>]
+<images/bewertungderinf.png, id=977, 612.2875pt x 88.33pt>
 File: images/bewertungderinf.png Graphic file (type png)
 <use images/bewertungderinf.png>
-Package pdftex.def Info: images/bewertungderinf.png  used on input line 155.
+Package pdftex.def Info: images/bewertungderinf.png  used on input line 157.
 (pdftex.def)             Requested size: 415.41025pt x 59.92746pt.
- [35 <./images/informationsbeschaffung.png> <./images/bewertungderinf.png>]
-<images/aktiveEindringversuche.png, id=931, 606.265pt x 106.3975pt>
+<images/aktiveEindringversuche.png, id=978, 606.265pt x 106.3975pt>
 File: images/aktiveEindringversuche.png Graphic file (type png)
 <use images/aktiveEindringversuche.png>
 Package pdftex.def Info: images/aktiveEindringversuche.png  used on input line 
-170.
+172.
 (pdftex.def)             Requested size: 415.41025pt x 72.90457pt.
-<images/abschluss.png, id=932, 607.26875pt x 89.33376pt>
+ [41 <./images/bewertungderinf.png> <./images/aktiveEindringversuche.png>]
+<images/abschluss.png, id=983, 607.26875pt x 89.33376pt>
 File: images/abschluss.png Graphic file (type png)
 <use images/abschluss.png>
-Package pdftex.def Info: images/abschluss.png  used on input line 187.
+Package pdftex.def Info: images/abschluss.png  used on input line 189.
 (pdftex.def)             Requested size: 415.41025pt x 61.11145pt.
- [36 <./images/aktiveEindringversuche.png> <./images/abschluss.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 206--207
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
+
+ []
+
+[42 <./images/abschluss.png>]
+Overfull \hbox (30.31467pt too wide) in paragraph at lines 212--213
+\T1/lmr/m/n/12 Commerce-Sicherheitsschwachstelle un-ter dem fol-gen-den URL-Mus
+ter \T1/lmtt/m/n/12 ''item.php?id=''\T1/lmr/m/n/12 . 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
-
- []
-
-
-Package Listings Warning: Text dropped after begin of listing on input line 212
+Package Listings Warning: Text dropped after begin of listing on input line 214
 .
 
-<images/sqllive.png, id=938, 817.0525pt x 387.4475pt>
+<images/sqllive.png, id=990, 817.0525pt x 387.4475pt>
 File: images/sqllive.png Graphic file (type png)
 <use images/sqllive.png>
-Package pdftex.def Info: images/sqllive.png  used on input line 220.
+Package pdftex.def Info: images/sqllive.png  used on input line 222.
 (pdftex.def)             Requested size: 415.41025pt x 196.99258pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[37]
-Underfull \hbox (badness 10000) in paragraph at lines 230--231
+[43 <./images/sqllive.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
 
  []
 
 
-Package Listings Warning: Text dropped after begin of listing on input line 234
-.
-
-<images/ac.png, id=945, 725.71124pt x 205.76875pt>
-File: images/ac.png Graphic file (type png)
-<use images/ac.png>
-Package pdftex.def Info: images/ac.png  used on input line 242.
-(pdftex.def)             Requested size: 415.41025pt x 117.78862pt.
-[38 <./images/sqllive.png> <./images/ac.png>]
-
-Package Listings Warning: Text dropped after begin of listing on input line 250
-.
-
-<images/resulttabellenname.png, id=953, 290.08376pt x 220.825pt>
-File: images/resulttabellenname.png Graphic file (type png)
-<use images/resulttabellenname.png>
-Package pdftex.def Info: images/resulttabellenname.png  used on input line 258.
-
-(pdftex.def)             Requested size: 199.16928pt x 151.618pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
 
  []
 
 
-Package Listings Warning: Text dropped after begin of listing on input line 266
+Package Listings Warning: Text dropped after begin of listing on input line 236
 .
 
-<images/aufdeckungvonspalten.png, id=954, 290.08376pt x 208.78pt>
-File: images/aufdeckungvonspalten.png Graphic file (type png)
-<use images/aufdeckungvonspalten.png>
-Package pdftex.def Info: images/aufdeckungvonspalten.png  used on input line 27
-2.
-(pdftex.def)             Requested size: 199.16928pt x 143.34792pt.
-[39 <./images/resulttabellenname.png> <./images/aufdeckungvonspalten.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 278--279
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
 
  []
 
 
-Package Listings Warning: Text dropped after begin of listing on input line 284
+Package Listings Warning: Text dropped after begin of listing on input line 254
 .
 
-<images/aufdeckungalledatenindertabelle.png, id=964, 704.6325pt x 190.7125pt>
+[44]
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
+
+ []
+
+
+Package Listings Warning: Text dropped after begin of listing on input line 281
+.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--304
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--306
+
+ []
+
+
+Package Listings Warning: Text dropped after begin of listing on input line 309
+.
+
+[45]
+<images/aufdeckungalledatenindertabelle.png, id=1010, 704.6325pt x 190.7125pt>
 File: images/aufdeckungalledatenindertabelle.png Graphic file (type png)
 <use images/aufdeckungalledatenindertabelle.png>
 Package pdftex.def Info: images/aufdeckungalledatenindertabelle.png  used on in
-put line 292.
+put line 319.
 (pdftex.def)             Requested size: 415.41025pt x 112.43208pt.
-
-Overfull \hbox (22.89272pt too wide) in paragraph at lines 298--299
-\T1/lmr/m/n/10.95 Das fol-gen-de Cross-Site-Scripting-Beispiel stammt aus dem T
-u-to-ri-al von Web-Sicherheitsseite
- []
-
-<images/xssburp.png, id=966, 501.875pt x 301.125pt>
+<images/xssburp.png, id=1012, 501.875pt x 301.125pt>
 File: images/xssburp.png Graphic file (type png)
 <use images/xssburp.png>
-Package pdftex.def Info: images/xssburp.png  used on input line 302.
+Package pdftex.def Info: images/xssburp.png  used on input line 329.
 (pdftex.def)             Requested size: 284.52756pt x 170.72406pt.
-<images/xssburp2.png, id=968, 501.875pt x 301.125pt>
+<images/xssburp2.png, id=1014, 501.875pt x 301.125pt>
 File: images/xssburp2.png Graphic file (type png)
 <use images/xssburp2.png>
-Package pdftex.def Info: images/xssburp2.png  used on input line 310.
+Package pdftex.def Info: images/xssburp2.png  used on input line 337.
 (pdftex.def)             Requested size: 312.9803pt x 187.79831pt.
-[40 <./images/aufdeckungalledatenindertabelle.png> <./images/xssburp.png>]
-<images/xssburp3.png, id=977, 501.875pt x 301.125pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[46 <./images/aufdeckungalledatenindertabelle.png> <./images/xssburp.png>]
+<images/xssburp3.png, id=1022, 501.875pt x 301.125pt>
 File: images/xssburp3.png Graphic file (type png)
 <use images/xssburp3.png>
-Package pdftex.def Info: images/xssburp3.png  used on input line 318.
+Package pdftex.def Info: images/xssburp3.png  used on input line 347.
 (pdftex.def)             Requested size: 312.9803pt x 187.79831pt.
-<images/xssburp4.png, id=978, 501.875pt x 301.125pt>
+
+[47 <./images/xssburp2.png> <./images/xssburp3.png>]
+<images/xssburp4.png, id=1029, 501.875pt x 301.125pt>
 File: images/xssburp4.png Graphic file (type png)
 <use images/xssburp4.png>
-Package pdftex.def Info: images/xssburp4.png  used on input line 326.
+Package pdftex.def Info: images/xssburp4.png  used on input line 357.
 (pdftex.def)             Requested size: 312.9803pt x 187.79831pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[41 <./images/xssburp2.png> <./images/xssburp3.png>]
-<images/xssburp5.png, id=985, 501.875pt x 301.125pt>
+<images/xssburp5.png, id=1030, 501.875pt x 301.125pt>
 File: images/xssburp5.png Graphic file (type png)
 <use images/xssburp5.png>
-Package pdftex.def Info: images/xssburp5.png  used on input line 334.
+Package pdftex.def Info: images/xssburp5.png  used on input line 365.
 (pdftex.def)             Requested size: 312.9803pt x 187.79831pt.
- [42 <./images/xssburp4.png> <./images/xssburp5.png>]
-<images/xssburp6.png, id=992, 501.875pt x 301.125pt>
+ [48 <./images/xssburp4.png> <./images/xssburp5.png>]
+<images/xssburp6.png, id=1037, 501.875pt x 301.125pt>
 File: images/xssburp6.png Graphic file (type png)
 <use images/xssburp6.png>
-Package pdftex.def Info: images/xssburp6.png  used on input line 344.
+Package pdftex.def Info: images/xssburp6.png  used on input line 375.
 (pdftex.def)             Requested size: 312.9803pt x 187.79831pt.
- [43 <./images/xssburp6.png>]
-<images/bfa.png, id=1001, 1045.9075pt x 411.5375pt>
+ [49 <./images/xssburp6.png>]
+<images/bfa.png, id=1047, 1045.9075pt x 411.5375pt>
 File: images/bfa.png Graphic file (type png)
 <use images/bfa.png>
-Package pdftex.def Info: images/bfa.png  used on input line 366.
+Package pdftex.def Info: images/bfa.png  used on input line 397.
 (pdftex.def)             Requested size: 415.41025pt x 163.45665pt.
-<images/bfa2.png, id=1003, 1044.90375pt x 615.29875pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 401--402
+
+ []
+
+<images/bfa2.png, id=1049, 1044.90375pt x 615.29875pt>
 File: images/bfa2.png Graphic file (type png)
 <use images/bfa2.png>
-Package pdftex.def Info: images/bfa2.png  used on input line 376.
+Package pdftex.def Info: images/bfa2.png  used on input line 407.
 (pdftex.def)             Requested size: 415.41025pt x 244.62233pt.
- [44 <./images/bfa.png> <./images/bfa2.png>]
 
-Package Listings Warning: Text dropped after begin of listing on input line 384
+Underfull \hbox (badness 10000) in paragraph at lines 411--412
+
+ []
+
+[50 <./images/bfa.png> <./images/bfa2.png>]
+
+Package Listings Warning: Text dropped after begin of listing on input line 415
 .
 
-<images/bfa3.png, id=1010, 1042.89626pt x 272.01625pt>
+<images/bfa3.png, id=1056, 1042.89626pt x 272.01625pt>
 File: images/bfa3.png Graphic file (type png)
 <use images/bfa3.png>
-Package pdftex.def Info: images/bfa3.png  used on input line 391.
+Package pdftex.def Info: images/bfa3.png  used on input line 422.
 (pdftex.def)             Requested size: 415.41025pt x 108.35214pt.
 
-Overfull \hbox (34.81372pt too wide) in paragraph at lines 399--400
-\T1/lmr/m/n/10.95 Sicherheitsanfälligkeit ei-ne XXE-Payload sen-den, die ei-ne 
-in-ter-ne En-ti-tät verAlphabetwendet,
+Underfull \hbox (badness 10000) in paragraph at lines 430--431
+
  []
 
-[45 <./images/bfa3.png>]
-<images/xxeattacke.jpg, id=1021, 526.96875pt x 201.75375pt>
-File: images/xxeattacke.jpg Graphic file (type jpg)
-<use images/xxeattacke.jpg>
-Package pdftex.def Info: images/xxeattacke.jpg  used on input line 407.
-(pdftex.def)             Requested size: 284.52756pt x 108.93924pt.
-<images/xxeattacke2.jpg, id=1022, 430.60875pt x 290.08376pt>
-File: images/xxeattacke2.jpg Graphic file (type jpg)
-<use images/xxeattacke2.jpg>
-Package pdftex.def Info: images/xxeattacke2.jpg  used on input line 415.
-(pdftex.def)             Requested size: 312.9803pt x 210.84755pt.
- [46 <./images/xxeattacke.jpg> <./images/xxeattacke2.jpg>]
-<images/xxeattacke4.png, id=1027, 278.03876pt x 133.49875pt>
-File: images/xxeattacke4.png Graphic file (type png)
-<use images/xxeattacke4.png>
-Package pdftex.def Info: images/xxeattacke4.png  used on input line 425.
-(pdftex.def)             Requested size: 284.52756pt x 136.61708pt.
-<images/xxeattacke5.jpg, id=1028, 486.81876pt x 249.93375pt>
-File: images/xxeattacke5.jpg Graphic file (type jpg)
-<use images/xxeattacke5.jpg>
-Package pdftex.def Info: images/xxeattacke5.jpg  used on input line 433.
-(pdftex.def)             Requested size: 415.41025pt x 213.27225pt.
-<images/xxeattacke6.jpg, id=1029, 270.00874pt x 150.5625pt>
-File: images/xxeattacke6.jpg Graphic file (type jpg)
-<use images/xxeattacke6.jpg>
-Package pdftex.def Info: images/xxeattacke6.jpg  used on input line 441.
-(pdftex.def)             Requested size: 284.52756pt x 158.66273pt.
+[51 <./images/bfa3.png>]
+
+Package Listings Warning: Text dropped after begin of listing on input line 436
+.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Package Listings Warning: Text dropped after begin of listing on input line 450
+.
 
-[47 <./images/xxeattacke4.png> <./images/xxeattacke5.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 448--450
+
+Package Listings Warning: Text dropped after begin of listing on input line 470
+.
+
+[52]
+Underfull \hbox (badness 10000) in paragraph at lines 482--483
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 453--454
+Package Listings Warning: Text dropped after begin of listing on input line 484
+.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 504--505
 
  []
 
-<images/fa1.jpg, id=1036, 602.25pt x 183.68625pt>
-File: images/fa1.jpg Graphic file (type jpg)
-<use images/fa1.jpg>
-Package pdftex.def Info: images/fa1.jpg  used on input line 461.
-(pdftex.def)             Requested size: 415.41025pt x 126.70439pt.
-[48 <./images/xxeattacke6.jpg> <./images/fa1.jpg>]
-<images/fa2.jpg, id=1042, 602.25pt x 286.06876pt>
+
+Package Listings Warning: Text dropped after begin of listing on input line 506
+.
+
+[53]
+Underfull \hbox (badness 10000) in paragraph at lines 521--523
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 526--527
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 528--529
+
+ []
+
+
+Overfull \hbox (11.58156pt too wide) in paragraph at lines 530--531
+[]\T1/lmr/m/n/12 Man muss sich bei Web-goat an-mel-den und zum Ab-schnitt \T1/l
+mtt/m/n/12 Session Management
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 530--531
+
+ []
+
+<images/fa2.jpg, id=1134, 602.25pt x 286.06876pt>
 File: images/fa2.jpg Graphic file (type jpg)
 <use images/fa2.jpg>
-Package pdftex.def Info: images/fa2.jpg  used on input line 469.
+Package pdftex.def Info: images/fa2.jpg  used on input line 534.
 (pdftex.def)             Requested size: 284.52756pt x 135.1551pt.
-<images/fa3.jpg, id=1043, 451.6875pt x 246.9225pt>
+
+Overfull \hbox (28.38696pt too wide) in paragraph at lines 538--539
+\T1/lmr/m/n/12 in Burp Sui-te fest-ge-stellt, dass die \T1/lmtt/m/n/12 JSESSION
+-ID C8F3177CCAFF380441ABF71090748F2E
+ []
+
+[54 <./images/fa2.jpg>]
+<images/fa3.jpg, id=1140, 451.6875pt x 246.9225pt>
 File: images/fa3.jpg Graphic file (type jpg)
 <use images/fa3.jpg>
-Package pdftex.def Info: images/fa3.jpg  used on input line 475.
+Package pdftex.def Info: images/fa3.jpg  used on input line 544.
 (pdftex.def)             Requested size: 284.52756pt x 155.55067pt.
-<images/fa4.jpg, id=1044, 600.2425pt x 170.6375pt>
+
+Overfull \hbox (15.98392pt too wide) in paragraph at lines 548--549
+\T1/lmr/m/n/12 Burp Sui-te fest-ge-stellt, dass die \T1/lmtt/m/n/12 JSESSION-ID
+ C8F3177CCAFF380441ABF71090748F2E
+ []
+
+<images/fa4.jpg, id=1141, 600.2425pt x 170.6375pt>
 File: images/fa4.jpg Graphic file (type jpg)
 <use images/fa4.jpg>
-Package pdftex.def Info: images/fa4.jpg  used on input line 483.
+Package pdftex.def Info: images/fa4.jpg  used on input line 552.
 (pdftex.def)             Requested size: 284.52756pt x 80.88701pt.
- [49 <./images/fa2.jpg> <./images/fa3.jpg> <./images/fa4.jpg>]
-<images/fa5.jpg, id=1049, 451.6875pt x 241.65282pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 556--557
+
+ []
+
+[55 <./images/fa3.jpg> <./images/fa4.jpg>]
+<images/fa5.jpg, id=1147, 451.6875pt x 241.65282pt>
 File: images/fa5.jpg Graphic file (type jpg)
 <use images/fa5.jpg>
-Package pdftex.def Info: images/fa5.jpg  used on input line 495.
+Package pdftex.def Info: images/fa5.jpg  used on input line 564.
 (pdftex.def)             Requested size: 284.52756pt x 152.231pt.
-<images/fa6.jpg, id=1050, 451.6875pt x 148.30406pt>
+<images/fa6.jpg, id=1148, 451.6875pt x 148.30406pt>
 File: images/fa6.jpg Graphic file (type jpg)
 <use images/fa6.jpg>
-Package pdftex.def Info: images/fa6.jpg  used on input line 503.
+Package pdftex.def Info: images/fa6.jpg  used on input line 572.
 (pdftex.def)             Requested size: 284.52756pt x 93.42525pt.
- [50 <./images/fa5.jpg> <./images/fa6.jpg>]
-<images/owaspzapgui.png, id=1057, 892.33376pt x 540.0175pt>
+<images/owaspzapgui.png, id=1151, 892.33376pt x 540.0175pt>
 File: images/owaspzapgui.png Graphic file (type png)
 <use images/owaspzapgui.png>
-Package pdftex.def Info: images/owaspzapgui.png  used on input line 517.
+Package pdftex.def Info: images/owaspzapgui.png  used on input line 586.
 (pdftex.def)             Requested size: 341.43306pt x 206.62605pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 521--522
-
- []
-
-[51 <./images/owaspzapgui.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 536--537
+ [56 <./images/fa5.jpg> <./images/fa6.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 590--591
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 538--539
+Underfull \hbox (badness 10000) in paragraph at lines 605--606
+
+ []
+
+[57 <./images/owaspzapgui.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 607--608
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 540--541
+Underfull \hbox (badness 10000) in paragraph at lines 609--610
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 542--543
+Underfull \hbox (badness 10000) in paragraph at lines 611--612
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 544--545
+Underfull \hbox (badness 10000) in paragraph at lines 613--614
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 546--547
+Underfull \hbox (badness 10000) in paragraph at lines 615--616
 
  []
 
-<images/owaspzapgui2.png, id=1064, 765.86125pt x 69.25874pt>
+<images/owaspzapgui2.png, id=1161, 765.86125pt x 69.25874pt>
 File: images/owaspzapgui2.png Graphic file (type png)
 <use images/owaspzapgui2.png>
-Package pdftex.def Info: images/owaspzapgui2.png  used on input line 554.
+Package pdftex.def Info: images/owaspzapgui2.png  used on input line 623.
 (pdftex.def)             Requested size: 341.43306pt x 30.87657pt.
-<images/owaspzapgui3.png, id=1066, 930.47626pt x 355.3275pt>
+
+Overfull \hbox (4.09486pt too wide) in paragraph at lines 628--629
+[]\T1/lmr/m/n/12 Dadurch wird die ge-sam-te Ziel-web-si-te ge-sich-tet und an-s
+chlie-ÿend nach Schwach-
+ []
+
+[58 <./images/owaspzapgui2.png>]
+<images/owaspzapgui3.png, id=1168, 930.47626pt x 355.3275pt>
 File: images/owaspzapgui3.png Graphic file (type png)
 <use images/owaspzapgui3.png>
-Package pdftex.def Info: images/owaspzapgui3.png  used on input line 563.
+Package pdftex.def Info: images/owaspzapgui3.png  used on input line 632.
 (pdftex.def)             Requested size: 341.43306pt x 130.38474pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[52 <./images/owaspzapgui2.png>]
-<images/owaspzapgui4.png, id=1072, 931.48pt x 227.85126pt>
+<images/owaspzapgui4.png, id=1169, 931.48pt x 227.85126pt>
 File: images/owaspzapgui4.png Graphic file (type png)
 <use images/owaspzapgui4.png>
-Package pdftex.def Info: images/owaspzapgui4.png  used on input line 572.
+Package pdftex.def Info: images/owaspzapgui4.png  used on input line 641.
 (pdftex.def)             Requested size: 341.43306pt x 83.5179pt.
- [53 <./images/owaspzapgui3.png> <./images/owaspzapgui4.png>]) [54]
+ [59 <./images/owaspzapgui3.png> <./images/owaspzapgui4.png>] [60]) [61]
 \openout2 = `chapters/chapter5.aux'.
 
  (chapters/chapter5.tex
 Kapitel 5.
-) [55
+) [62
 
 
 
@@ -2186,36 +2247,57 @@ Kapitel 5.
 
  (chapters/chapter6.tex
 Kapitel 6.
-<images/openapi2u3.png, id=1089, 821.0675pt x 474.77374pt>
+[63
+
+
+
+]
+<images/openapi2u3.png, id=1199, 821.0675pt x 474.77374pt>
 File: images/openapi2u3.png Graphic file (type png)
 <use images/openapi2u3.png>
-Package pdftex.def Info: images/openapi2u3.png  used on input line 11.
+Package pdftex.def Info: images/openapi2u3.png  used on input line 13.
 (pdftex.def)             Requested size: 284.52756pt x 164.52156pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
-
- []
-
-[56
-
-
-
- <./images/openapi2u3.png>]
-
-Package Listings Warning: Text dropped after begin of listing on input line 20.
-
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
 
-Package Listings Warning: Text dropped after begin of listing on input line 26.
+Package Listings Warning: Text dropped after begin of listing on input line 22.
 
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+
+ []
+
+
+Package Listings Warning: Text dropped after begin of listing on input line 28.
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+[64 <./images/openapi2u3.png>]
+Overfull \hbox (36.93019pt too wide) in paragraph at lines 36--37
+\T1/lmr/m/n/12 ten wie z.B. \T1/lmtt/m/n/12 definitions\T1/lmr/m/n/12 , \T1/l
+mtt/m/n/12 parameters\T1/lmr/m/n/12 , \T1/lmtt/m/n/12 responses \T1/lmr/m/n
+/12 and \T1/lmtt/m/n/12 securityDefinitions\T1/lmr/m/n/12 . 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+
+ []
+
+
+Package Listings Warning: Text dropped after begin of listing on input line 38.
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
  []
 
@@ -2223,84 +2305,116 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--33
 Package Listings Warning: Text dropped after begin of listing on input line 48.
 
 
-[57]) [58]
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
+
+[65]
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+
+ []
+
+
+Package Listings Warning: Text dropped after begin of listing on input line 78.
+
+
+
+Package Listings Warning: Text dropped after begin of listing on input line 99.
+
+
+[66]) [67]
 \openout2 = `chapters/chapter7.aux'.
 
  (chapters/chapter7.tex
 Kapitel 7.
-) [59
+) [68
 
 
 
-] [60
+]pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.97 
+      [1
 
 
-]
-Underfull \hbox (badness 1655) in paragraph at lines 97--97
-[]\T1/lmr/m/n/10.95 Jörg Eber-spä-cher.   Si-che-re Da-ten, si-che-re Kom-mu-n
-i-ka-ti-on. \T1/lmr/m/it/10.95 Se-cu-re Infor-
+]pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.97 
+      [2]pdfTeX warning (ext4): destination with the same identifier (name{page
+.iii}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.97 
+      [3]pdfTeX warning (ext4): destination with the same identifier (name{page
+.iv}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.97 
+      [4]pdfTeX warning (ext4): destination with the same identifier (name{page
+.v}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.97 
+      [5]
+Underfull \hbox (badness 1019) in paragraph at lines 97--97
+[]\T1/lmr/m/n/12 Eberhard Wolff. \T1/lmr/m/it/12 Mi-cro-ser-vices: fle-xi-ble s
+oft-wa-re ar-chi-tec-ture\T1/lmr/m/n/12 . Addison-
  []
 
-
-Underfull \hbox (badness 1755) in paragraph at lines 97--97
-\T1/lmr/m/it/10.95 mation, Se-cu-re Com-mu-ni-ca-ti-on. Da-ten-schutz und Da-te
-n-si-cher-heit in Tele-
- []
-
-[61] [62] [63] [64]
-\openout2 = `back/messbox.aux'.
-
- (back/messbox.tex
-LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <5> on input line 10.
-) [65
-
-
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 102.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 102.
- (main.aux (front/kurzfassung.aux)
-(front/vorwort.aux) (chapters/einleitung.aux) (chapters/chapter2.aux)
-(chapters/chapter3.aux) (chapters/chapter4.aux) (chapters/chapter5.aux)
-(chapters/chapter6.aux) (chapters/chapter7.aux) (back/messbox.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 102.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 102.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 99.
+pdfTeX warning (ext4): destination with the same identifier (name{page.vi}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.99 \end{document}
+                    [6]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 99.
+ (main.aux (front/kurzfassung.aux) (front/vorwort.aux)
+(chapters/einleitung.aux) (chapters/chapter2.aux) (chapters/chapter3.aux)
+(chapters/chapter4.aux) (chapters/chapter5.aux) (chapters/chapter6.aux)
+(chapters/chapter7.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 99.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 99.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DACA1B35F7D4F403E08A064BD2CAFFB3;10743.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: E8E0A18BBECEE13D23B1527811717807;11461.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28640 strings out of 492971
- 457410 string characters out of 3135081
- 1116596 words of memory out of 3000000
- 31399 multiletter control sequences out of 15000+200000
- 86164 words of font info for 68 fonts, out of 3000000 for 9000
+ 28731 strings out of 492971
+ 458490 string characters out of 3135081
+ 1129967 words of memory out of 3000000
+ 31434 multiletter control sequences out of 15000+200000
+ 68966 words of font info for 54 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  67i,12n,125p,1316b,3382s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/share/miktex-texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/share
-/miktex-texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/share/miktex-texmf/fonts
-/enc/dvips/lm/lm-ts1.enc}</usr/local/share/miktex-texmf/fonts/type1/public/lm/l
-mbx10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/lm/lmbxi10.pfb></us
-r/local/share/miktex-texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/local/share/
-miktex-texmf/fonts/type1/public/lm/lmr10.pfb></usr/local/share/miktex-texmf/fon
-ts/type1/public/lm/lmr12.pfb></usr/local/share/miktex-texmf/fonts/type1/public/
-lm/lmr8.pfb></usr/local/share/miktex-texmf/fonts/type1/public/lm/lmr9.pfb></usr
-/local/share/miktex-texmf/fonts/type1/public/lm/lmri10.pfb></usr/local/share/mi
-ktex-texmf/fonts/type1/public/lm/lmri9.pfb></usr/local/share/miktex-texmf/fonts
-/type1/public/lm/lmss10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/l
-m/lmss12.pfb></usr/local/share/miktex-texmf/fonts/type1/public/lm/lmss17.pfb></
-usr/local/share/miktex-texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/local/sha
-re/miktex-texmf/fonts/type1/public/lm/lmtt10.pfb></usr/local/share/miktex-texmf
-/fonts/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (75 pages, 2077542 bytes).
+{/usr/local/share/miktex-texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/share
+/miktex-texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/local/share/miktex-texmf/font
+s/type1/public/lm/lmbx10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/
+lm/lmbx12.pfb></usr/local/share/miktex-texmf/fonts/type1/public/lm/lmbxi10.pfb>
+</usr/local/share/miktex-texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/local/sh
+are/miktex-texmf/fonts/type1/public/lm/lmr10.pfb></usr/local/share/miktex-texmf
+/fonts/type1/public/lm/lmr12.pfb></usr/local/share/miktex-texmf/fonts/type1/pub
+lic/lm/lmr8.pfb></usr/local/share/miktex-texmf/fonts/type1/public/lm/lmri10.pfb
+></usr/local/share/miktex-texmf/fonts/type1/public/lm/lmri12.pfb></usr/local/sh
+are/miktex-texmf/fonts/type1/public/lm/lmss12.pfb></usr/local/share/miktex-texm
+f/fonts/type1/public/lm/lmss17.pfb></usr/local/share/miktex-texmf/fonts/type1/p
+ublic/lm/lmssbx10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/lm/lmtt
+10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/lm/lmtt12.pfb>
+Output written on main.pdf (86 pages, 1924137 bytes).
 PDF statistics:
- 1447 PDF objects out of 1728 (max. 8388607)
- 420 named destinations out of 1000 (max. 500000)
- 665 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1615 PDF objects out of 1728 (max. 8388607)
+ 516 named destinations out of 1000 (max. 500000)
+ 636 words of extra memory for PDF output out of 10000 (max. 10000000)
 

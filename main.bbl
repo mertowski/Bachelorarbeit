@@ -1346,6 +1346,81 @@
       \verb https://swagger.io/docs/specification/about/
       \endverb
     \endentry
+    \entry{openapiversion17}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=401952e11ab79376dd6bb3e85df42bf6}{%
+           family={Swagger.io},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{fullhash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{bibnamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authorbibnamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authornamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authorfullhash}{401952e11ab79376dd6bb3e85df42bf6}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Basic Structure - Metadata}}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://swagger.io/docs/specification/basic-structure/
+      \endverb
+      \verb{url}
+      \verb https://swagger.io/docs/specification/basic-structure/
+      \endverb
+    \endentry
+    \entry{openapicomponents17}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=401952e11ab79376dd6bb3e85df42bf6}{%
+           family={Swagger.io},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{fullhash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{bibnamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authorbibnamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authornamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authorfullhash}{401952e11ab79376dd6bb3e85df42bf6}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Components Section - Components Structure}}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://swagger.io/docs/specification/components/
+      \endverb
+      \verb{url}
+      \verb https://swagger.io/docs/specification/components/
+      \endverb
+    \endentry
+    \entry{openapirequestbody17}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=401952e11ab79376dd6bb3e85df42bf6}{%
+           family={Swagger.io},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{fullhash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{bibnamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authorbibnamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authornamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authorfullhash}{401952e11ab79376dd6bb3e85df42bf6}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Describing Request Body}}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://swagger.io/docs/specification/2-0/describing-request-body/
+      \endverb
+      \verb{url}
+      \verb https://swagger.io/docs/specification/2-0/describing-request-body/
+      \endverb
+    \endentry
     \entry{botnetz17symantec}{misc}{}
       \name{author}{1}{}{%
         {{hash=63b9cb44c7160e45e46b9332b0d08160}{%
