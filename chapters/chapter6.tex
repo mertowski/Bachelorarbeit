@@ -73,7 +73,7 @@ Die Liste der OpenAPI 3-Komponenten:
 
 Anfrage-Body wird in der Regel für "`Erstellen"' und "`Aktualisieren"' von Operationen (\texttt{POST}, \texttt{PUT}, \texttt{PATCH}) verwendet. Wenn eine Ressource mit \texttt{POST} oder \texttt{PUT} erstellt wird, enthält der Anforderungshauptteil normalerweise die Darstellung der Ressource, die erstellt werden soll\cite{openapirequestbody17}.\\
 
-Einer der verwirrendsten Aspekte von Swagger 2 war body/formData.
+Einer der verwirrendsten Aspekte von Swagger 2 war \texttt{body/formData}.
 
 \begin{LaTeXCode}[caption={Swagger 2.0 - Anfrage-Format},captionpos=b, label=LaTeXCode:openapi3.0-4][numbers=none]
 "/examples/{exampleId}":
@@ -129,18 +129,6 @@ Der neue \texttt{requestBody} unterstützt verschiedene Medientypen (Inhalt ist 
 Eine API-Spezifikation muss die Antworten für alle API-Vorgänge angeben. Für jede Operation muss mindestens eine Antwort definiert sein, normalerweise eine erfolgreiche Antwort. Eine Antwort wird durch ihren HTTP-Statuscode definiert und die Daten werden im \texttt{response body} oder in den Kopfzeilen zurückgegeben. Bei den Antworten beginnt jede Antwortdefinition mit einem Statuscode, z. B. 200 oder 404. Eine Operation gibt normalerweise einen erfolgreichen Statuscode und einen oder mehrere Fehlerstatus zurück\cite{openapirequestbody17}.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 %URL Structure
  
 %Linking
@@ -156,18 +144,6 @@ Eine API-Spezifikation muss die Antworten für alle API-Vorgänge angeben. Für 
 %URL Structure
 
 %Ausbau des JSON Schema Supports:
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
