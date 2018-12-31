@@ -1,18 +1,17 @@
 [0] Config.pm:302> INFO - This is Biber 2.9
 [0] Config.pm:305> INFO - Logfile is 'main.blg'
-[21] biber:313> INFO - === Fr Dez 28, 2018, 23:47:32
-[38] Biber.pm:371> INFO - Reading 'main.bcf'
-[106] Biber.pm:857> INFO - Found 64 citekeys in bib section 0
-[116] Biber.pm:3981> INFO - Processing section 0
-[124] Biber.pm:4154> INFO - Looking for bibtex format file 'references.bib' for section 0
-[127] bibtex.pm:1468> INFO - LaTeX decoding ...
-[206] bibtex.pm:1294> INFO - Found BibTeX data source 'references.bib'
-[209] Utils.pm:169> WARN - Duplicate entry key: 'nowey2011einleitung' in file 'references.bib', skipping ...
-[210] Utils.pm:169> WARN - Duplicate entry key: 'openapirequestbody17' in file 'references.bib', skipping ...
-[443] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[443] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[443] Biber.pm:3809> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[443] Biber.pm:3815> INFO - No sort tailoring available for locale 'de-DE'
-[488] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[505] bbl.pm:720> INFO - Output to main.bbl
-[505] Biber.pm:110> INFO - WARNINGS: 2
+[19] biber:313> INFO - === Mo Dez 31, 2018, 02:05:55
+[35] Biber.pm:371> INFO - Reading 'main.bcf'
+[86] Biber.pm:857> INFO - Found 72 citekeys in bib section 0
+[95] Biber.pm:3981> INFO - Processing section 0
+[103] Biber.pm:4154> INFO - Looking for bibtex format file 'references.bib' for section 0
+[105] bibtex.pm:1468> INFO - LaTeX decoding ...
+[189] bibtex.pm:1294> INFO - Found BibTeX data source 'references.bib'
+[191] Utils.pm:169> WARN - Duplicate entry key: 'nowey2011einleitung' in file 'references.bib', skipping ...
+[448] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[448] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[449] Biber.pm:3809> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[449] Biber.pm:3815> INFO - No sort tailoring available for locale 'de-DE'
+[497] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[514] bbl.pm:720> INFO - Output to main.bbl
+[514] Biber.pm:110> INFO - WARNINGS: 1

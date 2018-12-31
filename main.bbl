@@ -1346,6 +1346,81 @@
       \verb https://swagger.io/docs/specification/about/
       \endverb
     \endentry
+    \entry{openapiexample17}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=401952e11ab79376dd6bb3e85df42bf6}{%
+           family={Swagger.io},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{fullhash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{bibnamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authorbibnamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authornamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authorfullhash}{401952e11ab79376dd6bb3e85df42bf6}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Adding Examples}}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://swagger.io/docs/specification/adding-examples/
+      \endverb
+      \verb{url}
+      \verb https://swagger.io/docs/specification/adding-examples/
+      \endverb
+    \endentry
+    \entry{openapiapiserverundbaseurl17}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=401952e11ab79376dd6bb3e85df42bf6}{%
+           family={Swagger.io},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{fullhash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{bibnamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authorbibnamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authornamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authorfullhash}{401952e11ab79376dd6bb3e85df42bf6}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{API Server and Base URL}}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://swagger.io/docs/specification/api-host-and-base-path/
+      \endverb
+      \verb{url}
+      \verb https://swagger.io/docs/specification/api-host-and-base-path/
+      \endverb
+    \endentry
+    \entry{openapisecurity17}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=401952e11ab79376dd6bb3e85df42bf6}{%
+           family={Swagger.io},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{fullhash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{bibnamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authorbibnamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authornamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authorfullhash}{401952e11ab79376dd6bb3e85df42bf6}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Authentication and Authorization}}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://swagger.io/docs/specification/authentication/
+      \endverb
+      \verb{url}
+      \verb https://swagger.io/docs/specification/authentication/
+      \endverb
+    \endentry
     \entry{openapiversion17}{misc}{}
       \name{author}{1}{}{%
         {{hash=401952e11ab79376dd6bb3e85df42bf6}{%
@@ -1369,6 +1444,56 @@
       \endverb
       \verb{url}
       \verb https://swagger.io/docs/specification/basic-structure/
+      \endverb
+    \endentry
+    \entry{openapiserver17}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=401952e11ab79376dd6bb3e85df42bf6}{%
+           family={Swagger.io},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{fullhash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{bibnamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authorbibnamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authornamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authorfullhash}{401952e11ab79376dd6bb3e85df42bf6}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Basic Structure - Server}}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://swagger.io/docs/specification/basic-structure/
+      \endverb
+      \verb{url}
+      \verb https://swagger.io/docs/specification/basic-structure/
+      \endverb
+    \endentry
+    \entry{openapicallbacks17}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=401952e11ab79376dd6bb3e85df42bf6}{%
+           family={Swagger.io},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{fullhash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{bibnamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authorbibnamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authornamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authorfullhash}{401952e11ab79376dd6bb3e85df42bf6}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Callbacks}}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://swagger.io/docs/specification/callbacks/
+      \endverb
+      \verb{url}
+      \verb https://swagger.io/docs/specification/callbacks/
       \endverb
     \endentry
     \entry{openapicomponents17}{misc}{}
@@ -1419,6 +1544,81 @@
       \endverb
       \verb{url}
       \verb https://swagger.io/docs/specification/2-0/describing-request-body/
+      \endverb
+    \endentry
+    \entry{openapiresponsebody17}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=401952e11ab79376dd6bb3e85df42bf6}{%
+           family={Swagger.io},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{fullhash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{bibnamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authorbibnamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authornamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authorfullhash}{401952e11ab79376dd6bb3e85df42bf6}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Describing Responses}}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://swagger.io/docs/specification/describing-responses/
+      \endverb
+      \verb{url}
+      \verb https://swagger.io/docs/specification/describing-responses/
+      \endverb
+    \endentry
+    \entry{openapilinks17}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=401952e11ab79376dd6bb3e85df42bf6}{%
+           family={Swagger.io},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{fullhash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{bibnamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authorbibnamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authornamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authorfullhash}{401952e11ab79376dd6bb3e85df42bf6}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Links}}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://swagger.io/docs/specification/links/
+      \endverb
+      \verb{url}
+      \verb https://swagger.io/docs/specification/links/
+      \endverb
+    \endentry
+    \entry{openapijsonaufbau17}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=401952e11ab79376dd6bb3e85df42bf6}{%
+           family={Swagger.io},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{fullhash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{bibnamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authorbibnamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authornamehash}{401952e11ab79376dd6bb3e85df42bf6}
+      \strng{authorfullhash}{401952e11ab79376dd6bb3e85df42bf6}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{oneOf, anyOf, allOf, not}}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://swagger.io/docs/specification/callbacks/
+      \endverb
+      \verb{url}
+      \verb https://swagger.io/docs/specification/callbacks/
       \endverb
     \endentry
     \entry{botnetz17symantec}{misc}{}

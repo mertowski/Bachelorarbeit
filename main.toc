@@ -223,11 +223,23 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.1.2}Komponenten (engl. Components)}{64}{subsection.6.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.3}Anfrage-Format (engl. Request Format)}{66}{subsection.6.1.3}
+\contentsline {subsubsection}{\numberline {6.1.2.1}Anfrage-Format (engl. Request Format)}{66}{subsubsection.6.1.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.4}Antwort-Format (engl. Response Format)}{67}{subsection.6.1.4}
+\contentsline {subsubsection}{\numberline {6.1.2.2}Antwort-Format (engl. Response Format)}{67}{subsubsection.6.1.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Fazit}{68}{chapter.7}
+\contentsline {subsubsection}{\numberline {6.1.2.3}Verlinkung (engl. Linking)}{68}{subsubsection.6.1.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.1.2.4}R\IeC {\"u}ckrufe (engl. Callbacks)}{69}{subsubsection.6.1.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.3}Servers}{69}{subsection.6.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.4}Ausbau des JSON Schema Supports}{70}{subsection.6.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.5}Beispiele Objekt (engl. Examples Object)}{71}{subsection.6.1.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.6}Sicherheit (engl. Security)}{72}{subsection.6.1.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Fazit}{73}{chapter.7}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Quellenverzeichnis}{i}{appendix*.37}
 \defcounter {refsection}{0}\relax 

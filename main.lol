@@ -66,3 +66,19 @@
 \contentsline {lstlisting}{\numberline {6.5}Swagger 2.0 - Anfrage-Format}{66}{lstlisting.6.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {lstlisting}{\numberline {6.6}Open API 3.0 - Anfrage-Format}{67}{lstlisting.6.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {lstlisting}{\numberline {6.7}Open API 3.0 - Antwort-Format}{68}{lstlisting.6.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {lstlisting}{\numberline {6.8}Open API 3.0 - Verlinkungen}{68}{lstlisting.6.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {lstlisting}{\numberline {6.9}Open API 3.0 - Callbacks\cite {openapicallbacks17}}{69}{lstlisting.6.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {lstlisting}{\numberline {6.10}Swagger 2.0 - Server}{70}{lstlisting.6.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {lstlisting}{\numberline {6.11}OpenAPI 3.0 - Server}{70}{lstlisting.6.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {lstlisting}{\numberline {6.12}OpenAPI 3.0 - JSON Schema Supports Beispiel}{71}{lstlisting.6.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {lstlisting}{\numberline {6.13}OpenAPI 3.0 - Examples Object Beispiel}{71}{lstlisting.6.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {lstlisting}{\numberline {6.14}OpenAPI 3.0 - Security}{72}{lstlisting.6.14}
