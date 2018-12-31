@@ -540,6 +540,31 @@
       \field{title}{Handbuch IT-Sicherheit: Strategien, Grundlagen und Projekte}
       \field{year}{2003}
     \endentry
+    \entry{cve18}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=67170fad99c7b1c0052d28727d0d52bc}{%
+           family={HTTPCS},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{67170fad99c7b1c0052d28727d0d52bc}
+      \strng{fullhash}{67170fad99c7b1c0052d28727d0d52bc}
+      \strng{bibnamehash}{67170fad99c7b1c0052d28727d0d52bc}
+      \strng{authorbibnamehash}{67170fad99c7b1c0052d28727d0d52bc}
+      \strng{authornamehash}{67170fad99c7b1c0052d28727d0d52bc}
+      \strng{authorfullhash}{67170fad99c7b1c0052d28727d0d52bc}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{All About Common Vulnerabilities Exposures (CVE)}}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://www.httpcs.com/en/cve-common-vulnerabilities-exposures
+      \endverb
+      \verb{url}
+      \verb https://www.httpcs.com/en/cve-common-vulnerabilities-exposures
+      \endverb
+    \endentry
     \entry{swagger20Github}{misc}{}
       \name{author}{1}{}{%
         {{hash=f4b67075a2ba05b28136a77668794fb0}{%
@@ -999,6 +1024,56 @@
       \endverb
       \verb{url}
       \verb https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project
+      \endverb
+    \endentry
+    \entry{bufferoverflow16}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=c4ebd5c1b49728b4a16f1b5553d1c274}{%
+           family={Owaspzap},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{c4ebd5c1b49728b4a16f1b5553d1c274}
+      \strng{fullhash}{c4ebd5c1b49728b4a16f1b5553d1c274}
+      \strng{bibnamehash}{c4ebd5c1b49728b4a16f1b5553d1c274}
+      \strng{authorbibnamehash}{c4ebd5c1b49728b4a16f1b5553d1c274}
+      \strng{authornamehash}{c4ebd5c1b49728b4a16f1b5553d1c274}
+      \strng{authorfullhash}{c4ebd5c1b49728b4a16f1b5553d1c274}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Buffer Overflow}}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://www.owasp.org/index.php/Buffer_Overflow
+      \endverb
+      \verb{url}
+      \verb https://www.owasp.org/index.php/Buffer_Overflow
+      \endverb
+    \endentry
+    \entry{fileremotevul18}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=c4ebd5c1b49728b4a16f1b5553d1c274}{%
+           family={Owaspzap},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{c4ebd5c1b49728b4a16f1b5553d1c274}
+      \strng{fullhash}{c4ebd5c1b49728b4a16f1b5553d1c274}
+      \strng{bibnamehash}{c4ebd5c1b49728b4a16f1b5553d1c274}
+      \strng{authorbibnamehash}{c4ebd5c1b49728b4a16f1b5553d1c274}
+      \strng{authornamehash}{c4ebd5c1b49728b4a16f1b5553d1c274}
+      \strng{authorfullhash}{c4ebd5c1b49728b4a16f1b5553d1c274}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Unrestricted File Upload}}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://www.owasp.org/index.php/Unrestricted_File_Upload
+      \endverb
+      \verb{url}
+      \verb https://www.owasp.org/index.php/Unrestricted_File_Upload
       \endverb
     \endentry
     \entry{phishing17ph}{misc}{}
@@ -1701,6 +1776,31 @@
       \endverb
       \verb{url}
       \verb https://www.techopedia.com/definition/4090/script-kiddie
+      \endverb
+    \endentry
+    \entry{cvss16}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=700f0e630e939fff4cff6be3fc518b34}{%
+           family={TechTarget},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{700f0e630e939fff4cff6be3fc518b34}
+      \strng{fullhash}{700f0e630e939fff4cff6be3fc518b34}
+      \strng{bibnamehash}{700f0e630e939fff4cff6be3fc518b34}
+      \strng{authorbibnamehash}{700f0e630e939fff4cff6be3fc518b34}
+      \strng{authornamehash}{700f0e630e939fff4cff6be3fc518b34}
+      \strng{authorfullhash}{700f0e630e939fff4cff6be3fc518b34}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{CVSS (Common Vulnerability Scoring System)}}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://searchsecurity.techtarget.com/definition/CVSS-Common-Vulnerability-Scoring-System
+      \endverb
+      \verb{url}
+      \verb https://searchsecurity.techtarget.com/definition/CVSS-Common-Vulnerability-Scoring-System
       \endverb
     \endentry
     \entry{tiller2004ethical}{book}{}
