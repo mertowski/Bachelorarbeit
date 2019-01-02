@@ -48,6 +48,34 @@
       \field{title}{BackTrack 4: Assuring Security by Penetration Testing}
       \field{year}{2011}
     \endentry
+    \entry{wasasibm08}{article}{}
+      \name{author}{1}{}{%
+        {{hash=c012f6075a5cd52d155de151f25a9877}{%
+           family={Allan},
+           familyi={A\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{c012f6075a5cd52d155de151f25a9877}
+      \strng{fullhash}{c012f6075a5cd52d155de151f25a9877}
+      \strng{bibnamehash}{c012f6075a5cd52d155de151f25a9877}
+      \strng{authorbibnamehash}{c012f6075a5cd52d155de151f25a9877}
+      \strng{authornamehash}{c012f6075a5cd52d155de151f25a9877}
+      \strng{authorfullhash}{c012f6075a5cd52d155de151f25a9877}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IBM Software Group}
+      \field{title}{Web application security: automated scanning versus manual penetration testing}
+      \field{year}{2008}
+      \verb{urlraw}
+      \verb ftp://ftp.software.ibm.com/software/rational/web/whitepapers/r_wp_autoscan.pdf
+      \endverb
+      \verb{url}
+      \verb ftp://ftp.software.ibm.com/software/rational/web/whitepapers/r_wp_autoscan.pdf
+      \endverb
+    \endentry
     \entry{cj16}{misc}{}
       \name{author}{1}{}{%
         {{hash=77cdaaf243483a8985f23fd7c5fb4e7f}{%
@@ -392,6 +420,31 @@
       \verb https://www.datenschutzbeauftragter-info.de/pseudonymisierung-was-ist-das-eigentlich/
       \endverb
     \endentry
+    \entry{wmpta17}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f21039962a3315c48d4c6ae9f59a0275}{%
+           family={Detectify},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{f21039962a3315c48d4c6ae9f59a0275}
+      \strng{fullhash}{f21039962a3315c48d4c6ae9f59a0275}
+      \strng{bibnamehash}{f21039962a3315c48d4c6ae9f59a0275}
+      \strng{authorbibnamehash}{f21039962a3315c48d4c6ae9f59a0275}
+      \strng{authornamehash}{f21039962a3315c48d4c6ae9f59a0275}
+      \strng{authorfullhash}{f21039962a3315c48d4c6ae9f59a0275}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Why manual pentesting and automation go hand in hand}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://blog.detectify.com/2017/08/16/manual-pentesting-automation-go-hand-hand/
+      \endverb
+      \verb{url}
+      \verb https://blog.detectify.com/2017/08/16/manual-pentesting-automation-go-hand-hand/
+      \endverb
+    \endentry
     \entry{rws13od}{misc}{}
       \name{author}{1}{}{%
         {{hash=bc40a767320b1d46d1289c0035ddde4c}{%
@@ -688,6 +741,33 @@
       \endverb
       \verb{url}
       \verb https://www.security-insider.de/sicherheit-fuer-webanwendungen-mit-zed-attack-proxy-a-728630/
+      \endverb
+    \endentry
+    \entry{moaast17}{article}{}
+      \name{author}{1}{}{%
+        {{hash=0a15818318ab27d3aee61359c0daacec}{%
+           family={Kakrania},
+           familyi={K\bibinitperiod},
+           given={Aditya},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{0a15818318ab27d3aee61359c0daacec}
+      \strng{fullhash}{0a15818318ab27d3aee61359c0daacec}
+      \strng{bibnamehash}{0a15818318ab27d3aee61359c0daacec}
+      \strng{authorbibnamehash}{0a15818318ab27d3aee61359c0daacec}
+      \strng{authornamehash}{0a15818318ab27d3aee61359c0daacec}
+      \strng{authorfullhash}{0a15818318ab27d3aee61359c0daacec}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Manual or Automated Application Security Testing: What's More Effective?}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://www.linkedin.com/pulse/manual-vs-automated-penetration-testing-youssef-elmalty
+      \endverb
+      \verb{url}
+      \verb https://www.linkedin.com/pulse/manual-vs-automated-penetration-testing-youssef-elmalty
       \endverb
     \endentry
     \entry{ke2009using}{inproceedings}{}
@@ -1074,6 +1154,31 @@
       \endverb
       \verb{url}
       \verb https://www.owasp.org/index.php/Unrestricted_File_Upload
+      \endverb
+    \endentry
+    \entry{packetlabs18}{article}{}
+      \name{author}{1}{}{%
+        {{hash=3f9847dc14146eae041a7a5bbddf1b18}{%
+           family={Packetlabs},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{3f9847dc14146eae041a7a5bbddf1b18}
+      \strng{fullhash}{3f9847dc14146eae041a7a5bbddf1b18}
+      \strng{bibnamehash}{3f9847dc14146eae041a7a5bbddf1b18}
+      \strng{authorbibnamehash}{3f9847dc14146eae041a7a5bbddf1b18}
+      \strng{authornamehash}{3f9847dc14146eae041a7a5bbddf1b18}
+      \strng{authorfullhash}{3f9847dc14146eae041a7a5bbddf1b18}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Automated Technologies vs Manual Testing}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://www.packetlabs.net/automated-technologies-vs-manual-testing/
+      \endverb
+      \verb{url}
+      \verb https://www.packetlabs.net/automated-technologies-vs-manual-testing/
       \endverb
     \endentry
     \entry{phishing17ph}{misc}{}

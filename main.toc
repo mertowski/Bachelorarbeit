@@ -223,35 +223,35 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.9}Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest}{62}{section.4.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Evaluierung von Open API 2.0 Plug-In von OWASP ZAP}{65}{chapter.5}
+\contentsline {chapter}{\numberline {5}Evaluierung von Open API 2.0 Plug-In von OWASP ZAP}{66}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Vergleich und Bewertung zwischen Open API 2.0 und Open API 3.0}{66}{chapter.6}
+\contentsline {chapter}{\numberline {6}Vergleich und Bewertung zwischen Open API 2.0 und Open API 3.0}{67}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Strukturelle Verbesserungen}{66}{section.6.1}
+\contentsline {section}{\numberline {6.1}Strukturelle Verbesserungen}{67}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.1}Versionsbezeichner (engl. Version Identifier)}{67}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.1}Versionsbezeichner (engl. Version Identifier)}{68}{subsection.6.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.2}Komponenten (engl. Components)}{67}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.2}Komponenten (engl. Components)}{68}{subsection.6.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.2.1}Anfrage-Format (engl. Request Format)}{69}{subsubsection.6.1.2.1}
+\contentsline {subsubsection}{\numberline {6.1.2.1}Anfrage-Format (engl. Request Format)}{70}{subsubsection.6.1.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.2.2}Antwort-Format (engl. Response Format)}{70}{subsubsection.6.1.2.2}
+\contentsline {subsubsection}{\numberline {6.1.2.2}Antwort-Format (engl. Response Format)}{71}{subsubsection.6.1.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.2.3}Verlinkung (engl. Linking)}{71}{subsubsection.6.1.2.3}
+\contentsline {subsubsection}{\numberline {6.1.2.3}Verlinkung (engl. Linking)}{72}{subsubsection.6.1.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.2.4}R\IeC {\"u}ckrufe (engl. Callbacks)}{72}{subsubsection.6.1.2.4}
+\contentsline {subsubsection}{\numberline {6.1.2.4}R\IeC {\"u}ckrufe (engl. Callbacks)}{73}{subsubsection.6.1.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.3}Servers}{72}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.3}Servers}{73}{subsection.6.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.4}Ausbau des JSON Schema Supports}{73}{subsection.6.1.4}
+\contentsline {subsection}{\numberline {6.1.4}Ausbau des JSON Schema Supports}{74}{subsection.6.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.5}Beispiele Objekt (engl. Examples Object)}{74}{subsection.6.1.5}
+\contentsline {subsection}{\numberline {6.1.5}Beispiele Objekt (engl. Examples Object)}{75}{subsection.6.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.6}Sicherheit (engl. Security)}{75}{subsection.6.1.6}
+\contentsline {subsection}{\numberline {6.1.6}Sicherheit (engl. Security)}{76}{subsection.6.1.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.7}Allgemeine Bewertung}{76}{subsection.6.1.7}
+\contentsline {subsection}{\numberline {6.1.7}Allgemeine Bewertung}{77}{subsection.6.1.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Fazit}{77}{chapter.7}
+\contentsline {chapter}{\numberline {7}Fazit}{78}{chapter.7}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Quellenverzeichnis}{i}{appendix*.37}
 \defcounter {refsection}{0}\relax 
