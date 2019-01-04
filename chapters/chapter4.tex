@@ -48,74 +48,36 @@ Die White-Box-Tests werden auch als "interne Tests" bezeichnet. Bei diesem Ansat
 
 \section{Kriterien für Penetrationstests}
 
-Bei einem Penetrationstest gibt es eine Vielzahl von verschiedenen Zielsetzungen, die vor dem Test festgelegt
-werden müssen. Somit kann bei einem Penetrationstest ein realistischer Angriff simuliert werden, aber auch
-ein Angriff von Insidern, die das Firmennetzwerk von ihrer täglichen Arbeit sehr gut kennen. Hierfür gibt es
-verschiedene Kriterien, die vor einem Test berücksichtigt werden müssen. Im Nachfolgenden werden diese
-Kriterien nach der Studie für Penetrationstests des BSI\cite[13--17]{pt03bsi} beschrieben.
+Bei einem Penetrationstest gibt es mehrere diverse Zielsetzungen, die vor dem Test bestimmt werden müssen. Mithin ist es möglich, dass bei einem Penetrationstest ein lebensnaher Angriff simuliert werden kann, aber auch ein Angriff von Firmeninternen, denen das Firmennetzwerk von ihrer täglichen Arbeit sehr gut bekannt ist. Für diesen Zweck gibt es verschiedene Kriterien, dessen Berücksichtigung für den Test unabdingbar ist. Im Folgenden werden diese Kriterien nach der Studie für Penetrationstests des BSI\cite[13--17]{pt03bsi} aufgeführt und erklärt.
 
 \subsection{Informationsbasis}
 
-Bei der Informationsbasis muss entschieden werden, wie viel Information der Tester über das anzugreifende
-Ziel erhalten soll. Hier unterscheidet man zwischen Black-Box- und White-Box-Test. Bei einem Black-Box-Test bekommt der Tester nur sehr wenig bis zu keiner Information über das Angriffsziel. Dieser Test simuliert einen realistischen Angriff, da der Tester sich erst mit dem zu testenden System auseinandersetzen muss, um Details zu recherchieren, wie zum Beispiel welche Dienste mit welchen Versionsnummern
-dort laufen. Dies ist für den Tester sehr aufwendig und zeitintensiv. Im Gegensatz zu einem Black-Box-Test bekommt der Tester bei einem White-Box-Test mehr Informationen zu dem Angriffsziel. Ein solcher Test soll zeigen, wie weit ein Insider mit sehr viel Wissen über die IT-Infrastruktur des Unternehmens in das Ziel eindringen kann. Hierfür bekommt der Tester den vollen Umfang
-an Informationen wie IP-Adressen, verwendete Netzwerkprotokolle und den Source Code von Anwendungen,
-die auf dem Zielsystem laufen.
+Zunächst muss bei der Informationsbasis bestimmt werden, wie viel Information der Tester über das anzugreifende Ziel bekommen soll. Dabei differenziert man zwischen dem Black-Box-Test und dem White-Box-Test. Beim Black-Box-Test erhält der Tester über das Angriffsziel nur sehr geringe bis keine Informationen. Dieser Test simuliert einen lebensnahen Angriff, da der Tester sich zunächst mit dem zu testenden System auseinandersetzen muss, um Details zu herauszufinden, wie beispielsweise welche Dienste mit welchen Versionsnummern
+dort laufen. Dies nimmt viel Zeit in Anspruch und ist sehr aufwändig. Im Unterschied zum Black-Box-Test bekommt der Tester beim White-Box-Test mehr Informationenzum Angriffsziel. Hierdurch soll aufgezeigt werden, wie weit ein Insider mit sehr viel Wissen über die IT-Infrastruktur des Unternehmens in das Ziel eindringen kann. Für diesen Zweck erhält der Tester den alle notwendigen Informationen wie verwendete Netzwerkprotokolle, IP-Adressen und den Source Code von Anwendungen, die auf dem Zielsystem laufen.
 
 \subsection{Aggressivität}
 
-Die Aggressivität eines Penetrationstests wird in passiv, vorsichtig, abwägend und aggressiv unterteilt. Bei
-einer passiven Aggressivitätsstufe werden die gefundenen Schwachstellen nur dokumentiert, aber nicht weiter
-ausgenutzt. Wird jedoch der vorsichtige Ansatz gewählt, werden Schwachstellen nur dann ausgenutzt, wenn ein
-Systemausfall aufgrund des Angriffs ausgeschlossen werden kann. Bei diesem Ansatz werden auch nur Angriffsmethoden
-gewählt, die sehr ressourcenschonend sind. Bei einem Test mit Aggressivitätsgrad ”abwägend”
-wird versucht, das Zielsystem nur so zu testen, dass eine Beeinträchtigung des Systems unwahrscheinlich ist,
-jedoch aber vorkommen kann. Schon vor dem Test wird abgewägt wie wahrscheinlich es ist, erfolgreich zu sein
-und welche Konsequenzen entstehen können. Die letzte Aggressivitätsstufe ist aggressiv. Hierbei werden alle
-möglichen Schwachstellen ohne Rücksicht auf die Verfügbarkeit der Systeme getestet. Bei einem solchen Test
-kann es passieren, dass auch andere Systeme bis hin zur ganzen IT-Infrastruktur ausfallen können.
+In passiv, vorsichtig, abwägend und aggressiv wird die Aggressivität eines Penetrationstests unterteilt. Bei einer passiven Aggressivitätsstufe werden die entdeckten Schwachstellen nur festgehalten, aber nicht verwandt. Entscheidet man sich für den vorsichtigen Ansatz, so werden Schwachstellen nur dann ausgenutzt, wenn aufgrund des Angriffs ein Systemausfall auszuschließen ist. Hierbei fällt die Wahl nur auf diejenigen Angriffsmethoden, die sehr ressourcenschonend sind. Bei einer ”abwägenden” Aggressivitätsstufe wird versucht, das Zielsystem nur so zu testen, dass eine Beeinträchtigung des Systems unwahrscheinlich ist, aber dennoch vorkommen kann. Bereits vor dem Test wird abgewogen wie wahrscheinlich es ist, dass der Test erfolgreich sein wird und welche Konsequenzen dadurch entstehen können. Bei der aggressiven Aggressivitätsstufe werden alle möglichen Schwachstellen ohne Rücksicht auf die Verfügbarkeit der Systeme getestet. Bei einem solchen Test kann ist es durchaus möglich, dass auch andere Systeme bis hin zur ganzen IT-Infrastruktur ausfallen können.
 
 \subsection{Umfang}
 
-Bei einem Penetrationstest sollten immer alle Systeme auf Schwachstellen untersucht werden. Liegt der Fokus
-nur auf bestimmten Komponenten, besteht weiterhin die Gefahr, dass es ein Einfalltor in das interne Netz gibt.
-Bekommt ein Angreifer einmal unerlaubten Zugriff in das innere Netz, bieten sich noch mehr Möglichkeiten,
-weitere Systeme zu befallen. Jedoch ist ein vollständiger Penetrationstest bei sehr großen Netzen nicht in kurzer
-Zeit machbar. Daher liegt der Fokus oft auf besonders gefährdeten Komponenten wie Systeme, die direkt an das
-Internet angebunden sind oder sehr sensible Daten enthalten. Daher existieren somit neben dem vollständigen
-Test auch der fokussierte- und der begrenzte Penetrationstest. Der fokussierte Test wird oft angewandt, wenn
-neue Systeme oder Anwendungen betrieben werden, um ein gleichmäßiges Sicherheitsniveau zu schaffen. Bei
-einem begrenzten Test liegt der Fokus auf einem bestimmten Teil der Infrastruktur.
+Bei einem Penetrationstest sollten grundsätzlich immer alle Systeme auf Schwachstellen untersucht werden. Würde hierbei der Fokus nur auf bestimmten Komponenten liege, so bestünde weiterhin die Gefahr, dass es ein Einfallstor in das interne Netz gäbe. Erlangt ein Angreifer einmal unerlaubten Zugriff in das innere Netz, so würden sich noch mehr Möglichkeiten bieten, weitere Systeme zu befallen. Die Durchführung von einem Penetrationstest bei sehr großen Netzen ist jedoch sehr zeitintensiv und in kurzer Zeit nicht machbar. Aus diesem Grund liegt das Augenmerk oftmals auf besonders gefährdeten Komponenten wie Systeme, die direkt an das Internet angebunden sind oder sehr sensible Daten enthalten. Deshalb gibt es neben dem vollständigen Test auch den fokussierten- und den begrenzten Penetrationstest. Der fokussierte Test findet oft Anwendung, wenn
+neue Systeme oder Anwendungen betrieben werden, um ein gleichmäßiges Sicherheitsniveau zu schaffen. Beim begrenzten Test liegt der Schwerpunkt auf einem bestimmten Teil der Infrastruktur.
 
 \subsection{Vorgehensweise}
-Die Vorgehensweise unterscheidet sich hauptsächlich in einem verdeckten und einem offensichtlichen Test.
-Das Ziel eines verdeckten Penetrationstests ist es, Sicherheitsanwendungen wie ein Intrusion Detection System
-(IDS) auf die Wirksamkeit zu prüfen oder auch die Mitarbeiter einer Organisation mittels Social Engineering zu
-testen. Bei einem verdeckten Test wird nur auf Methoden gesetzt, welche vom System nicht als Angriff gewertet
-werden. Fällt die Entscheidung jedoch auf einen offensichtlichen Test, so können je nach dem anzugreifenden
-System offensichtliche Sicherheitstests wie SQL-Injection oder Portscans durchgeführt werden.
+Bei der Vorgehensweise differenziert man hauptsächlich zwischen in einem verdeckten und einem offensichtlichen Test. Dabei ist das Ziel eines verdeckten Penetrationstests, Sicherheitsanwendungen wie ein Intrusion Detection System (IDS) auf ihre Wirksamkeit zu überprüfen oder auch die Mitarbeiter einer Organisation mittels Social Engineering zu prüfen. Dabei wird bei einem verdeckten Test lediglich auf Methoden gesetzt, welche vom System nicht als Angriff gewertet werden. Wird entschieden, dass ein offensichtlicher Test durchgeführt werden soll, so können je nach dem angreifenden System offensichtliche Sicherheitstests wie SQL-Injection oder Portscans durchgeführt werden.
 
 \subsection{Technik}
-Ein weiteres wichtiges Kriterium bei einem Penetrationstest ist die Technik. Soll ein realer Angriff von einem
-Cyberkriminellen simuliert werden, wird der Penetrationstest meist über das Netzwerk durchgeführt. Jedoch
-gibt es auch andere Einfallstore, die getestet werden sollten. Hat ein Angreifer zum Beispiel physischen Zugriff
-auf ein System, könnte es leichter fallen, bestimmte Schwachstellen auszunutzen, die über das Netzwerk wegen einer existierenden Firewall nicht ausnutzbar sind. Des Weiteren besteht auch die Möglichkeit, Mitarbeiter des
-Unternehmens mit einem Social Engineering Angriff zur Herausgabe von Zugangsdaten zu bringen.
+Des Weiteren handelt es sich bei der Technik um ein weiteres wichtiges Kriterium beim Penetrationstest. Soll ein realer Angriff von einem Cyberkriminellen simuliert werden, so wird bei der Durchführung des Penetrationstests meist der Weg über das Netzwerk gewählt. Nichts desto trotz gibt es auch andere Einfallstore, die einem Test unterzogen werden sollten. Ist beispielsweise davon auszugehen, dass der Angreifer auch physischen Zugriff hat, könnte es leichter fallen, bestimmte Schwachstellen auszunutzen, die über das Netzwerk wegen einer existierenden Firewall nicht ausnutzbar sind. Außerdem besteht auch die Möglichkeit, bei einem Social Engineering Angriff  die Mitarbeiter des Unternehmens zur Herausgabe von Zugangsdaten zu bringen.
 
 \subsection{Ausgangspunkt}
-Der Ausgangspunkt bei einem Penetrationstest beschreibt, von wo der Angriff gestartet wird. Die meisten
-Organisationen betreiben eine Firewall, um den Zugriff nur auf gewisse Dienste zu unterbinden. Daher ist es oft
-schwer, das dahinterliegende System anzugreifen. Aus diesem Grund konzentriert sich ein Penetrationstest von
-außen auf die Konfiguration der eingesetzten Firewall, um zu testen, ob diese Konfigurationsfehler enthält, die
-es einem externen Angreifer ermöglicht, in das Innere eines Netzes einzudringen. Es ist aber auch wichtig, den
-Penetrationstest von innen durchzuführen, da hier in vielen Fällen keine Firewall übergangen werden muss, um
-die laufenden Dienste und Anwendungen auf ihre Sicherheit zu überprüfen. Ein Test von innen kann zeigen,
-wie gefährlich eine Schwachstelle in der Firewall wäre oder welche Möglichkeiten sich für einen Innentäter
-bieten würden.
+Durch den Ausgangspunkt wird beim Penetrationstest festgelegt, von wo der Angriff zu beginnen hat. Überwiegend betreiben dabei die Organisationen eine Firewall, um den Zugriff auf gewisse Dienste zu verhindern. Deshalb ist es nicht leicht, das dahinterliegende System anzugreifen. Aus diesem Grund liegt die Konzentration beim Penetrationstest von außen auf die Konfiguration der eingesetzten Firewall, hierdurch wird nämlich getestet, ob diese Konfigurationsfehler beinhaltet, wodurch es einem externen Angreifer ermöglicht wird, in das Innere eines Netzes einzudringen. Nicht zu vernachlässigen ist aber, dass der Penetrationstest auch von innen durchzuführen ist, da hier in vielen Fällen keine Firewall übergangen werden muss, um die laufenden Dienste und Anwendungen auf ihre Sicherheit zu überprüfen. Dabei kann ein Test von innen insbesondere die Gefahr einer Schwachstelle in der Firewall aufzeigen oder welche Möglichkeiten sich für einen Innentäter bieten würden.
 
 \section{Ablauf eines Penetrationstest}
-
+\label{ablaufpentest}
 Im Nachfolgenden werden das Ablauf eines Penetrationstest nach der Studie für Penetrationstests des BSI\cite[100--106]{pt03bsi} beschrieben.
+
+\newpage
 
 \subsection{Vorbereitung}
 
@@ -124,15 +86,7 @@ Im Nachfolgenden werden das Ablauf eines Penetrationstest nach der Studie für P
 	\includegraphics[width=\textwidth]{vorbereitungpt.png}
 	\caption{Phase 1 – Vorbereitung des Penetrationstests}
 \end{figure}
-Um den Anforderungen des Auftraggebers gerecht zu werden, bedarf es einer gründlichen Vorbereitung. In
-dieser Phase muss geklärt werden, welche Komponenten getestet werden sollen und wie weit ein Penetrationstest
-gehen darf. Hier kann der Auftraggeber den Tester auf einen bestimmten Bereich begrenzen, der für einen
-Sicherheitstest besonders wichtig ist. Des Weiteren muss auch geklärt werden, welche Informationen der Tester
-über die IT-Infrastruktur des Unternehmens bekommt. Bei diesem Schritt wird entschieden, ob es sich um einen
-Black-Box-Test, Grey-Box-Test oder einen White-Box-Test handelt. Da es auch gesetzliche Bestimmungen
-gibt, die das Angreifen von Computersystemen und Netzwerken verbieten, müssen bei einem Penetrationstest
-alle durchzuführenden Tests und deren Risiken vertraglich vereinbart und dokumentiert werden, um spätere
-Schadenersatzansprüche zu vermeiden.
+Zunächst bedarf es einer gründlichen und umfassenden Vorbereitung, um die Anforderungen des Auftraggebers gerecht zu erfüllen. Hierzu muss bestimmt werden, welche Komponenten dem Test unterzogen werden sollen und wie weit der Penetrationstest gehen darf und soll. Hier besteht auch unter anderem die Möglichkeit, dass der Auftraggeber den Tester auf einen bestimmten Bereich begrenzt, den er für einen Sicherheitstest als besonders relevant und wichtig ansieht. Darüber hinaus muss im Vorhinein auch geklärt werden, welche Informationen der Tester über die IT-Infrastruktur des Unternehmens erhalten soll. Bei dieser entscheidenden Frage wird entschieden, ob es sich um einen Black-Box-Test oder einen White-Box-Test handeln soll. Um sich gegen einen späteren eventuellen Schadensersatzanspruch zu schützen, ist es zudem von unerlässlicher Wichtigkeit den Penetrationstest in seiner Gesamtheit vertraglich zu vereinbaren und dies auch zur Niederschrift zu bringen.
 
 \subsection{Informationsbeschaffung}
 
@@ -142,15 +96,7 @@ Schadenersatzansprüche zu vermeiden.
 	\caption{Phase 2 – Informationsbeschaffung}
 \end{figure}
 
-Nachdem die Vorbereitungen abgeschlossen sind und alle wichtigen Eckpunkte vereinbart wurden, kann mit
-der Beschaffung von Information über die Zielsysteme begonnen werden. Um einen Überblick zu bekommen,
-welche Dienste erreichbar sind, wird ein Portscan gegen das Zielsystem durchgeführt. Des Weiteren benötigt der
-Tester Informationen über die eingesetzten Systeme und installierten Anwendungen, um einen detailreichen
-Überblick über die möglichen Angriffspunkte zu erlangen. Je nach Größe des Netzes oder der Menge zu
-testender Komponenten sollte in dieser Phase genug Zeit eingeplant werden. Beinhaltet der Test eine große
-Menge an Rechnern, kann die Informationsbeschaffung einige Wochen andauern.
-
-\newpage
+Sofern die Vorbereitungen abgeschlossen sind und man sich über alle wesentlichen Punkte einig wurde, so kann mit der Beschaffung von Information über die Zielsysteme angefangen werden. Zunächst wird dabei ein Portscan gegen das Zielsystem durchgeführt, um einen Überblick zu bekommen welche Dienste erreichbar sind. Sodann braucht der Tester die maßgeblichen  Informationen über die eingesetzten Systeme und installierten Anwendungen, um einen genauen Überblick über die möglichen Angriffspunkte zu erlangen. Hierzu muss genug Zeit eingeplant werden, da je nach Größe des Netzes oder der Menge der zu testenden Komponenten diese variieren wird. Hierbei kann dies bis zu einige Wochen in Anspruch nehmen, wenn der Test eine große Menge an Rechnern beinhaltet.
 
 \subsection{Bewertung der Informationen und Risikoanalyse}
 
@@ -160,12 +106,7 @@ Menge an Rechnern, kann die Informationsbeschaffung einige Wochen andauern.
 	\caption{Phase 3 – Bewertung der Informationen und Risikoanalyse}
 \end{figure}
 
-In dieser Phase werden die erlangten Informationen aus Phase 2 ausführlich zusammengetragen und das
-jeweilige Risiko bewertet. Um den Penetrationstest effizient durchführen zu können, werden anhand einer
-Risikobewertung der gesammelten Informationen entschieden, welche Komponenten in der nächsten Phase
-genauer betrachtet werden. Diese Reduktion der zu testenden Komponenten bedeutet natürlich auch eine Einschränkung
-des resultierenden Ergebnisses. Daher muss dies ausführlich dokumentiert und an den Auftraggeber
-weitergegeben werden.
+Danach werden die erlangten Informationen aus der vorherigen Phase ausführlich zusammengetragen und es findet eine Bewertung des Risikos statt. Um die Effizienz des Penetrationstests zu steigern, werden die gesammelten Informationen einer Risikobewertung unterzogen und anhand dieser Risikobewertung entschieden, welche Komponenten in der nächsten Phase genauer betrachtet werden. Hieraus ergibt sich aber auch eine Einschränkung des resultierenden Ergebnisses. Aus diesem Grund muss dies gründlich dokumentiert und an den Auftraggeber weitergegeben werden.
 
 \subsection{Aktive Eindringversuche}
 
@@ -175,14 +116,7 @@ weitergegeben werden.
 	\caption{Phase 4 – Aktive Eindringversuche durchführen}
 \end{figure}
 
-In dieser Phase wird geprüft, wie sicherheitskritisch die ausgewählten Sicherheitsmängel von Phase 3 wirklich
-sind. Dies geschieht durch den Versuch, so weit wie möglich in ein System vorzudringen. Hier ist wichtig,
-jeden Schritt genau zu bedenken, da durch Eindringversuche die Zielsysteme auch beschädigt werden könnten.
-Wird dabei ein System getestet, das eine hohe Verfügbarkeit haben soll, so muss bedacht werden, wie der Test
-aufgebaut wird, um die Verfügbarkeit weiterhin zu gewähren. Eine weitere Möglichkeit, um die Verfügbarkeit
-der zu testenden Systeme sicherzustellen, ist das Verwenden von Schattensystemen. Dabei handelt es sich um
-eine exakte Kopie des zu testenden Systems. Der Vorteil bei der Verwendung von Schattensystemen ist, dass
-während des Penetrationstests sichergestellt ist, dass es zu keinen Ausfällen des originalen Systems kommt.
+In dieser Phase wird geprüft, wie sicherheitskritisch die ausgewählten Sicherheitsmängel von Phase 3 tatsächlich sind. Dies wird dadurch erreicht, dass versucht wird so weit wie möglich in ein System vorzudringen. Hierbei ist von Relevanz, dass jeder Schritt genau bedacht wird, da durch den Versuch einzudringen die Zielsysteme auch beschädigt werden könnten. Soll beispielsweise ein System getestet werden, das eine hohe Verfügbarkeit haben soll, so muss geplant werden, wie der Test aufgebaut wird, um die Verfügbarkeit weiterhin gewähren zu können. Es gibt auch noch eine weitere Möglichkeit, um die Verfügbarkeit der zu testenden Systeme sicherzustellen, indem nämlich Schattensysteme verwendet werden. Schattensystemen sind eine exakte Kopie des zu testenden Systems. Dabei ist als Vorteil bei der Verwendung von Schattensystemen klar zu benennen, dass während des Penetrationstests sichergestellt ist, dass es zu keinen Ausfällen des tatsächlichen Systems kommt.
 
 \subsection{Abschlussanalyse und Nacharbeiten}
 
@@ -192,12 +126,7 @@ während des Penetrationstests sichergestellt ist, dass es zu keinen Ausfällen 
 	\caption{Phase 5 – Abschlussanalyse und Nacharbeiten durchführen}
 \end{figure}
 
-In der letzten Phase werden alle gefundenen Schwachstellen in einem Abschlussbericht zusammengefasst
-und deren Risiken genau erläutert. Ein solcher Bericht muss neben den Resultaten des Penetrationstests auch
-Möglichkeiten zur Behebung ausführen. Es ist wichtig, dass jede durchgeführte Aktion so beschrieben wird,
-dass sie für den Auftraggeber nachvollziehbar ist und gegebenenfalls wiederholt werden kann. Nach der
-Fertigstellung des Berichts sollte mit dem Auftraggeber ein Abschlussgespräch geführt werden, in dem noch
-einmal alle gefundenen Sicherheitsprobleme ausführlich besprochen werden.
+Zum Abschluss des Penetrationstests werden alle gefundenen Schwachstellen in einem Bericht aufgelistet und deren Risiken genau erläutert. Dabei sollte ein solcher Abschlussbericht neben den Resultaten des Penetrationstests auch Möglichkeiten zur Behebung etwaiger Risiken beinhalten. Ein klarer und deutlicher Bericht ist unabdingbar. Dabei sollte jede durchgeführte Aktion so beschrieben wird, dass sie für den Auftraggeber nachvollziehbar ist und gegebenenfalls wiederholt werden kann. Schließlich sollte nach der Fertigstellung des Abschlussberichts mit dem Auftraggeber ein Abschlussgespräch geführt werden. Hierbei werden noch einmal alle gefundenen Sicherheitsprobleme ausführlich besprochen.
 
 \section{Manuelle Penetrationstest}
 
@@ -259,7 +188,7 @@ Mit dem oben gegebenen Befehl wurde der Datenbankname erhalten:
 
 Das Ergebnis sollte so aussehen:
 
-\begin{table}[]
+\begin{table}[h]
 	\centering
 	\begin{tabular}{|l|}
 		\hline
@@ -273,8 +202,6 @@ Das Ergebnis sollte so aussehen:
 	\end{tabular}
 	\caption{Ergebnis: Tabellenname}
 \end{table}
-
-\newpage
 
 Bisher wurde festgestellt, dass die Website \texttt{acfurniture.com} hat zwei Datenbanken, acfurniture und information\_schema. Die Datenbank \texttt{acfurniture} enthält vier Tabellen: \texttt{category}, \texttt{product}, \texttt{product\_hacked} und settings.\\
 
@@ -312,8 +239,6 @@ Man kann alle Daten in der Tabelle mit folgendem Befehl ausgeben:
 ~# sqlmap -u "http://www.acfurniture.com/item.php?id=25" -D acfurniture -T settings --dump
 \end{LaTeXCode}
 
-\newpage
-
 Das Ergebnis sollte so aussehen:
 
 \begin{figure}[h]
@@ -328,9 +253,11 @@ Das folgende Cross-Site-Scripting-Beispiel stammt aus dem Tutorial von Web-Siche
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=10cm]{xssburp.png}
+	\includegraphics[width=7cm]{xssburp.png}
 	\caption{Adresse eingeben}
 \end{figure}
+
+\newpage
 
 Man muss eine entsprechende Eingabe in die Webanwendung eingeben und die Anfrage senden.
 
@@ -339,8 +266,6 @@ Man muss eine entsprechende Eingabe in die Webanwendung eingeben und die Anfrage
 	\includegraphics[width=11cm]{xssburp2.png}
 	\caption{Erfassung der Anfrage durch Burp}
 \end{figure}
-
-\newpage
 
 Die Anfrage wird von Burp erfasst. Die HTTP-Anforderung wird auf der Intercept-Tab angezeigt. Es wird mit der rechten Maustaste auf die Anforderung geklickt, um das Kontextmenü aufzurufen und dann wird auf "`An Repeater senden"' geklickt.
 
@@ -351,8 +276,6 @@ Die Anfrage wird von Burp erfasst. Die HTTP-Anforderung wird auf der Intercept-T
 \end{figure}
 
 Hier können verschiedene XSS-Payloads in das Eingabefeld eingegeben werden. Verschiedene Eingaben getestet werden, indem der Tester das "`Value"' des entsprechenden Parameters in den Tabs "`Raw"' oder "`Params"' bearbeiten. In diesem Beispiel wird versucht, dass ein Pop-up in unserem Browser ausgeführt wird.
-
-\newpage
 
 \begin{figure}[h]
 	\centering
@@ -469,6 +392,8 @@ Content-Length: 98
 
 Hier soll beachtet werden, dass die Anwendung in der HTTP-Antwort einen Benutzernamen anzeigt, der bestätigt, dass die XML-Daten geparst werden.
 
+\newpage
+
 \begin{LaTeXCode}[caption={Geparste XML-Daten},captionpos=b][numbers=none]
 HTTP/1.1 200 OK
 Date: Tue, 15 May 2018 17:40:35 GMT
@@ -503,7 +428,7 @@ Content-Length: 98
 	</root>\\
 \end{LaTeXCode}
 
-Hier soll beachtet nochmal werden, dass die Anwendung der interne Einheit auflöst und die XXE-Sicherheitsanfälligkeit erfolgreich bestätigt.\\
+Hier soll nochmal beachtet werden, dass die Anwendung der interne Einheit auflöst und die XXE-Sicherheitsanfälligkeit erfolgreich bestätigt.\\
 
 \begin{LaTeXCode}[caption={Bestätigung der XXE-Schwachstelle},captionpos=b][numbers=none]
 	HTTP/1.1 200 OK
@@ -517,8 +442,6 @@ Hier soll beachtet nochmal werden, dass die Anwendung der interne Einheit auflö
 	username: username from internal entity\\
 \end{LaTeXCode}
 
-\newpage
-
 \subsection{Testen von Fehlerhafte Authentifizierung mit Webgoat und Burp Suite}
 Dieses Tutorial stammt aus der Webseite Tutorialspoint\cite{tpfa15}.
 Eine Webanwendung unterstützt das Umschreiben von URLs, indem Sitzungs-IDs in die URL eingefügt werden.\\
@@ -531,6 +454,8 @@ Ein authentifizierter Benutzer der Website leitet die URL an seine Freunde weite
 
 Man muss sich bei Webgoat anmelden und zum Abschnitt \texttt{"`Session Management Flaws"'} navigiert wird.\\
 
+\newpage
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=10cm]{fa2.jpg}
@@ -538,8 +463,6 @@ Man muss sich bei Webgoat anmelden und zum Abschnitt \texttt{"`Session Managemen
 \end{figure}
 
 Wenn mit den Anmeldeinformationen webgoat/webgoat angemeldet wird, wird in Burp Suite festgestellt, dass die \texttt{JSESSION-ID C8F3177CCAFF380441ABF71090748F2E} lautet, während \texttt{AuthCookie = 65432ubphcfx} nach erfolgreicher Authentifizierung ist.
-
-\newpage
 
 \begin{figure}[h]
 	\centering
@@ -549,6 +472,8 @@ Wenn mit den Anmeldeinformationen webgoat/webgoat angemeldet wird, wird in Burp 
 
 Wenn mit den Anmeldeinformationen aspect/aspect angemeldet wird, wird in Burp Suite festgestellt, dass die \texttt{JSESSION-ID C8F3177CCAFF380441ABF71090748F2E} lautet, während \texttt{AuthCookie = 65432udfqtb} nach erfolgreicher Authentifizierung ist.
 
+\newpage
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=10cm]{fa4.jpg}
@@ -557,15 +482,15 @@ Wenn mit den Anmeldeinformationen aspect/aspect angemeldet wird, wird in Burp Su
 
 Nun muss die AuthCookie Patterns analysiert werden. Die erste Hälfte \texttt{65432} ist für beide Authentifizierungen üblich. Daher sind wir jetzt daran interessiert, den letzten Teil der Authcookie-Werte zu analysieren, wie - \texttt{ubphcfx} für den Benutzer \texttt{webgoat} und \texttt{udfqtb} für den jeweiligen Aspektbenutzer.\\
 
-Wenn die AuthCookie-Werte genauer angesehen werden, hat der letzte Teil dieselbe Länge wie der Benutzername. Es ist daher offensichtlich, dass der Benutzername bei einer Verschlüsselungsmethode verwendet wird. Bei Versuchen und Fehlern / Brute-Force-Mechanismen wird festgestellt, dass nach der Umkehrung des Benutzernamens \texttt{webgoat}; es wird jetzt rausgefunden, dass es \texttt{taogbew} ist und dann wird das Zeichen vor dem Alphabet als AuthCookie d. h. \texttt{ubphcfx} verwendet.
-
-\newpage
-
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=10cm]{fa5.jpg}
 	\caption{Burp Suite: AuthCookie Kontrolle 3}
 \end{figure}
+
+Wenn die AuthCookie-Werte genauer angesehen werden, hat der letzte Teil dieselbe Länge wie der Benutzername. Es ist daher offensichtlich, dass der Benutzername bei einer Verschlüsselungsmethode verwendet wird. Bei Versuchen und Fehlern / Brute-Force-Mechanismen wird festgestellt, dass nach der Umkehrung des Benutzernamens \texttt{webgoat}; es wird jetzt rausgefunden, dass es \texttt{taogbew} ist und dann wird das Zeichen vor dem Alphabet als AuthCookie d. h. \texttt{ubphcfx} verwendet.
+
+\newpage
 
 Nach der Authentifizierung als Benutzer-Webgoat den AuthCookie-Wert geändert wird, um den Benutzer Alice zu verspotten, indem den AuthCookie gesucht wird.
 
@@ -577,11 +502,13 @@ Nach der Authentifizierung als Benutzer-Webgoat den AuthCookie-Wert geändert wi
 
 \section{Automatisierte Penetrationstest}
 
-Wie in der Abschnitt \ref{owaspzap-def} erwähnt, dass OWASP ZAP ein benutzerfreundliches integriertes Penetrationstest-Tool zum Auffinden von Schwachstellen in Webanwendungen ist. ZAP bietet automatisierte Scanner sowie eine Reihe von Tools, mit denen die Sicherheitslücken automatisch gesucht werden können. In diesem Abschnitt wird die OWASP ZAP-GUI vorgestellt und wird erfährt, wie automatische Penetrationstests mit dem Sicherheitstools OWASP Zap durchgeführt werden. Außerdem bilden die in diesem Kapitel erläuterten Informationen die Basis für die in Kapitel \ref{cha:k5} vorgenommene Evaluierung des Open API 2.0 Plugins von OWASP ZAP und sind demzufolge für das Verständnis der Verwendung erforderlich.
+Wie in der Abschnitt \ref{owaspzap-def} erwähnt, dass OWASP ZAP ein benutzerfreundliches integriertes Penetrationstest-Tool zum Auffinden von Schwachstellen in Webanwendungen ist. ZAP bietet automatisierte Scanner sowie eine Reihe von Tools, mit denen die Sicherheitslücken automatisch gesucht werden können. In diesem Abschnitt wird die OWASP ZAP-GUI vorgestellt und wird erfährt, wie automatische Penetrationstests mit dem Sicherheitstools OWASP Zap durchgeführt werden. Außerdem bilden die in diesem Kapitel erläuterten Informationen die Basis für die in Kapitel \ref{cha:k5} vorgenommene Evaluierung des Open API 2.0 Plugins von OWASP ZAP und sind demzufolge für das Verständnis der Verwendung des Open API 2.0 Plug-Ins erforderlich.
 
 \subsection{OWASP-ZAP Webanwendung Penetrationstest}
 
 \subsubsection{Die Vorstellung von OWASP ZAP Oberfläche}
+
+\newpage
 
 \begin{figure}[h]
 	\centering
@@ -628,6 +555,8 @@ Um den Schnellscan zu starten, wird die Adresse des Ziels in das Eingabefeld "`U
 \end{figure}
 
 Dadurch wird die gesamte Zielwebsite gesichtet und anschließend nach Schwachstellen durchsucht. Der Scan-Fortschritt und die gefundenen Seiten werden wie bei der Abbildung \ref{quickscan3} im unteren Fenster angezeigt.
+
+\newpage
 
 \begin{figure}[h]
 	\centering

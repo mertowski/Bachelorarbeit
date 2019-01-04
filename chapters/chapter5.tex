@@ -1,3 +1,43 @@
 \chapter{Evaluierung von Open API 2.0 Plug-In von OWASP ZAP}
 \label{cha:k5}
 
+In diesem Kapitel wird die Evaluierung von Open API 2.0 Plug-In von OWASP ZAP nach dem Ablauf eines Penetrationtests bei der Abschnitt \ref{ablaufpentest} durchgeführt.
+
+Für die Evaluierung von Open API 2.0 Plug-In von OWASP Zap wurde eine kleine online store Springboot Anwendung, die bestimmte Produkte enthält und mit der Möglichkeit die available Produkte zu zeigen und ein produkt mit der id suchen und ein neues Produkt hinzufügen und ein Produkt aktualisieren und ein Produkt löschen. Außerdem hat dieser Anwendung die möglichkeit die Rest API als swagger (open api 2.0)   zu exportieren.
+
+Die in Abschnitt 4 vorgestellten Schritte eines Penetrationstests werden in diesem Kapitel zur Evaluierung von Open API 2.0 Plug-In von OWSAP ZAP herangezogen. Die Anwendung anhand derer überprüft wird ob Open API 2.0 Plug-In Sicherheitslücken findet, ist eine Online Store - Springboot Anwendung, welche Produkte enthält, die aufgerufen, angezeigt, hinzugefügt, aktualisiert und gelöscht werden können.
+
+\section{Ablauf des Open API 2.0 Plug-In von OWASP ZAP}
+
+\subsection{Vorbereitung}
+
+Für Evaluierung von Open API 2.0 Plug-In von OWASP ZAP wurde eine Online Store - Springboot Anwendung entwickelt, die die Restschnittstellen als eine Swagger 2.0 (OpenAPI 2.0) exportiert. Gelistirilen programdaki bütün kodlar benim tarafimdan yazildigi icin bu test white box olarak gecmektedir, cünkü kodun tamamen neler yaptigini biliyorum. open api 2.0 anwendungu sadece rest schnittstellelerdeki linkleri alip saldiri yaptigi icin; bu testin büyüklügü restschnittstelleler kadardir.
+
+Zunächst bedarf es einer gründlichen und umfassenden Vorbereitung, um die Anforderungen des Auftraggebers gerecht zu erfüllen. Hierzu muss bestimmt werden, welche Komponenten dem Test unterzogen werden sollen und wie weit der Penetrationstest gehen darf und soll. Hier besteht auch unter anderem die Möglichkeit, dass der Auftraggeber den Tester auf einen bestimmten Bereich begrenzt, den er für einen Sicherheitstest als besonders relevant und wichtig ansieht. Darüber hinaus muss im Vorhinein auch geklärt werden, welche Informationen der Tester über die IT-Infrastruktur des Unternehmens erhalten soll. Bei dieser entscheidenden Frage wird entschieden, ob es sich um einen Black-Box-Test oder einen White-Box-Test handeln soll. Um sich gegen einen späteren eventuellen Schadensersatzanspruch zu schützen, ist es zudem von unerlässlicher Wichtigkeit den Penetrationstest in seiner Gesamtheit vertraglich zu vereinbaren und dies auch zur Niederschrift zu bringen.
+
+\subsection{Informationsbeschaffung}
+
+vorbereitungun phasesi bittigine göre simdi informationbeschaffung phasesine gelinmistir.
+Diese Springboot Anwendung enthält bestimmte Produkte. Durch die Restschnittstellen können Produkte aufgerufen, angezeigt, hinzugefügt, aktualisiert und gelöscht werden. Restschnittstelleler Swagger a export edilebildigi icin; Spider ile bütün linklere crawl yapilir. zaten rest schnittstelleler otomatik export edildigi icin; bu kisimda uzun zaman harcamamiza gerek kalmamaktadir.
+
+Sofern die Vorbereitungen abgeschlossen sind und man sich über alle wesentlichen Punkte einig wurde, so kann mit der Beschaffung von Information über die Zielsysteme angefangen werden. Zunächst wird dabei ein Portscan gegen das Zielsystem durchgeführt, um einen Überblick zu bekommen welche Dienste erreichbar sind. Sodann braucht der Tester die maßgeblichen  Informationen über die eingesetzten Systeme und installierten Anwendungen, um einen genauen Überblick über die möglichen Angriffspunkte zu erlangen. Hierzu muss genug Zeit eingeplant werden, da je nach Größe des Netzes oder der Menge der zu testenden Komponenten diese variieren wird. Hierbei kann dies bis zu einige Wochen in Anspruch nehmen, wenn der Test eine große Menge an Rechnern beinhaltet.
+
+\subsection{Bewertung der Informationen und Risikoanalyse}
+
+Anwendungu kendim gelistirdigim icin ve sadece yaptiklarimda hata varmi diye baktigim icin herhangi bir risk teskil etmemktedir. Informationbeschaffungda da bahsedildigi gibi restschnittstelleler otomatik olarak swagger datasi halinda export edildigi icin bir sonraki phase olan eindringsversuche ye rahatlikla gecebiliriz. dokumentasyonumuz olan swagger 2.0 ciktisini anhang a da görebiliriz.
+
+Danach werden die erlangten Informationen aus der vorherigen Phase ausführlich zusammengetragen und es findet eine Bewertung des Risikos statt. Um die Effizienz des Penetrationstests zu steigern, werden die gesammelten Informationen einer Risikobewertung unterzogen und anhand dieser Risikobewertung entschieden, welche Komponenten in der nächsten Phase genauer betrachtet werden. Hieraus ergibt sich aber auch eine Einschränkung des resultierenden Ergebnisses. Aus diesem Grund muss dies gründlich dokumentiert und an den Auftraggeber weitergegeben werden.
+
+\subsection{Aktive Eindringversuche}
+
+bu phase de sadece nasil saldiri yaptigimizi gösteriyoruz. asiri saldirgan program kullandigimiz icin ve kendi programimiza zarar gelmemesi icin schattensystem olusturuyoruz yani var olan sistemin kopyasini olusturup ona saldirmaya basliyoruz.
+
+In dieser Phase wird geprüft, wie sicherheitskritisch die ausgewählten Sicherheitsmängel von Phase 3 tatsächlich sind. Dies wird dadurch erreicht, dass versucht wird so weit wie möglich in ein System vorzudringen. Hierbei ist von Relevanz, dass jeder Schritt genau bedacht wird, da durch den Versuch einzudringen die Zielsysteme auch beschädigt werden könnten. Soll beispielsweise ein System getestet werden, das eine hohe Verfügbarkeit haben soll, so muss geplant werden, wie der Test aufgebaut wird, um die Verfügbarkeit weiterhin gewähren zu können. Es gibt auch noch eine weitere Möglichkeit, um die Verfügbarkeit der zu testenden Systeme sicherzustellen, indem nämlich Schattensysteme verwendet werden. Schattensystemen sind eine exakte Kopie des zu testenden Systems. Dabei ist als Vorteil bei der Verwendung von Schattensystemen klar zu benennen, dass während des Penetrationstests sichergestellt ist, dass es zu keinen Ausfällen des tatsächlichen Systems kommt.
+
+\subsection{Abschlussanalyse und Nacharbeiten}
+
+daha sonra elde ettigimiz sicherheitslückeleri bir kez daha burada yaziyoruz bu bu bu ve bu sicherheitslückeler bulunmustur. ve daha sonra bu bulun hatalarin önüne nasil gecebiliriz onu detayli bir sekilde anlatiyoruz.
+
+Zum Abschluss des Penetrationstests werden alle gefundenen Schwachstellen in einem Bericht aufgelistet und deren Risiken genau erläutert. Dabei sollte ein solcher Abschlussbericht neben den Resultaten des Penetrationstests auch Möglichkeiten zur Behebung etwaiger Risiken beinhalten. Ein klarer und deutlicher Bericht ist unabdingbar. Dabei sollte jede durchgeführte Aktion so beschrieben wird, dass sie für den Auftraggeber nachvollziehbar ist und gegebenenfalls wiederholt werden kann. Schließlich sollte nach der Fertigstellung des Abschlussberichts mit dem Auftraggeber ein Abschlussgespräch geführt werden. Hierbei werden noch einmal alle gefundenen Sicherheitsprobleme ausführlich besprochen.
+
+\section{restschnittstelle pentestin önemi}
