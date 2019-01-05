@@ -76,6 +76,31 @@
       \verb ftp://ftp.software.ibm.com/software/rational/web/whitepapers/r_wp_autoscan.pdf
       \endverb
     \endentry
+    \entry{ase17}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=3cce5f3eaf76e098ba8e28f7bbba3f92}{%
+           family={Astra},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{3cce5f3eaf76e098ba8e28f7bbba3f92}
+      \strng{fullhash}{3cce5f3eaf76e098ba8e28f7bbba3f92}
+      \strng{bibnamehash}{3cce5f3eaf76e098ba8e28f7bbba3f92}
+      \strng{authorbibnamehash}{3cce5f3eaf76e098ba8e28f7bbba3f92}
+      \strng{authornamehash}{3cce5f3eaf76e098ba8e28f7bbba3f92}
+      \strng{authorfullhash}{3cce5f3eaf76e098ba8e28f7bbba3f92}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{How to Prevent Server Error Messages Disclosure}}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://www.getastra.com/blog/knowledge-base/server-error-messages-prevention/
+      \endverb
+      \verb{url}
+      \verb https://www.getastra.com/blog/knowledge-base/server-error-messages-prevention/
+      \endverb
+    \endentry
     \entry{cj16}{misc}{}
       \name{author}{1}{}{%
         {{hash=77cdaaf243483a8985f23fd7c5fb4e7f}{%

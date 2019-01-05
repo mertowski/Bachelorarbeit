@@ -3,45 +3,104 @@
 
 Die in Abschnitt \ref{ablaufpentest} vorgestellten Schritte eines Penetrationstests werden in diesem Kapitel zur Evaluierung von Open API 2.0 Plug-In von OWASP ZAP herangezogen. Um die bereits entwickelte Springboot Anwendung nach Sicherheitslücken zu testen, werden mit Hilfe des Open API 2.0 Plug-Ins von OWASP ZAP die Penetrationstests durchgeführt.
 
-
-
-Für die Evaluierung von Open API 2.0 Plug-In von OWASP Zap wurde eine kleine online store Springboot Anwendung, die bestimmte Produkte enthält und mit der Möglichkeit die available Produkte zu zeigen und ein produkt mit der id suchen und ein neues Produkt hinzufügen und ein Produkt aktualisieren und ein Produkt löschen. Außerdem hat dieser Anwendung die möglichkeit die Rest API als swagger (open api 2.0)   zu exportieren.
-
-Die Anwendung anhand derer überprüft wird ob Open API 2.0 Plug-In Sicherheitslücken findet, ist eine Online Store - Springboot Anwendung, welche Produkte enthält, die aufgerufen, angezeigt, hinzugefügt, aktualisiert und gelöscht werden können.
-
 \section{Ablauf des Open API 2.0 Plug-In von OWASP ZAP}
 
 \subsection{Vorbereitung}
 
-Mittels Springboot kann automatisiert eine Dokumentation der REST API als Swagger 2.0 generiert werden. Die automatisch generierten Restdoc werden in das OpenAPI 2.0 Plug-In von OWASP-ZAP importiert und die geeigneten REST-API-Sicherheitstests für die Schwachstellen durchgeführt. Dieser Penetrationstest kann in das Konzept des White-Box-Tests eingestuft werden, da vollständige Kenntnisse der zu testenden Infrastruktur vorliegt.
-
-Für Evaluierung von Open API 2.0 Plug-In von OWASP ZAP wurde eine Online Store - Springboot Anwendung entwickelt, die die Restschnittstellen als eine Swagger 2.0 (OpenAPI 2.0) exportiert. Gelistirilen programdaki bütün kodlar benim tarafimdan yazildigi icin bu test white box olarak gecmektedir, cünkü kodun tamamen neler yaptigini biliyorum. open api 2.0 anwendungu sadece rest schnittstellelerdeki linkleri alip saldiri yaptigi icin; bu testin büyüklügü restschnittstelleler kadardir.
-
-Zunächst bedarf es einer gründlichen und umfassenden Vorbereitung, um die Anforderungen des Auftraggebers gerecht zu erfüllen. Hierzu muss bestimmt werden, welche Komponenten dem Test unterzogen werden sollen und wie weit der Penetrationstest gehen darf und soll. Hier besteht auch unter anderem die Möglichkeit, dass der Auftraggeber den Tester auf einen bestimmten Bereich begrenzt, den er für einen Sicherheitstest als besonders relevant und wichtig ansieht. Darüber hinaus muss im Vorhinein auch geklärt werden, welche Informationen der Tester über die IT-Infrastruktur des Unternehmens erhalten soll. Bei dieser entscheidenden Frage wird entschieden, ob es sich um einen Black-Box-Test oder einen White-Box-Test handeln soll. Um sich gegen einen späteren eventuellen Schadensersatzanspruch zu schützen, ist es zudem von unerlässlicher Wichtigkeit den Penetrationstest in seiner Gesamtheit vertraglich zu vereinbaren und dies auch zur Niederschrift zu bringen.
+In der Vorbereitungsphase werden die entsprechende Anforderungen für einen Penetrationstest erfüllt, um eine sichere Anwendung zu entwickeln. Hier wird bestimmt, welche Komponente dem Test unterzogen werden. Mittels Springboot kann automatisiert eine Dokumentation der REST API als Swagger 2.0 generiert werden. Die automatisch generierten Restdoc werden in das OpenAPI 2.0 Plug-In von OWASP-ZAP importiert und die geeigneten REST-API-Sicherheitstests für die Schwachstellen durchgeführt. Außerdem kann dieser Penetrationstest in das Konzept des White-Box-Tests eingestuft werden, da vollständige Kenntnisse der zu testenden Infrastruktur vorliegt.
 
 \subsection{Informationsbeschaffung}
 
-vorbereitungun phasesi bittigine göre simdi informationbeschaffung phasesine gelinmistir.
-Diese Springboot Anwendung enthält bestimmte Produkte. Durch die Restschnittstellen können Produkte aufgerufen, angezeigt, hinzugefügt, aktualisiert und gelöscht werden. Restschnittstelleler Swagger a export edilebildigi icin; Spider ile bütün linklere crawl yapilir. zaten rest schnittstelleler otomatik export edildigi icin; bu kisimda uzun zaman harcamamiza gerek kalmamaktadir.
-
-Sofern die Vorbereitungen abgeschlossen sind und man sich über alle wesentlichen Punkte einig wurde, so kann mit der Beschaffung von Information über die Zielsysteme angefangen werden. Zunächst wird dabei ein Portscan gegen das Zielsystem durchgeführt, um einen Überblick zu bekommen welche Dienste erreichbar sind. Sodann braucht der Tester die maßgeblichen  Informationen über die eingesetzten Systeme und installierten Anwendungen, um einen genauen Überblick über die möglichen Angriffspunkte zu erlangen. Hierzu muss genug Zeit eingeplant werden, da je nach Größe des Netzes oder der Menge der zu testenden Komponenten diese variieren wird. Hierbei kann dies bis zu einige Wochen in Anspruch nehmen, wenn der Test eine große Menge an Rechnern beinhaltet.
+Nun, da die Vorbereitungsphase abgeschlossen ist, ist es soweit, mit der Beschaffung von Information über die Springboot Anwendung anzufangen. Diese Springboot Anwendung (Online Shop) enthält bestimmte Produkte. Durch die REST API können Produkte aufgerufen, angezeigt, hinzugefügt, aktualisiert und gelöscht werden. Normalerweiße wird ein Portscan gegen das Zielsystem durchgeführt, um einen Überblick zu bekommen welche Dienste erreichbar sind, aber in dem Fall brauchen wir Portscan nicht, weil automatisch durch das OpenAPI 2.0 Plug-In alle erreichbare Dienste aufgerufen werden können.  Zusätzlich ist zu erwähnen, dass bereits bekannt ist, welche Funktionalitäten diese Springboot-Anwendung besitzt, weshalb in dieser Phase nicht viel Zeit zu investieren ist.
 
 \subsection{Bewertung der Informationen und Risikoanalyse}
 
-Anwendungu kendim gelistirdigim icin ve sadece yaptiklarimda hata varmi diye baktigim icin herhangi bir risk teskil etmemktedir. Informationbeschaffungda da bahsedildigi gibi restschnittstelleler otomatik olarak swagger datasi halinda export edildigi icin bir sonraki phase olan eindringsversuche ye rahatlikla gecebiliriz. dokumentasyonumuz olan swagger 2.0 ciktisini anhang a da görebiliriz.
-
-Danach werden die erlangten Informationen aus der vorherigen Phase ausführlich zusammengetragen und es findet eine Bewertung des Risikos statt. Um die Effizienz des Penetrationstests zu steigern, werden die gesammelten Informationen einer Risikobewertung unterzogen und anhand dieser Risikobewertung entschieden, welche Komponenten in der nächsten Phase genauer betrachtet werden. Hieraus ergibt sich aber auch eine Einschränkung des resultierenden Ergebnisses. Aus diesem Grund muss dies gründlich dokumentiert und an den Auftraggeber weitergegeben werden.
+In der vorherigen Phase werden alle notwendigen Informationen gesammelt und wird in dieser Phase ausführlich zusammengetragen.
+Da ich die Springboot-Anwendung selbst entwickelt habe, wird OWASP-ZAP im  "`Attack Mode"' Penetrationstests durchgeführt und wird auf kein rechtliches Problem gestoßen. Attack Mode bedeutet, dass noch mehr unnötige Informationen in das Programm geladen werden, deshalb ist es wahrscheinlicher das Programm beschädigt und könnte danach vielleicht alle Funktionalitäten nicht erfüllen.
 
 \subsection{Aktive Eindringversuche}
 
-bu phase de sadece nasil saldiri yaptigimizi gösteriyoruz. asiri saldirgan program kullandigimiz icin ve kendi programimiza zarar gelmemesi icin schattensystem olusturuyoruz yani var olan sistemin kopyasini olusturup ona saldirmaya basliyoruz.
+Laut der Risikoanalyse in der dritten Phase können die Penetrationstests für die REST API durchgeführt werden. Durch das OpenAPI 2.0 Plug-In von OWASP ZAP wird in die Springbootanwendung so weit wie möglich vorgedrungen. Da durch den Versuch einzudringen die Springboot-Anwendung beschädigt werden könnten, wird nun eine Schattensystem (eine exakte Kopie des zu testenden Systems) verwendet.\\
 
-In dieser Phase wird geprüft, wie sicherheitskritisch die ausgewählten Sicherheitsmängel von Phase 3 tatsächlich sind. Dies wird dadurch erreicht, dass versucht wird so weit wie möglich in ein System vorzudringen. Hierbei ist von Relevanz, dass jeder Schritt genau bedacht wird, da durch den Versuch einzudringen die Zielsysteme auch beschädigt werden könnten. Soll beispielsweise ein System getestet werden, das eine hohe Verfügbarkeit haben soll, so muss geplant werden, wie der Test aufgebaut wird, um die Verfügbarkeit weiterhin gewähren zu können. Es gibt auch noch eine weitere Möglichkeit, um die Verfügbarkeit der zu testenden Systeme sicherzustellen, indem nämlich Schattensysteme verwendet werden. Schattensystemen sind eine exakte Kopie des zu testenden Systems. Dabei ist als Vorteil bei der Verwendung von Schattensystemen klar zu benennen, dass während des Penetrationstests sichergestellt ist, dass es zu keinen Ausfällen des tatsächlichen Systems kommt.
+\newpage
 
-\subsection{Abschlussanalyse und Nacharbeiten}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=8cm]{2-importbuttonoa2.png}
+	\caption{Menuleiste von Open API Plug-In}
+	\label{swaggerimport1}
+\end{figure}
 
-daha sonra elde ettigimiz sicherheitslückeleri bir kez daha burada yaziyoruz bu bu bu ve bu sicherheitslückeler bulunmustur. ve daha sonra bu bulun hatalarin önüne nasil gecebiliriz onu detayli bir sekilde anlatiyoruz.
+Um den REST API Penetrationstest durchzuführen, wird von der Menuleiste "`Tools"' geklickt und danach wird "`Import an Open API definition from the local file system"' wie bei der Abbildung \ref{swaggerimport1} gewählt.
 
-Zum Abschluss des Penetrationstests werden alle gefundenen Schwachstellen in einem Bericht aufgelistet und deren Risiken genau erläutert. Dabei sollte ein solcher Abschlussbericht neben den Resultaten des Penetrationstests auch Möglichkeiten zur Behebung etwaiger Risiken beinhalten. Ein klarer und deutlicher Bericht ist unabdingbar. Dabei sollte jede durchgeführte Aktion so beschrieben wird, dass sie für den Auftraggeber nachvollziehbar ist und gegebenenfalls wiederholt werden kann. Schließlich sollte nach der Fertigstellung des Abschlussberichts mit dem Auftraggeber ein Abschlussgespräch geführt werden. Hierbei werden noch einmal alle gefundenen Sicherheitsprobleme ausführlich besprochen.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=8cm]{3-swaggerfilefortest.png}
+	\caption{Importieren von Swagger 2.0 Datei}
+	\label{swaggerimport2}
+\end{figure}
+
+
+Wie bei der Abbildung \ref{swaggerimport2} zu sehen, wird lokale Swagger 2.0 Datei ins OWASP ZAP durch das OpenAPI 2.0 Plug-In importiert.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=14cm]{5-spiderofurls}
+	\caption{Auflistung von erreichbare Diensten}
+	\label{swaggerimport3}
+\end{figure}
+
+Danach wird durch das Spider alle mögliche Links aufgelistet (siehe \ref{swaggerimport3}), wenn die erreichbar sind. Nun kann mit dem "`Aktive Scan"' wie bei der Abbildung \ref{swaggerimport4} gestartet werden. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=14cm]{6-activescancall.png}
+	\caption{Aufrufen von Active Scan}
+	\label{swaggerimport4}
+\end{figure}
+
+Während dem Active Scan-Fortschritt wird unser lokal laufende Springboot-Anwendung für die Sicherheitslücken wie z.B. SQL Injektion, Buffer Overflow, XSS usw. gesucht.
+
+\newpage
+
+Wenn die Suche nach Sicherheitslücken erfolgreich beendet wird, wird alle gefundene Sicherheitslücken wie bei der Abbildung \ref{swaggerimport5} angezeigt.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=12cm]{7-scanergebnis.png}
+	\caption{Ergebnis von Active Scan}
+	\label{swaggerimport5}
+\end{figure}
+
+\subsection{Abschlussanalyse}
+
+Nach dem Ergebnis des OWASP ZAPs wurden die folgende Sicherheitslücken gefunden;
+
+\begin{itemize}
+	\item Application Error Disclosure (2 Stück)
+	\item Buffer Overflow (3 Stück)
+	\item Cross Site Scripting Weakness (Persistent in JSON Response) (3 Stück)
+	\item Cross Site Scripting Weakness (Reflected in JSON Responses)
+\end{itemize}
+
+\subsubsection{Vermeidung von Application Error Disclosure}
+
+Wenn eine Anwendung einem Benutzer einen Fehler anzeigt, sollte eine Fehlernachricht die Ursache des Fehlers erklären können. Durch ein normalen Stacktrace kann ein Angreifer zusätzliche Informationen über das System erfahren. 
+
+Zum Beispiel: Wenn ein Benutzer aus Versehen (oder absichtlich) einen \& in einer Inputfeld eingibt, muss die Anwendung anstelle der vollständigen Fehlerdetails einschließlich der Programmierlogik die Meldung "`Fehler aufgrund nicht unterstützter Zeichen. Überprüfen Sie Ihre Eingabe"' anzeigen\cite{ase17}.
+
+\subsubsection{Vermeidung von Buffer Overflow}
+
+asd
+
+\subsubsection{Vermeidung von Cross Site Scripting (Persistent)}
+
+asdasd
+
+\subsubsection{Vermeidung von Cross Site Scripting (Reflected)}
+
+asdasd
 
 \section{restschnittstelle pentestin önemi}
+
+asd
