@@ -133,139 +133,139 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.1.1.4}XML External Entities (XXE)}{22}{subsubsection.3.1.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.1.5}Broken Access Control}{23}{subsubsection.3.1.1.5}
+\contentsline {subsubsection}{\numberline {3.1.1.5}Broken Access Control}{24}{subsubsection.3.1.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.1.6}Sicherheitsrelevante Fehlkonfiguration}{24}{subsubsection.3.1.1.6}
+\contentsline {subsubsection}{\numberline {3.1.1.6}Sicherheitsrelevante Fehlkonfiguration}{25}{subsubsection.3.1.1.6}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.1.1.7}Cross-Site Scripting (XSS)}{26}{subsubsection.3.1.1.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.1.8}Unsichere Deserialisierung}{27}{subsubsection.3.1.1.8}
+\contentsline {subsubsection}{\numberline {3.1.1.8}Unsichere Deserialisierung}{28}{subsubsection.3.1.1.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.1.9}Nutzung von Komponenten mit bekannten Schwachstellen}{28}{subsubsection.3.1.1.9}
+\contentsline {subsubsection}{\numberline {3.1.1.9}Nutzung von Komponenten mit bekannten Schwachstellen}{29}{subsubsection.3.1.1.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.1.10}Insufficient Logging \& Monitoring}{29}{subsubsection.3.1.1.10}
+\contentsline {subsubsection}{\numberline {3.1.1.10}Insufficient Logging \& Monitoring}{30}{subsubsection.3.1.1.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Weitere Risiken}{30}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.2}Weitere Risiken}{31}{subsection.3.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.2.1}Zugriff auf entfernte Dateien}{30}{subsubsection.3.1.2.1}
+\contentsline {subsubsection}{\numberline {3.1.2.1}Zugriff auf entfernte Dateien}{31}{subsubsection.3.1.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.2.2}Clickjacking}{31}{subsubsection.3.1.2.2}
+\contentsline {subsubsection}{\numberline {3.1.2.2}Clickjacking}{32}{subsubsection.3.1.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.2.3}Remote File Upload}{33}{subsubsection.3.1.2.3}
+\contentsline {subsubsection}{\numberline {3.1.2.3}Remote File Upload}{34}{subsubsection.3.1.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.2.4}Puffer\IeC {\"u}berlauf (engl. Buffer Overflow)}{33}{subsubsection.3.1.2.4}
+\contentsline {subsubsection}{\numberline {3.1.2.4}Puffer\IeC {\"u}berlauf (engl. Buffer Overflow)}{34}{subsubsection.3.1.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.2.5}Fehlende XML-Validierung (engl. Missing XML Validation)}{34}{subsubsection.3.1.2.5}
+\contentsline {subsubsection}{\numberline {3.1.2.5}Fehlende XML-Validierung (engl. Missing XML Validation)}{35}{subsubsection.3.1.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.3}Common Vulnerability Scoring System (CVSS)}{34}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.3}Common Vulnerability Scoring System (CVSS)}{35}{subsection.3.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.4}Common Vulnerabilities and Exposures (CVE)}{35}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.4}Common Vulnerabilities and Exposures (CVE)}{36}{subsection.3.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Penetrationstest}{36}{chapter.4}
+\contentsline {chapter}{\numberline {4}Penetrationstest}{37}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}\IeC {\"U}berblick}{36}{section.4.1}
+\contentsline {section}{\numberline {4.1}\IeC {\"U}berblick}{37}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Definitionen}{37}{section.4.2}
+\contentsline {section}{\numberline {4.2}Definitionen}{38}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Ziele der Penetrationstests}{37}{section.4.3}
+\contentsline {section}{\numberline {4.3}Ziele der Penetrationstests}{38}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Grundlegendes Konzept}{38}{section.4.4}
+\contentsline {section}{\numberline {4.4}Grundlegendes Konzept}{39}{section.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}Black-Box}{38}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.1}Black-Box}{39}{subsection.4.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.2}White-Box}{39}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.2}White-Box}{40}{subsection.4.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Kriterien f\IeC {\"u}r Penetrationstests}{39}{section.4.5}
+\contentsline {section}{\numberline {4.5}Kriterien f\IeC {\"u}r Penetrationstests}{40}{section.4.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.1}Informationsbasis}{40}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.1}Informationsbasis}{41}{subsection.4.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.2}Aggressivit\IeC {\"a}t}{40}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.2}Aggressivit\IeC {\"a}t}{41}{subsection.4.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.3}Umfang}{41}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.5.3}Umfang}{42}{subsection.4.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.4}Vorgehensweise}{41}{subsection.4.5.4}
+\contentsline {subsection}{\numberline {4.5.4}Vorgehensweise}{42}{subsection.4.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.5}Technik}{41}{subsection.4.5.5}
+\contentsline {subsection}{\numberline {4.5.5}Technik}{42}{subsection.4.5.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.6}Ausgangspunkt}{42}{subsection.4.5.6}
+\contentsline {subsection}{\numberline {4.5.6}Ausgangspunkt}{43}{subsection.4.5.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Ablauf eines Penetrationstest}{42}{section.4.6}
+\contentsline {section}{\numberline {4.6}Ablauf eines Penetrationstest}{43}{section.4.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6.1}Vorbereitung}{43}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.1}Vorbereitung}{44}{subsection.4.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6.2}Informationsbeschaffung}{43}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.2}Informationsbeschaffung}{44}{subsection.4.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6.3}Bewertung der Informationen und Risikoanalyse}{44}{subsection.4.6.3}
+\contentsline {subsection}{\numberline {4.6.3}Bewertung der Informationen und Risikoanalyse}{45}{subsection.4.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6.4}Aktive Eindringversuche}{44}{subsection.4.6.4}
+\contentsline {subsection}{\numberline {4.6.4}Aktive Eindringversuche}{45}{subsection.4.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6.5}Abschlussanalyse und Nacharbeiten}{45}{subsection.4.6.5}
+\contentsline {subsection}{\numberline {4.6.5}Abschlussanalyse und Nacharbeiten}{46}{subsection.4.6.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.7}Manuelle Penetrationstest}{46}{section.4.7}
+\contentsline {section}{\numberline {4.7}Manuelle Penetrationstest}{47}{section.4.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.7.1}Testen von SQL Injektion mit SQLiv und SQLMAP}{46}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.1}Testen von SQL Injektion mit SQLiv und SQLMAP}{47}{subsection.4.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.7.2}Testen von Cross-Site-Scripting mit Burp}{49}{subsection.4.7.2}
+\contentsline {subsection}{\numberline {4.7.2}Testen von Cross-Site-Scripting mit Burp}{50}{subsection.4.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.7.3}Testen Brute-Forcing-Passw\IeC {\"o}rter mit THC-Hydra}{52}{subsection.4.7.3}
+\contentsline {subsection}{\numberline {4.7.3}Testen Brute-Forcing-Passw\IeC {\"o}rter mit THC-Hydra}{53}{subsection.4.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.7.4}Testen von XML External Entities (XXE)}{54}{subsection.4.7.4}
+\contentsline {subsection}{\numberline {4.7.4}Testen von XML External Entities (XXE)}{55}{subsection.4.7.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.7.5}Testen von Fehlerhafte Authentifizierung mit Webgoat und Burp Suite}{57}{subsection.4.7.5}
+\contentsline {subsection}{\numberline {4.7.5}Testen von Fehlerhafte Authentifizierung mit Webgoat und Burp Suite}{58}{subsection.4.7.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.8}Automatisierte Penetrationstest}{60}{section.4.8}
+\contentsline {section}{\numberline {4.8}Automatisierte Penetrationstest}{61}{section.4.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.8.1}OWASP-ZAP Webanwendung Penetrationstest}{60}{subsection.4.8.1}
+\contentsline {subsection}{\numberline {4.8.1}OWASP-ZAP Webanwendung Penetrationstest}{61}{subsection.4.8.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.8.1.1}Die Vorstellung von OWASP ZAP Oberfl\IeC {\"a}che}{60}{subsubsection.4.8.1.1}
+\contentsline {subsubsection}{\numberline {4.8.1.1}Die Vorstellung von OWASP ZAP Oberfl\IeC {\"a}che}{61}{subsubsection.4.8.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.8.1.2}Schneller Scan \& Angriff}{62}{subsubsection.4.8.1.2}
+\contentsline {subsubsection}{\numberline {4.8.1.2}Schneller Scan \& Angriff}{63}{subsubsection.4.8.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.9}Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest}{63}{section.4.9}
+\contentsline {section}{\numberline {4.9}Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest}{64}{section.4.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Evaluierung von Open API 2.0 Plug-In von OWASP ZAP}{67}{chapter.5}
+\contentsline {chapter}{\numberline {5}Evaluierung von Open API 2.0 Plug-In von OWASP ZAP}{68}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Ablauf des Open API 2.0 Plug-In von OWASP ZAP}{67}{section.5.1}
+\contentsline {section}{\numberline {5.1}Ablauf des Open API 2.0 Plug-In von OWASP ZAP}{69}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Vorbereitung}{67}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.1}Vorbereitung}{69}{subsection.5.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Informationsbeschaffung}{68}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.2}Informationsbeschaffung}{69}{subsection.5.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.3}Bewertung der Informationen und Risikoanalyse}{69}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.3}Bewertung der Informationen und Risikoanalyse}{70}{subsection.5.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.4}Aktive Eindringversuche}{69}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.4}Aktive Eindringversuche}{70}{subsection.5.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.5}Abschlussanalyse und Nacharbeiten}{70}{subsection.5.1.5}
+\contentsline {subsection}{\numberline {5.1.5}Abschlussanalyse und Nacharbeiten}{71}{subsection.5.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}restschnittstelle pentestin \IeC {\"o}nemi}{70}{section.5.2}
+\contentsline {section}{\numberline {5.2}restschnittstelle pentestin \IeC {\"o}nemi}{71}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Vergleich und Bewertung zwischen Open API 2.0 und Open API 3.0}{71}{chapter.6}
+\contentsline {chapter}{\numberline {6}Vergleich und Bewertung zwischen Open API 2.0 und Open API 3.0}{72}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Strukturelle Verbesserungen}{71}{section.6.1}
+\contentsline {section}{\numberline {6.1}Strukturelle Verbesserungen}{72}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.1}Versionsbezeichner (engl. Version Identifier)}{72}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.1}Versionsbezeichner (engl. Version Identifier)}{73}{subsection.6.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.2}Komponenten (engl. Components)}{72}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.2}Komponenten (engl. Components)}{73}{subsection.6.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.2.1}Anfrage-Format (engl. Request Format)}{74}{subsubsection.6.1.2.1}
+\contentsline {subsubsection}{\numberline {6.1.2.1}Anfrage-Format (engl. Request Format)}{75}{subsubsection.6.1.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.2.2}Antwort-Format (engl. Response Format)}{75}{subsubsection.6.1.2.2}
+\contentsline {subsubsection}{\numberline {6.1.2.2}Antwort-Format (engl. Response Format)}{76}{subsubsection.6.1.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.2.3}Verlinkung (engl. Linking)}{76}{subsubsection.6.1.2.3}
+\contentsline {subsubsection}{\numberline {6.1.2.3}Verlinkung (engl. Linking)}{77}{subsubsection.6.1.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.2.4}R\IeC {\"u}ckrufe (engl. Callbacks)}{77}{subsubsection.6.1.2.4}
+\contentsline {subsubsection}{\numberline {6.1.2.4}R\IeC {\"u}ckrufe (engl. Callbacks)}{78}{subsubsection.6.1.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.3}Servers}{77}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.3}Servers}{78}{subsection.6.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.4}Ausbau des JSON Schema Supports}{78}{subsection.6.1.4}
+\contentsline {subsection}{\numberline {6.1.4}Ausbau des JSON Schema Supports}{79}{subsection.6.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.5}Beispiele Objekt (engl. Examples Object)}{79}{subsection.6.1.5}
+\contentsline {subsection}{\numberline {6.1.5}Beispiele Objekt (engl. Examples Object)}{80}{subsection.6.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.6}Sicherheit (engl. Security)}{80}{subsection.6.1.6}
+\contentsline {subsection}{\numberline {6.1.6}Sicherheit (engl. Security)}{81}{subsection.6.1.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.7}Allgemeine Bewertung}{81}{subsection.6.1.7}
+\contentsline {subsection}{\numberline {6.1.7}Allgemeine Bewertung}{82}{subsection.6.1.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Fazit}{82}{chapter.7}
+\contentsline {chapter}{\numberline {7}Fazit}{83}{chapter.7}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Quellenverzeichnis}{i}{appendix*.37}
 \defcounter {refsection}{0}\relax 

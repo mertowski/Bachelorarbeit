@@ -1,15 +1,19 @@
 \chapter{Evaluierung von Open API 2.0 Plug-In von OWASP ZAP}
 \label{cha:k5}
 
-In diesem Kapitel wird die Evaluierung von Open API 2.0 Plug-In von OWASP ZAP nach dem Ablauf eines Penetrationtests bei der Abschnitt \ref{ablaufpentest} durchgeführt.
+Die in Abschnitt \ref{ablaufpentest} vorgestellten Schritte eines Penetrationstests werden in diesem Kapitel zur Evaluierung von Open API 2.0 Plug-In von OWASP ZAP herangezogen. Um die bereits entwickelte Springboot Anwendung nach Sicherheitslücken zu testen, werden mit Hilfe des Open API 2.0 Plug-Ins von OWASP ZAP die Penetrationstests durchgeführt.
+
+
 
 Für die Evaluierung von Open API 2.0 Plug-In von OWASP Zap wurde eine kleine online store Springboot Anwendung, die bestimmte Produkte enthält und mit der Möglichkeit die available Produkte zu zeigen und ein produkt mit der id suchen und ein neues Produkt hinzufügen und ein Produkt aktualisieren und ein Produkt löschen. Außerdem hat dieser Anwendung die möglichkeit die Rest API als swagger (open api 2.0)   zu exportieren.
 
-Die in Abschnitt 4 vorgestellten Schritte eines Penetrationstests werden in diesem Kapitel zur Evaluierung von Open API 2.0 Plug-In von OWSAP ZAP herangezogen. Die Anwendung anhand derer überprüft wird ob Open API 2.0 Plug-In Sicherheitslücken findet, ist eine Online Store - Springboot Anwendung, welche Produkte enthält, die aufgerufen, angezeigt, hinzugefügt, aktualisiert und gelöscht werden können.
+Die Anwendung anhand derer überprüft wird ob Open API 2.0 Plug-In Sicherheitslücken findet, ist eine Online Store - Springboot Anwendung, welche Produkte enthält, die aufgerufen, angezeigt, hinzugefügt, aktualisiert und gelöscht werden können.
 
 \section{Ablauf des Open API 2.0 Plug-In von OWASP ZAP}
 
 \subsection{Vorbereitung}
+
+Mittels Springboot kann automatisiert eine Dokumentation der REST API als Swagger 2.0 generiert werden. Die automatisch generierten Restdoc werden in das OpenAPI 2.0 Plug-In von OWASP-ZAP importiert und die geeigneten REST-API-Sicherheitstests für die Schwachstellen durchgeführt. Dieser Penetrationstest kann in das Konzept des White-Box-Tests eingestuft werden, da vollständige Kenntnisse der zu testenden Infrastruktur vorliegt.
 
 Für Evaluierung von Open API 2.0 Plug-In von OWASP ZAP wurde eine Online Store - Springboot Anwendung entwickelt, die die Restschnittstellen als eine Swagger 2.0 (OpenAPI 2.0) exportiert. Gelistirilen programdaki bütün kodlar benim tarafimdan yazildigi icin bu test white box olarak gecmektedir, cünkü kodun tamamen neler yaptigini biliyorum. open api 2.0 anwendungu sadece rest schnittstellelerdeki linkleri alip saldiri yaptigi icin; bu testin büyüklügü restschnittstelleler kadardir.
 
