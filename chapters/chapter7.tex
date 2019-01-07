@@ -12,9 +12,40 @@ Automated penetration testing tools tend to be more efficient and thorough, and 
 
 Zusammenfassend soll nicht in die Debatte zwischen manuellen und automatisierten Tests verwickelt werden. Beide dienen ihren individuellen Zwecken wunderbar. Es soll das optimale Gleichgewicht bei dem Testen von jede Anwendung gefunden werden.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%REST API%%%%%%%%%%%%%%%%%%%%%%%%
+
+API testing is a vast area of research and is still evolving. In this chapter, we saw a
+generic methodology that one should apply to test any kind of API. This included
+studying the API structure, understanding request methods, understanding
+responses, and so on. It also included techniques which one should apply to list
+endpoints and exploit bugs on real production API. We saw examples of API bugs
+on sites, such as Facebook, in which we applied our generic methodology to study
+(learn) about API by understanding structure, roles, scopes, etc. and then exploiting
+it. API testing has still not evolved, and there's a lot of scope in research.
+For learning more about how real API bugs are exploited, I would recommend
+readers read the following:
+http://philippeharewood.com/
+https://pranavhivarekar.in/
+APIs have gained a lot of popularity nowadays and have brought immense flexibility
+to cross application integrations, but they also give rise to large and complex attack
+surfaces. Due to this attack surface factor, APIs must be tested rigorously for logical
+and implementation-related vulnerabilities, which are often very critical in nature,
+such as account takeover flaws.
 
 
+Although software teams acknowledge the desire to reach an ideal distribution of unit, API, and UI tests, the reality is that your average team is doing an average job of unit testing and still relying on late-stage UI and system tests. API testing provides an ideal communication mechanism between developers and testers with a high level of maintainable automation that can be extended into performance and security testing.
+
+Shifting these tests left and executing them earlier in the software lifecycle means catching critical security and architectural defects early, where they are easier to diagnose and less risky to fix. Leveraging the automation provided by Parasoft SOAtest's Smart API Test Generator, API testing is more accessible and the time associated with creating meaningful test scenarios can be significantly reduced.
+
+
+
+Manual security testing of web service APIs is an expensive and time-intensive, though
+necessary and important part of serious software development. Despite security being of
+utmost importance, it might be neglected for various reasons. Even when security is a
+priority for developers, it is possible that there exist one or more security vulnerabilities
+in a system. Automating parts of the security testing process allows software development
+teams to integrate automated security testing as a part of their automated testing process,
+reducing the chance of introducing testable security related software vulnerabilities in concurrent software builds.
 
 
 

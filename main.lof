@@ -13,72 +13,72 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Die akzeptierte Ans\IeC {\"a}tze\cite {bwgtesting16}\relax }}{39}{figure.caption.7}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Die akzeptierte Ans\IeC {\"a}tze\cite {bwgtesting16}\relax }}{40}{figure.caption.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Phase 1 \IeC {\textendash } Vorbereitung des Penetrationstests\relax }}{44}{figure.caption.8}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Phase 1 \IeC {\textendash } Vorbereitung des Penetrationstests\relax }}{45}{figure.caption.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Phase 2 \IeC {\textendash } Informationsbeschaffung\relax }}{44}{figure.caption.9}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Phase 2 \IeC {\textendash } Informationsbeschaffung\relax }}{45}{figure.caption.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Phase 3 \IeC {\textendash } Bewertung der Informationen und Risikoanalyse\relax }}{45}{figure.caption.10}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Phase 3 \IeC {\textendash } Bewertung der Informationen und Risikoanalyse\relax }}{46}{figure.caption.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Phase 4 \IeC {\textendash } Aktive Eindringversuche durchf\IeC {\"u}hren\relax }}{45}{figure.caption.11}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Phase 4 \IeC {\textendash } Aktive Eindringversuche durchf\IeC {\"u}hren\relax }}{46}{figure.caption.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Phase 5 \IeC {\textendash } Abschlussanalyse und Nacharbeiten durchf\IeC {\"u}hren\relax }}{46}{figure.caption.12}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Phase 5 \IeC {\textendash } Abschlussanalyse und Nacharbeiten durchf\IeC {\"u}hren\relax }}{47}{figure.caption.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Durchsuchung mit SQLiv\relax }}{48}{figure.caption.13}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Durchsuchung mit SQLiv\relax }}{49}{figure.caption.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Ergebnis: Alle Daten in der Tabelle\relax }}{50}{figure.caption.17}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Ergebnis: Alle Daten in der Tabelle\relax }}{51}{figure.caption.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Adresse eingeben\relax }}{50}{figure.caption.18}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Adresse eingeben\relax }}{51}{figure.caption.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Erfassung der Anfrage durch Burp\relax }}{51}{figure.caption.19}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Erfassung der Anfrage durch Burp\relax }}{52}{figure.caption.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Bearbeiten dem Wert\relax }}{51}{figure.caption.20}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Bearbeiten dem Wert\relax }}{52}{figure.caption.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Suche nach dem Angriff in dem Quellcode\relax }}{52}{figure.caption.21}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Suche nach dem Angriff in dem Quellcode\relax }}{53}{figure.caption.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Kopieren von URL f\IeC {\"u}r Browser\relax }}{52}{figure.caption.22}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Kopieren von URL f\IeC {\"u}r Browser\relax }}{53}{figure.caption.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Pop-up im Browser anzeigen\relax }}{53}{figure.caption.23}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Pop-up im Browser anzeigen\relax }}{54}{figure.caption.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Anfrage an den Server und Antwort von dem Server\relax }}{54}{figure.caption.24}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Anfrage an den Server und Antwort von dem Server\relax }}{55}{figure.caption.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Die Weiterleitung zur Anmeldeseite\relax }}{54}{figure.caption.25}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Die Weiterleitung zur Anmeldeseite\relax }}{55}{figure.caption.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Aufdeckung den Passw\IeC {\"o}rtern\relax }}{55}{figure.caption.26}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Aufdeckung den Passw\IeC {\"o}rtern\relax }}{56}{figure.caption.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Anmeldung bei Webgoat\relax }}{59}{figure.caption.27}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Anmeldung bei Webgoat\relax }}{60}{figure.caption.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Burp Suite: AuthCookie Kontrolle 1\relax }}{59}{figure.caption.28}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Burp Suite: AuthCookie Kontrolle 1\relax }}{60}{figure.caption.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Burp Suite: AuthCookie Kontrolle 2\relax }}{60}{figure.caption.29}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Burp Suite: AuthCookie Kontrolle 2\relax }}{61}{figure.caption.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Burp Suite: AuthCookie Kontrolle 3\relax }}{60}{figure.caption.30}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Burp Suite: AuthCookie Kontrolle 3\relax }}{61}{figure.caption.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Authentifizierung mit dem Cookie\relax }}{61}{figure.caption.31}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Authentifizierung mit dem Cookie\relax }}{62}{figure.caption.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.23}{\ignorespaces OWASP ZAP GUI \IeC {\"U}berblick\relax }}{62}{figure.caption.32}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces OWASP ZAP GUI \IeC {\"U}berblick\relax }}{63}{figure.caption.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.24}{\ignorespaces URL zum Spider\relax }}{63}{figure.caption.33}
+\contentsline {figure}{\numberline {4.24}{\ignorespaces URL zum Spider\relax }}{64}{figure.caption.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.25}{\ignorespaces Spider Ergebnis\relax }}{64}{figure.caption.34}
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Spider Ergebnis\relax }}{65}{figure.caption.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.26}{\ignorespaces Gefundene Sicherheitsl\IeC {\"u}cken\relax }}{64}{figure.caption.35}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Menuleiste von Open API Plug-In\relax }}{70}{figure.caption.36}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Importieren von Swagger 2.0 Datei\relax }}{70}{figure.caption.37}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Auflistung von erreichbare Diensten\relax }}{71}{figure.caption.38}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Aufrufen von Active Scan\relax }}{71}{figure.caption.39}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Ergebnis von Active Scan\relax }}{72}{figure.caption.40}
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Gefundene Sicherheitsl\IeC {\"u}cken\relax }}{65}{figure.caption.35}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces \IeC {\"U}berblick \IeC {\"u}ber die Struktur der Open API 2.0 und Open API 3.0 Spezifikationen\cite {openapi2u317}\relax }}{75}{figure.caption.41}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Menuleiste von Open API Plug-In\relax }}{71}{figure.caption.36}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Importieren von Swagger 2.0 Datei\relax }}{71}{figure.caption.37}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Auflistung von erreichbare Diensten\relax }}{72}{figure.caption.38}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Aufrufen von Active Scan\relax }}{72}{figure.caption.39}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Ergebnis von Active Scan\relax }}{73}{figure.caption.40}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.1}{\ignorespaces \IeC {\"U}berblick \IeC {\"u}ber die Struktur der Open API 2.0 und Open API 3.0 Spezifikationen\cite {openapi2u317}\relax }}{78}{figure.caption.41}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }

@@ -19,6 +19,31 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{xsspersistent14}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=c08d7443c2393fbf95364876c59f945d}{%
+           family={ACUNETIX},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{c08d7443c2393fbf95364876c59f945d}
+      \strng{fullhash}{c08d7443c2393fbf95364876c59f945d}
+      \strng{bibnamehash}{c08d7443c2393fbf95364876c59f945d}
+      \strng{authorbibnamehash}{c08d7443c2393fbf95364876c59f945d}
+      \strng{authornamehash}{c08d7443c2393fbf95364876c59f945d}
+      \strng{authorfullhash}{c08d7443c2393fbf95364876c59f945d}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{What is Persistent XSS - Defending Against Persistent XSS}}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb https://www.acunetix.com/blog/articles/persistent-xss/
+      \endverb
+      \verb{url}
+      \verb https://www.acunetix.com/blog/articles/persistent-xss/
+      \endverb
+    \endentry
     \entry{ali2011pt}{book}{}
       \name{author}{2}{}{%
         {{hash=b9bfc7ff66e038b513a2b63b78052cb1}{%
@@ -74,6 +99,58 @@
       \endverb
       \verb{url}
       \verb ftp://ftp.software.ibm.com/software/rational/web/whitepapers/r_wp_autoscan.pdf
+      \endverb
+    \endentry
+    \entry{anthonyart18}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=699c065d235fdd519480fc749cca48fc}{%
+           family={Anthony},
+           familyi={A\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{699c065d235fdd519480fc749cca48fc}
+      \strng{fullhash}{699c065d235fdd519480fc749cca48fc}
+      \strng{bibnamehash}{699c065d235fdd519480fc749cca48fc}
+      \strng{authorbibnamehash}{699c065d235fdd519480fc749cca48fc}
+      \strng{authornamehash}{699c065d235fdd519480fc749cca48fc}
+      \strng{authorfullhash}{699c065d235fdd519480fc749cca48fc}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Why API Security is More Important Than Ever}}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://nordicapis.com/why-api-security-is-more-important-than-ever/
+      \endverb
+      \verb{url}
+      \verb https://nordicapis.com/why-api-security-is-more-important-than-ever/
+      \endverb
+    \endentry
+    \entry{mswv17}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=6f1589d1ad038f9d372cb52b899dc367}{%
+           family={Apica},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{6f1589d1ad038f9d372cb52b899dc367}
+      \strng{fullhash}{6f1589d1ad038f9d372cb52b899dc367}
+      \strng{bibnamehash}{6f1589d1ad038f9d372cb52b899dc367}
+      \strng{authorbibnamehash}{6f1589d1ad038f9d372cb52b899dc367}
+      \strng{authornamehash}{6f1589d1ad038f9d372cb52b899dc367}
+      \strng{authorfullhash}{6f1589d1ad038f9d372cb52b899dc367}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Why Security is Critical to API Testing}}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://www.apicasystems.com/blog/security-is-critical-to-api-testing/
+      \endverb
+      \verb{url}
+      \verb https://www.apicasystems.com/blog/security-is-critical-to-api-testing/
       \endverb
     \endentry
     \entry{ase17}{misc}{}
@@ -366,6 +443,31 @@
       \verb https://www.bsi.bund.de/DE/Themen/ITGrundschutz/ITGrundschutzKataloge/Inhalt/Glossar/glossar_node.html
       \endverb
     \endentry
+    \entry{whyvriticalapi17}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=f2fb1e3c1eab4e3b1ce2f34e23772908}{%
+           family={CloudQA},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{f2fb1e3c1eab4e3b1ce2f34e23772908}
+      \strng{fullhash}{f2fb1e3c1eab4e3b1ce2f34e23772908}
+      \strng{bibnamehash}{f2fb1e3c1eab4e3b1ce2f34e23772908}
+      \strng{authorbibnamehash}{f2fb1e3c1eab4e3b1ce2f34e23772908}
+      \strng{authornamehash}{f2fb1e3c1eab4e3b1ce2f34e23772908}
+      \strng{authorfullhash}{f2fb1e3c1eab4e3b1ce2f34e23772908}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Why is it Critical to Check Security during API Testing?}}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://cloudqa.io/why-is-it-critical-to-check-security-during-api-testing/
+      \endverb
+      \verb{url}
+      \verb https://cloudqa.io/why-is-it-critical-to-check-security-during-api-testing/
+      \endverb
+    \endentry
     \entry{bwgwebtesting07}{misc}{}
       \name{author}{1}{}{%
         {{hash=a8492b2f83a3790795ba9476825dcac0}{%
@@ -641,6 +743,33 @@
       \endverb
       \verb{url}
       \verb https://www.httpcs.com/en/cve-common-vulnerabilities-exposures
+      \endverb
+    \endentry
+    \entry{xssreflected16}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=299f83b653d1365528c795962126a261}{%
+           family={Incapsula},
+           familyi={I\bibinitperiod},
+           prefix={imperva},
+           prefixi={i\bibinitperiod}}}%
+      }
+      \strng{namehash}{299f83b653d1365528c795962126a261}
+      \strng{fullhash}{299f83b653d1365528c795962126a261}
+      \strng{bibnamehash}{299f83b653d1365528c795962126a261}
+      \strng{authorbibnamehash}{299f83b653d1365528c795962126a261}
+      \strng{authornamehash}{299f83b653d1365528c795962126a261}
+      \strng{authorfullhash}{299f83b653d1365528c795962126a261}
+      \field{sortinit}{I}
+      \field{sortinithash}{320bc8fe8101b9376f9f21cd507de0e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Reflected Cross Site Scripting (XSS) Attacks}}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://www.incapsula.com/web-application-security/reflected-xss-attacks.html
+      \endverb
+      \verb{url}
+      \verb https://www.incapsula.com/web-application-security/reflected-xss-attacks.html
       \endverb
     \endentry
     \entry{swagger20Github}{misc}{}
@@ -1363,6 +1492,56 @@
       \endverb
       \verb{url}
       \verb https://linuxhint.com/sql-injection-kali-linux/
+      \endverb
+    \endentry
+    \entry{bofangpre16}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=bc8a9f376ff298095caff3e9bf76c78f}{%
+           family={RestCase},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{bc8a9f376ff298095caff3e9bf76c78f}
+      \strng{fullhash}{bc8a9f376ff298095caff3e9bf76c78f}
+      \strng{bibnamehash}{bc8a9f376ff298095caff3e9bf76c78f}
+      \strng{authorbibnamehash}{bc8a9f376ff298095caff3e9bf76c78f}
+      \strng{authornamehash}{bc8a9f376ff298095caff3e9bf76c78f}
+      \strng{authorfullhash}{bc8a9f376ff298095caff3e9bf76c78f}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Top 5 REST API Security Guidelines}}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://blog.restcase.com/top-5-rest-api-security-guidelines/
+      \endverb
+      \verb{url}
+      \verb https://blog.restcase.com/top-5-rest-api-security-guidelines/
+      \endverb
+    \endentry
+    \entry{restcaseapiimportance16}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=bc8a9f376ff298095caff3e9bf76c78f}{%
+           family={RestCase},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{bc8a9f376ff298095caff3e9bf76c78f}
+      \strng{fullhash}{bc8a9f376ff298095caff3e9bf76c78f}
+      \strng{bibnamehash}{bc8a9f376ff298095caff3e9bf76c78f}
+      \strng{authorbibnamehash}{bc8a9f376ff298095caff3e9bf76c78f}
+      \strng{authornamehash}{bc8a9f376ff298095caff3e9bf76c78f}
+      \strng{authorfullhash}{bc8a9f376ff298095caff3e9bf76c78f}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Why API Testing is Important in Your Development Process}}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://blog.restcase.com/why-api-testing-is-important-in-your-development-process/
+      \endverb
+      \verb{url}
+      \verb https://blog.restcase.com/why-api-testing-is-important-in-your-development-process/
       \endverb
     \endentry
     \entry{bwgtesting16}{misc}{}

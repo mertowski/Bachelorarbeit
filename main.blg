@@ -1,18 +1,18 @@
 [0] Config.pm:302> INFO - This is Biber 2.11
 [0] Config.pm:305> INFO - Logfile is 'main.blg'
-[32] biber-darwin:313> INFO - === Sat Jan  5, 2019, 20:16:36
-[50] Biber.pm:371> INFO - Reading 'main.bcf'
-[130] Biber.pm:857> INFO - Found 81 citekeys in bib section 0
-[141] Biber.pm:3976> INFO - Processing section 0
-[150] Biber.pm:4136> INFO - Looking for bibtex format file 'references.bib' for section 0
-[153] bibtex.pm:1500> INFO - LaTeX decoding ...
-[211] bibtex.pm:1316> INFO - Found BibTeX data source 'references.bib'
-[214] Utils.pm:193> WARN - Duplicate entry key: 'nowey2011einleitung' in file 'references.bib', skipping ...
-[216] Utils.pm:193> WARN - Duplicate entry key: 'bufferoverflow16' in file 'references.bib', skipping ...
-[482] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[483] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[483] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[483] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
-[539] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[558] bbl.pm:720> INFO - Output to main.bbl
-[558] Biber.pm:110> INFO - WARNINGS: 2
+[39] biber-darwin:313> INFO - === Mon Jan  7, 2019, 15:01:00
+[63] Biber.pm:371> INFO - Reading 'main.bcf'
+[142] Biber.pm:857> INFO - Found 88 citekeys in bib section 0
+[154] Biber.pm:3976> INFO - Processing section 0
+[164] Biber.pm:4136> INFO - Looking for bibtex format file 'references.bib' for section 0
+[166] bibtex.pm:1500> INFO - LaTeX decoding ...
+[224] bibtex.pm:1316> INFO - Found BibTeX data source 'references.bib'
+[227] Utils.pm:193> WARN - Duplicate entry key: 'nowey2011einleitung' in file 'references.bib', skipping ...
+[230] Utils.pm:193> WARN - Duplicate entry key: 'bufferoverflow16' in file 'references.bib', skipping ...
+[521] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[521] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[521] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[521] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
+[585] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[605] bbl.pm:720> INFO - Output to main.bbl
+[605] Biber.pm:110> INFO - WARNINGS: 2

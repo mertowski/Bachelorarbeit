@@ -91,16 +91,32 @@ Zum Beispiel: Wenn ein Benutzer aus Versehen (oder absichtlich) einen \& in eine
 
 \subsubsection{Vermeidung von Buffer Overflow}
 
-asd
+Webanwendungen oder Webdienste verwenden Eingaben aus HTTP-Anforderungen (und gelegentlich Dateien), um zu bestimmen, wie sie reagieren sollen. Angreifer können jeden Teil einer HTTP-Anfrage manipulieren, einschließlich der URL, der Abfragezeichenfolge, der Header, der Cookies, der Formularfelder und der ausgeblendeten Felder, um die Sicherheitsmechanismen der Seite zu beschädigen. Der verbreitete Angriff für einen Manipulationsangriff ist der Pufferüberlauf.
+
+Der Server sollte niemals annehmen, dass der Content-Type immer den Inhaltstyp-Header und den Inhalt vom selben Typ überprüft. Ein Mangel an Content-Type-Headern oder unerwarteten Content-Type-Headern sollte dazu führen, dass der Server den Inhalt mit einer \texttt{406 Not Acceptable-Antwort} ablehnt\cite{bofangpre16}.
 
 \subsubsection{Vermeidung von Cross Site Scripting (Persistent)}
 
-asdasd
+Um Persistent XSS am besten zu verhindern, muss sichergestellt werden, dass alle Benutzereingaben ordnungsgemäß bereinigt werden, bevor sie dauerhaft auf dem Webserver gespeichert werden. Außerdem muss die statischen Inhalte, die den Benutzern angezeigt werden, ebenfalls bereinigt werden\cite{xsspersistent14}.
 
 \subsubsection{Vermeidung von Cross Site Scripting (Reflected)}
 
-asdasd
+Web Application Firewalls (WAF) spielen eine wichtige Rolle bei der Abwehr reflektierter XSS-Angriffe. Mit signaturbasierten Sicherheitsregeln kann eine WAF das Fehlen von Eingabebereinigungen ausgleichen und abnormale Anforderungen einfach blockieren. Dies umfasst Anforderungen, die versuchen, einen reflektierten Cross-Site-Scripting-Angriff auszuführen\cite{xssreflected16}.
 
-\section{restschnittstelle pentestin önemi}
+\newpage
 
-asd
+\section{Die Wichtigkeit von automatisierte API Penetrationstesting}
+
+\begin{quote}
+	\emph{\\
+		"`Design all API security with public access in mind"'}
+	\begin{flushright}
+		Phillipp Schöne, Axway
+	\end{flushright}
+\end{quote}
+
+Der Hauptgrund ist, dass die API-Angriffsflächen größer sind. Webanwendungen werden in \texttt{micro-services} aufgeteilt, wodurch eine große Anzahl von Schnittstellen entsteht und diese Schnittstellen dem öffentlichen Internet zugänglich gemacht werden. Dadurch werden zahlreiche Angriffsflächen erstellt, sodass Hacker nicht mehr eine einzelne Anwendung angreifen müssen. Sie können sich eine Vielzahl von Diensten ansehen, wodurch das Risiko erhöht wird, dass sie auf Daten zugreifen können\cite{mswv17}. 
+
+Im Vergleich zu anderen Komponenten ist die API in einer Anwendung die schwächste Verbindung, die ein Hacker nach Datenverletzungen suchen kann. API-Sicherheitstests stellen sicher, dass die API vor Schwachstellen geschützt ist. Der API-Hack einer Anwendung kann Verwirrung auf Organisationsebene verursachen und zu erheblichen Verlusten für die Organisation führen\cite{whyvriticalapi17}. Des Weiteren besteht das größte Problem bei der API- und Microservices-Sicherheit derzeit darin, dass sie häufig als nachträglicher Vorgang betrachtet wird und nicht als wesentlicher Bestandteil des Entwicklungsprozesses\cite{anthonyart18}.
+
+Wenn mit dem Entwickeln der API-Sicherheitstests bis nach der Entwicklung gewartet wird, werden sie natürlich so vorbeireitet, dass nur die günstige Testfälle durchgeführt werden. Sobald eine API oder ein Teil der Software erstellt wurde, wird sich darauf konzentriert, wie sie funktioniert werden soll, aber nicht die anderen wahrscheinlichen Szenarien. Dagegen werden die Penetrationstests durch OpenAPI Plug-In von OWASP ZAP während der Entwicklung durchgeführt und mit Hilfe dieser Situation werden API-Tests nur stärker und umfassender geworden, was dem Team langfristig zugute kommt, die API-Qualität erhöht und die Anzahl der aufgetretenen Fehler verringert. Die Erfassung aller Grundlagen potenzieller Softwarefehler ist eine entscheidende Komponente für die Aufrechterhaltung des Qualitäts- und Kundenvertrauens. Automatisierte API-Tests während der Entwicklung können Probleme mit der API, dem Server, anderen Diensten oder dem Netzwerk aufdecken, die nach der Bereitstellung möglicherweise nicht leicht gefunden oder gelöst werden können. Sobald die Software in der Produktion ist, werden durch OWASP ZAP manuelle Tests erstellt, um neuen und weiterentwickelten Anwendungsfällen zu testen. Restful API-Tests können auf verschiedene Arten in Ihren Entwicklungsprozess integriert werden. Viele Unternehmen bieten API-Tests in ihren Continuous Integration (CI) und Continuous Deployment (CD) Prozessen an. Wenn ein API-Test während CI oder CD fehlschlägt, wird der Prozess angehalten und das API-Problem muss behoben werden, bevor der Build abgeschlossen ist. Die Benutzung des OpenAPI Plug-Ins von OWASP ZAP für automatisierte API-Tests in diesen Prozess gibt den Entwickler mehr Sicherheit, dass alle Grundlagen vor der Veröffentlichung des Produkts für die Kunden abgedeckt wurden\cite{restcaseapiimportance16}.
