@@ -21,7 +21,17 @@ Das manuelle Testen der Sicherheit von Web-Service-APIs ist ein kostspieliger un
 
 %%%%%%%%%%%%%%%%%% SWAGGER VS OPENAPI %%%%%%%%%%%%%%%%%%%%
 
-Swagger 2.0 ist aufgrund der hohen Verbreitung und der umfangreichen Toolunterstützung der Quasistandard für die Schnittstellenbeschreibung REST-basierter Anwendungen. Die OpenAPI Specification 3.0.0 sorgt für Ordnung in der gewachsenen Swagger-Struktur. Durch ein breites Gremium, in dem alle namhaften Hersteller vertreten sind, und die neuen Features, wird sich die OpenAPI Specification in der Branche durchsetzen und Swagger 2.0 ablösen, sobald die Toolunterstützung auf die neue Version angepasst ist.
+Im Kapitel \ref{cha:k6} wurde zumindest aus meiner Sicht die wichtigsten Änderungen an der OpenAPI Spec 3.0 erörtert. Ich bin der Meinung, dass dies hinsichtlich der REST-API-Definitionen ein großer Schritt nach vorne ist. Ich glaube, mit der Unterstützung visueller API-Editor-Tools wie ApiBldr oder ein automatisierte REST-Dokumente-Generator für das Framework Springboot, wenn diese Tools auch OAS 3.0 unterstützt, wird es die Verwendung der neuen Spezifikationen auch für Nicht-Entwickler mit wenig technischen Kenntnissen erleichtern.
+
+Heute ist OpenAPI Spezifikationen der klare Marktführer bei den API Definitionsformaten, wobei die größte Akzeptanz sowie die Anzahl der entwickelten Werkzeuge vorhanden ist. Während Dokumentation immer noch der wichtigsten Grund für das Erstellen von API-Definitionen sind, gibt es zahlreiche andere Gründe für die Verwendung von API-Definitionen, einschließlich Mocking, Testen, Überwachen und vieles mehr. Es ist klar, dass die Version 3.0 der Spezifikation die Entwurfsmuster über eine große Anzahl von Implementierungen hinweg berücksichtigt hat und eine ziemlich weitreichende Spezifikation für die Definition der Funktion einer API bereitstellt. Die Verbesserung der von der Spezifikation angebotenen Objekte ist bei der Vereinfachung der Erstellung von Definitionen, die in einer API-Spezifikation wiederverwendet werden können, überaus wertvoll.
+
+Da die Tools für die automatisierte Generierung oder Bearbeitung von OpenAPI 2.0 sehr viel verbreitet sind, wird es als De-facto-Standard für die REST-basierter Anwendungen angesehen wird. 
+
+OpenAPI 2.0 ist aufgrund der hohen Verbreitung und der umfangreichen Toolunterstützung der Quasistandard für die Schnittstellenbeschreibung REST-basierter Anwendungen. Die OpenAPI Specification 3.0.0 sorgt für Ordnung in der gewachsenen Swagger-Struktur. Durch ein breites Gremium, in dem alle namhaften Hersteller vertreten sind, und die neuen Features, wird sich die OpenAPI Specification in der Branche durchsetzen und Swagger 2.0 ablösen, sobald die Toolunterstützung auf die neue Version angepasst ist.
+
+As mentioned before, OpenAPI 2.0 and 3.0 are not compatible, which means that each of the tools dealing with OpenAPI needs to be updated to support the new format. A non-exhaustive list of tools with v3 support is available at the OAI. If your favorite tools do not support v3 yet, you can keep using v2 for now, provided that you don't need any of the new v3 features.
+
+Bu yüzden de yeni bir open api 3.0 Plug-In i entwickeln etmek yerine su an olan open api 2.0 plug-in ine open api 3.0 de ekleme özelligi gelmelidir.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

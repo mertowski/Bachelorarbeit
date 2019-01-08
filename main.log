@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.3)  8 JAN 2019 12:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.3)  8 JAN 2019 16:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1208,7 +1208,7 @@ File: english.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
 (./main.aux (./front/kurzfassung.aux) (./front/vorwort.aux)
 (./chapters/einleitung.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux)
 (./chapters/chapter4.aux) (./chapters/chapter5.aux) (./chapters/chapter6.aux)
-(./chapters/chapter7.aux))
+(./chapters/chapter7.aux) (./back/messbox.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
@@ -1824,23 +1824,29 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 193.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 222.
+(babel)             in language  on input line 218.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 222.
+(babel)             in language  on input line 218.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 222.
+(babel)             in language  on input line 218.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 222.
+(babel)             in language  on input line 218.
  [16]
-Overfull \hbox (11.01248pt too wide) in paragraph at lines 228--229
-[] [] \T1/lmss/m/n/12 Smart-card und Cli-ent Di-gi-tal Cer-ti-fi-ca-tes Sup-por
-t:[] \T1/lmr/m/n/12 ZAP kann Smartcard-gestützte
+Overfull \hbox (19.16183pt too wide) in paragraph at lines 224--225
+[] [] \T1/lmss/m/n/12 Dy-na-mic SSL Cer-ti-fi-ca-tes:[] \T1/lmr/m/n/12 ZAP er-m
+ög-licht die Ent-schlüs-se-lung von SSL-Anfragen,
  []
 
 
-Overfull \hbox (2.27948pt too wide) in paragraph at lines 236--237
-[] [] \T1/lmss/m/n/12 Skrip-t-Un-ter-stüt-zung:[] \T1/lmr/m/n/12 ZAP un-ter-stü
-tzt ver-schie-de-ne Skrip-te, zum Bei-spiel EC-
+Overfull \hbox (10.19437pt too wide) in paragraph at lines 228--229
+[] [] \T1/lmss/m/n/12 Smart-card und Cli-ent Di-gi-tal Cer-ti-fi-ca-tes Sup-por
+t:[] \T1/lmr/m/n/12 ZAP ist in der La-ge Smartcard-
+ []
+
+
+Overfull \hbox (3.08209pt too wide) in paragraph at lines 240--241
+[] [] \T1/lmss/m/n/12 Plug-n-Hack:[] \T1/lmr/m/n/12 Die Plug-n-Hack Tech-no-lo-
+gie, wel-che von Mo-zil-la ent-wor-fen wur-
  []
 
 Package babel Info: Redefining ngerman shorthand "|
@@ -3758,12 +3764,15 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 21.
 [89]
-Overfull \hbox (8.30376pt too wide) in paragraph at lines 24--25
-\T1/lmr/m/n/12 un-ter-stüt-zung der Qua-si-stan-dard für die Schnitt-stel-len-b
-e-schrei-bung REST-basierter
- []
-
-)
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 32.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 32.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 32.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 32.
+ [90])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 89.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3772,7 +3781,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 89.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 89.
- [90]
+ [91]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 98.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3793,8 +3802,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.98 
-      [1
+l.98 \include
+             {back/messbox} [1
 
 
 ]
@@ -3810,8 +3819,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.98 
-      [2]
+l.98 \include
+             {back/messbox} [2]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 98.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3824,8 +3833,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.iii}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.98 
-      [3]
+l.98 \include
+             {back/messbox} [3]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 98.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3838,8 +3847,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.iv}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.98 
-      [4]
+l.98 \include
+             {back/messbox} [4]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 98.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3852,8 +3861,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.v}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.98 
-      [5]
+l.98 \include
+             {back/messbox} [5]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 98.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3866,8 +3875,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.vi}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.98 
-      [6]
+l.98 \include
+             {back/messbox} [6]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 98.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3880,33 +3889,57 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.vii}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.98 
-      [7]
+l.98 \include
+             {back/messbox} [7]
 Underfull \hbox (badness 1019) in paragraph at lines 98--98
 []\T1/lmr/m/n/12 Eberhard Wolff. \T1/lmr/m/it/12 Mi-cro-ser-vices: fle-xi-ble s
 oft-wa-re ar-chi-tec-ture\T1/lmr/m/n/12 . Addison-
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 100.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 100.
+(babel)             in language  on input line 98.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 100.
+(babel)             in language  on input line 98.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 100.
+(babel)             in language  on input line 98.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 100.
+(babel)             in language  on input line 98.
 pdfTeX warning (ext4): destination with the same identifier (name{page.viii}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.100 \end{document}
-                     [8]
+l.98 \include{back/messbox}
+                            [8]
+\openout2 = `back/messbox.aux'.
+
+ (./back/messbox.tex)
+Overfull \hbox (3.14732pt too wide) in paragraph at lines 13--98
+[][] 
+ []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 98.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 98.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 98.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 98.
+pdfTeX warning (ext4): destination with the same identifier (name{page.ix}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.98 \include{back/messbox}
+                            [9
+
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 100.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 100.
  (./main.aux (./front/kurzfassung.aux)
 (./front/vorwort.aux) (./chapters/einleitung.aux) (./chapters/chapter2.aux)
 (./chapters/chapter3.aux) (./chapters/chapter4.aux) (./chapters/chapter5.aux)
-(./chapters/chapter6.aux) (./chapters/chapter7.aux))
+(./chapters/chapter6.aux) (./chapters/chapter7.aux) (./back/messbox.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 100.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 100.
 Package rerunfilecheck Info: File `main.out' has not changed.
@@ -3916,10 +3949,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28945 strings out of 492649
- 463739 string characters out of 6129623
- 1048288 words of memory out of 5000000
- 31503 multiletter control sequences out of 15000+600000
+ 28957 strings out of 492649
+ 463910 string characters out of 6129623
+ 1050961 words of memory out of 5000000
+ 31505 multiletter control sequences out of 15000+600000
  68966 words of font info for 54 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  67i,12n,125p,1945b,3388s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3937,10 +3970,10 @@ nts/type1/public/lm/lmss12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/
 public/lm/lmss17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/
 lmssbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtt10.p
 fb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (110 pages, 3027535 bytes).
+Output written on main.pdf (112 pages, 3030651 bytes).
 PDF statistics:
- 2091 PDF objects out of 2487 (max. 8388607)
- 1891 compressed objects within 19 object streams
- 674 named destinations out of 1000 (max. 500000)
+ 2100 PDF objects out of 2487 (max. 8388607)
+ 1898 compressed objects within 19 object streams
+ 676 named destinations out of 1000 (max. 500000)
  749 words of extra memory for PDF output out of 10000 (max. 10000000)
 
