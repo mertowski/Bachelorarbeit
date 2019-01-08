@@ -33,52 +33,52 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {lstlisting}{\numberline {3.17}CSS}{34}{lstlisting.3.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {4.1}Google Dorking mit SQLiv}{48}{lstlisting.4.1}
+\contentsline {lstlisting}{\numberline {4.1}Google Dorking mit SQLiv}{49}{lstlisting.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {4.2}Aufdeckung vom Datenbankname}{49}{lstlisting.4.2}
+\contentsline {lstlisting}{\numberline {4.2}Aufdeckung vom Datenbankname}{50}{lstlisting.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {4.3}Aufdeckung vom Tabellenname}{49}{lstlisting.4.3}
+\contentsline {lstlisting}{\numberline {4.3}Aufdeckung vom Tabellenname}{50}{lstlisting.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {4.4}Aufdeckung von Spalten}{50}{lstlisting.4.4}
+\contentsline {lstlisting}{\numberline {4.4}Aufdeckung von Spalten}{51}{lstlisting.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {4.5}Aufdeckung von alle Daten in der Tabelle}{51}{lstlisting.4.5}
+\contentsline {lstlisting}{\numberline {4.5}Aufdeckung von alle Daten in der Tabelle}{52}{lstlisting.4.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {4.6}Befehl durch Terminal}{56}{lstlisting.4.6}
+\contentsline {lstlisting}{\numberline {4.6}Befehl durch Terminal}{57}{lstlisting.4.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {4.7}XXE PHP-Datei}{57}{lstlisting.4.7}
+\contentsline {lstlisting}{\numberline {4.7}XXE PHP-Datei}{58}{lstlisting.4.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {4.8}POST Anfrage zu PHP-Datei}{57}{lstlisting.4.8}
+\contentsline {lstlisting}{\numberline {4.8}POST Anfrage zu PHP-Datei}{58}{lstlisting.4.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {4.9}Geparste XML-Daten}{58}{lstlisting.4.9}
+\contentsline {lstlisting}{\numberline {4.9}Geparste XML-Daten}{59}{lstlisting.4.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {4.10}Manipulierte Anfrage}{58}{lstlisting.4.10}
+\contentsline {lstlisting}{\numberline {4.10}Manipulierte Anfrage}{59}{lstlisting.4.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {4.11}Best\IeC {\"a}tigung der XXE-Schwachstelle}{58}{lstlisting.4.11}
+\contentsline {lstlisting}{\numberline {4.11}Best\IeC {\"a}tigung der XXE-Schwachstelle}{59}{lstlisting.4.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {6.1}Version von Swagger}{78}{lstlisting.6.1}
+\contentsline {lstlisting}{\numberline {6.1}Version von Swagger}{79}{lstlisting.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {6.2}Version von Open API}{78}{lstlisting.6.2}
+\contentsline {lstlisting}{\numberline {6.2}Version von Open API}{79}{lstlisting.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {6.3}Open API 2.0 - Komponenten\cite {openapicomponents17}}{79}{lstlisting.6.3}
+\contentsline {lstlisting}{\numberline {6.3}Open API 2.0 - Komponenten\cite {openapicomponents17}}{80}{lstlisting.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {6.4}Open API 3.0 - Komponenten\cite {openapicomponents17}}{79}{lstlisting.6.4}
+\contentsline {lstlisting}{\numberline {6.4}Open API 3.0 - Komponenten\cite {openapicomponents17}}{80}{lstlisting.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {6.5}Swagger 2.0 - Anfrage-Format}{80}{lstlisting.6.5}
+\contentsline {lstlisting}{\numberline {6.5}Swagger 2.0 - Anfrage-Format}{81}{lstlisting.6.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {6.6}Open API 3.0 - Anfrage-Format}{81}{lstlisting.6.6}
+\contentsline {lstlisting}{\numberline {6.6}Open API 3.0 - Anfrage-Format}{82}{lstlisting.6.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {6.7}Open API 3.0 - Antwort-Format}{82}{lstlisting.6.7}
+\contentsline {lstlisting}{\numberline {6.7}Open API 3.0 - Antwort-Format}{83}{lstlisting.6.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {6.8}Open API 3.0 - Verlinkungen}{82}{lstlisting.6.8}
+\contentsline {lstlisting}{\numberline {6.8}Open API 3.0 - Verlinkungen}{83}{lstlisting.6.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {6.9}Open API 3.0 - Callbacks\cite {openapicallbacks17}}{83}{lstlisting.6.9}
+\contentsline {lstlisting}{\numberline {6.9}Open API 3.0 - Callbacks\cite {openapicallbacks17}}{84}{lstlisting.6.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {6.10}Swagger 2.0 - Server}{84}{lstlisting.6.10}
+\contentsline {lstlisting}{\numberline {6.10}Swagger 2.0 - Server}{85}{lstlisting.6.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {6.11}OpenAPI 3.0 - Server}{84}{lstlisting.6.11}
+\contentsline {lstlisting}{\numberline {6.11}OpenAPI 3.0 - Server}{85}{lstlisting.6.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {6.12}OpenAPI 3.0 - JSON Schema Supports Beispiel}{85}{lstlisting.6.12}
+\contentsline {lstlisting}{\numberline {6.12}OpenAPI 3.0 - JSON Schema Supports Beispiel}{86}{lstlisting.6.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {6.13}OpenAPI 3.0 - Examples Object Beispiel}{85}{lstlisting.6.13}
+\contentsline {lstlisting}{\numberline {6.13}OpenAPI 3.0 - Examples Object Beispiel}{86}{lstlisting.6.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {6.14}OpenAPI 3.0 - Security}{86}{lstlisting.6.14}
+\contentsline {lstlisting}{\numberline {6.14}OpenAPI 3.0 - Security}{87}{lstlisting.6.14}

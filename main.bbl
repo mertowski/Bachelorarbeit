@@ -1087,6 +1087,31 @@
       \field{title}{Kali Linux Web Penetration Testing Cookbook}
       \field{year}{2016}
     \endentry
+    \entry{infdiscissattack17}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=056785a447d8dd48c409904eac6ab6d8}{%
+           family={Netsparker},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{056785a447d8dd48c409904eac6ab6d8}
+      \strng{fullhash}{056785a447d8dd48c409904eac6ab6d8}
+      \strng{bibnamehash}{056785a447d8dd48c409904eac6ab6d8}
+      \strng{authorbibnamehash}{056785a447d8dd48c409904eac6ab6d8}
+      \strng{authornamehash}{056785a447d8dd48c409904eac6ab6d8}
+      \strng{authorfullhash}{056785a447d8dd48c409904eac6ab6d8}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Information Disclosure Issues and Attacks in Web Applications}}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://www.netsparker.com/blog/web-security/information-disclosure-issues-attacks/
+      \endverb
+      \verb{url}
+      \verb https://www.netsparker.com/blog/web-security/information-disclosure-issues-attacks/
+      \endverb
+    \endentry
     \entry{northcutt2006}{book}{}
       \name{author}{6}{}{%
         {{hash=4d5ba76b8ba1311e45f229f7b7634475}{%

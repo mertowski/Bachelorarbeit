@@ -1,18 +1,18 @@
 [0] Config.pm:302> INFO - This is Biber 2.11
 [0] Config.pm:305> INFO - Logfile is 'main.blg'
-[39] biber-darwin:313> INFO - === Mon Jan  7, 2019, 15:01:00
-[63] Biber.pm:371> INFO - Reading 'main.bcf'
-[142] Biber.pm:857> INFO - Found 88 citekeys in bib section 0
-[154] Biber.pm:3976> INFO - Processing section 0
-[164] Biber.pm:4136> INFO - Looking for bibtex format file 'references.bib' for section 0
-[166] bibtex.pm:1500> INFO - LaTeX decoding ...
-[224] bibtex.pm:1316> INFO - Found BibTeX data source 'references.bib'
-[227] Utils.pm:193> WARN - Duplicate entry key: 'nowey2011einleitung' in file 'references.bib', skipping ...
-[230] Utils.pm:193> WARN - Duplicate entry key: 'bufferoverflow16' in file 'references.bib', skipping ...
-[521] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[38] biber-darwin:313> INFO - === Tue Jan  8, 2019, 11:32:21
+[57] Biber.pm:371> INFO - Reading 'main.bcf'
+[138] Biber.pm:857> INFO - Found 89 citekeys in bib section 0
+[150] Biber.pm:3976> INFO - Processing section 0
+[159] Biber.pm:4136> INFO - Looking for bibtex format file 'references.bib' for section 0
+[161] bibtex.pm:1500> INFO - LaTeX decoding ...
+[223] bibtex.pm:1316> INFO - Found BibTeX data source 'references.bib'
+[226] Utils.pm:193> WARN - Duplicate entry key: 'nowey2011einleitung' in file 'references.bib', skipping ...
+[228] Utils.pm:193> WARN - Duplicate entry key: 'bufferoverflow16' in file 'references.bib', skipping ...
 [521] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[521] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
 [521] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
 [521] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
-[585] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[605] bbl.pm:720> INFO - Output to main.bbl
-[605] Biber.pm:110> INFO - WARNINGS: 2
+[582] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[602] bbl.pm:720> INFO - Output to main.bbl
+[602] Biber.pm:110> INFO - WARNINGS: 2
