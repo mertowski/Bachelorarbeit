@@ -11,40 +11,13 @@ Zusammenfassend soll nicht in die Debatte zwischen manuellen und automatisierten
 
 %%%%%%%%%%%%%%%%%%%%%%%%%REST API%%%%%%%%%%%%%%%%%%%%%%%%
 
-API testing is a vast area of research and is still evolving. In this chapter, we saw a
-generic methodology that one should apply to test any kind of API. This included
-studying the API structure, understanding request methods, understanding
-responses, and so on. It also included techniques which one should apply to list
-endpoints and exploit bugs on real production API. We saw examples of API bugs
-on sites, such as Facebook, in which we applied our generic methodology to study
-(learn) about API by understanding structure, roles, scopes, etc. and then exploiting
-it. API testing has still not evolved, and there's a lot of scope in research.
-For learning more about how real API bugs are exploited, I would recommend
-readers read the following:
-http://philippeharewood.com/
-https://pranavhivarekar.in/
-APIs have gained a lot of popularity nowadays and have brought immense flexibility
-to cross application integrations, but they also give rise to large and complex attack
-surfaces. Due to this attack surface factor, APIs must be tested rigorously for logical
-and implementation-related vulnerabilities, which are often very critical in nature,
-such as account takeover flaws.
+APIs haben heutzutage eine große Popularität erlangt und eine immense Flexibilität für anwendungsübergreifende Integrationen mit sich gebracht, sie verursachen jedoch auch große und komplexe Angriffsflächen. Aufgrund dieses Angriffsoberflächenfaktors müssen APIs strikt auf logische und implementierungsabhängige Schwachstellen getestet werden, die häufig sehr kritisch sind, z. B. Fehler bei der Kontoübernahme.
 
+API-Tests sind ein weites Forschungsgebiet und entwickeln sie sich noch weiter. In Kapitel \ref{cha:k5} haben wir eine automatisierte Penetrationstest-Methodik gesehen, die man anwenden sollte, um jede Art von API zu testen. Dazu gehörten die Swagger-Generator, das Verstehen von Spider, das Verstehen von Active Scan usw. Es enthielt auch Techniken, die zum Auflisten von Endpunkten und zum Ausnutzen von Fehlern in der realen Produktions-API angewendet werden sollten. Wir haben Beispiele für API-Fehler auf das Framework wie Springboot gesehen, in dem wir unsere generische Testmethodik angewendet haben, um API auszunutzen. API-Tests haben sich immer noch nicht weiterentwickelt, und es gibt viel Spielraum in der Forschung.
 
-Although software teams acknowledge the desire to reach an ideal distribution of unit, API, and UI tests, the reality is that your average team is doing an average job of unit testing and still relying on late-stage UI and system tests. API testing provides an ideal communication mechanism between developers and testers with a high level of maintainable automation that can be extended into performance and security testing.
+API-Tests bieten einen idealen Kommunikationsmechanismus zwischen Entwicklern und Testern mit einem hohen Grad an wartungsfähiger Automatisierung, der zu Leistungs- und Sicherheitstests erweitert werden kann. Wenn die API-Tests zu einem früheren Zeitpunkt im Software-Lebenszyklus ausgeführt werden, bedeutet dies, dass die kritische Sicherheits- und Architekturdefekte frühzeitig erkannt und leichter diagnostizieren werden und es ist weniger riskant solche Sicherheitsanfälligkeiten beheben können. Durch die Nutzung des OpenAPI 2.0 Plug-Ins von OWASP ZAP bereitgestellten Automatisierung ist der API-Test einfacher zugänglich, und die Zeit, die zum Erstellen aussagekräftiger Testszenarien erforderlich ist, kann erheblich reduziert werden.
 
-Shifting these tests left and executing them earlier in the software lifecycle means catching critical security and architectural defects early, where they are easier to diagnose and less risky to fix. Leveraging the automation provided by Parasoft SOAtest's Smart API Test Generator, API testing is more accessible and the time associated with creating meaningful test scenarios can be significantly reduced.
-
-
-
-Manual security testing of web service APIs is an expensive and time-intensive, though
-necessary and important part of serious software development. Despite security being of
-utmost importance, it might be neglected for various reasons. Even when security is a
-priority for developers, it is possible that there exist one or more security vulnerabilities
-in a system. Automating parts of the security testing process allows software development
-teams to integrate automated security testing as a part of their automated testing process,
-reducing the chance of introducing testable security related software vulnerabilities in concurrent software builds.
-
-
+Das manuelle Testen der Sicherheit von Web-Service-APIs ist ein kostspieliger und zeitintensiver, wenngleich notwendiger und wichtiger Bestandteil einer ernsthaften Softwareentwicklung. Obwohl Sicherheit von größter Bedeutung ist, kann sie aus verschiedenen Gründen vernachlässigt werden. Selbst wenn Sicherheit für Entwickler eine Priorität darstellt, gibt es möglicherweise eine oder mehrere Sicherheitslücken in einem System. Durch die Automatisierung von Teilen des Sicherheitstestprozesses können Softwareentwicklungsteams automatisierte Sicherheitstests als Teil ihres automatisierten Testprozesses integrieren, wodurch die Wahrscheinlichkeit, dass testbare, sicherheitsrelevante Softwareanfälligkeiten in gleichzeitigen Software-Builds auftreten, verringert wird.\\
 
 %%%%%%%%%%%%%%%%%% SWAGGER VS OPENAPI %%%%%%%%%%%%%%%%%%%%
 
