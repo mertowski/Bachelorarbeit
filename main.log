@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.3)  11 JAN 2019 14:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.3)  11 JAN 2019 18:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3623,7 +3623,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 98.
 [81]
 
-Package Listings Warning: Text dropped after begin of listing on input line 119
+Package Listings Warning: Text dropped after begin of listing on input line 124
 .
 
 Package babel Info: Redefining ngerman shorthand "|
@@ -3636,94 +3636,104 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 129.
 [82]
 
-Package Listings Warning: Text dropped after begin of listing on input line 141
+Package Listings Warning: Text dropped after begin of listing on input line 150
 .
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 159.
+(babel)             in language  on input line 165.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 159.
+(babel)             in language  on input line 165.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 159.
+(babel)             in language  on input line 165.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 159.
+(babel)             in language  on input line 165.
 [83]
 
-Package Listings Warning: Text dropped after begin of listing on input line 160
+Package Listings Warning: Text dropped after begin of listing on input line 174
 .
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 185.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 185.
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
 
  []
 
-
-Package Listings Warning: Text dropped after begin of listing on input line 177
-.
-
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 190.
 [84]
 
-Package Listings Warning: Text dropped after begin of listing on input line 187
+Package Listings Warning: Text dropped after begin of listing on input line 191
+.
+
+
+Package Listings Warning: Text dropped after begin of listing on input line 207
 .
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 201.
+(babel)             in language  on input line 225.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 201.
-
-Package Listings Warning: Text dropped after begin of listing on input line 211
-.
-
+(babel)             in language  on input line 225.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 224.
+(babel)             in language  on input line 225.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 224.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 224.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 224.
+(babel)             in language  on input line 225.
 [85]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 229.
+(babel)             in language  on input line 231.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 229.
+(babel)             in language  on input line 231.
 
 
-Package Listings Warning: Text dropped after begin of listing on input line 233
+Package Listings Warning: Text dropped after begin of listing on input line 241
 .
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 253.
+(babel)             in language  on input line 266.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 253.
+(babel)             in language  on input line 266.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 253.
+(babel)             in language  on input line 266.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 253.
+(babel)             in language  on input line 266.
 [86]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 253.
+(babel)             in language  on input line 271.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 253.
+(babel)             in language  on input line 271.
 
 
-Package Listings Warning: Text dropped after begin of listing on input line 257
+Package Listings Warning: Text dropped after begin of listing on input line 275
+.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 300.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 300.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 300.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 300.
+[87]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 301.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 301.
+
+
+Package Listings Warning: Text dropped after begin of listing on input line 305
 .
 
 
-Overfull \hbox (37.8159pt too wide) in paragraph at lines 269--270
+Overfull \hbox (37.8159pt too wide) in paragraph at lines 320--321
 []\T1/lmr/m/n/12 Bei dem Open-API 3.0 wur-de \T1/lmtt/m/n/12 securityDefinition
 s \T1/lmr/m/n/12 (sie-he []6.14[]) als \T1/lmtt/m/n/12 securitySchemes
  []
@@ -3737,7 +3747,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 88.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 88.
- [87]
+ [88]
 \openout2 = `chapters/chapter7.aux'.
 
  (./chapters/chapter7.tex
@@ -3754,7 +3764,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 10.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 10.
-[88
+[89
 
 
 
@@ -3776,7 +3786,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 21.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 21.
-[89]
+[90]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 31.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3785,7 +3795,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 31.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 31.
- [90])
+ [91])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 89.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3794,7 +3804,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 89.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 89.
- [91]
+ [92]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 98.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3962,10 +3972,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29006 strings out of 492649
- 464605 string characters out of 6129623
+ 29057 strings out of 492649
+ 465496 string characters out of 6129623
  1051556 words of memory out of 5000000
- 31528 multiletter control sequences out of 15000+600000
+ 31527 multiletter control sequences out of 15000+600000
  83989 words of font info for 70 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  67i,12n,125p,1966b,3388s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3993,10 +4003,10 @@ ic/lm/lmss12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmss
 17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><
 /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local
 /texlive/2018/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (112 pages, 3050909 bytes).
+Output written on main.pdf (113 pages, 3053541 bytes).
 PDF statistics:
- 2139 PDF objects out of 2487 (max. 8388607)
- 1930 compressed objects within 20 object streams
- 678 named destinations out of 1000 (max. 500000)
+ 2205 PDF objects out of 2487 (max. 8388607)
+ 1995 compressed objects within 20 object streams
+ 730 named destinations out of 1000 (max. 500000)
  749 words of extra memory for PDF output out of 10000 (max. 10000000)
 

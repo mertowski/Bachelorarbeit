@@ -73,12 +73,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {lstlisting}{\numberline {6.9}Open API 3.0 - Callbacks\cite {openapicallbacks17}}{84}{lstlisting.6.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {6.10}Swagger 2.0 - Server}{84}{lstlisting.6.10}
+\contentsline {lstlisting}{\numberline {6.10}Swagger 2.0 - Server}{85}{lstlisting.6.10}
 \defcounter {refsection}{0}\relax 
 \contentsline {lstlisting}{\numberline {6.11}OpenAPI 3.0 - Server}{85}{lstlisting.6.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {6.12}OpenAPI 3.0 - JSON Schema Supports Beispiel}{85}{lstlisting.6.12}
+\contentsline {lstlisting}{\numberline {6.12}OpenAPI 3.0 - JSON Schema Supports Beispiel}{86}{lstlisting.6.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {6.13}OpenAPI 3.0 - Examples Object Beispiel}{86}{lstlisting.6.13}
+\contentsline {lstlisting}{\numberline {6.13}OpenAPI 3.0 - Examples Object Beispiel}{87}{lstlisting.6.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {6.14}OpenAPI 3.0 - Security}{87}{lstlisting.6.14}
+\contentsline {lstlisting}{\numberline {6.14}OpenAPI 3.0 - Security}{88}{lstlisting.6.14}

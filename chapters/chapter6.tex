@@ -62,48 +62,53 @@ Anfrage-Body wird in der Regel für "`Erstellen"' und "`Aktualisieren"' von Oper
 Einer der verwirrendsten Aspekte von Swagger 2 war \texttt{body/formData}.
 
 \begin{LaTeXCode}[caption={Swagger 2.0 - Anfrage-Format},captionpos=b, label=LaTeXCode:openapi3.0-4][numbers=none]
-"/examples/{exampleId}":
-post:
-parameters:
-- name: exampleId
-in: path
-description: identification number of example to update
-required: true
-type: string
-- name: user example
-in: body
-description: user example to add to the database
-required: true
-schema:
-type: array
-items:
-type: string
+{
+	"examples/{exampleId": null,
+		"post": null,
+		"parameters": [
+		{
+			"name": "beispielId"
+		}
+		],
+		"in": "body",
+		"description": "benutzer beispiel, um in der Datenbank anzulegen",
+		"required": true,
+		"type": "string",
+		"-name": "benutzer beispiel",
+		"schema": null,
+		"items": null
+	}
 \end{LaTeXCode}
 
 Bei dem OpenAPI 3.0 wird \texttt{body} in seinen eigenen Abschnitt mit dem Namen \texttt{requestBody} verschoben und \texttt{formData} wurde darin zusammengeführt. Zusätzlich wurden Cookies als Parametertyp hinzugefügt.
 
 \begin{LaTeXCode}[caption={Open API 3.0 - Anfrage-Format},captionpos=b, label=LaTeXCode:openapi3.0-5][numbers=none]
-"/examples/{exampleId}":
-post:
-	requestBody:
-		description: user example to add to the database
-		required: true
-		content:
-			application/json: 
-			 schema:
-			  type: array
-			  items:
-			   \$ref: '#/components/schemas/Example'
-			examples:
-			 - name: Example
-			   exampleType: Example Type
-			 - http://example.com/example.json
-	parameters:
-	 - name: exampleId
-	 in: path
-	 description: identification number of example to update
-	 required: true
-	 type: string
+{
+	"examples/{exampleId": null,
+		"post": {
+			"requestBody": {
+				"description": "benutzer beispiel um, in der Datenbank anzulegen",
+				"required": true,
+				"content": {
+					"application/json": {
+						"schema": {
+							"type": "array",
+							"items": {
+								"\\\$ref": "#/components/schemas/Beispiel"
+							}
+						}
+					},
+					"examples": [
+					{
+						"name": "Beispiel"
+					},
+					{
+						"exampleType": "Beispiel Type"
+					},
+					"http://beispiel.com/beispiel.json"
+					]
+				}
+...
 \end{LaTeXCode}
 
 Der \texttt{requestBody} hat viele neue Funktionen. Man kann jetzt ein Beispiel (oder ein List von Beispielen) für \texttt{requestBody} angeben. Dies ist ziemlich flexibel (Man kann dem Beispiel ein vollständiges Beispiel, eine Referenz oder sogar eine URL übergeben).
@@ -117,18 +122,22 @@ Eine API-Spezifikation muss die Antworten für alle API-Vorgänge angeben. Für 
 Bei dem OpenAPI 3.0 werden auch Antwort-Format aktualisiert. Man kann jetzt eine Antwort wie bei dem Quelcode \ref{LaTeXCode:openapi3.0-6} definieren, anstatt jede separat definieren zu müssen.
 
 \begin{LaTeXCode}[caption={Open API 3.0 - Antwort-Format},captionpos=b, label=LaTeXCode:openapi3.0-6][numbers=none]
-myExample:
-	'\$request.body#/url':
-	post:
-		requestBody:
-		  description: Response example
-	    content:
-		  'application/json':
-		    schema:
-			  \$ref: '#/components/schemas/ResExample'
-			responses:
-			  200:
-			  description: response works!
+{
+	"meinBeispiel": {
+		"\\\$request.body#/url": null,
+		"post": {
+			"requestBody": {
+				"description": "antwort beispiel",
+				"content": null,
+				"application/json": {
+					"schema": null,
+					"\\\$ref": "#/components/schemas/antwortbeispiel"
+				},
+				"responses": {
+					"200": null,
+					"description": "antwort funktioniert."
+				}
+...
 \end{LaTeXCode}
 
 
@@ -139,16 +148,21 @@ Mit Links können Sie beschreiben, wie verschiedene Werte, die von einer Operati
 OpenAPI 3.0 Spezifikation unterstützt das Verknüpfen, sodass Beziehungen zwischen Pfaden sauber beschrieben werden können und diese Version bisher am widerstandsfähigsten macht. Angenommen, dass es einen Benutzer erhielt wird und er hat ein Id. Dieses Id ist an sich ziemlich nutzlos. Man kann Verlinkungen verwenden, um zu zeigen, wie man dieses Id erweitern und die vollständige Adresse erhalten.
 
 \begin{LaTeXCode}[caption={Open API 3.0 - Verlinkungen},captionpos=b, label=LaTeXCode:openapi3.0-7][numbers=none]
-paths: 
-	/users/{userId}:
-	 get:
-	  responses:
-	   200:
-	    links:
-	     address:
-	      operationId: getExampleWithId
-		  parameters:
-		   exampleId: '\$response.body#/exampleId'
+{
+	"paths": {
+		"/benutzern/{benutzerId}": {
+			"get": {
+				"responses": {
+					"200": {
+						"links": {
+							"address": {
+								"operationId": "gibBeispielMitID"
+							}
+						},
+						"parameters": {
+							"exampleId": "\\\$response.body#/beispielID"
+						}
+...
 \end{LaTeXCode}
 
 Wie bei dem Quellcode \ref{LaTeXCode:openapi3.0-7} gesehen, dass in der Antwort von \texttt{/users/{userId}} eine \texttt{exampleId} zurück erhält. Die Verlinkung beschreibt, wie man das \texttt{Example} erhält, indem man auf \texttt{\$response.body\#/exampleId} verweist.
@@ -159,10 +173,10 @@ Bei dem OpenAPI 3.0 können jetzt Rückrufe wie bei dem Quelcode \ref{LaTeXCode:
 
 \begin{LaTeXCode}[caption={Open API 3.0 - Callbacks\cite{openapicallbacks17}},captionpos=b, label=LaTeXCode:openapi3.0-10][numbers=none]
 POST /subscribe
-Host: my.webpage.com
+Host: mein.webseite.com
 Content-Type: application/json
 {
-	"callbackUrl": "https://myserver.com/send/callback/here"
+	"callbackUrl": "https://meinserver.com/schick/callback/hier"
 }
 \end{LaTeXCode}
 
@@ -175,27 +189,43 @@ Der Abschnitt "`Server"' gibt den API-Server und die Basis-URL (Base URL) an. Es
 Bei der Beschreibung der API kann jetzt mehrere Hosts bereitgestellt werden, sodass besser mit der Komplexität umgehen werden können, wie sich APIs an einem einzelnen Standort befinden oder sich auf mehrere Cloud-Standorte und die globale Infrastruktur verteilen. Derzeit kann mit Swagger 2 \texttt{schemes}, \texttt{host} und \texttt{baseUrl} wie bei dem Quellcode \ref{LaTeXCode:openapi3.0-8} definiert werden, die in der URL zusammengefasst sind. 
 
 \begin{LaTeXCode}[caption={Swagger 2.0 - Server},captionpos=b, label=LaTeXCode:openapi3.0-8][numbers=none]
-info:  
-	title: Swagger Example
-host: example.com  
-basePath: /v1  
-schemes: ['http', 'https']
+{
+	"info": {
+		"title": "Beispiel"
+	},
+	"host": "beispiel.com",
+	"basePath": "/v2",
+	"schemes": [
+	"http",
+	"https"
+	]
+}
 \end{LaTeXCode}
 
 Mit OpenAPI 3.0 können jetzt mehrere URLs haben (siehe Quellcode \ref{LaTeXCode:openapi3.0-9}), die beliebig definiert werden können. Das bedeutet, dass wie zuvor nur einen an der Basis haben können oder ein bestimmter Endpunkt kann einen eigenen Server haben, wenn die Basis-URL unterschiedlich ist. Darüber hinaus ist das Templating von Pfaden jetzt zulässig.
 
 \begin{LaTeXCode}[caption={OpenAPI 3.0 - Server},captionpos=b, label=LaTeXCode:openapi3.0-9][numbers=none]
-servers:  
-- url: https://example.com/{version}
-	description: The main prod server
-	variables:
-	  subdomain:
-	   default: production
-	  version:
-	   enum:
-		- v1
-		- v2
-	   default: v2
+{
+	"servers": [
+	{
+		"url": "https://{version}.exampleserver.com:{port}/{basePath}",
+		"description": "beispiel server",
+		"variables": {
+			"username": {
+				"default": "beispiel",
+				"description": null
+			},
+			"port": {
+				"enum": [
+				"8080",
+				"8090"
+				],
+				"default": "8080"
+			},
+			"basePath": {
+				"default": "v2"
+			}
+...
 \end{LaTeXCode} 
 
 \subsection{Ausbau des JSON Schema Supports}
@@ -209,19 +239,31 @@ OpenAPI 3.0 bietet mehrere Schlüsselwörter, mit denen die Schemas kombiniert w
 \end{itemize}
 
 \begin{LaTeXCode}[caption={OpenAPI 3.0 - JSON Schema Supports Beispiel},captionpos=b, label=LaTeXCode:openapi3.0-11][numbers=none]
-paths:
-	/pets:
-	  patch:
- 		requestBody:
-		  content:
-		    application/json:
-			  schema:
-			    oneOf:
-				  - $ref: '#/components/schemas/Cat'
-				  - $ref: '#/components/schemas/Dog'
-		responses:
-		  '200':
-		    description: Updated
+{
+	"paths": {
+		"/examples": {
+			"patch": {
+				"requestBody": {
+					"content": {
+						"application/json": null,
+						"schema": {
+							"oneOf": [
+							{
+								"\$ref": "#/components/schemas/example1"
+							},
+							{
+								"\$ref": "#/components/schemas/example2"
+							}
+							]
+						}
+					}
+				}
+			},
+			"responses": {
+				"200": {
+					"description": "Updated"
+				}
+...
 \end{LaTeXCode} 
 
 Quellcode \ref{LaTeXCode:openapi3.0-11} zeigt, wie das \texttt{Request body} in der Aktualisierungsoperation überprüft wird. Es wird verwendet werden, um zu überprüfen, dass das \texttt{Request body} alle erforderlichen Informationen zu dem zu aktualisierenden Objekt enthält, abhängig vom Objekttyp.
@@ -231,21 +273,27 @@ Quellcode \ref{LaTeXCode:openapi3.0-11} zeigt, wie das \texttt{Request body} in 
 Parametern, Eigenschaften und Objekten Beispiele hinzugefügt werden, um die OpenAPI-Spezifikation des Web-Service klarer zu machen. Beispiele können von Tools und Bibliotheken gelesen werden, die die API auf irgendeine Weise verarbeiten. Ein API-Mocking-Tool kann beispielsweise Beispielwerte verwenden, um \texttt{Mock-Request} zu generieren\cite{openapiexample17}.
 
 \begin{LaTeXCode}[caption={OpenAPI 3.0 - Examples Object Beispiel},captionpos=b, label=LaTeXCode:openapi3.0-12][numbers=none]
-paths:
-	/users:
-	  post:
-		summary: Adds a new object
-		requestBody:
-		  content:
-		    application/json:
-		      schema:
-			    \$ref: '#/components/schemas/Object'
-			  example:
-			    id: 10
-			    name: Object Example
-		responses:
-	      '200':
-		    description: OK
+{
+	"paths": {
+		"/users": {
+			"post": null,
+			"summary": "fuegt neue objekt hinzu",
+			"requestBody": {
+				"content": {
+					"application/json": {
+						"schema": null,
+						"\\\$ref": "#/components/schemas/objekt"
+					},
+					"example": {
+						"id": 76,
+						"name": "beispiel objekt"
+					}
+				}
+			},
+			"responses": {
+				"200": null,
+				"description": "OK"
+			}
 \end{LaTeXCode}
 
 Bei dem OpenAPI 3.0 wurden die Möglichkeiten zur Beschreibung von Beispielen erheblich erweitert. In der vorherigen Spezifikation (Swagger 2.0) wurde angegeben, dass Beispiele nur von einem JSON- oder YAML-Objekt beschrieben werden können. Bei dem OpenAPI 3.0  kann nun durch Verwendung einer \texttt{json string} jedes Beispielformat beschrieben werden. Darüber hinaus kann ein \texttt{\$ref}-Objekt verwendet werden, um auf externe Dateien mit Beispielen zu verweisen.
@@ -255,15 +303,18 @@ Bei dem OpenAPI 3.0 wurden die Möglichkeiten zur Beschreibung von Beispielen er
 Die Sicherheit wird anhand der Schlüsselwörter \texttt{securitySchemes} und \texttt{security} beschrieben. Es werden mit securitySchemes alle Sicherheitsschemata definiert, die die API unterstützt und wird die Sicherheit verwendet, um bestimmte Schemas auf die gesamte API oder einzelne Vorgänge anzuwenden\cite{openapisecurity17}: 
 
 \begin{LaTeXCode}[caption={OpenAPI 3.0 - Security},captionpos=b, label=LaTeXCode:openapi3.0-13][numbers=none]
-components:  
-	securitySchemes:
-		UserSecurity:
-		  type: http
-		  scheme: basic
-		APIKey:
-		  type: http
-		  scheme: bearer
-		  bearerFormat: TOKEN
+{
+	"components": {
+		"securitySchemes": {
+			"UserSecurity": {
+				"type": "https",
+				"scheme": "basic"
+			},
+			"APIKey": {
+				"type": "https",
+				"scheme": "bearer",
+				"bearerFormat": "TOKEN"
+			}
 \end{LaTeXCode}
 
 Bei dem OpenAPI 3.0 wurde \texttt{securityDefinitions} (siehe \ref{LaTeXCode:openapi3.0-13}) als \texttt{securitySchemes} umbenannt und in den \texttt{Components} verschoben. Außerdem ist \texttt{http} ein übergeordneter Typ für alle \texttt{HTTP security scheme} wie z.B. \texttt{basic}, \texttt{bearer} und \texttt{other}. Des Weitreren gibt das Schlüsselwort \texttt{schema} den Schematyp an.
