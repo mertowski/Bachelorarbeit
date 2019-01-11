@@ -21,16 +21,16 @@
   \datalist[entry]{nty/global//global/global}
     \entry{xsspersistent14}{misc}{}
       \name{author}{1}{}{%
-        {{hash=c08d7443c2393fbf95364876c59f945d}{%
-           family={ACUNETIX},
+        {{hash=ee75f2f589b0374d80fed9dc15ad72c1}{%
+           family={Acunetix},
            familyi={A\bibinitperiod}}}%
       }
-      \strng{namehash}{c08d7443c2393fbf95364876c59f945d}
-      \strng{fullhash}{c08d7443c2393fbf95364876c59f945d}
-      \strng{bibnamehash}{c08d7443c2393fbf95364876c59f945d}
-      \strng{authorbibnamehash}{c08d7443c2393fbf95364876c59f945d}
-      \strng{authornamehash}{c08d7443c2393fbf95364876c59f945d}
-      \strng{authorfullhash}{c08d7443c2393fbf95364876c59f945d}
+      \strng{namehash}{ee75f2f589b0374d80fed9dc15ad72c1}
+      \strng{fullhash}{ee75f2f589b0374d80fed9dc15ad72c1}
+      \strng{bibnamehash}{ee75f2f589b0374d80fed9dc15ad72c1}
+      \strng{authorbibnamehash}{ee75f2f589b0374d80fed9dc15ad72c1}
+      \strng{authornamehash}{ee75f2f589b0374d80fed9dc15ad72c1}
+      \strng{authorfullhash}{ee75f2f589b0374d80fed9dc15ad72c1}
       \field{sortinit}{A}
       \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
       \field{labelnamesource}{author}
@@ -924,43 +924,6 @@
       \verb https://www.linkedin.com/pulse/manual-vs-automated-penetration-testing-youssef-elmalty
       \endverb
     \endentry
-    \entry{ke2009using}{inproceedings}{}
-      \name{author}{3}{}{%
-        {{hash=9f4e3d189fa0bb0b1e241e2d1f60d9ad}{%
-           family={Ke},
-           familyi={K\bibinitperiod},
-           given={Jiun-Kai},
-           giveni={J\bibinithyphendelim K\bibinitperiod}}}%
-        {{hash=e9089626d3c83d3595155b3220cb9486}{%
-           family={Yang},
-           familyi={Y\bibinitperiod},
-           given={Chung-Huang},
-           giveni={C\bibinithyphendelim H\bibinitperiod}}}%
-        {{hash=74efef11b451f91bd40cea09a8feb467}{%
-           family={Ahn},
-           familyi={A\bibinitperiod},
-           given={Tae-Nam},
-           giveni={T\bibinithyphendelim N\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {ACM}%
-      }
-      \strng{namehash}{66288aacf13c5a672e735141fc51c49b}
-      \strng{fullhash}{66288aacf13c5a672e735141fc51c49b}
-      \strng{bibnamehash}{66288aacf13c5a672e735141fc51c49b}
-      \strng{authorbibnamehash}{66288aacf13c5a672e735141fc51c49b}
-      \strng{authornamehash}{66288aacf13c5a672e735141fc51c49b}
-      \strng{authorfullhash}{66288aacf13c5a672e735141fc51c49b}
-      \field{sortinit}{K}
-      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the 2009 International Conference on Hybrid Information Technology}
-      \field{title}{Using w3af to achieve automated penetration testing by live DVD/live USB}
-      \field{year}{2009}
-      \field{pages}{460\bibrangedash 464}
-      \range{pages}{5}
-    \endentry
     \entry{openapi2u317}{misc}{}
       \name{author}{1}{}{%
         {{hash=df074bfbdadd7929d740a836c8d0bc90}{%
@@ -1236,58 +1199,6 @@
       \field{title}{How to cheat at managing information security}
       \field{year}{2006}
     \endentry
-    \entry{owasp13top10}{incollection}{}
-      \name{author}{1}{}{%
-        {{hash=24b95a7fdad5a850196cd87546dcc70b}{%
-           family={OWASP},
-           familyi={O\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Creative Commons}%
-      }
-      \strng{namehash}{24b95a7fdad5a850196cd87546dcc70b}
-      \strng{fullhash}{24b95a7fdad5a850196cd87546dcc70b}
-      \strng{bibnamehash}{24b95a7fdad5a850196cd87546dcc70b}
-      \strng{authorbibnamehash}{24b95a7fdad5a850196cd87546dcc70b}
-      \strng{authornamehash}{24b95a7fdad5a850196cd87546dcc70b}
-      \strng{authorfullhash}{24b95a7fdad5a850196cd87546dcc70b}
-      \field{sortinit}{O}
-      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Die 10 häufigsten Sicherheit für Webanwendungen Deutsche Übersetzung Version 1.0}
-      \field{title}{OWASP Top 10}
-      \field{year}{2013}
-      \verb{urlraw}
-      \verb https://www.owasp.org/images/4/42/OWASP_Top_10_2013_DE_Version_1_0.pdf
-      \endverb
-      \verb{url}
-      \verb https://www.owasp.org/images/4/42/OWASP_Top_10_2013_DE_Version_1_0.pdf
-      \endverb
-    \endentry
-    \entry{owasp17top10}{incollection}{}
-      \name{author}{1}{}{%
-        {{hash=24b95a7fdad5a850196cd87546dcc70b}{%
-           family={OWASP},
-           familyi={O\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Creative Commons}%
-      }
-      \strng{namehash}{24b95a7fdad5a850196cd87546dcc70b}
-      \strng{fullhash}{24b95a7fdad5a850196cd87546dcc70b}
-      \strng{bibnamehash}{24b95a7fdad5a850196cd87546dcc70b}
-      \strng{authorbibnamehash}{24b95a7fdad5a850196cd87546dcc70b}
-      \strng{authornamehash}{24b95a7fdad5a850196cd87546dcc70b}
-      \strng{authorfullhash}{24b95a7fdad5a850196cd87546dcc70b}
-      \field{sortinit}{O}
-      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{The Ten Most Critical Web Application Security Risks}
-      \field{title}{OWASP Top 10}
-      \field{year}{2017}
-    \endentry
     \entry{owasp18def}{misc}{}
       \name{author}{1}{}{%
         {{hash=24b95a7fdad5a850196cd87546dcc70b}{%
@@ -1313,6 +1224,58 @@
       \verb{url}
       \verb https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project
       \endverb
+    \endentry
+    \entry{owasp13top10}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=969971c399a9dcf120eb734402e6561e}{%
+           family={Owasp},
+           familyi={O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Creative Commons}%
+      }
+      \strng{namehash}{969971c399a9dcf120eb734402e6561e}
+      \strng{fullhash}{969971c399a9dcf120eb734402e6561e}
+      \strng{bibnamehash}{969971c399a9dcf120eb734402e6561e}
+      \strng{authorbibnamehash}{969971c399a9dcf120eb734402e6561e}
+      \strng{authornamehash}{969971c399a9dcf120eb734402e6561e}
+      \strng{authorfullhash}{969971c399a9dcf120eb734402e6561e}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Die 10 häufigsten Sicherheit für Webanwendungen Deutsche Übersetzung Version 1.0}
+      \field{title}{OWASP Top 10}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://www.owasp.org/images/4/42/OWASP_Top_10_2013_DE_Version_1_0.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.owasp.org/images/4/42/OWASP_Top_10_2013_DE_Version_1_0.pdf
+      \endverb
+    \endentry
+    \entry{owasp17top10}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=969971c399a9dcf120eb734402e6561e}{%
+           family={Owasp},
+           familyi={O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Creative Commons}%
+      }
+      \strng{namehash}{969971c399a9dcf120eb734402e6561e}
+      \strng{fullhash}{969971c399a9dcf120eb734402e6561e}
+      \strng{bibnamehash}{969971c399a9dcf120eb734402e6561e}
+      \strng{authorbibnamehash}{969971c399a9dcf120eb734402e6561e}
+      \strng{authornamehash}{969971c399a9dcf120eb734402e6561e}
+      \strng{authorfullhash}{969971c399a9dcf120eb734402e6561e}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{The Ten Most Critical Web Application Security Risks}
+      \field{title}{OWASP Top 10}
+      \field{year}{2017}
     \endentry
     \entry{bufferoverflow16}{misc}{}
       \name{author}{1}{}{%
@@ -1417,17 +1380,17 @@
     \endentry
     \entry{zaed08}{misc}{}
       \name{author}{1}{}{%
-        {{hash=d3127a695fb277ef63f3f65292cb721f}{%
-           family={PHP.NET},
-           familyi={P\bibinitperiod}}}%
+        {{hash=5f810408ddbbd6d349b4be4766f41a37}{%
+           family={php.net},
+           familyi={p\bibinitperiod}}}%
       }
-      \strng{namehash}{d3127a695fb277ef63f3f65292cb721f}
-      \strng{fullhash}{d3127a695fb277ef63f3f65292cb721f}
-      \strng{bibnamehash}{d3127a695fb277ef63f3f65292cb721f}
-      \strng{authorbibnamehash}{d3127a695fb277ef63f3f65292cb721f}
-      \strng{authornamehash}{d3127a695fb277ef63f3f65292cb721f}
-      \strng{authorfullhash}{d3127a695fb277ef63f3f65292cb721f}
-      \field{sortinit}{P}
+      \strng{namehash}{5f810408ddbbd6d349b4be4766f41a37}
+      \strng{fullhash}{5f810408ddbbd6d349b4be4766f41a37}
+      \strng{bibnamehash}{5f810408ddbbd6d349b4be4766f41a37}
+      \strng{authorbibnamehash}{5f810408ddbbd6d349b4be4766f41a37}
+      \strng{authornamehash}{5f810408ddbbd6d349b4be4766f41a37}
+      \strng{authorfullhash}{5f810408ddbbd6d349b4be4766f41a37}
+      \field{sortinit}{p}
       \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
