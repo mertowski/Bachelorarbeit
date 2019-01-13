@@ -1,7 +1,7 @@
 \chapter{Sicherheitsrisiken von Webanwendungen}
 \label{cha:k3}
 
-Dieses Kapitel beschäftigt sich mit der Sicherheit von Webanwendungen und in diesem Zusammenhang mit deren Schwachstellen und Angriffen und Bedrohungen auf diese. Um die bestehenden Sicherheitsrisiken der Anwendung kritisch zu beäugen, wird versucht diverse Testmethoden einzuführen. OWASP versucht hiermit das Top-Ten-Projekt voranzutreiben und bei Organisationen dafür zu sorgen, dass die Präsenz und das Bewusstsein für Anwendungssicherheit gestärkt wird. Das Hauptaugenmerk liegt hierbei nicht auf der Entwicklung von vollständigen Anwendungssicherheitsprogrammen, sondern mehr darauf eine solide und notwendige Basis für die Anwendungssicherheit durch die Implementierung von Codierungsprinzipien und -praktiken zu schaffen.
+In diesem Kapitel wird die Sicherheit von Webanwendungen erörtert. In diesem Zusammenhang werden auch deren Schwachstellen und Angriffe sowie Bedrohungen dargestellt. Um die bestehenden Sicherheitsrisiken der Anwendung kritisch zu beurteilen, sollen diverse Testmethoden eingeführt werden. OWASP versucht hier, das Top-Ten-Projekt voranzutreiben und bei Organisationen dafür zu sorgen, dass die Präsenz und das Bewusstsein für Anwendungssicherheit gestärkt werden. Das Hauptaugenmerk liegt hierbei nicht auf der Entwicklung von vollständigen Anwendungssicherheitsprogrammen, sondern mehr darauf, eine solide und notwendige Basis für die Anwendungssicherheit durch die Implementierung von Codierungsprinzipien und -praktiken zu schaffen.
 
 \section{Schwachstellen}
 
@@ -16,7 +16,7 @@ Injektion-Schwachstellen kommen dann auf, wenn die Daten, die als Bestandteil ei
 \textbf{Mögliche Angriffsszenarien:}\\
 
 \textbf{\textit{Szenario 1}}:\\
-Stellen Sie sich vor, ein Entwickler muss die Kontonummern und Salden für die aktuelle Benutzer-ID anzeigen\cite{vcinj16}:\\
+Es wird angenommen, dass ein Entwickler die Kontonummern und Salden für die aktuelle Benutzer-ID anzeigen muss\cite{vcinj16}:\\
 
 
 \begin{LaTeXCode}[caption={SQL Abfrage Beispiel 1},captionpos=b, label=LaTeXCode:inj1][numbers=none]
@@ -38,9 +38,9 @@ Der Benutzer ist im Normalfall mit der ID 150 angemeldet und kann folgende URL b
 
 \texttt{https://beispielwebseite/zeig\_kontostand?user\_id=150}
 
-Dies bedeutet, dass kontostandAbfrage am Ende wie bei dem Listing \ref{LaTeXCode:inj2} aussehen würde.
+Dies bedeutet, dass \texttt{kontostandAbfrage} am Ende wie bei dem Listing \ref{LaTeXCode:inj2} aussehen würde.
 
-\begin{LaTeXCode}[caption={Account Balance Query},captionpos=b, label=LaTeXCode:inj2][numbers=none]
+\begin{LaTeXCode}[caption={Kontostand Abfrage},captionpos=b, label=LaTeXCode:inj2][numbers=none]
 SELECT kontonummer, kontostand FROM konten WHERE konto_besitzer_id = 150
 \end{LaTeXCode}
 
@@ -54,11 +54,11 @@ Parameter \texttt{user\_id} kann von einem Angreifer so verändert werden, dass 
 
 Und dies führt dazu;
 
-\begin{LaTeXCode}[caption={Account Balance Query},captionpos=b, label=LaTeXCode:inj4][numbers=none]
+	\begin{LaTeXCode}[caption={Kontostand Abfrage},captionpos=b, label=LaTeXCode:inj4][numbers=none]
 SELECT kontoNummer, kontostand FROM konten WHERE konto_besitzer_id = 0 OR 1=1
 \end{LaTeXCode}
 
-Durch die Übergabe der Abfrage \ref{LaTeXCode:inj4} an die Datenbank, werden alle von ihr gespeicherten Kontonummern und Salden zurückgegeben und auf der Seite werden allen hinzugefügten Zeilen angezeigt. Der Angreifer kennt somit nun die Kontonummern und Salden jeglicher Benutzer.
+Durch die Übergabe der Abfrage \ref{LaTeXCode:inj4} an die Datenbank, werden alle von ihr gespeicherten Kontonummern und Salden zurückgegeben und auf der Seite werden alle hinzugefügten Zeilen angezeigt. Der Angreifer kennt somit nun die Kontonummern und Salden jeglicher Benutzer.
 
 \subsubsection{Fehler in Authentifizierung und Session-Management}
 
@@ -273,7 +273,7 @@ Sobald die \texttt{fopen()}-Funktion in der Konfigurationsdatei (\texttt{php.ini
 \\
 \textbf{\textit{Szenario 1:}}\\
 
-\begin{LaTeXCode}[caption={Den Titel einer entfernten Seite auslesen},captionpos=b, label=LaTeXCode:zaed1][numbers=none]
+\begin{LaTeXCode}[caption={Titel einer entfernten Seite auslesen},captionpos=b, label=LaTeXCode:zaed1][numbers=none]
 <?php
 $data = fopen ("http://www.webpage.com/", "b");
 if (!$data) {
@@ -321,7 +321,7 @@ Bei diesem HTML-Code gibt es nur ein Formular mit einem Absenden-Button. Durch d
 </html>
 \end{LaTeXCode}
 
-Durch die weiter unten verfassten HTML-Codes wird eine zweite Seite erstellt, welche für die die Einbindung der ersten Seite sorgt\cite{cjd13};\\
+Durch die weiter unten verfassten HTML-Codes wird eine zweite Seite erstellt, welche für die die Einbindung der ersten Seite sorgt\cite{cjd13}:\\
 
 \begin{LaTeXCode}[caption={Hackseite},captionpos=b, label=LaTeXCode:cj2][numbers=none]
 <html>
@@ -335,7 +335,7 @@ Durch die weiter unten verfassten HTML-Codes wird eine zweite Seite erstellt, we
 </html>
 \end{LaTeXCode}
 
-Durch CSS ist es möglich das Iframe semi-transparent zu gestalten, und den \texttt{clickme} Button direkt über den Absenden-Button des Iframes zu legen\cite{cjd13}.\\
+Durch CSS (Cascading Style Sheets) ist es möglich das Iframe semitransparent zu gestalten, und den \texttt{clickme} Button direkt über den Absenden-Button des Iframes zu legen\cite{cjd13}.\\
 
 \begin{LaTeXCode}[caption={CSS},captionpos=b, label=LaTeXCode:cj3][numbers=none]
 #clickme {

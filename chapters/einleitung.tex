@@ -3,32 +3,33 @@
 
 \section{Hintergrund und Motivation}
 
-In der heutigen Geschäftswelt sind Webanwendungen zu einem untrennbaren Bestandteil vieler moderner Unternehmen geworden. Ein effektiv implementiertes System kann nicht nur einen reibungslosen Betrieb ermöglichen, sondern auch die Managementprozesse erheblich verbessern. Solche Systeme bringen sich bemerkenswerten Vorteile, aber auch sie können verheerende Folgen und Verluste erleiden, wenn das System von Hackern übernommen wird. Daher sind im Wesentlichen verschiedenste Abwehrmechanismen erforderlich, um Eindringlinge zu verhindern.
+Im Berufsalltag sind Webanwendungen zu einem unverzichtbaren Bestandteil vieler moderner Unternehmen geworden. Ein effektiv implementiertes System kann nicht nur einen reibungslosen Betrieb ermöglichen, sondern auch die Managementprozesse erheblich verbessern. Solche Systeme bringen bemerkenswerte Vorteile mit sich, aber auch verheerende Folgen und Verluste, wenn das System von Hackern übernommen wird. Daher sind verschiedene Abwehrmechanismen erforderlich, um Eindringlinge zu verhindern.
 
-Sobald die Sicherheitsmaßnahmen ergriffen sind, stellt sich schließlich die Frage, wie effektiv sie tatsächlich sind. Hier spielen die Penetrationstests sehr große Rolle. Als einer der gebräuchlichsten Ansätze zur Bewertung der Systemsicherheit können Penetrationstests als die Simulation von Aktionen betrachtet werden, die von Hackern ausgeführt werden, um ein IT-System zu infiltrieren, aber das Hauptziel von Penetrationstests besteht darin, potenzielle Sicherheitslücken im System zu identifizieren. Dieser Prozess ermöglicht es den Penetrationstester pragmatische Lösungen zu finden, um diese Schwachstellen zu beheben.
+Sobald Sicherheitsmaßnahmen ergriffen wurden, stellt sich die Frage, wie effektiv sie tatsächlich sind. Hier sind Penetrationstests von Bedeutung. Als einer der gebräuchlichsten Ansätze zur Bewertung der Systemsicherheit sind Penetrationstests Simulationen von Aktionen, die von Hackern ausgeführt werden, um ein IT-System zu infiltrieren. Das Hauptziel von Penetrationstests besteht darin, potenzielle Sicherheitslücken im System zu identifizieren. Dieser Prozess ermöglicht es den Penetrationstestern, pragmatische Lösungen zu finden, um diese Schwachstellen zu beheben.
 
 \section{Zielsetzung}
 
-Durch die Bachelorarbeit soll folgendes aufgezeigt werden;
+Durch die Bachelorarbeit soll Folgendes aufgezeigt werden:
 
 \begin{itemize}
-	\item Manuelle Penetrationstests für Schwachstellen,
-	\item Automatisiertes Penetrationstest einer lokalen Webanwendung auf Schwachstellen,
-	\item Automatisiertes REST API Penetrationstest einer Springboot Anwendung mit dem Plug-In OpenAPI 2.0 von OWASP ZAP,
-	\item Erstellen einem Wegweiser für das OpenAPI 3.0 Plug-In, indem die Unterschiede zwischen beiden Frameworks zu zeigen.\\
+	\item manuelle Penetrationstests für Schwachstellen,
+	\item automatisierter Penetrationstest einer lokalen Webanwendung auf Schwachstellen,
+	\item automatisierter REST-API-Penetrationstest einer Springboot- Anwendung mit dem Plug-In OpenAPI 2.0 von OWASP ZAP,
+	\item Erstellen eines Wegweisers für das OpenAPI 3.0 Plugin, indem die Unterschiede zwischen beiden Frameworks gezeigt werden.\\
 \end{itemize}
 
-Sicherheitsrisiken, die bei Webanwendungen auftreten können werden analysiert und detailliert erklärt. Anschließend wird gezeigt, wie manuelle und automatische Tests ablaufen und welche der bestehenden Testmethoden zum welchem Zeitpunkt sinnvoller sind. Im Anschluss wird ein automatischer Test einer Springboot-Anwendung mithilfe des OpenAPI 2.0 Plugins durchgeführt und dabei versucht die Wichtigkeit der REST API bei der Entwicklung zu evaluieren. Abschließend werden alle Unterschiede zwischen Swagger (OpenAPI) 2.0 und OpenAPI 3.0 dargestellt und dabei die Neuerungen von OpenAPI 3.0, sowie die Notwendigkeit von Änderungen des API 3.0 Plugins für OWASP ZAP erörtert.
+Sicherheitsrisiken, die bei Webanwendungen auftreten können, werden analysiert und detailliert erklärt. Anschließend wird gezeigt, wie manuelle und automatische Tests ablaufen und welche der bestehenden Testmethoden zum welchem Zeitpunkt sinnvoll sind. Im Anschluss wird ein automatischer Test einer Springboot-Anwendung mit Hilfe des OpenAPI 2.0 Plugins durchgeführt und dabei versucht, die Bedeutung der REST-API bei der Entwicklung zu evaluieren. Abschließend werden alle Unterschiede zwischen Swagger (OpenAPI) 2.0 und OpenAPI 3.0 dargestellt. Dabei werden die Neuerungen von OpenAPI 3.0 sowie die Notwendigkeit von Änderungen des API 3.0 Plugins für OWASP ZAP erörtert.
 
 \section{Aufbau der Arbeit}
 
-Durch die Auseinandersetzung mit den Grundlagen im Verlauf von Kapitel 2, wird zunächst ein generelles Grundwissen der IT-Sicherheit geschaffen.
+Durch die Auseinandersetzung mit den Grundlagen in Kapitel 2 wird zunächst ein generelles Grundwissen zur IT-Sicherheit geschaffen.
 
-Des Weiter werden die Sicherheitsrisiken von Webanwendungen in Kapitel 3  detailliert erläutert. Kapitel 4 vermittelt einen Überblick über die Penetrationstests, indem Informationen über die Ziele, Kriterien und Ablauf eines Penetrationstest geschaffen werden. Außerdem werden die manuelle und automatisierte Penetrationstests angezeigt und versucht raus zu finden, welche Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstests haben. 
+Des Weiteren werden die Sicherheitsrisiken von Webanwendungen in Kapitel 3 detailliert erläutert. In Kapitel 4 wird ein Überblick über die Penetrationstests gegeben, indem Informationen über die Ziele, die Kriterien und den Ablauf eines Penetrationstests vermittelt werden. Außerdem werden manuelle und automatisierte Penetrationstests gezeigt. Es wird erarbeitet, welche Vor- und Nachteile diese zwei Formen des Penetrationstests aufweisen.
 
-Es folgt die Evaluierung von OpenAPI 2.0 Plug-In von OWASP ZAP für die REST API einer Springboot Anwendung. 
+Es folgt die Evaluierung des OpenAPI 2.0 Plugins von OWASP ZAP für die REST-API einer Springboot-Anwendung.
 
-Kapitel 6 dokumentiert die Vergleich und Bewertung zwischen Open API 2.0 und Open API 3.0. 
+In Kapitel 6 werden Open API 2.0 und Open API 3.0 miteinander verglichen und daraufhin bewertet.
 
-Am Ende schließt Kapitel 7 die Bachelorthesis ab und schlägt eine Reihe von Vorschlägen für Penetrationstest vor.
+Mit dem Kapitel 7 wird die Bachelorthesis abgeschlossen, indem Vorschläge für Penetrationstests formuliert werden.
+
 

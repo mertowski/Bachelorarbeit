@@ -22,16 +22,16 @@ Bislang ist kein System vorhanden, welches einen \%100 Schutz vor unbefugten Zug
 National Institute of Standards and Technology legt nahe, dass Penetrationstests auch zur Bestimmung von Folgendem nützlich sein können\cite{scarfone2008technical}: 
 
 \begin{itemize}
-	\item Wie gut das System reale Angriffsmuster toleriert.
-	\item Die wahrscheinliche Komplexität, die ein Angreifer benötigt, um das System erfolgreich zu beeinträchtigen.
-	\item Zusätzliche Gegenmaßnahmen, die Bedrohungen gegen das System abschwächen könnten.
+	\item wie gut das System reale Angriffsmuster toleriert,
+	\item die wahrscheinliche Komplexität, die ein Angreifer benötigt, um das System erfolgreich zu beeinträchtigen,
+	\item zusätzliche Gegenmaßnahmen, die Bedrohungen gegen das System abschwächen könnten,
 	\item Fähigkeit der Verteidiger, Angriffe zu erkennen und angemessen zu reagieren.
 \end{itemize}
 
 \section{Grundlegendes Konzept}
 \label{grndlgndkonzpt}
 
-Penetrationstests können auf verschiedene Arten durchgeführt werden. Der häufigste Unterschied ist das Wissen über die Implementierungsdetails der getesteten Systeme, die dem Tester zur Verfügung gestellt wurden. Die weithin akzeptierten Ansätze sind Black-Box-, White-Box- und Gray-Box-Tests.
+Penetrationstests können auf verschiedene Arten durchgeführt werden. Der häufigste Unterschied ist das Wissen über die Implementierungsdetails der getesteten Systeme, die dem Tester zur Verfügung gestellt wurden. Die weithin akzeptierten Ansätze sind Black-Box- und White-Box-Tests.
 
 \begin{figure}[h]
 	\centering
@@ -41,11 +41,11 @@ Penetrationstests können auf verschiedene Arten durchgeführt werden. Der häuf
 
 \subsection{Black-Box}
 
-Black-Box-Tests beziehen sich auf das Testen eines Systems ohne spezifische Kenntnisse der internen Abläufe des Systems, keinen Zugriff auf den Quellcode und keine Kenntnisse der Architektur\cite{bwgwebtesting07}. Dem Tester wird nichts über das Netzwerk oder die Umgebung des Ziels mitgeteilt\cite{tiller2004ethical}. Wenn es sich um einen Black-Box-Test handelt, kann dem Tester eine Webseite oder IP-Adresse zugewiesen werden, und er soll die Website so knacken, als wäre er ein böswilliger Hacker von außen\cite{whitaker2005penetration}. Aufgrund des Mangels an internem Anwendungswissen kann das Aufdecken von Fehlern und / oder Schwachstellen jedoch erheblich länger dauern. Black-Box-Tests müssen gegen laufende Instanzen von Anwendungen ausgeführt werden. Daher ist Black-Box-Tests normalerweise auf dynamische Analysen wie das Ausführen von automatisierten Scan-Tools und manuelle Penetrationstests beschränkt\cite{bwgwebtesting07}. In Black-Box-Sicherheitstests können Hacker verschiedener Fertigkeitsstufen wie z. B. Skript-Kiddies, Mid-Level-Hacker oder Elite-Hacker\cite{bwgprole18}.
+Black-Box-Tests beziehen sich auf das Testen eines Systems ohne spezifische Kenntnisse der internen Abläufe des Systems, ohne Zugriff auf den Quellcode und ohne Kenntnisse der Architektur des Systems\cite{bwgwebtesting07}. Dem Tester wird nichts über das Netzwerk oder die Umgebung des Ziels mitgeteilt\cite{tiller2004ethical}. Wenn es sich um einen Black-Box-Test handelt, kann dem Tester eine Webseite oder IP-Adresse zugewiesen werden und er soll die Webseite so angreifen, als wäre er ein Hacker von außen\cite{whitaker2005penetration}. Aufgrund des Mangels an internem Anwendungswissen kann das Aufdecken von Fehlern und/oder Schwachstellen jedoch erheblich länger dauern. Black-Box-Tests müssen gegen laufende Instanzen von Anwendungen ausgeführt werden. Daher sind sie normalerweise auf dynamische Analysen wie das Ausführen von automatisierten Scan-Tools und manuelle Penetrationstests beschränkt\cite{bwgwebtesting07}. In Black-Box-Sicherheitstests können Hacker verschiedener Fertigkeitsstufen wie z. B. Skript-Kiddies, Mid-Level-Hacker oder Elite-Hacker\cite{bwgprole18}.
 
 \subsection{White-Box}
 
-Die White-Box-Tests werden auch als "interne Tests" bezeichnet. Bei diesem Ansatz simulieren Tester einen Angriff als eine Person, die über vollständige Kenntnisse der zu testenden Infrastruktur verfügt, häufig Betriebssystemdetails, IP-Adressschema und Netzwerklayouts, Quellcode und möglicherweise sogar einige Kennwörter\cite{ali2011pt}. Durch den vollständigen Zugriff auf diese Informationen können Fehler und Schwachstellen schneller entdeckt werden als mit der Test- und Fehlermethode des Black-Box-Tests. Darüber hinaus können Sie sicher sein, eine umfassendere Testabdeckung zu erhalten, indem Sie genau wissen, was Sie testen müssen. Aufgrund der Komplexität der Architekturen und des Umfangs des Quellcodes führt das White-Box-Testen jedoch zu Herausforderungen, wie die Test- und Analysebemühungen am besten ausgerichtet werden können. Zur Unterstützung von White-Box-Tests sind normalerweise Fachwissen und Tools erforderlich, z. B. Pentesting-Tool, Debugger und Quellcode-Analysatoren\cite{bwgwebtesting07}.
+Die White-Box-Tests werden auch als ‚interne Tests‘ bezeichnet. Bei diesem Ansatz simulieren Tester einen Angriff als eine Person, die über vollständige Kenntnisse der zu testenden Infrastruktur verfügt, häufig Betriebssystemdetails, IP-Adressschemata und Netzwerklayouts, Quellcodes und möglicherweise Kennwörter\cite{ali2011pt}. Durch den vollständigen Zugriff auf diese Informationen können Fehler und Schwachstellen schneller entdeckt werden als mit der Test- und Fehlermethode des Black-Box-Tests. Darüber hinaus ist eine umfassendere Testabdeckung erreichbar, indem genau bekannt ist, was getestet werden muss. Aufgrund der Komplexität der Architekturen und des Umfangs des Quellcodes führt der White-Box-Test jedoch zu Herausforderungen, wie die Test- und Analysebemühungen am besten ausgerichtet werden können. Zur Unterstützung von White-Box-Tests sind in der Regel Fachwissen und Tools erforderlich, z. B. Pentesting-Tool, Debugger und Quellcode-Analysatoren\cite{bwgwebtesting07}.
 
 \section{Kriterien für Penetrationstests}
 \label{kriterpent}
@@ -54,34 +54,33 @@ Es gibt mehrere diverse Zielsetzungen bei einem Penetrationstest, die vor den Si
 
 \subsection{Informationsbasis}
 
-Bei dem ersten Kriterium (Informationsbasis) soll Folgendes festgelegt werden. "`\textit{Von welchem Wissensstand über das anzugreifende Netz bzw. Objekt geht der Penetrationstester aus?}"' Dabei differenziert man zwischen dem Black-Box-Test und dem White-Box-Test. Wenn es um einen Black-Box-Test geht, dann erhält der Penetrationstester über das Zielsystem, in dem die Sicherheitsanfälligkeiten gesucht wird, nur sehr geringe bis keine Informationen. 
-
-
+Für den Penetrationstester sind besonders diejenigen Informationen wichtig, die er vorab kennt oder eben nicht kennt. Im Falle dass er bereits Insiderwissen hat, spricht man von White-Box-Testing. Das Gegenstück zum White-Box-Testing ist das Black-Box-Testing, welches keinerlei Wissen über das Objekt voraussetzt. Während bei einem White-Box-Test ein Angriff einer Person, die das Unternehmen bereits kennt, vorausgesetzt wird, wird bei einem Black-Box-Test ein Angriff durch einen Hacker im typischen Sinn simuliert. Der typische Hacker steht dabei vor einer größeren Herausforderung, da er vorab keine detaillierten Informationen über das Objekt besitzt. Anders sieht es bei einem Angriff einer Person aus, die das Objekt bereits kennt. Die Informationsspanne kann dabei von spärlichen Kenntnissen bis hin zu tiefgehenden Informationen zum Objekt haben, was dem Angreifer wiederum viele Möglichkeiten gibt\cite[13--14]{pt03bsi}. 
 
 \subsection{Aggressivität}
 
-In passiv, vorsichtig, abwägend und aggressiv wird die Aggressivität eines Penetrationstests unterteilt. Bei einer passiven Aggressivitätsstufe werden die entdeckten Schwachstellen nur festgehalten, aber nicht verwandt. Entscheidet man sich für den vorsichtigen Ansatz, so werden Schwachstellen nur dann ausgenutzt, wenn aufgrund des Angriffs ein Systemausfall auszuschließen ist. Hierbei fällt die Wahl nur auf diejenigen Angriffsmethoden, die sehr ressourcenschonend sind. Bei einer ”abwägenden” Aggressivitätsstufe wird versucht, das Zielsystem nur so zu testen, dass eine Beeinträchtigung des Systems unwahrscheinlich ist, aber dennoch vorkommen kann. Bereits vor dem Test wird abgewogen wie wahrscheinlich es ist, dass der Test erfolgreich sein wird und welche Konsequenzen dadurch entstehen können. Bei der aggressiven Aggressivitätsstufe werden alle möglichen Schwachstellen ohne Rücksicht auf die Verfügbarkeit der Systeme getestet. Bei einem solchen Test kann ist es durchaus möglich, dass auch andere Systeme bis hin zur ganzen IT-Infrastruktur ausfallen können.
+Um zu unterscheiden wie aggressiv ein Penetrationstester bei seinen Tests vorgeht, können vier „Aggressivitätsstufen“ zur Hilfe genommen werden. Die niedrigste Stufe sorgt für einen passiven Test, der potenzielle Schwachstellen zwar findet, aber nicht ausnutzt. Die zweite Stufe gilt als „vorsichtig“, das bedeutet das Schwachstellen ausgenutzt werden, aber nur wenn man sicher von einer Nichtbeinträchtigung des inspizierten Systems ausgehen kann. Dies kann beispielsweise durch den Einsatz von Standardpasswörtern. „Abwägend“ wird die dritte Stufe bezeichnet. Hier werden zum Beispiel automatisch Passwörter durchprobiert, das heißt dass in dieser Stufe systembeeinträchtigende Schwachstellen zu testen. Davor werden jedoch Erfolgswahrscheinlichkeit und mögliche Konsequenzen abgewägt. Schlussendlich werden in der letzten Stufe, der „aggressiven“ Stufe, jegliche Möglichkeit ausgeschöpft, von der man denkt, dass sie eine potenzielle Schwachstelle ausnutzen könnte. Mit dem Wissen, dass auch benachbarte Systeme beschädigt werden können, werden zum Beispiel Sicherungssysteme überlastet und ausgeschaltet oder Buffer-Overflows gezielt eingesetzt\cite[14]{pt03bsi}. 
 
 \subsection{Umfang}
 
-Bei einem Penetrationstest sollten grundsätzlich immer alle Systeme auf Schwachstellen untersucht werden. Würde hierbei der Fokus nur auf bestimmten Komponenten liege, so bestünde weiterhin die Gefahr, dass es ein Einfallstor in das interne Netz gäbe. Erlangt ein Angreifer einmal unerlaubten Zugriff in das innere Netz, so würden sich noch mehr Möglichkeiten bieten, weitere Systeme zu befallen. Die Durchführung von einem Penetrationstest bei sehr großen Netzen ist jedoch sehr zeitintensiv und in kurzer Zeit nicht machbar. Aus diesem Grund liegt das Augenmerk oftmals auf besonders gefährdeten Komponenten wie Systeme, die direkt an das Internet angebunden sind oder sehr sensible Daten enthalten. Deshalb gibt es neben dem vollständigen Test auch den fokussierten- und den begrenzten Penetrationstest. Der fokussierte Test findet oft Anwendung, wenn
-neue Systeme oder Anwendungen betrieben werden, um ein gleichmäßiges Sicherheitsniveau zu schaffen. Beim begrenzten Test liegt der Schwerpunkt auf einem bestimmten Teil der Infrastruktur.
+Der Umfang der Systeme, die getestet werden spielen ebenfalls eine große Rolle. So ist es sinnvoll eine gründliche Überprüfung durchzuführen bevor man einen ersten Penetrationstest plant. Man vermeidet so, zu testende Elemente zu übersehen und mögliche Sicherheitslücken nicht zu erkennen. Trotz der Tatsache, dass identische und fast identische Systeme zu Teilen auf einmal untersucht werden können, trifft das nicht zu, wenn „abweichende“ Konfiguration auftreten. Denn der Umfang der Systeme, die untersucht werden sollen, bestimmt den für den Penetrationstest betriebenen Aufwand. Es hängt also grundsätzlich davon ab, welcher Umfang durch den Auftraggeber zustande kommt. Das bedeutet das festgestellt werden muss, ob nur ein Modul getestet werden soll, mehrere oder das ganze System\cite[14--15]{pt03bsi}. 
 
 \subsection{Vorgehensweise}
-Bei der Vorgehensweise differenziert man hauptsächlich zwischen in einem verdeckten und einem offensichtlichen Test. Dabei ist das Ziel eines verdeckten Penetrationstests, Sicherheitsanwendungen wie ein Intrusion Detection System (IDS) auf ihre Wirksamkeit zu überprüfen oder auch die Mitarbeiter einer Organisation mittels Social Engineering zu prüfen. Dabei wird bei einem verdeckten Test lediglich auf Methoden gesetzt, welche vom System nicht als Angriff gewertet werden. Wird entschieden, dass ein offensichtlicher Test durchgeführt werden soll, so können je nach dem angreifenden System offensichtliche Sicherheitstests wie SQL-Injection oder Portscans durchgeführt werden.
 
-\subsection{Technik}
-Des Weiteren handelt es sich bei der Technik um ein weiteres wichtiges Kriterium beim Penetrationstest. Soll ein realer Angriff von einem Cyberkriminellen simuliert werden, so wird bei der Durchführung des Penetrationstests meist der Weg über das Netzwerk gewählt. Nichts desto trotz gibt es auch andere Einfallstore, die einem Test unterzogen werden sollten. Ist beispielsweise davon auszugehen, dass der Angreifer auch physischen Zugriff hat, könnte es leichter fallen, bestimmte Schwachstellen auszunutzen, die über das Netzwerk wegen einer existierenden Firewall nicht ausnutzbar sind. Außerdem besteht auch die Möglichkeit, bei einem Social Engineering Angriff  die Mitarbeiter des Unternehmens zur Herausgabe von Zugangsdaten zu bringen.
+Penetrationstests können auf verschieden Weisen durchgeführt werden. Die Vorgehensweise ist wichtig, wenn es darum geht welche Sicherheitssysteme getestet werden sollen und auf welche Art. Bei der Prüfung von sekundären Sicherheitssystemen ist es sinnvoll, Angriffe im Penetrationstest durchführen zu lassen, die nicht sofort als solche erkennbar sind. Bis erkenntlich wird, dass die verdeckten Methoden keine Reaktion hervorrufen, sollten keine sichtbare Vorgehensweise in Augenschein genommen werden. Danach jedoch kann mit Hilfe von Tools, die alle erreichbaren Dienste aufrufen können, offensichtlich angegriffen, beziehungsweise getestet werden\cite[15]{pt03bsi}. 
+
+\subsection{Techniken}
+
+Verschiedene Techniken werden bei verschiedenen Situationen genutzt. Im Normalfall führt der Penetrationstest Angriffe auf das System direkt über das Netzwerk aus. Aus diesem Grund führt auch ein Penetrationstest über das Netzwerk zu einer klassischen Simulation eines Angriffs durch einen Hacker. In der heutigen Zeit werden Angreifer jedoch vor große Herausforderungen gestellt, da Sicherheitssysteme immer besser werden und Firewalls zusätzlichen Schutz bieten. Einen geringeren Aufwand betreibt man, wenn man einen direkten physischen Angriff plant. Auf diese Art und Weise kann der Angreifer deutlich schneller an das gewünschte Ziel kommen. Unter einem direkten physischen Angriff versteht man beispielsweise, wenn man sich unautorisierten Zugriff auf eine Arbeitsstation verschafft, die ungeschützt oder nicht ausreichend geschützt ist. Zu dieser Art von Angriff zählt auch ein eventuelles Stehlen einer Zugangskarte zu dieser Arbeitsstation oder Ähnliches. Noch mehr als bei Sicherheitslücken im System, spielen bei solchen Angriffen der Mensch eine Rolle, der die Zugangskarte verlegen kann oder ein schlechtes Passwort hat.
+Man kann passende Tests einführen, nachdem eine allgemeine Leitlinie zur Sicherheit präsentiert wurde. Somit können noch fehlende Maßnahmen ergänzt werden\cite[15--16]{pt03bsi}. 
 
 \subsection{Ausgangspunkt}
-Durch den Ausgangspunkt wird beim Penetrationstest festgelegt, von wo der Angriff zu beginnen hat. Überwiegend betreiben dabei die Organisationen eine Firewall, um den Zugriff auf gewisse Dienste zu verhindern. Deshalb ist es nicht leicht, das dahinterliegende System anzugreifen. Aus diesem Grund liegt die Konzentration beim Penetrationstest von außen auf die Konfiguration der eingesetzten Firewall, hierdurch wird nämlich getestet, ob diese Konfigurationsfehler beinhaltet, wodurch es einem externen Angreifer ermöglicht wird, in das Innere eines Netzes einzudringen. Nicht zu vernachlässigen ist aber, dass der Penetrationstest auch von innen durchzuführen ist, da hier in vielen Fällen keine Firewall übergangen werden muss, um die laufenden Dienste und Anwendungen auf ihre Sicherheit zu überprüfen. Dabei kann ein Test von innen insbesondere die Gefahr einer Schwachstelle in der Firewall aufzeigen oder welche Möglichkeiten sich für einen Innentäter bieten würden.
+
+Ein weiterer wichtiger Punkt bei Penetrationstests ist der Ausgangspunkt des Tests. Wird der Test innerhalb oder außerhalb des entsprechenden Netzwerks oder Komplexes durchgeführt. Ein Penetrationstest von außen kann einen Angriff über eine Netzwerkverbindung simulieren und alle wichtigen Merkmale und Ergebnisse erfassen. Im Gegenteil dazu, kann ein Test von innen, die falsche Konfiguration einer Firewall oder die Risiken, die Personen mit Zugang zum internen Netzwerk haben, simulieren und Ergebnisse hervorbringen\cite[16--17]{pt03bsi}. 
 
 \section{Ablauf eines Penetrationstest}
 \label{ablaufpentest}
 
 Im diesem Abschnitt wird das Ablauf eines Penetrationstest nach der Studie für Penetrationstests des BSI\cite{pt03bsi} beschrieben.
-
-\newpage
 
 \subsection{Vorbereitung}
 
@@ -102,7 +101,10 @@ In der Vorbereitungsphase werden zuerst die Ziele des Penetrationstest durch den
 	\caption{Phase 2 – Informationsbeschaffung}
 \end{figure}
 
-Sofern die Vorbereitungsphase abgeschlossen ist und über alle wesentlichen Punkte einig wurde, kann mit der Beschaffung von Informationen über das Zielsystem angefangen werden. Als Erster werden die Erstinformationen ausgewertet. Laut dem grundlegenden Konzept (siehe Abschnitt \ref{grndlgndkonzpt}) werden die erhaltenen Informationen, sowie nur eine IP-Adresse bei dem Black-Box-Test beschränkt. Wenn es um einen White-Box-Test geht, dann werden umfangreiche Informationen zum Nutzen gereicht, um einen genauen Überblick über die möglichen Angriffspunkte zu erlangen. In der Informationsbeschaffungsphase muss genug Zeit eingeplant werden, welche je nach Konzept des Penetrationstests oder Menge der zu testenden Komponenten des Zielsystems variieren kann\cite[102--103]{pt03bsi}.
+Sofern die Vorbereitungsphase abgeschlossen ist und über alle wesentlichen Punkte einig wurde, kann mit der Beschaffung von Informationen über das Zielsystem angefangen werden. 
+Als Erster werden die Erstinformationen ausgewertet. Laut dem grundlegenden Konzept (siehe Abschnitt \ref{grndlgndkonzpt}) werden die erhaltenen Informationen, sowie nur eine IP-Adresse bei dem Black-Box-Test beschränkt. Wenn es um einen White-Box-Test geht, dann werden umfangreiche Informationen zum Nutzen gereicht, um einen genauen Überblick über die möglichen Angriffspunkte zu erlangen. In der Informationsbeschaffungsphase muss genug Zeit eingeplant werden, welche je nach Konzept des Penetrationstests oder Menge der zu testenden Komponenten des Zielsystems variieren kann\cite[102--103]{pt03bsi}.
+
+\newpage
 
 \subsection{Bewertung der Informationen und Risikoanalyse}
 \label{bewinfrisiko}
@@ -133,17 +135,18 @@ In dieser Phase wird geprüft, wie sicherheitskritisch die ausgewählten Sicherh
 	\caption{Phase 5 – Abschlussanalyse und Nacharbeiten durchführen}
 \end{figure}
 
-Zum Abschluss des Penetrationstests werden alle gefundenen Schwachstellen in einem Bericht aufgelistet und deren Risiken genau erläutert. Dabei sollte ein solcher Abschlussbericht neben den Resultaten des Penetrationstests auch Möglichkeiten zur Behebung etwaiger Risiken beinhalten. Der Bericht muss für den Auftraggeber klar und deutlich sein. Dabei sollte jede durchgeführte Aktion so beschrieben werden, dass sie für den Auftraggeber nachvollziehbar ist, deshalb müssen die Informationen aus den Phasen 1 bis 5 als Anhang in dem Bericht enthalten sein. Diese Anhänge können detaillierte Informationen zu den eingesetzten Tools, Arbeitsschrittinfos, Einsatzzeiten etc. sein. Während des Penetrationstests installierte Anwendungen wie z.B. Keylogger müssen durch den Penetrationstester entfernt und das bereinigte System wiederhergestellt werden. Schließlich sollte nach der Fertigstellung des Abschlussberichts mit dem Auftraggeber ein Abschlussgespräch geführt werden. Hierbei werden noch einmal alle gefundenen Sicherheitsprobleme ausführlich besprochen\cite[105--106]{pt03bsi}.
+Zum Abschluss des Penetrationstests werden alle gefundenen Schwachstellen in einem Bericht aufgelistet und deren Risiken genau erläutert. Dabei sollte ein solcher Abschlussbericht neben den Resultaten des Penetrationstests auch Möglichkeiten zur Behebung etwaiger Risiken beinhalten. Der Bericht muss für den Auftraggeber klar und deutlich sein. Dabei sollte jede durchgeführte Aktion so beschrieben werden, dass sie für den Auftraggeber nachvollziehbar ist, deshalb müssen die Informationen aus den Phasen 1 bis 5 als Anhang in dem Bericht enthalten sein. 
+Diese Anhänge können detaillierte Informationen zu den eingesetzten Tools, Arbeitsschrittinfos, Einsatzzeiten etc. sein. Während des Penetrationstests installierte Anwendungen wie z.B. Keylogger müssen durch den Penetrationstester entfernt und das bereinigte System wiederhergestellt werden. Schließlich sollte nach der Fertigstellung des Abschlussberichts mit dem Auftraggeber ein Abschlussgespräch geführt werden. Hierbei werden noch einmal alle gefundenen Sicherheitsprobleme ausführlich besprochen\cite[105--106]{pt03bsi}.
 
 \section{Manuelle Penetrationstest}
 
-In diesem Abschnitt werden unterschiedliche Methoden für manuelles Penetrationstest erklärt und wird gezeigt, wie diese manuelle Tests durchgeführt werden. 
+In diesem Abschnitt werden unterschiedliche Methoden für manuelle Penetrationstests erklärt. Es wird außerdem gezeigt, wie diese manuellen Tests durchgeführt werden.
 
 \subsection{Testen von SQL Injektion mit SQLiv und SQLMAP}
 
-Im Nachfolgenden werden Sql Injektion mit SQLiv und SQLMAP nach dem Tutorial von \cite{ramadhan17sqlinj} beschrieben.
+Nachfolgend wird die SQL-Injektion mit SQLiv und SQLMAP nach dem Tutorial von \cite{ramadhan17sqlinj} beschrieben.
 
-Vor dem Injektionsangriff müssen wir natürlich sicherstellen, dass der Server oder das Ziel eine Sicherheitslücke in der Datenbank hat. Um Sicherheitslücken in Datenbanken zu finden, können wir verschiedene Methoden verwenden. Unter ihnen wird Google Dorking hauptsächlich von Hackern und Penetrationstestern verwendet. Glücklicherweise gibt es ein Werkzeug, das dies automatisch erledigt. Das Tool muss jedoch erst installiert werden. Das Tool heißt SQLiv (SQL Injection Vulnerability Scanner).\\
+Vor dem Injektionsangriff muss sichergestellt werden, dass der Server oder das Ziel eine Sicherheitslücke in der Datenbank hat. Um Sicherheitslücken in Datenbanken zu finden, können verschiedene Methoden verwendet werden. Eine Methode ist Google Dorking, die hauptsächlich von Hackern und Penetrationstestern verwendet wird. Es gibt ein Werkzeug, das dies automatisch erledigt. Das Tool muss jedoch erst installiert werden. Es heißt SQLiv (SQL Injection Vulnerability Scanner).\\
 
 \textbf{Schritt 1: Finden von SQL-Injection-Schwachstelle}
 
@@ -153,7 +156,7 @@ Es wird Google Dorking verwendet, um die SQL-Injektionslücke in Zielen zu suche
 ~# sqliv -d inurl:artikel.php?id= -e google -p 200
 \end{LaTeXCode}
 
-Standardmäßig durchsucht SQLiv die erste Seite in der Suchmaschine, die bei Google 10 Websites pro Seite anzeigt. Daher wird hier das Argument -p 200 definiert, um 10 Seiten (200 Sites) zu durchsuchen. Basierend auf dem oben angegebenen Dork wird ein Ergebnis von verwundbaren URLs erhaltet, das wie folgt aussieht:
+Standardmäßig durchsucht SQLiv die erste Seite in der Suchmaschine, die bei Google zehn Webseiten pro Seite anzeigt. Daher wird hier das Argument \texttt{-p 200} definiert, um 200 Seiten zu durchsuchen. Basierend auf dem oben angegebenen Dork erscheint folgendes Ergebnis von verwundbaren URLs:
 
 \begin{figure}[h]
 	\centering
@@ -165,17 +168,17 @@ Standardmäßig durchsucht SQLiv die erste Seite in der Suchmaschine, die bei Go
 
 \textbf{Schritt 2: SQL-Injektion mit SQLMAP}
 
-Der Angriff wird mit SQLMap ausgeführt. Zuerst muss den Datenbankname zum Vorschein gebracht werden, der in der Datenbank Tabellen und Spalten enthält, die die Daten enthalten.
+Der Angriff wird mit SQLMap ausgeführt. Zuerst muss der Datenbankname zum Vorschein gebracht werden, der in den Datenbank-Tabellen und Spalten enthalten ist, die die Daten umfassen.\\
 
 Ziel-URL: \texttt{http://www.acfurniture.com/artikel.php?id=1225}\\
 
 \textbf{A. Datenbankname aufdecken}\\
 
-\begin{LaTeXCode}[caption={Aufdeckung vom Datenbankname\cite{ramadhan17sqlinj}},captionpos=b, label=LaTeXCode:advd1][numbers=none]
+\begin{LaTeXCode}[caption={Aufdeckung des Datenbanknames\cite{ramadhan17sqlinj}},captionpos=b, label=LaTeXCode:advd1][numbers=none]
 ~# sqlmap -u "http://www.acfurniture.com/artikel.php?id=1225" --dbs
 \end{LaTeXCode}
 
-Mit dem oben gegebenen Befehl wurde der Datenbankname erhalten:
+Mit dem oben genannten Befehl wurde der Datenbankname ermittelt:
 
 \begin{table}[h]
 	\centering
@@ -210,7 +213,7 @@ Das Ergebnis sollte so aussehen:
 	\caption{Ergebnis: Tabellenname}
 \end{table}
 
-Bisher wurde festgestellt, dass die Website \texttt{acfurniture.com} hat zwei Datenbanken, acfurniture und information\_schema. Die Datenbank \texttt{acfurniture} enthält vier Tabellen: \texttt{category}, \texttt{product}, \texttt{product\_hacked} und settings.\\
+Bisher wurde festgestellt, dass die Webseite \texttt{acfurniture.com} zwei Datenbanken aufweist, \texttt{acfurniture} und \texttt{information\_schema}. Die Datenbank \texttt{acfurniture} enthält vier Tabellen: \texttt{category}, \texttt{product}, \texttt{product\_hacked} und settings.
 
 \textbf{C. Spalten aufdecken}\\
 
@@ -236,27 +239,27 @@ Bisher wurde festgestellt, dass die Website \texttt{acfurniture.com} hat zwei Da
 	\caption{Ergebnis: Spalten}
 \end{table}
 
-Die \texttt{settings} Tabelle besteht aus 6 Spalten, und dies ist eigentlich ein Konto mit Anmeldeinformationen. Jetzt wird versucht diese Informationen auszugeben.\\
+Die Tabelle \texttt{settings} besteht aus sechs Spalten und ist ein Konto mit Anmeldeinformationen. Es wird versucht, diese Informationen auszugeben.\\
 
 \textbf{D. Informationen aufdecken}\\
 
 Man kann alle Daten in der Tabelle mit folgendem Befehl ausgeben:
 
-\begin{LaTeXCode}[caption={Aufdeckung von alle Daten in der Tabelle \cite{ramadhan17sqlinj}},captionpos=b, label=LaTeXCode:alledatenausgeben1][numbers=none]
+\begin{LaTeXCode}[caption={Aufdeckung aller Daten in der Tabelle \cite{ramadhan17sqlinj}},captionpos=b, label=LaTeXCode:alledatenausgeben1][numbers=none]
 ~# sqlmap -u "http://www.acfurniture.com/item.php?id=1225" -D acfurniture -T settings --dump
 \end{LaTeXCode}
 
-Das Ergebnis sollte so aussehen:
+Es ergibt sich das folgende Resultat:
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{aufdeckungalledatenindertabelle.png}
-	\caption{Ergebnis: Alle Daten in der Tabelle}
+	\caption{Ergebnis: alle Daten in der Tabelle}
 \end{figure}
 
 \subsection{Testen von Cross-Site-Scripting mit Burp}
 
-Das folgende Cross-Site-Scripting-Beispiel stammt aus dem Tutorial von Web-Sicherheitsseite Portswigger\cite{portswigger12}.
+Das folgende Cross-Site-Scripting-Beispiel stammt aus dem Tutorial der Web-Sicherheitsseite Portswigger\cite{portswigger12}.
 
 \begin{figure}[h]
 	\centering
@@ -274,7 +277,7 @@ Man muss eine entsprechende Eingabe in die Webanwendung eingeben und die Anfrage
 	\caption{Erfassung der Anfrage durch Burp}
 \end{figure}
 
-Die Anfrage wird von Burp erfasst. Die HTTP-Anforderung wird auf der Intercept-Tab angezeigt. Es wird mit der rechten Maustaste auf die Anforderung geklickt, um das Kontextmenü aufzurufen und dann wird auf "`An Repeater senden"' geklickt.
+Die Anfrage wird von Burp erfasst. Die HTTP-Anforderung wird auf der Intercept-Tab angezeigt. Es wird mit der rechten Maustaste auf die Anforderung geklickt, um das Kontextmenü aufzurufen. Anschließend wird auf \texttt{Repeater senden} geklickt.
 
 \begin{figure}[h]
 	\centering
@@ -282,7 +285,7 @@ Die Anfrage wird von Burp erfasst. Die HTTP-Anforderung wird auf der Intercept-T
 	\caption{Bearbeiten dem Wert}
 \end{figure}
 
-Hier können verschiedene XSS-Payloads in das Eingabefeld eingegeben werden. Verschiedene Eingaben getestet werden, indem der Tester das "`Value"' des entsprechenden Parameters in den Tabs "`Raw"' oder "`Params"' bearbeiten. In diesem Beispiel wird versucht, dass ein Pop-up in unserem Browser ausgeführt wird.
+Hier können verschiedene XSS-Payloads in das Eingabefeld eingegeben werden. Unterschiedliche Eingaben können getestet werden, indem der Tester den \texttt{Value} des entsprechenden Parameters in den Tabs \texttt{Raw} oder \texttt{Params} bearbeiten. In diesem Beispiel wird versucht, dass ein Pop-up in unserem Browser ausgeführt wird.
 
 \begin{figure}[h]
 	\centering
@@ -290,15 +293,15 @@ Hier können verschiedene XSS-Payloads in das Eingabefeld eingegeben werden. Ver
 	\caption{Suche nach dem Angriff in dem Quellcode}
 \end{figure}
 
-Es kann eingeschätzt werden, ob die Angriff in der Antwort unverändert bleibt. In diesem Fall ist die Anwendung für XSS-Angriffen anfällig. Die Antwort wird schnell über die Suchleiste unten im Antwortfenster gefunden. Der hervorgehobene Text ist das Ergebnis der Suche.
+Es kann eingeschätzt werden, ob der Angriff in der Antwort unverändert bleibt. In diesem Fall ist die Anwendung für XSS-Angriffe anfällig. Die Antwort wird schnell über die Suchleiste unten im Antwortfenster gefunden. Der hervorgehobene Text ist das Ergebnis der Suche.
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=11cm]{xssburp5.png}
-	\caption{Kopieren von URL für Browser}
+	\caption{Kopieren der URL für Browser}
 \end{figure}
 
-Hier wird auf "`Antwort im Browser anzeigen"' geklickt, um die URL zu kopieren. Danach wird im Pop-up Fenster auf "`Kopieren"' geklickt.
+Hier wird auf \texttt{Antwort im Browser anzeigen} geklickt, um die URL zu kopieren. Danach wird im Pop-up Fenster auf \texttt{Kopieren} geklickt.
 
 \newpage
 
@@ -308,13 +311,14 @@ Hier wird auf "`Antwort im Browser anzeigen"' geklickt, um die URL zu kopieren. 
 	\caption{Pop-up im Browser anzeigen}
 \end{figure}
 
-Die kopierte URL wird in Adressleiste eingegeben, um die Realisierung des XSS-Angriffs durch das Senden einer kurzen und relativ harmlosen Nachricht oder Warnung an den Client ermöglichen.
+Die kopierte URL wird in die Adressleiste eingegeben, um die Realisierung desXSS-Angriffs durch das Senden einer kurzen und harmlosen Nachricht oder einerWarnung an den Client zu ermöglichen.
+
 
 \subsection{Testen Brute-Forcing-Passwörter mit THC-Hydra}
 
 In diesem Beispiel wird Hydra verwendet, um in eine Anmeldeseite zu gelangen, indem ein Brute-Force-Angriff auf einige bekannte Benutzer ausgeführt wird\cite[143]{najera2016kali}.
 
-Es wird eine Textdatei namens \texttt{benutzers.txt} erstellt{najera2016kali}:
+Es wird eine Textdatei namens \texttt{benutzers.txt} erstellt{\cite[144]{najera2016kali}}:
 
 \begin{center}
 	admin\\test\\user\\user1\\john
@@ -330,9 +334,9 @@ In einem ersten Schritt wird analysiert, wie die Anmeldeanforderung gesendet wir
 	\caption{Anfrage an den Server und Antwort von dem Server}
 \end{figure}
 
-Wir können sehen, dass sich die Anfrage in \texttt{/dvwa/login.php} befindet und drei Variablen hat: \texttt{username}, \texttt{password}, and \texttt{login}.\\
+Es ist ersichtlich, dass sich die Anfrage in \texttt{/dvwa/login.php} befindet und drei Variablen hat: \texttt{username}, \texttt{password}, and \texttt{login}.\\
 
-Wenn die Erfassung von Anforderungen beendet wird und das Ergebnis im Browser überprüft wird, kann festgestellt werden, dass die Antwort eine Weiterleitung zur Anmeldeseite ist\cite[144]{najera2016kali}:
+Wenn die Erfassung von Anforderungen beendet wird und das Ergebnis im Browser überprüft wird, kann festgestellt werden, dass die Antwort eine Weiterleitung zur Anmeldeseite  ist\cite[144]{najera2016kali}:
 
 \begin{figure}[h]
 	\centering
@@ -340,9 +344,9 @@ Wenn die Erfassung von Anforderungen beendet wird und das Ergebnis im Browser ü
 	\caption{Die Weiterleitung zur Anmeldeseite}
 \end{figure}
 
-Eine gültige Kombination aus Benutzername und Kennwort sollte nicht zu demselben Login, sondern zu einer anderen Seite, z. B. index.php, weitergeleitet werden. Wir gehen also davon aus, dass ein gültiges Login auf die andere Seite umgeleitet wird, und wir verwenden \texttt{login.php} als Zeichenfolge, um zu unterscheiden, wenn ein Versuch fehlschlägt\cite[145]{najera2016kali}.\\
+Eine gültige Kombination aus Benutzername und Kennwort sollte nicht zum selben Login, sondern zu einer anderen Seite, z. B. index.php, weitergeleitet werden. Es wird also davon ausgegangen, dass ein gültiges Login auf die andere Seite umgeleitet wird, und wir verwenden \texttt{login.php} als Zeichenfolge, um zu unterscheiden, wenn ein Versuch fehlschlägt\cite[145]{najera2016kali}.\\
 
-Es wird den folgenden Befehl in ein Terminal eingeführt\cite[145]{najera2016kali}:
+Es wird der folgende Befehl in ein Terminal eingeführt\cite[145]{najera2016kali}:
 
 \begin{LaTeXCode}[caption={Befehl durch Terminal},captionpos=b, label=LaTeXCode:beheldt1][numbers=none]
 hydra 192.168.56.102 http-form-post "/dvwa/login.php:username=^USE
@@ -352,16 +356,16 @@ R^&password=^PASS^&Login=Login:login.php" -L users.txt -e ns -u -t 2 -w 30 -o hy
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{bfa3.png}
-	\caption{Aufdeckung den Passwörtern}
+	\caption{Aufdeckung der Passwörter}
 \end{figure}
 
-Mittels diesem Befehl wird nur zwei Kombinationen pro Benutzer ausprobiert: password = username und leere Passwörter und es werden zwei gültige Passwörter von diesem Angriff erhalten, die von Hydra grün markiert sind\cite[145]{najera2016kali}.
+Anhand dieses Befehls werden nur zwei Kombinationen pro Benutzer ausprobiert: \texttt{password = username} und leere Passwörter. Es werden zwei gültige Passwörter von diesem Angriff erhalten, die von Hydra grün markiert sind\cite[145]{najera2016kali}.
 
 \subsection{Testen von XML External Entities (XXE)}
 
-Wenn eine Anwendung XML-Daten parst und das Ergebnis von geparstem XML in einer HTTP-Antwort anzeigt, würde ein grundlegender Testfall zum Testen der XXE-Sicherheitsanfälligkeit eine XXE-Payload senden, die eine interne Entität ver"`Alphabet"'wendet, nur um sicherzustellen, dass die Anwendung Entitäten enthält oder nicht. Dieses Tutorial stammt aus Infosec Institute\cite{infosec18}.\\
+Wenn eine Anwendung \texttt{XML}-Daten parst und das Ergebnis von geparstem XML in einer HTTP-Antwort anzeigt, würde ein grundlegender Testfall zum Testen der \texttt{XXE}-Sicherheitsanfälligkeit eine \texttt{XXE}-Payload senden, die eine interne Entität verwendet, nur um sicherzustellen, dass die Anwendung Entitäten enthält oder nicht. Dieses Tutorial stammt aus dem Infosec Institute\cite{infosec18}.\\
 
-Es wird den folgenden PHP-Code als xxe.php im Webserver-Stammordner gespeichert:
+Es wird den folgenden \texttt{PHP}-Code als \texttt{xxe.php} im Webserver-Stammordner gespeichert:
 
 \newpage
 
@@ -377,9 +381,9 @@ libxml_disable_entity_loader (false);
 echo "username : \$user";\\
 \end{LaTeXCode}
 
-Eine POST-Anforderung an die \texttt{xxe.php}-Datei mit XML-Daten gesendet, die im folgenden Screenshot gezeigt werden:
+Eine \texttt{POST}-Anforderung an die \texttt{xxe.php}-Datei mit \texttt{XML}-Daten gesendet, die im folgenden Screenshot gezeigt werden:
 
-\begin{LaTeXCode}[caption={POST Anfrage zu PHP-Datei},captionpos=b][numbers=none]
+\begin{LaTeXCode}[caption={POST Anfrage zur PHP-Datei},captionpos=b][numbers=none]
 POST /vulnapps/xxe.php HTTP/1.1
 Host: localhost
 User-Agent: Mozilla/5.0
@@ -397,7 +401,7 @@ Content-Length: 98
 	</root>\\
 \end{LaTeXCode}
 
-Hier soll beachtet werden, dass die Anwendung in der HTTP-Antwort einen Benutzernamen anzeigt, der bestätigt, dass die XML-Daten geparst werden.
+Hier soll beachtet werden, dass die Anwendung in der \texttt{HTTP}-Antwort einen Benutzernamen anzeigt, der bestätigt, dass die \texttt{XML}-Daten geparst werden.
 
 \newpage
 
@@ -413,7 +417,7 @@ Content-Type: text/xml; charset-UTF-8
 username: sahil\\
 \end{LaTeXCode}
 
-Nun wird den XML-Daten eine interne Entität hinzugefügt und im \texttt{username} Element mit \&u verweist und die Anfrage erneut gesendet.\\
+Nun wird den XML-Daten eine interne Entität hinzugefügt und im \texttt{username}-Element mit \texttt{\&u} verweist und die Anfrage erneut gesendet.\\
 
 \begin{LaTeXCode}[caption={Manipulierte Anfrage},captionpos=b][numbers=none]
 POST /vulnapps/xxe.php HTTP/1.1
@@ -435,7 +439,7 @@ Content-Length: 98
 	</root>\\
 \end{LaTeXCode}
 
-Hier soll nochmal beachtet werden, dass die Anwendung der interne Einheit auflöst und die XXE-Sicherheitsanfälligkeit erfolgreich bestätigt.\\
+Hier soll nochmal beachtet werden, dass die Anwendung der interne Einheit auflöst und die \texttt{XXE}-Sicherheitsanfälligkeit erfolgreich bestätigt.\\
 
 \begin{LaTeXCode}[caption={Bestätigung der XXE-Schwachstelle},captionpos=b][numbers=none]
 	HTTP/1.1 200 OK
@@ -450,16 +454,16 @@ Hier soll nochmal beachtet werden, dass die Anwendung der interne Einheit auflö
 \end{LaTeXCode}
 
 \subsection{Testen von Fehlerhafte Authentifizierung mit Webgoat und Burp Suite}
-Dieses Tutorial stammt aus der Webseite Tutorialspoint\cite{tpfa15}.
-Eine Webanwendung unterstützt das Umschreiben von URLs, indem Sitzungs-IDs in den Link eingefügt werden.\\
+Dieses Tutorial stammt von der Webseite Tutorialspoint\cite{tpfa15}.
+Eine Webanwendung unterstützt das Umschreiben von URLs, indem \texttt{Sitzungs-IDs} in den Link eingefügt werden.\\
 
 \texttt{http://beispiel.com/auktion/auktionitem/jsessionid=2P0OSNDLPSKHC}
 
 \texttt{KJ2SD/?item=macbookpro}\\
 
-Ein authentifizierter Benutzer der Website leitet die URL an seine Freunde weiter, um Informationen zu den reduzierten Verkäufen zu erhalten. Er sendet den oben gegebene URL per E-Mail, ohne kündig zu sein, dass der Benutzer auch die Sitzungs-IDs verschenkt. Wenn seine Freunde den Link verwenden, verwenden sie seine Sitzung und seine Kreditkarte.\\
+Ein authentifizierter Benutzer der Webseite leitet die URL an seine Freunde weiter, um Informationen zu den reduzierten Verkäufen zu erhalten. Er sendet die oben angegebene \texttt{URL} per E-Mail, ohne zu wissen, dass der Benutzer auch die \texttt{Sitzungs-IDs} verschenkt. Wenn seine Freunde den Link verwenden, verwenden sie seine Sitzung und seine Kreditkarte.\\
 
-Man muss sich bei Webgoat anmelden und zum Abschnitt \texttt{"`Session Management Flaws"'} navigiert wird.\\
+Man muss sich bei Webgoat anmelden und zum Abschnitt \texttt{Session Management Flaws} navigieren.\\
 
 \newpage
 
@@ -469,7 +473,7 @@ Man muss sich bei Webgoat anmelden und zum Abschnitt \texttt{"`Session Managemen
 	\caption{Anmeldung bei Webgoat}
 \end{figure}
 
-Wenn mit den Anmeldeinformationen webgoat/webgoat angemeldet wird, wird in Burp Suite festgestellt, dass die \texttt{JSESSION-ID C8F3177CCAFF380441ABF71090748F2E} lautet, während \texttt{AuthCookie = 65432ubphcfx} nach erfolgreicher Authentifizierung ist.
+Wenn mit den Anmeldeinformationen \texttt{webgoat/webgoat} eingegeben werden, wird in Burp Suite festgestellt, dass die \texttt{JSESSION-ID C8F3177CCAFF380441ABF71090748F2E} lautet, während \texttt{AuthCookie = 65432ubphcfx} nach erfolgreicher Authentifizierung ist.
 
 \begin{figure}[h]
 	\centering
@@ -477,7 +481,7 @@ Wenn mit den Anmeldeinformationen webgoat/webgoat angemeldet wird, wird in Burp 
 	\caption{Burp Suite: AuthCookie Kontrolle 1}
 \end{figure}
 
-Wenn mit den Anmeldeinformationen aspect/aspect angemeldet wird, wird in Burp Suite festgestellt, dass die \texttt{JSESSION-ID C8F3177CCAFF380441ABF71090748F2E} lautet, während \texttt{AuthCookie = 65432udfqtb} nach erfolgreicher Authentifizierung ist.
+Wenn eineAnmeldung mit den Anmeldeinformationen \texttt{aspect/aspect} erfolgt, wird in Burp Suite festgestellt, dass die \texttt{JSESSION-ID C8F3177CCAFF380441ABF71090748F2E} lautet, während \texttt{AuthCookie = 65432udfqtb} nach erfolgreicher Authentifizierung ist.
 
 \newpage
 
@@ -487,7 +491,7 @@ Wenn mit den Anmeldeinformationen aspect/aspect angemeldet wird, wird in Burp Su
 	\caption{Burp Suite: AuthCookie Kontrolle 2}
 \end{figure}
 
-Nun muss die AuthCookie Patterns analysiert werden. Die erste Hälfte \texttt{65432} ist für beide Authentifizierungen üblich. Daher sind wir jetzt daran interessiert, den letzten Teil der Authcookie-Werte zu analysieren, wie - \texttt{ubphcfx} für den Benutzer \texttt{webgoat} und \texttt{udfqtb} für den jeweiligen Aspektbenutzer.\\
+Nun müssen die AuthCookie Patterns analysiert werden. Die erste Hälfte \texttt{65432} ist für beide Authentifizierungen üblich. Daher ist nun von Interesse, den letzten Teil der AuthCookie-Werte zu analysieren, wie \texttt{ubphcfx} für den Benutzer \texttt{webgoat} und \texttt{udfqtb} für den jeweiligen Aspektbenutzer.\\
 
 \begin{figure}[h]
 	\centering
@@ -495,11 +499,11 @@ Nun muss die AuthCookie Patterns analysiert werden. Die erste Hälfte \texttt{65
 	\caption{Burp Suite: AuthCookie Kontrolle 3}
 \end{figure}
 
-Wenn die AuthCookie-Werte genauer angesehen werden, hat der letzte Teil dieselbe Länge wie der Benutzername. Es ist daher offensichtlich, dass der Benutzername bei einer Verschlüsselungsmethode verwendet wird. Bei Versuchen und Fehlern / Brute-Force-Mechanismen wird festgestellt, dass nach der Umkehrung des Benutzernamens \texttt{webgoat}; es wird jetzt rausgefunden, dass es \texttt{taogbew} ist und dann wird das Zeichen vor dem Alphabet als AuthCookie d. h. \texttt{ubphcfx} verwendet.
+Wenn die AuthCookie-Werte genauer angesehen werden, hat der letzte Teil dieselbe Länge wie der Benutzername. Es ist daher offensichtlich, dass der Benutzername bei einer Verschlüsselungsmethode verwendet wird. Bei Versuchen und Fehlern / Brute-Force-Mechanismen wird festgestellt, dass nach der Umkehrung des Benutzernamens \texttt{webgoat}; es wird jetzt rausgefunden, dass er \texttt{taogbew} ist und dann wird das Zeichen vor dem Alphabet als AuthCookie d. h. \texttt{ubphcfx} verwendet.
 
 \newpage
 
-Nach der Authentifizierung als Benutzer-Webgoat den AuthCookie-Wert geändert wird, um den Benutzer Alice zu verspotten, indem den AuthCookie gesucht wird.
+Nach der Authentifizierung als Benutzer \texttt{Webgoat} den AuthCookie-Wert geändert wird, um den Benutzer Alice zu verspotten, indem den AuthCookie gesucht wird.
 
 \begin{figure}[h]
 	\centering
@@ -509,7 +513,7 @@ Nach der Authentifizierung als Benutzer-Webgoat den AuthCookie-Wert geändert wi
 
 \section{Automatisierte Penetrationstest}
 
-Wie in der Abschnitt \ref{owaspzap-def} erwähnt, dass OWASP ZAP ein benutzerfreundliches integriertes Penetrationstest-Tool zum Auffinden von Schwachstellen in Webanwendungen ist. ZAP bietet automatisierte Scanner sowie eine Reihe von Tools, mit denen die Sicherheitslücken automatisch gesucht werden können. In diesem Abschnitt wird die OWASP ZAP-GUI vorgestellt und wird erfährt, wie automatische Penetrationstests mit dem Sicherheitstools OWASP Zap durchgeführt werden. Außerdem bilden die in diesem Kapitel erläuterten Informationen die Basis für die in Kapitel \ref{cha:k5} vorgenommene Evaluierung des Open API 2.0 Plugins von OWASP ZAP und sind demzufolge für das Verständnis der Verwendung des Open API 2.0 Plug-Ins erforderlich.
+Wie im Abschnitt \ref{owaspzap-def} erwähnt, ist OWASP ZAP ein benutzerfreundliches integriertes Penetrationstest-Tool zum Auffinden von Schwachstellen in Webanwendungen. ZAP bietet automatisierte Scanner sowie eine Reihe von Tools, mit denen die Sicherheitslücken automatisch gesucht werden können. In diesem Abschnitt wird die OWASP ZAP-GUI vorgestellt. Darüber hinaus wird beschrieben, wie automatische Penetrationstests mit dem Sicherheitstool OWASP Zap durchgeführt werden. Außerdem bilden die in diesem Kapitel erläuterten Informationen die Basis für die in Kapitel 5 vorgenommene Evaluierung des Open API 2.0 Plugins von OWASP ZAP und sind demzufolge für das Verständnis der Verwendung des Open API 2.0 Plugins erforderlich.
 
 \subsection{OWASP-ZAP Webanwendung Penetrationstest}
 
@@ -521,38 +525,39 @@ Wie in der Abschnitt \ref{owaspzap-def} erwähnt, dass OWASP ZAP ein benutzerfre
 	\centering
 	\includegraphics[width=12cm]{owaspzapgui.png}
 	\caption{OWASP ZAP GUI Überblick}
+	\label{owaspguiabbildung}
 \end{figure}
 
-Wie oben zu sehen, ist das GUI-Fenster in drei Hauptabschnitte unterteilt:\\
+Wie in Abbildung \ref{owaspguiabbildung} zu sehen, ist das GUI-Fenster in drei Hauptabschnitte unterteilt:\\
 
 \begin{flushleft}
 	\textbf{Linker Bereich:}\\
 \end{flushleft}
-Im linken Bereich des ZAP-Fensters werden die Dropdown-Schaltflächen "`Context"' und "`Sites"' angezeigt. Es kann vorkommen, dass mehrere Websites zum Scannen ausgewählt werden können. Diese Websites werden unter "`Sites"' angezeigt.
+Im linken Bereich des ZAP-Fensters werden die Dropdown-Schaltflächen Context und Sites angezeigt. Es kann vorkommen, dass mehrere Webseiten zum Scannen ausgewählt werden können. Diese werden unter Sites angezeigt.
 
 \begin{flushleft}
 	\textbf{Rechter Bereich:}\\
 \end{flushleft}
-Hier gibt es einen URL-Abschnitt, in dem das Ziel für das Scannen angegeben werden müssen. Die Schaltfläche "`Attack"' startet den Angriff auf das Ziel und die Schaltfläche "`Stop"' stoppt den Angriff.
+Hier gibt es einen URL-Abschnitt, in dem das Ziel für das Scannen angegeben werden muss. Die Schaltfläche Attack startet den Angriff auf das Ziel und die Schaltfläche Stop stoppt den Angriff.
 
 \begin{flushleft}
 	\textbf{Unterer Bereich:}\\
 \end{flushleft}
 Dieser Abschnitt enthält sechs Tabs, die für die Darstellung der Aktivitäten während der Schwachstellensuche wichtig sind. Unter den Tabs befindet sich eine Fortschrittsleiste, in der der Scanfortschritt, die Anzahl der gesendeten Anforderungen und der Export der Details im CSV-Format angezeigt werden.\\
 
-Das Tab \textbf{"`History"'} zeigt die getesteten Websites an. In diesem Fall testen wir nur ein einzelnes Ziel, sodass im Verlaufsdatensatz ein einzelner Eintrag angezeigt wird.\\
+Das Tab \textbf{"`History"'} zeigt die getesteten Webseiten an. In diesem Fall testen wir nur ein einzelnes Ziel, sodass im Verlaufsdatensatz ein einzelner Eintrag angezeigt wird.\\
 
-Auf das Tab \textbf{"`Search"'} kann der Tester Suche nach Mustern durchführen. Zum Beispiel wird alle GET-Anfragen abgefragt und wird dazu gehörende Informationen angezeigt.\\
+Auf dem Tab \textbf{"`Search"'} kann der Tester Suche nach Mustern durchführen. Zum Beispiel werden alle GET-Anfragen abgefragt und die dazu gehörenden Informationen werden angezeigt.\\
 
-Auf das Tab \textbf{"`Alerts"'} können weitere Informationen zu den erkannten Sicherheitslücken des gescannten Ziels gefunden werden und die Ausgaben werden nach Schweregrad eingestuft.\\
+Auf dem Tab \textbf{"`Alerts"'} können weitere Informationen zu den erkannten Sicherheitslücken des gescannten Ziels gefunden werden und die Ausgaben werden nach Schweregrad eingestuft.\\
 
-Auf das Tab \textbf{"`Spider"'} werden die Dateien angezeigt, die in der Webanwendung gecrawlt (erkannt) wurden. Durch das Spider wird die auf der Website residenten Verzeichnisse und Dateien ermittelt und für eine spätere Überprüfung auf Schwachstellen protokolliert werden.\\
+Auf dem Tab \textbf{"`Spider"'} werden die Dateien angezeigt, die in der Webanwendung gecrawlt (erkannt) wurden. Durch den Spider werden die auf der Webseite residenten Verzeichnisse und Dateien ermittelt und für eine spätere Überprüfung auf Schwachstellen protokolliert.\\
 
-Das letzte Tab ist der \textbf{"`Active Scan"'}. Dies ist wichtig, um den Fortschritt des laufenden Scans in Echtzeit anzuzeigen, wobei jede verarbeitete Datei angezeigt wird.\\
+Das letzte Tab ist der \textbf{"`Active Scan"'}. Dieser ist wichtig, um den Fortschritt des laufenden Scans in Echtzeit zu demonstrieren, wobei jede verarbeitete Datei angezeigt wird.\\
 
 \subsubsection{Schneller Scan \& Angriff}
 
-Um den Schnellscan zu starten, wird die Adresse des Ziels in das Eingabefeld "`URL to attack"' eingegeben und wird auf die Schaltfläche "`Attack"' geklickt.
+Um den Schnellscan zu starten, wird die Adresse des Ziels in das Eingabefeld \texttt{URL to attack} eingegeben und es wird auf die Schaltfläche \texttt{Attack} geklickt.
 
 \begin{figure}[h]
 	\centering
@@ -572,7 +577,7 @@ Dadurch wird die gesamte Zielwebsite gesichtet und anschließend nach Schwachste
 	\label{quickscan3}
 \end{figure}
 
-Wenn es fertig ist, wird auf "`Alerts"' geklickt, um Sicherheitsprobleme der Website wie folgendes anzuzeigen:
+Wenn das Active Scan fertig ist, wird auf "`Alerts"' geklickt, um Sicherheitsprobleme der Website wie folgt anzuzeigen:
 
 \begin{figure}[h]
 	\centering
@@ -581,21 +586,19 @@ Wenn es fertig ist, wird auf "`Alerts"' geklickt, um Sicherheitsprobleme der Web
 	\label{quickscan4}
 \end{figure}
 
-Jeder Ordner enthält verschiedene Arten von Sicherheitsproblemen, die für den Schweregrad farbcodiert sind. Durch Klicken auf den Ordner werden einzelne Probleme angezeigt, die für zusätzliche Informationen ausgewählt werden können. Es enthält nicht nur eine detaillierte Erklärung des Problems, sondern auch Empfehlungen zur Lösung des Problems enthält.
+Jeder Ordner enthält verschiedene Arten von Sicherheitsproblemen, die für den Schweregrad farbcodiert sind. Durch Klicken auf den Ordner werden einzelne Probleme angezeigt, die für zusätzliche Informationen ausgewählt werden können. Der Ordner enthält nicht nur eine detaillierte Erklärung des Problems, sondern auch Empfehlungen zur Lösung des Problems.
 
 \section{Vor- und Nachteile zwischen manuelle und automatisierte Penetrationstest}
 
-Beim Penetrationstest kann der Tester entweder manuelle oder automatisierte oder beide Methoden anwenden, um die Schwachstellen in der Webanwendung zu ermitteln. Die Methoden der Tester basieren auf ihren Fähigkeiten und Kenntnissen. Es gibt jedoch einige Faktoren, z. B. welche Methode wirksam ist, weniger Zeitverwirrung und Zuverlässigkeit in Betracht gezogen werden sollten, bevor sie angewendet werden. Obwohl manuelle Durchdringung Testen und automatisiertes Scannen können beide verwendet werden, um kritische Sicherheitslücken in Webanwendungen zu finden, von denen jede eigene Stärken und Schwächen aufweist. Ein Anwendungskontext sollte bei der Entscheidung helfen, welcher der geeignetere ist. Der Kontext umfasst Folgendes: Wie groß ist die Anwendung, wie hoch ist das Budget des Projekts oder wann soll es freigegeben werden? 
+Beim Penetrationstest kann der Tester entweder manuelle oder automatisierte oder beide Methoden anwenden, um die Schwachstellen in der Webanwendung zu ermitteln. Die Methoden der Tester basieren auf ihren Fähigkeiten und Kenntnissen. Es gibt jedoch einige Faktoren, z. B. Wirksamkeit, benötigte Zeit oder Zuverlässigkeit einer Methode, die in Betracht gezogen werden sollten, bevor sie angewendet werden. Manuelle- und automatisierte Penetrationstests können beide verwendet werden, um kritische Sicherheitslücken in Webanwendungen zu finden, von denen jede eigene Stärken und Schwächen aufweist. Ein Anwendungskontext sollte bei der Entscheidung helfen, welche Methode die geeignetere ist. Der Kontext umfasst Folgendes: Wie groß ist die Anwendung, wie hoch ist das Budget des Projekts und wann soll es freigegeben werden?
 
-Automatisierte Werkzeuge arbeiten in der Größenordnung viel schneller und ist eine sichere und einfache Methode, um alle Aufgaben im Zusammenhang mit dem Penetrationstest durchzuführen, da die meisten Aufgaben automatisiert sind, können Tests weniger zeitaufwändig sein als manuelle Tests. Es ist viel schwieriger, die einzelnen Komponenten, Dienste und Protokolle manuell mit der gleichen Geschwindigkeit zu testen, die eine Maschine ausführen kann. Weil Automatisierte Tests schneller als manuelle Tests sind, werden die Ergebnisse auch schneller akkumuliert. Sicherheitsberichte werden automatisch generiert und können zur Offline-Prüfung als XML-, PDF- oder HTML-Dateien exportiert werden\cite{autovorteil99}.
+Automatisierte Werkzeuge arbeiten in der Größenordnung erheblich schneller und sind eine sichere und einfache Methode, um alle Aufgaben im Zusammenhang mit dem Penetrationstest durchzuführen. Da die meisten Aufgaben automatisiert sind, können Tests weniger zeitaufwendig sein als manuelle Tests. Es ist schwieriger, die einzelnen Komponenten, Dienste und Protokolle manuell mit der gleichen Geschwindigkeit zu testen, die eine Maschine ausführen kann. Weil automatisierte schneller als manuelle Tests sind, werden die Ergebnisse auch schneller akkumuliert. Sicherheitsberichte werden automatisch generiert und können zur Offline-Prüfung als XML-, PDF- oder HTML-Dateien exportiert werden\cite{autovorteil99}.
 
-Durch das automatisierten Penetrationstest können größere Angriffsflächen leichter abgedeckt werden, indem das Crawlen von Webanwendungen implementiert werden, um potenzielle Angriffseingaben, insbesondere technische Schwachstellen, zu erkennen. Manuelles Testen würde viel Zeit erfordern, um die gleiche Abdeckung und den gleichen Vergleich mit bekannten Schwachstellen gewährleisten zu können\cite{packetlabs18}.
+Durch den automatisierten Penetrationstest können größere Angriffsflächen leichter abgedeckt werden, indem das Crawlen von Webanwendungen implementiert wird, um potenzielle Angriffseingaben, insbesondere technische Schwachstellen, zu erkennen. Manuelles Testen würde viel Zeit erfordern, um die gleiche Abdeckung und den gleichen Vergleich mit bekannten Schwachstellen gewährleisten zu können\cite{packetlabs18}.
 
-Automatisierte Tools können eine große Anzahl von Inputdaten für jeden Test initialisieren und ausführen, können sich jedoch nicht dafür entscheiden, die Inputdaten für jedes Szenario korrekt auszuführen. Es wird normalerweiße mit mehreren Inputdaten übergetragen und auf eine Reaktion gewartet werden, d.h. ist es schwierig für automatisierte Tools, um die Webanwendungen und -dienste genau zu testen, wodurch logische Schwachstellen übersehen werden können\cite{packetlabs18}.
+Automatisierte Tools können eine große Anzahl von Inputdaten für jeden Test initialisieren und ausführen, können sich jedoch nicht dafür entscheiden, die Inputdaten für jedes Szenario korrekt auszuführen. Es wird normalerweise mit mehreren Inputdaten übertragen und auf eine Reaktion gewartet, d. h., es ist schwierig für automatisierte Tools, die Webanwendungen und -dienste genau zu testen, wodurch logische Schwachstellen übersehen werden können\cite{packetlabs18}.
 
-Automatisiertes Testen bietet Vorteile für größere Projekte, da die anfänglichen Kosten für die Automatisierung und die Testwartung sehr hoch sein können. Automatisierung hilft dabei, menschliche Fehler zu vermeiden - einige Fehler, die bei manuellen Tests gemacht werden, können reduziert werden. Dies betrifft Fehler, die durch die Durchführung einer langen Liste alltäglicher Aktivitäten entstanden sind. 
-Die einfache Reproduzierbarkeit der Tests ist auch ein großer Vorteil gegenüber dem individuellen Ansatz beim manuellen Testen.
-Der umfassende Test der manuellen Penetrationstests macht es zu einem sehr komplexen Prozess. Die wiederholte Aufgaben, die während des manuellen Tests ausgeführt werden, können zu ungenauen oder falschen Ergebnissen führen.  Dieser Prozess erfordert während der gesamten Testdauer ein Team von erfahrenen Testern, was es zu einer sehr teuren Option macht. Diese Tester müssen sehr erfahren sein, da sie alle Aufgaben manuell steuern müssen. Bei automatisierten Anwendungssicherheitstests wird weniger Personal benötigt, um das Scannen und die Analyse durchzuführen\cite{autovorteil99}.
+Automatisiertes Testen bietet Vorteile für größere Projekte, da die anfänglichen Kosten für die Automatisierung und die Testwartung hoch sein können. Automatisierung hilft dabei, menschliche Fehler zu vermeiden. Fehler, die bei manuellen Tests auftreten, können reduziert werden. Dies betrifft Fehler, die durch die Durchführung einer langen Liste alltäglicher Aktivitäten entstanden sind. Die einfache Reproduzierbarkeit der Tests ist auch ein bedeutender Vorteil gegenüber dem individuellen Ansatz beim manuellen Testen. Der umfassende Test der manuellen Penetrationstests ist ein komplexer Prozess. Die wiederholten Aufgaben, die während des manuellen Tests ausgeführt werden, können zu ungenauen oder falschen Ergebnissen führen. Dieser Prozess erfordert während der gesamten Testdauer ein Team von erfahrenen Testern, was hohe Kosten mit sich bringt. Diese Tester müssen erfahren sein, da sie alle Aufgaben manuell steuern müssen. Bei automatisierten Anwendungssicherheitstests wird weniger Personal benötigt, um das Scannen und die Analyse durchzuführen\cite{autovorteil99}.
 
 Automatisierung kann zu den folgenden Kostensenkungen führen. Die Kosten für\cite{autovorteil99}: 
 
@@ -605,13 +608,13 @@ Automatisierung kann zu den folgenden Kostensenkungen führen. Die Kosten für\c
 	\item die Überprüfung der Testergebnisse.
 \end{itemize} 
 
-Automatisierte Tools sind nur so zuverlässig wie ihre Updates. Wenn eine neue Sicherheitsanfälligkeit oder ein Exploit ohne bekannte Kategorie in die Umgebung eingeführt wurde, können die automatisierten Tools die Sicherheitsbedrohung nicht erkennen und identifizieren. Beim manuellen Testen kann der Tester je nach Situation und Schwachstelle einen eigenen Exploit erstellen. Dies ermöglicht die Ausführung einer umfassenden Testmethodik, die automatisierte Tools übersehen und nicht erkannt werden\cite{packetlabs18}.
+Automatisierte Tools sind nur so zuverlässig wie ihre Updates. Wenn eine neue Sicherheitsanfälligkeit oder ein Exploit ohne bekannte Kategorie in die Umgebung eingeführt wurde, können die automatisierten Tools die Sicherheitsbedrohung nicht erkennen und identifizieren. Beim manuellen Testen kann der Tester je nach Situation und Schwachstelle einen eigenen Exploit erstellen. Dies ermöglicht die Ausführung einer umfassenden Testmethodik, da automatisierte Tools übersehen und nicht erkannt werden\cite{packetlabs18}.
 
-Ausführliche manuelle Pentests werden von erfahrenen Sicherheitsexperten ausgeführt, die versuchen, eine Webanwendung zu gefährden. Sie helfen dabei, Schwachstellen zu erkennen und komplexe Angriffsvektoren zu identifizieren. Die Menge an täglich übertragenem Code stellt jedoch eine Herausforderung dar, da es für Sicherheitsteams immer schwieriger wird, die neuesten Bedrohungen im Auge zu behalten. Hier kommen automatisierte Sicherheitstests ins Spiel. Automatisierte Test-Tools werden regelmäßig gegen eine Webanwendung ausgeführt und werden laufend mit neuen Sicherheitstests aktualisiert. Mit Hilfe der Automatisierung können Schwachstellen entdeckt werden, bevor neuer Code in die Produktion übernommen wird\cite{wmpta17}.
+Ausführliche manuelle Pentests werden von erfahrenen Sicherheitsexperten ausgeführt, die versuchen, eine Webanwendung zu gefährden. Sie helfen dabei, Schwachstellen zu erkennen und komplexe Angriffsvektoren zu identifizieren. Die Menge an täglich übertragenen Codes stellt jedoch eine Herausforderung dar, da es für Sicherheitsteams immer schwieriger wird, die neuesten Bedrohungen zu beobachten. Hier kommen automatisierte Sicherheitstests zum Einsatz. Automatisierte Test-Tools werden regelmäßig gegen eine Webanwendung ausgeführt und werden laufend mit neuen Sicherheitstests aktualisiert. Mit Hilfe der Automatisierung können Schwachstellen entdeckt werden, bevor ein neuer Code in die Produktion übernommen wird\cite{wmpta17}.
 
-Die Unternehmen begannen automatisierte Testtechniken für Webanwendungen zu entwickeln. Zu diesem Zeitpunkt war das Web reifer geworden, und die Webbrowser waren in der Lage, die Komplexität dynamischer Anwendungen zu beherrschen. Das Ziel dieser frühen automatisierten Testwerkzeuge war die Automatisierung des Ermittlungsprozesses einer Webanwendung und das Einfügen von Fehlern dazu beitragen, Schwachstellen zu entdecken. Mit dem Ausreifen automatisierter Tools für die Sicherheit von Webanwendungen wurden die meisten dieser Probleme angegangen. Da die Webanwendungen jedoch immer größer werden, wird das manuelle Testen immer schwieriger. In vielen Unternehmen wird es unmöglich werden, Zeit, Aufwand und Geld für die Bewertung des Unternehmens aufzuwenden steigende Anzahl von Webanwendungen. Unter dem Strich kann der Mensch nur so viele Codezeilen pro Tag betrachten, und wenn sich das Anwendungsvolumen vergrößert, müssen auch Ihre Testställe, die schnell zu Kosten werden können unerschwinglich\cite[2--5]{wasasibm08}.
+Die Unternehmen begannen, automatisierte Testtechniken für Webanwendungen zu entwickeln. Zu diesem Zeitpunkt wurde das Web reifer und die Webbrowser waren in der Lage, die Komplexität dynamischer Anwendungen zu beherrschen. Das Ziel dieser frühen automatisierten Testwerkzeuge war, durch die Automatisierung des Ermittlungsprozesses einer Webanwendung und das Einfügen von Fehlern dazu beizutragen, Schwachstellen zu entdecken. Mit dem Ausreifen automatisierter Tools für die Sicherheit von Webanwendungen wurden die meisten dieser Probleme angegangen. Da die Webanwendungen jedoch immer größer werden, wird das manuelle Testen zunehmend schwieriger. In vielen Unternehmen wird es unmöglich werden, Zeit, Aufwand und Kosten für die Bewertung des Unternehmens zu investieren bei der steigenden Anzahl von Webanwendungen. Letztlich kann der Mensch nur so viele Codezeilen pro Tag betrachten. Wenn sich das Anwendungsvolumen vergrößert, werden auch die kostspieligen Testfälle unerschwinglich\cite[2--5]{wasasibm08}.
 
-Unabhängig davon, ob manuelle oder automatisierte Sicherheitstesttechniken verwendet werden, ist es wichtig, das Softwareverhalten zu analysieren, um festzustellen, ob tatsächlich gegen die Grundsätze der Vertraulichkeit (engl. Confidentiality), Integrität (engl. Integrity) oder Verfügbarkeit (engl. Availability) (CIA) verstoßen wurde\cite{moaast17}.
+Unabhängig davon, ob manuelle oder automatisierte Sicherheitstesttechniken verwendet werden, ist es wichtig, das Softwareverhalten zu analysieren, um festzustellen, ob tatsächlich gegen die Grundsätze der Vertraulichkeit (Confidentiality), Integrität (Integrity) oder Verfügbarkeit (Availability) (zusammengefasst: CIA) verstoßen wurde\cite{moaast17}.
 
 
 
