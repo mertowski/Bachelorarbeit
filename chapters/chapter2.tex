@@ -1,7 +1,7 @@
 \chapter{Grundlagen}
 \label{cha:k2}
 
-In diesem Kapitel wird auf die verschiedenen Grundlagen eingegangen. Zu Beginn wird ein Überblick über die Informationssicherheit präsentiert. Es werden grundlegende Begriffe, Schutzziele, Schwachstellen, Bedrohungen und Angriffe aufgezeigt. Anschließend werden die Sicherheitsrichtlinie und die Sicherheitsinfrastruktur vorgestellt. Zuletzt wird ein Überblick über die Technologien des Projektes (Entwicklung einer Spring Boot Anwendung mit Sicherheitslücken) gegeben.
+In diesem Kapitel wird auf die verschiedenen Grundlagen eingegangen. Zu Beginn wird ein Überblick über die Informationssicherheit präsentiert. Es werden grundlegende Begriffe, Schutzziele, Schwachstellen, Bedrohungen und Angriffe aufgezeigt. Anschließend werden die Sicherheitsrichtlinie und die Sicherheitsinfrastruktur vorgestellt. Zuletzt wird ein Überblick über die Technologien des Projektes zur Entwicklung einer Spring Boot Anwendung mit Sicherheitslücken gegeben.
 
 \section{Informationssicherheit}
 
@@ -12,9 +12,9 @@ In diesem Kapitel wird auf die verschiedenen Grundlagen eingegangen. Zu Beginn w
 	\end{flushright}
 \end{quote}
 
-Informationssicherheit ist eine Herausforderung im Bereich der neuen Informationstechnologien. Sie ist heute in nahezu allen Bereichen von zentraler Bedeutung. Die Sicherheit von Informationen, Daten, Geschäften und Investitionen gehört zu den Schlüsselprioritäten und die Verfügbarkeit von Informationen in der richtigen Zeit und Form ist unerlässlich in jeder Organisation. IT-Sicherheit hat den Zweck, Unternehmen und deren Werte zu schützen, indem sie Angriffe identifiziert, reduziert und verhindert.
+Informationssicherheit ist eine Herausforderung im Bereich der neuen Informationstechnologien. Sie ist heute in nahezu allen Bereichen von zentraler Bedeutung. Die Sicherheit von Informationen, Daten, Geschäften und Investitionen gehört zu den Schlüsselprioritäten und die Verfügbarkeit von Informationen ist in jeder Organisation unerlässlich. IT-Sicherheit hat den Zweck, Unternehmen und deren Werte zu schützen, indem sie Angriffe identifiziert, reduziert und verhindert.
 
-Das schnelle Wachstum von Webanwendungen hängt von der Sicherheit, dem Datenschutz sowie der Zuverlässigkeit der Anwendungen, Systeme und unterstützenden Infrastrukturen ab. Obwohl IT-Sicherheit eine hohe Relevanz in unserem Leben aufweist, ist das durchschnittliche Sicherheitswissen von IT-Fachkräften und Ingenieuren nicht ausreichend. Das Internet ist für seine mangelnde Sicherheit bekannt, wenn es nicht genau und streng spezifiziert, entworfen und getestet wird. In den letzten Jahren war es offensichtlich, dass der Bereich der IT-Sicherheit leistungsfähige Werkzeuge und Einrichtungen mit überprüfbaren Systemen und Anwendungen umfassen muss, die die Vertraulichkeit und Privatsphäre in Webanwendungen wahren, welche die Probleme definieren\cite[1]{furnell2008securing}.
+Das schnelle Wachstum von Webanwendungen hängt von der Sicherheit, dem Datenschutz sowie der Zuverlässigkeit der Anwendungen, Systeme und unterstützenden Infrastrukturen ab. Obwohl IT-Sicherheit eine hohe Relevanz im heutigen Leben aufweist, ist das durchschnittliche Sicherheitswissen von IT-Fachkräften und Ingenieuren nicht ausreichend. Das Internet ist für seine mangelnde Sicherheit bekannt, wenn es nicht genau und streng spezifiziert, entworfen und getestet wird. In den letzten Jahren war es offensichtlich, dass der Bereich der IT-Sicherheit leistungsfähige Werkzeuge und Einrichtungen mit überprüfbaren Systemen und Anwendungen umfassen muss, die die Vertraulichkeit und Privatsphäre in Webanwendungen wahren, welche die Probleme definieren\cite[1]{furnell2008securing}.
 
 Weil die Realisierung einer lückenlosen Abwehr von Angriffen nicht möglich ist, inkludiert das Gebiet der IT-Sicherheit hauptsächlich Maßnahmen und Vorgehensweisen, um die potenziellen Schäden zu vermindern und die Risiken beim Einsatz von Informations- und Kommunikationstechnik (IKT)-Systemen zu verringern. Die Angriffsversuche müssen rechtzeitig und mit möglichst hoher Genauigkeit erkannt werden. Dazu muss auf eingetretene Schadensfälle mit geeigneten technischen Maßnahmen reagiert werden. Es sollte klargestellt werden, dass Techniken der Angriffserkennung und Reaktion ebenso zur IT-Sicherheit gehören wie methodische Grundlagen, um IKT-Systeme so zu entwickeln, dass sie mittels Design ein hohes Maß an Sicherheit bieten. Durch IT-Sicherheit kann eine Möglichkeit geschaffen werden, um die Entwicklung vertrauenswürdiger Anwendungen und Dienstleistungen mit innovativen Geschäftsmodellen, beispielsweise im Gesundheitsbereich, bei Automotive-Anwendungen oder in zukünftigen, intelligenten Umgebungen zu verbinden\cite[20--21]{eckert2013sicherheit}.
 
@@ -69,7 +69,7 @@ Durch die Integrität werden die Genauigkeit von Daten und die korrekte Funktion
 
 \subsubsection{Verfügbarkeit}
 
-Ein System sichert die Verfügbarkeit (engl.: \textit{availability}), indem authentifizierte und autorisierte Subjekte in der Wahrnehmung ihrer Berechtigungen nicht unautorisiert beeinträchtigt werden können. Wenn in einem System unterschiedliche Prozesse eines Benutzers oder von verschiedenen Benutzern auf gemeinsame Ressourcen zugreifen, kann es zu Ausführungsverzögerungen kommen. Durch Verwaltungsmaßnahmen entstehende Verzögerungen werden als keine Verletzung der Verfügbarkeit dargestellt, aber wenn CPU mit einem hochpriorisierten Prozess monopolisiert, kann absichtlich ein Angriff auf die Verfügbarkeit hervorgerufen werden. Somit kann es plötzlich zu einer großen Menge von Daten kommen, die zu Stausituationen im Netz führen kann\cite[33]{eckert2013sicherheit}.
+Ein System sichert die Verfügbarkeit (engl.: \textit{availability}), indem authentifizierte und autorisierte Subjekte in der Wahrnehmung ihrer Berechtigungen nicht unautorisiert beeinträchtigt werden können. Wenn in einem System unterschiedliche Prozesse eines Benutzers oder von verschiedenen Benutzern auf gemeinsame Ressourcen zugreifen, kann es zu Ausführungsverzögerungen kommen. Durch Verwaltungsmaßnahmen entstehende Verzögerungen werden als keine Verletzung der Verfügbarkeit dargestellt, aber wenn Prozessor mit einem hochpriorisierten Prozess monopolisiert, kann absichtlich ein Angriff auf die Verfügbarkeit hervorgerufen werden. Somit kann es plötzlich zu einer großen Menge von Daten kommen, die zu Stausituationen im Netz führen kann\cite[33]{eckert2013sicherheit}.
 
 \subsubsection{Verbindlichkeit}
 
@@ -87,7 +87,7 @@ Hauptgrund für die Gefährdung der Erreichung der Schutzziele sind \textbf{Schw
 
 \subsubsection{Bedrohungen und Risiko}
 
-Unter einer Bedrohung (engl.: \textit{threat}) versteht man die Ausnutzung einer oder mehrerer Schwachstellen oder Verwundbarkeiten, die zu einem Verlust der Datenintegrität, der Informationsvertraulichkeit oder dem Vorhandensein  oder zu einer Gefährdung der Vertrauenswürdigkeit von Subjekten führen\cite[39]{eckert2013sicherheit}. Im Kontext der Informationssicherheit bedeutet ein Risiko die Wahrscheinlichkeit des Eintritts eines Schadenereignisses und die Höhe des potenziellen Schadens\cite[15]{nowey2011einleitung}.
+Unter einer Bedrohung (engl.: \textit{threat}) versteht man die Ausnutzung einer oder mehrerer Schwachstellen oder Verwundbarkeiten, die zu einem Verlust der Datenintegrität, der Informationsvertraulichkeit oder zu einer Gefährdung der Vertrauenswürdigkeit von Subjekten führen\cite[39]{eckert2013sicherheit}. Im Kontext der Informationssicherheit bedeutet ein Risiko die Wahrscheinlichkeit des Eintritts eines Schadenereignisses und die Höhe des potenziellen Schadens\cite[15]{nowey2011einleitung}.
 
 \subsubsection{Angriff und Typen von (externen) Angriffen}
 
@@ -95,7 +95,7 @@ Personen oder Systeme, die versuchen, eine Schwachstelle auszunutzen, werden \te
 
 \paragraph{Hacker und Cracker}\mbox{}\\
 
-\textbf{Hacker} sind technisch erfahrene Personen im Hard- und Softwareumfeld. Sie können Schwachstellen finden, um unbefugt einzudringen oder Funktionen zu verändern\cite{hack17}. Der Begriff Hacker wird für kriminelle Personen verwendet, die die Lücken im IT-System finden und dies unerlaubt für kriminelle Zwecke, z. B. Diebstahl von Informationen, nutzen\cite{hack11}.  Der sogenannte \textbf{Cracker} ist ebenfalls ein technisch erfahrener Angreifer, unterscheidet sich jedoch vom Hacker in der Hinsicht, dass er ausschließlich an seinen eigenen Vorteil denkt oder daran interessiert ist, einer dritten Person zu schaden. Aus diesem Grund geht von einem Cracker ein größeres Schadenrisiko für Unternehmen aus als von einem Hacker\cite[45]{eckert2013sicherheit}.
+\textbf{Hacker} sind technisch erfahrene Personen im Hard- und Softwareumfeld. Sie können Schwachstellen finden, um unbefugt in das Zielsystem einzudringen oder Funktionen zu verändern\cite{hack17}. Der Begriff Hacker wird für kriminelle Personen verwendet, die die Lücken im IT-System finden und dies unerlaubt für kriminelle Zwecke, z. B. Diebstahl von Informationen, nutzen\cite{hack11}.  Der sogenannte \textbf{Cracker} ist ebenfalls ein technisch erfahrener Angreifer, unterscheidet sich jedoch vom Hacker in der Hinsicht, dass er ausschließlich an seinen eigenen Vorteil denkt oder daran interessiert ist, einer dritten Person zu schaden. Aus diesem Grund geht von einem Cracker ein größeres Schadenrisiko für Unternehmen aus als von einem Hacker\cite[45]{eckert2013sicherheit}.
 
 \paragraph{Skript Kiddie}\mbox{}\\
 
@@ -123,7 +123,7 @@ Bei der Erpressung geht es um Schadsoftware, die in fremde Rechner eindringt. So
 
 Unter dem Begriff Bot-Netz versteht man eine Vielzahl von verbundenen Computern, die ohne das Wissen ihres Besitzers gemeinsam eine Aufgabe (wie massenhaften Versand von E-Mails) erledigen sollen\cite{botnetz17symantec}.
 
-\section{Technologien des Projektes}
+\section{Technologien des Projektes zur Entwicklung einer Spring Boot Anwendung mit Sicherheitslücken}
 
 Für die Evaluierung des OWASP Zap Open API Plugins und Entwicklung einer Spring Boot Anwendung mit Sicherheitslücken sind verschiedene Technologien erforderlich, die in diesem Abschnitt erläutert werden.
 
@@ -137,7 +137,7 @@ Java ist eine universelle Programmiersprache, die von Sun Microsystems entwickel
 
 \subsection{RESTful Web Services}
 
-REST gilt als ein Architekturstil, der Einschränkungen wie die einheitliche Schnittstelle angibt, die bei Anwendung auf einen Webdienst wünschenswerte Eigenschaften wie Leistung, Skalierbarkeit und Änderbarkeit hervorbringt. Mit diesen Eigenschaften funktionieren die Services im Web optimal. Im REST-Architekturstil werden Daten und Funktionen als Ressourcen betrachtet und der Zugriff erfolgt über URIs. Er beschränkt die Architektur auf eine Client-/Server-Architektur und ist so ausgelegt, dass ein zustandsloses Kommunikationsprotokoll (z. B. HTTP) verwendet wird. Im REST-Architekturstil tauschen Clients und Server Repräsentationen von Ressourcen unter Verwendung einer standardisierten Schnittstelle und eines standardisierten Protokolls aus. Die folgenden Prinzipien sorgen dafür, dass RESTful-Anwendungen unkompliziert und schnell sind\cite{rws13od}.\\
+REST gilt als ein Architekturstil, der Einschränkungen wie die einheitliche Schnittstelle angibt, die bei Anwendung auf einen Webdienst wünschenswerte Eigenschaften wie Leistung, Skalierbarkeit und Änderbarkeit hervorbringt. Mit diesen Eigenschaften funktionieren die Services im Web optimal. Im REST-Architekturstil werden Daten und Funktionen als Ressourcen betrachtet und der Zugriff erfolgt über Uniform Resource Identifier (URI). Er beschränkt die Architektur auf eine Client-/Server-Architektur und ist so ausgelegt, dass ein zustandsloses Kommunikationsprotokoll (z. B. HTTP) verwendet wird. Im REST-Architekturstil tauschen Clients und Server Repräsentationen von Ressourcen unter Verwendung einer standardisierten Schnittstelle und eines standardisierten Protokolls aus. Die folgenden Prinzipien sorgen dafür, dass RESTful-Anwendungen unkompliziert und schnell sind\cite{rws13od}.\\
 
 \textbf{Ressourcenidentifikation durch URI:} Ein RESTful-Webservice macht eine Vielzahl von Ressourcen verfügbar, die die Ziele der Interaktion mit ihren Clients identifizieren. Ressourcen werden durch URIs identifiziert, die einen globalen Adressierungsraum für die Ressourcen- und Serviceerkennung bereitstellen\cite{rws13od}.\\
 
@@ -145,7 +145,7 @@ REST gilt als ein Architekturstil, der Einschränkungen wie die einheitliche Sch
 
 \textbf{Selbstbeschreibende Nachrichten:} Ressourcen sind von ihrer Darstellung entkoppelt, sodass auf ihren Inhalt in verschiedenen Formaten wie HTML, XML, Nur-Text, PDF, JPEG, JSON und anderen zugegriffen werden kann. Metadaten über die Ressource sind verfügbar und werden beispielsweise verwendet, um das Zwischenspeichern zu steuern, Übertragungsfehler zu erkennen, das geeignete Repräsentationsformat auszuhandeln und eine Authentifizierung oder Zugriffssteuerung durchzuführen\cite{rws13od}.\\
 
-\textbf{Stateful Interaktionen durch Hyperlinks:} Jede Interaktion mit einer Ressource ist; Das heißt, Anforderungsnachrichten sind in sich geschlossen. Stateful Interaktionen basieren auf dem Konzept der expliziten Zustandsübertragung. Es gibt verschiedene Techniken, um den Status auszutauschen, z. B. URI-Umschreiben, Cookies und versteckte Formularfelder. Der Zustand kann in Antwortnachrichten eingebettet sein, um auf gültige zukünftige Zustände der Interaktion hinzuweisen\cite{rws13od}.
+\textbf{Stateful Interaktionen durch Hyperlinks:} Jede Interaktion mit einer Ressource ist zustandslos (engl.: \textit{stateless}); Das heißt, Anforderungsnachrichten sind in sich geschlossen. Stateful-Interaktionen basieren auf dem Konzept der expliziten Zustand übertragung. Es gibt verschiedene Techniken, um den Status auszutauschen, z. B. URI-Umschreiben, Cookies und versteckte Formularfelder. Der Zustand kann in Antwortnachrichten eingebettet sein, um auf gültige zukünftige Zustände der Interaktion hinzuweisen\cite{rws13od}.
 
 \subsection{Microservice Architekturen}
 
@@ -157,7 +157,7 @@ Das Spring-Framework, das bereits seit über einem Jahrzehnt besteht, hat sich a
 
 \paragraph{Spring MVC Komponente}\mbox{}\\
 
-Das Spring-Web-MVC-Framework stellt eine Model-View-Controller-Architektur und fertige Komponenten bereit, mit denen flexible und lose gekoppelte Webanwendungen entwickelt werden können. Das MVC-Muster führt zu einer Trennung der verschiedenen Aspekte der Anwendung (Eingangs-, Geschäfts- und UI-Logik), während eine lose Kopplung zwischen diesen Elementen bereitgestellt wird\cite{tp12mvc}.
+Das Spring-Web-MVC-Framework stellt eine Model-View-Controller-Architektur und fertige Komponenten bereit, mit denen flexible und lose gekoppelte Webanwendungen entwickelt werden können. Das Model View Controller (MVC)-Muster führt zu einer Trennung der verschiedenen Aspekte der Anwendung (Eingangs-, Geschäfts- und UI-Logik), während eine lose Kopplung zwischen diesen Elementen bereitgestellt wird\cite{tp12mvc}.
 
 \begin{itemize}
 	\item Das Modell kapselt die Anwendungsdaten und besteht im Allgemeinen aus POJO (Plain Old Java Object).
@@ -167,7 +167,7 @@ Das Spring-Web-MVC-Framework stellt eine Model-View-Controller-Architektur und f
 
 \paragraph{Spring REST Docs}\mbox{}\\
 
-Spring REST Docs verwendet Snippets, die von Tests erstellt wurden, die mit Spring-MVC-Testframework, Spring WebTestClient von WebFlux oder REST Assured 3 geschrieben wurden. Dieser Test-driven-Ansatz hilft dabei, die Genauigkeit der Service-Dokumentation zu gewährleisten. Das Ziel von Spring REST Docs ist es, Dokumentationen für RESTful-Services zu erstellen, die genau und lesbar sind. Bei der Dokumentation eines RESTful-Services geht es hauptsächlich um die Beschreibung seiner Ressourcen. Zwei wichtige Teile der Beschreibung jeder Ressource sind die Details der HTTP-Anforderungen, die sie verbraucht, und die HTTP-Antworten, die sie erzeugt\cite{srd18wilkinson}.
+Spring REST Docs verwendet Snippets\footnote{Spring REST Docs verwendet Spring REST Assured, um Anforderungen an den Dienst zu stellen, die dokumentiert werden.}, die von Tests erstellt wurden, die mit Spring-MVC-Testframework, Spring WebTestClient von WebFlux oder REST Assured 3 geschrieben wurden. Dieser Test-driven-Ansatz hilft dabei, die Genauigkeit der Service-Dokumentation zu gewährleisten. Das Ziel von Spring REST Docs ist es, Dokumentationen für RESTful-Services zu erstellen, die genau und lesbar sind. Bei der Dokumentation eines RESTful-Services geht es hauptsächlich um die Beschreibung seiner Ressourcen. Zwei wichtige Teile der Beschreibung jeder Ressource sind die Details der HTTP-Anforderungen, die sie verbraucht, und die HTTP-Antworten, die sie erzeugt\cite{srd18wilkinson}.
 
 \subsection{Modellbasierter Ansatz für REST-Schnittstellen}
 

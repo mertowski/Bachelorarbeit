@@ -92,7 +92,8 @@ Wenn ein Benutzer z. B. aus Versehen (oder absichtlich) ein \texttt{\&} in ein I
 
 Webanwendungen oder Webdienste verwenden Eingaben aus HTTP-Anforderungen (und gelegentlich Dateien), um zu bestimmen, wie sie reagieren sollen. Angreifer können jeden Teil einer HTTP-Anfrage manipulieren, einschließlich der URL, der Abfragezeichenfolge, der Header, der Cookies, der Formularfelder und der ausge-blendeten Felder, um die Sicherheitsmechanismen der Seite zu beschädigen. Der verbreitete Angriff für einen Manipulationsangriff ist der Pufferüberlauf.
 
-Der Server sollte niemals annehmen, dass der Content-Type immer den Inhaltstyp-Header und den Inhalt desselben Typs überprüft. Ein Mangel an Content-Type-Headern oder unerwarteten Content-Type-Headern sollte dazu führen, dass derServer den Inhalt mit einer Antwort \texttt{406 Not Acceptable} ablehnt\cite{bofangpre16}.
+Der Server sollte niemals annehmen, dass der Content-Type immer den Inhaltstyp-Header und den Inhalt desselben Typs überprüft. Ein Mangel an Content-Type-Headern oder unerwarteten Content-Type-Headern sollte dazu führen, dass der
+Server den Inhalt mit einer Antwort \texttt{406 Not Acceptable} ablehnt\cite{bofangpre16}.
 
 \subsubsection{Vermeidung von Cross Site Scripting (Persistent)}
 
@@ -114,7 +115,7 @@ Web Application Firewalls (WAF) haben eine bedeutende Funktion bei der Abwehr re
 	\end{flushright}
 \end{quote}
 
-Der Hauptgrund ist, dass die API-Angriffsflächen größer sind, werden die Webanwendungen in \texttt{micro-services} aufgeteilt, wodurch eine große Anzahl von Schnittstellen entsteht und diese dem öffentlichen Internet zugänglich gemacht werden. Dadurch werden zahlreiche Angriffsflächen erstellt, sodass Hacker nicht mehr eine einzelne Anwendung angreifen müssen. Sie können sich eine Vielzahl von Diensten ansehen, wodurch das Risiko erhöht wird, dass sie auf Daten zugreifen können\cite{mswv17}. 
+Der Hauptgrund ist für die Größe der API-Angriffsflächen ist, dass die Webanwendungen in \texttt{micro-services} aufgeteilt werden, wodurch eine große Anzahl von Schnittstellen entstehen und diese dem öffentlichen Internet zugänglich gemacht werden. Dadurch werden zahlreiche Angriffsflächen erstellt, sodass Hacker nicht mehr eine einzelne Anwendung angreifen müssen. Sie können sich eine Vielzahl von Diensten ansehen, wodurch das Risiko erhöht wird, dass sie auf Daten zugreifen können\cite{mswv17}. 
 
 Im Vergleich zu anderen Komponenten ist die API in einer Anwendung die schwächste Verbindung, die ein Hacker nach Datenverletzungen suchen kann. API-Sicherheitstests gewährleisten, dass die API vor Schwachstellen geschützt ist. Der API-Hack einer Anwendung kann Verwirrung auf Organisationsebene verursachen und zu erheblichen Verlusten für eine Organisation führen [16]. Des Weiteren besteht das größte Problem bei der API- und Micro-Services-Sicherheit derzeit darin, dass sie häufig als nachträglicher Vorgang und nicht als wesentlicher Bestandteil des Entwicklungsprozesses\cite{anthonyart18}.
 

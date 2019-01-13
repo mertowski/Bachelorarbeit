@@ -41,7 +41,7 @@ Penetrationstests können auf verschiedene Arten durchgeführt werden. Der häuf
 
 \subsection{Black-Box}
 
-Black-Box-Tests beziehen sich auf das Testen eines Systems ohne spezifische Kenntnisse der internen Abläufe des Systems, ohne Zugriff auf den Quellcode und ohne Kenntnisse der Architektur des Systems\cite{bwgwebtesting07}. Dem Tester wird nichts über das Netzwerk oder die Umgebung des Ziels mitgeteilt\cite{tiller2004ethical}. Wenn es sich um einen Black-Box-Test handelt, kann dem Tester eine Webseite oder IP-Adresse zugewiesen werden und er soll die Webseite so angreifen, als wäre er ein Hacker von außen\cite{whitaker2005penetration}. Aufgrund des Mangels an internem Anwendungswissen kann das Aufdecken von Fehlern und/oder Schwachstellen jedoch erheblich länger dauern. Black-Box-Tests müssen gegen laufende Instanzen von Anwendungen ausgeführt werden. Daher sind sie normalerweise auf dynamische Analysen wie das Ausführen von automatisierten Scan-Tools und manuelle Penetrationstests beschränkt\cite{bwgwebtesting07}. In Black-Box-Sicherheitstests können Hacker verschiedener Fertigkeitsstufen wie z. B. Skript-Kiddies, Mid-Level-Hacker oder Elite-Hacker\cite{bwgprole18}.
+Black-Box-Tests beziehen sich auf das Testen eines Systems ohne spezifische Kenntnisse der internen Abläufe des Systems, ohne Zugriff auf den Quellcode und ohne Kenntnisse der Architektur des Systems\cite{bwgwebtesting07}. Dem Tester wird nichts über das Netzwerk oder die Umgebung des Ziels mitgeteilt\cite{tiller2004ethical}. Wenn es sich um einen Black-Box-Test handelt, kann dem Tester eine Webseite oder IP-Adresse zugewiesen werden und er soll die Webseite so angreifen, als wäre er ein Hacker von außen\cite{whitaker2005penetration}. Aufgrund des Mangels an internem Anwendungswissen kann das Aufdecken von Fehlern und/oder Schwachstellen jedoch erheblich länger dauern. Black-Box-Tests müssen gegen laufende Instanzen von Anwendungen ausgeführt werden. Daher sind sie normalerweise auf dynamische Analysen wie das Ausführen von automatisierten Scan-Tools und manuelle Penetrationstests beschränkt\cite{bwgwebtesting07}. In Black-Box-Sicherheitstests können Hacker verschiedener Fertigkeitsstufen wie z. B. Skript-Kiddies, Mid-Level-Hacker oder Elite-Hacker durchführen\cite{bwgprole18}.
 
 \subsection{White-Box}
 
@@ -311,7 +311,9 @@ Hier wird auf \texttt{Antwort im Browser anzeigen} geklickt, um die URL zu kopie
 	\caption{Pop-up im Browser anzeigen}
 \end{figure}
 
-Die kopierte URL wird in die Adressleiste eingegeben, um die Realisierung desXSS-Angriffs durch das Senden einer kurzen und harmlosen Nachricht oder einerWarnung an den Client zu ermöglichen.
+Die kopierte URL wird in die Adressleiste eingegeben, um die Realisierung des
+XSS-Angriffs durch das Senden einer kurzen und harmlosen Nachricht oder einer
+Warnung an den Client zu ermöglichen.
 
 
 \subsection{Testen Brute-Forcing-Passwörter mit THC-Hydra}
@@ -503,7 +505,7 @@ Wenn die AuthCookie-Werte genauer angesehen werden, hat der letzte Teil dieselbe
 
 \newpage
 
-Nach der Authentifizierung als Benutzer \texttt{Webgoat} den AuthCookie-Wert geändert wird, um den Benutzer Alice zu verspotten, indem den AuthCookie gesucht wird.
+Nach der Authentifizierung als Benutzer \texttt{Webgoat} wird der AuthCookie-Wert geändert, um den Benutzer Alice zu verspotten, indem das AuthCookie gesucht wird.
 
 \begin{figure}[h]
 	\centering
@@ -596,7 +598,7 @@ Automatisierte Werkzeuge arbeiten in der Größenordnung erheblich schneller und
 
 Durch den automatisierten Penetrationstest können größere Angriffsflächen leichter abgedeckt werden, indem das Crawlen von Webanwendungen implementiert wird, um potenzielle Angriffseingaben, insbesondere technische Schwachstellen, zu erkennen. Manuelles Testen würde viel Zeit erfordern, um die gleiche Abdeckung und den gleichen Vergleich mit bekannten Schwachstellen gewährleisten zu können\cite{packetlabs18}.
 
-Automatisierte Tools können eine große Anzahl von Inputdaten für jeden Test initialisieren und ausführen, können sich jedoch nicht dafür entscheiden, die Inputdaten für jedes Szenario korrekt auszuführen. Es wird normalerweise mit mehreren Inputdaten übertragen und auf eine Reaktion gewartet, d. h., es ist schwierig für automatisierte Tools, die Webanwendungen und -dienste genau zu testen, wodurch logische Schwachstellen übersehen werden können\cite{packetlabs18}.
+Automatisierte Tools können eine große Anzahl von Inputdaten für jeden Test initialisieren und ausführen, können sich jedoch nicht dafür entscheiden, die Inputdaten für jedes Szenario korrekt auszuführen. Normalerweise werden mehreren Inputdaten initialisiert und auf eine Reaktion gewartet, d. h., es ist schwierig für automatisierte Tools, die Webanwendungen und -dienste genau zu testen, wodurch logische Schwachstellen übersehen werden können\cite{packetlabs18}.
 
 Automatisiertes Testen bietet Vorteile für größere Projekte, da die anfänglichen Kosten für die Automatisierung und die Testwartung hoch sein können. Automatisierung hilft dabei, menschliche Fehler zu vermeiden. Fehler, die bei manuellen Tests auftreten, können reduziert werden. Dies betrifft Fehler, die durch die Durchführung einer langen Liste alltäglicher Aktivitäten entstanden sind. Die einfache Reproduzierbarkeit der Tests ist auch ein bedeutender Vorteil gegenüber dem individuellen Ansatz beim manuellen Testen. Der umfassende Test der manuellen Penetrationstests ist ein komplexer Prozess. Die wiederholten Aufgaben, die während des manuellen Tests ausgeführt werden, können zu ungenauen oder falschen Ergebnissen führen. Dieser Prozess erfordert während der gesamten Testdauer ein Team von erfahrenen Testern, was hohe Kosten mit sich bringt. Diese Tester müssen erfahren sein, da sie alle Aufgaben manuell steuern müssen. Bei automatisierten Anwendungssicherheitstests wird weniger Personal benötigt, um das Scannen und die Analyse durchzuführen\cite{autovorteil99}.
 
@@ -612,7 +614,7 @@ Automatisierte Tools sind nur so zuverlässig wie ihre Updates. Wenn eine neue S
 
 Ausführliche manuelle Pentests werden von erfahrenen Sicherheitsexperten ausgeführt, die versuchen, eine Webanwendung zu gefährden. Sie helfen dabei, Schwachstellen zu erkennen und komplexe Angriffsvektoren zu identifizieren. Die Menge an täglich übertragenen Codes stellt jedoch eine Herausforderung dar, da es für Sicherheitsteams immer schwieriger wird, die neuesten Bedrohungen zu beobachten. Hier kommen automatisierte Sicherheitstests zum Einsatz. Automatisierte Test-Tools werden regelmäßig gegen eine Webanwendung ausgeführt und werden laufend mit neuen Sicherheitstests aktualisiert. Mit Hilfe der Automatisierung können Schwachstellen entdeckt werden, bevor ein neuer Code in die Produktion übernommen wird\cite{wmpta17}.
 
-Die Unternehmen begannen, automatisierte Testtechniken für Webanwendungen zu entwickeln. Zu diesem Zeitpunkt wurde das Web reifer und die Webbrowser waren in der Lage, die Komplexität dynamischer Anwendungen zu beherrschen. Das Ziel dieser frühen automatisierten Testwerkzeuge war, durch die Automatisierung des Ermittlungsprozesses einer Webanwendung und das Einfügen von Fehlern dazu beizutragen, Schwachstellen zu entdecken. Mit dem Ausreifen automatisierter Tools für die Sicherheit von Webanwendungen wurden die meisten dieser Probleme angegangen. Da die Webanwendungen jedoch immer größer werden, wird das manuelle Testen zunehmend schwieriger. In vielen Unternehmen wird es unmöglich werden, Zeit, Aufwand und Kosten für die Bewertung des Unternehmens zu investieren bei der steigenden Anzahl von Webanwendungen. Letztlich kann der Mensch nur so viele Codezeilen pro Tag betrachten. Wenn sich das Anwendungsvolumen vergrößert, werden auch die kostspieligen Testfälle unerschwinglich\cite[2--5]{wasasibm08}.
+Die Unternehmen begannen, automatisierte Testtechniken für Webanwendungen zu entwickeln. Zu diesem Zeitpunkt wurde das Web reifer und die Webbrowser waren in der Lage, die Komplexität dynamischer Anwendungen zu beherrschen. Das Ziel dieser frühen automatisierten Testwerkzeuge war, durch die Automatisierung des Ermittlungsprozesses einer Webanwendung und das Einfügen von Fehlern dazu beizutragen, Schwachstellen zu entdecken. Mit dem Ausreifen automatisierter Tools für die Sicherheit von Webanwendungen wurden die meisten dieser Probleme angegangen. Da die Webanwendungen jedoch immer größer werden, wird das manuelle Testen zunehmend schwieriger. In vielen Unternehmen wird es unmöglich werden, Zeit, Aufwand und Kosten für die Bewertung des Unternehmens zu investieren bei der steigenden Anzahl von Webanwendungen. Letztlich kann der Mensch nur eine bestimmte Anzahl an Codezeilen pro Tag betrachten. Wenn sich das Anwendungsvolumen vergrößert, werden auch die kostspieligen Testfälle unerschwinglich\cite[2--5]{wasasibm08}.
 
 Unabhängig davon, ob manuelle oder automatisierte Sicherheitstesttechniken verwendet werden, ist es wichtig, das Softwareverhalten zu analysieren, um festzustellen, ob tatsächlich gegen die Grundsätze der Vertraulichkeit (Confidentiality), Integrität (Integrity) oder Verfügbarkeit (Availability) (zusammengefasst: CIA) verstoßen wurde\cite{moaast17}.
 

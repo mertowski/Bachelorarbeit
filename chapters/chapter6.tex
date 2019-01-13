@@ -44,7 +44,7 @@ Swagger 2.0 enthält separate Abschnitte für wiederverwendbare Komponenten wie 
 '#/responses/ErrorResponse'
 \end{LaTeXCode}
 
-In OpenAPI 3.0 wurden sie in Komponenten verschoben. Außerdem wurden Definitionen als Schemas umbenannt und \texttt{securityDefinitions} als \texttt{securitySchemes} umbenannt.\\
+In OpenAPI 3.0 wurden wiederverwendbare Komponenten in Komponenten verschoben. Außerdem wurden Definitionen als Schemas umbenannt und \texttt{securityDefinitions} als \texttt{securitySchemes} umbenannt.\\
 
 \begin{LaTeXCode}[caption={Open API 3.0 - Komponenten\cite{openapicomponents17}},captionpos=b, label=LaTeXCode:openapi3.0-3][numbers=none]
 // OpenAPI 3.0
@@ -147,7 +147,7 @@ Bei dem OpenAPI 3.0 wird  auch Antwort-Format aktualisiert. Man kann nun eine An
 Mit Links kann beschrieben werden, wie verschiedene Werte, die von einer Operation zurückgegeben werden, als Eingabe für andere Operationen verwendbar sind\cite{openapilinks17}.
 
 
-OpenAPI 3.0 Spezifikation unterstützt das Verknüpfen, sodass Beziehungen zwischen Pfaden gründlich beschrieben werden können und diese Version bisher am widerstandsfähigsten ist. Angenommen, dass es einen Benutzer erhielt wird und er hat ein ID. Diese ID ist nutzlos. Man kann Verlinkungen verwenden, um zu zeigen, wie man die ID erweitert und die vollständige Adresse erhält.
+Die OpenAPI 3.0 Spezifikation unterstützt das Verknüpfen, sodass Beziehungen zwischen Pfaden gründlich beschrieben werden können und diese Version somit bisher am widerstandsfähigsten ist. Man kann Verlinkungen verwenden, um zu zeigen, wie man die ID erweitert und die vollständige Adresse erhält.
 
 \begin{LaTeXCode}[caption={Open API 3.0 - Verlinkungen},captionpos=b, label=LaTeXCode:openapi3.0-7][numbers=none]
 {
@@ -167,11 +167,11 @@ OpenAPI 3.0 Spezifikation unterstützt das Verknüpfen, sodass Beziehungen zwisc
 ...
 \end{LaTeXCode}
 
-Wie bei dem Quellcode \ref{LaTeXCode:openapi3.0-7} gezeigt, dass in der Antwort von \texttt{/benutzern/{benutzerId}} eine \texttt{beispielId} zurück erhält. Die Verlinkung beschreibt, wie man das \texttt{Beispiel} erhält, indem man auf \texttt{\$response.body\#/beispielID} verweist.
+Wie bei dem Quellcode \ref{LaTeXCode:openapi3.0-7} gezeigt, erhält man nach der Verwendung von \texttt{GET} auf \texttt{/benutzern/{benutzerId}} die Antwort \texttt{beispielId}. Die Verlinkung beschreibt, wie man das \texttt{Beispiel} erhält, indem man auf \texttt{\$response.body\#/beispielID} verweist.
 
 \subsubsection{Rückrufe (engl. Callbacks)}
 
-Bei dem OpenAPI 3.0 können jetzt Rückrufe wie bei dem Quelcode \ref{LaTeXCode:openapi3.0-10} definiert werden. Das heißt, dass asynchrone Anforderungen, die die Dienste als Reaktion auf bestimmte Ereignisse an einen anderen Dienst gesendet werden. 
+Bei dem OpenAPI 3.0 können jetzt Rückrufe wie bei dem Quelcode \ref{LaTeXCode:openapi3.0-10} definiert werden. Das Rückruf-Objekt kann für jede übergeordnete Operation definiert werden, wodurch die Daten, die ein bestimmter Rückruf tragen kann, sehr flexibel sind. Darüber hinaus wird auch ein Rückruf-Objekt bereitgestellt, mit dem eine Zuordnung von Rückrufen definiert werden kann.
 
 Auf diese Weise können die Workflows verbessert werden, die die API den Clients bietet. Ein typisches Beispiel für einen Rückruf ist eine Abonnementfunktionalität (Subscription). Benutzer abonnieren bestimmte Ereignisse des Dienstes und erhalten eine Benachrichtigung, wenn ein Ereignis eintritt. Beispielsweise kann ein E-Shop bei jedem Einkauf eine Benachrichtigung an den Manager senden\cite{openapicallbacks17}.
 
@@ -188,7 +188,8 @@ Diese Beschreibung vereinfacht die Kommunikation zwischen verschiedenen Servern 
 
 \subsection{Servers}
 
-Der Abschnitt \texttt{Server} gibt den API-Server und die Basis-URL (Base URL) an. Es kann einer oder mehrere Server definiert werden, z. B. Produktion und Sandbox\cite{openapiserver17}. Alle API-Endpunkte sind relativ zur Basis-URL. Angenommen, die Basis-URL von \texttt{https://api.example.com/v1}. Der Endpunkt \texttt{/users} verweist beispielsweise auf \texttt{https://api.example.com/v1/users}\cite{openapiapiserverundbaseurl17}.\\
+Der Abschnitt \texttt{Server} gibt den API-Server und die Basis-URL (Base URL) an. Es kann einer oder mehrere Server definiert werden, z. B. Produktion und Sandbox\cite{openapiserver17}. Alle API-Endpunkte basieren auf der Basis-URL. Wenn die Basis URL z.B. \texttt{https://api.example.com/v1} ist, ist der Endpunkt (\texttt{/users})\\
+ \texttt{https://api.example.com/v1/users}\cite{openapiapiserverundbaseurl17}.\\
 
 Bei der Beschreibung der API können nun mehrere Hosts bereitgestellt werden, sodass besser mit der Komplexität umgegangen werden kann, wie sich APIs an einem einzelnen Standort befinden oder sich auf mehrere Cloud-Standorte und die globale Infrastruktur verteilen. Derzeit kann mit Swagger 2 \texttt{schemes}, \texttt{host} und \texttt{baseUrl} wie beim Quellcode \ref{LaTeXCode:openapi3.0-8} definiert werden, die in der URL zusammengefasst sind. 
 
@@ -206,7 +207,7 @@ Bei der Beschreibung der API können nun mehrere Hosts bereitgestellt werden, so
 }
 \end{LaTeXCode}
 
-Mit OpenAPI 3.0 können jetzt mehrere URLs vorhanden sein (siehe Quellcode \ref{LaTeXCode:openapi3.0-9}), die beliebig definiert werden können. Das bedeutet, dass wie zuvor nur einen an der Basis haben können oder ein bestimmter Endpunkt kann einen eigenen Server haben, wenn die Basis-URL unterschiedlich ist. Darüber hinaus ist das Templating von Pfaden jetzt zulässig.
+Mit OpenAPI 3.0 können jetzt mehrere URLs vorhanden sein (siehe Quellcode \ref{LaTeXCode:openapi3.0-9}), die beliebig definiert werden können, das heißt, dass wie zuvor nur eine URL an der Basis verwendet werden kann, oder ein bestimmter Endpunkt seinen eigenen Server haben kann, wenn die Basis-URL unterschiedlich ist.
 
 \begin{LaTeXCode}[caption={OpenAPI 3.0 - Server},captionpos=b, label=LaTeXCode:openapi3.0-9][numbers=none]
 {
@@ -274,7 +275,7 @@ Quellcode \ref{LaTeXCode:openapi3.0-11} zeigt, wie das \texttt{request body} in 
 
 \subsection{Beispiele Objekt (engl. Examples Object)}
 
-Parametern, Eigenschaften und Objekten Beispiele hinzugefügt werden, um die OpenAPI-Spezifikation des Web-Service klarer zu machen. Beispiele können von Tools und Bibliotheken gelesen werden, die die API auf irgendeine Weise verarbeiten. Ein API-Mocking-Tool kann beispielsweise Beispielwerte verwenden, um \texttt{Mock-Request} zu generieren\cite{openapiexample17}.
+Parameter, Eigenschaften und Beispielobjekte werden hinzugefügt, um die OpenAPI-Spezifikation des Web-Service klarer zu machen. Beispiele können von Tools und Bibliotheken gelesen werden, die die API auf irgendeine Weise verarbeiten. Ein API-Mocking-Tool kann beispielsweise Beispielwerte verwenden, um \texttt{Mock-Request} zu generieren\cite{openapiexample17}.
 
 \begin{LaTeXCode}[caption={OpenAPI 3.0 - Examples Object Beispiel},captionpos=b, label=LaTeXCode:openapi3.0-12][numbers=none]
 {
