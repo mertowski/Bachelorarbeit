@@ -22,7 +22,7 @@ Es wird angenommen, dass ein Entwickler die Kontonummern und Salden für die akt
 \begin{LaTeXCode}[caption={SQL Abfrage Beispiel 1},captionpos=b, label=LaTeXCode:inj1][numbers=none]
 String kontostandAbfrage = 
 "SELECT kontoNummer, kontostand FROM konten WHERE konto\_besitzer\_id = " 
-+ anfrage.gibParameter("user_id");
++ anfrage.gibParameter("benutzer_id");
 
 try
 {
@@ -46,7 +46,7 @@ SELECT kontonummer, kontostand FROM konten WHERE konto_besitzer_id = 150
 
 Indem auf der Seite neue Zeilen hinzugefügt werden, wird dies an die Datenbank übergeben und die Konten und Salden für Benutzer 150 werden zurückgegeben damit sie angezeigt werden können.
 
-Parameter \texttt{user\_id} kann von einem Angreifer so verändert werden, dass er wie bei der \ref{LaTeXCode:inj3} aufgefasst werden kann:
+Parameter \texttt{benutzer\_id} kann von einem Angreifer so verändert werden, dass er wie bei der \ref{LaTeXCode:inj3} aufgefasst werden kann:
 
 \begin{LaTeXCode}[caption={Parameter},captionpos=b, label=LaTeXCode:inj3][numbers=none]
 0 OR 1=1
@@ -62,7 +62,7 @@ Durch die Übergabe der Abfrage \ref{LaTeXCode:inj4} an die Datenbank werden all
 
 \subsubsection{Fehler in Authentifizierung und Session-Management}
 
-Angreifer können Passwörter oder Session-Token offenlegen oder so ausnutzen, dass die Identität anderer Benutzer angenommen werden kann, wenn Anwen-dungsfunktionen, die die Authentifizierung und das Session-Management umsetzen, falsch implementiert werden. Dabei können Angreifer Sicherheitslücken beim Session-Management oder bei der Authentifizierung (z. B. ungeschützte Nutzerkonten, Passwörter, Session-IDs) nutzen, um sich unautorisiert Zugang zu einer fremden Identität zu verschaffen. Authentifizierungs- und Session-Management-Entwickler vertrauen oft in eigene Lösungen, obwohl bekannt ist, dass dies besonders kompliziert ist und individuelle Lösungen anfällig sind. Hier können Fehler bei der Wiedererkennung des Benutzers, bei der Abmeldung und beim Passwortmanagement, bei Timeouts oder bei Sicherheitsabfragen auftreten. Solche Fehler sind schwierig aufzufinden. Außerdem können sie zur Kompromittierung von Benutzer-konten führen. Sobald ein Hacker erfolgreich ist, ist er im Besitz sämtlicher Rechte des Angegriffenen. Ein besonderes Augenmerk der Angreifer liegt hierbei auf privilegierten Zugängen \cite{owasp13top10}.\\
+Angreifer können Passwörter oder Session-Token offenlegen oder so ausnutzen, dass die Identität anderer Benutzer angenommen werden kann, wenn Anwendungsfunktionen, die die Authentifizierung und das Session-Management umsetzen, falsch implementiert werden. Dabei können Angreifer Sicherheitslücken beim Session-Management oder bei der Authentifizierung (z. B. ungeschützte Nutzerkonten, Passwörter, Session-IDs) nutzen, um sich unautorisiert Zugang zu einer fremden Identität zu verschaffen. Authentifizierungs- und Session-Management-Entwickler vertrauen oft in eigene Lösungen, obwohl bekannt ist, dass dies besonders kompliziert ist und individuelle Lösungen anfällig sind. Hier können Fehler bei der Wiedererkennung des Benutzers, bei der Abmeldung und beim Passwortmanagement, bei Timeouts oder bei Sicherheitsabfragen auftreten. Solche Fehler sind schwierig aufzufinden. Außerdem können sie zur Kompromittierung von Benutzerkonten führen. Sobald ein Hacker erfolgreich ist, ist er im Besitz sämtlicher Rechte des Angegriffenen. Ein besonderes Augenmerk der Angreifer liegt hierbei auf privilegierten Zugängen \cite{owasp13top10}.\\
 
 \textbf{Mögliche Angriffsszenarien:}\\
 
@@ -76,7 +76,7 @@ Die Session-ID wird nun durch eine Flugbuchungsanwendung   in die URL eingefügt
 Dieses Auktion wird von einem Benutzer mit seiner Freunde geteilt, aber er hat gleichzeitig auch seine \texttt{Session-ID} verrät, weil er den Auktion-URL per E-Mail geschickt hat. Aus diesem Grund  haben seine Freunde die Möglichkeit, seine \texttt{Session} sowie seine Kreditkarte benutzen.\\
 
 \textbf{\textit{Szenario 2:}}\\
-Die Konfiguration von Anwendungs-Timeouts wurde falsch eingestellt. Ein öffentlicher PC wird durch einen Anwender benutzt, um das Aufrufen der Anwendung zu realisieren. Der Anwender vergisst, die Logout-Funktion zu verwenden, und schließt nur den Browser. Das Konto wird erst nach einem bestimmten Zeitraum unauthentifi-ziert, d. h., ein Hacker hat die Möglichkeit, das Konto authentifiziert zu benutzen, wenn er den Browser innerhalb dieses Zeitraumes öffnet\cite{owasp13top10}.\\
+Die Konfiguration von Anwendungs-Timeouts wurde falsch eingestellt. Ein öffentlicher PC wird durch einen Anwender benutzt, um das Aufrufen der Anwendung zu realisieren. Der Anwender vergisst, die Logout-Funktion zu verwenden, und schließt nur den Browser. Das Konto wird erst nach einem bestimmten Zeitraum unauthentifiziert, d. h., ein Hacker hat die Möglichkeit, das Konto authentifiziert zu benutzen, wenn er den Browser innerhalb dieses Zeitraumes öffnet\cite{owasp13top10}.\\
 
 \subsubsection{Verlust der Vertraulichkeit sensibler Daten}
 
@@ -86,7 +86,7 @@ Viele Anwendungen bieten keinen ausreichenden Schutz für sensible Daten, wie Kr
 
 \textbf{\textit{Szenario 1:}}\\
 
-Während der Speicherung der Kreditkartendaten in einer Datenbank (oder Datensammlung) werden die Informationen automatisch in Geheimschrift ab-gefasst. Mittels dieses Prozesses können die verschlüsselten Daten (in diesem Fall Kreditkartendaten) durch eine SQL-Injektion automatisch entschlüsselt werden. Dagegen könnten solche Informationen mit einem Public-Key-Verfahren verschlüsselt werden, d. h., die Entschlüsselung der Kreditkartendaten kann nur durch die nachgelagerte Anwendung mit einem Private Key  erfolgen\cite{owasp13top10}.\\
+Während der Speicherung der Kreditkartendaten in einer Datenbank (oder Datensammlung) werden die Informationen automatisch in Geheimschrift abgefasst. Mittels dieses Prozesses können die verschlüsselten Daten (in diesem Fall Kreditkartendaten) durch eine SQL-Injektion automatisch entschlüsselt werden. Dagegen könnten solche Informationen mit einem Public-Key-Verfahren verschlüsselt werden, d. h., die Entschlüsselung der Kreditkartendaten kann nur durch die nachgelagerte Anwendung mit einem Private Key  erfolgen\cite{owasp13top10}.\\
 
 \textbf{\textit{Szenario 2:}}\\
 
@@ -105,8 +105,8 @@ Der Angreifer versucht, Daten vom Server zu extrahieren\cite[10]{owasp17top10}:\
 
 \begin{LaTeXCode}[caption={XML-Beispiel},captionpos=b, label=LaTeXCode:xxe1][numbers=none]
 <?xml version="1.1" encoding="UTF-8"?>
-<!DOCTYPE example [
-<!ELEMENT example ANY >
+<!DOCTYPE beispiel [
+<!ELEMENT beispiel ANY >
 <!ENTITY xxe SYSTEM "dokumenten:///etc/passwoerter" >]>
 <example>\&xxe;</example>
 \end{LaTeXCode}
@@ -127,7 +127,7 @@ Ein Angreifer versucht einen Denial-of-Service-Angriff, indem er eine möglicher
 
 \subsubsection{Broken Access Control}
 
-Einschränkungen im Handlungsspielraum von authentifizierten Benutzern wer-den häufig nicht konsequent und ordnungsgemäß durchgesetzt. Angreifer können diese Ungenauigkeiten oftmals ausnutzen, um auf nichtautorisierte Funktionen und Daten zugreifen zu können. Die Manipulation der für die Zugriffskontrolle notwendigen Elemente ist eine Kernkompetenz von Angreifern. Static-Application-Security-Testing-Tools sind in der Lage, das Fehlen einer Zugriffskontrolle zu erkennen. Sie können jedoch nicht überprüfen, ob diese funktionsfähig ist, wenn sie vorhanden ist. Ohne automatisierte Erkennungen und wirkungsvolle Funktionstests von Entwicklern bleiben Schwachstellen bei Zugriffskontrollen häufig bestehen. Die Erkennung solcher Kontrollen ist normalerweise weder für automatisierte statische noch für dynamische Tests geeignet. Die technische Auswirkung besteht darin, dass Angreifer sich als Benutzer oder Administrator maskieren, indem sie jegliche Datensätze erstellen, auf diese zugreifen, sie aktualisieren oder gar löschen\cite[11]{owasp17top10}.\\
+Einschränkungen im Handlungsspielraum von authentifizierten Benutzern werden häufig nicht konsequent und ordnungsgemäß durchgesetzt. Angreifer können diese Ungenauigkeiten oftmals ausnutzen, um auf nichtautorisierte Funktionen und Daten zugreifen zu können. Die Manipulation der für die Zugriffskontrolle notwendigen Elemente ist eine Kernkompetenz von Angreifern. Static-Application-Security-Testing-Tools sind in der Lage, das Fehlen einer Zugriffskontrolle zu erkennen. Sie können jedoch nicht überprüfen, ob diese funktionsfähig ist, wenn sie vorhanden ist. Ohne automatisierte Erkennungen und wirkungsvolle Funktionstests von Entwicklern bleiben Schwachstellen bei Zugriffskontrollen häufig bestehen. Die Erkennung solcher Kontrollen ist normalerweise weder für automatisierte statische noch für dynamische Tests geeignet. Die technische Auswirkung besteht darin, dass Angreifer sich als Benutzer oder Administrator maskieren, indem sie jegliche Datensätze erstellen, auf diese zugreifen, sie aktualisieren oder gar löschen\cite[11]{owasp17top10}.\\
 
 \textbf{Mögliche Angriffsszenarien:}\\
 \\
@@ -299,7 +299,7 @@ Clickjacking nennt man den Versuch, einen Nutzer dazu zu bringen, auf schädlich
 \\
 \textbf{\textit{Szenario 1:}}\\
 
-Bei diesem HTML-Code gibt es nur ein Formular mit einem ‚Absenden‘-Button. Durch das Verwenden dieses Buttons wird die Aktion \texttt{dotransfer} vorgenommen, die dazu führt, dass der Benutzer zur Anschauung weitergeleitet wird\cite{cjd13}.\\
+Bei diesem HTML-Code gibt es nur ein Formular mit einem \texttt{Absenden}-Button. Durch das Verwenden dieses Buttons wird die Aktion \texttt{dotransfer} vorgenommen, die dazu führt, dass der Benutzer zur Anschauung weitergeleitet wird\cite{cjd13}.\\
 
 
 \begin{LaTeXCode}[caption={Opferseite},captionpos=b, label=LaTeXCode:cj1][numbers=none]
@@ -348,7 +348,7 @@ Durch CSS (Cascading Style Sheets) ist es möglich das Iframe semitransparent zu
 }
 \end{LaTeXCode}
 
-Das führt dazu, dass der Benutzer nur noch den Button mit der Aufschrift ‚Gewinn eines Smartphones‘ sieht. Darüber liegt jedoch das transparente Iframe. Möchte der Benutzer seinen vermeintlichen Gewinn in Anspruch nehmen, betätigt er nicht den Gewinnbutton, sondern den ‚Absenden‘-Button im Iframe. Damit wird die Aktion im Hintergrund ausgeführt, was vom Hacker genau so beabsichtigt  ist\cite{cjd13}.\\
+Das führt dazu, dass der Benutzer nur noch den Button mit der Aufschrift ‚Gewinn eines Smartphones‘ sieht. Darüber liegt jedoch das transparente Iframe. Möchte der Benutzer seinen vermeintlichen Gewinn in Anspruch nehmen, betätigt er nicht den Gewinnbutton, sondern den \texttt{Absenden}-Button im Iframe. Damit wird die Aktion im Hintergrund ausgeführt, was vom Hacker genau so beabsichtigt  ist\cite{cjd13}.\\
 
 \subsubsection{Remote File Upload}
 
@@ -377,7 +377,7 @@ Das Common Vulnerability Scoring System (CVSS) ist ein Framework zur Bewertung d
 
 \subsection{Common Vulnerabilities and Exposures (CVE)}
 
-Das Common-Vulnerabilities-and-Exposure(CVE)-System identifiziert alle Schwachstellen und Bedrohungen, die mit der Sicherheit von Informationssystemen zusammenhängen. Zu diesem Zweck wird jeder Schwachstelle ein eindeutiger Bezeichner zugewiesen. Ziel ist es, ein Wör-terbuch zu erstellen, das alle Schwachstellen auflistet und jeweils eine kurze Beschreibung sowie eine Reihe von Links enthält, die Benutzer für weitere Details anzeigen können\cite{cve18}.\\
+Das Common-Vulnerabilities-and-Exposure(CVE)-System identifiziert alle Schwachstellen und Bedrohungen, die mit der Sicherheit von Informationssystemen zusammenhängen. Zu diesem Zweck wird jeder Schwachstelle ein eindeutiger Bezeichner zugewiesen. Ziel ist es, ein Wörterbuch zu erstellen, das alle Schwachstellen auflistet und jeweils eine kurze Beschreibung sowie eine Reihe von Links enthält, die Benutzer für weitere Details anzeigen können\cite{cve18}.\\
 
 
 

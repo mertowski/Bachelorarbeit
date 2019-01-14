@@ -16,7 +16,7 @@ Mit der OpenAPI Specification Version 3.0 wurde die Gesamtstruktur des Dokuments
 	\label{openapi2u317-1}
 \end{figure}
 
-\subsection{Versionsbezeichner (engl. Version Identifier)}
+\subsection{Versionsbezeichner (engl.: \textit{Version Identifier})}
 
 Version ist eine beliebige Zeichenfolge, die die Version von API angibt\cite{openapiversion17}. In 2.0 spec gibt es eine Eigenschaft namens \texttt{swagger}, die die Version der Spezifikation angibt, zum Beispiel:\\
 
@@ -24,17 +24,17 @@ Version ist eine beliebige Zeichenfolge, die die Version von API angibt\cite{ope
 "swagger": "2.0"\\
 \end{LaTeXCode}
 
-Die Versionseigenschaft, die von 2.0 als Swagger bezeichnet wurde, wird in Version 3.0 durch eine Versionskennung von Open API ersetzt.\\
+Die Versionseigenschaft, die von 2.0 als Swagger bezeichnet wurde, wird in Version 3.0 durch eine Versionskennung von Open API ersetzt\cite{swagger20Github, openapi20Github}.\\
 
 \begin{LaTeXCode}[caption={Version von Open API},captionpos=b, label=LaTeXCode:openapi3.0-1][numbers=none]
 "openapi": "3.0.0"\\
 \end{LaTeXCode}
 
-\subsection{Komponenten (engl. Components)}
+\subsection{Komponenten (engl.: \textit{Components})}
 
 Oft haben mehrere API-Operationen gemeinsame Parameter oder geben dieselbe Antwortstruktur zurück. Um Code-Duplizierungen zu vermeiden, können die allgemeinen Definitionen in den Abschnitt für globale Komponenten eingefügt und mit \$ref referenziert werden. Komponenten dienen als Container für verschiedene wiederverwendbare Definitionen. Die Definitionen in Komponenten haben keine direkten Auswirkungen auf die API\cite{openapicomponents17}.\\
 
-Swagger 2.0 enthält separate Abschnitte für wiederverwendbare Komponenten wie \texttt{"`definitions"'}, \texttt{"`parameters"'}, \texttt{"`responses"'} und \texttt{"`securityDefinitions"'}.\\
+Swagger 2.0 enthält separate Abschnitte für wiederverwendbare Komponenten wie \texttt{definitions}, \texttt{parameters}, \texttt{responses} und \texttt{securityDefinitions}\cite{swagger20Github}.\\
 
 \begin{LaTeXCode}[caption={Open API 2.0 - Komponenten\cite{openapicomponents17}},captionpos=b, label=LaTeXCode:openapi3.0-2][numbers=none]
 // Swagger 2.0    
@@ -44,7 +44,7 @@ Swagger 2.0 enthält separate Abschnitte für wiederverwendbare Komponenten wie 
 '#/responses/ErrorResponse'
 \end{LaTeXCode}
 
-In OpenAPI 3.0 wurden wiederverwendbare Komponenten in Komponenten verschoben. Außerdem wurden Definitionen als Schemas umbenannt und \texttt{securityDefinitions} als \texttt{securitySchemes} umbenannt.\\
+In OpenAPI 3.0 wurden wiederverwendbare Komponenten in Komponenten verschoben. Außerdem wurden Definitionen als Schemas umbenannt und \texttt{securityDefinitions} als \texttt{securitySchemes} umbenannt\cite{openapi20Github}.\\
 
 \begin{LaTeXCode}[caption={Open API 3.0 - Komponenten\cite{openapicomponents17}},captionpos=b, label=LaTeXCode:openapi3.0-3][numbers=none]
 // OpenAPI 3.0
@@ -54,9 +54,9 @@ In OpenAPI 3.0 wurden wiederverwendbare Komponenten in Komponenten verschoben. A
 '#/components/responses/ErrorResponse'
 \end{LaTeXCode}
 
-Swagger 2.0 hat das Konzept der Definitionen, die jedoch inkonsistent und sind nicht klar definiert sind. OpenAPI 3.0 versucht, das Konzept in Komponenten zu standardisieren, bei denen es sich um definierbare Objekte handelt, die an mehreren Stellen wiederverwendet werden können. Wenn für mehrere Operationen einer API eine ähnliche Eingabestruktur erforderlich ist, kann die Eingabestruktur unter der Komponente als Anforderungstext definiert und in mehreren Pfaden wiederverwendet werden. Ebenso können Header, Antworten usw. auch wiederverwendet werden. Dies ist wichtig, da dadurch einige wesentliche Wiederverwendungsvorteile hinzugefügt werden, die in Version 2.0 nicht möglich sind.\\
+Swagger 2.0 hat das Konzept der Definitionen, die jedoch inkonsistent und sind nicht klar definiert sind. OpenAPI 3.0 versucht, das Konzept in Komponenten zu standardisieren, bei denen es sich um definierbare Objekte handelt, die an mehreren Stellen wiederverwendet werden können. Wenn für mehrere Operationen einer API eine ähnliche Eingabestruktur erforderlich ist, kann die Eingabestruktur unter der Komponente als Anforderungstext definiert und in mehreren Pfaden wiederverwendet werden. Ebenso können Header, Antworten usw. auch wiederverwendet werden. Dies ist wichtig, da dadurch einige wesentliche Wiederverwendungsvorteile hinzugefügt werden, die in Version 2.0 nicht möglich sind\cite{swagger20Github, openapi20Github}.\\
 
-\subsubsection{Anfrage-Format (engl. Request Format)}
+\subsubsection{Anfrage-Format (engl.: \textit{Request Format})}
 
 Anfrage-Body wird in der Regel für \texttt{Erstellen} und \texttt{Aktualisieren} von Operationen (\texttt{POST}, \texttt{PUT}, \texttt{PATCH}) verwendet. Wenn eine Ressource mit \texttt{POST} oder \texttt{PUT} erstellt wird, enthält der Anforderungshauptteil normalerweise die Darstellung der Ressource, die erstellt werden soll\cite{openapirequestbody17}.\\
 
@@ -81,7 +81,7 @@ Einer der verwirrendsten Aspekte von Swagger 2 war \texttt{body/formData}.
 	}
 \end{LaTeXCode}
 
-Bei dem OpenAPI 3.0 wird \texttt{body} in seinen eigenen Abschnitt mit dem Namen \texttt{requestBody} verschoben und \texttt{formData} wurde darin zusammengeführt. Zusätzlich wurden \texttt{cookies} als Parametertyp hinzugefügt.
+Bei dem OpenAPI 3.0 wird \texttt{body} in seinen eigenen Abschnitt mit dem Namen \texttt{requestBody} verschoben und \texttt{formData} wurde darin zusammengeführt. Zusätzlich wurden \texttt{cookies} als Parametertyp hinzugefügt\cite{openapi20Github}.
 
 \begin{LaTeXCode}[caption={Open API 3.0 - Anfrage-Format},captionpos=b, label=LaTeXCode:openapi3.0-5][numbers=none]
 {
@@ -114,13 +114,13 @@ Bei dem OpenAPI 3.0 wird \texttt{body} in seinen eigenen Abschnitt mit dem Namen
 
 Der \texttt{requestBody} hat viele neue Funktionen. Man kann ein Beispiel (oder ein Liste von Beispielen) für \texttt{requestBody} angeben. angeben. Hier besteht Flexibilität: Man kann dem Beispiel ein vollständiges Beispiel, eine Referenz oder sogar eine URL übergeben.
 
-Der neue \texttt{requestBody} unterstützt verschiedene Medientypen (Inhalt ist ein Array von Mimetypen wie \texttt{application/json} oder \texttt{text/plain}).
+Der neue \texttt{requestBody} unterstützt verschiedene Medientypen (Inhalt ist ein Array von Mimetypen wie \texttt{application/json} oder \texttt{text/plain})\cite{openapi20Github}.
 
-\subsubsection{Antwort-Format (engl. Response Format)}
+\subsubsection{Antwort-Format (engl.: \textit{Response Format})}
 
 Eine API-Spezifikation muss die Antworten für alle API-Vorgänge angeben. Für jede Operation muss mindestens eine Antwort, in der Regel eine erfolgreiche Antwort, definiert sein. Eine Antwort wird durch ihren HTTP-Statuscode definiert und die Daten werden im \texttt{response body} oder in den Kopfzeilen zurückgegeben. Bei den Antworten beginnt jede Antwortdefinition mit einem Statuscode, z. B. 200 oder 404. Eine Operation gibt normalerweise einen erfolgreichen Statuscode und einen oder mehrere Fehlerstatus zurück\cite{openapiresponsebody17}.
 
-Bei dem OpenAPI 3.0 wird  auch Antwort-Format aktualisiert. Man kann nun eine Antwort wie bei dem Quelcode \ref{LaTeXCode:openapi3.0-6} definieren, anstatt jede Antwort separat definieren zu müssen.
+Bei dem OpenAPI 3.0 wird  auch Antwort-Format aktualisiert. Man kann nun eine Antwort wie bei dem Quelcode \ref{LaTeXCode:openapi3.0-6} definieren, anstatt jede Antwort separat definieren zu müssen\cite{openapi20Github}.
 
 \begin{LaTeXCode}[caption={Open API 3.0 - Antwort-Format},captionpos=b, label=LaTeXCode:openapi3.0-6][numbers=none]
 {
@@ -142,12 +142,12 @@ Bei dem OpenAPI 3.0 wird  auch Antwort-Format aktualisiert. Man kann nun eine An
 \end{LaTeXCode}
 
 
-\subsubsection{Verlinkung (engl. Linking)}
+\subsubsection{Verlinkung (engl.: \textit{Linking})}
 
 Mit Links kann beschrieben werden, wie verschiedene Werte, die von einer Operation zurückgegeben werden, als Eingabe für andere Operationen verwendbar sind\cite{openapilinks17}.
 
 
-Die OpenAPI 3.0 Spezifikation unterstützt das Verknüpfen, sodass Beziehungen zwischen Pfaden gründlich beschrieben werden können und diese Version somit bisher am widerstandsfähigsten ist. Man kann Verlinkungen verwenden, um zu zeigen, wie man die ID erweitert und die vollständige Adresse erhält.
+Die OpenAPI 3.0 Spezifikation unterstützt das Verknüpfen, sodass Beziehungen zwischen Pfaden gründlich beschrieben werden können und diese Version somit bisher am widerstandsfähigsten ist. Man kann Verlinkungen verwenden, um zu zeigen, wie man die ID erweitert und die vollständige Adresse erhält\cite{openapi20Github}.
 
 \begin{LaTeXCode}[caption={Open API 3.0 - Verlinkungen},captionpos=b, label=LaTeXCode:openapi3.0-7][numbers=none]
 {
@@ -169,7 +169,7 @@ Die OpenAPI 3.0 Spezifikation unterstützt das Verknüpfen, sodass Beziehungen z
 
 Wie bei dem Quellcode \ref{LaTeXCode:openapi3.0-7} gezeigt, erhält man nach der Verwendung von \texttt{GET} auf \texttt{/benutzern/{benutzerId}} die Antwort \texttt{beispielId}. Die Verlinkung beschreibt, wie man das \texttt{Beispiel} erhält, indem man auf \texttt{\$response.body\#/beispielID} verweist.
 
-\subsubsection{Rückrufe (engl. Callbacks)}
+\subsubsection{Rückrufe (engl.: \textit{Callbacks})}
 
 Bei dem OpenAPI 3.0 können jetzt Rückrufe wie bei dem Quelcode \ref{LaTeXCode:openapi3.0-10} definiert werden. Das Rückruf-Objekt kann für jede übergeordnete Operation definiert werden, wodurch die Daten, die ein bestimmter Rückruf tragen kann, sehr flexibel sind. Darüber hinaus wird auch ein Rückruf-Objekt bereitgestellt, mit dem eine Zuordnung von Rückrufen definiert werden kann.
 
@@ -184,14 +184,14 @@ Content-Type: application/json
 }
 \end{LaTeXCode}
 
-Diese Beschreibung vereinfacht die Kommunikation zwischen verschiedenen Servern und hilft, die Verwendung von Callbacks in der API zu standardisieren.
+Diese Beschreibung vereinfacht die Kommunikation zwischen verschiedenen Servern und hilft, die Verwendung von Callbacks in der API zu standardisieren\cite{openapi20Github}.
 
 \subsection{Servers}
 
 Der Abschnitt \texttt{Server} gibt den API-Server und die Basis-URL (Base URL) an. Es kann einer oder mehrere Server definiert werden, z. B. Produktion und Sandbox\cite{openapiserver17}. Alle API-Endpunkte basieren auf der Basis-URL. Wenn die Basis URL z.B. \texttt{https://api.example.com/v1} ist, ist der Endpunkt (\texttt{/users})\\
  \texttt{https://api.example.com/v1/users}\cite{openapiapiserverundbaseurl17}.\\
 
-Bei der Beschreibung der API können nun mehrere Hosts bereitgestellt werden, sodass besser mit der Komplexität umgegangen werden kann, wie sich APIs an einem einzelnen Standort befinden oder sich auf mehrere Cloud-Standorte und die globale Infrastruktur verteilen. Derzeit kann mit Swagger 2 \texttt{schemes}, \texttt{host} und \texttt{baseUrl} wie beim Quellcode \ref{LaTeXCode:openapi3.0-8} definiert werden, die in der URL zusammengefasst sind. 
+Bei der Beschreibung der API können nun mehrere Hosts bereitgestellt werden, sodass besser mit der Komplexität umgegangen werden kann, wie sich APIs an einem einzelnen Standort befinden oder sich auf mehrere Cloud-Standorte und die globale Infrastruktur verteilen. Derzeit kann mit Swagger 2 \texttt{schemes}, \texttt{host} und \texttt{baseUrl} wie beim Quellcode \ref{LaTeXCode:openapi3.0-8} definiert werden, die in der URL zusammengefasst sind\cite{swagger20Github, openapi20Github}. 
 
 \begin{LaTeXCode}[caption={Swagger 2.0 - Server},captionpos=b, label=LaTeXCode:openapi3.0-8][numbers=none]
 {
@@ -207,7 +207,7 @@ Bei der Beschreibung der API können nun mehrere Hosts bereitgestellt werden, so
 }
 \end{LaTeXCode}
 
-Mit OpenAPI 3.0 können jetzt mehrere URLs vorhanden sein (siehe Quellcode \ref{LaTeXCode:openapi3.0-9}), die beliebig definiert werden können, das heißt, dass wie zuvor nur eine URL an der Basis verwendet werden kann, oder ein bestimmter Endpunkt seinen eigenen Server haben kann, wenn die Basis-URL unterschiedlich ist.
+Mit OpenAPI 3.0 können jetzt mehrere URLs vorhanden sein (siehe Quellcode \ref{LaTeXCode:openapi3.0-9}), die beliebig definiert werden können, das heißt, dass wie zuvor nur eine URL an der Basis verwendet werden kann, oder ein bestimmter Endpunkt seinen eigenen Server haben kann, wenn die Basis-URL unterschiedlich ist\cite{openapi20Github}.
 
 \begin{LaTeXCode}[caption={OpenAPI 3.0 - Server},captionpos=b, label=LaTeXCode:openapi3.0-9][numbers=none]
 {
@@ -273,7 +273,7 @@ OpenAPI 3.0 bietet mehrere Schlüsselwörter, mit denen die Schemas kombiniert w
 
 Quellcode \ref{LaTeXCode:openapi3.0-11} zeigt, wie das \texttt{request body} in der Aktualisierungsoperation überprüft wird. Es wird verwendet, um zu überprüfen, dass das \texttt{request body} alle erforderlichen Informationen zu dem zu aktualisierenden Objekt enthält, abhängig vom Objekttyp.
 
-\subsection{Beispiele Objekt (engl. Examples Object)}
+\subsection{Beispiele Objekt (engl.: \textit{Examples Object})}
 
 Parameter, Eigenschaften und Beispielobjekte werden hinzugefügt, um die OpenAPI-Spezifikation des Web-Service klarer zu machen. Beispiele können von Tools und Bibliotheken gelesen werden, die die API auf irgendeine Weise verarbeiten. Ein API-Mocking-Tool kann beispielsweise Beispielwerte verwenden, um \texttt{Mock-Request} zu generieren\cite{openapiexample17}.
 
@@ -301,9 +301,9 @@ Parameter, Eigenschaften und Beispielobjekte werden hinzugefügt, um die OpenAPI
 			}
 \end{LaTeXCode}
 
-Bei dem OpenAPI 3.0 wurden die Möglichkeiten zur Beschreibung von Beispielen erheblich erweitert. In der vorherigen Spezifikation (Swagger 2.0) wurde angegeben, dass Beispiele nur von einem JSON- oder YAML-Objekt beschrieben werden können. Bei dem OpenAPI 3.0 kann nun durch Verwendung einer \texttt{json string} jedes Beispielformat beschrieben werden. Darüber hinaus kann ein \texttt{\$ref}-Objekt verwendet werden, um auf externe Dateien mit Beispielen zu verweisen.
+Bei dem OpenAPI 3.0 wurden die Möglichkeiten zur Beschreibung von Beispielen erheblich erweitert. In der vorherigen Spezifikation (Swagger 2.0) wurde angegeben, dass Beispiele nur von einem JSON- oder YAML-Objekt beschrieben werden können. Bei dem OpenAPI 3.0 kann nun durch Verwendung einer \texttt{json string} jedes Beispielformat beschrieben werden. Darüber hinaus kann ein \texttt{\$ref}-Objekt verwendet werden, um auf externe Dateien mit Beispielen zu verweisen\cite{swagger20Github, openapi20Github}.
 
-\subsection{Sicherheit (engl. Security)}
+\subsection{Sicherheit (engl.: \textit{Security})}
 
 Die Sicherheit wird anhand der Schlüsselwörter \texttt{securitySchemes} und \texttt{security} beschrieben. Es werden mit securitySchemes alle Sicherheitsschemata definiert, die die API unterstützt. Die Sicherheit wird verwendet, um bestimmte Schemas auf die gesamte API oder einzelne Vorgänge anzuwenden\cite{openapisecurity17}: 
 
@@ -322,7 +322,7 @@ Die Sicherheit wird anhand der Schlüsselwörter \texttt{securitySchemes} und \t
 			}
 \end{LaTeXCode}
 
-Bei dem OpenAPI 3.0 wurde \texttt{securityDefinitions} (siehe \ref{LaTeXCode:openapi3.0-13}) in \texttt{securitySchemes} umbenannt und in die \texttt{Components} verschoben. Außerdem ist \texttt{http} ein übergeordneter Typ für alle \texttt{HTTP security scheme} wie \texttt{basic}, \texttt{bearer} und \texttt{other}.
+Bei dem OpenAPI 3.0 wurde \texttt{securityDefinitions} (siehe \ref{LaTeXCode:openapi3.0-13}) in \texttt{securitySchemes} umbenannt und in die \texttt{Components} verschoben. Außerdem ist \texttt{http} ein übergeordneter Typ für alle \texttt{HTTP security scheme} wie \texttt{basic}, \texttt{bearer} und \texttt{other}\cite{openapi20Github}.
 
 
 

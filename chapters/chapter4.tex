@@ -148,9 +148,9 @@ Nachfolgend wird die SQL-Injektion mit SQLiv und SQLMAP nach dem Tutorial von \c
 
 Vor dem Injektionsangriff muss sichergestellt werden, dass der Server oder das Ziel eine Sicherheitslücke in der Datenbank hat. Um Sicherheitslücken in Datenbanken zu finden, können verschiedene Methoden verwendet werden. Eine Methode ist Google Dorking, die hauptsächlich von Hackern und Penetrationstestern verwendet wird. Es gibt ein Werkzeug, das dies automatisch erledigt. Das Tool muss jedoch erst installiert werden. Es heißt SQLiv (SQL Injection Vulnerability Scanner).\\
 
-\textbf{Schritt 1: Finden von SQL-Injection-Schwachstelle}
+\textbf{Schritt 1: Finden von SQL-Injektion-Schwachstelle}
 
-Es wird Google Dorking verwendet, um die SQL-Injektionslücke in Zielen zu suchen und zu finden. SQLiv durchsucht jedes einzelne Ziel und sucht nach einer E-Commerce-Sicherheitsschwachstelle unter dem folgenden URL-Muster \texttt{''item.php?id=''}.\\
+Es wird Google Dorking verwendet, um die SQL-Injektionslücke in Zielen zu suchen und zu finden. SQLiv durchsucht jedes einzelne Ziel und sucht nach einer E-Commerce-Sicherheitsschwachstelle unter dem folgenden URL-Muster \texttt{''artikel.php?id=''}.\\
 
 \begin{LaTeXCode}[caption={Google Dorking mit SQLiv \cite{ramadhan17sqlinj}},captionpos=b, label=LaTeXCode:gdsqliv][numbers=none]
 ~# sqliv -d inurl:artikel.php?id= -e google -p 200
@@ -213,7 +213,7 @@ Das Ergebnis sollte so aussehen:
 	\caption{Ergebnis: Tabellenname}
 \end{table}
 
-Bisher wurde festgestellt, dass die Webseite \texttt{acfurniture.com} zwei Datenbanken aufweist, \texttt{acfurniture} und \texttt{information\_schema}. Die Datenbank \texttt{acfurniture} enthält vier Tabellen: \texttt{category}, \texttt{product}, \texttt{product\_hacked} und settings.
+Bisher wurde festgestellt, dass die Webseite \texttt{acfurniture.com} zwei Datenbanken aufweist, \texttt{acfurniture} und \texttt{information\_schema}. Die Datenbank \texttt{acfurniture} enthält vier Tabellen: \texttt{category}, \texttt{product}, \texttt{product\_hacked} und settings.\\
 
 \textbf{C. Spalten aufdecken}\\
 
@@ -547,15 +547,15 @@ Hier gibt es einen URL-Abschnitt, in dem das Ziel für das Scannen angegeben wer
 \end{flushleft}
 Dieser Abschnitt enthält sechs Tabs, die für die Darstellung der Aktivitäten während der Schwachstellensuche wichtig sind. Unter den Tabs befindet sich eine Fortschrittsleiste, in der der Scanfortschritt, die Anzahl der gesendeten Anforderungen und der Export der Details im CSV-Format angezeigt werden.\\
 
-Das Tab \textbf{"`History"'} zeigt die getesteten Webseiten an. In diesem Fall testen wir nur ein einzelnes Ziel, sodass im Verlaufsdatensatz ein einzelner Eintrag angezeigt wird.\\
+Das Tab \textbf{History} zeigt die getesteten Webseiten an. In diesem Fall testen wir nur ein einzelnes Ziel, sodass im Verlaufsdatensatz ein einzelner Eintrag angezeigt wird.\\
 
-Auf dem Tab \textbf{"`Search"'} kann der Tester Suche nach Mustern durchführen. Zum Beispiel werden alle GET-Anfragen abgefragt und die dazu gehörenden Informationen werden angezeigt.\\
+Auf dem Tab \textbf{Search} kann der Tester Suche nach Mustern durchführen. Zum Beispiel werden alle GET-Anfragen abgefragt und die dazu gehörenden Informationen werden angezeigt.\\
 
-Auf dem Tab \textbf{"`Alerts"'} können weitere Informationen zu den erkannten Sicherheitslücken des gescannten Ziels gefunden werden und die Ausgaben werden nach Schweregrad eingestuft.\\
+Auf dem Tab \textbf{Alerts} können weitere Informationen zu den erkannten Sicherheitslücken des gescannten Ziels gefunden werden und die Ausgaben werden nach Schweregrad eingestuft.\\
 
-Auf dem Tab \textbf{"`Spider"'} werden die Dateien angezeigt, die in der Webanwendung gecrawlt (erkannt) wurden. Durch den Spider werden die auf der Webseite residenten Verzeichnisse und Dateien ermittelt und für eine spätere Überprüfung auf Schwachstellen protokolliert.\\
+Auf dem Tab \textbf{Spider} werden die Dateien angezeigt, die in der Webanwendung gecrawlt (erkannt) wurden. Durch den Spider werden die auf der Webseite residenten Verzeichnisse und Dateien ermittelt und für eine spätere Überprüfung auf Schwachstellen protokolliert.\\
 
-Das letzte Tab ist der \textbf{"`Active Scan"'}. Dieser ist wichtig, um den Fortschritt des laufenden Scans in Echtzeit zu demonstrieren, wobei jede verarbeitete Datei angezeigt wird.\\
+Das letzte Tab ist der \textbf{Active Scan}. Dieser ist wichtig, um den Fortschritt des laufenden Scans in Echtzeit zu demonstrieren, wobei jede verarbeitete Datei angezeigt wird.\\
 
 \subsubsection{Schneller Scan \& Angriff}
 
@@ -579,7 +579,7 @@ Dadurch wird die gesamte Zielwebsite gesichtet und anschließend nach Schwachste
 	\label{quickscan3}
 \end{figure}
 
-Wenn das Active Scan fertig ist, wird auf "`Alerts"' geklickt, um Sicherheitsprobleme der Website wie folgt anzuzeigen:
+Wenn das Active Scan fertig ist, wird auf Alerts geklickt, um Sicherheitsprobleme der Website wie folgt anzuzeigen:
 
 \begin{figure}[h]
 	\centering
