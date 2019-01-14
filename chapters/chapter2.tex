@@ -141,7 +141,7 @@ REST gilt als ein Architekturstil, der Einschränkungen wie die einheitliche Sch
 
 \textbf{Ressourcenidentifikation durch URI:} Ein RESTful-Webservice macht eine Vielzahl von Ressourcen verfügbar, die die Ziele der Interaktion mit ihren Clients identifizieren. Ressourcen werden durch URIs identifiziert, die einen globalen Adressierungsraum für die Ressourcen- und Serviceerkennung bereitstellen\cite{rws13od}.\\
 
-\textbf{Einheitliche Schnittstelle:} Ressourcen werden mit einem festen Satz von vier Operationen zum Erstellen, Lesen, Aktualisieren und Löschen bearbeitet: PUT, GET, POST und DELETE. \textbf{PUT} erstellt eine neue Ressource, die mit \textbf{DELETE} gelöscht werden kann. \textbf{GET} ruft den aktuellen Status einer Ressource in einer Darstellung ab. \textbf{POST} überträgt einen neuen Status auf eine Ressource\cite{rws13od}.\\
+\textbf{Einheitliche Schnittstelle:} Ressourcen werden mit einem festen Satz von vier Operationen zum Erstellen, Lesen, Aktualisieren und Löschen bearbeitet: PUT, GET, POST und DELETE. \textbf{PUT} ändert eine vorhandene Ressource, die mit \textbf{DELETE} gelöscht werden kann. \textbf{GET} ruft den aktuellen Status einer Ressource in einer Darstellung ab. \textbf{POST} erzeugt neue Ressourcen\cite{rws13od}.\\
 
 \textbf{Selbstbeschreibende Nachrichten:} Ressourcen sind von ihrer Darstellung entkoppelt, sodass auf ihren Inhalt in verschiedenen Formaten wie HTML, XML, Nur-Text, PDF, JPEG, JSON und anderen zugegriffen werden kann. Metadaten über die Ressource sind verfügbar und werden beispielsweise verwendet, um das Zwischenspeichern zu steuern, Übertragungsfehler zu erkennen, das geeignete Repräsentationsformat auszuhandeln und eine Authentifizierung oder Zugriffssteuerung durchzuführen\cite{rws13od}.\\
 
@@ -167,9 +167,9 @@ Das Spring-Web-MVC-Framework stellt eine Model-View-Controller (MVC)-Architektur
 
 \paragraph{Spring REST Docs}\mbox{}\\
 
-Spring REST Docs verwendet Snippets\footnote{Spring REST Docs verwendet Spring REST Assured, um Anforderungen an den Dienst zu stellen, die dokumentiert werden.}, die von Tests erstellt wurden, die mit Spring-MVC-Testframework, Spring WebTestClient von WebFlux oder REST Assured 3 geschrieben wurden. Dieser Test-driven-Ansatz hilft dabei, die Genauigkeit der Service-Dokumentation zu gewährleisten. Das Ziel von Spring REST Docs ist es, Dokumentationen für RESTful-Services zu erstellen, die genau und lesbar sind. Bei der Dokumentation eines RESTful-Services geht es hauptsächlich um die Beschreibung seiner Ressourcen. Zwei wichtige Teile der Beschreibung jeder Ressource sind die Details der HTTP-Anforderungen, die sie verbraucht, und die HTTP-Antworten, die sie erzeugt\cite{srd18wilkinson}.
+Spring REST Docs verwendet Snippets\footnote{Spring REST Docs verwendet Spring REST Assured, um Anforderungen an den Dienst zu stellen, die dokumentiert werden.}, die von Tests erstellt wurden, die mit Spring-MVC-Testframework, Spring WebTestClient von WebFlux oder REST Assured 3 geschrieben wurden. Dieser Test-driven-Ansatz hilft dabei, die Genauigkeit der Service-Dokumentation zu gewährleisten. Das Ziel von Spring REST Docs ist es, Dokumentationen für RESTful-Services zu erstellen, die genau und lesbar sind. Bei der Dokumentation eines RESTful-Services geht es hauptsächlich um die Beschreibung seiner Ressourcen. Zwei wichtige Teile der Beschreibung jeder Ressource sind die Details der HTTP-Anforderungen, die sie benötigt und die HTTP-Antworten, die sie erzeugt\cite{srd18wilkinson}.
 
-\subsection{Modellbasierter Ansatz für REST-Schnittstellen}
+\subsection{Modellbasierter Ansätze für REST-Schnittstellen}
 
 Für viele verschiedene Einsatzgebiete gibt es verschiedene Modellierungssprachen für die Erstellung und Beschreibung von REST-Schnittstellen. In diesem Abschnitt wird auf den modellbasierten Ansatz OpenAPI eingegangen.
 
@@ -188,6 +188,10 @@ OpenAPI (früher Swagger) ist ein API-Beschreibungsformat für REST-APIs. Mit ei
 	\item Kontaktinformationen, Lizenzen, Nutzungsbedingungen und andere Informationen.
 	
 \end{itemize}
+
+\subsubsection{RAML (RESTful API Modeling Language)}
+
+Die RAML-Spezifikation definiert eine Anwendung der YAML 1.2-Spezifikation, die Mechanismen für die Definition von praktisch REST-fähigen APIs bereitstellt, und Vorkehrungen bietet, mit denen Quellcodegeneratoren für Client- und Serverquellcodes und eine umfassende Benutzerdokumentation erstellt werden können\cite{ramldefinition16}.
 
 \subsection{Open Source Werkzeug OWASP Zap}
 \label{owaspzap-def}

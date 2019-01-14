@@ -11,11 +11,15 @@ In der Vorbereitungsphase werden die entsprechenden Anforderungen für einen Pen
 
 \subsection{Informationsbeschaffung}
 
-Nach Abschluss der Vorbereitungsphase kann die Beschaffung von Information über die Spring Boot Anwendung erfolgen. Diese ist im Online-Shop verfügbar und enthält bestimmte Produkte. Durch die REST-API können Produkte aufgerufen, angezeigt, hinzugefügt, aktualisiert und gelöscht werden. In der Regel wird ein Portscan gegen das Zielsystem durchgeführt, um einen Überblick zu erlangen, welche Dienste erreichbar sind. Doch in diesem Fall wird Portscan nicht benötigt, weil automatisch durch das \texttt{OpenAPI 2.0} Plugin alle erreichbaren Dienste aufgerufen werden können. Zusätzlich ist zu erwähnen, dass bereits bekannt ist, welche Funktionalitäten diese Spring Boot Anwendung besitzt, weshalb in dieser Phase nicht viel Zeit zu investieren ist.
+Nach Abschluss der Vorbereitungsphase kann die Beschaffung von Information über die Spring Boot Anwendung erfolgen. Diese Webanwendung enthält bestimmte Produkte. Durch die REST-API können Produkte aufgerufen, angezeigt, hinzugefügt, aktualisiert und gelöscht werden. In der Regel wird ein Portscan gegen das Zielsystem durchgeführt, um einen Überblick zu erlangen, welche Dienste erreichbar sind. Doch in diesem Fall wird Portscan nicht benötigt, weil automatisch durch das \texttt{OpenAPI 2.0} Plugin alle erreichbaren Dienste aufgerufen werden können. Zusätzlich ist zu erwähnen, dass bereits bekannt ist, welche Funktionalitäten diese Spring Boot Anwendung besitzt, weshalb in dieser Phase nicht viel Zeit zu investieren ist.
 
 \subsection{Bewertung der Informationen und Risikoanalyse}
 
-In der vorherigen Phase wurden alle notwendigen Informationen gesammelt, die in dieser Phase ausführlich zusammengetragen werden. Da der Autor dieser Arbeit die Spring Boot Anwendung selbst entwickelt hat, wird OWASP ZAP im \texttt{Attack Mode} Penetrationstests durchgeführt, damit kein rechtliches Problem auftritt. \texttt{Attack Mode} bedeutet, dass noch mehr unnötige Informationen in das Programm geladen werden. Deshalb ist es wahrscheinlicher, dass das Programm beschädigt wird und danach eventuell nicht alle Funktionalitäten erfüllen kann.
+In der vorherigen Phase wurden alle notwendigen Informationen gesammelt, die in dieser Phase ausführlich zusammengetragen werden. 
+
+Der Autor dieser Arbeit hat die Spring Boot Anwendung selbst entwickelt, sodass die OWASP ZAP im \texttt{Attack Mode} einen  Penetrationstests durchführt. Dabei entsteht ohnehin kein rechtliches Problem, da ihm als Entwickler alle Rechte zustehen.
+
+\texttt{Attack Mode} bedeutet, dass noch mehr unnötige Informationen in das Programm geladen werden. Deshalb ist es wahrscheinlicher, dass das Programm beschädigt wird und danach eventuell nicht alle Funktionalitäten erfüllen kann.
 
 \subsection{Aktive Eindringversuche}
 
@@ -95,15 +99,9 @@ Webanwendungen oder Webdienste verwenden Eingaben aus HTTP-Anforderungen (und ge
 Der Server sollte niemals annehmen, dass der Content-Type immer den Inhaltstyp-Header und den Inhalt desselben Typs überprüft. Ein Mangel an Content-Type-Headern oder unerwarteten Content-Type-Headern sollte dazu führen, dass der
 Server den Inhalt mit einer Antwort \texttt{406 Not Acceptable} ablehnt\cite{bofangpre16}.
 
-\subsubsection{Vermeidung von Cross Site Scripting (Persistent)}
+\subsubsection{Vermeidung von Cross Site Scripting (Persistent \& Reflected)}
 
-Um Persistent XSS am besten zu verhindern, muss sichergestellt werden, dass alle Benutzereingaben ordnungsgemäß bereinigt werden, bevor sie dauerhaft auf dem Webserver gespeichert werden. Außerdem müssen die statischen Inhalte, die den Benutzern angezeigt werden, ebenfalls bereinigt werden\cite{xsspersistent14}.
-
-\subsubsection{Vermeidung von Cross Site Scripting (Reflected)}
-
-Web Application Firewalls (WAF) haben eine bedeutende Funktion bei der Abwehr reflektierter XSS-Angriffe. Mit signaturbasierten Sicherheitsregeln kann eine WAF das Fehlen von Eingabebereinigungen ausgleichen und abnormale Anforderungen blockieren. Dies umfasst Anforderungen, die versuchen, einen reflektierten Cross-Site-Scripting-Angriff auszuführen\cite{xssreflected16}.
-
-\newpage
+Um persistenten und reflektierten XSS am besten zu verhindern, muss sichergestellt werden, dass alle Benutzereingaben ordnungsgemäß bereinigt werden, bevor sie dauerhaft auf dem Webserver gespeichert werden. Außerdem müssen die statischen Inhalte, die den Benutzern angezeigt werden, ebenfalls bereinigt werden. Hauptsächlich sollen durch entsprechende Enkodierung der Rückgabewerte (Javascript/HTML-Enkodierung, also z.B. \texttt{\&lt;} statt \texttt{'<'}) verhindert werden\cite{xsspersistent14}.
 
 \section{Bedeutung des automatisierten API-Penetrationstesting}
 

@@ -1,7 +1,7 @@
 \chapter{Sicherheitsrisiken von Webanwendungen}
 \label{cha:k3}
 
-In diesem Kapitel wird die Sicherheit von Webanwendungen erörtert. In diesem Zusammenhang werden auch deren Schwachstellen und Angriffe sowie Bedrohungen dargestellt. Um die bestehenden Sicherheitsrisiken der Anwendung kritisch zu beurteilen, sollen diverse Testmethoden eingeführt werden. OWASP versucht hier, das Top-Ten-Projekt\footnote{Das OWASP TOP 10 Projekt listet die zehn größten Sicheitslücken in Webanwendungen auf.} voranzutreiben und bei Organisationen dafür zu sorgen, dass die Präsenz und das Bewusstsein für Anwendungssicherheit gestärkt werden. Das Hauptaugenmerk liegt hierbei nicht auf der Entwicklung von vollständigen Anwendungssicherheitsprogrammen, sondern mehr darauf, eine solide und notwendige Basis für die Anwendungssicherheit durch die Implementierung von Codierungsprinzipien und -praktiken zu schaffen.
+In diesem Kapitel wird die Sicherheit von Webanwendungen erörtert. In diesem Zusammenhang werden auch deren Schwachstellen und Angriffe sowie Bedrohungen dargestellt. Um die bestehenden Sicherheitsrisiken der Anwendung kritisch zu beurteilen, sollen diverse Testmethoden eingeführt werden. OWASP versucht hier, das Top-Ten-Projekt\footnote{Das OWASP TOP 10 Projekt listet die zehn kritischsten Sicheitslücken in Webanwendungen auf.} voranzutreiben und bei Organisationen dafür zu sorgen, dass die Präsenz und das Bewusstsein für Anwendungssicherheit gestärkt werden. Das Hauptaugenmerk liegt hierbei nicht auf der Entwicklung von vollständigen Anwendungssicherheitsprogrammen, sondern mehr darauf, eine solide und notwendige Basis für die Anwendungssicherheit durch die Implementierung von Codierungsprinzipien und -praktiken zu schaffen.
 
 \section{Schwachstellen}
 
@@ -257,7 +257,7 @@ Für Benutzer, die ein allgemeines Kennwort verwenden, nutzt der Angreifer entsp
 
 \subsection{Weitere Risiken}
 
-Die OWASP Top 10 zeigen die zehn wichtigsten Risiken für Webanwendungen. Jedoch existieren noch diverse weitere Risiken, die bei der Entwicklung und beim Betrieb von Webanwendungen relevant sind. Im folgenden Abschnitt werden weitere Risiken erläutert.
+Die OWASP Top 10 zeigen die zehn kritischsten Risiken für Webanwendungen. Jedoch existieren noch diverse weitere Risiken, die bei der Entwicklung und beim Betrieb von Webanwendungen relevant sind. Im folgenden Abschnitt werden weitere Risiken erläutert.
 
 \subsubsection{Zugriff auf entfernte Dateien}
 
@@ -370,6 +370,14 @@ Wenn die Validierung beim Analysieren von XML nicht aktiviert wird, kann ein Ang
 Die Offenlegung von Informationen liegt vor, wenn eine Anwendung vertrauliche Informationen nicht ordnungsgemäß vor Parteien schützt, die unter normalen Umständen keinen Zugriff auf solche Informationen haben sollen. Diese Art von Problemen kann in den meisten Fällen nicht ausgenutzt werden, wird jedoch als Sicherheitsproblem für Webanwendungen betrachtet. Denn Angreifer können Informationen sammeln, die später im Angriffslebenszyklus verwendet werden können, um mehr zu erreichen, als ohne den Zugang zu solchen Informationen möglich wäre. Bei der Offenlegung von Informationen kann es zu einer kritischen Ausprägung der bekannt gewordenen Informationen kommen: von der Offenlegung von Details zur Serverumgebung bis zum Verlust von Anmeldeinformationen des Administratorkontos oder von geheimen API-Schlüsseln, die weitreichende Folgen für die verwundbare Webanwendung haben können\cite{infdiscissattack17}.
 
 Ein durchdachter Anwendungsfehlerbehandlungsplan während der Anwendungsentwicklung ist von entscheidender Bedeutung, um Informationslecks zu verhindern. Dies liegt daran, dass eine Fehlermeldung in der Lage ist, aufschlussreiche Informationen über die Funktionsweise einer Anwendung aufzugeben. Abgesehen von der Weitergabe von Informationen an den Angreifer ist eine geplante Fehlerbehandlungsstrategie einfacher zu warten und die Anwendung wird vor dem Auftreten nicht erfasster Fehler geschützt\cite{ase17}.
+
+\subsubsection{JSON-Schema-Validierung}
+
+Die JSON-Schema-Validierung (engl.: \textit{JSON Schema validation}) definiert ein Vokabular für den JSON-Schema-Kern und betrifft alle dort aufgeführten Sicherheitsaspekte. Die Validierung des JSON-Schemas ermöglicht die Verwendung von regulären Ausdrücken, die zahlreiche unterschiedliche und häufig inkompatible Implementierungen haben.
+
+Einige Implementierungen ermöglichen das Einbetten von einem beliebigem Code, der außerhalb des Geltungsbereichs von JSON-Schema liegt und nicht zulässig sein darf. Reguläre Ausdrücke können oft so gestaltet werden, dass sie für die Berechnung extrem teuer sind, was zu einem Denial-of-Service-Angriff führt.
+
+Implementierungen, die die Überprüfung oder anderweitige Auswertung von Instanz-String-Daten basierend auf \texttt{contentEncoding} und \texttt{contentMediaType} unterstützen, laufen Gefahr, Daten auf der Basis von irreführenden Informationen auf unsichere Weise auszuwerten\cite{jsonsecurityproblems18}.
 
 \subsection{Common Vulnerability Scoring System (CVSS)}
 

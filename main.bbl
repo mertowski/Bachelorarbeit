@@ -443,31 +443,6 @@
       \verb https://www.bsi.bund.de/DE/Themen/ITGrundschutz/ITGrundschutzKataloge/Inhalt/Glossar/glossar_node.html
       \endverb
     \endentry
-    \entry{whyvriticalapi17}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=f2fb1e3c1eab4e3b1ce2f34e23772908}{%
-           family={CloudQA},
-           familyi={C\bibinitperiod}}}%
-      }
-      \strng{namehash}{f2fb1e3c1eab4e3b1ce2f34e23772908}
-      \strng{fullhash}{f2fb1e3c1eab4e3b1ce2f34e23772908}
-      \strng{bibnamehash}{f2fb1e3c1eab4e3b1ce2f34e23772908}
-      \strng{authorbibnamehash}{f2fb1e3c1eab4e3b1ce2f34e23772908}
-      \strng{authornamehash}{f2fb1e3c1eab4e3b1ce2f34e23772908}
-      \strng{authorfullhash}{f2fb1e3c1eab4e3b1ce2f34e23772908}
-      \field{sortinit}{C}
-      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{{Why is it Critical to Check Security during API Testing?}}
-      \field{year}{2017}
-      \verb{urlraw}
-      \verb https://cloudqa.io/why-is-it-critical-to-check-security-during-api-testing/
-      \endverb
-      \verb{url}
-      \verb https://cloudqa.io/why-is-it-critical-to-check-security-during-api-testing/
-      \endverb
-    \endentry
     \entry{bwgwebtesting07}{misc}{}
       \name{author}{1}{}{%
         {{hash=a8492b2f83a3790795ba9476825dcac0}{%
@@ -743,33 +718,6 @@
       \endverb
       \verb{url}
       \verb https://www.httpcs.com/en/cve-common-vulnerabilities-exposures
-      \endverb
-    \endentry
-    \entry{xssreflected16}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=299f83b653d1365528c795962126a261}{%
-           family={Incapsula},
-           familyi={I\bibinitperiod},
-           prefix={imperva},
-           prefixi={i\bibinitperiod}}}%
-      }
-      \strng{namehash}{299f83b653d1365528c795962126a261}
-      \strng{fullhash}{299f83b653d1365528c795962126a261}
-      \strng{bibnamehash}{299f83b653d1365528c795962126a261}
-      \strng{authorbibnamehash}{299f83b653d1365528c795962126a261}
-      \strng{authornamehash}{299f83b653d1365528c795962126a261}
-      \strng{authorfullhash}{299f83b653d1365528c795962126a261}
-      \field{sortinit}{I}
-      \field{sortinithash}{320bc8fe8101b9376f9f21cd507de0e8}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{{Reflected Cross Site Scripting (XSS) Attacks}}
-      \field{year}{2016}
-      \verb{urlraw}
-      \verb https://www.incapsula.com/web-application-security/reflected-xss-attacks.html
-      \endverb
-      \verb{url}
-      \verb https://www.incapsula.com/web-application-security/reflected-xss-attacks.html
       \endverb
     \endentry
     \entry{swagger20Github}{misc}{}
@@ -1511,6 +1459,31 @@
       \verb https://linuxhint.com/sql-injection-kali-linux/
       \endverb
     \endentry
+    \entry{ramldefinition16}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=51546bb736b0f9021b167202e967a6cb}{%
+           family={RAML},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{51546bb736b0f9021b167202e967a6cb}
+      \strng{fullhash}{51546bb736b0f9021b167202e967a6cb}
+      \strng{bibnamehash}{51546bb736b0f9021b167202e967a6cb}
+      \strng{authorbibnamehash}{51546bb736b0f9021b167202e967a6cb}
+      \strng{authornamehash}{51546bb736b0f9021b167202e967a6cb}
+      \strng{authorfullhash}{51546bb736b0f9021b167202e967a6cb}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{RAML Specification}}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://github.com/raml-org/raml-spec
+      \endverb
+      \verb{url}
+      \verb https://github.com/raml-org/raml-spec
+      \endverb
+    \endentry
     \entry{bofangpre16}{misc}{}
       \name{author}{1}{}{%
         {{hash=bc8a9f376ff298095caff3e9bf76c78f}{%
@@ -1683,6 +1656,33 @@
       \endverb
       \verb{url}
       \verb https://wirtschaftslexikon.gabler.de/definition/hacker-53395
+      \endverb
+    \endentry
+    \entry{cicdandreassmith18}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=9e801bbdef8cad3ea8f2328f50f2284e}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{9e801bbdef8cad3ea8f2328f50f2284e}
+      \strng{fullhash}{9e801bbdef8cad3ea8f2328f50f2284e}
+      \strng{bibnamehash}{9e801bbdef8cad3ea8f2328f50f2284e}
+      \strng{authorbibnamehash}{9e801bbdef8cad3ea8f2328f50f2284e}
+      \strng{authornamehash}{9e801bbdef8cad3ea8f2328f50f2284e}
+      \strng{authorfullhash}{9e801bbdef8cad3ea8f2328f50f2284e}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Benefits of Automated Testing}}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://dzone.com/articles/benefits-of-automated-testing
+      \endverb
+      \verb{url}
+      \verb https://dzone.com/articles/benefits-of-automated-testing
       \endverb
     \endentry
     \entry{spies1985datenschutz}{incollection}{}
@@ -2354,6 +2354,33 @@
       \field{labeltitlesource}{title}
       \field{title}{Microservices: flexible software architecture}
       \field{year}{2016}
+    \endentry
+    \entry{jsonsecurityproblems18}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=e5a4b65326e4b050889dd3c516364f5b}{%
+           family={Wright},
+           familyi={W\bibinitperiod},
+           given={Austin},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{e5a4b65326e4b050889dd3c516364f5b}
+      \strng{fullhash}{e5a4b65326e4b050889dd3c516364f5b}
+      \strng{bibnamehash}{e5a4b65326e4b050889dd3c516364f5b}
+      \strng{authorbibnamehash}{e5a4b65326e4b050889dd3c516364f5b}
+      \strng{authornamehash}{e5a4b65326e4b050889dd3c516364f5b}
+      \strng{authorfullhash}{e5a4b65326e4b050889dd3c516364f5b}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{JSON Schema Validation: A Vocabulary for Structural Validation of JSON}}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://json-schema.org/latest/json-schema-validation.html#rfc.section.11
+      \endverb
+      \verb{url}
+      \verb https://json-schema.org/latest/json-schema-validation.html#rfc.section.11
+      \endverb
     \endentry
     \entry{yeo2013using}{article}{}
       \name{author}{1}{}{%
