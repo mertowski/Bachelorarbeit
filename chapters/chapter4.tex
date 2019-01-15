@@ -62,7 +62,7 @@ Um zu unterscheiden wie aggressiv ein Penetrationstester bei seinen Tests vorgeh
 
 \subsection{Umfang}
 
-Der Umfang der Systeme, die getestet werden spielen ebenfalls eine große Rolle. So ist es sinnvoll eine gründliche Überprüfung durchzuführen bevor man einen ersten Penetrationstest plant. Man vermeidet so, zu testende Elemente zu übersehen und mögliche Sicherheitslücken nicht zu erkennen. Trotz der Tatsache, dass identische und fast identische Systeme zu Teilen auf einmal untersucht werden können, trifft das nicht zu, wenn „abweichende“ Konfiguration auftreten. Denn der Umfang der Systeme, die untersucht werden sollen, bestimmt den für den Penetrationstest betriebenen Aufwand. Es hängt also grundsätzlich davon ab, welcher Umfang durch den Auftraggeber zustande kommt. Das bedeutet das festgestellt werden muss, ob nur ein Modul getestet werden soll, mehrere oder das ganze System\cite[14--15]{pt03bsi}. 
+Der Umfang der Systeme, die getestet werden spielen ebenfalls eine große Rolle. So ist es sinnvoll eine gründliche Überprüfung durchzuführen bevor man einen ersten Penetrationstest plant. Man vermeidet so, zu testende Elemente zu übersehen und mögliche Sicherheitslücken nicht zu erkennen. Trotz der Tatsache, dass identische und fast identische Systeme zu Teilen auf einmal untersucht werden können, trifft das nicht zu, wenn „abweichende“ Konfiguration auftreten. Denn der Umfang der Systeme, die untersucht werden sollen, bestimmt den für den Penetrationstest betriebenen Aufwand. Es hängt also grundsätzlich davon ab, welcher Umfang durch den Auftraggeber zustande kommt. Das bedeutet das festgestellt werden muss, ob nur ein Modul getestet werden soll, mehrere oder das ganze System. Außerdem muss mit dem Auftraggeber der Scope des Tests abgeklärt werden. Penetrationstests abseits des vereinbarten Scopes wären entsprechend illegal\cite[14--15]{pt03bsi}.
 
 \subsection{Vorgehensweise}
 
@@ -90,7 +90,8 @@ Im diesem Abschnitt wird das Ablauf eines Penetrationstest nach der Studie für 
 	\caption{Phase 1 – Vorbereitung des Penetrationstests}
 \end{figure}
 
-In der Vorbereitungsphase werden zuerst die Ziele des Penetrationstest durch den Auftragsgeber und Auftragsnehmer definiert. Diese Ziele können beispielsweise die Verbesserung oder die Bestätigung der Sicherheit des Zielsystems durch einen externen Dritten sein. Darauf aufbauend müssen die rechtlichen Aspekte für die Durchführung des Penetrationstests zur Kenntnis genommen werden. Nun kann der Penetrationstest anhand der oben genannten Kriterien (siehe Abschnitt \ref{kriterpent}) konkretisiert werden. Hierzu muss auch bestimmt werden, welche Komponenten dem Penetrationstest untergezogen werden sollen. Hier besteht die Möglichkeit, dass der Auftraggeber den Penetrationstester auf einen bestimmten Bereich begrenzt, den er für einen Penetrationstest als besonders relevant ansieht. Darüber hinaus muss auch geklärt werden, welche Informationen der Tester über das Zielsystem erhalten soll. Bei dieser entscheidenden Frage wird entschieden, ob es sich um einen Black-Box-Test oder einen White-Box-Test handeln soll. \textit{"`Ergebnis der Vorbereitungsphase muss ein detaillierter Plan sein, der genau vorgibt wann welche Komponenten mit welcher Intensität penetriert werden"'}\cite[100--102]{pt03bsi}.
+Die Vorbereitungsphase wird im Idealfall von Auftraggeber und Auftragnehmer gemeinsam bewältigt. In dieser Phase wird definiert, was durch den Penetrationstest erreicht werden soll und auf welcher rechtlichen Basis dies ablaufen soll. Auftraggeber und Auftragnehmer gehen somit beide mit identischen Vorstellungen in die eigentliche Testphase und haben bessere Chance die gemeinsamen Ziele zu erreichen. Zu diesen gehört die Verbesserung der Systemsicherheit und der Sicherheit der "`\textit{personellen Infrastruktur}"', sowie auch eventuell die Überprüfung der Sicherheit durch externe Prüfer. Nachdem auch alle organisatorischen Aspekte geklärt wurden, kann unter Berücksichtigung des Ausgangspunktes, der Aggressivität, der Vorgehensweise, des Umfangs, der Technik und der Informationsbasis, der Test nun realisiert werden.Es ist wichtig den Test beim ersten Durchgang so zu gestalten, dass alle Systeme berücksichtigt werden. Ansonsten kann es zu lückenhaften Ergebnissen kommen, was ein Zeichen für Schwachstellen darstellt. Ein weiterer Punkt der gemieden werden kann ist der des Zeitverlustes. Im Optimalfall kann durch eine Schutzbedarfsanalyse recht genau festgestellt werden, wie groß der zeitliche Umfang des Tests sein wird. Zusätzlich kann durch die gewählten Kriterien (siehe Abschnitt \ref{kriterpent}) beschlossen werden, welche Module ausgeschlossen werden und welche für den Penetrationstest zum Einsatz kommen sollen. Davon hängt schlussendlich ab welches Risiko vom Auftraggeber getragen werden muss. Ein Komplettausfall des Systems für eine lange Zeit würde beispielsweise ein hohes Risiko darstellen, entsprechend stellen kleinere Probleme, die schnell zu beheben sind oder deren Auswirkungen nicht gravierend sind, kein großes Risiko dar. Es sollte zwischen beiden Parteien geklärt werden, wie wahrscheinlich der Eintritt der jeweiligen Risiken ist und wie bei Eintritt reagiert werden kann. Es kann auch sein, dass bei diesem Prozess festgestellt wird, dass das geplante Vorgehen zu aggressiv ist und sich daher zu hohe Risiken ergeben, die bei Eintritt fatal wären. Dazu gehört zum Beispiel, dass man möglicherweise den Umfang der zu testenden Systeme reduziert.
+Der gesamte Prozess sollte sauber dokumentiert und protokolliert werden\cite[100--102]{pt03bsi}.
 
 \subsection{Informationsbeschaffung}
 \label{infobeschaffung}
@@ -101,12 +102,9 @@ In der Vorbereitungsphase werden zuerst die Ziele des Penetrationstest durch den
 	\caption{Phase 2 – Informationsbeschaffung}
 \end{figure}
 
-Sofern die Vorbereitungsphase abgeschlossen ist und über alle wesentlichen Punkte einig wurde, kann mit der Beschaffung von Informationen über das Zielsystem angefangen werden. 
-Als Erster werden die Erstinformationen ausgewertet. Laut dem grundlegenden Konzept (siehe Abschnitt \ref{grndlgndkonzpt}) werden die erhaltenen Informationen, sowie nur eine IP-Adresse bei dem Black-Box-Test beschränkt. Wenn es um einen White-Box-Test geht, dann werden umfangreiche Informationen zum Nutzen gereicht, um einen genauen Überblick über die möglichen Angriffspunkte zu erlangen. In der Informationsbeschaffungsphase muss genug Zeit eingeplant werden, welche je nach Konzept des Penetrationstests oder Menge der zu testenden Komponenten des Zielsystems variieren kann\cite[102--103]{pt03bsi}.
+Die zweite Phase ist die der Informationsbeschaffung, in der die ersten Informationen ausgewertet sollen. Sofern die Vorbereitungsphase abgeschlossen ist und über alle wesentlichen Punkte einig wurde, kann mit der Beschaffung von Informationen über das Zielsystem angefangen werden. An dieser Stelle macht es einen großen Unterschied, ob es sich bei dem dazugehörigen Test um einen Black-Box-Test oder einen White-Box-Test handelt. Je nachdem fallen die Erstinformationen verständlicherweise unterschiedlich aus. Bei einem Black-Box-Test handelt es sich bei den ersten Informationen um Daten wie IP-Adressen oder Ähnlichem, wohingegen bei White-Box-Tests tiefer gehende Daten gefordert werden sollten, wie zum Beispiel die Version des Betriebssystems oder präzise Netzpläne. In beiden Fällen ist es wichtig intelligente Entscheidungen bezüglich der geforderten Informationen zu treffen um so effizient wie möglich arbeiten zu können. Im anschließenden Schritt macht es Sinn die Prüfungshandlung der Module in einer bestimmten Reihenfolge abzuarbeiten\cite[102--103]{pt03bsi}.
 
-\newpage
-
-\subsection{Bewertung der Informationen und Risikoanalyse}
+\subsection{Bewertung der Informationen}
 \label{bewinfrisiko}
 
 \begin{figure}[h]
@@ -115,7 +113,9 @@ Als Erster werden die Erstinformationen ausgewertet. Laut dem grundlegenden Konz
 	\caption{Phase 3 – Bewertung der Informationen und Risikoanalyse}
 \end{figure}
 
-Die erlangten Informationen werden anschließend aus der vorherigen Phase (siehe Abschnitt \ref{infobeschaffung}) ausführlich zusammengetragen und es findet eine Bewertung des Risikos statt. An dieser Stelle werden die gesammelten Informationen analysiert und bewertet. Die vereinbarten Ziele, potenzielle Gefährdung des Zielsystems und geschätzter Aufwand müssen für den beeinträchtigenden Mangel der Sicherheit einbezogen werden. Nachdem die Bedrohungen bewertet werden, sollte der Penetrationstester den Aufwand und die Erfolgschancen abwägen. Mit Hilfe der zeitlichen Einschätzung für die durchzuführenden Penetrationstests kann der Aufwand (mittel, hoch, sehr hoch) für jegliche Module angeleitet werden. Dabei kann die Priorisierung stattfinden: "`\textit{Je höher die Erfolgschancen und je niedriger der Aufwand ist, desto höher sollte die Priorität sein.}"' Die Dokumentation für die Aufwandsschätzung und vergebenen Prioritäten sollen von dem Penetrationstester erstellt werden, um die Effizienz des Penetrationstests zu steigern\cite[103--104]{pt03bsi}.
+Wenn es um die Bewertung der Informationen geht, ist es sinnvoll zunächst die Bedrohungen zu bewerten. Ferner macht es Sinn die bis hierhin gesammelten Informationen einer Analyse zu unterziehen und kritisch zu bewerten bevor man fortfährt. In die oftmals unvermeidbar subjektive Bewertung sollten die primär vereinbarten Ziele, mögliche Sicherheitslücken und der Aufwand für deren Behebung mit einfließen. Nach der darauffolgenden Einschätzung der Erfolgschancen und des zeitlichen Aufwands für die Testschritte, kann priorisiert werden. Hohes Erfolgspotenzial und niedriger Aufwand sollte die Prämisse bei der Priorisierung sein. All dies führt dazu, dass in folgenden Schritten effizienter gearbeitet werden kann, denn so werden die in den nächsten Phasen anstehenden Ziele klüger ausgewählt. Auch in dieser Phase ist eine präzise Dokumentation für den weiteren Verlauf äußerst sinnvoll\cite[103--104]{pt03bsi}.
+
+\newpage
 
 \subsection{Aktive Eindringversuche}
 
@@ -125,7 +125,7 @@ Die erlangten Informationen werden anschließend aus der vorherigen Phase (siehe
 	\caption{Phase 4 – Aktive Eindringversuche durchführen}
 \end{figure}
 
-In dieser Phase wird geprüft, wie sicherheitskritisch die ausgewählten Sicherheitsmängel von Phase 3 (siehe Abschnitt \ref{bewinfrisiko}) tatsächlich sind. Dies wird erreicht, indem man versucht, so weit wie möglich in das Zielsystem aktiv einzugreifen. Hierbei ist von Relevanz, dass jeder Schritt genau bedacht wird, da durch den Versuch einzudringen die Zielsysteme auch beschädigt werden könnten. Soll beispielsweise ein System getestet werden, das eine hohe Verfügbarkeit haben soll, muss berücksichtigt werden, wie der Test aufgebaut wird, um die Verfügbarkeit weiterhin gewähren zu können.  Es gibt eine weitere Möglichkeit, um die Verfügbarkeit der zu testenden Systeme sicherzustellen, indem zum Beispiel Schattensysteme verwendet werden. Schattensystemen sind eine exakte Kopie des zu testenden Systems. Dabei ist als Vorteil bei der Verwendung von Schattensysteme klar zu benennen, dass während des Penetrationstests sichergestellt ist, dass es zu keinen Ausfällen des tatsächlichen Systems kommt. Bei den aktiven Eindringversuchen wird erst gezeigt, ob die identifizierten Schwachstellen von der Phase 1 tatsächlich ausgenutzt werden können. Außerdem sollten sowohl die positiven, als auch die negativen Ergebnisse detailliert dokumentiert werden\cite[104--105]{pt03bsi}.
+In dieser Phase finden nun die tatsächlichen Angriffe statt, die zunächst nur geplant und strukturiert wurden. Die Struktur, beziehungsweise die zuvor festgelegten Prioritäten sollten nun die Abfolge der Angriffe und Testmaßnahmen bestimmen. Natürlich ist es unabdinglich, stets vorsichtig zu handeln und auf die Vorgaben des Auftraggebers zu achten und auch besagte Notfallmaßnahmen zu berücksichtigen. Es gibt eine weitere Möglichkeit, um die Verfügbarkeit der zu testenden Systeme sicherzustellen, indem zum Beispiel eine exakte Kopie des zu testenden Systems verwendet werden. Dabei ist als Vorteil bei der Verwendung von einen exakte Kopie des zu testenden Systems klar zu benennen, dass während des Penetrationstests sichergestellt ist, dass es zu keinen Ausfällen des tatsächlichen Systems kommt\cite[104--105]{pt03bsi}.
 
 \subsection{Abschlussanalyse und Nacharbeiten}
 
@@ -135,8 +135,10 @@ In dieser Phase wird geprüft, wie sicherheitskritisch die ausgewählten Sicherh
 	\caption{Phase 5 – Abschlussanalyse und Nacharbeiten durchführen}
 \end{figure}
 
-Zum Abschluss des Penetrationstests werden alle gefundenen Schwachstellen in einem Bericht aufgelistet und deren Risiken genau erläutert. Dabei sollte ein solcher Abschlussbericht neben den Resultaten des Penetrationstests auch Möglichkeiten zur Behebung etwaiger Risiken beinhalten. Der Bericht muss für den Auftraggeber klar und deutlich sein. Dabei sollte jede durchgeführte Aktion so beschrieben werden, dass sie für den Auftraggeber nachvollziehbar ist, deshalb müssen die Informationen aus den Phasen 1 bis 5 als Anhang in dem Bericht enthalten sein. 
-Diese Anhänge können detaillierte Informationen zu den eingesetzten Tools, Arbeitsschrittinfos, Einsatzzeiten etc. sein. Während des Penetrationstests installierte Anwendungen wie z.B. Keylogger müssen durch den Penetrationstester entfernt und das bereinigte System wiederhergestellt werden. Schließlich sollte nach der Fertigstellung des Abschlussberichts mit dem Auftraggeber ein Abschlussgespräch geführt werden. Hierbei werden noch einmal alle gefundenen Sicherheitsprobleme ausführlich besprochen\cite[105--106]{pt03bsi}.
+In der letzten Phase wird ein abschließender Bericht verfasst, in dem alle Ergebnisse einzusehen sind. Dieser Bericht sollte verschiedene Teile beinhalten. Ein wichtiger Teil ist dabei eine Managementzusammenfassung, die die Zielsetzung, maßgebende Resultate und die weitere Vorgehensweise im Zusammenhang mit der Prüfung des Systems enthalten sollte. Dieser kompakte Bericht ist eher für das Top-Management gedacht.
+Ein anderer wichtiger Teil ist der detaillierte Bericht über die genauen Ergebnisse der Tests. Positive und negative Ergebnisse werden hier evaluiert und priorisiert. Anschließend sollte empfohlen werden, wie die entdeckten Risiken gedrosselt oder gar beseitigt werden können. Anhand dieser Feststellungen und Empfehlungen kann dann ein Aktionsplan erstellt werden, welcher eine zeit- und personalbezogene Zuteilung für jeden Schritt vorsieht. Alle Ergebnisse des Prüfungsauftrags sollen für den Auftraggeber zugänglich und eindeutig zu verstehen gemacht werden. Um das zu erreichen, können zum Beispiel logfiles, Zeitpläne und sämtliche verwendete Tools aufgeführt werden. Abschließend müssen alle Veränderungen, die nur zu Testzwecken gedient haben und nun nicht mehr notwendig sind rückgängig gemacht werden und alle personenbezogene Daten an die Abteilung, die für den Datenschutz verantwortlich ist, übermittelt werden, beziehungsweise alle sensiblen Daten gelöscht werden\cite[105--106]{pt03bsi}.
+
+\newpage
 
 \section{Manuelle Penetrationstest}
 
@@ -158,13 +160,15 @@ Es wird Google Dorking verwendet, um die SQL-Injektionslücke in Zielen zu suche
 
 Standardmäßig durchsucht SQLiv die erste Seite in der Suchmaschine, die bei Google zehn Webseiten pro Seite anzeigt. Daher wird hier das Argument \texttt{-p 200} definiert, um 200 Seiten zu durchsuchen. Basierend auf dem oben angegebenen Dork erscheint folgendes Ergebnis von verwundbaren URLs:
 
+\newpage
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{sqllive.png}
 	\caption{Durchsuchung mit SQLiv}
 \end{figure}
 
-\newpage
+
 
 \textbf{Schritt 2: SQL-Injektion mit SQLMAP}
 
@@ -617,7 +621,8 @@ Ausführliche manuelle Penetrationstests werden von erfahrenen Sicherheitsexpert
 Die Unternehmen begannen, automatisierte Testtechniken für Webanwendungen zu entwickeln. Zu diesem Zeitpunkt wurde das Web reifer und die Webbrowser waren in der Lage, die Komplexität dynamischer Anwendungen zu beherrschen. Das Ziel dieser frühen automatisierten Testwerkzeuge war, durch die Automatisierung des Ermittlungsprozesses einer Webanwendung und das Einfügen von Fehlern dazu beizutragen, Schwachstellen zu entdecken. Mit dem Ausreifen automatisierter Tools für die Sicherheit von Webanwendungen wurden die meisten dieser Probleme angegangen. Da die Webanwendungen jedoch immer größer werden, wird das manuelle Testen zunehmend schwieriger. In vielen Unternehmen wird es unmöglich werden, Zeit, Aufwand und Kosten für die Bewertung des Unternehmens zu investieren bei der steigenden Anzahl von Webanwendungen. Letztlich kann der Mensch nur eine bestimmte Anzahl an Codezeilen pro Tag betrachten. Wenn sich das Anwendungsvolumen vergrößert, werden auch die kostspieligen Testfälle unerschwinglich\cite[2--5]{wasasibm08}.
 
 Bei Depoloyments mehrmals am Tag (wie z.B. Amazon)
-können zeitlich kaum manuelle Penetrationstests mehr durchgeführt werden.In agilen Umgebungen und anderen Umgebungen, in denen die kontinuierliche Integration genutzt wird, können automatisierte Sicherheitstests genutzt werden, um Code-Sicherheitsprobleme sofort nach deren Einführung zu erkennen. Teams, die die geeignete Sicherheitsvalidierung verstehen und im kontinuierlichen Integrationszyklus korrekt implementieren, werden wesentlich zur Gesamtsicherheit ihrer Anwendung beitragen. Sie erhalten umgehend Feedback zu vielen Aspekten der Sicherheit ihres Projekts und werden wahrscheinlich schon früh im Projekt offensichtliche Sicherheitslücken feststellen\cite{cicdandreassmith18}.
+können zeitlich kaum manuelle Penetrationstests mehr durchgeführt werden.
+In agilen Umgebungen und anderen Umgebungen, in denen die kontinuierliche Integration genutzt wird, können automatisierte Sicherheitstests genutzt werden, um Code-Sicherheitsprobleme sofort nach deren Einführung zu erkennen. Teams, die die geeignete Sicherheitsvalidierung verstehen und im kontinuierlichen Integrationszyklus korrekt implementieren, werden wesentlich zur Gesamtsicherheit ihrer Anwendung beitragen. Sie erhalten umgehend Feedback zu vielen Aspekten der Sicherheit ihres Projekts und werden wahrscheinlich schon früh im Projekt offensichtliche Sicherheitslücken feststellen\cite{cicdandreassmith18}.
 
 Unabhängig davon, ob manuelle oder automatisierte Sicherheitstesttechniken verwendet werden, ist es wichtig, das Softwareverhalten zu analysieren, um festzustellen, ob tatsächlich gegen die Grundsätze der Vertraulichkeit (engl.: \textit{Confidentiality}), Integrität (engl.: \textit{Integrity}) oder Verfügbarkeit (engl.: \textit{Availability}) (zusammengefasst: CIA) verstoßen wurde\cite{moaast17}.
 
